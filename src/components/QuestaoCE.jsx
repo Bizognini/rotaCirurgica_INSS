@@ -74,6 +74,24 @@ export default function QuestaoCE({
         </div>
       </div>
 
+      {questao.textoApoio && (
+        <details
+          open={!questao.textoApoioRecolhido}
+          style={{
+            marginBottom: '.8rem', padding: '.6rem .8rem',
+            background: 'var(--azul-50)', border: '1px solid var(--azul-100)',
+            borderRadius: 'var(--raio-sm)',
+          }}
+        >
+          <summary style={{ cursor: 'pointer', fontWeight: 700, fontSize: '.82rem', color: 'var(--azul-800)' }}>
+            📄 Texto de apoio{questao.tituloApoio ? ` — ${questao.tituloApoio}` : ''}
+          </summary>
+          <div style={{ marginTop: '.6rem', fontSize: '.88rem', lineHeight: 1.7, whiteSpace: 'pre-line' }}>
+            {questao.textoApoio}
+          </div>
+        </details>
+      )}
+
       <p style={{ fontSize: '.97rem', lineHeight: 1.65 }}>{questao.enunciado}</p>
 
       <div className="linha" style={{ gap: '.5rem' }}>
