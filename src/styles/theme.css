@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Identidade visual — azul e amarelo (padrão INSS / governo). Sem modo escuro.
+   ========================================================================== */
+:root {
+  /* Azuis */
+  --azul-900: #062350;
+  --azul-800: #072d6d;
+  --azul-700: #0a3d91;
+  --azul-600: #1250b4;
+  --azul-500: #1d5fc4;
+  --azul-100: #dfe9fb;
+  --azul-50: #eef4ff;
+
+  /* Amarelos */
+  --amarelo-600: #c98f00;
+  --amarelo-500: #e0a800;
+  --amarelo-400: #ffc72c;
+  --amarelo-200: #ffe9a8;
+  --amarelo-50: #fff9e6;
+
+  /* Neutros */
+  --fundo: #f3f6fb;
+  --card: #ffffff;
+  --borda: #dbe3ee;
+  --borda-forte: #c3cfe0;
+  --texto: #16202e;
+  --texto-suave: #5b6b80;
+  --texto-fraco: #8493a8;
+
+  /* Semânticos */
+  --verde: #1e8e53;
+  --verde-claro: #e6f5ec;
+  --vermelho: #c62828;
+  --vermelho-claro: #fdeaea;
+  --laranja: #d97706;
+  --laranja-claro: #fef3e2;
+  --roxo: #6d43b8;
+
+  /* Layout */
+  --sidebar-largura: 250px;
+  --tabbar-altura: 62px;
+  --raio: 12px;
+  --raio-sm: 8px;
+  --sombra: 0 1px 2px rgba(16, 32, 56, 0.06), 0 4px 12px rgba(16, 32, 56, 0.06);
+  --sombra-forte: 0 8px 28px rgba(16, 32, 56, 0.14);
+
+  /* Cores por matéria (usadas em gráficos e etiquetas) */
+  --cor-prev: #0a3d91;
+  --cor-port: #d97706;
+  --cor-const: #1e8e53;
+  --cor-adm: #6d43b8;
+  --cor-rlm: #0e8f95;
+  --cor-info: #b8336a;
+  --cor-etica: #7a6a1f;
+}
