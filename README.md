@@ -89,6 +89,18 @@ O script cria as nove tabelas, ativa o *Row Level Security* em todas elas e habi
 
 Essa é a **única conta** do sistema. Não há tela de cadastro no site.
 
+### 2.3.1 Fechar o cadastro público (recomendado)
+
+Por padrão, o Supabase deixa **qualquer pessoa criar uma conta** com a publishable key — que é
+visível no código do site. O RLS impede que essa pessoa veja os seus dados (ela só enxergaria as
+próprias linhas), mas ela consumiria a cota do seu projeto gratuito.
+
+Como o sistema é de conta única, feche o cadastro:
+
+**Authentication → Sign In / Providers → Email →** desative **"Allow new users to sign up"**.
+
+Depois disso, apenas a conta que você criou pelo painel consegue entrar.
+
 ### 2.4 Pegar as credenciais
 
 No painel do Supabase:
@@ -409,6 +421,7 @@ não tem tela para criar matérias e blocos do zero — isso é intencional, con
 
 | Sintoma | Causa provável | O que fazer |
 |---|---|---|
+| **`permission denied for table ...`** após o login | Falta `GRANT` para o papel `authenticated` | Rode o `schema.sql` de novo — a partir da versão atual ele já concede os privilégios |
 | "Senha incorreta" | Senha diferente da cadastrada no Supabase | Redefina em Authentication → Users → ⋯ → Reset password |
 | "Supabase não configurado" | `.env.local` ausente ou incompleto | Confira as três variáveis e **reinicie** o `npm run dev` |
 | Indicador preso em `⚠️ local` | Projeto pausado por inatividade | Abra o painel do Supabase e clique em **Restore project** |
