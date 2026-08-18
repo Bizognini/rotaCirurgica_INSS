@@ -147,6 +147,35 @@ create table if not exists public.links_video (
 );
 
 -- ============================================================================
+-- PRIVILÉGIOS (GRANT) — camada anterior ao RLS
+-- ----------------------------------------------------------------------------
+-- Atenção: RLS e GRANT são coisas diferentes e ambas precisam estar certas.
+--   GRANT diz SE o papel pode tocar na tabela;
+--   RLS  diz QUAIS LINHAS ele enxerga depois de poder tocar.
+-- Projetos Supabase mais novos não concedem privilégios automaticamente para
+-- tabelas criadas no schema public. Sem o GRANT abaixo, o app autenticado
+-- receberia "permission denied for table" mesmo com o login correto.
+--
+-- Concedemos apenas ao papel `authenticated` — nunca ao `anon`. Assim, a
+-- publishable key sozinha não alcança as tabelas nem para tentar ler.
+-- ============================================================================
+do $$
+declare
+  t text;
+  tabelas text[] := array[
+    'topico_status', 'questoes_erradas', 'anotacoes', 'simulados_historico',
+    'sessoes_timer', 'metas', 'ciclo_semanal', 'conteudo_edits', 'links_video'
+  ];
+begin
+  grant usage on schema public to authenticated;
+
+  foreach t in array tabelas loop
+    execute format('grant select, insert, update, delete on public.%I to authenticated', t);
+    execute format('revoke all on public.%I from anon', t);
+  end loop;
+end $$;
+
+-- ============================================================================
 -- ROW LEVEL SECURITY — cada usuário só enxerga as próprias linhas
 -- ============================================================================
 do $$
