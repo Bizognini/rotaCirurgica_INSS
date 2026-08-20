@@ -7,6 +7,7 @@ import CicloSemanal from './pages/CicloSemanal'
 import Materias from './pages/Materias'
 import Materia from './pages/Materia'
 import Topico from './pages/Topico'
+import Subtopico from './pages/Subtopico'
 import Simulados from './pages/Simulados'
 import SimuladoExecucao from './pages/SimuladoExecucao'
 import SimuladoResultado from './pages/SimuladoResultado'
@@ -38,6 +39,7 @@ export default function App() {
         <Route path="/materias" element={<Materias />} />
         <Route path="/materias/:materiaId" element={<Materia />} />
         <Route path="/topico/:topicoId" element={<Topico />} />
+        <Route path="/subtopico/:subtopicoId" element={<Subtopico />} />
         <Route path="/simulados" element={<Simulados />} />
         <Route path="/simulados/executar" element={<SimuladoExecucao />} />
         <Route path="/simulados/resultado/:simuladoId" element={<SimuladoResultado />} />

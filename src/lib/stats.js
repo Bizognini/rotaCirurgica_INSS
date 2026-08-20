@@ -1,8 +1,15 @@
-import { MATERIAS, MATERIAS_POR_ID, TOPICOS, topicosDaMateria, BLOCOS } from '../content'
+import {
+  MATERIAS, MATERIAS_POR_ID, SUBTOPICOS, TOPICOS,
+  subtopicosDaMateria, subtopicosDoTopico, BLOCOS,
+} from '../content'
 
 /**
- * Cálculos do dashboard. Só números — nenhuma frase interpretativa é gerada
- * aqui de propósito: as conclusões ficam por conta de quem estuda.
+ * Cálculos do dashboard.
+ *
+ * A unidade de progresso é o SUBTÓPICO. O progresso do tópico e do bloco é
+ * sempre derivado dos subtópicos que eles agrupam — nunca armazenado.
+ *
+ * Só números aqui: nenhuma frase interpretativa é gerada, de propósito.
  */
 
 /* ------------------------------- datas ----------------------------------- */
@@ -96,20 +103,49 @@ export function evolucaoSemanal(sessoes, semanas = 8) {
 
 /* ----------------------------- progresso --------------------------------- */
 
-export function progressoPorMateria(topicoStatus) {
+/** Um subtópico está concluído quando teoria E questões foram marcadas. */
+export function subtopicoConcluido(status) {
+  return Boolean(status?.teoria_concluida && status?.questoes_concluidas)
+}
+
+/**
+ * Progresso de um TÓPICO — sempre derivado dos subtópicos que ele agrupa.
+ * É isso que alimenta a barra no topo da página do tópico.
+ */
+export function progressoDoTopico(topicoId, subtopicoStatus) {
+  const subs = subtopicosDoTopico(topicoId)
+  const total = subs.length
+  const concluidos = subs.filter((s) => subtopicoConcluido(subtopicoStatus[s.id])).length
+  const teoria = subs.filter((s) => subtopicoStatus[s.id]?.teoria_concluida).length
+  const questoes = subs.filter((s) => subtopicoStatus[s.id]?.questoes_concluidas).length
+  const fracos = subs.filter((s) => subtopicoStatus[s.id]?.marcado_ponto_fraco).length
+
+  return {
+    total,
+    concluidos,
+    teoria,
+    questoes,
+    fracos,
+    percentual: total ? (concluidos / total) * 100 : 0,
+    percentualTeoria: total ? (teoria / total) * 100 : 0,
+  }
+}
+
+/** Progresso por matéria, agregando TODOS os subtópicos daquela matéria. */
+export function progressoPorMateria(subtopicoStatus) {
   return MATERIAS.map((materia) => {
-    const topicos = topicosDaMateria(materia.id)
-    const total = topicos.length || 1
-    const teoria = topicos.filter((t) => topicoStatus[t.id]?.teoria_concluida).length
-    const questoes = topicos.filter((t) => topicoStatus[t.id]?.questoes_concluidas).length
-    const fracos = topicos.filter((t) => topicoStatus[t.id]?.marcado_ponto_fraco).length
+    const subs = subtopicosDaMateria(materia.id)
+    const total = subs.length || 1
+    const teoria = subs.filter((s) => subtopicoStatus[s.id]?.teoria_concluida).length
+    const questoes = subs.filter((s) => subtopicoStatus[s.id]?.questoes_concluidas).length
+    const fracos = subs.filter((s) => subtopicoStatus[s.id]?.marcado_ponto_fraco).length
 
     return {
       materiaId: materia.id,
       nome: materia.nomeCurto,
       nomeCompleto: materia.nome,
       cor: materia.cor,
-      total: topicos.length,
+      total: subs.length,
       teoria,
       questoes,
       fracos,
@@ -119,25 +155,23 @@ export function progressoPorMateria(topicoStatus) {
   })
 }
 
-export function totaisTrilha(topicoStatus) {
-  const total = TOPICOS.length
-  const teoriaOk = TOPICOS.filter((t) => topicoStatus[t.id]?.teoria_concluida).length
-  const completos = TOPICOS.filter(
-    (t) => topicoStatus[t.id]?.teoria_concluida && topicoStatus[t.id]?.questoes_concluidas
-  ).length
-  return { total, teoriaOk, completos, restantes: total - completos }
+export function totaisTrilha(subtopicoStatus) {
+  const total = SUBTOPICOS.length
+  const teoriaOk = SUBTOPICOS.filter((s) => subtopicoStatus[s.id]?.teoria_concluida).length
+  const completos = SUBTOPICOS.filter((s) => subtopicoConcluido(subtopicoStatus[s.id])).length
+  return { total, teoriaOk, completos, restantes: total - completos, topicos: TOPICOS.length }
 }
 
 /* --------------------------- desempenho ---------------------------------- */
 
-/** Taxa de acerto por matéria, somando questões de tópico e de simulado. */
-export function desempenhoPorMateria(topicoStatus, simulados) {
+/** Taxa de acerto por matéria, somando questões de subtópico e de simulado. */
+export function desempenhoPorMateria(subtopicoStatus, simulados) {
   const acumulado = Object.fromEntries(MATERIAS.map((m) => [m.id, { acertos: 0, erros: 0 }]))
 
-  TOPICOS.forEach((t) => {
-    const st = topicoStatus[t.id]
+  SUBTOPICOS.forEach((s) => {
+    const st = subtopicoStatus[s.id]
     if (!st) return
-    const alvo = acumulado[t.materiaId]
+    const alvo = acumulado[s.materiaId]
     if (!alvo) return
     alvo.acertos += st.total_acertos || 0
     alvo.erros += st.total_erros || 0
@@ -168,26 +202,27 @@ export function desempenhoPorMateria(topicoStatus, simulados) {
   })
 }
 
-export function taxaAcertoGeral(topicoStatus, simulados) {
-  const linhas = desempenhoPorMateria(topicoStatus, simulados)
+export function taxaAcertoGeral(subtopicoStatus, simulados) {
+  const linhas = desempenhoPorMateria(subtopicoStatus, simulados)
   const acertos = linhas.reduce((s, l) => s + l.acertos, 0)
   const erros = linhas.reduce((s, l) => s + l.erros, 0)
   const total = acertos + erros
   return { acertos, erros, total, taxa: total > 0 ? (acertos / total) * 100 : 0 }
 }
 
-/** Tópicos com pior desempenho — base da lista de revisão prioritária. */
-export function pioresTopicos(topicoStatus, limite = 8) {
-  return TOPICOS.map((t) => {
-    const st = topicoStatus[t.id]
+/** Subtópicos com pior desempenho — base da lista de revisão prioritária. */
+export function pioresSubtopicos(subtopicoStatus, limite = 8) {
+  return SUBTOPICOS.map((s) => {
+    const st = subtopicoStatus[s.id]
     if (!st) return null
     const total = (st.total_acertos || 0) + (st.total_erros || 0)
     if (total === 0) return null
     return {
-      id: t.id,
-      nome: t.nome,
-      materiaId: t.materiaId,
-      materia: MATERIAS_POR_ID[t.materiaId]?.nomeCurto || '',
+      id: s.id,
+      nome: s.nome,
+      topicoNome: s.topicoNome,
+      materiaId: s.materiaId,
+      materia: MATERIAS_POR_ID[s.materiaId]?.nomeCurto || '',
       erros: st.total_erros || 0,
       acertos: st.total_acertos || 0,
       total,
@@ -196,18 +231,20 @@ export function pioresTopicos(topicoStatus, limite = 8) {
     }
   })
     .filter(Boolean)
-    .filter((t) => t.erros > 0)
+    .filter((s) => s.erros > 0)
     .sort((a, b) => a.taxa - b.taxa || b.erros - a.erros)
     .slice(0, limite)
 }
 
-export function pontosFracosAtivos(topicoStatus) {
-  return TOPICOS.filter((t) => topicoStatus[t.id]?.marcado_ponto_fraco).map((t) => ({
-    id: t.id,
-    nome: t.nome,
-    materiaId: t.materiaId,
-    materia: MATERIAS_POR_ID[t.materiaId]?.nomeCurto || '',
-    erros: topicoStatus[t.id]?.total_erros || 0,
+export function pontosFracosAtivos(subtopicoStatus) {
+  return SUBTOPICOS.filter((s) => subtopicoStatus[s.id]?.marcado_ponto_fraco).map((s) => ({
+    id: s.id,
+    nome: s.nome,
+    topicoId: s.topicoId,
+    topicoNome: s.topicoNome,
+    materiaId: s.materiaId,
+    materia: MATERIAS_POR_ID[s.materiaId]?.nomeCurto || '',
+    erros: subtopicoStatus[s.id]?.total_erros || 0,
   }))
 }
 
@@ -251,20 +288,18 @@ export function aderenciaAoCiclo(ciclo, sessoes) {
 /* ---------------------------- projeção ----------------------------------- */
 
 /**
- * Estimativa de conclusão da trilha no ritmo das últimas 4 semanas.
- * Devolve `null` quando ainda não há ritmo suficiente para projetar.
+ * Estimativa de conclusão da trilha no ritmo das últimas 4 semanas,
+ * contada em SUBTÓPICOS. Devolve ritmo zero quando ainda não há histórico.
  */
-export function projecaoConclusao(topicoStatus, sessoes) {
-  const { restantes, completos, total } = totaisTrilha(topicoStatus)
+export function projecaoConclusao(subtopicoStatus, sessoes) {
+  const { restantes, completos, total } = totaisTrilha(subtopicoStatus)
   if (restantes === 0) return { concluida: true, restantes: 0, total, completos }
 
-  const iniAtual = inicioDaSemana()
-  const janelaInicio = somarDias(iniAtual, -28)
+  const janelaInicio = somarDias(inicioDaSemana(), -28)
 
-  // Quantos tópicos foram concluídos nas últimas 4 semanas?
-  const concluidosRecentes = TOPICOS.filter((t) => {
-    const st = topicoStatus[t.id]
-    if (!st?.teoria_concluida || !st?.questoes_concluidas) return false
+  const concluidosRecentes = SUBTOPICOS.filter((s) => {
+    const st = subtopicoStatus[s.id]
+    if (!subtopicoConcluido(st)) return false
     const quando = st.atualizado_em ? new Date(st.atualizado_em) : null
     return quando && quando >= janelaInicio
   }).length
@@ -275,8 +310,6 @@ export function projecaoConclusao(topicoStatus, sessoes) {
   }
 
   const semanas = Math.ceil(restantes / ritmoSemanal)
-  const data = somarDias(new Date(), semanas * 7)
-
   return {
     concluida: false,
     restantes,
@@ -284,37 +317,38 @@ export function projecaoConclusao(topicoStatus, sessoes) {
     completos,
     ritmoSemanal: Number(ritmoSemanal.toFixed(1)),
     semanas,
-    data,
+    data: somarDias(new Date(), semanas * 7),
   }
 }
 
-/** Tópicos restantes agrupados por bloco. */
-export function restantesPorBloco(topicoStatus) {
+/** Subtópicos restantes agrupados por bloco. */
+export function restantesPorBloco(subtopicoStatus) {
   return BLOCOS.map((b) => {
-    const topicos = b.topicos || []
-    const completos = topicos.filter(
-      (t) => topicoStatus[t.id]?.teoria_concluida && topicoStatus[t.id]?.questoes_concluidas
-    ).length
+    const subs = SUBTOPICOS.filter((s) => s.blocoId === b.id)
+    const completos = subs.filter((s) => subtopicoConcluido(subtopicoStatus[s.id])).length
     return {
       id: b.id,
       nome: b.nome,
       materiaId: b.materiaId,
       materia: MATERIAS_POR_ID[b.materiaId]?.nomeCurto || '',
-      total: topicos.length,
+      total: subs.length,
       completos,
-      restantes: topicos.length - completos,
+      restantes: subs.length - completos,
     }
   }).filter((b) => b.total > 0)
 }
 
 /* ------------------------- próximo a estudar ----------------------------- */
 
-/** Primeiro tópico não concluído de uma matéria, seguindo a ordem da trilha. */
-export function proximoTopico(materiaId, topicoStatus) {
-  const lista = materiaId ? topicosDaMateria(materiaId) : TOPICOS
+/**
+ * Primeiro subtópico não concluído de uma matéria, seguindo a ordem da trilha.
+ * É o destino do atalho "o que estudar hoje" e do link do ciclo semanal.
+ */
+export function proximoSubtopico(materiaId, subtopicoStatus) {
+  const lista = materiaId ? subtopicosDaMateria(materiaId) : SUBTOPICOS
   return (
-    lista.find((t) => !topicoStatus[t.id]?.teoria_concluida) ||
-    lista.find((t) => !topicoStatus[t.id]?.questoes_concluidas) ||
+    lista.find((s) => !subtopicoStatus[s.id]?.teoria_concluida) ||
+    lista.find((s) => !subtopicoStatus[s.id]?.questoes_concluidas) ||
     null
   )
 }

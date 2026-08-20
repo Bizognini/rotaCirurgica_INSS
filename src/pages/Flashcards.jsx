@@ -1,12 +1,12 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../state/StoreProvider'
-import { MATERIAS, FLASHCARDS, TOPICOS_POR_ID } from '../content'
+import { MATERIAS, FLASHCARDS, SUBTOPICOS_POR_ID } from '../content'
 import { embaralhar } from '../lib/questoes'
 import Flashcard from '../components/Flashcard'
 
 export default function Flashcards() {
-  const { topicoStatus, edits } = useStore()
+  const { subtopicoStatus, edits } = useStore()
 
   const [materiaFiltro, setMateriaFiltro] = useState('')
   const [somenteEstudados, setSomenteEstudados] = useState(true)
@@ -15,9 +15,9 @@ export default function Flashcards() {
   const [vistos, setVistos] = useState(0)
 
   const cartoes = useMemo(() => {
-    // Reaplica as edições feitas na página do tópico.
+    // Reaplica as edições feitas na página do subtópico.
     const base = FLASHCARDS.map((f) => {
-      const editados = edits?.[`topico:${f.topicoId}:flashcards`]
+      const editados = edits?.[`subtopico:${f.subtopicoId}:flashcards`]
       if (!Array.isArray(editados)) return f
       const pos = Number(f.id.split('-fc')[1]) - 1
       const sub = editados[pos]
@@ -26,10 +26,10 @@ export default function Flashcards() {
 
     const filtrados = base
       .filter((f) => !materiaFiltro || f.materiaId === materiaFiltro)
-      .filter((f) => !somenteEstudados || topicoStatus[f.topicoId]?.teoria_concluida)
+      .filter((f) => !somenteEstudados || subtopicoStatus[f.subtopicoId]?.teoria_concluida)
 
     return ordem === 'aleatoria' ? embaralhar(filtrados) : filtrados
-  }, [materiaFiltro, somenteEstudados, ordem, topicoStatus, edits])
+  }, [materiaFiltro, somenteEstudados, ordem, subtopicoStatus, edits])
 
   const atual = cartoes[indice]
 
@@ -48,8 +48,8 @@ export default function Flashcards() {
     <>
       <h1>Flashcards</h1>
       <p className="texto-suave">
-        Revisão avulsa. Clique no cartão para virar. Por padrão só aparecem tópicos cuja teoria você
-        já marcou como concluída.
+        Revisão avulsa. Clique no cartão para virar. Por padrão só aparecem subtópicos cuja teoria
+        você já marcou como concluída.
       </p>
 
       {/* -------------------------------- filtros ------------------------- */}
@@ -80,7 +80,7 @@ export default function Flashcards() {
               checked={somenteEstudados}
               onChange={(e) => reiniciar(() => setSomenteEstudados(e.target.checked))}
             />
-            só tópicos já estudados
+            só subtópicos já estudados
           </label>
         </div>
       </div>
@@ -91,7 +91,7 @@ export default function Flashcards() {
           <div className="vazio">
             <span className="vazio-icone">🃏</span>
             {somenteEstudados
-              ? 'Nenhum flashcard nos tópicos já estudados. Desmarque o filtro ou conclua a teoria de algum tópico.'
+              ? 'Nenhum flashcard nos subtópicos já estudados. Desmarque o filtro ou conclua a teoria de algum subtópico.'
               : 'Nenhum flashcard neste filtro.'}
             <div className="mt-1"><Link to="/materias" className="btn btn-sm">Ir para as matérias</Link></div>
           </div>
@@ -102,14 +102,14 @@ export default function Flashcards() {
             <span className="texto-fraco">
               {indice + 1} de {cartoes.length} · {vistos} virado(s) nesta sessão
             </span>
-            <Link to={`/topico/${atual.topicoId}`} className="texto-pequeno">abrir tópico</Link>
+            <Link to={`/subtopico/${atual.subtopicoId}`} className="texto-pequeno">abrir subtópico</Link>
           </div>
 
           <Flashcard
             key={atual.id}
             pergunta={atual.p}
             resposta={atual.r}
-            rodape={TOPICOS_POR_ID[atual.topicoId]?.nome}
+            rodape={SUBTOPICOS_POR_ID[atual.subtopicoId]?.nome}
             aoVirar={() => setVistos((v) => v + 1)}
           />
 

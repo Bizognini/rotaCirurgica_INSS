@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../state/StoreProvider'
-import { MATERIAS, MATERIAS_POR_ID, topicosDaMateria } from '../content'
+import { MATERIAS, MATERIAS_POR_ID, subtopicosDaMateria } from '../content'
 import { ler, gravar, remover, CHAVES } from '../lib/localStore'
 import { formatarDuracao, formatarHoras, resumoTempo } from '../lib/stats'
 
@@ -21,7 +21,7 @@ export default function Timer() {
   const [agora, setAgora] = useState(Date.now())
   const [salvando, setSalvando] = useState(false)
   const [materiaId, setMateriaId] = useState('')
-  const [topicoId, setTopicoId] = useState('')
+  const [subtopicoId, setSubtopicoId] = useState('')
   const intervalo = useRef(null)
 
   const decorrido =
@@ -64,13 +64,13 @@ export default function Timer() {
       alert('A sessão precisa ter pelo menos 1 minuto para ser registrada.')
       return
     }
-    acoes.salvarSessao({ materiaId: materiaId || null, topicoId: topicoId || null, minutos })
+    acoes.salvarSessao({ materiaId: materiaId || null, subtopicoId: subtopicoId || null, minutos })
     resetar()
     setMateriaId('')
-    setTopicoId('')
+    setSubtopicoId('')
   }
 
-  const topicos = materiaId ? topicosDaMateria(materiaId) : []
+  const subtopicos = materiaId ? subtopicosDaMateria(materiaId) : []
   const t = resumoTempo(sessoes, meta?.horas_semanais_meta ?? 14)
   const recentes = sessoes.slice(0, 8)
 
@@ -78,8 +78,8 @@ export default function Timer() {
     <>
       <h1>Timer de estudo</h1>
       <p className="texto-suave">
-        Ao finalizar, informe a matéria e o tópico. A sessão alimenta a meta semanal, o gráfico de
-        horas e a aderência ao ciclo.
+        Ao finalizar, informe a matéria e o subtópico. A sessão alimenta a meta semanal, o gráfico
+        de horas e a aderência ao ciclo.
       </p>
 
       {/* -------------------------------- relógio ------------------------- */}
@@ -126,7 +126,7 @@ export default function Timer() {
           <select
             className="campo"
             value={materiaId}
-            onChange={(e) => { setMateriaId(e.target.value); setTopicoId('') }}
+            onChange={(e) => { setMateriaId(e.target.value); setSubtopicoId('') }}
             style={{ marginBottom: '.7rem' }}
           >
             <option value="">— não informar —</option>
@@ -135,18 +135,18 @@ export default function Timer() {
             ))}
           </select>
 
-          {topicos.length > 0 && (
+          {subtopicos.length > 0 && (
             <>
-              <label className="campo-rotulo">Tópico (opcional)</label>
+              <label className="campo-rotulo">Subtópico (opcional)</label>
               <select
                 className="campo"
-                value={topicoId}
-                onChange={(e) => setTopicoId(e.target.value)}
+                value={subtopicoId}
+                onChange={(e) => setSubtopicoId(e.target.value)}
                 style={{ marginBottom: '.7rem' }}
               >
                 <option value="">— não informar —</option>
-                {topicos.map((t) => (
-                  <option key={t.id} value={t.id}>{t.nome}</option>
+                {subtopicos.map((s) => (
+                  <option key={s.id} value={s.id}>{s.nome}</option>
                 ))}
               </select>
             </>

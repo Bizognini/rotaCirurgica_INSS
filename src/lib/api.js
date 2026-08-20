@@ -6,7 +6,7 @@ import { supabase, supabaseConfigured, APP_EMAIL } from './supabase'
  */
 
 export const TABELAS = [
-  'topico_status',
+  'subtopico_status',
   'questoes_erradas',
   'anotacoes',
   'simulados_historico',
@@ -57,7 +57,7 @@ export async function carregarTudo() {
   const [
     status, erradas, anotacoes, simulados, sessoes, metas, ciclo, edits, links,
   ] = await Promise.all([
-    supabase.from('topico_status').select('*'),
+    supabase.from('subtopico_status').select('*'),
     supabase.from('questoes_erradas').select('*').order('data_erro', { ascending: false }).limit(600),
     supabase.from('anotacoes').select('*'),
     supabase.from('simulados_historico').select('*').order('data', { ascending: false }).limit(200),
@@ -73,15 +73,15 @@ export async function carregarTudo() {
   if (erro) throw erro.error
 
   return {
-    topicoStatus: Object.fromEntries((status.data || []).map((r) => [r.topico_id, r])),
+    subtopicoStatus: Object.fromEntries((status.data || []).map((r) => [r.subtopico_id, r])),
     questoesErradas: erradas.data || [],
-    anotacoes: Object.fromEntries((anotacoes.data || []).map((r) => [r.topico_id, r.texto])),
+    anotacoes: Object.fromEntries((anotacoes.data || []).map((r) => [r.subtopico_id, r.texto])),
     simulados: simulados.data || [],
     sessoes: sessoes.data || [],
     meta: metas.data || null,
     ciclo: ciclo.data || [],
     edits: Object.fromEntries((edits.data || []).map((r) => [r.chave, r.valor])),
-    links: Object.fromEntries((links.data || []).map((r) => [r.topico_id, r])),
+    links: Object.fromEntries((links.data || []).map((r) => [r.subtopico_id, r])),
   }
 }
 

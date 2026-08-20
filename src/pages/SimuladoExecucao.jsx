@@ -55,6 +55,7 @@ export default function SimuladoExecucao() {
         fonte: q.fonte,
         anoProvaOriginal: q.anoProvaOriginal || null,
         materiaId: q.materiaId,
+        subtopicoId: q.subtopicoId || null,
         topicoId: q.topicoId || null,
         resposta: prova.respostas[q.id] ?? null,
       })),

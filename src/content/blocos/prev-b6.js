@@ -1,22 +1,27 @@
 /**
- * BLOCO 6 da trilha — Reta final: revisão e simulados.
+ * Reta final (revisão) — Bloco 6
  *
- * Não há tópico novo aqui, só consolidação. Como o conteúdo de revisão é
- * majoritariamente previdenciário (EC 103, Lei 8.213 e Lei 8.212 são a espinha
- * dorsal da prova), o bloco fica sob Direito Previdenciário — assim ele aparece
- * no fim da lista da matéria mais pesada, que é onde a revisão precisa ocorrer.
+ * Hierarquia: Matéria > Bloco > Tópico > Subtópico.
+ * O SUBTÓPICO é a unidade de estudo: tem teoria, vídeo, questões e flashcards.
+ * O TÓPICO é apenas um agrupador — seu progresso é derivado dos subtópicos.
  */
 export default {
-  id: 'prev-b5',
+  id: 'prev-b6',
   materiaId: 'prev',
   nome: 'Bloco 6 — Reta final (revisão)',
-  ordem: 5,
-  objetivo: 'Sem conteúdo novo: consolidação, refazimento de erros e simulados cronometrados.',
+  ordem: 6,
+  objetivo: 'Sem conteúdo novo: consolidação, refazimento de erros e simulados.',
   topicos: [
     {
-      id: 'prev-b5-01',
-      nome: 'Revisar pontos fracos identificados nos simulados',
-      teoria: `
+      id: 'prev-b6-t1',
+      nome: 'Consolidação final',
+      videoConfirmado: false,
+      subtopicos: [
+        {
+          id: 'prev-b6-t1-s1',
+          nome: 'Revisar pontos fracos identificados nos simulados',
+          // conteúdo herdado do tópico 'prev-b5-01' da estrutura de 3 níveis
+          teoria: `
 ## Como usar esta etapa
 
 Aqui não se estuda tópico novo. O objetivo é **fechar buracos**.
@@ -50,18 +55,19 @@ Pela distribuição da prova e pelo histórico da banca, os pontos fracos mais c
 
 Se você erra o **mesmo conceito três vezes**, o problema não é falta de revisão — é **entendimento equivocado**. Nesse caso, pare de refazer questões e volte à teoria com uma pergunta específica: *o que exatamente eu estou entendendo errado aqui?* Escreva a resposta no campo de anotações do tópico.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'Quando um tópico vira ponto fraco?', r: 'Quando acumula 2 ou mais erros, somando questões de tópico e de simulado.' },
-        { p: 'Qual o roteiro de revisão de um ponto fraco?', r: 'Reler a teoria → refazer as questões erradas (em variação) → passar os flashcards → só então marcar como resolvido.' },
-        { p: 'O que fazer quando se erra o mesmo conceito 3 vezes?', r: 'Parar de refazer questões e voltar à teoria: o problema é de entendimento, não de revisão.' },
-      ],
-    },
-
-    {
-      id: 'prev-b5-02',
-      nome: 'Refazer as questões erradas das fases anteriores',
-      teoria: `
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'Quando um tópico vira ponto fraco?', r: 'Quando acumula 2 ou mais erros, somando questões de tópico e de simulado.' },
+            { p: 'Qual o roteiro de revisão de um ponto fraco?', r: 'Reler a teoria → refazer as questões erradas (em variação) → passar os flashcards → só então marcar como resolvido.' },
+            { p: 'O que fazer quando se erra o mesmo conceito 3 vezes?', r: 'Parar de refazer questões e voltar à teoria: o problema é de entendimento, não de revisão.' },
+          ],
+        },
+        {
+          id: 'prev-b6-t1-s2',
+          nome: 'Refazer questões erradas nas fases anteriores',
+          // conteúdo herdado do tópico 'prev-b5-02' da estrutura de 3 níveis
+          teoria: `
 ## Por que refazer importa mais que fazer questões novas
 
 Uma questão nova testa o que você **já sabe**. Uma questão errada refeita testa o que você **acabou de corrigir** — e é aí que o aprendizado se consolida.
@@ -99,19 +105,20 @@ Cada erro **anula um acerto**. Isso significa que responder por adivinhação, n
 
 Regra prática: só marque quando tiver **convicção razoável**. Na dúvida genuína, deixar em branco preserva a nota.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'Por que refazer questões erradas vale mais que fazer novas?', r: 'Porque testa exatamente o que acabou de ser corrigido — é onde o aprendizado se consolida.' },
-        { p: 'Quais os quatro motivos de erro?', r: 'Não sabia; sabia mas leu errado; confundiu com conceito parecido; chutou.' },
-        { p: 'Qual o custo do chute na Cebraspe?', r: 'Cada erro anula um acerto. Responder tudo com 50% de acerto resulta em nota líquida ZERO.' },
-        { p: 'Quando deixar em branco?', r: 'Na dúvida genuína. Em branco não pontua nem desconta — preserva a nota.' },
-      ],
-    },
-
-    {
-      id: 'prev-b5-03',
-      nome: 'Um simulado completo por semana, cronometrado',
-      teoria: `
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'Por que refazer questões erradas vale mais que fazer novas?', r: 'Porque testa exatamente o que acabou de ser corrigido — é onde o aprendizado se consolida.' },
+            { p: 'Quais os quatro motivos de erro?', r: 'Não sabia; sabia mas leu errado; confundiu com conceito parecido; chutou.' },
+            { p: 'Qual o custo do chute na Cebraspe?', r: 'Cada erro anula um acerto. Responder tudo com 50% de acerto resulta em nota líquida ZERO.' },
+            { p: 'Quando deixar em branco?', r: 'Na dúvida genuína. Em branco não pontua nem desconta — preserva a nota.' },
+          ],
+        },
+        {
+          id: 'prev-b6-t1-s3',
+          nome: '1 simulado completo por semana, cronometrado, simulando o dia da prova',
+          // conteúdo herdado do tópico 'prev-b5-03' da estrutura de 3 níveis
+          teoria: `
 ## Por que simular de verdade
 
 A prova do Técnico do Seguro Social tem **120 questões** e cerca de **3h30** de duração. Isso dá pouco menos de **1min45s por questão**. Resistência e ritmo se treinam — não aparecem no dia.
@@ -157,19 +164,20 @@ A tela de simulados guarda **todos** os resultados, com evolução ao longo do t
 - **Tempo total** e tempo médio por questão;
 - **Quantidade de questões em branco** — muitas em branco indicam insegurança; poucas com muitos erros indicam excesso de chute.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'Qual o tempo médio por questão na prova?', r: 'Cerca de 1min45s (120 questões em ~3h30).' },
-        { p: 'Qual a estratégia de tempo no simulado?', r: '~2h na primeira passada, ~1h nas marcadas para revisar, ~30min de revisão final.' },
-        { p: 'O que fazer numa questão difícil na primeira passada?', r: 'Marcar para revisar e seguir em frente — travar custa questões que você sabia.' },
-        { p: 'O que observar no histórico de simulados?', r: 'Nota líquida (não só acerto bruto), desempenho por matéria, tempo total e quantidade de questões em branco.' },
-      ],
-    },
-
-    {
-      id: 'prev-b5-04',
-      nome: 'Revisão intensiva: EC 103/2019, Lei 8.213/91 e Lei 8.212/91',
-      teoria: `
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'Qual o tempo médio por questão na prova?', r: 'Cerca de 1min45s (120 questões em ~3h30).' },
+            { p: 'Qual a estratégia de tempo no simulado?', r: '~2h na primeira passada, ~1h nas marcadas para revisar, ~30min de revisão final.' },
+            { p: 'O que fazer numa questão difícil na primeira passada?', r: 'Marcar para revisar e seguir em frente — travar custa questões que você sabia.' },
+            { p: 'O que observar no histórico de simulados?', r: 'Nota líquida (não só acerto bruto), desempenho por matéria, tempo total e quantidade de questões em branco.' },
+          ],
+        },
+        {
+          id: 'prev-b6-t1-s4',
+          nome: 'Revisão intensiva de EC 103/2019, Lei 8.213/91 e Lei 8.212/91',
+          // conteúdo herdado do tópico 'prev-b5-04' da estrutura de 3 níveis
+          teoria: `
 ## A espinha dorsal da prova
 
 Se o tempo acabar e restar apenas uma revisão, que seja esta.
@@ -235,20 +243,21 @@ Se o tempo acabar e restar apenas uma revisão, que seja esta.
 9. Confundir **apropriação indébita** (descontou e não repassou) com **sonegação** (omitiu);
 10. Esquecer que **aposentado que volta a trabalhar contribui**, mas só tem salário-família e reabilitação.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'Regra permanente da EC 103 — idades e tempos?', r: '65 anos e 20 de contribuição (H); 62 anos e 15 (M). Rural e segurado especial: 60 anos, 15 de atividade.' },
-        { p: 'Fórmula do benefício pós-reforma?', r: '60% do salário de benefício + 2% por ano acima de 20 (H) ou 15 (M). SB = média de 100% desde 07/1994.' },
-        { p: 'Três prazos-chave da Lei 8.213/91?', r: 'Período de graça 12/6/3 meses; carência 12/180/24; decadência de revisão 10 anos e prescrição de prestações 5 anos.' },
-        { p: 'Três prazos-chave da Lei 8.212/91?', r: 'Recolhimento: empresa dia 20, doméstico dia 7, individual/facultativo dia 15. Guarda de documentos: 10 anos.' },
-        { p: 'Cite 3 dos erros que mais custam pontos.', r: 'Trocar período de graça por carência; usar 24 anos em vez de 21 para dependente; atribuir a arrecadação ao INSS em vez da Receita Federal.' },
-      ],
-    },
-
-    {
-      id: 'prev-b5-05',
-      nome: 'Revisão de Português focada nos erros recorrentes',
-      teoria: `
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'Regra permanente da EC 103 — idades e tempos?', r: '65 anos e 20 de contribuição (H); 62 anos e 15 (M). Rural e segurado especial: 60 anos, 15 de atividade.' },
+            { p: 'Fórmula do benefício pós-reforma?', r: '60% do salário de benefício + 2% por ano acima de 20 (H) ou 15 (M). SB = média de 100% desde 07/1994.' },
+            { p: 'Três prazos-chave da Lei 8.213/91?', r: 'Período de graça 12/6/3 meses; carência 12/180/24; decadência de revisão 10 anos e prescrição de prestações 5 anos.' },
+            { p: 'Três prazos-chave da Lei 8.212/91?', r: 'Recolhimento: empresa dia 20, doméstico dia 7, individual/facultativo dia 15. Guarda de documentos: 10 anos.' },
+            { p: 'Cite 3 dos erros que mais custam pontos.', r: 'Trocar período de graça por carência; usar 24 anos em vez de 21 para dependente; atribuir a arrecadação ao INSS em vez da Receita Federal.' },
+          ],
+        },
+        {
+          id: 'prev-b6-t1-s5',
+          nome: 'Revisão de Português focada em regras que você mais erra',
+          // conteúdo herdado do tópico 'prev-b5-05' da estrutura de 3 níveis
+          teoria: `
 ## Como revisar Português na reta final
 
 Português tem **~15 questões** — o segundo maior peso. Mas, diferentemente de Previdenciário, não adianta reler toda a gramática: **revise apenas o que você erra**.
@@ -309,19 +318,20 @@ Memorize os três blocos:
 4. Apenas **dois fechos**: *Respeitosamente* (superiores) e *Atenciosamente* (mesma hierarquia ou inferiores);
 5. Pronomes de tratamento levam verbo na **3ª pessoa**, mas o **adjetivo concorda com o sexo** da pessoa.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'Qual o critério duplo dos itens de reescrita?', r: 'A estrutura sintática continua correta E a relação semântica foi preservada. Falhando uma, o item está errado.' },
-        { p: 'Qual o teste infalível da crase?', r: 'Trocar a palavra feminina por masculina: se aparecer "ao", há crase.' },
-        { p: 'Cinco erros clássicos de regência?', r: '"Eu lhe vi" (→ o vi); "visar o cargo" (→ ao cargo); "prefiro do que" (→ prefiro a); "que me refiro" (→ a que me refiro); "cujo o" (→ cujo).' },
-        { p: 'Cinco pontos da redação oficial?', r: 'Padrão ofício unificado; "Excelentíssimo" só ao Presidente; fim do "Vossa Senhoria"; só dois fechos; verbo na 3ª pessoa e adjetivo concordando com o sexo.' },
-      ],
-    },
-
-    {
-      id: 'prev-b5-06',
-      nome: 'Descansar bem na semana da prova',
-      teoria: `
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'Qual o critério duplo dos itens de reescrita?', r: 'A estrutura sintática continua correta E a relação semântica foi preservada. Falhando uma, o item está errado.' },
+            { p: 'Qual o teste infalível da crase?', r: 'Trocar a palavra feminina por masculina: se aparecer "ao", há crase.' },
+            { p: 'Cinco erros clássicos de regência?', r: '"Eu lhe vi" (→ o vi); "visar o cargo" (→ ao cargo); "prefiro do que" (→ prefiro a); "que me refiro" (→ a que me refiro); "cujo o" (→ cujo).' },
+            { p: 'Cinco pontos da redação oficial?', r: 'Padrão ofício unificado; "Excelentíssimo" só ao Presidente; fim do "Vossa Senhoria"; só dois fechos; verbo na 3ª pessoa e adjetivo concordando com o sexo.' },
+          ],
+        },
+        {
+          id: 'prev-b6-t1-s6',
+          nome: 'Descansar bem na semana da prova',
+          // conteúdo herdado do tópico 'prev-b5-06' da estrutura de 3 níveis
+          teoria: `
 ## Por que isso é conteúdo, e não conselho vago
 
 Cérebro cansado erra Cebraspe fácil. Numa prova em que **cada erro anula um acerto**, a queda de atenção nas últimas 30 questões pode custar mais pontos do que uma matéria inteira mal estudada.
@@ -362,12 +372,15 @@ Nada de teoria longa. Só o que é **memória de curto prazo e alto retorno**:
 
 Se você seguiu o ciclo por meses, o conteúdo **já está lá**. A semana da prova não constrói conhecimento novo — ela apenas **protege ou destrói** o que foi construído. Dormir bem, nesse contexto, é estratégia de prova, não indulgência.
 `,
-      questoes: [],
-      flashcards: [
-        { p: 'O que revisar nos últimos dias?', r: 'Prazos, valores e percentuais, listas fechadas, pares que se confundem e mnemônicos — nada de teoria longa.' },
-        { p: 'Qual a estratégia no dia da prova?', r: 'Primeira passada com o que sabe de imediato; marcar as duvidosas; segunda passada; 30 min finais para folha de respostas e revisão.' },
-        { p: 'Por que dormir bem é estratégia de prova?', r: 'Porque cada erro anula um acerto: a queda de atenção nas últimas questões custa mais que uma matéria mal estudada.' },
-        { p: 'O que NÃO fazer na semana da prova?', r: 'Começar assunto novo, fazer maratona de questões na véspera e estudar até tarde no dia anterior.' },
+          questoes: [
+          ],
+          flashcards: [
+            { p: 'O que revisar nos últimos dias?', r: 'Prazos, valores e percentuais, listas fechadas, pares que se confundem e mnemônicos — nada de teoria longa.' },
+            { p: 'Qual a estratégia no dia da prova?', r: 'Primeira passada com o que sabe de imediato; marcar as duvidosas; segunda passada; 30 min finais para folha de respostas e revisão.' },
+            { p: 'Por que dormir bem é estratégia de prova?', r: 'Porque cada erro anula um acerto: a queda de atenção nas últimas questões custa mais que uma matéria mal estudada.' },
+            { p: 'O que NÃO fazer na semana da prova?', r: 'Começar assunto novo, fazer maratona de questões na véspera e estudar até tarde no dia anterior.' },
+          ],
+        },
       ],
     },
   ],

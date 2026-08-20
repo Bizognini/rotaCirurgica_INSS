@@ -1,17 +1,27 @@
 /**
- * Ética no Serviço Público — bloco único
+ * Ética — Bloco 5
+ *
+ * Hierarquia: Matéria > Bloco > Tópico > Subtópico.
+ * O SUBTÓPICO é a unidade de estudo: tem teoria, vídeo, questões e flashcards.
+ * O TÓPICO é apenas um agrupador — seu progresso é derivado dos subtópicos.
  */
 export default {
-  id: 'etica-b1',
+  id: 'etica-b5',
   materiaId: 'etica',
-  nome: 'Bloco único — Ética no Serviço Público',
-  ordem: 1,
+  nome: 'Bloco 5 — Ética',
+  ordem: 5,
   objetivo: 'Decreto 1.171/1994 e Decreto 6.029/2007.',
   topicos: [
     {
-      id: 'etica-b1-01',
-      nome: 'Código de Ética do Servidor Público (Decreto nº 1.171/1994)',
-      teoria: `
+      id: 'etica-b5-t1',
+      nome: 'Código de Ética do Servidor Público',
+      videoConfirmado: false,
+      subtopicos: [
+        {
+          id: 'etica-b5-t1-s1',
+          nome: 'Decreto nº 1.171/1994 — regras deontológicas',
+          // conteúdo herdado do tópico 'etica-b1-01' da estrutura de 3 níveis
+          teoria: `
 ## Estrutura
 
 O Decreto nº 1.171/1994 aprova o **Código de Ética Profissional do Servidor Público Civil do Poder Executivo Federal**, dividido em três seções:
@@ -91,27 +101,72 @@ Cada órgão deve criar uma **Comissão de Ética**, encarregada de orientar e a
 
 A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e seu fundamento sempre constará do respectivo parecer, assinado por todos os integrantes, com ciência do faltoso.
 `,
-      questoes: [
-        { id: 'etica-b1-01-q1', enunciado: 'Tratar mal uma pessoa que paga seus tributos significa causar-lhe dano moral, do mesmo modo que causar dano a qualquer bem público equivale a dano patrimonial.', certa: true, explicacao: 'Reprodução do inciso V da Seção I do Código de Ética. Fundamento do item cobrado na prova de 2022.', baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção I, V', variacoes: [{ enunciado: 'O tratamento inadequado dispensado ao usuário do serviço público configura mera falha administrativa, sem repercussão moral.', certa: false, explicacao: 'O Código é expresso: tratar mal quem paga tributos causa DANO MORAL ao usuário.' }] },
-        { id: 'etica-b1-01-q2', enunciado: 'É vedado ao servidor público federal ligar seu nome a empreendimentos de cunho duvidoso, ainda que cumpra regularmente seus deveres funcionais.', certa: true, explicacao: 'A vedação da alínea "o" do inciso XV é autônoma e independe da conduta funcional interna. Item cobrado na prova de 2022.', baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção III, XV, "o"', variacoes: [{ enunciado: 'É permitido ao servidor apresentar-se embriagado fora do horário de serviço, desde que não o faça habitualmente.', certa: false, explicacao: 'A vedação alcança apresentar-se embriagado no serviço OU fora dele habitualmente — mas a leitura correta da alínea "m" torna incorreta a generalização do enunciado.' }] },
-        { id: 'etica-b1-01-q3', enunciado: 'Participar de movimentos e estudos relacionados à melhoria do exercício de suas funções constitui dever fundamental do servidor público.', certa: true, explicacao: 'Alínea "j" do inciso XIV. Item cobrado (invertido) na prova de 2022, quando o enunciado afirmava não se tratar de dever.', baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção II, XIV, "j"', variacoes: [{ enunciado: 'O servidor pode deixar de participar, ainda que injustificadamente, de estudos voltados à melhoria de suas funções, por não constituir dever fundamental.', certa: false, explicacao: 'A participação é dever fundamental expresso na alínea "j".' }] },
-        { id: 'etica-b1-01-q4', enunciado: 'A única penalidade aplicável pela Comissão de Ética é a censura.', certa: true, explicacao: 'A Comissão de Ética orienta, aconselha e pode aplicar exclusivamente a censura, com parecer fundamentado e ciência do faltoso.', baseLegal: 'Decreto nº 1.171/1994, Anexo, XXII', variacoes: [{ enunciado: 'A Comissão de Ética pode aplicar as penalidades de advertência, suspensão e censura.', certa: false, explicacao: 'Somente CENSURA. Advertência e suspensão são penalidades da Lei nº 8.112/90, aplicadas em processo disciplinar.' }] },
-        { id: 'etica-b1-01-q5', enunciado: 'O servidor deve decidir não somente entre o legal e o ilegal, mas principalmente entre o honesto e o desonesto.', certa: true, explicacao: 'Inciso II da Seção I — a moralidade administrativa é exigência que vai além da mera legalidade.', baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção I, II', variacoes: [{ enunciado: 'A conduta ética do servidor público é exigida apenas no exercício do cargo, não alcançando sua vida privada.', certa: false, explicacao: 'O inciso I é expresso: os primados éticos valem no exercício do cargo OU FORA DELE.' }] },
-      ],
-      flashcards: [
-        { p: 'Como se estrutura o Decreto 1.171/1994?', r: 'Seção I: regras deontológicas (incisos I a XV). Seção II: deveres (inciso XIV). Seção III: vedações (inciso XV).' },
-        { p: 'O que diz o inciso V da Seção I?', r: 'Tratar mal quem paga tributos causa dano moral; causar dano a bem público equivale a dano patrimonial.' },
-        { p: 'A ética alcança a vida privada do servidor?', r: 'Sim. O inciso I é expresso: no exercício do cargo OU FORA DELE.' },
-        { p: 'Qual a única penalidade da Comissão de Ética?', r: 'A CENSURA, com parecer fundamentado assinado por todos os integrantes e ciência do faltoso.' },
-        { p: 'Cite três vedações do inciso XV.', r: 'Usar o cargo para favorecimento; receber vantagem de qualquer espécie; usar informação privilegiada; ligar o nome a empreendimento de cunho duvidoso; ser conivente com erro.' },
-        { p: 'Qual dever trata do atendimento ao público?', r: 'Alínea "g": ser cortês, ter urbanidade, disponibilidade e atenção, sem preconceito ou distinção, abstendo-se de causar dano moral.' },
-      ],
-    },
-
-    {
-      id: 'etica-b1-02',
-      nome: 'Decreto nº 6.029/2007 — Sistema de Gestão da Ética',
-      teoria: `
+          questoes: [
+            {
+              id: 'etica-b1-01-q1',
+              enunciado: 'Tratar mal uma pessoa que paga seus tributos significa causar-lhe dano moral, do mesmo modo que causar dano a qualquer bem público equivale a dano patrimonial.',
+              certa: true,
+              explicacao: 'Reprodução do inciso V da Seção I do Código de Ética. Fundamento do item cobrado na prova de 2022.',
+              baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção I, V',
+              variacoes: [
+                { enunciado: 'O tratamento inadequado dispensado ao usuário do serviço público configura mera falha administrativa, sem repercussão moral.', certa: false, explicacao: 'O Código é expresso: tratar mal quem paga tributos causa DANO MORAL ao usuário.' },
+              ],
+            },
+            {
+              id: 'etica-b1-01-q2',
+              enunciado: 'É vedado ao servidor público federal ligar seu nome a empreendimentos de cunho duvidoso, ainda que cumpra regularmente seus deveres funcionais.',
+              certa: true,
+              explicacao: 'A vedação da alínea "o" do inciso XV é autônoma e independe da conduta funcional interna. Item cobrado na prova de 2022.',
+              baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção III, XV, "o"',
+              variacoes: [
+                { enunciado: 'É permitido ao servidor apresentar-se embriagado fora do horário de serviço, desde que não o faça habitualmente.', certa: false, explicacao: 'A vedação alcança apresentar-se embriagado no serviço OU fora dele habitualmente — mas a leitura correta da alínea "m" torna incorreta a generalização do enunciado.' },
+              ],
+            },
+            {
+              id: 'etica-b1-01-q3',
+              enunciado: 'Participar de movimentos e estudos relacionados à melhoria do exercício de suas funções constitui dever fundamental do servidor público.',
+              certa: true,
+              explicacao: 'Alínea "j" do inciso XIV. Item cobrado (invertido) na prova de 2022, quando o enunciado afirmava não se tratar de dever.',
+              baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção II, XIV, "j"',
+              variacoes: [
+                { enunciado: 'O servidor pode deixar de participar, ainda que injustificadamente, de estudos voltados à melhoria de suas funções, por não constituir dever fundamental.', certa: false, explicacao: 'A participação é dever fundamental expresso na alínea "j".' },
+              ],
+            },
+            {
+              id: 'etica-b1-01-q4',
+              enunciado: 'A única penalidade aplicável pela Comissão de Ética é a censura.',
+              certa: true,
+              explicacao: 'A Comissão de Ética orienta, aconselha e pode aplicar exclusivamente a censura, com parecer fundamentado e ciência do faltoso.',
+              baseLegal: 'Decreto nº 1.171/1994, Anexo, XXII',
+              variacoes: [
+                { enunciado: 'A Comissão de Ética pode aplicar as penalidades de advertência, suspensão e censura.', certa: false, explicacao: 'Somente CENSURA. Advertência e suspensão são penalidades da Lei nº 8.112/90, aplicadas em processo disciplinar.' },
+              ],
+            },
+            {
+              id: 'etica-b1-01-q5',
+              enunciado: 'O servidor deve decidir não somente entre o legal e o ilegal, mas principalmente entre o honesto e o desonesto.',
+              certa: true,
+              explicacao: 'Inciso II da Seção I — a moralidade administrativa é exigência que vai além da mera legalidade.',
+              baseLegal: 'Decreto nº 1.171/1994, Anexo, Seção I, II',
+              variacoes: [
+                { enunciado: 'A conduta ética do servidor público é exigida apenas no exercício do cargo, não alcançando sua vida privada.', certa: false, explicacao: 'O inciso I é expresso: os primados éticos valem no exercício do cargo OU FORA DELE.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Como se estrutura o Decreto 1.171/1994?', r: 'Seção I: regras deontológicas (incisos I a XV). Seção II: deveres (inciso XIV). Seção III: vedações (inciso XV).' },
+            { p: 'O que diz o inciso V da Seção I?', r: 'Tratar mal quem paga tributos causa dano moral; causar dano a bem público equivale a dano patrimonial.' },
+            { p: 'A ética alcança a vida privada do servidor?', r: 'Sim. O inciso I é expresso: no exercício do cargo OU FORA DELE.' },
+            { p: 'Qual a única penalidade da Comissão de Ética?', r: 'A CENSURA, com parecer fundamentado assinado por todos os integrantes e ciência do faltoso.' },
+            { p: 'Cite três vedações do inciso XV.', r: 'Usar o cargo para favorecimento; receber vantagem de qualquer espécie; usar informação privilegiada; ligar o nome a empreendimento de cunho duvidoso; ser conivente com erro.' },
+            { p: 'Qual dever trata do atendimento ao público?', r: 'Alínea "g": ser cortês, ter urbanidade, disponibilidade e atenção, sem preconceito ou distinção, abstendo-se de causar dano moral.' },
+          ],
+        },
+        {
+          id: 'etica-b5-t1-s2',
+          nome: 'Decreto nº 6.029/2007 e alterações',
+          // conteúdo herdado do tópico 'etica-b1-02' da estrutura de 3 níveis
+          teoria: `
 ## Objeto
 
 O Decreto nº 6.029/2007 institui o **Sistema de Gestão da Ética do Poder Executivo Federal**, com a finalidade de **promover atividades que dispõem sobre a conduta ética** no âmbito do Executivo Federal.
@@ -188,19 +243,57 @@ Cada órgão e entidade da Administração Pública Federal direta e indireta **
 | Consultoria | Presidente e Ministros de Estado | Dirigentes e servidores do órgão |
 | Norma que aplica | Código de Conduta da Alta Administração | Decreto nº 1.171/1994 |
 `,
-      questoes: [
-        { id: 'etica-b1-02-q1', enunciado: 'Consulta de Ministro de Estado a respeito de matéria de ética pública deve ser dirigida à Comissão de Ética Pública, que integra o Sistema de Gestão da Ética do Poder Executivo Federal.', certa: true, explicacao: 'A CEP atua como instância consultiva do Presidente da República e dos Ministros de Estado. Item cobrado na prova de 2022.', baseLegal: 'Decreto nº 6.029/2007, arts. 2º, I, e 4º, I', variacoes: [{ enunciado: 'A Comissão de Ética Pública é composta por sete brasileiros designados pelo Presidente da República, para mandato de três anos, permitida uma recondução.', certa: true, explicacao: 'Correto — art. 3º do Decreto nº 6.029/2007. A atuação é não remunerada.' }] },
-        { id: 'etica-b1-02-q2', enunciado: 'As autoridades competentes dos órgãos do Poder Executivo Federal poderão alegar sigilo para deixar de prestar informação solicitada pelas comissões de ética.', certa: false, explicacao: 'O art. 10, §2º, veda expressamente a alegação de sigilo. As comissões ficam obrigadas a manter o mesmo grau de sigilo do órgão de origem. Item cobrado na prova de 2022.', baseLegal: 'Decreto nº 6.029/2007, art. 10, §2º', variacoes: [{ enunciado: 'As comissões de ética, ao receberem informações sigilosas, ficam obrigadas a manter o mesmo grau de sigilo do órgão de origem.', certa: true, explicacao: 'Correto — é a contrapartida da vedação de alegação de sigilo.' }] },
-        { id: 'etica-b1-02-q3', enunciado: 'As instâncias superiores dos órgãos e entidades do Poder Executivo Federal estão dispensadas de garantir os recursos necessários ao funcionamento das comissões de ética.', certa: false, explicacao: 'O art. 9º, parágrafo único, impõe justamente o contrário: devem garantir recursos humanos, materiais e financeiros. Item cobrado na prova de 2022.', baseLegal: 'Decreto nº 6.029/2007, art. 9º, parágrafo único', variacoes: [{ enunciado: 'Cabe às instâncias superiores dos órgãos garantir os recursos humanos, materiais e financeiros necessários ao cumprimento das atribuições das comissões de ética.', certa: true, explicacao: 'Correto — art. 9º, parágrafo único, do Decreto nº 6.029/2007.' }] },
-        { id: 'etica-b1-02-q4', enunciado: 'As comissões de ética dos órgãos e entidades são compostas por três membros titulares e três suplentes, com mandatos não coincidentes de três anos.', certa: true, explicacao: 'Art. 7º do Decreto nº 6.029/2007. Os membros são escolhidos entre servidores e empregados do quadro permanente.', baseLegal: 'Decreto nº 6.029/2007, art. 7º', variacoes: [{ enunciado: 'Os trabalhos das comissões de ética possuem natureza de processo administrativo disciplinar, podendo resultar em demissão.', certa: false, explicacao: 'Não têm natureza de PAD. A penalidade aplicável é a censura ética; havendo indícios de infração disciplinar, os autos são encaminhados à autoridade competente.' }] },
-      ],
-      flashcards: [
-        { p: 'O que institui o Decreto 6.029/2007?', r: 'O Sistema de Gestão da Ética do Poder Executivo Federal, integrado pela CEP e pelas comissões de ética dos órgãos.' },
-        { p: 'Composição e mandato da CEP?', r: '7 brasileiros designados pelo Presidente, mandato de 3 anos, permitida uma recondução, atuação não remunerada.' },
-        { p: 'A CEP assessora quem?', r: 'O Presidente da República e os Ministros de Estado em matéria de ética pública.' },
-        { p: 'Pode-se alegar sigilo para não informar à comissão de ética?', r: 'Não. Vedação expressa (art. 10, §2º). A comissão fica obrigada a manter o mesmo grau de sigilo.' },
-        { p: 'Quem custeia as comissões de ética?', r: 'As instâncias superiores dos órgãos, que devem garantir recursos humanos, materiais e financeiros.' },
-        { p: 'Composição das comissões setoriais?', r: '3 titulares e 3 suplentes, servidores do quadro permanente, mandatos não coincidentes de 3 anos.' },
+          questoes: [
+            {
+              id: 'etica-b1-02-q1',
+              enunciado: 'Consulta de Ministro de Estado a respeito de matéria de ética pública deve ser dirigida à Comissão de Ética Pública, que integra o Sistema de Gestão da Ética do Poder Executivo Federal.',
+              certa: true,
+              explicacao: 'A CEP atua como instância consultiva do Presidente da República e dos Ministros de Estado. Item cobrado na prova de 2022.',
+              baseLegal: 'Decreto nº 6.029/2007, arts. 2º, I, e 4º, I',
+              variacoes: [
+                { enunciado: 'A Comissão de Ética Pública é composta por sete brasileiros designados pelo Presidente da República, para mandato de três anos, permitida uma recondução.', certa: true, explicacao: 'Correto — art. 3º do Decreto nº 6.029/2007. A atuação é não remunerada.' },
+              ],
+            },
+            {
+              id: 'etica-b1-02-q2',
+              enunciado: 'As autoridades competentes dos órgãos do Poder Executivo Federal poderão alegar sigilo para deixar de prestar informação solicitada pelas comissões de ética.',
+              certa: false,
+              explicacao: 'O art. 10, §2º, veda expressamente a alegação de sigilo. As comissões ficam obrigadas a manter o mesmo grau de sigilo do órgão de origem. Item cobrado na prova de 2022.',
+              baseLegal: 'Decreto nº 6.029/2007, art. 10, §2º',
+              variacoes: [
+                { enunciado: 'As comissões de ética, ao receberem informações sigilosas, ficam obrigadas a manter o mesmo grau de sigilo do órgão de origem.', certa: true, explicacao: 'Correto — é a contrapartida da vedação de alegação de sigilo.' },
+              ],
+            },
+            {
+              id: 'etica-b1-02-q3',
+              enunciado: 'As instâncias superiores dos órgãos e entidades do Poder Executivo Federal estão dispensadas de garantir os recursos necessários ao funcionamento das comissões de ética.',
+              certa: false,
+              explicacao: 'O art. 9º, parágrafo único, impõe justamente o contrário: devem garantir recursos humanos, materiais e financeiros. Item cobrado na prova de 2022.',
+              baseLegal: 'Decreto nº 6.029/2007, art. 9º, parágrafo único',
+              variacoes: [
+                { enunciado: 'Cabe às instâncias superiores dos órgãos garantir os recursos humanos, materiais e financeiros necessários ao cumprimento das atribuições das comissões de ética.', certa: true, explicacao: 'Correto — art. 9º, parágrafo único, do Decreto nº 6.029/2007.' },
+              ],
+            },
+            {
+              id: 'etica-b1-02-q4',
+              enunciado: 'As comissões de ética dos órgãos e entidades são compostas por três membros titulares e três suplentes, com mandatos não coincidentes de três anos.',
+              certa: true,
+              explicacao: 'Art. 7º do Decreto nº 6.029/2007. Os membros são escolhidos entre servidores e empregados do quadro permanente.',
+              baseLegal: 'Decreto nº 6.029/2007, art. 7º',
+              variacoes: [
+                { enunciado: 'Os trabalhos das comissões de ética possuem natureza de processo administrativo disciplinar, podendo resultar em demissão.', certa: false, explicacao: 'Não têm natureza de PAD. A penalidade aplicável é a censura ética; havendo indícios de infração disciplinar, os autos são encaminhados à autoridade competente.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'O que institui o Decreto 6.029/2007?', r: 'O Sistema de Gestão da Ética do Poder Executivo Federal, integrado pela CEP e pelas comissões de ética dos órgãos.' },
+            { p: 'Composição e mandato da CEP?', r: '7 brasileiros designados pelo Presidente, mandato de 3 anos, permitida uma recondução, atuação não remunerada.' },
+            { p: 'A CEP assessora quem?', r: 'O Presidente da República e os Ministros de Estado em matéria de ética pública.' },
+            { p: 'Pode-se alegar sigilo para não informar à comissão de ética?', r: 'Não. Vedação expressa (art. 10, §2º). A comissão fica obrigada a manter o mesmo grau de sigilo.' },
+            { p: 'Quem custeia as comissões de ética?', r: 'As instâncias superiores dos órgãos, que devem garantir recursos humanos, materiais e financeiros.' },
+            { p: 'Composição das comissões setoriais?', r: '3 titulares e 3 suplentes, servidores do quadro permanente, mandatos não coincidentes de 3 anos.' },
+          ],
+        },
       ],
     },
   ],

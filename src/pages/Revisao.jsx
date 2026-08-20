@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../state/StoreProvider'
-import { MATERIAS, MATERIAS_POR_ID, TOPICOS_POR_ID } from '../content'
+import { MATERIAS, MATERIAS_POR_ID, SUBTOPICOS_POR_ID } from '../content'
 import { variacaoParaRefazer } from '../lib/questoes'
 import { pontosFracosAtivos } from '../lib/stats'
 import QuestaoCE from '../components/QuestaoCE'
@@ -13,7 +13,7 @@ function CartaoRefazer({ errada, aoConcluir }) {
   const [variacao] = useState(() => variacaoParaRefazer(errada))
   const [feito, setFeito] = useState(false)
 
-  const topico = TOPICOS_POR_ID[errada.topico_id]
+  const subtopico = SUBTOPICOS_POR_ID[errada.subtopico_id]
   const materia = MATERIAS_POR_ID[errada.materia_id]
 
   if (!variacao) {
@@ -21,7 +21,7 @@ function CartaoRefazer({ errada, aoConcluir }) {
       <div className="card">
         <p className="texto-suave mb-0">
           Não há variação cadastrada para esta questão.{' '}
-          {topico && <Link to={`/topico/${topico.id}`}>Revisar o tópico</Link>}
+          {subtopico && <Link to={`/subtopico/${subtopico.id}`}>Revisar o subtópico</Link>}
         </p>
       </div>
     )
@@ -37,9 +37,9 @@ function CartaoRefazer({ errada, aoConcluir }) {
         <span className="etiqueta etiqueta-amarela">
           origem: {errada.origem === 'simulado' ? 'simulado' : 'questão de tópico'}
         </span>
-        {topico && (
-          <Link to={`/topico/${topico.id}`} className="etiqueta" style={{ textDecoration: 'none' }}>
-            {topico.nome.slice(0, 34)}…
+        {subtopico && (
+          <Link to={`/subtopico/${subtopico.id}`} className="etiqueta" style={{ textDecoration: 'none' }}>
+            {subtopico.nome.slice(0, 34)}…
           </Link>
         )}
       </div>
@@ -51,6 +51,7 @@ function CartaoRefazer({ errada, aoConcluir }) {
         aoResponder={(valor) => {
           const acertou = valor === variacao.certa
           acoes.registrarResposta({
+            subtopicoId: errada.subtopico_id,
             topicoId: errada.topico_id,
             materiaId: errada.materia_id,
             questao: variacao,
@@ -74,12 +75,12 @@ function CartaoRefazer({ errada, aoConcluir }) {
 /* --------------------------------- página -------------------------------- */
 
 export default function Revisao() {
-  const { topicoStatus, questoesErradas, acoes } = useStore()
+  const { subtopicoStatus, questoesErradas, acoes } = useStore()
   const [materiaFiltro, setMateriaFiltro] = useState('')
   const [origemFiltro, setOrigemFiltro] = useState('')
   const [indiceRefazendo, setIndiceRefazendo] = useState(0)
 
-  const fracos = useMemo(() => pontosFracosAtivos(topicoStatus), [topicoStatus])
+  const fracos = useMemo(() => pontosFracosAtivos(subtopicoStatus), [subtopicoStatus])
 
   const pendentes = useMemo(
     () =>
@@ -112,8 +113,8 @@ export default function Revisao() {
           <div className="aviso aviso-vermelho" style={{ marginBottom: '.9rem' }}>
             <span>⚠️</span>
             <span>
-              <strong>{fracos.length} tópico(s)</strong> acumularam 2 ou mais erros.
-              Reduza o ritmo de tópicos novos até zerar esta lista.
+              <strong>{fracos.length} subtópico(s)</strong> acumularam 2 ou mais erros.
+              Reduza o ritmo de subtópicos novos até zerar esta lista.
             </span>
           </div>
 
@@ -128,7 +129,7 @@ export default function Revisao() {
                   <span className="etiqueta etiqueta-vermelha">{f.erros} erros</span>
                 </div>
                 <div className="linha mt-1">
-                  <Link to={`/topico/${f.id}`} className="btn btn-sm crescer">Revisar tópico</Link>
+                  <Link to={`/subtopico/${f.id}`} className="btn btn-sm crescer">Revisar subtópico</Link>
                   <button className="btn btn-verde btn-sm" onClick={() => acoes.resolverPontoFraco(f.id)}>
                     ✓ resolvido
                   </button>

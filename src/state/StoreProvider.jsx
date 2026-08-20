@@ -15,7 +15,7 @@ import { CICLO_PADRAO } from '../content/ciclo'
  */
 
 const ESTADO_INICIAL = {
-  topicoStatus: {},
+  subtopicoStatus: {},
   questoesErradas: [],
   anotacoes: {},
   simulados: [],
@@ -153,8 +153,8 @@ export function StoreProvider({ children }) {
         const p = { ...anterior }
         if (evento === 'DELETE') {
           switch (tabela) {
-            case 'topico_status': {
-              const c = { ...p.topicoStatus }; delete c[antigo?.topico_id]; p.topicoStatus = c; break
+            case 'subtopico_status': {
+              const c = { ...p.subtopicoStatus }; delete c[antigo?.subtopico_id]; p.subtopicoStatus = c; break
             }
             case 'questoes_erradas':
               p.questoesErradas = p.questoesErradas.filter((q) => q.id !== antigo?.id); break
@@ -168,12 +168,12 @@ export function StoreProvider({ children }) {
         }
 
         switch (tabela) {
-          case 'topico_status':
-            p.topicoStatus = { ...p.topicoStatus, [novo.topico_id]: novo }; break
+          case 'subtopico_status':
+            p.subtopicoStatus = { ...p.subtopicoStatus, [novo.subtopico_id]: novo }; break
           case 'anotacoes':
-            p.anotacoes = { ...p.anotacoes, [novo.topico_id]: novo.texto }; break
+            p.anotacoes = { ...p.anotacoes, [novo.subtopico_id]: novo.texto }; break
           case 'links_video':
-            p.links = { ...p.links, [novo.topico_id]: novo }; break
+            p.links = { ...p.links, [novo.subtopico_id]: novo }; break
           case 'conteudo_edits':
             p.edits = { ...p.edits, [novo.chave]: novo.valor }; break
           case 'metas':
@@ -198,9 +198,9 @@ export function StoreProvider({ children }) {
      ========================================================================= */
 
   const statusDe = useCallback(
-    (topicoId) =>
-      estadoRef.current.topicoStatus[topicoId] || {
-        topico_id: topicoId,
+    (subtopicoId) =>
+      estadoRef.current.subtopicoStatus[subtopicoId] || {
+        subtopico_id: subtopicoId,
         teoria_concluida: false,
         questoes_concluidas: false,
         revisado: false,
@@ -212,15 +212,15 @@ export function StoreProvider({ children }) {
   )
 
   const gravarStatus = useCallback(
-    (topicoId, mudancas) => {
-      const atual = statusDe(topicoId)
-      const novo = { ...atual, ...mudancas, topico_id: topicoId, atualizado_em: new Date().toISOString() }
-      aplicar((p) => ({ ...p, topicoStatus: { ...p.topicoStatus, [topicoId]: novo } }))
+    (subtopicoId, mudancas) => {
+      const atual = statusDe(subtopicoId)
+      const novo = { ...atual, ...mudancas, subtopico_id: subtopicoId, atualizado_em: new Date().toISOString() }
+      aplicar((p) => ({ ...p, subtopicoStatus: { ...p.subtopicoStatus, [subtopicoId]: novo } }))
       escrever({
         tipo: 'upsert',
-        tabela: 'topico_status',
-        chaveConflito: 'user_id,topico_id',
-        dedupeKey: `topico_status:${topicoId}`,
+        tabela: 'subtopico_status',
+        chaveConflito: 'user_id,subtopico_id',
+        dedupeKey: `subtopico_status:${subtopicoId}`,
         payload: novo,
       })
       return novo
@@ -231,24 +231,24 @@ export function StoreProvider({ children }) {
   const acoes = useMemo(
     () => ({
       /* ---------------------------------------------------- status simples */
-      marcarTeoria: (topicoId, valor) => gravarStatus(topicoId, { teoria_concluida: valor }),
-      marcarQuestoes: (topicoId, valor) => gravarStatus(topicoId, { questoes_concluidas: valor }),
-      marcarRevisado: (topicoId, valor) => gravarStatus(topicoId, { revisado: valor }),
-      resolverPontoFraco: (topicoId) =>
-        gravarStatus(topicoId, { marcado_ponto_fraco: false, total_erros: 0, revisado: true }),
+      marcarTeoria: (subtopicoId, valor) => gravarStatus(subtopicoId, { teoria_concluida: valor }),
+      marcarQuestoes: (subtopicoId, valor) => gravarStatus(subtopicoId, { questoes_concluidas: valor }),
+      marcarRevisado: (subtopicoId, valor) => gravarStatus(subtopicoId, { revisado: valor }),
+      resolverPontoFraco: (subtopicoId) =>
+        gravarStatus(subtopicoId, { marcado_ponto_fraco: false, total_erros: 0, revisado: true }),
 
       /* --------------------------------------- resultado de uma questão */
       /**
        * Detecção automática de ponto fraco: 2+ erros no mesmo tópico, somando
        * questões de tópico e de simulado, marcam o tópico para revisão.
        */
-      registrarResposta: ({ topicoId, materiaId, questao, acertou, origem }) => {
-        if (!topicoId) return null
-        const atual = statusDe(topicoId)
+      registrarResposta: ({ subtopicoId, topicoId, materiaId, questao, acertou, origem }) => {
+        if (!subtopicoId) return null
+        const atual = statusDe(subtopicoId)
         const erros = atual.total_erros + (acertou ? 0 : 1)
         const acertos = atual.total_acertos + (acertou ? 1 : 0)
 
-        const novo = gravarStatus(topicoId, {
+        const novo = gravarStatus(subtopicoId, {
           total_erros: erros,
           total_acertos: acertos,
           marcado_ponto_fraco: erros >= 2 ? true : atual.marcado_ponto_fraco,
@@ -257,7 +257,8 @@ export function StoreProvider({ children }) {
         if (!acertou) {
           const registro = {
             id: crypto.randomUUID(),
-            topico_id: topicoId,
+            subtopico_id: subtopicoId,
+            topico_id: subtopicoId || null,   // coluna legada: guarda o subtópico
             materia_id: materiaId,
             questao_id: questao?.id || null,
             origem,
@@ -283,18 +284,18 @@ export function StoreProvider({ children }) {
        * e gravamos uma vez só — inclusive a detecção de ponto fraco.
        */
       registrarResultadoSimulado: ({ questoes, respostas }) => {
-        const base = estadoRef.current.topicoStatus
+        const base = estadoRef.current.subtopicoStatus
         const novos = {}
         const erradas = []
 
         questoes.forEach((q) => {
           const resposta = respostas[q.id]
           if (resposta === undefined || resposta === null) return   // branco não conta
-          if (!q.topicoId) return                                   // questão sem tópico mapeado
+          if (!q.subtopicoId) return                                // questão sem subtópico mapeado
 
           const acertou = resposta === q.certa
-          const anterior = novos[q.topicoId] || base[q.topicoId] || {
-            topico_id: q.topicoId,
+          const anterior = novos[q.subtopicoId] || base[q.subtopicoId] || {
+            subtopico_id: q.subtopicoId,
             teoria_concluida: false,
             questoes_concluidas: false,
             revisado: false,
@@ -304,9 +305,9 @@ export function StoreProvider({ children }) {
           }
 
           const erros = (anterior.total_erros || 0) + (acertou ? 0 : 1)
-          novos[q.topicoId] = {
+          novos[q.subtopicoId] = {
             ...anterior,
-            topico_id: q.topicoId,
+            subtopico_id: q.subtopicoId,
             total_erros: erros,
             total_acertos: (anterior.total_acertos || 0) + (acertou ? 1 : 0),
             marcado_ponto_fraco: erros >= 2 ? true : Boolean(anterior.marcado_ponto_fraco),
@@ -316,7 +317,8 @@ export function StoreProvider({ children }) {
           if (!acertou) {
             erradas.push({
               id: crypto.randomUUID(),
-              topico_id: q.topicoId,
+              subtopico_id: q.subtopicoId,
+              topico_id: q.topicoId || null,
               materia_id: q.materiaId,
               questao_id: q.id,
               origem: 'simulado',
@@ -332,16 +334,16 @@ export function StoreProvider({ children }) {
 
         aplicar((p) => ({
           ...p,
-          topicoStatus: { ...p.topicoStatus, ...novos },
+          subtopicoStatus: { ...p.subtopicoStatus, ...novos },
           questoesErradas: [...erradas, ...p.questoesErradas],
         }))
 
         Object.values(novos).forEach((s) =>
           escrever({
             tipo: 'upsert',
-            tabela: 'topico_status',
-            chaveConflito: 'user_id,topico_id',
-            dedupeKey: `topico_status:${s.topico_id}`,
+            tabela: 'subtopico_status',
+            chaveConflito: 'user_id,subtopico_id',
+            dedupeKey: `subtopico_status:${s.subtopico_id}`,
             payload: s,
           })
         )
@@ -349,7 +351,7 @@ export function StoreProvider({ children }) {
           escrever({ tipo: 'insert', tabela: 'questoes_erradas', payload: erradas })
         }
 
-        return { topicosAfetados: Object.keys(novos).length, erradas: erradas.length }
+        return { subtopicosAfetados: Object.keys(novos).length, erradas: erradas.length }
       },
 
       marcarErradaRefeita: (id, acertou) => {
@@ -369,14 +371,14 @@ export function StoreProvider({ children }) {
       },
 
       /* ------------------------------------------------------- anotações */
-      salvarAnotacao: (topicoId, texto) => {
-        aplicar((p) => ({ ...p, anotacoes: { ...p.anotacoes, [topicoId]: texto } }))
+      salvarAnotacao: (subtopicoId, texto) => {
+        aplicar((p) => ({ ...p, anotacoes: { ...p.anotacoes, [subtopicoId]: texto } }))
         escrever({
           tipo: 'upsert',
           tabela: 'anotacoes',
-          chaveConflito: 'user_id,topico_id',
-          dedupeKey: `anotacoes:${topicoId}`,
-          payload: { topico_id: topicoId, texto, atualizado_em: new Date().toISOString() },
+          chaveConflito: 'user_id,subtopico_id',
+          dedupeKey: `anotacoes:${subtopicoId}`,
+          payload: { subtopico_id: subtopicoId, texto, atualizado_em: new Date().toISOString() },
         })
       },
 
@@ -393,14 +395,14 @@ export function StoreProvider({ children }) {
       },
 
       /* ------------------------------------------------- link de vídeo */
-      salvarLinkVideo: (topicoId, url, titulo = null) => {
-        const registro = { topico_id: topicoId, url, titulo, atualizado_em: new Date().toISOString() }
-        aplicar((p) => ({ ...p, links: { ...p.links, [topicoId]: registro } }))
+      salvarLinkVideo: (subtopicoId, url, titulo = null) => {
+        const registro = { subtopico_id: subtopicoId, url, titulo, atualizado_em: new Date().toISOString() }
+        aplicar((p) => ({ ...p, links: { ...p.links, [subtopicoId]: registro } }))
         escrever({
           tipo: 'upsert',
           tabela: 'links_video',
-          chaveConflito: 'user_id,topico_id',
-          dedupeKey: `links_video:${topicoId}`,
+          chaveConflito: 'user_id,subtopico_id',
+          dedupeKey: `links_video:${subtopicoId}`,
           payload: registro,
         })
       },
@@ -414,12 +416,12 @@ export function StoreProvider({ children }) {
       },
 
       /* ----------------------------------------------------------- timer */
-      salvarSessao: ({ materiaId, topicoId, minutos }) => {
+      salvarSessao: ({ materiaId, subtopicoId, minutos }) => {
         const registro = {
           id: crypto.randomUUID(),
           data: new Date().toISOString(),
           materia_id: materiaId || null,
-          topico_id: topicoId || null,
+          topico_id: subtopicoId || null,   // coluna legada: guarda o subtópico
           duracao_minutos: Math.max(1, Math.round(minutos)),
         }
         aplicar((p) => ({ ...p, sessoes: [registro, ...p.sessoes] }))

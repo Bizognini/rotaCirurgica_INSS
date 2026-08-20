@@ -1,23 +1,24 @@
-import { TOPICOS_POR_ID, QUESTOES_TOPICO, MATERIAS } from '../content'
+import { SUBTOPICOS_POR_ID, QUESTOES_SUBTOPICO, MATERIAS, subtopicosDoBloco } from '../content'
 import { BANCO_SIMULADO } from '../content/questoes'
 
 /**
  * Motor de questões.
  *
- * Regras que este arquivo implementa (seção 6 do projeto):
- *  - questões de tópico têm enunciados novos, no estilo Cebraspe;
+ * Regras implementadas:
+ *  - questões e flashcards são gerados por SUBTÓPICO (a unidade de estudo);
+ *  - cada subtópico serve 10 questões Certo/Errado por rodada;
  *  - o simulado prioriza questões de PROVA REAL e completa com estilo-gerado;
  *  - ao refazer uma questão errada, servimos uma VARIAÇÃO — nunca a idêntica;
  *  - correção do simulado com desconto por erro (padrão Cebraspe).
  */
 
+export const QUESTOES_POR_RODADA = 10
+
 /* ------------------------------ utilidades ------------------------------- */
 
 export function embaralhar(lista, semente) {
   const arr = [...lista]
-  let rnd = typeof semente === 'number'
-    ? mulberry32(semente)
-    : Math.random
+  const rnd = typeof semente === 'number' ? mulberry32(semente) : Math.random
 
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(rnd() * (i + 1))
@@ -49,66 +50,72 @@ export function aplicarEdicoes(questao, edits) {
   return base
 }
 
-export function teoriaDoTopico(topico, edits) {
-  const editada = edits?.[`topico:${topico.id}:teoria`]
-  return typeof editada === 'string' ? editada : topico.teoria || ''
+export function teoriaDoSubtopico(subtopico, edits) {
+  const editada = edits?.[`subtopico:${subtopico.id}:teoria`]
+  return typeof editada === 'string' ? editada : subtopico.teoria || ''
 }
 
-export function flashcardsDoTopico(topico, edits) {
-  const editados = edits?.[`topico:${topico.id}:flashcards`]
+export function flashcardsDoSubtopico(subtopico, edits) {
+  const editados = edits?.[`subtopico:${subtopico.id}:flashcards`]
   if (Array.isArray(editados)) return editados
-  return topico.flashcards || []
+  return subtopico.flashcards || []
 }
 
-/* --------------------------- pool por tópico ----------------------------- */
+/* -------------------------- pool por subtópico --------------------------- */
 
 /**
- * Todas as formulações disponíveis de um tópico: as questões principais mais
+ * Todas as formulações disponíveis de um subtópico: as questões principais mais
  * cada variação promovida a questão independente. É esse pool que alimenta o
  * botão "gerar mais questões" sem repetir enunciado.
  */
-export function poolDoTopico(topicoId) {
-  const topico = TOPICOS_POR_ID[topicoId]
-  if (!topico) return []
+export function poolDoSubtopico(subtopicoId) {
+  const sub = SUBTOPICOS_POR_ID[subtopicoId]
+  if (!sub) return []
 
   const pool = []
-  ;(topico.questoes || []).forEach((q) => {
+  ;(sub.questoes || []).forEach((q) => {
+    const comum = {
+      raizId: q.id,
+      fonte: q.fonte || 'estilo_gerado',
+      subtopicoId,
+      topicoId: sub.topicoId,
+      materiaId: sub.materiaId,
+    }
     pool.push({
+      ...comum,
       id: q.id,
       enunciado: q.enunciado,
       certa: q.certa,
       explicacao: q.explicacao,
       baseLegal: q.baseLegal,
-      raizId: q.id,
-      fonte: q.fonte || 'estilo_gerado',
-      topicoId,
-      materiaId: topico.materiaId,
     })
     ;(q.variacoes || []).forEach((v, i) => {
       pool.push({
+        ...comum,
         id: `${q.id}-v${i + 1}`,
         enunciado: v.enunciado,
         certa: v.certa,
         explicacao: v.explicacao,
         baseLegal: v.baseLegal || q.baseLegal,
-        raizId: q.id,
         variacao: true,
-        fonte: q.fonte || 'estilo_gerado',
-        topicoId,
-        materiaId: topico.materiaId,
       })
     })
   })
   return pool
 }
 
-/** Primeiras N questões do tópico (as principais, na ordem escrita). */
-export function questoesIniciais(topicoId, quantidade = 5) {
-  const topico = TOPICOS_POR_ID[topicoId]
-  if (!topico) return []
-  return poolDoTopico(topicoId)
-    .filter((q) => !q.variacao)
-    .slice(0, quantidade)
+/**
+ * Primeiras N questões do subtópico.
+ *
+ * Servimos as principais na ordem escrita e, se elas não bastarem para fechar
+ * a rodada, completamos com as variações — que são formulações distintas do
+ * mesmo conceito e valem tanto quanto para treinar.
+ */
+export function questoesIniciais(subtopicoId, quantidade = QUESTOES_POR_RODADA) {
+  const pool = poolDoSubtopico(subtopicoId)
+  const principais = pool.filter((q) => !q.variacao)
+  if (principais.length >= quantidade) return principais.slice(0, quantidade)
+  return [...principais, ...pool.filter((q) => q.variacao)].slice(0, quantidade)
 }
 
 /**
@@ -116,8 +123,8 @@ export function questoesIniciais(topicoId, quantidade = 5) {
  * Quando o pool acaba, recomeça embaralhado — o enunciado pode repetir, mas só
  * depois de esgotadas todas as formulações disponíveis.
  */
-export function proximasQuestoes(topicoId, idsJaVistos, quantidade = 5) {
-  const pool = poolDoTopico(topicoId)
+export function proximasQuestoes(subtopicoId, idsJaVistos, quantidade = QUESTOES_POR_RODADA) {
+  const pool = poolDoSubtopico(subtopicoId)
   const novas = pool.filter((q) => !idsJaVistos.includes(q.id))
   if (novas.length >= quantidade) return embaralhar(novas).slice(0, quantidade)
   return [...novas, ...embaralhar(pool).filter((q) => !novas.includes(q))].slice(0, quantidade)
@@ -128,8 +135,8 @@ export function proximasQuestoes(topicoId, idsJaVistos, quantidade = 5) {
  * Cai na questão original só se não houver nenhuma variação cadastrada.
  */
 export function variacaoParaRefazer(questaoErrada) {
-  const { topico_id: topicoId, questao_id: questaoId, enunciado } = questaoErrada
-  const pool = poolDoTopico(topicoId)
+  const { subtopico_id: subtopicoId, questao_id: questaoId, enunciado } = questaoErrada
+  const pool = poolDoSubtopico(subtopicoId)
   if (!pool.length) return null
 
   const raiz = questaoId ? questaoId.split('-v')[0] : null
@@ -155,17 +162,18 @@ export const TOTAL_PROVA = 120
 
 /**
  * Banco completo de uma matéria: primeiro as questões de prova real, depois as
- * questões de tópico no estilo Cebraspe (incluindo variações) para completar.
+ * questões de subtópico no estilo Cebraspe (incluindo variações) para completar.
  */
-function bancoDaMateria(materiaId, filtroTopicos) {
-  const reais = BANCO_SIMULADO
-    .filter((q) => q.materiaId === materiaId)
-    .filter((q) => !filtroTopicos || !q.topicoId || filtroTopicos.includes(q.topicoId))
+function bancoDaMateria(materiaId, filtroSubtopicos) {
+  const dentro = (q) =>
+    !filtroSubtopicos || !q.subtopicoId || filtroSubtopicos.includes(q.subtopicoId)
 
-  const geradas = QUESTOES_TOPICO
+  const reais = BANCO_SIMULADO.filter((q) => q.materiaId === materiaId).filter(dentro)
+
+  const geradas = QUESTOES_SUBTOPICO
     .filter((q) => q.materiaId === materiaId)
-    .filter((q) => !filtroTopicos || filtroTopicos.includes(q.topicoId))
-    .flatMap((q) => poolDoTopico(q.topicoId).filter((p) => p.raizId === q.id))
+    .filter((q) => !filtroSubtopicos || filtroSubtopicos.includes(q.subtopicoId))
+    .flatMap((q) => poolDoSubtopico(q.subtopicoId).filter((p) => p.raizId === q.id))
 
   // remove duplicatas por enunciado
   const vistos = new Set()
@@ -185,10 +193,10 @@ function bancoDaMateria(materiaId, filtroTopicos) {
  * @param {object} opcoes
  * @param {number} opcoes.total          total de questões (120 no completo)
  * @param {string[]} [opcoes.materias]   restringe a matérias específicas
- * @param {string[]} [opcoes.topicos]    restringe a tópicos específicos
+ * @param {string[]} [opcoes.subtopicos] restringe a subtópicos específicos
  * @param {boolean} [opcoes.proporcional] respeita o peso real de cada matéria
  */
-export function montarSimulado({ total = TOTAL_PROVA, materias, topicos, proporcional = true } = {}) {
+export function montarSimulado({ total = TOTAL_PROVA, materias, subtopicos, proporcional = true } = {}) {
   const ativas = MATERIAS.filter((m) => !materias?.length || materias.includes(m.id))
   const pesoTotal = ativas.reduce((s, m) => s + m.questoesProva, 0) || 1
 
@@ -201,18 +209,15 @@ export function montarSimulado({ total = TOTAL_PROVA, materias, topicos, proporc
 
   const selecionadas = []
   alvos.forEach(({ materiaId, alvo }) => {
-    const { reais, geradas } = bancoDaMateria(materiaId, topicos)
+    const { reais, geradas } = bancoDaMateria(materiaId, subtopicos)
     // prioridade absoluta para prova real
-    const escolhidas = [
-      ...embaralhar(reais).slice(0, alvo),
-    ]
+    const escolhidas = [...embaralhar(reais).slice(0, alvo)]
     if (escolhidas.length < alvo) {
       escolhidas.push(...embaralhar(geradas).slice(0, alvo - escolhidas.length))
     }
     selecionadas.push(...escolhidas)
   })
 
-  // ajusta para o total exato pedido
   let finais = embaralhar(selecionadas)
   if (finais.length > total) finais = finais.slice(0, total)
 
@@ -221,6 +226,11 @@ export function montarSimulado({ total = TOTAL_PROVA, materias, topicos, proporc
     numero: i + 1,
     fonte: q.fonte || 'estilo_gerado',
   }))
+}
+
+/** Converte uma lista de blocos em lista de ids de subtópico, para o filtro. */
+export function subtopicosDosBlocos(blocoIds) {
+  return blocoIds.flatMap((id) => subtopicosDoBloco(id).map((s) => s.id))
 }
 
 /**

@@ -26,21 +26,32 @@ e um dashboard de acompanhamento, com progresso sincronizado entre computador e 
 
 ### Conteúdo
 
+A plataforma usa **quatro níveis**:
+
+```
+Matéria  >  Bloco  >  Tópico  >  Subtópico
+                                 └─ a unidade real de estudo
+```
+
+O **subtópico** é uma aula específica: tem vídeo, teoria, questões, flashcards, anotações e
+progresso próprios. O **tópico** é só um agrupador — o progresso dele é sempre derivado
+(% de subtópicos concluídos), nunca armazenado.
+
 | Item | Quantidade |
 |---|---|
 | Matérias | 7 |
 | Blocos | 12 |
-| Tópicos com aula escrita | **106** |
-| Enunciados de questões (base + variações) | **680** |
-| Flashcards | **517** |
+| Tópicos (agrupadores) | **38** |
+| **Subtópicos** (unidades de estudo) | **173** |
+| Enunciados de questões (base + variações) | **1.246** |
+| Flashcards | **888** |
 | Questões de **prova real** (INSS 2022, Cebraspe) | **116** |
-| Texto de teoria | ~300 mil caracteres (~60 páginas) |
 
-Distribuição dos tópicos: Previdenciário 61 · Português 12 · Administrativo 12 · RLM 7 ·
-Constitucional 6 · Informática 6 · Ética 2.
+Distribuição dos subtópicos: Previdenciário 99 · Administrativo 23 · Português 20 ·
+Constitucional 13 · RLM 8 · Informática 8 · Ética 2.
 
-> O bloco "Reta final (revisão)" da trilha está sob Direito Previdenciário, por ser
-> majoritariamente revisão dessa matéria — aparece no fim da lista dela.
+> O bloco "Reta final (revisão)" está sob Direito Previdenciário, por ser majoritariamente
+> revisão dessa matéria — aparece no fim da lista dela.
 
 ### Funcionalidades
 
@@ -48,14 +59,17 @@ Constitucional 6 · Informática 6 · Ética 2.
   comparação entre semanas, taxa de acerto, progresso por matéria, radar de desempenho, aderência
   ao ciclo (planejado × real), piores tópicos e projeção de conclusão da trilha.
 - **Ciclo semanal** editável, com destaque do dia atual e link para o próximo tópico não concluído.
-- **Página do tópico**: teoria com tabelas, botão de vídeo-aula (busca pré-formatada do Prof. Eduardo
-  Tanaka em Previdenciário; campo manual nas demais), questões com feedback e base legal, "gerar mais
-  questões", flashcards viráveis, anotações com salvamento automático e edição do conteúdo.
+- **Página do tópico**: barra de progresso derivada e a lista de subtópicos, cada um com seu status
+  (não iniciado / teoria vista / questões feitas / ponto fraco).
+- **Página do subtópico** (a unidade de estudo): teoria com tabelas, botão de vídeo-aula (busca
+  pré-formatada do Prof. Eduardo Tanaka em Previdenciário; campo manual nas demais), rodada de até
+  **10 questões** com feedback e base legal, "gerar mais questões", flashcards viráveis, anotações
+  com salvamento automático, indicador de ponto fraco e edição do conteúdo.
 - **Simulados**: completo de 120 questões na proporção real da prova, cronometrado, com "marcar para
   revisar" e mapa de questões; simulados menores filtráveis por matéria e bloco; correção com desconto
   por erro; histórico com gráfico de evolução.
-- **Detecção automática de ponto fraco**: 2 ou mais erros no mesmo tópico (somando questões de tópico
-  e de simulado) marcam o tópico e disparam o aviso de priorização.
+- **Detecção automática de ponto fraco**: 2 ou mais erros no mesmo **subtópico** (somando questões de
+  estudo e de simulado) marcam o subtópico e disparam o aviso de priorização.
 - **Revisão**: refazimento das questões erradas sempre em **variação nova** — mesmo conceito, enunciado
   diferente.
 - **Flashcards avulsos** filtráveis por matéria, com opção de ordem aleatória.
@@ -78,8 +92,14 @@ Constitucional 6 · Informática 6 · Ética 2.
 2. Cole **todo** o conteúdo do arquivo [`supabase/schema.sql`](supabase/schema.sql).
 3. Clique em **Run**.
 
-O script cria as nove tabelas, ativa o *Row Level Security* em todas elas e habilita o Realtime.
-É idempotente: pode ser executado de novo sem quebrar nada.
+O script cria as tabelas, ativa o *Row Level Security* em todas elas, concede os privilégios
+ao papel `authenticated` e habilita o Realtime. É idempotente: pode rodar de novo sem quebrar nada.
+
+> **Já tinha a versão de 3 níveis instalada?** Rode
+> [`supabase/migracao-01-subtopicos.sql`](supabase/migracao-01-subtopicos.sql) em vez do
+> `schema.sql`. Ele troca `topico_status` por `subtopico_status`, cria a tabela `subtopicos`,
+> recria `questoes_erradas`, `anotacoes` e `links_video` referenciando o subtópico, e
+> **preserva a tabela `metas`** (sua meta semanal).
 
 ### 2.3 Criar a sua conta de estudo
 
@@ -158,62 +178,45 @@ npm run preview   # serve a pasta dist/ localmente, para conferir antes de publi
 
 ## 4. Publicar no GitHub
 
-O GitHub CLI (`gh`) não está instalado nesta máquina, então o repositório precisa ser criado
-manualmente. São cinco passos.
+**Já está tudo configurado.** O repositório existe, o GitHub Actions publica sozinho e os
+segredos estão cadastrados:
 
-### 4.1 Criar o repositório vazio no site
+| Item | Estado |
+|---|---|
+| Repositório | <https://github.com/Bizognini/rotaCirurgica_INSS> (público) |
+| Site publicado | <https://bizognini.github.io/rotaCirurgica_INSS/> |
+| Pages | Source = **GitHub Actions** |
+| Secrets | `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`, `VITE_APP_EMAIL` |
 
-1. Acesse <https://github.com/new>.
-2. **Repository name:** `rotaCirurgica_INSS`
-3. Marque **Public**.
-4. **Não** marque "Add a README file", "Add .gitignore" nem "Choose a license" — o repositório
-   precisa nascer vazio, porque o histórico local já existe.
-5. Clique em **Create repository**.
-
-### 4.2 Conectar a pasta local e enviar
-
-Na pasta do projeto, rode (trocando `SEU-USUARIO` pelo seu usuário do GitHub):
+Para publicar uma alteração, basta:
 
 ```bash
-git remote add origin https://github.com/SEU-USUARIO/rotaCirurgica_INSS.git
-git branch -M main
+git add .
+git commit -m "descrição da mudança"
+git push
+```
+
+### Se precisar refazer isso em outra máquina
+
+```bash
+gh auth login                       # autoriza o GitHub CLI
+git remote add origin https://github.com/Bizognini/rotaCirurgica_INSS.git
 git push -u origin main
 ```
 
-Se o Git pedir usuário e senha, use o seu usuário do GitHub e um
-**Personal Access Token** ([como gerar](https://github.com/settings/tokens)) no lugar da senha —
-o GitHub não aceita mais senha comum via HTTPS.
+Para recadastrar os segredos a partir do `.env.local`:
 
-### 4.3 Cadastrar os segredos do build
-
-No repositório: **Settings → Secrets and variables → Actions → New repository secret**.
-
-Crie três segredos, com exatamente estes nomes:
-
-| Nome | Valor |
-|---|---|
-| `VITE_SUPABASE_URL` | a Project URL do Supabase |
-| `VITE_SUPABASE_PUBLISHABLE_KEY` | a publishable key |
-| `VITE_APP_EMAIL` | o e-mail da sua conta de estudo |
-
-Sem esses segredos o site ainda é publicado, mas abre em **modo local**, sem sincronizar.
-
-### 4.4 Ativar o GitHub Pages
-
-**Settings → Pages → Build and deployment → Source:** selecione **GitHub Actions**.
-
-Não escolha "Deploy from a branch" — o fluxo aqui é por Actions.
-
-### 4.5 Conferir
-
-Vá na aba **Actions**. O workflow "Publicar no GitHub Pages" deve estar rodando ou concluído.
-Quando terminar, o site fica em:
-
-```
-https://SEU-USUARIO.github.io/rotaCirurgica_INSS/
+```bash
+set -a; . ./.env.local; set +a
+printf '%s' "$VITE_SUPABASE_URL"             | gh secret set VITE_SUPABASE_URL
+printf '%s' "$VITE_SUPABASE_PUBLISHABLE_KEY" | gh secret set VITE_SUPABASE_PUBLISHABLE_KEY
+printf '%s' "$VITE_APP_EMAIL"                | gh secret set VITE_APP_EMAIL
 ```
 
----
+> **Atenção à ordem:** cadastre os segredos **antes** de disparar o build. Se o workflow rodar
+> antes deles existirem, o site é publicado sem as credenciais e abre em modo local — foi
+> exatamente o que aconteceu no primeiro deploy. A correção é rodar o workflow de novo
+> (`gh workflow run "Publicar no GitHub Pages" --ref main`).
 
 ## 5. Como funciona o deploy automático
 
@@ -307,7 +310,7 @@ rotaCirurgica_INSS/
 │   ├── content/                   # CONTEÚDO (separado da lógica)
 │   │   ├── materias.js            # matérias, pesos e cores
 │   │   ├── ciclo.js               # ciclo semanal padrão
-│   │   ├── blocos/*.js            # teoria, questões e flashcards por bloco
+│   │   ├── blocos/*.js            # tópicos e subtópicos, com teoria e questões
 │   │   └── questoes/provas/*.js   # banco de questões de prova real
 │   ├── lib/                       # BANCO E REGRAS
 │   │   ├── supabase.js            # cliente
@@ -316,7 +319,7 @@ rotaCirurgica_INSS/
 │   │   ├── syncQueue.js           # fila de pendências
 │   │   ├── questoes.js            # motor de questões e simulados
 │   │   └── stats.js               # cálculos do dashboard
-│   ├── state/StoreProvider.jsx    # estado único do app
+│   ├── state/StoreProvider.jsx    # estado único do app (progresso por subtópico)
 │   ├── components/                # INTERFACE reutilizável
 │   └── pages/                     # telas
 └── trilha-inss-tecnico-seguro-social.md

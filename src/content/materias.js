@@ -105,8 +105,21 @@ export const MATERIAS_POR_ID = Object.fromEntries(MATERIAS.map((m) => [m.id, m])
 
 export const TOTAL_QUESTOES_PROVA = MATERIAS.reduce((s, m) => s + m.questoesProva, 0) // 115 + reta final
 
-/** Canal recomendado para Previdenciário (busca pré-formatada, abre em nova aba). */
-export function linkBuscaTanaka(nomeTopico) {
-  const termo = encodeURIComponent(`Eduardo Tanaka ${nomeTopico} INSS`)
+/**
+ * Busca pré-formatada no YouTube para o subtópico.
+ *
+ * `videoConfirmado` indica que a trilha já identificou a aula real na playlist
+ * (hoje, só o Bloco 1 de Previdenciário). Nesse caso montamos uma busca mais
+ * específica, combinando o nome do subtópico com o do tópico que o agrupa —
+ * mas ainda como BUSCA, porque só você pode confirmar qual é o vídeo exato.
+ */
+export function linkBuscaVideo({ materiaId, nomeSubtopico, nomeTopico, videoConfirmado }) {
+  if (materiaId !== 'prev') return null          // demais matérias: campo manual
+
+  const partes = videoConfirmado
+    ? ['Eduardo Tanaka', nomeTopico, nomeSubtopico]
+    : ['Eduardo Tanaka', nomeSubtopico, 'INSS']
+
+  const termo = encodeURIComponent(partes.filter(Boolean).join(' '))
   return `https://www.youtube.com/results?search_query=${termo}`
 }

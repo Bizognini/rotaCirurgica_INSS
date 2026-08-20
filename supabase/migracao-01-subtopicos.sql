@@ -1,75 +1,29 @@
 -- ============================================================================
--- Rota Cirúrgica INSS — esquema do banco (Supabase / Postgres)
--- Hierarquia de 4 níveis: Matéria > Bloco > Tópico > SUBTÓPICO
+-- MIGRAÇÃO 01 — de 3 níveis (Matéria > Bloco > Tópico)
+--                para 4 níveis (Matéria > Bloco > Tópico > Subtópico)
 -- ----------------------------------------------------------------------------
--- Como aplicar (instalação NOVA):
+-- Como aplicar:
 --   Supabase -> SQL Editor -> New query -> cole este arquivo inteiro -> Run.
---   É idempotente: pode rodar de novo sem quebrar nada.
 --
--- Já tinha a versão de 3 níveis? Use `migracao-01-subtopicos.sql` no lugar deste.
+-- O que este script faz, na ordem:
+--   0. APAGA os dados de teste (simulados, questões erradas, timer);
+--   1. Cria a tabela de conteúdo estático subtopicos;
+--   2. Substitui topico_status por subtopico_status;
+--   3. Recria questoes_erradas, anotacoes e links_video referenciando
+--      subtopico_id no lugar de topico_id;
+--   4. Reaplica GRANT + RLS + Realtime em tudo.
 --
--- Princípio de segurança:
---   O repositório é público, então a "publishable key" é visível por qualquer um.
---   Quem protege os dados é (a) o GRANT, (b) o RLS e (c) a senha da sua conta,
---   que você digita na tela de entrada e nunca fica no código.
---   Toda tabela de progresso só devolve linhas onde user_id = auth.uid().
+-- A tabela metas NÃO é tocada — a meta de 14h/semana é preservada.
 -- ============================================================================
 
 -- ----------------------------------------------------------------------------
--- TABELAS DE PROGRESSO QUE NÃO MUDARAM
+-- 0. LIMPEZA DOS DADOS DE TESTE
 -- ----------------------------------------------------------------------------
-create table if not exists public.simulados_historico (
-  id                     uuid        primary key default gen_random_uuid(),
-  user_id                uuid        not null default auth.uid() references auth.users (id) on delete cascade,
-  data                   timestamptz not null default now(),
-  tipo                   text        not null default 'completo',
-  escopo                 text,
-  total_questoes         integer     not null,
-  acertos                integer     not null,
-  erros                  integer     not null,
-  brancos                integer     not null default 0,
-  nota_final             numeric(6,2) not null,
-  percentual             numeric(5,2) not null,
-  tempo_total_segundos   integer     not null default 0,
-  detalhamento_materia   jsonb       not null default '[]'::jsonb,
-  questoes               jsonb       not null default '[]'::jsonb
-);
-create index if not exists idx_simulados_user on public.simulados_historico (user_id, data desc);
-
-create table if not exists public.sessoes_timer (
-  id               uuid        primary key default gen_random_uuid(),
-  user_id          uuid        not null default auth.uid() references auth.users (id) on delete cascade,
-  data             timestamptz not null default now(),
-  materia_id       text,
-  topico_id        text,
-  duracao_minutos  integer     not null check (duracao_minutos > 0)
-);
-create index if not exists idx_sessoes_user on public.sessoes_timer (user_id, data desc);
-
-create table if not exists public.metas (
-  user_id              uuid        primary key default auth.uid() references auth.users (id) on delete cascade,
-  horas_semanais_meta  numeric(5,1) not null default 14,
-  atualizado_em        timestamptz not null default now()
-);
-
-create table if not exists public.ciclo_semanal (
-  user_id            uuid    not null default auth.uid() references auth.users (id) on delete cascade,
-  dia_semana         integer not null check (dia_semana between 0 and 6),
-  bloco_1_materia_id text,
-  bloco_1_label      text,
-  bloco_2_materia_id text,
-  bloco_2_label      text,
-  atualizado_em      timestamptz not null default now(),
-  primary key (user_id, dia_semana)
-);
-
-create table if not exists public.conteudo_edits (
-  user_id       uuid        not null default auth.uid() references auth.users (id) on delete cascade,
-  chave         text        not null,
-  valor         jsonb       not null,
-  atualizado_em timestamptz not null default now(),
-  primary key (user_id, chave)
-);
+-- simulados_historico e sessoes_timer continuam existindo com a mesma
+-- estrutura, então basta esvaziá-las. As demais tabelas de progresso são
+-- recriadas do zero mais abaixo, o que já as deixa vazias.
+truncate table public.simulados_historico;
+truncate table public.sessoes_timer;
 
 -- ----------------------------------------------------------------------------
 -- 1. CONTEÚDO ESTÁTICO: SUBTÓPICOS
@@ -95,6 +49,8 @@ create index if not exists idx_subtopicos_topico on public.subtopicos (topico_id
 -- ----------------------------------------------------------------------------
 -- 2. PROGRESSO: subtopico_status substitui topico_status
 -- ----------------------------------------------------------------------------
+drop table if exists public.topico_status;
+
 create table if not exists public.subtopico_status (
   user_id              uuid        not null default auth.uid() references auth.users (id) on delete cascade,
   subtopico_id         text        not null,
@@ -111,7 +67,9 @@ create table if not exists public.subtopico_status (
 -- ----------------------------------------------------------------------------
 -- 3. TABELAS QUE PASSAM A REFERENCIAR O SUBTÓPICO
 -- ----------------------------------------------------------------------------
-create table if not exists public.questoes_erradas (
+-- Não há progresso real a preservar, então recriamos do zero.
+drop table if exists public.questoes_erradas;
+create table public.questoes_erradas (
   id             uuid        primary key default gen_random_uuid(),
   user_id        uuid        not null default auth.uid() references auth.users (id) on delete cascade,
   subtopico_id   text,
@@ -130,7 +88,8 @@ create index if not exists idx_qerradas_user      on public.questoes_erradas (us
 create index if not exists idx_qerradas_sub       on public.questoes_erradas (user_id, subtopico_id);
 create index if not exists idx_qerradas_pendentes on public.questoes_erradas (user_id, ja_refeita);
 
-create table if not exists public.anotacoes (
+drop table if exists public.anotacoes;
+create table public.anotacoes (
   user_id       uuid        not null default auth.uid() references auth.users (id) on delete cascade,
   subtopico_id  text        not null,
   texto         text        not null default '',
@@ -138,7 +97,8 @@ create table if not exists public.anotacoes (
   primary key (user_id, subtopico_id)
 );
 
-create table if not exists public.links_video (
+drop table if exists public.links_video;
+create table public.links_video (
   user_id       uuid        not null default auth.uid() references auth.users (id) on delete cascade,
   subtopico_id  text        not null,
   url           text        not null,
@@ -214,3 +174,25 @@ begin
   end loop;
 end $$;
 
+-- ============================================================================
+-- CONFERÊNCIA — o resultado esperado está indicado em cada linha
+-- ============================================================================
+
+-- esperado: 9
+select 'tabelas de progresso' as verificacao, count(*) as encontradas
+  from information_schema.tables
+ where table_schema = 'public'
+   and table_name in ('subtopico_status','questoes_erradas','anotacoes','simulados_historico',
+                      'sessoes_timer','metas','ciclo_semanal','conteudo_edits','links_video');
+
+-- esperado: 0 (a tabela antiga deixou de existir)
+select 'topico_status removida' as verificacao, count(*) as encontradas
+  from information_schema.tables
+ where table_schema = 'public' and table_name = 'topico_status';
+
+-- esperado: 14 (sua meta semanal, preservada)
+select 'meta preservada' as verificacao, horas_semanais_meta from public.metas;
+
+-- esperado: 0 em ambos
+select 'simulados apagados' as verificacao, count(*) as registros from public.simulados_historico;
+select 'sessoes apagadas'   as verificacao, count(*) as registros from public.sessoes_timer;

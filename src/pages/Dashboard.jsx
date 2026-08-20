@@ -4,8 +4,8 @@ import { useStore } from '../state/StoreProvider'
 import { MATERIAS_POR_ID, DIAS_SEMANA } from '../content'
 import {
   resumoTempo, evolucaoSemanal, progressoPorMateria, totaisTrilha,
-  desempenhoPorMateria, taxaAcertoGeral, pioresTopicos, pontosFracosAtivos,
-  aderenciaAoCiclo, projecaoConclusao, restantesPorBloco, proximoTopico,
+  desempenhoPorMateria, taxaAcertoGeral, pioresSubtopicos, pontosFracosAtivos,
+  aderenciaAoCiclo, projecaoConclusao, restantesPorBloco, proximoSubtopico,
   formatarHoras,
 } from '../lib/stats'
 import {
@@ -15,7 +15,7 @@ import {
 /* ------------------------------------------------------------------ topo */
 
 function OQueEstudarHoje() {
-  const { ciclo, topicoStatus } = useStore()
+  const { ciclo, subtopicoStatus } = useStore()
   const hoje = new Date().getDay()
   const doDia = ciclo.find((c) => c.dia_semana === hoje)
 
@@ -37,7 +37,7 @@ function OQueEstudarHoje() {
         <div className="col">
           {blocos.map((b) => {
             const materia = b.materiaId ? MATERIAS_POR_ID[b.materiaId] : null
-            const proximo = b.materiaId ? proximoTopico(b.materiaId, topicoStatus) : null
+            const proximo = b.materiaId ? proximoSubtopico(b.materiaId, subtopicoStatus) : null
             return (
               <div key={b.n} style={{ padding: '.6rem .75rem', background: 'var(--azul-50)', borderRadius: 'var(--raio-sm)' }}>
                 <div className="linha linha-quebra" style={{ marginBottom: '.35rem' }}>
@@ -46,7 +46,7 @@ function OQueEstudarHoje() {
                 </div>
                 <div style={{ fontWeight: 600, fontSize: '.93rem' }}>{b.label}</div>
                 {proximo ? (
-                  <Link to={`/topico/${proximo.id}`} className="btn btn-sm mt-1">
+                  <Link to={`/subtopico/${proximo.id}`} className="btn btn-sm mt-1">
                     Ir para: {proximo.nome.length > 52 ? proximo.nome.slice(0, 52) + '…' : proximo.nome}
                   </Link>
                 ) : materia ? (
@@ -130,8 +130,8 @@ function MetaSemanal() {
 }
 
 function PontosFracos() {
-  const { topicoStatus } = useStore()
-  const fracos = useMemo(() => pontosFracosAtivos(topicoStatus), [topicoStatus])
+  const { subtopicoStatus } = useStore()
+  const fracos = useMemo(() => pontosFracosAtivos(subtopicoStatus), [subtopicoStatus])
 
   return (
     <div className="card" style={{ borderLeft: fracos.length ? '5px solid var(--vermelho)' : '5px solid var(--verde)' }}>
@@ -147,7 +147,7 @@ function PontosFracos() {
           <div className="aviso aviso-vermelho" style={{ marginBottom: '.7rem' }}>
             <span>⚠️</span>
             <span>
-              <strong>{fracos.length} tópico(s)</strong> com 2 ou mais erros acumulados.
+              <strong>{fracos.length} subtópico(s)</strong> com 2 ou mais erros acumulados.
               Priorize a revisão destes antes de avançar para tópicos novos.
             </span>
           </div>
@@ -155,7 +155,7 @@ function PontosFracos() {
             {fracos.slice(0, 6).map((f) => (
               <Link
                 key={f.id}
-                to={`/topico/${f.id}`}
+                to={`/subtopico/${f.id}`}
                 className="linha-entre"
                 style={{ textDecoration: 'none', color: 'inherit', padding: '.45rem .6rem', background: 'var(--vermelho-claro)', borderRadius: 'var(--raio-sm)' }}
               >
@@ -186,8 +186,8 @@ function Metrica({ rotulo, valor, nota, cor }) {
 }
 
 function ProgressoMaterias() {
-  const { topicoStatus } = useStore()
-  const linhas = useMemo(() => progressoPorMateria(topicoStatus), [topicoStatus])
+  const { subtopicoStatus } = useStore()
+  const linhas = useMemo(() => progressoPorMateria(subtopicoStatus), [subtopicoStatus])
 
   return (
     <div className="card">
@@ -232,19 +232,19 @@ function ProgressoMaterias() {
 /* --------------------------------------------------------------- abaixo */
 
 function PioresTopicos() {
-  const { topicoStatus } = useStore()
-  const piores = useMemo(() => pioresTopicos(topicoStatus, 8), [topicoStatus])
+  const { subtopicoStatus } = useStore()
+  const piores = useMemo(() => pioresSubtopicos(subtopicoStatus, 8), [subtopicoStatus])
 
   return (
     <div className="card">
-      <div className="card-titulo"><span>Tópicos com pior desempenho</span></div>
+      <div className="card-titulo"><span>Subtópicos com pior desempenho</span></div>
       {piores.length === 0 ? (
         <div className="vazio"><span className="vazio-icone">🎯</span>Nenhum erro registrado ainda.</div>
       ) : (
         <div className="tabela-envolt">
           <table className="tabela">
             <thead>
-              <tr><th>Tópico</th><th>Matéria</th><th>Acerto</th><th></th></tr>
+              <tr><th>Subtópico</th><th>Matéria</th><th>Acerto</th><th></th></tr>
             </thead>
             <tbody>
               {piores.map((t) => (
@@ -260,7 +260,7 @@ function PioresTopicos() {
                     </strong>
                     <span className="texto-fraco"> ({t.acertos}/{t.total})</span>
                   </td>
-                  <td><Link to={`/topico/${t.id}`} className="texto-pequeno">revisar</Link></td>
+                  <td><Link to={`/subtopico/${t.id}`} className="texto-pequeno">revisar</Link></td>
                 </tr>
               ))}
             </tbody>
@@ -272,9 +272,9 @@ function PioresTopicos() {
 }
 
 function Projecao() {
-  const { topicoStatus, sessoes } = useStore()
-  const p = useMemo(() => projecaoConclusao(topicoStatus, sessoes), [topicoStatus, sessoes])
-  const blocos = useMemo(() => restantesPorBloco(topicoStatus), [topicoStatus])
+  const { subtopicoStatus, sessoes } = useStore()
+  const p = useMemo(() => projecaoConclusao(subtopicoStatus, sessoes), [subtopicoStatus, sessoes])
+  const blocos = useMemo(() => restantesPorBloco(subtopicoStatus), [subtopicoStatus])
 
   return (
     <div className="card">
@@ -283,11 +283,11 @@ function Projecao() {
       <div className="grade grade-3" style={{ marginBottom: '.9rem' }}>
         <div>
           <div className="metrica-valor">{p.completos}<span style={{ fontSize: '1rem', color: 'var(--texto-fraco)' }}>/{p.total}</span></div>
-          <div className="metrica-rotulo">tópicos concluídos</div>
+          <div className="metrica-rotulo">subtópicos concluídos</div>
         </div>
         <div>
           <div className="metrica-valor">{p.ritmoSemanal ?? 0}</div>
-          <div className="metrica-rotulo">tópicos/semana (últimas 4)</div>
+          <div className="metrica-rotulo">subtópicos/semana (últimas 4)</div>
         </div>
         <div>
           <div className="metrica-valor" style={{ fontSize: p.data ? '1.35rem' : undefined }}>
@@ -301,7 +301,7 @@ function Projecao() {
 
       <div className="tabela-envolt">
         <table className="tabela">
-          <thead><tr><th>Bloco</th><th>Matéria</th><th>Restantes</th></tr></thead>
+          <thead><tr><th>Bloco</th><th>Matéria</th><th>Subtópicos restantes</th></tr></thead>
           <tbody>
             {blocos.map((b) => (
               <tr key={b.id}>
@@ -323,14 +323,14 @@ function Projecao() {
 /* ------------------------------------------------------------------ página */
 
 export default function Dashboard() {
-  const { sessoes, meta, topicoStatus, simulados, ciclo } = useStore()
+  const { sessoes, meta, subtopicoStatus, simulados, ciclo } = useStore()
 
   const tempo = useMemo(() => resumoTempo(sessoes, meta?.horas_semanais_meta ?? 14), [sessoes, meta])
   const evolucao = useMemo(() => evolucaoSemanal(sessoes, 8), [sessoes])
-  const desempenho = useMemo(() => desempenhoPorMateria(topicoStatus, simulados), [topicoStatus, simulados])
-  const geral = useMemo(() => taxaAcertoGeral(topicoStatus, simulados), [topicoStatus, simulados])
+  const desempenho = useMemo(() => desempenhoPorMateria(subtopicoStatus, simulados), [subtopicoStatus, simulados])
+  const geral = useMemo(() => taxaAcertoGeral(subtopicoStatus, simulados), [subtopicoStatus, simulados])
   const aderencia = useMemo(() => aderenciaAoCiclo(ciclo, sessoes), [ciclo, sessoes])
-  const totais = useMemo(() => totaisTrilha(topicoStatus), [topicoStatus])
+  const totais = useMemo(() => totaisTrilha(subtopicoStatus), [subtopicoStatus])
 
   const dif = tempo.diferencaSemanas
 
@@ -407,7 +407,7 @@ export default function Dashboard() {
           <div className="grade grade-3">
             <div>
               <div className="metrica-valor">{totais.completos}<span style={{ fontSize: '1rem', color: 'var(--texto-fraco)' }}>/{totais.total}</span></div>
-              <div className="metrica-rotulo">tópicos concluídos (teoria + questões)</div>
+              <div className="metrica-rotulo">subtópicos concluídos (teoria + questões)</div>
             </div>
             <div>
               <div className="metrica-valor">{totais.teoriaOk}<span style={{ fontSize: '1rem', color: 'var(--texto-fraco)' }}>/{totais.total}</span></div>
@@ -415,7 +415,7 @@ export default function Dashboard() {
             </div>
             <div>
               <div className="metrica-valor">{totais.restantes}</div>
-              <div className="metrica-rotulo">restantes na trilha</div>
+              <div className="metrica-rotulo">subtópicos restantes</div>
             </div>
           </div>
           <div className="barra barra-alta mt-2">

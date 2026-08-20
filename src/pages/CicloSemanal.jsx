@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../state/StoreProvider'
 import { MATERIAS, MATERIAS_POR_ID, DIAS_SEMANA, NOTA_CICLO, cicloOrdenado } from '../content'
-import { proximoTopico } from '../lib/stats'
+import { proximoSubtopico } from '../lib/stats'
 
 function SeletorMateria({ valor, aoMudar }) {
   return (
@@ -16,7 +16,7 @@ function SeletorMateria({ valor, aoMudar }) {
 }
 
 function LinhaDia({ dia, hoje }) {
-  const { acoes, topicoStatus } = useStore()
+  const { acoes, subtopicoStatus } = useStore()
   const [editando, setEditando] = useState(false)
   const [rascunho, setRascunho] = useState(dia)
 
@@ -88,7 +88,7 @@ function LinhaDia({ dia, hoje }) {
           const materiaId = dia[`bloco_${n}_materia_id`]
           if (!label || label === '—') return null
           const materia = materiaId ? MATERIAS_POR_ID[materiaId] : null
-          const proximo = materiaId ? proximoTopico(materiaId, topicoStatus) : null
+          const proximo = materiaId ? proximoSubtopico(materiaId, subtopicoStatus) : null
 
           return (
             <div key={n} className="linha linha-quebra" style={{ gap: '.5rem', alignItems: 'flex-start' }}>
@@ -101,7 +101,7 @@ function LinhaDia({ dia, hoje }) {
                       {materia.icone} {materia.nomeCurto}
                     </Link>
                     {proximo && (
-                      <Link to={`/topico/${proximo.id}`} className="texto-pequeno">
+                      <Link to={`/subtopico/${proximo.id}`} className="texto-pequeno">
                         próximo: {proximo.nome.length > 44 ? proximo.nome.slice(0, 44) + '…' : proximo.nome}
                       </Link>
                     )}
