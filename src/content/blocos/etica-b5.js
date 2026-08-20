@@ -20,7 +20,6 @@ export default {
         {
           id: 'etica-b5-t1-s1',
           nome: 'Decreto nº 1.171/1994 — regras deontológicas',
-          // conteúdo herdado do tópico 'etica-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Estrutura
 
@@ -103,7 +102,7 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
 `,
           questoes: [
             {
-              id: 'etica-b1-01-q1',
+              id: 'etica-b5-t1-s1-q1',
               enunciado: 'Tratar mal uma pessoa que paga seus tributos significa causar-lhe dano moral, do mesmo modo que causar dano a qualquer bem público equivale a dano patrimonial.',
               certa: true,
               explicacao: 'Reprodução do inciso V da Seção I do Código de Ética. Fundamento do item cobrado na prova de 2022.',
@@ -113,7 +112,7 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
               ],
             },
             {
-              id: 'etica-b1-01-q2',
+              id: 'etica-b5-t1-s1-q2',
               enunciado: 'É vedado ao servidor público federal ligar seu nome a empreendimentos de cunho duvidoso, ainda que cumpra regularmente seus deveres funcionais.',
               certa: true,
               explicacao: 'A vedação da alínea "o" do inciso XV é autônoma e independe da conduta funcional interna. Item cobrado na prova de 2022.',
@@ -123,7 +122,7 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
               ],
             },
             {
-              id: 'etica-b1-01-q3',
+              id: 'etica-b5-t1-s1-q3',
               enunciado: 'Participar de movimentos e estudos relacionados à melhoria do exercício de suas funções constitui dever fundamental do servidor público.',
               certa: true,
               explicacao: 'Alínea "j" do inciso XIV. Item cobrado (invertido) na prova de 2022, quando o enunciado afirmava não se tratar de dever.',
@@ -133,7 +132,7 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
               ],
             },
             {
-              id: 'etica-b1-01-q4',
+              id: 'etica-b5-t1-s1-q4',
               enunciado: 'A única penalidade aplicável pela Comissão de Ética é a censura.',
               certa: true,
               explicacao: 'A Comissão de Ética orienta, aconselha e pode aplicar exclusivamente a censura, com parecer fundamentado e ciência do faltoso.',
@@ -143,7 +142,7 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
               ],
             },
             {
-              id: 'etica-b1-01-q5',
+              id: 'etica-b5-t1-s1-q5',
               enunciado: 'O servidor deve decidir não somente entre o legal e o ilegal, mas principalmente entre o honesto e o desonesto.',
               certa: true,
               explicacao: 'Inciso II da Seção I — a moralidade administrativa é exigência que vai além da mera legalidade.',
@@ -165,7 +164,6 @@ A **única penalidade** aplicável pela Comissão de Ética é a **CENSURA**, e 
         {
           id: 'etica-b5-t1-s2',
           nome: 'Decreto nº 6.029/2007 e alterações',
-          // conteúdo herdado do tópico 'etica-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Objeto
 
@@ -245,7 +243,7 @@ Cada órgão e entidade da Administração Pública Federal direta e indireta **
 `,
           questoes: [
             {
-              id: 'etica-b1-02-q1',
+              id: 'etica-b5-t1-s2-q1',
               enunciado: 'Consulta de Ministro de Estado a respeito de matéria de ética pública deve ser dirigida à Comissão de Ética Pública, que integra o Sistema de Gestão da Ética do Poder Executivo Federal.',
               certa: true,
               explicacao: 'A CEP atua como instância consultiva do Presidente da República e dos Ministros de Estado. Item cobrado na prova de 2022.',
@@ -255,7 +253,7 @@ Cada órgão e entidade da Administração Pública Federal direta e indireta **
               ],
             },
             {
-              id: 'etica-b1-02-q2',
+              id: 'etica-b5-t1-s2-q2',
               enunciado: 'As autoridades competentes dos órgãos do Poder Executivo Federal poderão alegar sigilo para deixar de prestar informação solicitada pelas comissões de ética.',
               certa: false,
               explicacao: 'O art. 10, §2º, veda expressamente a alegação de sigilo. As comissões ficam obrigadas a manter o mesmo grau de sigilo do órgão de origem. Item cobrado na prova de 2022.',
@@ -265,7 +263,7 @@ Cada órgão e entidade da Administração Pública Federal direta e indireta **
               ],
             },
             {
-              id: 'etica-b1-02-q3',
+              id: 'etica-b5-t1-s2-q3',
               enunciado: 'As instâncias superiores dos órgãos e entidades do Poder Executivo Federal estão dispensadas de garantir os recursos necessários ao funcionamento das comissões de ética.',
               certa: false,
               explicacao: 'O art. 9º, parágrafo único, impõe justamente o contrário: devem garantir recursos humanos, materiais e financeiros. Item cobrado na prova de 2022.',
@@ -275,13 +273,23 @@ Cada órgão e entidade da Administração Pública Federal direta e indireta **
               ],
             },
             {
-              id: 'etica-b1-02-q4',
+              id: 'etica-b5-t1-s2-q4',
               enunciado: 'As comissões de ética dos órgãos e entidades são compostas por três membros titulares e três suplentes, com mandatos não coincidentes de três anos.',
               certa: true,
               explicacao: 'Art. 7º do Decreto nº 6.029/2007. Os membros são escolhidos entre servidores e empregados do quadro permanente.',
               baseLegal: 'Decreto nº 6.029/2007, art. 7º',
               variacoes: [
                 { enunciado: 'Os trabalhos das comissões de ética possuem natureza de processo administrativo disciplinar, podendo resultar em demissão.', certa: false, explicacao: 'Não têm natureza de PAD. A penalidade aplicável é a censura ética; havendo indícios de infração disciplinar, os autos são encaminhados à autoridade competente.' },
+              ],
+            },
+            {
+              id: 'etica-b5-t1-s2-q5',
+              enunciado: 'A Comissão de Ética Pública tem por finalidade, entre outras, administrar a aplicação do Código de Conduta da Alta Administração Federal.',
+              certa: true,
+              explicacao: 'Enquanto as comissões setoriais aplicam o Decreto nº 1.171/1994 aos servidores, a CEP cuida do Código de Conduta da Alta Administração.',
+              baseLegal: 'Decreto nº 6.029/2007, art. 4º, II',
+              variacoes: [
+                { enunciado: 'Compete às comissões de ética setoriais administrar a aplicação do Código de Conduta da Alta Administração Federal.', certa: false, explicacao: 'Essa competência é da CEP. As comissões setoriais aplicam o Código de Ética do Decreto nº 1.171/1994.' },
               ],
             },
           ],

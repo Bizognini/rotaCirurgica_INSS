@@ -20,7 +20,7 @@ export default {
         {
           id: 'prev-b6-t1-s1',
           nome: 'Revisar pontos fracos identificados nos simulados',
-          // conteúdo herdado do tópico 'prev-b5-01' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## Como usar esta etapa
 
@@ -66,7 +66,7 @@ Se você erra o **mesmo conceito três vezes**, o problema não é falta de revi
         {
           id: 'prev-b6-t1-s2',
           nome: 'Refazer questões erradas nas fases anteriores',
-          // conteúdo herdado do tópico 'prev-b5-02' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## Por que refazer importa mais que fazer questões novas
 
@@ -117,7 +117,7 @@ Regra prática: só marque quando tiver **convicção razoável**. Na dúvida ge
         {
           id: 'prev-b6-t1-s3',
           nome: '1 simulado completo por semana, cronometrado, simulando o dia da prova',
-          // conteúdo herdado do tópico 'prev-b5-03' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## Por que simular de verdade
 
@@ -176,7 +176,7 @@ A tela de simulados guarda **todos** os resultados, com evolução ao longo do t
         {
           id: 'prev-b6-t1-s4',
           nome: 'Revisão intensiva de EC 103/2019, Lei 8.213/91 e Lei 8.212/91',
-          // conteúdo herdado do tópico 'prev-b5-04' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## A espinha dorsal da prova
 
@@ -256,7 +256,7 @@ Se o tempo acabar e restar apenas uma revisão, que seja esta.
         {
           id: 'prev-b6-t1-s5',
           nome: 'Revisão de Português focada em regras que você mais erra',
-          // conteúdo herdado do tópico 'prev-b5-05' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## Como revisar Português na reta final
 
@@ -330,7 +330,7 @@ Memorize os três blocos:
         {
           id: 'prev-b6-t1-s6',
           nome: 'Descansar bem na semana da prova',
-          // conteúdo herdado do tópico 'prev-b5-06' da estrutura de 3 níveis
+          consolidacao: true,
           teoria: `
 ## Por que isso é conteúdo, e não conselho vago
 

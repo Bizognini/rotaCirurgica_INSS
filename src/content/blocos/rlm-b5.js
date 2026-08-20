@@ -20,7 +20,6 @@ export default {
         {
           id: 'rlm-b5-t1-s1',
           nome: 'Proposições e valores lógicos',
-          // conteúdo herdado do tópico 'rlm-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Proposição
 
@@ -80,7 +79,7 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
 `,
           questoes: [
             {
-              id: 'rlm-b1-01-q1',
+              id: 'rlm-b5-t1-s1-q1',
               enunciado: 'Uma sentença que contenha variável cujo valor não esteja definido não constitui proposição lógica.',
               certa: true,
               explicacao: 'Trata-se de sentença aberta: só se torna proposição quando a variável é substituída ou quantificada. Conceito cobrado na prova de 2022.',
@@ -89,7 +88,7 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
               ],
             },
             {
-              id: 'rlm-b1-01-q2',
+              id: 'rlm-b5-t1-s1-q2',
               enunciado: 'A negação da proposição "Todos os servidores compareceram à reunião" é "Algum servidor não compareceu à reunião".',
               certa: true,
               explicacao: 'Negar o quantificador universal afirmativo produz o existencial negativo — e não "nenhum servidor compareceu".',
@@ -98,12 +97,30 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
               ],
             },
             {
-              id: 'rlm-b1-01-q3',
+              id: 'rlm-b5-t1-s1-q3',
               enunciado: 'Pelo princípio do terceiro excluído, toda proposição é verdadeira ou falsa, não havendo outra possibilidade.',
               certa: true,
               explicacao: 'É um dos três princípios da lógica clássica, ao lado da identidade e da não contradição.',
               variacoes: [
                 { enunciado: 'A aplicação de um quantificador a uma sentença aberta a mantém sem valor lógico definido.', certa: false, explicacao: 'Ao contrário: quantificar uma sentença aberta a transforma em proposição, com valor lógico determinado.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s1-q4',
+              enunciado: 'Frases exclamativas e optativas, por não admitirem atribuição de valor lógico, não são consideradas proposições.',
+              certa: true,
+              explicacao: 'Só sentenças declarativas podem ser verdadeiras ou falsas. Exclamações, ordens, perguntas e desejos ficam fora.',
+              variacoes: [
+                { enunciado: 'A frase "Que prova difícil!" constitui proposição lógica de valor verdadeiro.', certa: false, explicacao: 'É exclamativa: não admite atribuição de valor lógico e, portanto, não é proposição.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s1-q5',
+              enunciado: 'Pelo princípio da não contradição, uma proposição não pode ser simultaneamente verdadeira e falsa.',
+              certa: true,
+              explicacao: 'É um dos três princípios da lógica clássica, ao lado da identidade e do terceiro excluído.',
+              variacoes: [
+                { enunciado: 'O princípio do terceiro excluído admite que uma proposição assuma um valor lógico intermediário entre verdadeiro e falso.', certa: false, explicacao: 'O terceiro excluído afirma justamente o contrário: toda proposição é V ou F, sem terceira possibilidade.' },
               ],
             },
           ],
@@ -118,7 +135,6 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
         {
           id: 'rlm-b5-t1-s2',
           nome: 'Sentenças abertas',
-          // conteúdo herdado do tópico 'rlm-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Proposição
 
@@ -178,7 +194,7 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
 `,
           questoes: [
             {
-              id: 'rlm-b1-01-q1',
+              id: 'rlm-b5-t1-s2-q1',
               enunciado: 'Uma sentença que contenha variável cujo valor não esteja definido não constitui proposição lógica.',
               certa: true,
               explicacao: 'Trata-se de sentença aberta: só se torna proposição quando a variável é substituída ou quantificada. Conceito cobrado na prova de 2022.',
@@ -187,7 +203,7 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
               ],
             },
             {
-              id: 'rlm-b1-01-q2',
+              id: 'rlm-b5-t1-s2-q2',
               enunciado: 'A negação da proposição "Todos os servidores compareceram à reunião" é "Algum servidor não compareceu à reunião".',
               certa: true,
               explicacao: 'Negar o quantificador universal afirmativo produz o existencial negativo — e não "nenhum servidor compareceu".',
@@ -196,12 +212,30 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
               ],
             },
             {
-              id: 'rlm-b1-01-q3',
+              id: 'rlm-b5-t1-s2-q3',
               enunciado: 'Pelo princípio do terceiro excluído, toda proposição é verdadeira ou falsa, não havendo outra possibilidade.',
               certa: true,
               explicacao: 'É um dos três princípios da lógica clássica, ao lado da identidade e da não contradição.',
               variacoes: [
                 { enunciado: 'A aplicação de um quantificador a uma sentença aberta a mantém sem valor lógico definido.', certa: false, explicacao: 'Ao contrário: quantificar uma sentença aberta a transforma em proposição, com valor lógico determinado.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s2-q4',
+              enunciado: 'A sentença "x + 3 = 10" torna-se proposição quando se atribui um valor determinado à variável x.',
+              certa: true,
+              explicacao: 'Substituída a variável, a sentença passa a ter valor lógico definido: com x = 7 é verdadeira; com qualquer outro valor, falsa.',
+              variacoes: [
+                { enunciado: 'A sentença "x + 3 = 10" é uma proposição de valor lógico falso.', certa: false, explicacao: 'É sentença aberta: sem valor atribuído a x, não há valor lógico definido.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s2-q5',
+              enunciado: 'O conjunto-verdade de uma sentença aberta é formado pelos valores da variável que a tornam verdadeira.',
+              certa: true,
+              explicacao: 'Para "x + 3 = 10" no conjunto dos reais, o conjunto-verdade é {7}.',
+              variacoes: [
+                { enunciado: 'A aplicação de um quantificador a uma sentença aberta mantém indefinido o seu valor lógico.', certa: false, explicacao: 'Quantificar transforma a sentença aberta em proposição, com valor lógico determinado.' },
               ],
             },
           ],
@@ -216,7 +250,6 @@ Aplicar um quantificador a uma sentença aberta **a transforma em proposição**
         {
           id: 'rlm-b5-t1-s3',
           nome: 'Tabela-verdade e número de linhas',
-          // conteúdo herdado do tópico 'rlm-b1-02' da estrutura de 3 níveis
           teoria: `
 ## A fórmula essencial
 
@@ -287,7 +320,7 @@ Com 3 proposições (8 linhas):
 `,
           questoes: [
             {
-              id: 'rlm-b1-02-q1',
+              id: 'rlm-b5-t1-s3-q1',
               enunciado: 'A tabela-verdade de uma proposição composta por três proposições simples distintas possui oito linhas.',
               certa: true,
               explicacao: 'Aplica-se 2ⁿ, com n = 3 → 8 linhas. Item cobrado na prova de 2022 (que afirmava 16 e estava errado).',
@@ -296,7 +329,7 @@ Com 3 proposições (8 linhas):
               ],
             },
             {
-              id: 'rlm-b1-02-q2',
+              id: 'rlm-b5-t1-s3-q2',
               enunciado: 'A proposição condicional "se p, então q" é falsa apenas quando p é verdadeira e q é falsa.',
               certa: true,
               explicacao: 'É a única linha F da condicional. Antecedente falso torna a condicional verdadeira em qualquer caso.',
@@ -305,12 +338,30 @@ Com 3 proposições (8 linhas):
               ],
             },
             {
-              id: 'rlm-b1-02-q3',
+              id: 'rlm-b5-t1-s3-q3',
               enunciado: 'A conjunção "p e q" é verdadeira somente quando ambas as proposições são verdadeiras.',
               certa: true,
               explicacao: 'Basta uma ser falsa para a conjunção ser falsa. Já a disjunção só é falsa quando ambas o forem.',
               variacoes: [
                 { enunciado: 'Se em uma proposição composta a proposição simples "p" aparece três vezes, ela deve ser contada três vezes no cálculo do número de linhas.', certa: false, explicacao: 'Contam-se apenas as proposições simples DISTINTAS, independentemente do número de ocorrências.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s3-q4',
+              enunciado: 'A tabela-verdade de uma proposição composta por quatro proposições simples distintas possui dezesseis linhas.',
+              certa: true,
+              explicacao: 'Aplica-se 2ⁿ: 2⁴ = 16. Com três proposições seriam 8 linhas; com cinco, 32.',
+              variacoes: [
+                { enunciado: 'O número de linhas da tabela-verdade é obtido multiplicando-se por dois a quantidade de proposições simples.', certa: false, explicacao: 'A fórmula é 2ⁿ (exponencial), não 2n. Com 4 proposições são 16 linhas, e não 8.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s3-q5',
+              enunciado: 'No cálculo do número de linhas da tabela-verdade, uma proposição simples que apareça repetidas vezes na fórmula é contada uma única vez.',
+              certa: true,
+              explicacao: 'O que importa são as proposições DISTINTAS: uma mesma proposição repetida assume o mesmo valor lógico em todas as ocorrências.',
+              variacoes: [
+                { enunciado: 'A proposição "p ∧ (p ∨ q)" possui tabela-verdade de oito linhas.', certa: false, explicacao: 'Há apenas duas proposições distintas (p e q), logo 2² = 4 linhas.' },
               ],
             },
           ],
@@ -325,7 +376,6 @@ Com 3 proposições (8 linhas):
         {
           id: 'rlm-b5-t1-s4',
           nome: 'Conectivos lógicos',
-          // conteúdo herdado do tópico 'rlm-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Os conectivos
 
@@ -394,7 +444,7 @@ No **bicondicional**, cada proposição é **necessária e suficiente** para a o
 `,
           questoes: [
             {
-              id: 'rlm-b1-03-q1',
+              id: 'rlm-b5-t1-s4-q1',
               enunciado: 'A negação da proposição "João estudou e foi aprovado" é "João não estudou ou não foi aprovado".',
               certa: true,
               explicacao: 'Aplicação da lei de De Morgan: nega-se cada parte e troca-se a conjunção pela disjunção. Item cobrado na prova de 2022.',
@@ -403,7 +453,7 @@ No **bicondicional**, cada proposição é **necessária e suficiente** para a o
               ],
             },
             {
-              id: 'rlm-b1-03-q2',
+              id: 'rlm-b5-t1-s4-q2',
               enunciado: 'A negação da proposição "Se chover, então ficarei em casa" é "Choveu e não fiquei em casa".',
               certa: true,
               explicacao: '~(p → q) ≡ p ∧ ~q: mantém-se o antecedente e nega-se o consequente. A negação nunca é outra condicional.',
@@ -412,7 +462,7 @@ No **bicondicional**, cada proposição é **necessária e suficiente** para a o
               ],
             },
             {
-              id: 'rlm-b1-03-q3',
+              id: 'rlm-b5-t1-s4-q3',
               enunciado: 'A proposição "Se estudou, então foi aprovado" é logicamente equivalente a "Se não foi aprovado, então não estudou".',
               certa: true,
               explicacao: 'É a contrapositiva (~q → ~p), a equivalência mais cobrada em prova.',
@@ -421,12 +471,21 @@ No **bicondicional**, cada proposição é **necessária e suficiente** para a o
               ],
             },
             {
-              id: 'rlm-b1-03-q4',
+              id: 'rlm-b5-t1-s4-q4',
               enunciado: 'Na proposição "p → q", diz-se que p é condição suficiente para q e que q é condição necessária para p.',
               certa: true,
               explicacao: 'O antecedente é suficiente; o consequente é necessário. No bicondicional, ambas são necessárias e suficientes.',
               variacoes: [
                 { enunciado: 'As conjunções "mas", "porém" e "contudo" têm valor lógico de disjunção.', certa: false, explicacao: 'Todas têm valor de CONJUNÇÃO (∧), apesar do sentido adversativo.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s4-q5',
+              enunciado: 'A disjunção exclusiva "ou… ou…" é verdadeira somente quando as proposições componentes possuem valores lógicos diferentes.',
+              certa: true,
+              explicacao: 'Diferentemente da disjunção inclusiva, ela exclui a possibilidade de ambas serem verdadeiras.',
+              variacoes: [
+                { enunciado: 'A disjunção exclusiva é verdadeira quando ambas as proposições componentes são verdadeiras.', certa: false, explicacao: 'Nesse caso ela é FALSA: a exclusividade impede que as duas sejam verdadeiras simultaneamente.' },
               ],
             },
           ],
@@ -441,7 +500,6 @@ No **bicondicional**, cada proposição é **necessária e suficiente** para a o
         {
           id: 'rlm-b5-t1-s5',
           nome: 'Proposições simples e compostas',
-          // conteúdo herdado do tópico 'rlm-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Identificação em texto
 
@@ -503,7 +561,7 @@ Para verificar se duas proposições são equivalentes sem montar a tabela intei
 `,
           questoes: [
             {
-              id: 'rlm-b1-04-q1',
+              id: 'rlm-b5-t1-s5-q1',
               enunciado: 'Na proposição "Se me mandou mensagem, meu filho lembrou-se de mim e quer ser lembrado por mim", há três proposições simples distintas.',
               certa: true,
               explicacao: 'São elas: "me mandou mensagem", "meu filho lembrou-se de mim" e "quer ser lembrado por mim". Fórmula: p → (q ∧ r). Item da prova de 2022.',
@@ -512,7 +570,7 @@ Para verificar se duas proposições são equivalentes sem montar a tabela intei
               ],
             },
             {
-              id: 'rlm-b1-04-q2',
+              id: 'rlm-b5-t1-s5-q2',
               enunciado: 'Uma proposição composta que assume valor lógico verdadeiro para todas as combinações possíveis de suas proposições simples é denominada tautologia.',
               certa: true,
               explicacao: 'Se for sempre falsa, é contradição; se variar, é contingência.',
@@ -521,12 +579,30 @@ Para verificar se duas proposições são equivalentes sem montar a tabela intei
               ],
             },
             {
-              id: 'rlm-b1-04-q3',
+              id: 'rlm-b5-t1-s5-q3',
               enunciado: 'Duas proposições são logicamente equivalentes quando o bicondicional formado entre elas é uma tautologia.',
               certa: true,
               explicacao: 'Equivale a dizer que possuem tabelas-verdade idênticas.',
               variacoes: [
                 { enunciado: 'Na ordem de precedência dos conectivos, a condicional tem prioridade sobre a conjunção.', certa: false, explicacao: 'A ordem é: negação, conjunção, disjunção, condicional e bicondicional. A conjunção precede a condicional.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s5-q4',
+              enunciado: 'O conectivo de menor precedência em uma fórmula é o conectivo principal, e é ele que define o tipo da proposição composta.',
+              certa: true,
+              explicacao: 'Em "p ∧ q → r", a condicional é o conectivo principal: a fórmula é uma condicional, não uma conjunção.',
+              variacoes: [
+                { enunciado: 'Na fórmula "p ∧ q → r", o conectivo principal é a conjunção.', certa: false, explicacao: 'A condicional tem menor precedência e, por isso, é o conectivo principal.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s5-q5',
+              enunciado: 'A proposição "Se me mandou mensagem, meu filho lembrou-se de mim e quer ser lembrado por mim" é uma condicional cujo consequente é uma conjunção.',
+              certa: true,
+              explicacao: 'Formaliza-se como p → (q ∧ r): três proposições simples e tabela-verdade de 8 linhas.',
+              variacoes: [
+                { enunciado: 'A proposição citada formaliza-se como uma conjunção cujo primeiro membro é uma condicional.', certa: false, explicacao: 'A estrutura é p → (q ∧ r): o conectivo principal é a condicional.' },
               ],
             },
           ],
@@ -540,7 +616,6 @@ Para verificar se duas proposições são equivalentes sem montar a tabela intei
         {
           id: 'rlm-b5-t1-s6',
           nome: 'Tautologia, contradição e contingência',
-          // conteúdo herdado do tópico 'rlm-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Definição
 
@@ -595,7 +670,7 @@ Se essa condicional for tautologia, o argumento é válido. Método prático: su
 `,
           questoes: [
             {
-              id: 'rlm-b1-05-q1',
+              id: 'rlm-b5-t1-s6-q1',
               enunciado: 'Tautologia é a proposição composta que assume valor lógico verdadeiro para todas as combinações possíveis de valores de suas proposições simples.',
               certa: true,
               explicacao: 'Na tabela-verdade, a coluna final é toda V. A negação de uma tautologia é sempre uma contradição.',
@@ -604,7 +679,7 @@ Se essa condicional for tautologia, o argumento é válido. Método prático: su
               ],
             },
             {
-              id: 'rlm-b1-05-q2',
+              id: 'rlm-b5-t1-s6-q2',
               enunciado: 'A proposição "p ∨ ~p" é uma tautologia, por representar o princípio do terceiro excluído.',
               certa: true,
               explicacao: 'Sendo p V ou F, a disjunção com sua negação é sempre verdadeira.',
@@ -613,12 +688,30 @@ Se essa condicional for tautologia, o argumento é válido. Método prático: su
               ],
             },
             {
-              id: 'rlm-b1-05-q3',
+              id: 'rlm-b5-t1-s6-q3',
               enunciado: 'Um argumento é válido quando a condicional formada pela conjunção de suas premissas implicando a conclusão constitui uma tautologia.',
               certa: true,
               explicacao: 'A validade depende apenas da FORMA do argumento, e não da verdade material das premissas.',
               variacoes: [
                 { enunciado: 'Um argumento com premissas falsas jamais pode ser considerado válido.', certa: false, explicacao: 'Validade é questão de forma: um argumento pode ser válido ainda que suas premissas sejam falsas.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s6-q4',
+              enunciado: 'A negação de uma tautologia é sempre uma contradição.',
+              certa: true,
+              explicacao: 'Se a proposição é verdadeira em todas as linhas, sua negação é falsa em todas — e vice-versa.',
+              variacoes: [
+                { enunciado: 'A negação de uma contingência é sempre uma tautologia.', certa: false, explicacao: 'A negação de uma contingência é outra contingência: ela continua variando entre V e F.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t1-s6-q5',
+              enunciado: 'Para verificar se uma condicional é tautologia, pode-se supor que ela seja falsa e checar se essa suposição gera contradição.',
+              certa: true,
+              explicacao: 'É a prova por absurdo: supõe-se antecedente V e consequente F. Se isso for impossível, a fórmula é tautologia.',
+              variacoes: [
+                { enunciado: 'A proposição "p → (p ∨ q)" é uma contingência, pois seu valor depende dos valores de p e q.', certa: false, explicacao: 'É tautologia: se p é V, então "p ∨ q" também é V, e a condicional nunca pode ser falsa.' },
               ],
             },
           ],
@@ -640,7 +733,6 @@ Se essa condicional for tautologia, o argumento é válido. Método prático: su
         {
           id: 'rlm-b5-t2-s1',
           nome: 'Operações com conjuntos',
-          // conteúdo herdado do tópico 'rlm-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Operações fundamentais
 
@@ -701,7 +793,7 @@ Relação: **ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ**.
 `,
           questoes: [
             {
-              id: 'rlm-b1-06-q1',
+              id: 'rlm-b5-t2-s1-q1',
               enunciado: 'Se 65% dos servidores gostam de atendimento ao público e, desses, 30% também gostam de trabalhos administrativos, então 19,5% do total gostam das duas modalidades.',
               certa: true,
               explicacao: '0,65 × 0,30 = 0,195. O "30%" incide sobre o subconjunto de 65%, não sobre o total. Cálculo cobrado na prova de 2022.',
@@ -710,7 +802,7 @@ Relação: **ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ**.
               ],
             },
             {
-              id: 'rlm-b1-06-q2',
+              id: 'rlm-b5-t2-s1-q2',
               enunciado: 'O número de elementos da união de dois conjuntos é igual à soma dos elementos de cada um, subtraído o número de elementos da interseção.',
               certa: true,
               explicacao: 'n(A ∪ B) = n(A) + n(B) − n(A ∩ B), evitando a dupla contagem dos elementos comuns.',
@@ -719,12 +811,30 @@ Relação: **ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ**.
               ],
             },
             {
-              id: 'rlm-b1-06-q3',
+              id: 'rlm-b5-t2-s1-q3',
               enunciado: 'Todo número racional pode ser escrito como quociente de dois inteiros, com denominador diferente de zero.',
               certa: true,
               explicacao: 'É a definição de racional. Os irracionais são dízimas não periódicas, como √2 e π.',
               variacoes: [
                 { enunciado: 'O conjunto dos números naturais está contido no conjunto dos números inteiros, que por sua vez está contido no dos racionais.', certa: true, explicacao: 'Correto: ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t2-s1-q4',
+              enunciado: 'Se um conjunto possui seis elementos, o número de seus subconjuntos é sessenta e quatro.',
+              certa: true,
+              explicacao: 'Aplica-se 2ⁿ: 2⁶ = 64, incluindo o conjunto vazio e o próprio conjunto.',
+              variacoes: [
+                { enunciado: 'O número de subconjuntos de um conjunto com n elementos é dado por n².', certa: false, explicacao: 'A fórmula é 2ⁿ. Para n = 6, são 64 subconjuntos, e não 36.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t2-s1-q5',
+              enunciado: 'Em um grupo de 100 servidores, se 60 falam inglês, 45 falam espanhol e 20 falam os dois idiomas, então 15 não falam nenhum dos dois.',
+              certa: true,
+              explicacao: 'União = 60 + 45 − 20 = 85. Fora da união: 100 − 85 = 15.',
+              variacoes: [
+                { enunciado: 'Na mesma situação, o número de servidores que falam pelo menos um dos dois idiomas é 105.', certa: false, explicacao: 'Somar 60 + 45 sem descontar a interseção conta duas vezes quem fala os dois. A união correta é 85.' },
               ],
             },
           ],
@@ -739,7 +849,6 @@ Relação: **ℕ ⊂ ℤ ⊂ ℚ ⊂ ℝ**.
         {
           id: 'rlm-b5-t2-s2',
           nome: 'Cálculos com porcentagem',
-          // conteúdo herdado do tópico 'rlm-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Fundamentos
 
@@ -800,7 +909,7 @@ Cuidado com a direção da comparação: "A é 31% menor que B" **não** é o me
 `,
           questoes: [
             {
-              id: 'rlm-b1-07-q1',
+              id: 'rlm-b5-t2-s2-q1',
               enunciado: 'Um valor que sofre aumento de 20% e, em seguida, desconto de 20% retorna ao seu valor original.',
               certa: false,
               explicacao: '1,20 × 0,80 = 0,96, ou seja, uma redução líquida de 4%. Percentuais sucessivos se multiplicam, não se somam.',
@@ -809,7 +918,7 @@ Cuidado com a direção da comparação: "A é 31% menor que B" **não** é o me
               ],
             },
             {
-              id: 'rlm-b1-07-q2',
+              id: 'rlm-b5-t2-s2-q2',
               enunciado: 'Se 65% dos servidores gostam de atendimento ao público e, desses, 30% também gostam de trabalhos administrativos, a interseção corresponde a 19,5% do total.',
               certa: true,
               explicacao: 'A expressão "desses" indica incidência sobre o subconjunto: 0,65 × 0,30 = 0,195. Cálculo da prova de 2022.',
@@ -818,12 +927,30 @@ Cuidado com a direção da comparação: "A é 31% menor que B" **não** é o me
               ],
             },
             {
-              id: 'rlm-b1-07-q3',
+              id: 'rlm-b5-t2-s2-q3',
               enunciado: 'Em uma prova de 120 questões corrigida com desconto de um ponto por erro, o candidato que acerta 80 e erra 40 obtém nota líquida igual a 40.',
               certa: true,
               explicacao: '80 − 40 = 40. O aproveitamento líquido é de 33%, e não dos 67% de acerto bruto — daí a importância de não chutar.',
               variacoes: [
                 { enunciado: 'A alíquota progressiva por faixas incide integralmente sobre o valor total da remuneração do segurado.', certa: false, explicacao: 'Cada faixa é tributada pela sua própria alíquota, e os resultados são somados — como no imposto de renda.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t2-s2-q4',
+              enunciado: 'Um valor que sofre três aumentos sucessivos de dez por cento apresenta acréscimo total superior a trinta por cento.',
+              certa: true,
+              explicacao: '1,10³ = 1,331, ou seja, 33,1%. Percentuais sucessivos se multiplicam, e por isso o total supera a soma simples.',
+              variacoes: [
+                { enunciado: 'Três aumentos sucessivos de dez por cento equivalem a um único aumento de trinta por cento.', certa: false, explicacao: 'Equivalem a 33,1%, pois os fatores se multiplicam: 1,10 × 1,10 × 1,10 = 1,331.' },
+              ],
+            },
+            {
+              id: 'rlm-b5-t2-s2-q5',
+              enunciado: 'Se um valor passa de 250 para 200, a redução percentual é de vinte por cento.',
+              certa: true,
+              explicacao: '(200 − 250)/250 = −0,20. Note a assimetria: voltar de 200 para 250 seria um aumento de 25%.',
+              variacoes: [
+                { enunciado: 'Se um valor cai vinte por cento e em seguida sobe vinte por cento, ele retorna ao valor original.', certa: false, explicacao: '0,80 × 1,20 = 0,96, ou seja, uma perda líquida de 4%.' },
               ],
             },
           ],

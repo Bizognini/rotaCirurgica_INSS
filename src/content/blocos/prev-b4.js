@@ -20,7 +20,6 @@ export default {
         {
           id: 'prev-b4-t1-s1',
           nome: 'Pensão especial — Síndrome de Talidomida (Lei 7.070/1982)',
-          // conteúdo herdado do tópico 'prev-b4-01' da estrutura de 3 níveis
           teoria: `
 ## Panorama das pensões especiais
 
@@ -54,7 +53,7 @@ A **talidomida** foi um medicamento usado nos anos 1950-60 contra enjoos na grav
 `,
           questoes: [
             {
-              id: 'prev-b4-01-q1',
+              id: 'prev-b4-t1-s1-q1',
               enunciado: 'A pensão especial devida aos portadores da síndrome de talidomida não é acumulável com rendimento ou remuneração pagos pela União, ressalvado o direito de opção.',
               certa: true,
               explicacao: 'É a regra do art. 4º da Lei nº 7.070/1982. A exceção prevista em lei é a indenização por dano moral, que pode ser acumulada. Item cobrado (invertido) na prova de 2022.',
@@ -64,7 +63,7 @@ A **talidomida** foi um medicamento usado nos anos 1950-60 contra enjoos na grav
               ],
             },
             {
-              id: 'prev-b4-01-q2',
+              id: 'prev-b4-t1-s1-q2',
               enunciado: 'O valor da pensão especial da síndrome de talidomida é obtido pela multiplicação do número de pontos, atribuídos conforme os tipos de incapacidade, por um valor fixado em lei.',
               certa: true,
               explicacao: 'A pontuação considera incapacidade para o trabalho, locomoção, deambulação e atividades da vida diária.',
@@ -74,13 +73,33 @@ A **talidomida** foi um medicamento usado nos anos 1950-60 contra enjoos na grav
               ],
             },
             {
-              id: 'prev-b4-01-q3',
+              id: 'prev-b4-t1-s1-q3',
               enunciado: 'A concessão da pensão especial aos portadores da síndrome de talidomida depende de prévia contribuição ao Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'É benefício indenizatório custeado pelo Tesouro Nacional, independente de qualquer vínculo contributivo.',
               baseLegal: 'Lei nº 7.070/1982',
               variacoes: [
                 { enunciado: 'A pensão especial da talidomida tem natureza indenizatória e é custeada pelo Tesouro Nacional.', certa: true, explicacao: 'Correto — não é benefício previdenciário contributivo.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s1-q4',
+              enunciado: 'A pensão especial da síndrome da talidomida independe de contribuição prévia e é custeada pelo Tesouro Nacional, tendo natureza indenizatória.',
+              certa: true,
+              explicacao: 'Não é benefício previdenciário contributivo: repara um dano causado por medicamento autorizado pelo poder público. Por isso não há carência nem exigência de qualidade de segurado.',
+              baseLegal: 'Lei nº 7.070/1982, art. 1º',
+              variacoes: [
+                { enunciado: 'A concessão da pensão especial da talidomida exige que o beneficiário tenha vertido ao menos doze contribuições ao RGPS.', certa: false, explicacao: 'Não há exigência de contribuição nem de carência: o benefício é indenizatório e custeado pelo Tesouro Nacional.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s1-q5',
+              enunciado: 'O valor da pensão especial da talidomida varia conforme a pontuação atribuída aos tipos de incapacidade do beneficiário.',
+              certa: true,
+              explicacao: 'A pontuação considera incapacidade para o trabalho, para a locomoção, para a deambulação e para as atividades da vida diária. Quanto maior a pontuação, maior o valor.',
+              baseLegal: 'Lei nº 7.070/1982, art. 1º, §1º',
+              variacoes: [
+                { enunciado: 'A pensão especial da talidomida tem valor único e uniforme para todos os beneficiários, correspondente a um salário mínimo.', certa: false, explicacao: 'O valor é variável, obtido pela multiplicação dos pontos de incapacidade por um valor fixado em lei.' },
               ],
             },
           ],
@@ -94,7 +113,6 @@ A **talidomida** foi um medicamento usado nos anos 1950-60 contra enjoos na grav
         {
           id: 'prev-b4-t1-s2',
           nome: 'Pensão especial dos seringueiros (Lei 7.986/1989)',
-          // conteúdo herdado do tópico 'prev-b4-02' da estrutura de 3 níveis
           teoria: `
 ## Os "soldados da borracha"
 
@@ -131,7 +149,7 @@ O **art. 54 do ADCT** garantiu-lhes pensão mensal vitalícia, regulamentada pel
 `,
           questoes: [
             {
-              id: 'prev-b4-02-q1',
+              id: 'prev-b4-t1-s2-q1',
               enunciado: 'Os seringueiros que trabalharam nos seringais da Amazônia durante a Segunda Guerra Mundial têm direito a pensão mensal vitalícia de dois salários mínimos, independentemente de possuírem meios de subsistência.',
               certa: false,
               explicacao: 'A lei exige a comprovação de que o beneficiário NÃO possui meios para a própria subsistência e a de sua família. Item cobrado na prova de 2022.',
@@ -141,13 +159,43 @@ O **art. 54 do ADCT** garantiu-lhes pensão mensal vitalícia, regulamentada pel
               ],
             },
             {
-              id: 'prev-b4-02-q2',
+              id: 'prev-b4-t1-s2-q2',
               enunciado: 'A pensão especial dos seringueiros estende-se aos seus dependentes e é custeada pelo Tesouro Nacional.',
               certa: true,
               explicacao: 'Trata-se de benefício indenizatório, sem contribuição prévia, operacionalizado pelo INSS.',
               baseLegal: 'Lei nº 7.986/1989',
               variacoes: [
                 { enunciado: 'A pensão especial dos seringueiros é custeada pelo Fundo do Regime Geral de Previdência Social e exige carência de 180 contribuições.', certa: false, explicacao: 'Não é benefício contributivo: independe de carência e é custeada pelo Tesouro Nacional.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s2-q3',
+              enunciado: 'A pensão mensal vitalícia dos seringueiros tem fundamento no Ato das Disposições Constitucionais Transitórias e corresponde a dois salários mínimos.',
+              certa: true,
+              explicacao: 'O art. 54 do ADCT criou o direito e a Lei nº 7.986/1989 o regulamentou, fixando o valor em dois salários mínimos.',
+              baseLegal: 'ADCT, art. 54; Lei nº 7.986/1989',
+              variacoes: [
+                { enunciado: 'A pensão dos seringueiros corresponde a um salário mínimo mensal.', certa: false, explicacao: 'O valor é de DOIS salários mínimos, conforme o art. 54 do ADCT.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s2-q4',
+              enunciado: 'A pensão especial dos seringueiros é extensível aos seus dependentes.',
+              certa: true,
+              explicacao: 'O ADCT e a Lei nº 7.986/1989 estendem o direito aos dependentes do seringueiro, diferentemente das pensões personalíssimas como a de Caruaru.',
+              baseLegal: 'ADCT, art. 54, parágrafo único; Lei nº 7.986/1989',
+              variacoes: [
+                { enunciado: 'A pensão especial dos seringueiros é personalíssima e extingue-se com a morte do beneficiário, sem extensão aos dependentes.', certa: false, explicacao: 'A lei estende expressamente o direito aos dependentes do seringueiro.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s2-q5',
+              enunciado: 'Considera-se apto ao recebimento da pensão o seringueiro que tenha trabalhado nos seringais da Amazônia durante a Segunda Guerra Mundial e que comprove não possuir meios de subsistência.',
+              certa: true,
+              explicacao: 'São dois requisitos cumulativos: o trabalho nos seringais no período da guerra e a carência econômica. A ausência do segundo é a pegadinha recorrente.',
+              baseLegal: 'Lei nº 7.986/1989, art. 1º',
+              variacoes: [
+                { enunciado: 'A comprovação do trabalho nos seringais durante a Segunda Guerra Mundial basta, por si só, para a concessão da pensão dos seringueiros.', certa: false, explicacao: 'Além do trabalho, exige-se a comprovação de que o beneficiário não possui meios para a própria subsistência e a de sua família.' },
               ],
             },
           ],
@@ -160,7 +208,6 @@ O **art. 54 do ADCT** garantiu-lhes pensão mensal vitalícia, regulamentada pel
         {
           id: 'prev-b4-t1-s3',
           nome: 'Pensão especial de ex-combatente (Lei 8.059/1990)',
-          // conteúdo herdado do tópico 'prev-b4-03' da estrutura de 3 níveis
           teoria: `
 ## Fundamento
 
@@ -193,7 +240,7 @@ A pensão é **rateada igualmente** entre os beneficiários da mesma classe, e a
 `,
           questoes: [
             {
-              id: 'prev-b4-03-q1',
+              id: 'prev-b4-t1-s3-q1',
               enunciado: 'A pensão especial devida aos ex-combatentes da Segunda Guerra Mundial e a seus dependentes corresponde à pensão militar deixada por segundo-tenente das Forças Armadas.',
               certa: true,
               explicacao: 'Literalidade do art. 1º da Lei nº 8.059/1990. Item cobrado na prova de 2022.',
@@ -203,13 +250,43 @@ A pensão é **rateada igualmente** entre os beneficiários da mesma classe, e a
               ],
             },
             {
-              id: 'prev-b4-03-q2',
+              id: 'prev-b4-t1-s3-q2',
               enunciado: 'É vedada a acumulação da pensão especial de ex-combatente com outra pensão deixada pelo mesmo instituidor, ressalvado o direito de opção.',
               certa: true,
               explicacao: 'Regra expressa da Lei nº 8.059/1990, que preserva a escolha pelo benefício mais vantajoso.',
               baseLegal: 'Lei nº 8.059/1990, art. 30',
               variacoes: [
                 { enunciado: 'A percepção da pensão especial de ex-combatente impede o recebimento de aposentadoria do RGPS pelo próprio ex-combatente.', certa: false, explicacao: 'Os benefícios têm fatos geradores distintos; a vedação é à acumulação de pensões do mesmo instituidor.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s3-q3',
+              enunciado: 'Considera-se ex-combatente, para fins da Lei nº 8.059/1990, aquele que participou efetivamente de operações bélicas na Segunda Guerra Mundial, comprovado por certificado expedido por autoridade militar competente.',
+              certa: true,
+              explicacao: 'A participação efetiva em operações bélicas é o núcleo do conceito: alcança integrantes da FEB, da FAB, da Marinha de Guerra e da Marinha Mercante.',
+              baseLegal: 'Lei nº 8.059/1990, art. 1º, parágrafo único',
+              variacoes: [
+                { enunciado: 'Todo militar que serviu às Forças Armadas durante a Segunda Guerra Mundial é considerado ex-combatente para fins da pensão especial.', certa: false, explicacao: 'Exige-se a participação EFETIVA em operações bélicas, comprovada por certificado da autoridade militar — servir no período não basta.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s3-q4',
+              enunciado: 'A pensão especial de ex-combatente é devida também aos seus dependentes, observada a ordem de preferência estabelecida em lei.',
+              certa: true,
+              explicacao: 'A lei escalona: viúva/companheira e filhos; depois pais; depois irmãos. A classe anterior exclui a seguinte, e há rateio dentro da mesma classe.',
+              baseLegal: 'Lei nº 8.059/1990, art. 5º',
+              variacoes: [
+                { enunciado: 'Existindo viúva e pais do ex-combatente, a pensão especial é rateada entre todos em partes iguais.', certa: false, explicacao: 'A classe anterior exclui a seguinte: havendo viúva, os pais não concorrem.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s3-q5',
+              enunciado: 'A percepção da pensão especial de ex-combatente impede que o beneficiário receba aposentadoria decorrente de suas próprias contribuições ao RGPS.',
+              certa: false,
+              explicacao: 'Os benefícios têm fatos geradores diversos e naturezas distintas. A vedação legal alcança a acumulação com outra pensão deixada pelo mesmo instituidor.',
+              baseLegal: 'Lei nº 8.059/1990, art. 30',
+              variacoes: [
+                { enunciado: 'É vedada a percepção cumulativa da pensão especial de ex-combatente com outra pensão deixada pelo mesmo instituidor, ressalvado o direito de opção.', certa: true, explicacao: 'Correto — a vedação é à dupla pensão do mesmo instituidor, preservada a escolha pelo benefício mais vantajoso.' },
               ],
             },
           ],
@@ -222,7 +299,6 @@ A pensão é **rateada igualmente** entre os beneficiários da mesma classe, e a
         {
           id: 'prev-b4-t1-s4',
           nome: 'Pensão especial às vítimas de hemodiálise de Caruaru (Lei 9.422/1996)',
-          // conteúdo herdado do tópico 'prev-b4-04' da estrutura de 3 níveis
           teoria: `
 ## O caso
 
@@ -254,7 +330,7 @@ A pensão é **inacumulável** com qualquer rendimento pago pela União a títul
 `,
           questoes: [
             {
-              id: 'prev-b4-04-q1',
+              id: 'prev-b4-t1-s4-q1',
               enunciado: 'A pensão especial concedida às vítimas de hemodiálise de Caruaru não será transmitida aos seus sucessores.',
               certa: true,
               explicacao: 'A intransmissibilidade é característica expressa dessa pensão — e o contraste com o Césio-137, que é transmissível, é o ponto que a banca explora. Item cobrado na prova de 2022.',
@@ -264,13 +340,43 @@ A pensão é **inacumulável** com qualquer rendimento pago pela União a títul
               ],
             },
             {
-              id: 'prev-b4-04-q2',
+              id: 'prev-b4-t1-s4-q2',
               enunciado: 'A pensão especial das vítimas de hemodiálise de Caruaru é custeada pelo Tesouro Nacional e independe de contribuição prévia à previdência social.',
               certa: true,
               explicacao: 'Tem natureza indenizatória, sem exigência de vínculo contributivo.',
               baseLegal: 'Lei nº 9.422/1996',
               variacoes: [
                 { enunciado: 'A percepção da pensão especial de Caruaru impede o recebimento de qualquer benefício previdenciário decorrente de contribuição própria da vítima.', certa: false, explicacao: 'A inacumulabilidade alcança indenizações da União pelos mesmos fatos, não os benefícios previdenciários contributivos.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s4-q3',
+              enunciado: 'A pensão especial devida às vítimas do episódio de hemodiálise de Caruaru é personalíssima, não se transmitindo a herdeiros ou sucessores.',
+              certa: true,
+              explicacao: 'É o traço que a distingue da pensão do Césio-137, transmissível. As duas leis são de 1996 e a banca as apresenta em sequência justamente para induzir a troca.',
+              baseLegal: 'Lei nº 9.422/1996, art. 2º',
+              variacoes: [
+                { enunciado: 'Falecendo o beneficiário da pensão especial de Caruaru, o benefício é revertido ao cônjuge sobrevivente.', certa: false, explicacao: 'Não há reversão: a pensão de Caruaru é intransmissível. A regra da transmissão é da pensão do Césio-137.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s4-q4',
+              enunciado: 'A pensão especial das vítimas de hemodiálise de Caruaru é inacumulável com indenização paga pela União em decorrência dos mesmos fatos, ressalvado o direito de opção.',
+              certa: true,
+              explicacao: 'A lógica é impedir a dupla reparação pelo mesmo evento, preservando ao beneficiário a escolha do que for mais vantajoso.',
+              baseLegal: 'Lei nº 9.422/1996',
+              variacoes: [
+                { enunciado: 'A pensão especial de Caruaru impede o recebimento de aposentadoria decorrente de contribuições próprias da vítima.', certa: false, explicacao: 'A inacumulabilidade alcança indenizações da União pelos mesmos fatos, e não benefícios previdenciários contributivos.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s4-q5',
+              enunciado: 'A concessão da pensão especial de Caruaru independe de o beneficiário ostentar a qualidade de segurado do RGPS.',
+              certa: true,
+              explicacao: 'É benefício indenizatório custeado pelo Tesouro. Exigir qualidade de segurado desvirtuaria a natureza reparatória da lei.',
+              baseLegal: 'Lei nº 9.422/1996',
+              variacoes: [
+                { enunciado: 'A pensão especial de Caruaru é custeada pelo Fundo do Regime Geral de Previdência Social.', certa: false, explicacao: 'É custeada pelo Tesouro Nacional, por ter natureza indenizatória e não contributiva.' },
               ],
             },
           ],
@@ -283,7 +389,6 @@ A pensão é **inacumulável** com qualquer rendimento pago pela União a títul
         {
           id: 'prev-b4-t1-s5',
           nome: 'Pensão vitalícia às vítimas do Césio-137 (Lei 9.425/1996)',
-          // conteúdo herdado do tópico 'prev-b4-05' da estrutura de 3 níveis
           teoria: `
 ## O acidente de Goiânia
 
@@ -322,7 +427,7 @@ Em caso de **morte do beneficiário**, a pensão é **transmitida ao cônjuge ou
 `,
           questoes: [
             {
-              id: 'prev-b4-05-q1',
+              id: 'prev-b4-t1-s5-q1',
               enunciado: 'A pensão especial concedida às vítimas do acidente com césio-137 ocorrido em Goiânia é transmissível ao cônjuge sobrevivente ou aos herdeiros, em caso de morte do beneficiário.',
               certa: true,
               explicacao: 'É a característica que distingue essa pensão da de Caruaru, que é intransmissível. Item cobrado na prova de 2022.',
@@ -332,13 +437,43 @@ Em caso de **morte do beneficiário**, a pensão é **transmitida ao cônjuge ou
               ],
             },
             {
-              id: 'prev-b4-05-q2',
+              id: 'prev-b4-t1-s5-q2',
               enunciado: 'A pensão especial das vítimas do césio-137 exige contribuição prévia ao RGPS e submete-se a carência de doze contribuições.',
               certa: false,
               explicacao: 'É benefício indenizatório, custeado pelo Tesouro Nacional, que independe de contribuição e de carência.',
               baseLegal: 'Lei nº 9.425/1996',
               variacoes: [
                 { enunciado: 'A pensão vitalícia das vítimas do césio-137 é custeada pelo Tesouro Nacional e reajustada pelos mesmos índices dos benefícios do RGPS.', certa: true, explicacao: 'Correto — natureza indenizatória e reajuste vinculado aos índices dos benefícios previdenciários.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s5-q3',
+              enunciado: 'A pensão vitalícia devida às vítimas do acidente com césio-137 transmite-se, no caso de morte do beneficiário, ao cônjuge ou companheiro sobrevivente e, na falta destes, aos herdeiros.',
+              certa: true,
+              explicacao: 'É o oposto da pensão de Caruaru. Mnemônico: Césio Continua (transmite); Caruaru Cancela (não transmite).',
+              baseLegal: 'Lei nº 9.425/1996, art. 2º, §1º',
+              variacoes: [
+                { enunciado: 'A pensão das vítimas do césio-137 é personalíssima e intransmissível.', certa: false, explicacao: 'Ela é transmissível ao cônjuge ou companheiro sobrevivente e, na falta, aos herdeiros.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s5-q4',
+              enunciado: 'O acidente radiológico que deu origem à pensão da Lei nº 9.425/1996 ocorreu em Goiânia, em 1987, sendo considerado o maior acidente radioativo do mundo fora de instalações nucleares.',
+              certa: true,
+              explicacao: 'A cápsula de césio-137 de um aparelho de radioterapia abandonado foi violada, contaminando centenas de pessoas. A lei de reparação só veio em 1996.',
+              baseLegal: 'Lei nº 9.425/1996',
+              variacoes: [
+                { enunciado: 'A pensão da Lei nº 9.425/1996 destina-se às vítimas de contaminação ocorrida em clínica de hemodiálise.', certa: false, explicacao: 'A contaminação em hemodiálise é o caso de Caruaru (Lei nº 9.422/1996). A Lei nº 9.425/1996 trata do césio-137, em Goiânia.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s5-q5',
+              enunciado: 'A pensão especial das vítimas do césio-137 é reajustada pelos mesmos índices aplicados aos benefícios mantidos pelo RGPS.',
+              certa: true,
+              explicacao: 'Embora não seja benefício previdenciário, a lei adota os índices do RGPS como parâmetro de reajuste, preservando o valor real da reparação.',
+              baseLegal: 'Lei nº 9.425/1996',
+              variacoes: [
+                { enunciado: 'A pensão especial do césio-137 exige carência de doze contribuições mensais ao RGPS.', certa: false, explicacao: 'É benefício indenizatório: independe de contribuição e de carência.' },
               ],
             },
           ],
@@ -351,7 +486,6 @@ Em caso de **morte do beneficiário**, a pensão é **transmitida ao cônjuge ou
         {
           id: 'prev-b4-t1-s6',
           nome: 'Aposentadoria e pensão ao anistiado político (Lei 10.559/2002)',
-          // conteúdo herdado do tópico 'prev-b4-06' da estrutura de 3 níveis
           teoria: `
 ## Fundamento
 
@@ -388,7 +522,7 @@ A declaração da condição de anistiado político cabe ao **Ministro de Estado
 `,
           questoes: [
             {
-              id: 'prev-b4-06-q1',
+              id: 'prev-b4-t1-s6-q1',
               enunciado: 'O regime do anistiado político compreende o direito à reparação econômica de caráter indenizatório, sendo vedadas a readmissão e a promoção na inatividade.',
               certa: false,
               explicacao: 'O regime assegura justamente a reintegração dos servidores e empregados públicos punidos e as promoções devidas. Item cobrado na prova de 2022.',
@@ -398,13 +532,43 @@ A declaração da condição de anistiado político cabe ao **Ministro de Estado
               ],
             },
             {
-              id: 'prev-b4-06-q2',
+              id: 'prev-b4-t1-s6-q2',
               enunciado: 'A reparação econômica em prestação única ao anistiado político corresponde a trinta salários mínimos por ano de punição, observado teto legal.',
               certa: true,
               explicacao: 'É a regra do art. 4º da Lei nº 10.559/2002, com teto de R$ 100.000,00.',
               baseLegal: 'Lei nº 10.559/2002, art. 4º',
               variacoes: [
                 { enunciado: 'É permitida a acumulação de mais de uma reparação econômica pelo mesmo período de punição.', certa: false, explicacao: 'É vedada a acumulação de reparações de mesma natureza pelo mesmo fato, ressalvado o direito de opção.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s6-q3',
+              enunciado: 'A reparação econômica ao anistiado político pode ser paga em prestação única ou em prestação mensal, permanente e continuada.',
+              certa: true,
+              explicacao: 'A prestação única cabe quando não é possível comprovar o vínculo laboral; a mensal, quando comprovados o vínculo e o afastamento.',
+              baseLegal: 'Lei nº 10.559/2002, art. 1º, II',
+              variacoes: [
+                { enunciado: 'A reparação econômica ao anistiado político admite exclusivamente o pagamento em prestação única.', certa: false, explicacao: 'A lei prevê as duas modalidades: prestação única e prestação mensal, permanente e continuada.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s6-q4',
+              enunciado: 'O período em que o anistiado político esteve compelido ao afastamento de suas atividades profissionais é computado, para todos os efeitos, inclusive para aposentadoria.',
+              certa: true,
+              explicacao: 'A contagem decorre do art. 8º do ADCT. Não configura tempo fictício vedado pelo art. 201, §14, porque tem fundamento constitucional específico.',
+              baseLegal: 'Lei nº 10.559/2002, art. 1º, III; ADCT, art. 8º',
+              variacoes: [
+                { enunciado: 'O tempo de afastamento do anistiado político não pode ser computado para aposentadoria, por configurar tempo de contribuição fictício.', certa: false, explicacao: 'A contagem é expressamente assegurada e tem base no art. 8º do ADCT — não se trata de tempo fictício vedado.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s6-q5',
+              enunciado: 'A prestação mensal devida ao anistiado político é transmissível aos seus dependentes em caso de falecimento.',
+              certa: true,
+              explicacao: 'A reparação mensal converte-se em pensão aos dependentes, diferentemente da prestação única, que se esgota no pagamento.',
+              baseLegal: 'Lei nº 10.559/2002, art. 13',
+              variacoes: [
+                { enunciado: 'O regime do anistiado político veda expressamente a reintegração ao serviço público.', certa: false, explicacao: 'Ao contrário: o regime assegura a reintegração dos servidores e empregados públicos punidos, além das promoções devidas.' },
               ],
             },
           ],
@@ -418,7 +582,6 @@ A declaração da condição de anistiado político cabe ao **Ministro de Estado
         {
           id: 'prev-b4-t1-s7',
           nome: 'Pensão especial — hanseníase (Lei 11.520/2007)',
-          // conteúdo herdado do tópico 'prev-b4-07' da estrutura de 3 níveis
           teoria: `
 ## Contexto
 
@@ -456,7 +619,7 @@ A pensão especial:
 `,
           questoes: [
             {
-              id: 'prev-b4-07-q1',
+              id: 'prev-b4-t1-s7-q1',
               enunciado: 'A pensão especial concedida às pessoas atingidas pela hanseníase, ressalvado o direito de opção, não é acumulável com indenização que a União venha a pagar em decorrência de responsabilização civil sobre os mesmos fatos, mas não impede a fruição de benefício previdenciário.',
               certa: true,
               explicacao: 'É a dupla regra da Lei nº 11.520/2007: veda a dupla reparação pelo mesmo fato, mas preserva os benefícios contributivos. Item cobrado na prova de 2022.',
@@ -466,13 +629,43 @@ A pensão especial:
               ],
             },
             {
-              id: 'prev-b4-07-q2',
+              id: 'prev-b4-t1-s7-q2',
               enunciado: 'A pensão especial da Lei nº 11.520/2007 é devida às pessoas submetidas a isolamento e internação compulsórios em hospitais-colônia até 31 de dezembro de 1986.',
               certa: true,
               explicacao: 'É o recorte temporal da lei, que exige comprovação da internação compulsória e requerimento do interessado.',
               baseLegal: 'Lei nº 11.520/2007, art. 1º',
               variacoes: [
                 { enunciado: 'A pensão especial das pessoas atingidas pela hanseníase é transferível aos herdeiros em caso de falecimento do beneficiário.', certa: false, explicacao: 'A pensão é vitalícia e INTRANSFERÍVEL.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s7-q3',
+              enunciado: 'A pensão especial da Lei nº 11.520/2007 destina-se às pessoas atingidas pela hanseníase que foram submetidas a isolamento e internação compulsórios em hospitais-colônia.',
+              certa: true,
+              explicacao: 'Repara a política estatal de segregação compulsória adotada até 31/12/1986, que separava doentes de suas famílias.',
+              baseLegal: 'Lei nº 11.520/2007, art. 1º',
+              variacoes: [
+                { enunciado: 'A pensão da Lei nº 11.520/2007 é devida a toda pessoa diagnosticada com hanseníase, independentemente de internação compulsória.', certa: false, explicacao: 'O requisito central é ter sido submetido a isolamento e internação compulsórios em hospitais-colônia até 31/12/1986.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s7-q4',
+              enunciado: 'A pensão especial concedida às pessoas atingidas pela hanseníase é vitalícia e intransferível.',
+              certa: true,
+              explicacao: 'Repara um dano pessoal e direto sofrido pelo próprio internado, e por isso não se transmite a herdeiros.',
+              baseLegal: 'Lei nº 11.520/2007, art. 1º',
+              variacoes: [
+                { enunciado: 'A pensão especial da hanseníase transmite-se aos herdeiros do beneficiário.', certa: false, explicacao: 'A pensão é vitalícia e INTRANSFERÍVEL.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s7-q5',
+              enunciado: 'A concessão da pensão especial da hanseníase depende de requerimento do interessado e produz efeitos a partir dele.',
+              certa: true,
+              explicacao: 'Não há concessão de ofício: o benefício é requerido e a comprovação da internação compulsória é ônus do interessado.',
+              baseLegal: 'Lei nº 11.520/2007, art. 2º',
+              variacoes: [
+                { enunciado: 'A pensão especial da hanseníase é concedida de ofício pelo INSS, independentemente de requerimento.', certa: false, explicacao: 'Depende de requerimento do interessado, com comprovação da internação compulsória.' },
               ],
             },
           ],
@@ -485,7 +678,6 @@ A pensão especial:
         {
           id: 'prev-b4-t1-s8',
           nome: 'Pensão especial — Síndrome Congênita do Zika Vírus (Lei 13.985/2020)',
-          // conteúdo herdado do tópico 'prev-b4-08' da estrutura de 3 níveis
           teoria: `
 ## Contexto
 
@@ -527,7 +719,7 @@ O requerimento é feito ao INSS pelo **representante legal** da criança, com ap
 `,
           questoes: [
             {
-              id: 'prev-b4-08-q1',
+              id: 'prev-b4-t1-s8-q1',
               enunciado: 'A pensão especial destinada às crianças com síndrome congênita do zika vírus, nascidas entre 1º de janeiro de 2015 e 31 de dezembro de 2019 e beneficiárias do BPC, é mensal, vitalícia e intransferível, no valor de um salário mínimo.',
               certa: true,
               explicacao: 'Reúne os quatro atributos da Lei nº 13.985/2020 e o recorte temporal. Item cobrado na prova de 2022.',
@@ -537,13 +729,43 @@ O requerimento é feito ao INSS pelo **representante legal** da criança, com ap
               ],
             },
             {
-              id: 'prev-b4-08-q2',
+              id: 'prev-b4-t1-s8-q2',
               enunciado: 'É permitida a acumulação da pensão especial da síndrome congênita do zika vírus com o benefício de prestação continuada.',
               certa: false,
               explicacao: 'O recebimento da pensão especial implica a suspensão do BPC — não há acumulação, sendo assegurado o direito de opção.',
               baseLegal: 'Lei nº 13.985/2020, art. 3º',
               variacoes: [
                 { enunciado: 'A pensão especial da Lei nº 13.985/2020 independe de contribuição prévia e é custeada pelo Tesouro Nacional.', certa: true, explicacao: 'Correto — natureza indenizatória, sem carência e sem exigência contributiva.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s8-q3',
+              enunciado: 'A pensão especial da síndrome congênita do zika vírus é devida às crianças nascidas entre 1º de janeiro de 2015 e 31 de dezembro de 2019.',
+              certa: true,
+              explicacao: 'O recorte temporal corresponde ao período da epidemia. Nascimentos fora dessa janela não são alcançados pela lei.',
+              baseLegal: 'Lei nº 13.985/2020, art. 1º',
+              variacoes: [
+                { enunciado: 'A pensão especial da síndrome congênita do zika vírus alcança crianças nascidas em qualquer período, desde que comprovado o diagnóstico.', certa: false, explicacao: 'A lei delimita o período de nascimento entre 01/01/2015 e 31/12/2019.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s8-q4',
+              enunciado: 'O requerimento da pensão especial da síndrome congênita do zika vírus é apresentado ao INSS pelo representante legal da criança.',
+              certa: true,
+              explicacao: 'Sendo a beneficiária uma criança, o requerimento e a apresentação do laudo médico cabem ao representante legal.',
+              baseLegal: 'Lei nº 13.985/2020, art. 4º',
+              variacoes: [
+                { enunciado: 'A pensão especial da síndrome congênita do zika vírus é concedida automaticamente às crianças beneficiárias do BPC, sem necessidade de requerimento.', certa: false, explicacao: 'Depende de requerimento do representante legal, instruído com laudo médico que ateste o diagnóstico.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s8-q5',
+              enunciado: 'Concedida a pensão especial da síndrome congênita do zika vírus, fica suspenso o pagamento do benefício de prestação continuada eventualmente recebido.',
+              certa: true,
+              explicacao: 'A pensão substitui o BPC durante sua vigência. Como é vitalícia e definitiva, costuma ser mais vantajosa que o BPC, sujeito a revisão bienal.',
+              baseLegal: 'Lei nº 13.985/2020, art. 3º',
+              variacoes: [
+                { enunciado: 'A pensão especial do zika vírus é temporária, cessando quando o beneficiário completa a maioridade civil.', certa: false, explicacao: 'A pensão é VITALÍCIA, além de mensal e intransferível, no valor de um salário mínimo.' },
               ],
             },
           ],
@@ -556,7 +778,6 @@ O requerimento é feito ao INSS pelo **representante legal** da criança, com ap
         {
           id: 'prev-b4-t1-s9',
           nome: 'Seguro-defeso — pescador artesanal (Lei 10.779/2003)',
-          // conteúdo herdado do tópico 'prev-b4-09' da estrutura de 3 níveis
           teoria: `
 ## O que é
 
@@ -600,7 +821,7 @@ O pescador artesanal é, ao mesmo tempo, **segurado especial** do RGPS (contribu
 `,
           questoes: [
             {
-              id: 'prev-b4-09-q1',
+              id: 'prev-b4-t1-s9-q1',
               enunciado: 'O seguro-desemprego concedido durante o período de defeso ao pescador profissional artesanal é transferível a outrem.',
               certa: false,
               explicacao: 'O seguro-defeso é pessoal e intransferível, conforme expressa previsão legal. Item cobrado na prova de 2022.',
@@ -610,13 +831,43 @@ O pescador artesanal é, ao mesmo tempo, **segurado especial** do RGPS (contribu
               ],
             },
             {
-              id: 'prev-b4-09-q2',
+              id: 'prev-b4-t1-s9-q2',
               enunciado: 'Para fazer jus ao seguro-defeso, o pescador artesanal não pode estar em gozo de benefício de prestação continuada da previdência ou da assistência social, excetuados o auxílio-acidente e a pensão por morte.',
               certa: true,
               explicacao: 'É a regra de não acumulação do art. 2º da Lei nº 10.779/2003, com as duas exceções expressas.',
               baseLegal: 'Lei nº 10.779/2003, art. 2º, §2º',
               variacoes: [
                 { enunciado: 'O seguro-defeso é custeado pelo Fundo do Regime Geral de Previdência Social.', certa: false, explicacao: 'É custeado pelo FAT (Fundo de Amparo ao Trabalhador), embora operacionalizado pelo INSS.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s9-q3',
+              enunciado: 'O seguro-defeso é custeado pelo Fundo de Amparo ao Trabalhador, embora sua operacionalização caiba ao INSS.',
+              certa: true,
+              explicacao: 'A natureza é de seguro-desemprego, e não de benefício previdenciário — daí o custeio pelo FAT. O INSS apenas o operacionaliza.',
+              baseLegal: 'Lei nº 10.779/2003, art. 2º',
+              variacoes: [
+                { enunciado: 'O seguro-defeso é custeado pelo Fundo do Regime Geral de Previdência Social, por integrar o rol de benefícios previdenciários.', certa: false, explicacao: 'Não integra o rol do art. 18 da Lei nº 8.213/91: é seguro-desemprego custeado pelo FAT.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s9-q4',
+              enunciado: 'Para fazer jus ao seguro-defeso, o pescador artesanal deve possuir registro ativo no Registro Geral da Atividade Pesqueira há pelo menos um ano antes do início do defeso.',
+              certa: true,
+              explicacao: 'O prazo mínimo de registro evita adesões oportunistas às vésperas do período de proibição da pesca.',
+              baseLegal: 'Lei nº 10.779/2003, art. 2º, §2º',
+              variacoes: [
+                { enunciado: 'O seguro-defeso é devido ao pescador artesanal desde que ele obtenha o registro no RGP até o início do período de defeso.', certa: false, explicacao: 'Exige-se registro ativo há pelo menos um ano antes do início do defeso.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t1-s9-q5',
+              enunciado: 'O valor do seguro-defeso corresponde a um salário mínimo mensal, devido durante o período de proibição da pesca.',
+              certa: true,
+              explicacao: 'O pagamento acompanha a duração do defeso da espécie, limitado em regra a quatro meses por ano.',
+              baseLegal: 'Lei nº 10.779/2003, art. 1º',
+              variacoes: [
+                { enunciado: 'O pescador artesanal que recebe pensão por morte fica impedido de perceber o seguro-defeso.', certa: false, explicacao: 'A pensão por morte e o auxílio-acidente são as duas exceções expressas à regra de não acumulação do seguro-defeso.' },
               ],
             },
           ],
@@ -637,7 +888,6 @@ O pescador artesanal é, ao mesmo tempo, **segurado especial** do RGPS (contribu
         {
           id: 'prev-b4-t2-s1',
           nome: 'LOAS — Lei Orgânica da Assistência Social (Lei 8.742/1993 e Lei 14.176/2021)',
-          // conteúdo herdado do tópico 'prev-b4-10' da estrutura de 3 níveis
           teoria: `
 ## Fundamento
 
@@ -687,7 +937,7 @@ Sistema público, **descentralizado e participativo**, que organiza os serviços
 `,
           questoes: [
             {
-              id: 'prev-b4-10-q1',
+              id: 'prev-b4-t2-s1-q1',
               enunciado: 'A assistência social é regida pelo princípio da supremacia das exigências de rentabilidade econômica sobre o atendimento às necessidades sociais.',
               certa: false,
               explicacao: 'O princípio é exatamente o inverso: supremacia do atendimento às necessidades sociais sobre as exigências de rentabilidade econômica. Item cobrado na prova de 2022.',
@@ -697,7 +947,7 @@ Sistema público, **descentralizado e participativo**, que organiza os serviços
               ],
             },
             {
-              id: 'prev-b4-10-q2',
+              id: 'prev-b4-t2-s1-q2',
               enunciado: 'A descentralização político-administrativa para os estados, o Distrito Federal e os municípios, com comando único em cada esfera, é diretriz da organização da assistência social.',
               certa: true,
               explicacao: 'É a primeira diretriz do art. 5º da LOAS, em consonância com o art. 204, I, da CF/88.',
@@ -707,13 +957,33 @@ Sistema público, **descentralizado e participativo**, que organiza os serviços
               ],
             },
             {
-              id: 'prev-b4-10-q3',
+              id: 'prev-b4-t2-s1-q3',
               enunciado: 'A assistência social será prestada a quem dela necessitar, independentemente de contribuição à seguridade social.',
               certa: true,
               explicacao: 'Literalidade do art. 203 da CF/88 e do art. 1º da LOAS — o traço que a distingue da previdência.',
               baseLegal: 'CF/88, art. 203; Lei nº 8.742/1993, art. 1º',
               variacoes: [
                 { enunciado: 'O acesso aos benefícios assistenciais depende do cumprimento de carência mínima de doze contribuições.', certa: false, explicacao: 'A assistência social independe de contribuição e, por consequência, de carência.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s1-q4',
+              enunciado: 'A assistência social organiza-se sob a forma de sistema descentralizado e participativo, denominado Sistema Único de Assistência Social, estruturado em proteção social básica e proteção social especial.',
+              certa: true,
+              explicacao: 'A proteção básica é preventiva e se dá no CRAS; a especial atende quem já teve direitos violados, no CREAS.',
+              baseLegal: 'Lei nº 8.742/1993, art. 6º',
+              variacoes: [
+                { enunciado: 'A proteção social especial é executada nos Centros de Referência de Assistência Social (CRAS).', certa: false, explicacao: 'O CRAS executa a proteção social BÁSICA. A especial é atribuição do CREAS.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s1-q5',
+              enunciado: 'A primazia da responsabilidade do Estado na condução da política de assistência social em cada esfera de governo constitui diretriz da LOAS.',
+              certa: true,
+              explicacao: 'É a terceira diretriz do art. 5º. As entidades beneficentes colaboram, mas a responsabilidade primária permanece estatal.',
+              baseLegal: 'Lei nº 8.742/1993, art. 5º, III',
+              variacoes: [
+                { enunciado: 'A LOAS atribui às entidades beneficentes privadas a primazia na condução da política de assistência social.', certa: false, explicacao: 'A primazia é do ESTADO, em cada esfera de governo. As entidades privadas atuam de forma complementar.' },
               ],
             },
           ],
@@ -727,7 +997,6 @@ Sistema público, **descentralizado e participativo**, que organiza os serviços
         {
           id: 'prev-b4-t2-s2',
           nome: 'Benefício de Prestação Continuada (BPC/LOAS)',
-          // conteúdo herdado do tópico 'prev-b4-11' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -779,7 +1048,7 @@ Composta pelo requerente, o **cônjuge ou companheiro**, os **pais** e, na ausê
 `,
           questoes: [
             {
-              id: 'prev-b4-11-q1',
+              id: 'prev-b4-t2-s2-q1',
               enunciado: 'Terão direito ao benefício de prestação continuada a pessoa com deficiência ou a pessoa idosa com renda familiar mensal per capita igual ou inferior a um quarto do salário mínimo, observados os demais critérios de elegibilidade.',
               certa: true,
               explicacao: 'É o critério objetivo do art. 20, §3º, da LOAS, com possibilidade de ampliação até 1/2 salário mínimo pela Lei nº 14.176/2021. Item cobrado na prova de 2022.',
@@ -789,7 +1058,7 @@ Composta pelo requerente, o **cônjuge ou companheiro**, os **pais** e, na ausê
               ],
             },
             {
-              id: 'prev-b4-11-q2',
+              id: 'prev-b4-t2-s2-q2',
               enunciado: 'Compete ao INSS a operacionalização do benefício de prestação continuada.',
               certa: true,
               explicacao: 'Embora o BPC seja assistencial e custeado pelo FNAS, sua concessão e manutenção cabem ao INSS. Item cobrado na prova de 2022.',
@@ -799,13 +1068,33 @@ Composta pelo requerente, o **cônjuge ou companheiro**, os **pais** e, na ausê
               ],
             },
             {
-              id: 'prev-b4-11-q3',
+              id: 'prev-b4-t2-s2-q3',
               enunciado: 'Considera-se pessoa com deficiência, para fins do BPC, aquela que tem impedimento de longo prazo, de no mínimo dois anos, de natureza física, mental, intelectual ou sensorial.',
               certa: true,
               explicacao: 'É a definição do art. 20, §§2º e 10, da LOAS, alinhada à Convenção sobre os Direitos das Pessoas com Deficiência.',
               baseLegal: 'Lei nº 8.742/1993, art. 20, §§2º e 10',
               variacoes: [
                 { enunciado: 'O benefício de prestação continuada exige carência de cento e oitenta contribuições mensais.', certa: false, explicacao: 'O BPC é assistencial: independe de contribuição e de carência.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s2-q4',
+              enunciado: 'O benefício de prestação continuada deve ser revisto a cada dois anos para avaliação da continuidade das condições que lhe deram origem.',
+              certa: true,
+              explicacao: 'Como o BPC é assistencial e condicionado à situação de necessidade, a lei impõe revisão bienal — o que o distingue das aposentadorias, definitivas.',
+              baseLegal: 'Lei nº 8.742/1993, art. 21',
+              variacoes: [
+                { enunciado: 'O benefício de prestação continuada, uma vez concedido, é definitivo e não se submete a revisão periódica.', certa: false, explicacao: 'A revisão é bienal, para verificar se persistem as condições que deram origem ao benefício.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s2-q5',
+              enunciado: 'O benefício de prestação continuada não gera direito ao abono anual nem à pensão por morte aos dependentes do beneficiário.',
+              certa: true,
+              explicacao: 'É assistencial e personalíssimo: cessa com a morte. O valor não recebido em vida, porém, é pago aos herdeiros — o que não configura transmissão do benefício.',
+              baseLegal: 'Lei nº 8.742/1993, art. 21, §1º; Decreto nº 6.214/2007',
+              variacoes: [
+                { enunciado: 'Falecendo o titular do BPC, o benefício é convertido em pensão por morte em favor de seus dependentes.', certa: false, explicacao: 'O BPC é intransferível e cessa com a morte. Não há conversão em pensão.' },
               ],
             },
           ],
@@ -820,7 +1109,6 @@ Composta pelo requerente, o **cônjuge ou companheiro**, os **pais** e, na ausê
         {
           id: 'prev-b4-t2-s3',
           nome: 'Auxílio-Inclusão',
-          // conteúdo herdado do tópico 'prev-b4-12' da estrutura de 3 níveis
           teoria: `
 ## O problema que ele resolve
 
@@ -861,7 +1149,7 @@ Enquanto a pessoa com deficiência exerce atividade remunerada, o **BPC fica sus
 `,
           questoes: [
             {
-              id: 'prev-b4-12-q1',
+              id: 'prev-b4-t2-s3-q1',
               enunciado: 'O pagamento do auxílio-inclusão não será acumulado com o pagamento do benefício de prestação continuada.',
               certa: true,
               explicacao: 'O auxílio-inclusão substitui o BPC durante o exercício de atividade remunerada. Item cobrado na prova de 2022.',
@@ -871,13 +1159,43 @@ Enquanto a pessoa com deficiência exerce atividade remunerada, o **BPC fica sus
               ],
             },
             {
-              id: 'prev-b4-12-q2',
+              id: 'prev-b4-t2-s3-q2',
               enunciado: 'O valor do auxílio-inclusão corresponde a cinquenta por cento do valor do benefício de prestação continuada.',
               certa: true,
               explicacao: 'Corresponde a meio salário mínimo, somado à remuneração do trabalho.',
               baseLegal: 'Lei nº 8.742/1993, art. 26-A, §3º',
               variacoes: [
                 { enunciado: 'O auxílio-inclusão é devido à pessoa com deficiência que passe a exercer atividade remunerada com remuneração de até cinco salários mínimos.', certa: false, explicacao: 'O limite de remuneração é de 2 salários mínimos.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s3-q3',
+              enunciado: 'O auxílio-inclusão é devido à pessoa com deficiência moderada ou grave que passe a exercer atividade remunerada que a enquadre como segurada obrigatória do RGPS ou como contribuinte de regime próprio.',
+              certa: true,
+              explicacao: 'O vínculo formal é requisito: o objetivo é estimular a entrada no mercado de trabalho regular, e não apenas o exercício de atividade informal.',
+              baseLegal: 'Lei nº 8.742/1993, art. 26-A',
+              variacoes: [
+                { enunciado: 'O auxílio-inclusão é devido à pessoa com deficiência de qualquer grau que passe a exercer atividade remunerada.', certa: false, explicacao: 'A lei restringe às deficiências de grau moderado ou grave.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s3-q4',
+              enunciado: 'Constitui requisito para o auxílio-inclusão que a remuneração da atividade exercida seja limitada a dois salários mínimos.',
+              certa: true,
+              explicacao: 'O teto de remuneração mantém o benefício focado em quem realmente precisa do complemento para permanecer no mercado de trabalho.',
+              baseLegal: 'Lei nº 8.742/1993, art. 26-A, I',
+              variacoes: [
+                { enunciado: 'Não há limite de remuneração para a concessão do auxílio-inclusão, desde que a pessoa com deficiência tenha recebido o BPC.', certa: false, explicacao: 'A remuneração da atividade está limitada a dois salários mínimos.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s3-q5',
+              enunciado: 'Exige-se, para o auxílio-inclusão, que a pessoa com deficiência tenha recebido o benefício de prestação continuada nos cinco anos anteriores ao início da atividade remunerada.',
+              certa: true,
+              explicacao: 'A janela de cinco anos assegura que o auxílio funcione como ponte entre o BPC e o trabalho, e não como benefício autônomo.',
+              baseLegal: 'Lei nº 8.742/1993, art. 26-A, II',
+              variacoes: [
+                { enunciado: 'O valor do auxílio-inclusão corresponde a cinquenta por cento do benefício de prestação continuada.', certa: true, explicacao: 'Correto — equivale a meio salário mínimo, somado à remuneração do trabalho.' },
               ],
             },
           ],
@@ -891,7 +1209,6 @@ Enquanto a pessoa com deficiência exerce atividade remunerada, o **BPC fica sus
         {
           id: 'prev-b4-t2-s4',
           nome: 'Decreto nº 6.214/2007 (regulamenta o BPC)',
-          // conteúdo herdado do tópico 'prev-b4-13' da estrutura de 3 níveis
           teoria: `
 ## Função
 
@@ -937,7 +1254,7 @@ A avaliação é **médica e social** — modelo **biopsicossocial** —, realiz
 `,
           questoes: [
             {
-              id: 'prev-b4-13-q1',
+              id: 'prev-b4-t2-s4-q1',
               enunciado: 'A avaliação da deficiência para fins de concessão do BPC é exclusivamente médica, realizada por perito do INSS.',
               certa: false,
               explicacao: 'A avaliação é médica E social (biopsicossocial), realizada por médicos peritos e assistentes sociais do INSS.',
@@ -947,13 +1264,43 @@ A avaliação é **médica e social** — modelo **biopsicossocial** —, realiz
               ],
             },
             {
-              id: 'prev-b4-13-q2',
+              id: 'prev-b4-t2-s4-q2',
               enunciado: 'O benefício de prestação continuada deve ser revisto a cada dois anos para avaliação da continuidade das condições que lhe deram origem.',
               certa: true,
               explicacao: 'É a revisão bienal prevista no art. 21 da LOAS e detalhada pelo Decreto nº 6.214/2007.',
               baseLegal: 'Lei nº 8.742/1993, art. 21; Decreto nº 6.214/2007',
               variacoes: [
                 { enunciado: 'O valor do BPC não recebido em vida pelo beneficiário é pago aos seus herdeiros.', certa: true, explicacao: 'Correto. Isso não configura transmissão do benefício, que é intransferível.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s4-q3',
+              enunciado: 'Conforme o Decreto nº 6.214/2007, a avaliação da deficiência para o BPC é composta por avaliação médica e avaliação social, realizadas por profissionais do INSS.',
+              certa: true,
+              explicacao: 'É o modelo biopsicossocial: considera impedimentos corporais e também barreiras socioambientais que restringem a participação social.',
+              baseLegal: 'Decreto nº 6.214/2007, art. 16',
+              variacoes: [
+                { enunciado: 'A avaliação da deficiência para o BPC é exclusivamente médica, cabendo ao perito aferir o grau de incapacidade laborativa.', certa: false, explicacao: 'A avaliação é médica E social. Além disso, o critério não é incapacidade laborativa, e sim impedimento de longo prazo em interação com barreiras.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s4-q4',
+              enunciado: 'O valor do benefício de prestação continuada não recebido em vida pelo beneficiário é pago aos seus herdeiros.',
+              certa: true,
+              explicacao: 'Trata-se de crédito já constituído em favor do falecido, e não de transmissão do benefício — a distinção preserva a intransferibilidade do BPC.',
+              baseLegal: 'Decreto nº 6.214/2007, art. 23',
+              variacoes: [
+                { enunciado: 'O pagamento de parcelas não recebidas em vida do beneficiário do BPC descaracteriza a intransferibilidade do benefício.', certa: false, explicacao: 'Não descaracteriza: paga-se um crédito já existente do falecido, sem que o benefício em si passe aos herdeiros.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t2-s4-q5',
+              enunciado: 'A concessão do BPC exige a inscrição do requerente e de sua família no Cadastro Único para Programas Sociais do Governo Federal.',
+              certa: true,
+              explicacao: 'O CadÚnico é a base para aferir a renda familiar per capita e a composição do grupo familiar, exigência reforçada pela Lei nº 14.176/2021.',
+              baseLegal: 'Lei nº 8.742/1993, art. 20, §12; Decreto nº 6.214/2007',
+              variacoes: [
+                { enunciado: 'A operacionalização do BPC compete ao Ministério responsável pela assistência social, cabendo ao INSS apenas o repasse dos valores.', certa: false, explicacao: 'A operacionalização — requerimento, análise, concessão, manutenção e revisão — compete ao INSS. Ao ministério cabe a coordenação e a normatização.' },
               ],
             },
           ],
@@ -974,7 +1321,6 @@ A avaliação é **médica e social** — modelo **biopsicossocial** —, realiz
         {
           id: 'prev-b4-t3-s1',
           nome: 'RPPS — União',
-          // conteúdo herdado do tópico 'prev-b4-14' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -1018,7 +1364,7 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
 `,
           questoes: [
             {
-              id: 'prev-b4-14-q1',
+              id: 'prev-b4-t3-s1-q1',
               enunciado: 'O regime próprio de previdência social abrange exclusivamente os servidores titulares de cargo efetivo do ente federativo que o instituiu.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 vincula ao RGPS os ocupantes de cargo temporário, de emprego público e exclusivamente de cargo em comissão.',
@@ -1028,7 +1374,7 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
               ],
             },
             {
-              id: 'prev-b4-14-q2',
+              id: 'prev-b4-t3-s1-q2',
               enunciado: 'Após a EC nº 103/2019, é vedada a instituição de novos regimes próprios de previdência social pelos entes federativos.',
               certa: true,
               explicacao: 'A emenda vedou a criação de novos RPPS, permitindo apenas a manutenção dos já existentes, com unidade gestora única.',
@@ -1038,13 +1384,33 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
               ],
             },
             {
-              id: 'prev-b4-14-q3',
+              id: 'prev-b4-t3-s1-q3',
               enunciado: 'Compete ao Conselho de Recursos da Previdência Social julgar os recursos interpostos contra decisões proferidas em processos de supervisão e de fiscalização de regimes próprios de previdência social.',
               certa: true,
               explicacao: 'A competência do CRPS foi ampliada para alcançar esses processos. Item cobrado na prova de 2022.',
               baseLegal: 'Decreto nº 3.048/99, art. 303',
               variacoes: [
                 { enunciado: 'É assegurada a contagem recíproca do tempo de contribuição entre o RGPS e os regimes próprios, com compensação financeira entre eles.', certa: true, explicacao: 'Correto — art. 201, §9º, da CF/88.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s1-q4',
+              enunciado: 'Os aposentados e pensionistas de regime próprio de previdência social contribuem sobre a parcela dos proventos que supere o limite máximo dos benefícios do RGPS.',
+              certa: true,
+              explicacao: 'Diferentemente do RGPS, onde não há contribuição sobre proventos, no RPPS a cobrança incide sobre o que excede o teto — e, em entes deficitários, pode alcançar o que excede um salário mínimo.',
+              baseLegal: 'CF/88, art. 40, §§18 e 21-A',
+              variacoes: [
+                { enunciado: 'Os aposentados de regime próprio são isentos de contribuição previdenciária sobre seus proventos, tal como ocorre no RGPS.', certa: false, explicacao: 'No RPPS há contribuição sobre a parcela dos proventos que excede o teto do RGPS. A isenção total é regra do RGPS.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s1-q5',
+              enunciado: 'O ente federativo que instituir regime próprio pode fixar o teto do RGPS como limite máximo dos benefícios, desde que institua regime de previdência complementar para os seus servidores.',
+              certa: true,
+              explicacao: 'É a condição do art. 40, §§14 a 16. Na União, esse regime complementar é a FUNPRESP.',
+              baseLegal: 'CF/88, art. 40, §§14 a 16',
+              variacoes: [
+                { enunciado: 'O ente pode limitar os benefícios do RPPS ao teto do RGPS independentemente da instituição de regime de previdência complementar.', certa: false, explicacao: 'A limitação ao teto está condicionada à instituição do regime de previdência complementar para os servidores.' },
               ],
             },
           ],
@@ -1059,7 +1425,6 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
         {
           id: 'prev-b4-t3-s2',
           nome: 'RPPS — estados, DF e municípios',
-          // conteúdo herdado do tópico 'prev-b4-14' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -1103,7 +1468,7 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
 `,
           questoes: [
             {
-              id: 'prev-b4-14-q1',
+              id: 'prev-b4-t3-s2-q1',
               enunciado: 'O regime próprio de previdência social abrange exclusivamente os servidores titulares de cargo efetivo do ente federativo que o instituiu.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 vincula ao RGPS os ocupantes de cargo temporário, de emprego público e exclusivamente de cargo em comissão.',
@@ -1113,7 +1478,7 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
               ],
             },
             {
-              id: 'prev-b4-14-q2',
+              id: 'prev-b4-t3-s2-q2',
               enunciado: 'Após a EC nº 103/2019, é vedada a instituição de novos regimes próprios de previdência social pelos entes federativos.',
               certa: true,
               explicacao: 'A emenda vedou a criação de novos RPPS, permitindo apenas a manutenção dos já existentes, com unidade gestora única.',
@@ -1123,13 +1488,33 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
               ],
             },
             {
-              id: 'prev-b4-14-q3',
+              id: 'prev-b4-t3-s2-q3',
               enunciado: 'Compete ao Conselho de Recursos da Previdência Social julgar os recursos interpostos contra decisões proferidas em processos de supervisão e de fiscalização de regimes próprios de previdência social.',
               certa: true,
               explicacao: 'A competência do CRPS foi ampliada para alcançar esses processos. Item cobrado na prova de 2022.',
               baseLegal: 'Decreto nº 3.048/99, art. 303',
               variacoes: [
                 { enunciado: 'É assegurada a contagem recíproca do tempo de contribuição entre o RGPS e os regimes próprios, com compensação financeira entre eles.', certa: true, explicacao: 'Correto — art. 201, §9º, da CF/88.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s2-q4',
+              enunciado: 'Após a EC nº 103/2019, é vedada a instituição de novos regimes próprios de previdência social pelos entes federativos.',
+              certa: true,
+              explicacao: 'Municípios sem RPPS ficam definitivamente vinculados ao RGPS. Os regimes já existentes podem ser mantidos, mas com unidade gestora única.',
+              baseLegal: 'CF/88, art. 40, §22',
+              variacoes: [
+                { enunciado: 'Municípios que ainda não possuem regime próprio podem instituí-lo mediante lei municipal específica.', certa: false, explicacao: 'A EC 103/2019 vedou a criação de novos regimes próprios.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s2-q5',
+              enunciado: 'A regularidade previdenciária dos regimes próprios é atestada por certificado emitido pelo órgão federal de supervisão, cuja ausência restringe o acesso do ente a transferências voluntárias.',
+              certa: true,
+              explicacao: 'É o CRP — Certificado de Regularidade Previdenciária. Sem ele, o ente perde acesso a convênios e transferências voluntárias da União.',
+              baseLegal: 'Lei nº 9.717/1998; Decreto nº 3.788/2001',
+              variacoes: [
+                { enunciado: 'Os recursos contra decisões proferidas em processos de supervisão dos regimes próprios são julgados pelo Conselho de Recursos da Previdência Social.', certa: true, explicacao: 'Correto — a competência do CRPS foi ampliada para alcançar esses processos.' },
               ],
             },
           ],
@@ -1144,7 +1529,6 @@ Cabe ao órgão federal competente a **supervisão, o acompanhamento e a fiscali
         {
           id: 'prev-b4-t3-s3',
           nome: 'Certidão de Tempo de Contribuição (CTC)',
-          // conteúdo herdado do tópico 'prev-b4-15' da estrutura de 3 níveis
           teoria: `
 ## O que é
 
@@ -1185,7 +1569,7 @@ Averbada no regime de destino, a CTC gera:
 `,
           questoes: [
             {
-              id: 'prev-b4-15-q1',
+              id: 'prev-b4-t3-s3-q1',
               enunciado: 'É vedada a emissão de certidão de tempo de contribuição referente a período já utilizado para concessão de aposentadoria em qualquer regime previdenciário.',
               certa: true,
               explicacao: 'É a vedação central: o mesmo tempo não pode ser aproveitado duas vezes. Foi justamente a distinção cobrada na prova de 2022.',
@@ -1195,13 +1579,43 @@ Averbada no regime de destino, a CTC gera:
               ],
             },
             {
-              id: 'prev-b4-15-q2',
+              id: 'prev-b4-t3-s3-q2',
               enunciado: 'A certidão de tempo de contribuição pode ser cancelada a pedido do interessado, desde que não tenha sido utilizada para a concessão de benefício em outro regime.',
               certa: true,
               explicacao: 'O cancelamento exige a devolução da via original e a comprovação de que o tempo não foi averbado com aproveitamento.',
               baseLegal: 'Decreto nº 3.048/99, art. 130',
               variacoes: [
                 { enunciado: 'A emissão da certidão de tempo de contribuição pelo INSS independe da regularização de contribuições em atraso do contribuinte individual.', certa: false, explicacao: 'As contribuições em atraso devem estar indenizadas para que o período seja certificado.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s3-q3',
+              enunciado: 'A certidão de tempo de contribuição deve indicar expressamente que o período certificado não foi utilizado para a concessão de aposentadoria em outro regime.',
+              certa: true,
+              explicacao: 'É essa declaração que impede o duplo aproveitamento do mesmo tempo — o risco central que a CTC precisa neutralizar.',
+              baseLegal: 'Decreto nº 3.048/99, art. 130',
+              variacoes: [
+                { enunciado: 'A certidão de tempo de contribuição pode ser emitida em relação a período já utilizado para concessão de aposentadoria, desde que o benefício tenha cessado.', certa: false, explicacao: 'É vedada a certificação de tempo já utilizado para concessão de aposentadoria em qualquer regime.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s3-q4',
+              enunciado: 'É vedada a emissão de certidão de tempo de contribuição com contagem de tempo em dobro ou com quaisquer acréscimos.',
+              certa: true,
+              explicacao: 'A vedação decorre da proibição constitucional de tempo fictício. Licença-prêmio não gozada, por exemplo, não pode ser convertida em dobro na CTC.',
+              baseLegal: 'Lei nº 8.213/91, art. 96, I; CF/88, art. 201, §14',
+              variacoes: [
+                { enunciado: 'Admite-se, na certidão de tempo de contribuição, a contagem em dobro do período de licença-prêmio não gozada pelo servidor.', certa: false, explicacao: 'Isso configuraria tempo fictício, vedado pelo art. 201, §14, da CF/88.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s3-q5',
+              enunciado: 'A certidão de tempo de contribuição pode ser cancelada a pedido do interessado, desde que ainda não tenha sido utilizada para a concessão de benefício em outro regime.',
+              certa: true,
+              explicacao: 'O cancelamento exige a devolução da via original e a desaverbação no regime de destino, evitando que o mesmo tempo circule em dois regimes.',
+              baseLegal: 'Decreto nº 3.048/99, art. 130',
+              variacoes: [
+                { enunciado: 'A emissão de certidão de tempo de contribuição relativa a período de contribuinte individual independe da quitação das contribuições em atraso.', certa: false, explicacao: 'As contribuições em atraso devem estar indenizadas para que o período seja certificado.' },
               ],
             },
           ],
@@ -1215,7 +1629,6 @@ Averbada no regime de destino, a CTC gera:
         {
           id: 'prev-b4-t3-s4',
           nome: 'Contagem recíproca',
-          // conteúdo herdado do tópico 'prev-b4-16' da estrutura de 3 níveis
           teoria: `
 ## Fundamento constitucional
 
@@ -1256,7 +1669,7 @@ O tempo de atividade rural do **segurado especial** pode ser computado para cont
 `,
           questoes: [
             {
-              id: 'prev-b4-16-q1',
+              id: 'prev-b4-t3-s4-q1',
               enunciado: 'Para efeito de contagem recíproca, é vedada a contagem de tempo de serviço público concomitante com tempo de atividade privada.',
               certa: true,
               explicacao: 'O art. 96, II, da Lei nº 8.213/91 impede a dupla contagem do mesmo período: tempo concomitante conta uma vez só.',
@@ -1266,13 +1679,43 @@ O tempo de atividade rural do **segurado especial** pode ser computado para cont
               ],
             },
             {
-              id: 'prev-b4-16-q2',
+              id: 'prev-b4-t3-s4-q2',
               enunciado: 'O segurado que recolheu contribuições pelo plano simplificado pode utilizar esse tempo para contagem recíproca independentemente de complementação.',
               certa: false,
               explicacao: 'O plano simplificado (11% ou 5%) exclui a contagem recíproca, salvo complementação da diferença de alíquota com juros.',
               baseLegal: 'Lei nº 8.212/91, art. 21, §§2º e 3º',
               variacoes: [
                 { enunciado: 'É assegurada a contagem recíproca do tempo de contribuição entre o RGPS e os regimes próprios, com compensação financeira entre os regimes.', certa: true, explicacao: 'Correto — art. 201, §9º, da CF/88.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s4-q3',
+              enunciado: 'A contagem recíproca é assegurada entre o RGPS e os regimes próprios, bem como entre regimes próprios distintos.',
+              certa: true,
+              explicacao: 'O art. 201, §9º, garante a portabilidade do tempo em todas essas direções, sempre acompanhada de compensação financeira entre os regimes.',
+              baseLegal: 'CF/88, art. 201, §9º',
+              variacoes: [
+                { enunciado: 'A contagem recíproca é admitida apenas do RGPS para os regimes próprios, e não no sentido inverso.', certa: false, explicacao: 'É recíproca justamente por operar nos dois sentidos, e também entre regimes próprios distintos.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s4-q4',
+              enunciado: 'O tempo de serviço anterior à obrigatoriedade de filiação só pode ser computado para contagem recíproca mediante indenização das contribuições correspondentes.',
+              certa: true,
+              explicacao: 'Sem contribuição não há tempo a transportar. A indenização recompõe o custeio daquele período, com juros.',
+              baseLegal: 'Lei nº 8.213/91, art. 96, IV',
+              variacoes: [
+                { enunciado: 'O tempo de atividade rural do segurado especial pode ser levado para regime próprio mediante contagem recíproca, independentemente de indenização.', certa: false, explicacao: 'Como a contribuição do segurado especial incide sobre a comercialização, o aproveitamento em outro regime exige indenização das contribuições.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s4-q5',
+              enunciado: 'Períodos concomitantes de atividade privada e de serviço público podem ser somados na contagem recíproca, desde que devidamente comprovados.',
+              certa: false,
+              explicacao: 'Tempo concomitante conta uma única vez. Somá-lo equivaleria a criar tempo inexistente, vedado pelo art. 96, II.',
+              baseLegal: 'Lei nº 8.213/91, art. 96, II',
+              variacoes: [
+                { enunciado: 'Na contagem recíproca, é vedada a soma de tempo de serviço público com tempo de atividade privada quando concomitantes.', certa: true, explicacao: 'Correto — é a vedação expressa do art. 96, II, da Lei nº 8.213/91.' },
               ],
             },
           ],
@@ -1286,7 +1729,6 @@ O tempo de atividade rural do **segurado especial** pode ser computado para cont
         {
           id: 'prev-b4-t3-s5',
           nome: 'Compensação previdenciária',
-          // conteúdo herdado do tópico 'prev-b4-17' da estrutura de 3 níveis
           teoria: `
 ## O acerto de contas entre regimes
 
@@ -1329,7 +1771,7 @@ O regime de origem reembolsa ao instituidor um valor proporcional:
 `,
           questoes: [
             {
-              id: 'prev-b4-17-q1',
+              id: 'prev-b4-t3-s5-q1',
               enunciado: 'A compensação financeira entre os regimes de previdência será realizada exclusivamente na contagem recíproca de tempo de contribuição não concomitante utilizado na concessão da aposentadoria.',
               certa: true,
               explicacao: 'Reúne as três condições da Lei nº 9.796/1999: contagem recíproca, tempo não concomitante e efetiva utilização na concessão. Item cobrado na prova de 2022.',
@@ -1339,13 +1781,43 @@ O regime de origem reembolsa ao instituidor um valor proporcional:
               ],
             },
             {
-              id: 'prev-b4-17-q2',
+              id: 'prev-b4-t3-s5-q2',
               enunciado: 'Denomina-se regime instituidor aquele que concede a aposentadoria mediante contagem de tempo cedido por outro regime previdenciário.',
               certa: true,
               explicacao: 'O instituidor concede e paga; o regime de origem recebeu as contribuições e reembolsa a fração correspondente.',
               baseLegal: 'Lei nº 9.796/1999, art. 2º',
               variacoes: [
                 { enunciado: 'A compensação previdenciária reduz o valor do benefício recebido pelo segurado, na proporção do tempo cedido.', certa: false, explicacao: 'A compensação é acerto de contas ENTRE REGIMES e não afeta o valor recebido pelo segurado.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s5-q3',
+              enunciado: 'Na compensação previdenciária, denomina-se regime de origem aquele que recebeu as contribuições relativas ao tempo cedido e deve reembolsar o regime instituidor.',
+              certa: true,
+              explicacao: 'O instituidor concede e paga o benefício; a origem, que arrecadou as contribuições daquele período, devolve a fração correspondente.',
+              baseLegal: 'Lei nº 9.796/1999, art. 2º',
+              variacoes: [
+                { enunciado: 'Na compensação previdenciária, o regime instituidor é aquele que recebeu as contribuições e reembolsa o regime que concedeu a aposentadoria.', certa: false, explicacao: 'Os papéis estão invertidos: o instituidor CONCEDE o benefício; a origem recebeu as contribuições e reembolsa.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s5-q4',
+              enunciado: 'A compensação previdenciária alcança também as pensões por morte decorrentes das aposentadorias concedidas com contagem recíproca.',
+              certa: true,
+              explicacao: 'A pensão deriva da aposentadoria compensada, e o encargo continua sendo suportado proporcionalmente pelos dois regimes.',
+              baseLegal: 'Lei nº 9.796/1999, art. 4º',
+              variacoes: [
+                { enunciado: 'A compensação previdenciária limita-se às aposentadorias, não alcançando as pensões por morte delas decorrentes.', certa: false, explicacao: 'A pensão por morte derivada de aposentadoria compensada também é objeto de compensação.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s5-q5',
+              enunciado: 'O valor devido pelo regime de origem a título de compensação é limitado ao montante que ele próprio pagaria pelo benefício equivalente.',
+              certa: true,
+              explicacao: 'Quando o RGPS é o regime de origem, o limite prático é o teto dos seus benefícios — ele não financia parcela acima do que jamais pagaria.',
+              baseLegal: 'Lei nº 9.796/1999, art. 3º',
+              variacoes: [
+                { enunciado: 'A compensação previdenciária reduz proporcionalmente o valor do benefício recebido pelo segurado.', certa: false, explicacao: 'É acerto de contas entre regimes, invisível para o beneficiário: o valor recebido por ele não muda.' },
               ],
             },
           ],
@@ -1359,7 +1831,6 @@ O regime de origem reembolsa ao instituidor um valor proporcional:
         {
           id: 'prev-b4-t3-s6',
           nome: 'Instrução Normativa PRES/INSS nº 128/2022',
-          // conteúdo herdado do tópico 'prev-b4-18' da estrutura de 3 níveis
           teoria: `
 ## O que é
 
@@ -1408,7 +1879,7 @@ O Técnico do Seguro Social aplica a IN no dia a dia: é ela que orienta o atend
 `,
           questoes: [
             {
-              id: 'prev-b4-18-q1',
+              id: 'prev-b4-t3-s6-q1',
               enunciado: 'A Instrução Normativa PRES/INSS nº 128/2022 pode estabelecer requisitos para concessão de benefícios não previstos em lei, por consolidar os procedimentos internos do INSS.',
               certa: false,
               explicacao: 'Instrução normativa é fonte formal secundária: uniformiza a aplicação da lei, mas não inova na ordem jurídica.',
@@ -1418,13 +1889,43 @@ O Técnico do Seguro Social aplica a IN no dia a dia: é ela que orienta o atend
               ],
             },
             {
-              id: 'prev-b4-18-q2',
+              id: 'prev-b4-t3-s6-q2',
               enunciado: 'Os dados constantes do Cadastro Nacional de Informações Sociais valem como prova de filiação, de tempo de contribuição e de salários de contribuição.',
               certa: true,
               explicacao: 'É a regra do art. 29-A da Lei nº 8.213/91, detalhada pela IN. Havendo divergência, o segurado pode requerer o acerto com documentos.',
               baseLegal: 'Lei nº 8.213/91, art. 29-A',
               variacoes: [
                 { enunciado: 'A justificação administrativa pode suprir a falta de documento exclusivamente por meio de prova testemunhal, dispensado o início de prova material.', certa: false, explicacao: 'A JA não produz efeito sem início de prova material — no caso do tempo rural, é o teor da Súmula 149 do STJ.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s6-q3',
+              enunciado: 'A Instrução Normativa PRES/INSS nº 128/2022 substituiu a Instrução Normativa nº 77/2015 na consolidação dos procedimentos de reconhecimento de direitos do INSS.',
+              certa: true,
+              explicacao: 'A consolidação reúne num único ato as rotinas de análise de requerimentos, comprovação de tempo, avaliação de deficiência e manutenção de benefícios.',
+              baseLegal: 'IN PRES/INSS nº 128/2022',
+              variacoes: [
+                { enunciado: 'A IN PRES/INSS nº 128/2022 revogou dispositivos do Decreto nº 3.048/1999 incompatíveis com a nova sistemática.', certa: false, explicacao: 'Instrução normativa não revoga decreto: é norma hierarquicamente inferior e deve observá-lo.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s6-q4',
+              enunciado: 'A justificação administrativa não produz efeito quando não estiver baseada em início de prova material.',
+              certa: true,
+              explicacao: 'Prova exclusivamente testemunhal não supre a ausência documental — orientação consolidada na Súmula 149 do STJ para tempo rural.',
+              baseLegal: 'Decreto nº 3.048/99, art. 143; STJ, Súmula 149',
+              variacoes: [
+                { enunciado: 'A justificação administrativa permite comprovar tempo de serviço exclusivamente por prova testemunhal.', certa: false, explicacao: 'Exige-se início de prova material; a prova testemunhal apenas complementa.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t3-s6-q5',
+              enunciado: 'Os dados constantes do CNIS valem como prova de filiação, de tempo de contribuição e de salários de contribuição, admitida a retificação mediante apresentação de documentos.',
+              certa: true,
+              explicacao: 'A presunção do CNIS é relativa: havendo divergência ou ausência de informação, o segurado pode requerer o acerto com prova documental.',
+              baseLegal: 'Lei nº 8.213/91, art. 29-A',
+              variacoes: [
+                { enunciado: 'As informações do CNIS possuem presunção absoluta de veracidade, não admitindo retificação a pedido do segurado.', certa: false, explicacao: 'A presunção é relativa: o segurado pode solicitar inclusão, exclusão ou retificação de dados mediante comprovação.' },
               ],
             },
           ],
@@ -1445,7 +1946,6 @@ O Técnico do Seguro Social aplica a IN no dia a dia: é ela que orienta o atend
         {
           id: 'prev-b4-t4-s1',
           nome: 'O servidor público como agente de desenvolvimento social',
-          // conteúdo herdado do tópico 'prev-b4-19' da estrutura de 3 níveis
           teoria: `
 ## Por que este tema está no edital
 
@@ -1488,7 +1988,7 @@ O art. 88 da Lei nº 8.213/91 atribui ao **serviço social** o dever de esclarec
 `,
           questoes: [
             {
-              id: 'prev-b4-19-q1',
+              id: 'prev-b4-t4-s1-q1',
               enunciado: 'A atuação do servidor público como agente de desenvolvimento social pressupõe que ele compreenda sua função como mediação entre o Estado e o cidadão, contribuindo para a efetivação de direitos sociais.',
               certa: true,
               explicacao: 'É o núcleo do conceito: a função pública tem dimensão transformadora, e não apenas burocrática.',
@@ -1498,13 +1998,43 @@ O art. 88 da Lei nº 8.213/91 atribui ao **serviço social** o dever de esclarec
               ],
             },
             {
-              id: 'prev-b4-19-q2',
+              id: 'prev-b4-t4-s1-q2',
               enunciado: 'É dever do servidor público ser cortês, ter urbanidade e atenção, respeitando a capacidade e as limitações individuais dos usuários, sem qualquer espécie de preconceito.',
               certa: true,
               explicacao: 'Dever fundamental do Código de Ética (Decreto nº 1.171/1994, inciso XIV, alínea "c").',
               baseLegal: 'Decreto nº 1.171/1994, XIV, "c"',
               variacoes: [
                 { enunciado: 'O servidor pode deixar de participar de estudos voltados à melhoria do exercício de suas funções, por não se tratar de dever fundamental.', certa: false, explicacao: 'Participar desses estudos é dever fundamental expresso (inciso XIV, alínea "j"). Item cobrado na prova de 2022.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s1-q3',
+              enunciado: 'Constituem objetivos fundamentais da República Federativa do Brasil erradicar a pobreza e a marginalização e reduzir as desigualdades sociais e regionais.',
+              certa: true,
+              explicacao: 'É o art. 3º, III. São esses objetivos que dão sentido à atuação do servidor do INSS como agente de desenvolvimento social.',
+              baseLegal: 'CF/88, art. 3º, III',
+              variacoes: [
+                { enunciado: 'A redução das desigualdades sociais e regionais é princípio da ordem econômica, mas não objetivo fundamental da República.', certa: false, explicacao: 'É as duas coisas: consta do art. 3º, III (objetivo fundamental) e do art. 170, VII (princípio da ordem econômica).' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s1-q4',
+              enunciado: 'É dever do servidor público atender com presteza ao público em geral, prestando as informações requeridas, ressalvadas as protegidas por sigilo.',
+              certa: true,
+              explicacao: 'Dever expresso do Código de Ética, na alínea que trata do atendimento — a ressalva do sigilo é a única exceção admitida.',
+              baseLegal: 'Decreto nº 1.171/1994, XIV, "f"; Lei nº 8.112/1990, art. 116, V',
+              variacoes: [
+                { enunciado: 'O servidor pode retardar o atendimento ao público quando entender que a demanda não é prioritária.', certa: false, explicacao: 'O Código de Ética veda o retardamento: deixar o cidadão à espera de solução por desídia constitui grave dano moral aos usuários.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s1-q5',
+              enunciado: 'Compete ao serviço social do INSS esclarecer aos beneficiários seus direitos sociais e os meios de exercê-los, atuação com a qual o Técnico do Seguro Social se articula no atendimento.',
+              certa: true,
+              explicacao: 'O art. 88 define a competência do serviço social; o técnico identifica as situações que demandam encaminhamento especializado.',
+              baseLegal: 'Lei nº 8.213/91, art. 88',
+              variacoes: [
+                { enunciado: 'A dimensão social da atuação do servidor limita-se ao cumprimento formal dos prazos administrativos.', certa: false, explicacao: 'A atuação tem dimensões técnica, ética, social e institucional — o cumprimento de prazos é apenas parte da dimensão técnica.' },
               ],
             },
           ],
@@ -1518,7 +2048,6 @@ O art. 88 da Lei nº 8.213/91 atribui ao **serviço social** o dever de esclarec
         {
           id: 'prev-b4-t4-s2',
           nome: 'Saúde e qualidade de vida no serviço público',
-          // conteúdo herdado do tópico 'prev-b4-20' da estrutura de 3 níveis
           teoria: `
 ## Por que o tema entra no edital
 
@@ -1572,7 +2101,7 @@ Cuidar da própria saúde também é responsabilidade profissional: manter hábi
 `,
           questoes: [
             {
-              id: 'prev-b4-20-q1',
+              id: 'prev-b4-t4-s2-q1',
               enunciado: 'Segundo a Organização Mundial da Saúde, saúde é o estado de completo bem-estar físico, mental e social, e não apenas a ausência de doença.',
               certa: true,
               explicacao: 'É o conceito ampliado de saúde, incorporado pela CF/88 ao tratar a saúde como direito de todos e dever do Estado.',
@@ -1582,13 +2111,43 @@ Cuidar da própria saúde também é responsabilidade profissional: manter hábi
               ],
             },
             {
-              id: 'prev-b4-20-q2',
+              id: 'prev-b4-t4-s2-q2',
               enunciado: 'A readaptação prevista na Lei nº 8.112/1990 consiste na investidura do servidor em cargo de atribuições e responsabilidades compatíveis com a limitação sofrida em sua capacidade física ou mental, verificada em inspeção médica.',
               certa: true,
               explicacao: 'É a definição do art. 24 da Lei nº 8.112/90. Sendo inviável a readaptação, o servidor será aposentado por incapacidade permanente.',
               baseLegal: 'Lei nº 8.112/1990, art. 24',
               variacoes: [
                 { enunciado: 'A síndrome de burnout não é reconhecida como fenômeno relacionado ao trabalho.', certa: false, explicacao: 'O burnout é reconhecido pela OMS como fenômeno ocupacional e integra a lista brasileira de doenças relacionadas ao trabalho.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s2-q3',
+              enunciado: 'A Política de Atenção à Saúde e Segurança do Trabalho do Servidor Público Federal estrutura-se nos eixos de vigilância e promoção da saúde, assistência à saúde e perícia em saúde.',
+              certa: true,
+              explicacao: 'São os três eixos da PASS, operacionalizados pelo SIASS — o subsistema que integra as ações de saúde do servidor federal.',
+              baseLegal: 'Decreto nº 6.833/2009 (SIASS)',
+              variacoes: [
+                { enunciado: 'A política de atenção à saúde do servidor federal limita-se à realização de perícias para concessão de licenças.', certa: false, explicacao: 'A perícia é apenas um dos três eixos; há também vigilância e promoção da saúde e assistência à saúde.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s2-q4',
+              enunciado: 'Verificada a incapacidade parcial do servidor, a Lei nº 8.112/1990 determina sua readaptação em cargo compatível, e apenas na impossibilidade desta se procede à aposentadoria.',
+              certa: true,
+              explicacao: 'A readaptação tem preferência sobre a aposentadoria: preserva a força de trabalho e a dignidade do servidor.',
+              baseLegal: 'Lei nº 8.112/1990, art. 24, §1º',
+              variacoes: [
+                { enunciado: 'Constatada limitação da capacidade física do servidor, a aposentadoria por incapacidade permanente é a primeira providência a ser adotada.', certa: false, explicacao: 'A primeira providência é a readaptação. A aposentadoria só cabe quando a readaptação for inviável.' },
+              ],
+            },
+            {
+              id: 'prev-b4-t4-s2-q5',
+              enunciado: 'A síndrome de burnout é reconhecida como fenômeno ocupacional e integra a lista brasileira de doenças relacionadas ao trabalho.',
+              certa: true,
+              explicacao: 'Reconhecida pela OMS como fenômeno ocupacional, é especialmente relevante em funções de atendimento ao público sujeitas a alta carga emocional.',
+              baseLegal: 'CID-11 (OMS); Lista de Doenças Relacionadas ao Trabalho',
+              variacoes: [
+                { enunciado: 'Os riscos ergonômicos, como o trabalho repetitivo e a postura inadequada, estão entre as principais causas de LER/DORT no serviço público.', certa: true, explicacao: 'Correto — junto com os riscos psicossociais, formam o principal grupo de agravos no trabalho administrativo e de atendimento.' },
               ],
             },
           ],

@@ -21,6 +21,12 @@ export default defineConfig(({ command }) => ({
             if (id.includes('@supabase')) return 'supabase'
             return 'vendor'
           }
+          // O conteúdo é dividido por matéria: assim, corrigir um texto de
+          // Previdenciário não invalida o cache das demais matérias.
+          if (id.includes('src/content/blocos/')) {
+            const m = id.match(/blocos\/([a-z]+)-b\d/)
+            return m ? `conteudo-${m[1]}` : 'conteudo'
+          }
           if (id.includes('src/content/')) return 'conteudo'
         },
       },

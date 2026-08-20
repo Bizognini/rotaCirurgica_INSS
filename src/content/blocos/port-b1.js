@@ -20,7 +20,6 @@ export default {
         {
           id: 'port-b1-t1-s1',
           nome: 'Compreensão de textos',
-          // conteúdo herdado do tópico 'port-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que a Cebraspe realmente cobra
 
@@ -81,7 +80,7 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
 `,
           questoes: [
             {
-              id: 'port-b1-01-q1',
+              id: 'port-b1-t1-s1-q1',
               enunciado: 'Em textos argumentativos, a presença de dados estatísticos costuma funcionar como estratégia de sustentação da tese defendida pelo autor.',
               certa: true,
               explicacao: 'Dados numéricos são recurso argumentativo de autoridade/evidência, usados para comprovar a tese. É exatamente a função que a prova de 2022 cobrou em relação aos dados do DIEESE.',
@@ -90,7 +89,7 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
               ],
             },
             {
-              id: 'port-b1-01-q2',
+              id: 'port-b1-t1-s1-q2',
               enunciado: 'Considere o trecho: "Embora tenha contribuído por vinte anos, o segurado não obteve o benefício." A oração iniciada por "Embora" expressa uma relação de concessão.',
               certa: true,
               explicacao: '"Embora" é conjunção concessiva: admite um fato que seria contrário ao esperado e ainda assim mantém a oração principal.',
@@ -99,12 +98,30 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
               ],
             },
             {
-              id: 'port-b1-01-q3',
+              id: 'port-b1-t1-s1-q3',
               enunciado: 'Em uma questão de interpretação, é correto julgar como verdadeira a afirmação que, embora coerente com o conhecimento de mundo do leitor, não encontra respaldo nas informações do texto.',
               certa: false,
               explicacao: 'É a armadilha da extrapolação: a Cebraspe exige respaldo textual. Plausibilidade externa não valida o item.',
               variacoes: [
                 { enunciado: 'A substituição de um termo do texto só mantém a correção e os sentidos originais se preservar tanto a estrutura sintática quanto a relação semântica estabelecida.', certa: true, explicacao: 'Correto — é o critério duplo que a banca aplica nos itens de reescrita.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q4',
+              enunciado: 'A compreensão de um texto limita-se ao reconhecimento das informações nele explicitadas, ao passo que a interpretação envolve inferências autorizadas pelo próprio texto.',
+              certa: true,
+              explicacao: 'Compreender é recuperar o que está dito; interpretar é concluir a partir do que está dito. Em ambos os casos, o texto é o limite — o que o extrapola não se sustenta.',
+              variacoes: [
+                { enunciado: 'A compreensão de textos abrange as conclusões que o leitor extrai a partir de seu conhecimento prévio, ainda que não amparadas pelo texto.', certa: false, explicacao: 'Conclusões não amparadas pelo texto são extrapolação, e não compreensão. O conhecimento prévio auxilia a leitura, mas não substitui o que o texto afirma.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q5',
+              enunciado: 'A substituição de "a maioria dos servidores" por "todos os servidores" preserva o sentido original do enunciado, por tratar-se de expressões equivalentes de quantificação.',
+              certa: false,
+              explicacao: 'Generalização indevida: "a maioria" admite exceções; "todos" as elimina. A troca de quantificadores é uma das alterações de sentido mais cobradas pela banca.',
+              variacoes: [
+                { enunciado: 'Expressões como "sempre", "nunca" e "exclusivamente" exigem conferência literal no texto, por restringirem o alcance da afirmação.', certa: true, explicacao: 'Correto. Quantificadores absolutos tornam o item verificável ponto a ponto — e é aí que a banca costuma inserir o erro.' },
               ],
             },
           ],
@@ -119,7 +136,6 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
         {
           id: 'port-b1-t1-s2',
           nome: 'Interpretação de textos',
-          // conteúdo herdado do tópico 'port-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que a Cebraspe realmente cobra
 
@@ -180,7 +196,7 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
 `,
           questoes: [
             {
-              id: 'port-b1-01-q1',
+              id: 'port-b1-t1-s2-q1',
               enunciado: 'Em textos argumentativos, a presença de dados estatísticos costuma funcionar como estratégia de sustentação da tese defendida pelo autor.',
               certa: true,
               explicacao: 'Dados numéricos são recurso argumentativo de autoridade/evidência, usados para comprovar a tese. É exatamente a função que a prova de 2022 cobrou em relação aos dados do DIEESE.',
@@ -189,7 +205,7 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
               ],
             },
             {
-              id: 'port-b1-01-q2',
+              id: 'port-b1-t1-s2-q2',
               enunciado: 'Considere o trecho: "Embora tenha contribuído por vinte anos, o segurado não obteve o benefício." A oração iniciada por "Embora" expressa uma relação de concessão.',
               certa: true,
               explicacao: '"Embora" é conjunção concessiva: admite um fato que seria contrário ao esperado e ainda assim mantém a oração principal.',
@@ -198,12 +214,30 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
               ],
             },
             {
-              id: 'port-b1-01-q3',
+              id: 'port-b1-t1-s2-q3',
               enunciado: 'Em uma questão de interpretação, é correto julgar como verdadeira a afirmação que, embora coerente com o conhecimento de mundo do leitor, não encontra respaldo nas informações do texto.',
               certa: false,
               explicacao: 'É a armadilha da extrapolação: a Cebraspe exige respaldo textual. Plausibilidade externa não valida o item.',
               variacoes: [
                 { enunciado: 'A substituição de um termo do texto só mantém a correção e os sentidos originais se preservar tanto a estrutura sintática quanto a relação semântica estabelecida.', certa: true, explicacao: 'Correto — é o critério duplo que a banca aplica nos itens de reescrita.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q4',
+              enunciado: 'A inferência é uma operação legítima de leitura desde que decorra de elementos presentes no texto, ainda que não expressos literalmente.',
+              certa: true,
+              explicacao: 'Inferir é diferente de supor: a inferência tem ancoragem textual; a suposição vem de fora. É essa fronteira que separa o item certo do errado.',
+              variacoes: [
+                { enunciado: 'Toda inferência é considerada extrapolação e, portanto, invalida o item em uma questão de interpretação.', certa: false, explicacao: 'A inferência autorizada pelo texto é legítima. Extrapolação é a conclusão sem respaldo textual.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q5',
+              enunciado: 'Atribuir ao autor de um texto a opinião de uma fonte por ele citada configura erro de interpretação.',
+              certa: true,
+              explicacao: 'É a troca de posicionamento: o autor pode citar uma tese para refutá-la. Confundir a voz citada com a voz do autor inverte o sentido do texto.',
+              variacoes: [
+                { enunciado: 'Em textos jornalísticos, as opiniões atribuídas a especialistas citados devem ser lidas como posicionamento do próprio autor do texto.', certa: false, explicacao: 'A voz citada não se confunde com a do autor, que pode citá-la para concordar, ressalvar ou refutar.' },
               ],
             },
           ],
@@ -218,7 +252,6 @@ Muitos itens perguntam a que termo um pronome se refere. Regras práticas:
         {
           id: 'port-b1-t1-s3',
           nome: 'Tipologia textual — narração, descrição, dissertação',
-          // conteúdo herdado do tópico 'port-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Tipo textual × gênero textual
 
@@ -273,7 +306,7 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
 `,
           questoes: [
             {
-              id: 'port-b1-02-q1',
+              id: 'port-b1-t1-s3-q1',
               enunciado: 'Um mesmo gênero textual pode apresentar sequências de mais de um tipo textual.',
               certa: true,
               explicacao: 'Os tipos são cinco e fechados; os gêneros são inúmeros e combinam sequências tipológicas diversas. Uma crônica pode narrar, descrever e argumentar.',
@@ -282,7 +315,7 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
               ],
             },
             {
-              id: 'port-b1-02-q2',
+              id: 'port-b1-t1-s3-q2',
               enunciado: 'O predomínio de adjetivos e de verbos de estado, sem progressão temporal, caracteriza a sequência descritiva.',
               certa: true,
               explicacao: 'A descrição funciona como uma fotografia: caracteriza sem avançar no tempo. A narração, ao contrário, exige progressão e verbos de ação.',
@@ -291,12 +324,30 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
               ],
             },
             {
-              id: 'port-b1-02-q3',
+              id: 'port-b1-t1-s3-q3',
               enunciado: 'A diferença entre um texto expositivo e um texto argumentativo está na defesa explícita de um ponto de vista, presente apenas no segundo.',
               certa: true,
               explicacao: 'O expositivo apresenta e explica com neutralidade; o argumentativo defende uma tese.',
               variacoes: [
                 { enunciado: 'No discurso indireto livre, a fala da personagem é reproduzida entre aspas, com verbo de elocução explícito.', certa: false, explicacao: 'Essa é a marca do discurso DIRETO. No indireto livre a voz da personagem se mistura à do narrador, sem marca formal.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q4',
+              enunciado: 'A sequência injuntiva caracteriza-se pelo predomínio de verbos no imperativo ou no infinitivo, com a finalidade de orientar o leitor a realizar uma ação.',
+              certa: true,
+              explicacao: 'É o tipo textual de receitas, manuais e editais. O traço definidor é a instrução, e não a narração dos fatos.',
+              variacoes: [
+                { enunciado: 'O predomínio de verbos no imperativo caracteriza a sequência dissertativa.', certa: false, explicacao: 'O imperativo caracteriza a sequência INJUNTIVA. A dissertativa organiza tese e argumentos, com predomínio do presente do indicativo.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q5',
+              enunciado: 'A narração distingue-se da descrição pela presença de progressão temporal e de verbos que exprimem ação.',
+              certa: true,
+              explicacao: 'A descrição funciona como uma fotografia: caracteriza sem avançar no tempo. A narração é o filme: os fatos se sucedem.',
+              variacoes: [
+                { enunciado: 'A descrição apresenta os fatos em sequência cronológica, com predomínio de verbos de ação.', certa: false, explicacao: 'Isso descreve a NARRAÇÃO. A descrição não tem progressão temporal e privilegia adjetivos e verbos de estado.' },
               ],
             },
           ],
@@ -318,7 +369,6 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
         {
           id: 'port-b1-t2-s1',
           nome: 'Ortografia oficial',
-          // conteúdo herdado do tópico 'port-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Emprego de letras que mais caem
 
@@ -377,7 +427,7 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
 `,
           questoes: [
             {
-              id: 'port-b1-03-q1',
+              id: 'port-b1-t2-s1-q1',
               enunciado: 'Estão corretamente grafadas as palavras "análise" e "analisar", uma vez que os verbos derivados de palavras que já contêm S são escritos com S.',
               certa: true,
               explicacao: 'Regra do sufixo -isar: quando o radical já tem S, mantém-se o S (pesquisa → pesquisar). Sem S no radical, usa-se -izar (civil → civilizar).',
@@ -386,7 +436,7 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
               ],
             },
             {
-              id: 'port-b1-03-q2',
+              id: 'port-b1-t2-s1-q2',
               enunciado: 'Na frase "Não compreendi o porquê da negativa", a forma "porquê" está corretamente empregada como substantivo.',
               certa: true,
               explicacao: 'Precedido de artigo, "porquê" é substantivo e equivale a "motivo". Recebe acento por ser oxítona terminada em -ê.',
@@ -395,12 +445,30 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
               ],
             },
             {
-              id: 'port-b1-03-q3',
+              id: 'port-b1-t2-s1-q3',
               enunciado: 'Escreve-se com hífen a palavra "microondas", pois o prefixo termina em vogal.',
               certa: false,
               explicacao: 'O hífen é exigido, mas a grafia correta é "micro-ondas". O erro está na forma apresentada, sem hífen.',
               variacoes: [
                 { enunciado: 'Grafam-se sem hífen as palavras "autoescola", "coautor" e "extraoficial".', certa: true, explicacao: 'Correto: quando as letras de contato são diferentes e o segundo elemento não começa por h, não há hífen.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q4',
+              enunciado: 'Grafam-se com "ss" os substantivos derivados de verbos cujo radical termina em "-ced", como em "conceder" e "concessão".',
+              certa: true,
+              explicacao: 'A regra vale para radicais em -ced, -ged e -prim: ceder → cessão, imprimir → impressão, agredir → agressão.',
+              variacoes: [
+                { enunciado: 'Substantivos derivados de verbos terminados em "-ter", como "reter" e "deter", grafam-se com "ss".', certa: false, explicacao: 'Derivados de verbos em -ter usam Ç: reter → retenção; deter → detenção.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q5',
+              enunciado: 'Emprega-se hífen quando o prefixo termina com a mesma vogal que inicia o segundo elemento, como em "micro-ondas" e "anti-inflamatório".',
+              certa: true,
+              explicacao: 'Letras iguais em contato pedem hífen. Se forem diferentes, não há hífen: autoescola, coautor, extraoficial.',
+              variacoes: [
+                { enunciado: 'Grafam-se com hífen as palavras "auto-escola" e "co-autor", por serem formadas por prefixação.', certa: false, explicacao: 'Como as letras de contato são diferentes, não há hífen: autoescola e coautor.' },
               ],
             },
           ],
@@ -415,7 +483,6 @@ Um mesmo **gênero** pode combinar vários **tipos**. Uma crônica pode narrar, 
         {
           id: 'port-b1-t2-s2',
           nome: 'Acentuação gráfica — regras gerais',
-          // conteúdo herdado do tópico 'port-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Regras básicas por posição da sílaba tônica
 
@@ -462,7 +529,7 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
 `,
           questoes: [
             {
-              id: 'port-b1-04-q1',
+              id: 'port-b1-t2-s2-q1',
               enunciado: 'Todas as palavras proparoxítonas são acentuadas graficamente.',
               certa: true,
               explicacao: 'É a única regra de acentuação sem exceção: toda proparoxítona recebe acento (técnico, benefício, público).',
@@ -471,7 +538,7 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
               ],
             },
             {
-              id: 'port-b1-04-q2',
+              id: 'port-b1-t2-s2-q2',
               enunciado: 'Após o Acordo Ortográfico, as palavras "ideia" e "jiboia" perderam o acento por serem paroxítonas com ditongo aberto.',
               certa: true,
               explicacao: 'O acordo eliminou o acento dos ditongos abertos éi e ói em paroxítonas. Em oxítonas e monossílabos eles permanecem: herói, papéis, céu.',
@@ -480,12 +547,30 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
               ],
             },
             {
-              id: 'port-b1-04-q3',
+              id: 'port-b1-t2-s2-q3',
               enunciado: 'O acento diferencial foi mantido para distinguir "pôde", forma do pretérito perfeito, de "pode", forma do presente do indicativo.',
               certa: true,
               explicacao: 'É um dos dois acentos diferenciais preservados, ao lado de "pôr" (verbo) × "por" (preposição).',
               variacoes: [
                 { enunciado: 'A forma verbal "têm", com acento circunflexo, indica a terceira pessoa do plural do presente do indicativo do verbo ter.', certa: true, explicacao: 'Correto — o circunflexo marca o plural (ele tem / eles têm).' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q4',
+              enunciado: 'Acentuam-se as palavras oxítonas terminadas em "em" e "ens", como em "também" e "parabéns".',
+              certa: true,
+              explicacao: 'A regra das oxítonas alcança a(s), e(s), o(s), em e ens. Nas paroxítonas em "em", o acento não ocorre: "jovem", "imagem".',
+              variacoes: [
+                { enunciado: 'Acentuam-se as paroxítonas terminadas em "em", como "jovem" e "imagem".', certa: false, explicacao: 'Paroxítonas terminadas em "em" não são acentuadas. A terminação "em" acentua as OXÍTONAS.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q5',
+              enunciado: 'Todas as palavras proparoxítonas são acentuadas graficamente, sem exceção.',
+              certa: true,
+              explicacao: 'É a única regra de acentuação sem exceção — o que a torna a mais segura de aplicar em prova.',
+              variacoes: [
+                { enunciado: 'As paroxítonas terminadas em "ão" e "ãos" dispensam acento gráfico.', certa: false, explicacao: 'São acentuadas: órgão, órfão, bênçãos. As terminações ã(s) e ão(s) integram a regra das paroxítonas.' },
               ],
             },
           ],
@@ -500,7 +585,6 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
         {
           id: 'port-b1-t2-s3',
           nome: 'Acentuação gráfica — casos especiais',
-          // conteúdo herdado do tópico 'port-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Regras básicas por posição da sílaba tônica
 
@@ -547,7 +631,7 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
 `,
           questoes: [
             {
-              id: 'port-b1-04-q1',
+              id: 'port-b1-t2-s3-q1',
               enunciado: 'Todas as palavras proparoxítonas são acentuadas graficamente.',
               certa: true,
               explicacao: 'É a única regra de acentuação sem exceção: toda proparoxítona recebe acento (técnico, benefício, público).',
@@ -556,7 +640,7 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
               ],
             },
             {
-              id: 'port-b1-04-q2',
+              id: 'port-b1-t2-s3-q2',
               enunciado: 'Após o Acordo Ortográfico, as palavras "ideia" e "jiboia" perderam o acento por serem paroxítonas com ditongo aberto.',
               certa: true,
               explicacao: 'O acordo eliminou o acento dos ditongos abertos éi e ói em paroxítonas. Em oxítonas e monossílabos eles permanecem: herói, papéis, céu.',
@@ -565,12 +649,30 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
               ],
             },
             {
-              id: 'port-b1-04-q3',
+              id: 'port-b1-t2-s3-q3',
               enunciado: 'O acento diferencial foi mantido para distinguir "pôde", forma do pretérito perfeito, de "pode", forma do presente do indicativo.',
               certa: true,
               explicacao: 'É um dos dois acentos diferenciais preservados, ao lado de "pôr" (verbo) × "por" (preposição).',
               variacoes: [
                 { enunciado: 'A forma verbal "têm", com acento circunflexo, indica a terceira pessoa do plural do presente do indicativo do verbo ter.', certa: true, explicacao: 'Correto — o circunflexo marca o plural (ele tem / eles têm).' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q4',
+              enunciado: 'O "i" e o "u" tônicos que formam hiato deixam de ser acentuados quando seguidos de "nh", como em "rainha" e "moinho".',
+              certa: true,
+              explicacao: 'É uma das exceções da regra do hiato, ao lado do hiato precedido de ditongo em paroxítona (feiura, baiuca).',
+              variacoes: [
+                { enunciado: 'A palavra "rainha" deve ser acentuada, pois o "i" tônico forma hiato com a vogal anterior.', certa: false, explicacao: 'O "nh" seguinte afasta o acento. Escreve-se "rainha", sem acento.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q5',
+              enunciado: 'Após o Acordo Ortográfico, permanece o acento diferencial que distingue "pôde", do pretérito perfeito, de "pode", do presente do indicativo.',
+              certa: true,
+              explicacao: 'Sobreviveram apenas dois diferenciais obrigatórios: pôde/pode e pôr/por. Fôrma/forma é facultativo.',
+              variacoes: [
+                { enunciado: 'O Acordo Ortográfico manteve o acento diferencial em "pára", forma verbal, para distingui-la da preposição "para".', certa: false, explicacao: 'Esse acento foi eliminado. Hoje escreve-se "para" nos dois casos.' },
               ],
             },
           ],
@@ -592,7 +694,6 @@ Um lembrete que a banca explora: o sinal em **à** é **indicativo de crase** (f
         {
           id: 'port-b1-t3-s1',
           nome: 'Substantivo, adjetivo, artigo',
-          // conteúdo herdado do tópico 'port-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As dez classes
 
@@ -655,7 +756,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
 `,
           questoes: [
             {
-              id: 'port-b1-05-q1',
+              id: 'port-b1-t3-s1-q1',
               enunciado: 'Na frase "Os dados foram obtidos por meio de pesquisa", o vocábulo "obtidos" constitui forma verbal integrante de locução em voz passiva, e não adjetivo.',
               certa: true,
               explicacao: '"Foram obtidos" é locução verbal na voz passiva analítica (verbo ser + particípio). Item cobrado na prova de 2022 justamente nessa distinção.',
@@ -664,7 +765,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q2',
+              id: 'port-b1-t3-s1-q2',
               enunciado: 'O pronome relativo "cujo" indica posse e não admite artigo entre ele e o substantivo a que se refere.',
               certa: true,
               explicacao: '"Cujo" equivale a "do qual" e liga possuidor a possuído: "o segurado cujo benefício foi negado". Jamais "cujo o".',
@@ -673,12 +774,30 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q3',
+              id: 'port-b1-t3-s1-q3',
               enunciado: 'Na oração "Havia muitos segurados na fila", o verbo "haver" é impessoal e, por isso, permanece na terceira pessoa do singular.',
               certa: true,
               explicacao: '"Haver" no sentido de existir não tem sujeito, sendo impessoal. O mesmo vale para "fazer" indicando tempo decorrido.',
               variacoes: [
                 { enunciado: 'Na oração "Eu lhe vi ontem na repartição", o pronome oblíquo está corretamente empregado.', certa: false, explicacao: '"Ver" é transitivo direto e exige o pronome "o": "Eu o vi ontem". "Lhe" é objeto indireto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q4',
+              enunciado: 'O adjetivo posposto a dois ou mais substantivos de gêneros diferentes pode concordar com o mais próximo ou ir para o masculino plural.',
+              certa: true,
+              explicacao: 'Posposto, há dupla possibilidade. Anteposto, a concordância se faz normalmente com o substantivo mais próximo.',
+              variacoes: [
+                { enunciado: 'O adjetivo anteposto a vários substantivos concorda obrigatoriamente com todos eles, indo ao plural.', certa: false, explicacao: 'Anteposto, o adjetivo concorda com o substantivo mais próximo.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q5',
+              enunciado: 'O artigo definido pode transformar palavras de outras classes em substantivos, como em "o porquê da negativa".',
+              certa: true,
+              explicacao: 'É a derivação imprópria: precedido de determinante, o vocábulo passa a funcionar como substantivo.',
+              variacoes: [
+                { enunciado: 'A presença de artigo antes de um vocábulo não altera a classe gramatical a que ele pertence no contexto.', certa: false, explicacao: 'O artigo substantiva o termo — é o caso de "o porquê", "o jantar", "o não".' },
               ],
             },
           ],
@@ -693,7 +812,6 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
         {
           id: 'port-b1-t3-s2',
           nome: 'Verbo — flexões e emprego',
-          // conteúdo herdado do tópico 'port-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As dez classes
 
@@ -756,7 +874,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
 `,
           questoes: [
             {
-              id: 'port-b1-05-q1',
+              id: 'port-b1-t3-s2-q1',
               enunciado: 'Na frase "Os dados foram obtidos por meio de pesquisa", o vocábulo "obtidos" constitui forma verbal integrante de locução em voz passiva, e não adjetivo.',
               certa: true,
               explicacao: '"Foram obtidos" é locução verbal na voz passiva analítica (verbo ser + particípio). Item cobrado na prova de 2022 justamente nessa distinção.',
@@ -765,7 +883,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q2',
+              id: 'port-b1-t3-s2-q2',
               enunciado: 'O pronome relativo "cujo" indica posse e não admite artigo entre ele e o substantivo a que se refere.',
               certa: true,
               explicacao: '"Cujo" equivale a "do qual" e liga possuidor a possuído: "o segurado cujo benefício foi negado". Jamais "cujo o".',
@@ -774,12 +892,30 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q3',
+              id: 'port-b1-t3-s2-q3',
               enunciado: 'Na oração "Havia muitos segurados na fila", o verbo "haver" é impessoal e, por isso, permanece na terceira pessoa do singular.',
               certa: true,
               explicacao: '"Haver" no sentido de existir não tem sujeito, sendo impessoal. O mesmo vale para "fazer" indicando tempo decorrido.',
               variacoes: [
                 { enunciado: 'Na oração "Eu lhe vi ontem na repartição", o pronome oblíquo está corretamente empregado.', certa: false, explicacao: '"Ver" é transitivo direto e exige o pronome "o": "Eu o vi ontem". "Lhe" é objeto indireto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s2-q4',
+              enunciado: 'Na locução verbal formada por "ter" ou "haver" mais particípio, este permanece invariável.',
+              certa: true,
+              explicacao: 'Nos tempos compostos o particípio não flexiona: "havia crescido", "tinham analisado". A flexão ocorre na voz passiva com "ser".',
+              variacoes: [
+                { enunciado: 'Na frase "Os processos tinham sidos analisados", a flexão do particípio está correta.', certa: false, explicacao: '"Sido" é invariável no tempo composto. O correto é "tinham sido analisados".' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s2-q5',
+              enunciado: 'Os verbos que exprimem fenômenos da natureza são impessoais e, por isso, permanecem na terceira pessoa do singular.',
+              certa: true,
+              explicacao: 'Choveu, anoiteceu, ventou: não há sujeito. Se usados em sentido figurado, porém, passam a ter sujeito ("Choveram críticas").',
+              variacoes: [
+                { enunciado: 'Na frase "Choveram críticas ao relatório", o verbo está incorretamente flexionado no plural.', certa: false, explicacao: 'Em sentido figurado o verbo deixa de ser impessoal e passa a ter sujeito ("críticas"), com o qual concorda.' },
               ],
             },
           ],
@@ -794,7 +930,6 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
         {
           id: 'port-b1-t3-s3',
           nome: 'Pronome — emprego e colocação',
-          // conteúdo herdado do tópico 'port-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As dez classes
 
@@ -857,7 +992,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
 `,
           questoes: [
             {
-              id: 'port-b1-05-q1',
+              id: 'port-b1-t3-s3-q1',
               enunciado: 'Na frase "Os dados foram obtidos por meio de pesquisa", o vocábulo "obtidos" constitui forma verbal integrante de locução em voz passiva, e não adjetivo.',
               certa: true,
               explicacao: '"Foram obtidos" é locução verbal na voz passiva analítica (verbo ser + particípio). Item cobrado na prova de 2022 justamente nessa distinção.',
@@ -866,7 +1001,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q2',
+              id: 'port-b1-t3-s3-q2',
               enunciado: 'O pronome relativo "cujo" indica posse e não admite artigo entre ele e o substantivo a que se refere.',
               certa: true,
               explicacao: '"Cujo" equivale a "do qual" e liga possuidor a possuído: "o segurado cujo benefício foi negado". Jamais "cujo o".',
@@ -875,12 +1010,30 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q3',
+              id: 'port-b1-t3-s3-q3',
               enunciado: 'Na oração "Havia muitos segurados na fila", o verbo "haver" é impessoal e, por isso, permanece na terceira pessoa do singular.',
               certa: true,
               explicacao: '"Haver" no sentido de existir não tem sujeito, sendo impessoal. O mesmo vale para "fazer" indicando tempo decorrido.',
               variacoes: [
                 { enunciado: 'Na oração "Eu lhe vi ontem na repartição", o pronome oblíquo está corretamente empregado.', certa: false, explicacao: '"Ver" é transitivo direto e exige o pronome "o": "Eu o vi ontem". "Lhe" é objeto indireto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s3-q4',
+              enunciado: 'Emprega-se a próclise obrigatoriamente quando o verbo é precedido de palavra de sentido negativo, como em "não se sabe".',
+              certa: true,
+              explicacao: 'Palavras atrativas — negações, advérbios, pronomes relativos e indefinidos, conjunções subordinativas — puxam o pronome para antes do verbo.',
+              variacoes: [
+                { enunciado: 'Na frase "Não sabe-se o resultado", a colocação pronominal está de acordo com a norma padrão.', certa: false, explicacao: 'A palavra negativa exige próclise: "Não se sabe o resultado".' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s3-q5',
+              enunciado: 'O pronome demonstrativo "este" refere-se ao que será mencionado a seguir, enquanto "esse" retoma o que já foi dito.',
+              certa: true,
+              explicacao: 'É a regra da referência textual: "este" é catafórico e de proximidade; "esse" é anafórico.',
+              variacoes: [
+                { enunciado: 'Em uma construção que retoma dois termos anteriores, "este" refere-se ao primeiro mencionado e "aquele", ao último.', certa: false, explicacao: 'É o inverso: "aquele" retoma o primeiro (mais distante) e "este", o último (mais próximo).' },
               ],
             },
           ],
@@ -895,7 +1048,6 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
         {
           id: 'port-b1-t3-s4',
           nome: 'Preposição, conjunção, advérbio',
-          // conteúdo herdado do tópico 'port-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As dez classes
 
@@ -958,7 +1110,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
 `,
           questoes: [
             {
-              id: 'port-b1-05-q1',
+              id: 'port-b1-t3-s4-q1',
               enunciado: 'Na frase "Os dados foram obtidos por meio de pesquisa", o vocábulo "obtidos" constitui forma verbal integrante de locução em voz passiva, e não adjetivo.',
               certa: true,
               explicacao: '"Foram obtidos" é locução verbal na voz passiva analítica (verbo ser + particípio). Item cobrado na prova de 2022 justamente nessa distinção.',
@@ -967,7 +1119,7 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q2',
+              id: 'port-b1-t3-s4-q2',
               enunciado: 'O pronome relativo "cujo" indica posse e não admite artigo entre ele e o substantivo a que se refere.',
               certa: true,
               explicacao: '"Cujo" equivale a "do qual" e liga possuidor a possuído: "o segurado cujo benefício foi negado". Jamais "cujo o".',
@@ -976,12 +1128,30 @@ Esta distinção caiu literalmente na prova de 2022. Regra prática:
               ],
             },
             {
-              id: 'port-b1-05-q3',
+              id: 'port-b1-t3-s4-q3',
               enunciado: 'Na oração "Havia muitos segurados na fila", o verbo "haver" é impessoal e, por isso, permanece na terceira pessoa do singular.',
               certa: true,
               explicacao: '"Haver" no sentido de existir não tem sujeito, sendo impessoal. O mesmo vale para "fazer" indicando tempo decorrido.',
               variacoes: [
                 { enunciado: 'Na oração "Eu lhe vi ontem na repartição", o pronome oblíquo está corretamente empregado.', certa: false, explicacao: '"Ver" é transitivo direto e exige o pronome "o": "Eu o vi ontem". "Lhe" é objeto indireto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s4-q4',
+              enunciado: 'A conjunção "porquanto" estabelece relação de causa entre as orações que liga.',
+              certa: true,
+              explicacao: '"Porquanto" é conjunção causal/explicativa, equivalente a "porque" — não confundir com "conquanto", que é concessiva.',
+              variacoes: [
+                { enunciado: 'A conjunção "conquanto" estabelece relação de causa, equivalendo a "porque".', certa: false, explicacao: '"Conquanto" é CONCESSIVA (equivale a "embora"). A causal é "porquanto".' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s4-q5',
+              enunciado: 'O advérbio é palavra invariável que modifica verbo, adjetivo ou outro advérbio, ao passo que o adjetivo modifica substantivo e com ele concorda.',
+              certa: true,
+              explicacao: 'O teste da flexão resolve: se varia com o substantivo, é adjetivo; se permanece invariável junto ao verbo, é advérbio.',
+              variacoes: [
+                { enunciado: 'Na frase "Os servidores trabalharam rápidos", o vocábulo "rápidos" está corretamente empregado como advérbio.', certa: false, explicacao: 'Como advérbio, a forma é invariável: "trabalharam rápido". Flexionado, passaria a qualificar os servidores, não a ação.' },
               ],
             },
           ],

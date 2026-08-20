@@ -20,7 +20,6 @@ export default {
         {
           id: 'adm-b4-t1-s1',
           nome: 'Estado, governo e administração pública — conceitos',
-          // conteúdo herdado do tópico 'adm-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Estado, governo e administração
 
@@ -83,7 +82,7 @@ Centro de competências **sem personalidade jurídica própria**. Aplica-se a **
 `,
           questoes: [
             {
-              id: 'adm-b1-01-q1',
+              id: 'adm-b4-t1-s1-q1',
               enunciado: 'O ato administrativo praticado por agente público no exercício da sua função expressa o sentido orgânico da administração pública.',
               certa: false,
               explicacao: 'A prática de atos corresponde ao sentido OBJETIVO (material/funcional). O sentido orgânico designa o conjunto de órgãos, entidades e agentes. Item cobrado na prova de 2022.',
@@ -93,7 +92,7 @@ Centro de competências **sem personalidade jurídica própria**. Aplica-se a **
               ],
             },
             {
-              id: 'adm-b1-01-q2',
+              id: 'adm-b4-t1-s1-q2',
               enunciado: 'A regulamentação e a fiscalização de atividade econômica de natureza privada pela administração pública caracterizam a intervenção.',
               certa: true,
               explicacao: 'O art. 174 da CF define o Estado como agente normativo e regulador, exercendo as funções de fiscalização, incentivo e planejamento. Item cobrado na prova de 2022.',
@@ -103,13 +102,33 @@ Centro de competências **sem personalidade jurídica própria**. Aplica-se a **
               ],
             },
             {
-              id: 'adm-b1-01-q3',
+              id: 'adm-b4-t1-s1-q3',
               enunciado: 'A transmissão de competência de uma pessoa jurídica de direito público para outra configura a descontração.',
               certa: false,
               explicacao: '"Descontração" não é instituto jurídico. A transferência entre pessoas jurídicas distintas é DESCENTRALIZAÇÃO; dentro da mesma pessoa, desconcentração. Item cobrado na prova de 2022.',
               baseLegal: 'Decreto-Lei nº 200/1967, arts. 6º e 10',
               variacoes: [
                 { enunciado: 'A desconcentração pressupõe relação de hierarquia, ao passo que a descentralização se submete a controle finalístico.', certa: true, explicacao: 'Correto — é a distinção central entre os dois institutos.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s1-q4',
+              enunciado: 'O governo tem caráter transitório e exerce a direção política do Estado, ao passo que a administração pública é permanente e executa as políticas definidas.',
+              certa: true,
+              explicacao: 'A distinção explica por que a máquina administrativa continua funcionando quando muda o governo: são planos diferentes de atuação estatal.',
+              baseLegal: 'Doutrina de direito administrativo',
+              variacoes: [
+                { enunciado: 'Governo e administração pública são expressões sinônimas, designando o conjunto de órgãos que executam a função administrativa.', certa: false, explicacao: 'Governo é direção política e transitória; administração é aparelhamento permanente de execução.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s1-q5',
+              enunciado: 'São elementos constitutivos do Estado o povo, o território e a soberania.',
+              certa: true,
+              explicacao: 'Sem qualquer um dos três não há Estado. A soberania é o elemento que o distingue das demais formas de organização social.',
+              baseLegal: 'Teoria geral do Estado',
+              variacoes: [
+                { enunciado: 'O poder de polícia figura entre os elementos constitutivos do Estado, ao lado do povo e do território.', certa: false, explicacao: 'O poder de polícia é atividade administrativa, não elemento constitutivo. O terceiro elemento é a soberania.' },
               ],
             },
           ],
@@ -124,7 +143,6 @@ Centro de competências **sem personalidade jurídica própria**. Aplica-se a **
         {
           id: 'adm-b4-t1-s2',
           nome: 'Direito administrativo — conceito, fontes, princípios',
-          // conteúdo herdado do tópico 'adm-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -184,7 +202,7 @@ Juntos formam o **regime jurídico-administrativo**: prerrogativas + sujeições
 `,
           questoes: [
             {
-              id: 'adm-b1-02-q1',
+              id: 'adm-b4-t1-s2-q1',
               enunciado: 'A Administração pode anular seus próprios atos quando eivados de vícios que os tornem ilegais, e revogá-los por motivo de conveniência e oportunidade, respeitados os direitos adquiridos.',
               certa: true,
               explicacao: 'É a Súmula 473 do STF, expressão do princípio da autotutela.',
@@ -194,7 +212,7 @@ Juntos formam o **regime jurídico-administrativo**: prerrogativas + sujeições
               ],
             },
             {
-              id: 'adm-b1-02-q2',
+              id: 'adm-b4-t1-s2-q2',
               enunciado: 'O princípio da legalidade impõe ao administrador público atuar somente conforme autorização legal, diferentemente do particular, a quem é permitido fazer tudo que a lei não proíbe.',
               certa: true,
               explicacao: 'É a distinção entre legalidade estrita (Administração) e autonomia da vontade (particular).',
@@ -204,12 +222,32 @@ Juntos formam o **regime jurídico-administrativo**: prerrogativas + sujeições
               ],
             },
             {
-              id: 'adm-b1-02-q3',
+              id: 'adm-b4-t1-s2-q3',
               enunciado: 'A supremacia do interesse público e a indisponibilidade do interesse público formam a base do regime jurídico-administrativo.',
               certa: true,
               explicacao: 'Da supremacia decorrem as prerrogativas; da indisponibilidade, as sujeições.',
               variacoes: [
                 { enunciado: 'O direito administrativo brasileiro é codificado, o que reduz a importância da doutrina como fonte.', certa: false, explicacao: 'Não é codificado — daí a relevância da doutrina e da jurisprudência como fontes.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s2-q4',
+              enunciado: 'O princípio da continuidade do serviço público não impede a interrupção do fornecimento por inadimplemento do usuário, desde que precedida de aviso.',
+              certa: true,
+              explicacao: 'A lei ressalva expressamente a interrupção por inadimplemento e por razões técnicas ou de segurança, sempre com aviso prévio.',
+              baseLegal: 'Lei nº 8.987/1995, art. 6º, §3º',
+              variacoes: [
+                { enunciado: 'Em razão do princípio da continuidade, é vedada em qualquer hipótese a interrupção da prestação do serviço público.', certa: false, explicacao: 'Há exceções expressas: emergência, razões técnicas ou de segurança e inadimplemento do usuário, estas duas últimas com aviso prévio.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s2-q5',
+              enunciado: 'A motivação dos atos administrativos, embora não conste expressamente do caput do art. 37 da Constituição, é princípio positivado na Lei nº 9.784/1999.',
+              certa: true,
+              explicacao: 'A lei do processo administrativo federal positivou motivação, razoabilidade e proporcionalidade, que a doutrina já reconhecia como implícitos.',
+              baseLegal: 'Lei nº 9.784/1999, art. 2º',
+              variacoes: [
+                { enunciado: 'A eficiência foi incluída entre os princípios expressos da administração pública pela Emenda Constitucional nº 19/1998.', certa: true, explicacao: 'Correto — antes da EC 19/1998 o caput do art. 37 previa apenas legalidade, impessoalidade, moralidade e publicidade.' },
               ],
             },
           ],
@@ -224,7 +262,6 @@ Juntos formam o **regime jurídico-administrativo**: prerrogativas + sujeições
         {
           id: 'adm-b4-t1-s3',
           nome: 'Organização administrativa da União — administração direta',
-          // conteúdo herdado do tópico 'adm-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Administração direta e indireta
 
@@ -285,7 +322,7 @@ O controle da administração indireta é **finalístico**, exercido nos limites
 `,
           questoes: [
             {
-              id: 'adm-b1-03-q1',
+              id: 'adm-b4-t1-s3-q1',
               enunciado: 'As autarquias são criadas por lei específica, enquanto a criação de empresas públicas e sociedades de economia mista depende de autorização legislativa.',
               certa: true,
               explicacao: 'É a regra do art. 37, XIX, da CF/88 — distinção que a banca cobra com frequência.',
@@ -295,7 +332,7 @@ O controle da administração indireta é **finalístico**, exercido nos limites
               ],
             },
             {
-              id: 'adm-b1-03-q2',
+              id: 'adm-b4-t1-s3-q2',
               enunciado: 'A empresa pública possui capital exclusivamente público e pode adotar qualquer forma societária, ao passo que a sociedade de economia mista admite capital privado e deve constituir-se como sociedade anônima.',
               certa: true,
               explicacao: 'É a distinção clássica entre as duas entidades, com reflexo também no foro competente das federais.',
@@ -305,13 +342,33 @@ O controle da administração indireta é **finalístico**, exercido nos limites
               ],
             },
             {
-              id: 'adm-b1-03-q3',
+              id: 'adm-b4-t1-s3-q3',
               enunciado: 'O controle exercido pela administração direta sobre as entidades da administração indireta é finalístico, não havendo relação de hierarquia entre elas.',
               certa: true,
               explicacao: 'A descentralização não gera hierarquia: há supervisão ministerial, nos limites definidos em lei.',
               baseLegal: 'Decreto-Lei nº 200/1967, arts. 19 e 26',
               variacoes: [
                 { enunciado: 'As agências reguladoras são autarquias em regime especial, caracterizadas pela maior autonomia e por dirigentes com mandato fixo.', certa: true, explicacao: 'Correto — é justamente o que caracteriza o regime especial.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s3-q4',
+              enunciado: 'Os órgãos públicos não possuem personalidade jurídica própria, de modo que a atuação de seus agentes é imputada à pessoa jurídica a que pertencem.',
+              certa: true,
+              explicacao: 'É a teoria do órgão, de Otto Gierke, que explica por que se litiga contra a União, e não contra o ministério.',
+              baseLegal: 'Doutrina; Decreto-Lei nº 200/1967',
+              variacoes: [
+                { enunciado: 'Os órgãos públicos possuem personalidade jurídica própria e respondem judicialmente pelos danos que causarem a terceiros.', certa: false, explicacao: 'Órgãos não têm personalidade jurídica: quem responde é a pessoa jurídica de que fazem parte.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s3-q5',
+              enunciado: 'A desconcentração administrativa pressupõe relação de hierarquia entre os órgãos envolvidos.',
+              certa: true,
+              explicacao: 'Como ocorre dentro da mesma pessoa jurídica, há subordinação. Na descentralização, entre pessoas distintas, há apenas controle finalístico.',
+              baseLegal: 'Decreto-Lei nº 200/1967, art. 10',
+              variacoes: [
+                { enunciado: 'Na desconcentração administrativa há transferência de competências para pessoa jurídica distinta, sem relação de hierarquia.', certa: false, explicacao: 'Isso descreve a DESCENTRALIZAÇÃO. A desconcentração é interna e hierárquica.' },
               ],
             },
           ],
@@ -326,7 +383,6 @@ O controle da administração indireta é **finalístico**, exercido nos limites
         {
           id: 'adm-b4-t1-s4',
           nome: 'Organização administrativa da União — administração indireta',
-          // conteúdo herdado do tópico 'adm-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Administração direta e indireta
 
@@ -387,7 +443,7 @@ O controle da administração indireta é **finalístico**, exercido nos limites
 `,
           questoes: [
             {
-              id: 'adm-b1-03-q1',
+              id: 'adm-b4-t1-s4-q1',
               enunciado: 'As autarquias são criadas por lei específica, enquanto a criação de empresas públicas e sociedades de economia mista depende de autorização legislativa.',
               certa: true,
               explicacao: 'É a regra do art. 37, XIX, da CF/88 — distinção que a banca cobra com frequência.',
@@ -397,7 +453,7 @@ O controle da administração indireta é **finalístico**, exercido nos limites
               ],
             },
             {
-              id: 'adm-b1-03-q2',
+              id: 'adm-b4-t1-s4-q2',
               enunciado: 'A empresa pública possui capital exclusivamente público e pode adotar qualquer forma societária, ao passo que a sociedade de economia mista admite capital privado e deve constituir-se como sociedade anônima.',
               certa: true,
               explicacao: 'É a distinção clássica entre as duas entidades, com reflexo também no foro competente das federais.',
@@ -407,13 +463,33 @@ O controle da administração indireta é **finalístico**, exercido nos limites
               ],
             },
             {
-              id: 'adm-b1-03-q3',
+              id: 'adm-b4-t1-s4-q3',
               enunciado: 'O controle exercido pela administração direta sobre as entidades da administração indireta é finalístico, não havendo relação de hierarquia entre elas.',
               certa: true,
               explicacao: 'A descentralização não gera hierarquia: há supervisão ministerial, nos limites definidos em lei.',
               baseLegal: 'Decreto-Lei nº 200/1967, arts. 19 e 26',
               variacoes: [
                 { enunciado: 'As agências reguladoras são autarquias em regime especial, caracterizadas pela maior autonomia e por dirigentes com mandato fixo.', certa: true, explicacao: 'Correto — é justamente o que caracteriza o regime especial.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s4-q4',
+              enunciado: 'As autarquias gozam de imunidade tributária recíproca quanto a impostos sobre patrimônio, renda e serviços vinculados às suas finalidades essenciais.',
+              certa: true,
+              explicacao: 'A imunidade do art. 150, VI, "a", é estendida às autarquias e fundações públicas pelo §2º — regra que alcança o próprio INSS.',
+              baseLegal: 'CF/88, art. 150, VI, "a", e §2º',
+              variacoes: [
+                { enunciado: 'As empresas públicas e sociedades de economia mista que exploram atividade econômica gozam dos mesmos privilégios fiscais das autarquias.', certa: false, explicacao: 'O art. 173, §2º, veda privilégios fiscais não extensivos ao setor privado às estatais exploradoras de atividade econômica.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t1-s4-q5',
+              enunciado: 'As agências reguladoras são autarquias em regime especial, caracterizadas pela autonomia reforçada e por dirigentes investidos em mandato fixo.',
+              certa: true,
+              explicacao: 'O mandato fixo protege a atividade regulatória de oscilações políticas — é o que distingue o regime especial do comum.',
+              baseLegal: 'Lei nº 13.848/2019',
+              variacoes: [
+                { enunciado: 'A agência executiva constitui nova espécie de entidade da administração indireta, criada por lei específica.', certa: false, explicacao: 'Agência executiva é apenas uma QUALIFICAÇÃO temporária conferida a autarquia ou fundação que celebre contrato de gestão — não é entidade nova.' },
               ],
             },
           ],
@@ -435,7 +511,6 @@ O controle da administração indireta é **finalístico**, exercido nos limites
         {
           id: 'adm-b4-t2-s1',
           nome: 'Agentes públicos — espécies e classificação',
-          // conteúdo herdado do tópico 'adm-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Conceito amplo
 
@@ -493,7 +568,7 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
 `,
           questoes: [
             {
-              id: 'adm-b1-04-q1',
+              id: 'adm-b4-t2-s1-q1',
               enunciado: 'Os jurados, embora colaborem temporariamente com a administração pública, não podem ser considerados agentes públicos.',
               certa: false,
               explicacao: 'Jurados são agentes públicos, na categoria de particulares em colaboração (agentes honoríficos). O conceito alcança quem exerce função pública ainda que transitoriamente e sem remuneração. Item cobrado na prova de 2022.',
@@ -503,7 +578,7 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
               ],
             },
             {
-              id: 'adm-b1-04-q2',
+              id: 'adm-b4-t2-s1-q2',
               enunciado: 'As funções de confiança devem ser exercidas exclusivamente por servidores ocupantes de cargo efetivo.',
               certa: true,
               explicacao: 'Art. 37, V, da CF/88. Já os cargos em comissão podem ser ocupados por pessoas sem vínculo, observados os percentuais mínimos reservados a servidores de carreira.',
@@ -513,13 +588,33 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
               ],
             },
             {
-              id: 'adm-b1-04-q3',
+              id: 'adm-b4-t2-s1-q3',
               enunciado: 'As instâncias civil, penal e administrativa são independentes, ressalvada a repercussão da absolvição penal que negue a existência do fato ou a autoria.',
               certa: true,
               explicacao: 'É a regra da independência relativa das instâncias, também presente no art. 126 da Lei nº 8.112/90.',
               baseLegal: 'Lei nº 8.112/1990, arts. 121 a 126',
               variacoes: [
                 { enunciado: 'A Súmula Vinculante 13 do STF veda o nepotismo em relação a parentes até o quarto grau da autoridade nomeante.', certa: false, explicacao: 'O limite é até o TERCEIRO grau, em linha reta, colateral ou por afinidade.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s1-q4',
+              enunciado: 'Os agentes políticos ocupam os cargos de cúpula da estrutura estatal e possuem vínculo de natureza institucional, e não profissional.',
+              certa: true,
+              explicacao: 'Chefes do Executivo, ministros, parlamentares, magistrados e membros do MP e dos Tribunais de Contas exercem função política, não relação de emprego.',
+              baseLegal: 'Doutrina (Hely Lopes Meirelles)',
+              variacoes: [
+                { enunciado: 'Os magistrados e os membros do Ministério Público são classificados como servidores públicos estatutários comuns.', certa: false, explicacao: 'A doutrina majoritária os classifica como agentes POLÍTICOS, com vínculo institucional e regime próprio.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s1-q5',
+              enunciado: 'Os mesários convocados para atuar em eleições e os requisitados para o serviço militar são particulares em colaboração com o Estado.',
+              certa: true,
+              explicacao: 'São agentes públicos por requisição: exercem função pública obrigatória, ainda que temporária e sem remuneração.',
+              baseLegal: 'Doutrina; Lei nº 8.429/1992, art. 2º',
+              variacoes: [
+                { enunciado: 'Os notários e registradores, por atuarem em caráter privado e por delegação, não são considerados agentes públicos.', certa: false, explicacao: 'São agentes públicos por delegação: exercem função pública em nome do Estado, mediante concurso e fiscalização estatal.' },
               ],
             },
           ],
@@ -534,7 +629,6 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
         {
           id: 'adm-b4-t2-s2',
           nome: 'Agentes públicos — poderes e deveres',
-          // conteúdo herdado do tópico 'adm-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Conceito amplo
 
@@ -592,7 +686,7 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
 `,
           questoes: [
             {
-              id: 'adm-b1-04-q1',
+              id: 'adm-b4-t2-s2-q1',
               enunciado: 'Os jurados, embora colaborem temporariamente com a administração pública, não podem ser considerados agentes públicos.',
               certa: false,
               explicacao: 'Jurados são agentes públicos, na categoria de particulares em colaboração (agentes honoríficos). O conceito alcança quem exerce função pública ainda que transitoriamente e sem remuneração. Item cobrado na prova de 2022.',
@@ -602,7 +696,7 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
               ],
             },
             {
-              id: 'adm-b1-04-q2',
+              id: 'adm-b4-t2-s2-q2',
               enunciado: 'As funções de confiança devem ser exercidas exclusivamente por servidores ocupantes de cargo efetivo.',
               certa: true,
               explicacao: 'Art. 37, V, da CF/88. Já os cargos em comissão podem ser ocupados por pessoas sem vínculo, observados os percentuais mínimos reservados a servidores de carreira.',
@@ -612,13 +706,33 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
               ],
             },
             {
-              id: 'adm-b1-04-q3',
+              id: 'adm-b4-t2-s2-q3',
               enunciado: 'As instâncias civil, penal e administrativa são independentes, ressalvada a repercussão da absolvição penal que negue a existência do fato ou a autoria.',
               certa: true,
               explicacao: 'É a regra da independência relativa das instâncias, também presente no art. 126 da Lei nº 8.112/90.',
               baseLegal: 'Lei nº 8.112/1990, arts. 121 a 126',
               variacoes: [
                 { enunciado: 'A Súmula Vinculante 13 do STF veda o nepotismo em relação a parentes até o quarto grau da autoridade nomeante.', certa: false, explicacao: 'O limite é até o TERCEIRO grau, em linha reta, colateral ou por afinidade.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s2-q4',
+              enunciado: 'As prerrogativas conferidas aos agentes públicos configuram poderes-deveres, de exercício obrigatório no interesse público.',
+              certa: true,
+              explicacao: 'Não são faculdades: deixar de exercê-las quando o interesse público exige configura omissão e pode gerar responsabilização.',
+              baseLegal: 'Doutrina; Lei nº 8.112/1990, art. 116',
+              variacoes: [
+                { enunciado: 'O agente público pode deixar de exercer suas prerrogativas por conveniência pessoal, já que se trata de faculdades legais.', certa: false, explicacao: 'São poderes-DEVERES: o exercício é obrigatório quando o interesse público o exige.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s2-q5',
+              enunciado: 'É dever do servidor representar contra ilegalidade, omissão ou abuso de poder de que tenha conhecimento, ainda que praticados por superior hierárquico.',
+              certa: true,
+              explicacao: 'O respeito à hierarquia não se confunde com conivência: o Código de Ética e a Lei nº 8.112/90 impõem o dever de representar.',
+              baseLegal: 'Lei nº 8.112/1990, art. 116, VI e XII',
+              variacoes: [
+                { enunciado: 'O dever de obediência hierárquica impede que o servidor represente contra ato ilegal praticado por seu superior.', certa: false, explicacao: 'Ao contrário: representar contra ilegalidade é dever expresso, e o Código de Ética veda a conivência com erro ou infração.' },
               ],
             },
           ],
@@ -633,7 +747,6 @@ Exceção reconhecida: nomeação para **cargos políticos** (ministros, secret�
         {
           id: 'adm-b4-t2-s3',
           nome: 'Lei 8.112/90 — provimento e vacância',
-          // conteúdo herdado do tópico 'adm-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Alcance
 
@@ -702,7 +815,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
 `,
           questoes: [
             {
-              id: 'adm-b1-05-q1',
+              id: 'adm-b4-t2-s3-q1',
               enunciado: 'A condição de acionista de sociedade privada impede a posse em cargo público.',
               certa: false,
               explicacao: 'O art. 117, X, da Lei nº 8.112/90 veda participar da GERÊNCIA ou ADMINISTRAÇÃO de sociedade privada. Ser acionista, cotista ou comanditário é permitido. Item cobrado na prova de 2022.',
@@ -712,7 +825,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q2',
+              id: 'adm-b4-t2-s3-q2',
               enunciado: 'O prazo para a posse é de trinta dias contados da publicação do ato de provimento, e o de entrada em exercício, de quinze dias contados da posse.',
               certa: true,
               explicacao: 'São os prazos dos arts. 13 e 15 da Lei nº 8.112/90. A posse é o momento da investidura; o exercício, o início efetivo das atribuições.',
@@ -722,7 +835,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q3',
+              id: 'adm-b4-t2-s3-q3',
               enunciado: 'A ação disciplinar para aplicação da penalidade de demissão prescreve em cinco anos, contados da data em que o fato se tornou conhecido.',
               certa: true,
               explicacao: 'Art. 142, I, da Lei nº 8.112/90. Suspensão prescreve em 2 anos e advertência em 180 dias.',
@@ -732,13 +845,23 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q4',
+              id: 'adm-b4-t2-s3-q4',
               enunciado: 'A readaptação consiste na investidura do servidor em cargo de atribuições e responsabilidades compatíveis com a limitação sofrida em sua capacidade física ou mental, verificada em inspeção médica.',
               certa: true,
               explicacao: 'Art. 24 da Lei nº 8.112/90. Sendo inviável a readaptação, o servidor será aposentado por incapacidade permanente.',
               baseLegal: 'Lei nº 8.112/1990, art. 24',
               variacoes: [
                 { enunciado: 'O estágio probatório do servidor federal tem duração de vinte e quatro meses.', certa: false, explicacao: 'O estágio probatório é de 36 meses, alinhado ao prazo de três anos da estabilidade constitucional.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s3-q5',
+              enunciado: 'A posse em cargo público ocorrerá no prazo de trinta dias contados da publicação do ato de provimento, prorrogável nas hipóteses legais.',
+              certa: true,
+              explicacao: 'É a investidura propriamente dita. O prazo só se suspende nas hipóteses de licença ou afastamento previstos em lei.',
+              baseLegal: 'Lei nº 8.112/1990, art. 13, §1º',
+              variacoes: [
+                { enunciado: 'A posse em cargo público ocorrerá no prazo de quinze dias contados da publicação do ato de provimento.', certa: false, explicacao: 'O prazo de posse é de 30 dias. Os 15 dias são para entrar em exercício, contados da posse.' },
               ],
             },
           ],
@@ -754,7 +877,6 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
         {
           id: 'adm-b4-t2-s4',
           nome: 'Lei 8.112/90 — remoção e direitos',
-          // conteúdo herdado do tópico 'adm-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Alcance
 
@@ -823,7 +945,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
 `,
           questoes: [
             {
-              id: 'adm-b1-05-q1',
+              id: 'adm-b4-t2-s4-q1',
               enunciado: 'A condição de acionista de sociedade privada impede a posse em cargo público.',
               certa: false,
               explicacao: 'O art. 117, X, da Lei nº 8.112/90 veda participar da GERÊNCIA ou ADMINISTRAÇÃO de sociedade privada. Ser acionista, cotista ou comanditário é permitido. Item cobrado na prova de 2022.',
@@ -833,7 +955,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q2',
+              id: 'adm-b4-t2-s4-q2',
               enunciado: 'O prazo para a posse é de trinta dias contados da publicação do ato de provimento, e o de entrada em exercício, de quinze dias contados da posse.',
               certa: true,
               explicacao: 'São os prazos dos arts. 13 e 15 da Lei nº 8.112/90. A posse é o momento da investidura; o exercício, o início efetivo das atribuições.',
@@ -843,7 +965,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q3',
+              id: 'adm-b4-t2-s4-q3',
               enunciado: 'A ação disciplinar para aplicação da penalidade de demissão prescreve em cinco anos, contados da data em que o fato se tornou conhecido.',
               certa: true,
               explicacao: 'Art. 142, I, da Lei nº 8.112/90. Suspensão prescreve em 2 anos e advertência em 180 dias.',
@@ -853,13 +975,23 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q4',
+              id: 'adm-b4-t2-s4-q4',
               enunciado: 'A readaptação consiste na investidura do servidor em cargo de atribuições e responsabilidades compatíveis com a limitação sofrida em sua capacidade física ou mental, verificada em inspeção médica.',
               certa: true,
               explicacao: 'Art. 24 da Lei nº 8.112/90. Sendo inviável a readaptação, o servidor será aposentado por incapacidade permanente.',
               baseLegal: 'Lei nº 8.112/1990, art. 24',
               variacoes: [
                 { enunciado: 'O estágio probatório do servidor federal tem duração de vinte e quatro meses.', certa: false, explicacao: 'O estágio probatório é de 36 meses, alinhado ao prazo de três anos da estabilidade constitucional.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s4-q5',
+              enunciado: 'A remoção a pedido, para outra localidade, independentemente do interesse da administração, é admitida para acompanhar cônjuge servidor deslocado no interesse do serviço.',
+              certa: true,
+              explicacao: 'É uma das três hipóteses de remoção vinculada, ao lado de motivo de saúde e do processo seletivo interno.',
+              baseLegal: 'Lei nº 8.112/1990, art. 36, parágrafo único, III, "a"',
+              variacoes: [
+                { enunciado: 'A remoção para acompanhar cônjuge depende sempre de juízo de conveniência e oportunidade da administração.', certa: false, explicacao: 'Preenchidos os requisitos legais, essa remoção é vinculada: independe do interesse da administração.' },
               ],
             },
           ],
@@ -875,7 +1007,6 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
         {
           id: 'adm-b4-t2-s5',
           nome: 'Lei 8.112/90 — regime disciplinar',
-          // conteúdo herdado do tópico 'adm-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Alcance
 
@@ -944,7 +1075,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
 `,
           questoes: [
             {
-              id: 'adm-b1-05-q1',
+              id: 'adm-b4-t2-s5-q1',
               enunciado: 'A condição de acionista de sociedade privada impede a posse em cargo público.',
               certa: false,
               explicacao: 'O art. 117, X, da Lei nº 8.112/90 veda participar da GERÊNCIA ou ADMINISTRAÇÃO de sociedade privada. Ser acionista, cotista ou comanditário é permitido. Item cobrado na prova de 2022.',
@@ -954,7 +1085,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q2',
+              id: 'adm-b4-t2-s5-q2',
               enunciado: 'O prazo para a posse é de trinta dias contados da publicação do ato de provimento, e o de entrada em exercício, de quinze dias contados da posse.',
               certa: true,
               explicacao: 'São os prazos dos arts. 13 e 15 da Lei nº 8.112/90. A posse é o momento da investidura; o exercício, o início efetivo das atribuições.',
@@ -964,7 +1095,7 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q3',
+              id: 'adm-b4-t2-s5-q3',
               enunciado: 'A ação disciplinar para aplicação da penalidade de demissão prescreve em cinco anos, contados da data em que o fato se tornou conhecido.',
               certa: true,
               explicacao: 'Art. 142, I, da Lei nº 8.112/90. Suspensão prescreve em 2 anos e advertência em 180 dias.',
@@ -974,13 +1105,23 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
               ],
             },
             {
-              id: 'adm-b1-05-q4',
+              id: 'adm-b4-t2-s5-q4',
               enunciado: 'A readaptação consiste na investidura do servidor em cargo de atribuições e responsabilidades compatíveis com a limitação sofrida em sua capacidade física ou mental, verificada em inspeção médica.',
               certa: true,
               explicacao: 'Art. 24 da Lei nº 8.112/90. Sendo inviável a readaptação, o servidor será aposentado por incapacidade permanente.',
               baseLegal: 'Lei nº 8.112/1990, art. 24',
               variacoes: [
                 { enunciado: 'O estágio probatório do servidor federal tem duração de vinte e quatro meses.', certa: false, explicacao: 'O estágio probatório é de 36 meses, alinhado ao prazo de três anos da estabilidade constitucional.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t2-s5-q5',
+              enunciado: 'A penalidade de suspensão aplicada ao servidor federal não pode exceder noventa dias.',
+              certa: true,
+              explicacao: 'Acima de 90 dias a punição adequada seria a demissão. A suspensão pode ainda ser convertida em multa, com o servidor permanecendo em exercício.',
+              baseLegal: 'Lei nº 8.112/1990, art. 130',
+              variacoes: [
+                { enunciado: 'A penalidade de suspensão pode ser convertida em multa, na base de cinquenta por cento por dia de vencimento, ficando o servidor obrigado a permanecer em serviço.', certa: true, explicacao: 'Correto — é a conversão prevista no art. 130, §2º, da Lei nº 8.112/1990.' },
               ],
             },
           ],
@@ -1003,7 +1144,6 @@ Infrações também capituladas como crime prescrevem nos prazos da **lei penal*
         {
           id: 'adm-b4-t3-s1',
           nome: 'Poder hierárquico',
-          // conteúdo herdado do tópico 'adm-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Visão geral
 
@@ -1076,7 +1216,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
 `,
           questoes: [
             {
-              id: 'adm-b1-06-q1',
+              id: 'adm-b4-t3-s1-q1',
               enunciado: 'A delegação de competência de um titular a outro depende da existência de subordinação hierárquica.',
               certa: false,
               explicacao: 'A Lei nº 9.784/99 admite delegação ainda que não haja subordinação hierárquica. A hierarquia é indispensável apenas para a avocação. Item cobrado na prova de 2022.',
@@ -1086,7 +1226,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q2',
+              id: 'adm-b4-t3-s1-q2',
               enunciado: 'Por meio do poder regulamentar, cabe à administração pública criar mecanismos de complementação das leis, a fim de possibilitar a sua efetiva aplicabilidade.',
               certa: true,
               explicacao: 'O poder regulamentar viabiliza a fiel execução da lei, sem inovar na ordem jurídica. Item cobrado na prova de 2022.',
@@ -1096,7 +1236,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q3',
+              id: 'adm-b4-t3-s1-q3',
               enunciado: 'O poder disciplinar alcança os servidores públicos e os particulares que possuam vínculo específico com a administração.',
               certa: true,
               explicacao: 'Sem vínculo específico, a atuação sancionatória se dá pelo poder de polícia, e não pelo disciplinar.',
@@ -1105,13 +1245,23 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q4',
+              id: 'adm-b4-t3-s1-q4',
               enunciado: 'Segundo o STF, as fases de consentimento e fiscalização do poder de polícia podem ser delegadas a pessoas jurídicas de direito privado integrantes da administração indireta.',
               certa: true,
               explicacao: 'As fases de ordem e sanção permanecem indelegáveis a particulares, por envolverem poder de império.',
               baseLegal: 'STF, RE 633.782, Tema 532',
               variacoes: [
                 { enunciado: 'A polícia administrativa incide sobre pessoas, enquanto a polícia judiciária incide sobre bens e atividades.', certa: false, explicacao: 'É o inverso: administrativa incide sobre bens, direitos e atividades; judiciária, sobre pessoas.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s1-q5',
+              enunciado: 'A avocação de competência deve ser excepcional, temporária e fundamentada em motivos relevantes devidamente justificados.',
+              certa: true,
+              explicacao: 'Como a avocação subtrai atribuição de quem a lei definiu como competente, a lei a cerca de requisitos rigorosos.',
+              baseLegal: 'Lei nº 9.784/1999, art. 15',
+              variacoes: [
+                { enunciado: 'A avocação de competência pode ser exercida em caráter permanente pelo superior hierárquico, independentemente de justificativa.', certa: false, explicacao: 'Deve ser temporária, excepcional e motivada — nunca permanente nem imotivada.' },
               ],
             },
           ],
@@ -1126,7 +1276,6 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
         {
           id: 'adm-b4-t3-s2',
           nome: 'Poder disciplinar',
-          // conteúdo herdado do tópico 'adm-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Visão geral
 
@@ -1199,7 +1348,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
 `,
           questoes: [
             {
-              id: 'adm-b1-06-q1',
+              id: 'adm-b4-t3-s2-q1',
               enunciado: 'A delegação de competência de um titular a outro depende da existência de subordinação hierárquica.',
               certa: false,
               explicacao: 'A Lei nº 9.784/99 admite delegação ainda que não haja subordinação hierárquica. A hierarquia é indispensável apenas para a avocação. Item cobrado na prova de 2022.',
@@ -1209,7 +1358,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q2',
+              id: 'adm-b4-t3-s2-q2',
               enunciado: 'Por meio do poder regulamentar, cabe à administração pública criar mecanismos de complementação das leis, a fim de possibilitar a sua efetiva aplicabilidade.',
               certa: true,
               explicacao: 'O poder regulamentar viabiliza a fiel execução da lei, sem inovar na ordem jurídica. Item cobrado na prova de 2022.',
@@ -1219,7 +1368,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q3',
+              id: 'adm-b4-t3-s2-q3',
               enunciado: 'O poder disciplinar alcança os servidores públicos e os particulares que possuam vínculo específico com a administração.',
               certa: true,
               explicacao: 'Sem vínculo específico, a atuação sancionatória se dá pelo poder de polícia, e não pelo disciplinar.',
@@ -1228,13 +1377,23 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q4',
+              id: 'adm-b4-t3-s2-q4',
               enunciado: 'Segundo o STF, as fases de consentimento e fiscalização do poder de polícia podem ser delegadas a pessoas jurídicas de direito privado integrantes da administração indireta.',
               certa: true,
               explicacao: 'As fases de ordem e sanção permanecem indelegáveis a particulares, por envolverem poder de império.',
               baseLegal: 'STF, RE 633.782, Tema 532',
               variacoes: [
                 { enunciado: 'A polícia administrativa incide sobre pessoas, enquanto a polícia judiciária incide sobre bens e atividades.', certa: false, explicacao: 'É o inverso: administrativa incide sobre bens, direitos e atividades; judiciária, sobre pessoas.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s2-q5',
+              enunciado: 'A instauração do processo disciplinar é obrigatória quando a autoridade toma conhecimento de irregularidade no serviço público.',
+              certa: true,
+              explicacao: 'A apuração é vinculada — deixar de promovê-la sujeita a autoridade a responsabilização por condescendência criminosa.',
+              baseLegal: 'Lei nº 8.112/1990, art. 143; Código Penal, art. 320',
+              variacoes: [
+                { enunciado: 'A instauração de processo disciplinar é ato discricionário da autoridade, que pode deixar de apurar a irregularidade por conveniência administrativa.', certa: false, explicacao: 'O dever de apurar é vinculado. Discricionariedade existe, dentro de limites, na dosimetria da penalidade.' },
               ],
             },
           ],
@@ -1249,7 +1408,6 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
         {
           id: 'adm-b4-t3-s3',
           nome: 'Poder regulamentar',
-          // conteúdo herdado do tópico 'adm-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Visão geral
 
@@ -1322,7 +1480,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
 `,
           questoes: [
             {
-              id: 'adm-b1-06-q1',
+              id: 'adm-b4-t3-s3-q1',
               enunciado: 'A delegação de competência de um titular a outro depende da existência de subordinação hierárquica.',
               certa: false,
               explicacao: 'A Lei nº 9.784/99 admite delegação ainda que não haja subordinação hierárquica. A hierarquia é indispensável apenas para a avocação. Item cobrado na prova de 2022.',
@@ -1332,7 +1490,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q2',
+              id: 'adm-b4-t3-s3-q2',
               enunciado: 'Por meio do poder regulamentar, cabe à administração pública criar mecanismos de complementação das leis, a fim de possibilitar a sua efetiva aplicabilidade.',
               certa: true,
               explicacao: 'O poder regulamentar viabiliza a fiel execução da lei, sem inovar na ordem jurídica. Item cobrado na prova de 2022.',
@@ -1342,7 +1500,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q3',
+              id: 'adm-b4-t3-s3-q3',
               enunciado: 'O poder disciplinar alcança os servidores públicos e os particulares que possuam vínculo específico com a administração.',
               certa: true,
               explicacao: 'Sem vínculo específico, a atuação sancionatória se dá pelo poder de polícia, e não pelo disciplinar.',
@@ -1351,13 +1509,23 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q4',
+              id: 'adm-b4-t3-s3-q4',
               enunciado: 'Segundo o STF, as fases de consentimento e fiscalização do poder de polícia podem ser delegadas a pessoas jurídicas de direito privado integrantes da administração indireta.',
               certa: true,
               explicacao: 'As fases de ordem e sanção permanecem indelegáveis a particulares, por envolverem poder de império.',
               baseLegal: 'STF, RE 633.782, Tema 532',
               variacoes: [
                 { enunciado: 'A polícia administrativa incide sobre pessoas, enquanto a polícia judiciária incide sobre bens e atividades.', certa: false, explicacao: 'É o inverso: administrativa incide sobre bens, direitos e atividades; judiciária, sobre pessoas.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s3-q5',
+              enunciado: 'O decreto autônomo pode dispor sobre a organização e o funcionamento da administração federal quando não implicar aumento de despesa nem criação ou extinção de órgãos públicos.',
+              certa: true,
+              explicacao: 'É uma das duas hipóteses taxativas do art. 84, VI. A outra é a extinção de cargos públicos vagos.',
+              baseLegal: 'CF/88, art. 84, VI, "a"',
+              variacoes: [
+                { enunciado: 'O decreto autônomo pode criar órgãos públicos, desde que não haja aumento de despesa.', certa: false, explicacao: 'A criação de órgãos é expressamente excluída da hipótese constitucional: exige lei.' },
               ],
             },
           ],
@@ -1372,7 +1540,6 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
         {
           id: 'adm-b4-t3-s4',
           nome: 'Poder de polícia',
-          // conteúdo herdado do tópico 'adm-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Visão geral
 
@@ -1445,7 +1612,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
 `,
           questoes: [
             {
-              id: 'adm-b1-06-q1',
+              id: 'adm-b4-t3-s4-q1',
               enunciado: 'A delegação de competência de um titular a outro depende da existência de subordinação hierárquica.',
               certa: false,
               explicacao: 'A Lei nº 9.784/99 admite delegação ainda que não haja subordinação hierárquica. A hierarquia é indispensável apenas para a avocação. Item cobrado na prova de 2022.',
@@ -1455,7 +1622,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q2',
+              id: 'adm-b4-t3-s4-q2',
               enunciado: 'Por meio do poder regulamentar, cabe à administração pública criar mecanismos de complementação das leis, a fim de possibilitar a sua efetiva aplicabilidade.',
               certa: true,
               explicacao: 'O poder regulamentar viabiliza a fiel execução da lei, sem inovar na ordem jurídica. Item cobrado na prova de 2022.',
@@ -1465,7 +1632,7 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q3',
+              id: 'adm-b4-t3-s4-q3',
               enunciado: 'O poder disciplinar alcança os servidores públicos e os particulares que possuam vínculo específico com a administração.',
               certa: true,
               explicacao: 'Sem vínculo específico, a atuação sancionatória se dá pelo poder de polícia, e não pelo disciplinar.',
@@ -1474,13 +1641,23 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
               ],
             },
             {
-              id: 'adm-b1-06-q4',
+              id: 'adm-b4-t3-s4-q4',
               enunciado: 'Segundo o STF, as fases de consentimento e fiscalização do poder de polícia podem ser delegadas a pessoas jurídicas de direito privado integrantes da administração indireta.',
               certa: true,
               explicacao: 'As fases de ordem e sanção permanecem indelegáveis a particulares, por envolverem poder de império.',
               baseLegal: 'STF, RE 633.782, Tema 532',
               variacoes: [
                 { enunciado: 'A polícia administrativa incide sobre pessoas, enquanto a polícia judiciária incide sobre bens e atividades.', certa: false, explicacao: 'É o inverso: administrativa incide sobre bens, direitos e atividades; judiciária, sobre pessoas.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s4-q5',
+              enunciado: 'A cobrança de multa resultante do exercício do poder de polícia, quando não paga espontaneamente, depende de execução judicial.',
+              certa: true,
+              explicacao: 'A autoexecutoriedade alcança a aplicação da sanção, não a expropriação de bens do particular — esta exige o Judiciário.',
+              baseLegal: 'Lei nº 6.830/1980; CTN, art. 78',
+              variacoes: [
+                { enunciado: 'A administração pode, com fundamento na autoexecutoriedade, penhorar diretamente bens do particular para satisfazer multa não paga.', certa: false, explicacao: 'A cobrança forçada exige execução fiscal. A autoexecutoriedade não alcança a expropriação de bens.' },
               ],
             },
           ],
@@ -1495,7 +1672,6 @@ Atividade da Administração que **limita ou disciplina direito, interesse ou li
         {
           id: 'adm-b4-t3-s5',
           nome: 'Ato administrativo — validade e eficácia',
-          // conteúdo herdado do tópico 'adm-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Elementos (requisitos de validade) — COM-FI-FO-MO-OB
 
@@ -1566,7 +1742,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
 `,
           questoes: [
             {
-              id: 'adm-b1-07-q1',
+              id: 'adm-b4-t3-s5-q1',
               enunciado: 'A competência, a finalidade e a forma são elementos sempre vinculados do ato administrativo, ao passo que o motivo e o objeto podem ser discricionários.',
               certa: true,
               explicacao: 'É a base do controle judicial: mesmo no ato discricionário, esses três elementos são plenamente controláveis.',
@@ -1575,7 +1751,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q2',
+              id: 'adm-b4-t3-s5-q2',
               enunciado: 'Segundo a teoria dos motivos determinantes, a validade do ato administrativo vincula-se aos motivos declarados pela administração, ainda que a motivação não fosse obrigatória.',
               certa: true,
               explicacao: 'Declarado o motivo, ele passa a integrar a validade do ato: se falso ou inexistente, o ato é nulo.',
@@ -1584,7 +1760,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q3',
+              id: 'adm-b4-t3-s5-q3',
               enunciado: 'A licença é ato administrativo vinculado e definitivo, ao passo que a autorização é discricionária e precária.',
               certa: true,
               explicacao: 'Quem preenche os requisitos tem direito à licença. A autorização pode ser revogada a qualquer tempo, em regra sem indenização.',
@@ -1593,12 +1769,22 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q4',
+              id: 'adm-b4-t3-s5-q4',
               enunciado: 'A caducidade do ato administrativo ocorre quando norma jurídica superveniente torna inadmissível a situação antes permitida.',
               certa: true,
               explicacao: 'Distingue-se da cassação, que decorre do descumprimento de condições pelo beneficiário.',
               variacoes: [
                 { enunciado: 'Os atos administrativos vinculados podem ser revogados por razões de conveniência e oportunidade.', certa: false, explicacao: 'Atos vinculados não comportam revogação — apenas anulação, se ilegais.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s5-q5',
+              enunciado: 'O desvio de finalidade ocorre quando o agente pratica o ato visando a fim diverso do previsto na regra de competência, ainda que aparentemente dentro da legalidade formal.',
+              certa: true,
+              explicacao: 'É vício insanável no elemento finalidade — e por isso não comporta convalidação, apenas anulação.',
+              baseLegal: 'Lei nº 4.717/1965, art. 2º, parágrafo único, "e"',
+              variacoes: [
+                { enunciado: 'O ato praticado com desvio de finalidade pode ser convalidado pela administração, por tratar-se de vício sanável.', certa: false, explicacao: 'Vício de finalidade é insanável. Só se convalidam vícios de competência (não exclusiva) e de forma (não essencial).' },
               ],
             },
           ],
@@ -1614,7 +1800,6 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
         {
           id: 'adm-b4-t3-s6',
           nome: 'Ato administrativo — atributos, extinção e classificação',
-          // conteúdo herdado do tópico 'adm-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Elementos (requisitos de validade) — COM-FI-FO-MO-OB
 
@@ -1685,7 +1870,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
 `,
           questoes: [
             {
-              id: 'adm-b1-07-q1',
+              id: 'adm-b4-t3-s6-q1',
               enunciado: 'A competência, a finalidade e a forma são elementos sempre vinculados do ato administrativo, ao passo que o motivo e o objeto podem ser discricionários.',
               certa: true,
               explicacao: 'É a base do controle judicial: mesmo no ato discricionário, esses três elementos são plenamente controláveis.',
@@ -1694,7 +1879,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q2',
+              id: 'adm-b4-t3-s6-q2',
               enunciado: 'Segundo a teoria dos motivos determinantes, a validade do ato administrativo vincula-se aos motivos declarados pela administração, ainda que a motivação não fosse obrigatória.',
               certa: true,
               explicacao: 'Declarado o motivo, ele passa a integrar a validade do ato: se falso ou inexistente, o ato é nulo.',
@@ -1703,7 +1888,7 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q3',
+              id: 'adm-b4-t3-s6-q3',
               enunciado: 'A licença é ato administrativo vinculado e definitivo, ao passo que a autorização é discricionária e precária.',
               certa: true,
               explicacao: 'Quem preenche os requisitos tem direito à licença. A autorização pode ser revogada a qualquer tempo, em regra sem indenização.',
@@ -1712,12 +1897,22 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
               ],
             },
             {
-              id: 'adm-b1-07-q4',
+              id: 'adm-b4-t3-s6-q4',
               enunciado: 'A caducidade do ato administrativo ocorre quando norma jurídica superveniente torna inadmissível a situação antes permitida.',
               certa: true,
               explicacao: 'Distingue-se da cassação, que decorre do descumprimento de condições pelo beneficiário.',
               variacoes: [
                 { enunciado: 'Os atos administrativos vinculados podem ser revogados por razões de conveniência e oportunidade.', certa: false, explicacao: 'Atos vinculados não comportam revogação — apenas anulação, se ilegais.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t3-s6-q5',
+              enunciado: 'O ato administrativo complexo resulta da manifestação de vontade de dois ou mais órgãos distintos, que se fundem em um único ato.',
+              certa: true,
+              explicacao: 'No complexo há fusão de vontades num só ato; no composto há dois atos, sendo o segundo acessório e de mera ratificação.',
+              baseLegal: 'Doutrina de direito administrativo',
+              variacoes: [
+                { enunciado: 'No ato administrativo composto, as vontades de órgãos diversos se fundem para formar um ato único.', certa: false, explicacao: 'Essa é a definição do ato COMPLEXO. No composto há um ato principal e outro acessório que o ratifica.' },
               ],
             },
           ],
@@ -1740,7 +1935,6 @@ Prazo de **5 anos** para a Administração anular atos de que decorram efeitos f
         {
           id: 'adm-b4-t4-s1',
           nome: 'Serviços públicos — conceito e classificação',
-          // conteúdo herdado do tópico 'adm-b1-08' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -1796,7 +1990,7 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
 `,
           questoes: [
             {
-              id: 'adm-b1-08-q1',
+              id: 'adm-b4-t4-s1-q1',
               enunciado: 'A concessão administrativa se dá quando seu objeto é a prestação de serviço do qual a administração pública seja a usuária, ainda que indireta.',
               certa: true,
               explicacao: 'Definição legal da concessão administrativa, uma das modalidades de PPP. Item cobrado na prova de 2022.',
@@ -1806,7 +2000,7 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
               ],
             },
             {
-              id: 'adm-b1-08-q2',
+              id: 'adm-b4-t4-s1-q2',
               enunciado: 'A concessão de serviço público somente pode ser outorgada a pessoa jurídica ou consórcio de empresas, ao passo que a permissão admite pessoa física.',
               certa: true,
               explicacao: 'É a distinção do art. 2º da Lei nº 8.987/95, ao lado da precariedade que caracteriza a permissão.',
@@ -1816,13 +2010,33 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
               ],
             },
             {
-              id: 'adm-b1-08-q3',
+              id: 'adm-b4-t4-s1-q3',
               enunciado: 'Não caracteriza descontinuidade do serviço público a interrupção, após aviso prévio, por inadimplemento do usuário, considerado o interesse da coletividade.',
               certa: true,
               explicacao: 'É a exceção expressa do art. 6º, §3º, da Lei nº 8.987/95, ao lado das razões de ordem técnica e de segurança.',
               baseLegal: 'Lei nº 8.987/1995, art. 6º, §3º',
               variacoes: [
                 { enunciado: 'A encampação consiste na extinção da concessão por inadimplemento do concessionário.', certa: false, explicacao: 'Inadimplemento do concessionário é CADUCIDADE. Encampação é a retomada por interesse público, com lei autorizativa e indenização prévia.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s1-q4',
+              enunciado: 'Os serviços públicos uti singuli são divisíveis e mensuráveis individualmente, podendo ser remunerados por taxa ou tarifa.',
+              certa: true,
+              explicacao: 'Os uti universi, por serem indivisíveis (segurança pública, iluminação), são custeados por impostos.',
+              baseLegal: 'CF/88, art. 145, II; CTN, art. 77',
+              variacoes: [
+                { enunciado: 'Os serviços públicos uti universi são divisíveis e podem ser remunerados mediante taxa específica.', certa: false, explicacao: 'Os uti universi são indivisíveis e custeados por impostos. A taxa exige serviço específico e divisível.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s1-q5',
+              enunciado: 'A taxa tem natureza tributária e pode ser exigida pela mera disponibilização do serviço, ao passo que a tarifa pressupõe a efetiva utilização.',
+              certa: true,
+              explicacao: 'A taxa é compulsória e nasce da lei; a tarifa é preço público, de natureza contratual e facultativa.',
+              baseLegal: 'CTN, art. 79; STF, Súmula 545',
+              variacoes: [
+                { enunciado: 'A tarifa possui natureza tributária e submete-se ao princípio da legalidade estrita.', certa: false, explicacao: 'A tarifa é preço público de natureza contratual, não tributo — não se sujeita à legalidade tributária estrita.' },
               ],
             },
           ],
@@ -1837,7 +2051,6 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
         {
           id: 'adm-b4-t4-s2',
           nome: 'Delegação — concessão, permissão, autorização',
-          // conteúdo herdado do tópico 'adm-b1-08' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -1893,7 +2106,7 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
 `,
           questoes: [
             {
-              id: 'adm-b1-08-q1',
+              id: 'adm-b4-t4-s2-q1',
               enunciado: 'A concessão administrativa se dá quando seu objeto é a prestação de serviço do qual a administração pública seja a usuária, ainda que indireta.',
               certa: true,
               explicacao: 'Definição legal da concessão administrativa, uma das modalidades de PPP. Item cobrado na prova de 2022.',
@@ -1903,7 +2116,7 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
               ],
             },
             {
-              id: 'adm-b1-08-q2',
+              id: 'adm-b4-t4-s2-q2',
               enunciado: 'A concessão de serviço público somente pode ser outorgada a pessoa jurídica ou consórcio de empresas, ao passo que a permissão admite pessoa física.',
               certa: true,
               explicacao: 'É a distinção do art. 2º da Lei nº 8.987/95, ao lado da precariedade que caracteriza a permissão.',
@@ -1913,13 +2126,33 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
               ],
             },
             {
-              id: 'adm-b1-08-q3',
+              id: 'adm-b4-t4-s2-q3',
               enunciado: 'Não caracteriza descontinuidade do serviço público a interrupção, após aviso prévio, por inadimplemento do usuário, considerado o interesse da coletividade.',
               certa: true,
               explicacao: 'É a exceção expressa do art. 6º, §3º, da Lei nº 8.987/95, ao lado das razões de ordem técnica e de segurança.',
               baseLegal: 'Lei nº 8.987/1995, art. 6º, §3º',
               variacoes: [
                 { enunciado: 'A encampação consiste na extinção da concessão por inadimplemento do concessionário.', certa: false, explicacao: 'Inadimplemento do concessionário é CADUCIDADE. Encampação é a retomada por interesse público, com lei autorizativa e indenização prévia.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s2-q4',
+              enunciado: 'A concessão de serviço público deve ser precedida de licitação na modalidade concorrência, salvo as hipóteses legalmente excepcionadas.',
+              certa: true,
+              explicacao: 'A regra da concorrência decorre do vulto e do prazo dos contratos de concessão. O leilão é admitido nas concessões vinculadas à desestatização.',
+              baseLegal: 'Lei nº 8.987/1995, art. 2º, II; CF/88, art. 175',
+              variacoes: [
+                { enunciado: 'A permissão de serviço público, por ser precária, dispensa procedimento licitatório.', certa: false, explicacao: 'A permissão exige licitação (art. 175 da CF e art. 2º, IV, da Lei nº 8.987/95). Quem dispensa licitação é a autorização.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s2-q5',
+              enunciado: 'Ao término da concessão, os bens vinculados à prestação do serviço revertem ao poder concedente, indenizadas as parcelas de investimento ainda não amortizadas.',
+              certa: true,
+              explicacao: 'É a reversão. A indenização evita enriquecimento sem causa do poder concedente sobre investimentos recentes.',
+              baseLegal: 'Lei nº 8.987/1995, arts. 35, §1º, e 36',
+              variacoes: [
+                { enunciado: 'Na reversão, os bens vinculados ao serviço permanecem em propriedade da concessionária, cabendo ao poder concedente adquiri-los pelo valor de mercado.', certa: false, explicacao: 'Os bens revertem ao poder concedente; a indenização alcança apenas as parcelas não amortizadas do investimento.' },
               ],
             },
           ],
@@ -1934,7 +2167,6 @@ Receber serviço adequado; obter informações; levar ao conhecimento do poder p
         {
           id: 'adm-b4-t4-s3',
           nome: 'Controle administrativo',
-          // conteúdo herdado do tópico 'adm-b1-09' da estrutura de 3 níveis
           teoria: `
 ## Classificações
 
@@ -1989,7 +2221,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
 `,
           questoes: [
             {
-              id: 'adm-b1-09-q1',
+              id: 'adm-b4-t4-s3-q1',
               enunciado: 'O direito de petição, por meio do qual as pessoas podem formular postulações aos órgãos públicos, é um meio de controle administrativo.',
               certa: true,
               explicacao: 'É instrumento de controle popular exercido na própria via administrativa. Item cobrado na prova de 2022.',
@@ -1999,7 +2231,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q2',
+              id: 'adm-b4-t4-s3-q2',
               enunciado: 'Compete ao Tribunal de Contas da União apreciar as contas anuais do Presidente da República, mediante parecer prévio, cabendo o julgamento ao Congresso Nacional.',
               certa: true,
               explicacao: 'O TCU emite parecer prévio em 60 dias; o julgamento é competência exclusiva do Congresso (art. 49, IX).',
@@ -2009,12 +2241,32 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q3',
+              id: 'adm-b4-t4-s3-q3',
               enunciado: 'O Poder Judiciário pode controlar a legalidade dos atos administrativos discricionários, inclusive quanto à razoabilidade e à proporcionalidade, sem substituir o mérito administrativo.',
               certa: true,
               explicacao: 'O controle recai sobre a legalidade em sentido amplo; a escolha de conveniência e oportunidade permanece com a Administração.',
               variacoes: [
                 { enunciado: 'O Brasil adota o sistema do contencioso administrativo, no qual as decisões administrativas fazem coisa julgada.', certa: false, explicacao: 'O Brasil adota a jurisdição UNA (sistema inglês): apenas o Judiciário produz coisa julgada.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s3-q4',
+              enunciado: 'O controle administrativo exercido sobre as entidades da administração indireta é finalístico e restringe-se aos limites estabelecidos em lei.',
+              certa: true,
+              explicacao: 'É a tutela ou supervisão ministerial. Diferentemente do controle hierárquico, não se presume: só existe onde a lei o previu.',
+              baseLegal: 'Decreto-Lei nº 200/1967, arts. 19 e 26',
+              variacoes: [
+                { enunciado: 'O controle sobre as entidades da administração indireta é hierárquico e amplo, alcançando todos os atos praticados.', certa: false, explicacao: 'Não há hierarquia entre administração direta e indireta: o controle é finalístico e adstrito aos limites legais.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s3-q5',
+              enunciado: 'A administração pode rever seus atos de ofício, independentemente de provocação do interessado.',
+              certa: true,
+              explicacao: 'É a autotutela da Súmula 473 do STF: anular os ilegais e revogar os inconvenientes, respeitados direitos adquiridos.',
+              baseLegal: 'STF, Súmula 473; Lei nº 9.784/1999, art. 53',
+              variacoes: [
+                { enunciado: 'A revisão de ato administrativo pela própria administração depende sempre de provocação do interessado ou de determinação judicial.', certa: false, explicacao: 'A autotutela permite a revisão de ofício, sem necessidade de provocação.' },
               ],
             },
           ],
@@ -2029,7 +2281,6 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
         {
           id: 'adm-b4-t4-s4',
           nome: 'Controle judicial',
-          // conteúdo herdado do tópico 'adm-b1-09' da estrutura de 3 níveis
           teoria: `
 ## Classificações
 
@@ -2084,7 +2335,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
 `,
           questoes: [
             {
-              id: 'adm-b1-09-q1',
+              id: 'adm-b4-t4-s4-q1',
               enunciado: 'O direito de petição, por meio do qual as pessoas podem formular postulações aos órgãos públicos, é um meio de controle administrativo.',
               certa: true,
               explicacao: 'É instrumento de controle popular exercido na própria via administrativa. Item cobrado na prova de 2022.',
@@ -2094,7 +2345,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q2',
+              id: 'adm-b4-t4-s4-q2',
               enunciado: 'Compete ao Tribunal de Contas da União apreciar as contas anuais do Presidente da República, mediante parecer prévio, cabendo o julgamento ao Congresso Nacional.',
               certa: true,
               explicacao: 'O TCU emite parecer prévio em 60 dias; o julgamento é competência exclusiva do Congresso (art. 49, IX).',
@@ -2104,12 +2355,32 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q3',
+              id: 'adm-b4-t4-s4-q3',
               enunciado: 'O Poder Judiciário pode controlar a legalidade dos atos administrativos discricionários, inclusive quanto à razoabilidade e à proporcionalidade, sem substituir o mérito administrativo.',
               certa: true,
               explicacao: 'O controle recai sobre a legalidade em sentido amplo; a escolha de conveniência e oportunidade permanece com a Administração.',
               variacoes: [
                 { enunciado: 'O Brasil adota o sistema do contencioso administrativo, no qual as decisões administrativas fazem coisa julgada.', certa: false, explicacao: 'O Brasil adota a jurisdição UNA (sistema inglês): apenas o Judiciário produz coisa julgada.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s4-q4',
+              enunciado: 'O controle judicial dos atos administrativos é sempre posterior, ressalvadas as hipóteses de tutela de urgência.',
+              certa: true,
+              explicacao: 'O Judiciário atua provocado e após a prática do ato — mas liminares e tutelas de urgência podem antecipar seus efeitos.',
+              baseLegal: 'CF/88, art. 5º, XXXV',
+              variacoes: [
+                { enunciado: 'O Poder Judiciário pode, de ofício, rever atos administrativos que repute ilegais, independentemente de provocação.', certa: false, explicacao: 'A jurisdição é inerte: depende de provocação. Quem age de ofício é a própria administração, pela autotutela.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s4-q5',
+              enunciado: 'São imprescritíveis as ações de ressarcimento ao erário fundadas na prática de ato doloso de improbidade administrativa.',
+              certa: true,
+              explicacao: 'Tese fixada pelo STF no Tema 897. A imprescritibilidade alcança apenas o ato DOLOSO — o culposo prescreve.',
+              baseLegal: 'STF, RE 852.475, Tema 897',
+              variacoes: [
+                { enunciado: 'Todas as ações de ressarcimento ao erário são imprescritíveis, independentemente da natureza do ato que lhes deu causa.', certa: false, explicacao: 'A imprescritibilidade restringe-se ao ressarcimento decorrente de ato DOLOSO de improbidade.' },
               ],
             },
           ],
@@ -2124,7 +2395,6 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
         {
           id: 'adm-b4-t4-s5',
           nome: 'Controle legislativo',
-          // conteúdo herdado do tópico 'adm-b1-09' da estrutura de 3 níveis
           teoria: `
 ## Classificações
 
@@ -2179,7 +2449,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
 `,
           questoes: [
             {
-              id: 'adm-b1-09-q1',
+              id: 'adm-b4-t4-s5-q1',
               enunciado: 'O direito de petição, por meio do qual as pessoas podem formular postulações aos órgãos públicos, é um meio de controle administrativo.',
               certa: true,
               explicacao: 'É instrumento de controle popular exercido na própria via administrativa. Item cobrado na prova de 2022.',
@@ -2189,7 +2459,7 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q2',
+              id: 'adm-b4-t4-s5-q2',
               enunciado: 'Compete ao Tribunal de Contas da União apreciar as contas anuais do Presidente da República, mediante parecer prévio, cabendo o julgamento ao Congresso Nacional.',
               certa: true,
               explicacao: 'O TCU emite parecer prévio em 60 dias; o julgamento é competência exclusiva do Congresso (art. 49, IX).',
@@ -2199,12 +2469,32 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
               ],
             },
             {
-              id: 'adm-b1-09-q3',
+              id: 'adm-b4-t4-s5-q3',
               enunciado: 'O Poder Judiciário pode controlar a legalidade dos atos administrativos discricionários, inclusive quanto à razoabilidade e à proporcionalidade, sem substituir o mérito administrativo.',
               certa: true,
               explicacao: 'O controle recai sobre a legalidade em sentido amplo; a escolha de conveniência e oportunidade permanece com a Administração.',
               variacoes: [
                 { enunciado: 'O Brasil adota o sistema do contencioso administrativo, no qual as decisões administrativas fazem coisa julgada.', certa: false, explicacao: 'O Brasil adota a jurisdição UNA (sistema inglês): apenas o Judiciário produz coisa julgada.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s5-q4',
+              enunciado: 'Compete ao Congresso Nacional sustar os atos normativos do Poder Executivo que exorbitem do poder regulamentar ou dos limites de delegação legislativa.',
+              certa: true,
+              explicacao: 'É controle político direto, previsto no art. 49, V, exercido por decreto legislativo.',
+              baseLegal: 'CF/88, art. 49, V',
+              variacoes: [
+                { enunciado: 'A sustação de ato normativo do Executivo que exorbite do poder regulamentar compete privativamente ao Supremo Tribunal Federal.', certa: false, explicacao: 'A sustação é competência exclusiva do Congresso Nacional (art. 49, V), sem prejuízo do controle judicial.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s5-q5',
+              enunciado: 'As comissões parlamentares de inquérito possuem poderes de investigação próprios das autoridades judiciais, além de outros previstos nos regimentos das Casas.',
+              certa: true,
+              explicacao: 'Podem quebrar sigilos bancário, fiscal e telefônico por decisão fundamentada — mas não determinar interceptação telefônica nem prisão, salvo em flagrante.',
+              baseLegal: 'CF/88, art. 58, §3º',
+              variacoes: [
+                { enunciado: 'As comissões parlamentares de inquérito podem determinar a interceptação das comunicações telefônicas dos investigados.', certa: false, explicacao: 'A interceptação telefônica está sujeita à reserva de jurisdição: só o juiz pode determiná-la.' },
               ],
             },
           ],
@@ -2219,7 +2509,6 @@ O Judiciário controla a **legalidade e a legitimidade** dos atos administrativo
         {
           id: 'adm-b4-t4-s6',
           nome: 'Responsabilidade civil do Estado',
-          // conteúdo herdado do tópico 'adm-b1-10' da estrutura de 3 níveis
           teoria: `
 ## Regra constitucional
 
@@ -2276,7 +2565,7 @@ Respondem **objetivamente** pelos danos causados **a usuários e a não usuário
 `,
           questoes: [
             {
-              id: 'adm-b1-10-q1',
+              id: 'adm-b4-t4-s6-q1',
               enunciado: 'A responsabilidade civil do Estado por conduta comissiva de seus agentes é objetiva, fundada na teoria do risco administrativo, admitindo excludentes de nexo causal.',
               certa: true,
               explicacao: 'Exige-se conduta, dano e nexo causal, dispensada a prova de culpa. O risco administrativo admite excludentes; o integral, não.',
@@ -2286,7 +2575,7 @@ Respondem **objetivamente** pelos danos causados **a usuários e a não usuário
               ],
             },
             {
-              id: 'adm-b1-10-q2',
+              id: 'adm-b4-t4-s6-q2',
               enunciado: 'Segundo o STF, a vítima de dano causado por agente público deve ajuizar a ação indenizatória contra o Estado, e não diretamente contra o agente.',
               certa: true,
               explicacao: 'É a teoria da dupla garantia (Tema 940): o agente só responde em ação regressiva, se houver dolo ou culpa.',
@@ -2296,13 +2585,33 @@ Respondem **objetivamente** pelos danos causados **a usuários e a não usuário
               ],
             },
             {
-              id: 'adm-b1-10-q3',
+              id: 'adm-b4-t4-s6-q3',
               enunciado: 'As concessionárias de serviço público respondem objetivamente pelos danos causados tanto a usuários quanto a não usuários do serviço.',
               certa: true,
               explicacao: 'Entendimento firmado pelo STF no RE 591.874. O Estado responde de forma subsidiária.',
               baseLegal: 'CF/88, art. 37, §6º; STF, RE 591.874',
               variacoes: [
                 { enunciado: 'A culpa concorrente da vítima exclui integralmente a responsabilidade civil do Estado.', certa: false, explicacao: 'A culpa concorrente apenas ATENUA a responsabilidade. A exclusão exige culpa EXCLUSIVA da vítima.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s6-q4',
+              enunciado: 'O Estado responde objetivamente pelos danos causados a detento sob sua custódia, dada a posição de garante assumida em relação a quem está sob sua guarda.',
+              certa: true,
+              explicacao: 'Tese do STF no Tema 592: a custódia gera dever específico de proteção, atraindo a responsabilidade objetiva mesmo em condutas omissivas.',
+              baseLegal: 'CF/88, art. 37, §6º; STF, RE 841.526, Tema 592',
+              variacoes: [
+                { enunciado: 'Nos casos de morte de detento sob custódia estatal, a responsabilidade do Estado é sempre subjetiva, exigindo prova de culpa administrativa.', certa: false, explicacao: 'O STF firmou a responsabilidade OBJETIVA nessa hipótese, em razão do dever específico de proteção.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t4-s6-q5',
+              enunciado: 'A responsabilidade do Estado por atos legislativos é excepcional, admitida no caso de lei declarada inconstitucional ou de lei de efeitos concretos que cause dano específico.',
+              certa: true,
+              explicacao: 'A lei em tese não gera indenização por ser geral e abstrata; a exceção aparece quando ela atinge situação individualizada.',
+              baseLegal: 'CF/88, art. 37, §6º; doutrina e jurisprudência',
+              variacoes: [
+                { enunciado: 'O Estado responde civilmente por erro judiciário e por prisão além do tempo fixado na sentença.', certa: true, explicacao: 'Correto — são as hipóteses expressas do art. 5º, LXXV, da Constituição.' },
               ],
             },
           ],
@@ -2324,7 +2633,6 @@ Respondem **objetivamente** pelos danos causados **a usuários e a não usuário
         {
           id: 'adm-b4-t5-s1',
           nome: 'Lei 8.429/1992 (Improbidade Administrativa)',
-          // conteúdo herdado do tópico 'adm-b1-11' da estrutura de 3 níveis
           teoria: `
 ## Natureza
 
@@ -2386,7 +2694,7 @@ O art. 37, §4º, prevê **suspensão dos direitos políticos**, **perda da fun�
 `,
           questoes: [
             {
-              id: 'adm-b1-11-q1',
+              id: 'adm-b4-t5-s1-q1',
               enunciado: 'A voluntariedade do agente é suficiente para caracterizar a conduta ilícita como crime de improbidade administrativa.',
               certa: false,
               explicacao: 'Improbidade é ilícito CIVIL, não crime. E, após a Lei nº 14.230/2021, exige-se DOLO específico — a mera voluntariedade não basta. Item cobrado na prova de 2022.',
@@ -2396,7 +2704,7 @@ O art. 37, §4º, prevê **suspensão dos direitos políticos**, **perda da fun�
               ],
             },
             {
-              id: 'adm-b1-11-q2',
+              id: 'adm-b4-t5-s1-q2',
               enunciado: 'Os atos de improbidade que causam prejuízo ao erário exigem a comprovação de efetivo dano patrimonial.',
               certa: true,
               explicacao: 'A tipificação do art. 10 pressupõe perda patrimonial efetiva, ao contrário do enriquecimento ilícito e da violação de princípios.',
@@ -2406,13 +2714,33 @@ O art. 37, §4º, prevê **suspensão dos direitos políticos**, **perda da fun�
               ],
             },
             {
-              id: 'adm-b1-11-q3',
+              id: 'adm-b4-t5-s1-q3',
               enunciado: 'A ação por improbidade administrativa prescreve em oito anos, contados da ocorrência do fato ou, no caso de infrações permanentes, da cessação da permanência.',
               certa: true,
               explicacao: 'Prazo único do art. 23, com a redação da Lei nº 14.230/2021. O ressarcimento por ato doloso permanece imprescritível.',
               baseLegal: 'Lei nº 8.429/1992, art. 23; STF, Tema 897',
               variacoes: [
                 { enunciado: 'A legitimidade para propor a ação de improbidade administrativa é concorrente entre o Ministério Público e a pessoa jurídica interessada.', certa: false, explicacao: 'Após a Lei nº 14.230/2021 a legitimidade é EXCLUSIVA do Ministério Público; a pessoa jurídica pode habilitar-se como assistente.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t5-s1-q4',
+              enunciado: 'O particular que se beneficia direta ou indiretamente de ato de improbidade pode ser responsabilizado, mas não pode figurar sozinho no polo passivo da ação.',
+              certa: true,
+              explicacao: 'A improbidade pressupõe a participação de agente público: sem ele, o terceiro responde por outras vias, não pela Lei nº 8.429/92.',
+              baseLegal: 'Lei nº 8.429/1992, art. 3º',
+              variacoes: [
+                { enunciado: 'O particular que se beneficia de ato de improbidade pode ser processado isoladamente, ainda que não identificado o agente público envolvido.', certa: false, explicacao: 'A responsabilização do terceiro pressupõe a participação de agente público no ato.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t5-s1-q5',
+              enunciado: 'A Lei nº 14.230/2021 passou a admitir a celebração de acordo de não persecução civil no âmbito das ações de improbidade administrativa.',
+              certa: true,
+              explicacao: 'Antes da reforma havia vedação expressa à transação. O acordo depende de homologação judicial e não afasta o ressarcimento integral do dano.',
+              baseLegal: 'Lei nº 8.429/1992, art. 17-B',
+              variacoes: [
+                { enunciado: 'A Lei nº 8.429/1992 veda expressamente qualquer forma de acordo ou transação nas ações de improbidade administrativa.', certa: false, explicacao: 'A vedação existia antes de 2021. A Lei nº 14.230/2021 introduziu o acordo de não persecução civil.' },
               ],
             },
           ],
@@ -2427,7 +2755,6 @@ O art. 37, §4º, prevê **suspensão dos direitos políticos**, **perda da fun�
         {
           id: 'adm-b4-t5-s2',
           nome: 'Lei 9.784/1999 (Processo Administrativo)',
-          // conteúdo herdado do tópico 'adm-b1-12' da estrutura de 3 níveis
           teoria: `
 ## Alcance
 
@@ -2489,7 +2816,7 @@ A motivação pode ser **aliunde** (por remissão a pareceres ou informações a
 `,
           questoes: [
             {
-              id: 'adm-b1-12-q1',
+              id: 'adm-b4-t5-s2-q1',
               enunciado: 'A propositura de ação judicial com objeto idêntico ao do recurso administrativo importa renúncia ao direito de recorrer e desistência do recurso interposto.',
               certa: true,
               explicacao: 'Art. 63, §2º, da Lei nº 9.784/99 — regra cobrada na prova de 2022 no contexto do Conselho de Recursos da Previdência Social.',
@@ -2499,7 +2826,7 @@ A motivação pode ser **aliunde** (por remissão a pareceres ou informações a
               ],
             },
             {
-              id: 'adm-b1-12-q2',
+              id: 'adm-b4-t5-s2-q2',
               enunciado: 'O direito da administração de anular os atos administrativos de que decorram efeitos favoráveis para os destinatários decai em cinco anos, contados da data em que foram praticados, salvo comprovada má-fé.',
               certa: true,
               explicacao: 'Art. 54 da Lei nº 9.784/99 — expressão do princípio da segurança jurídica.',
@@ -2509,7 +2836,7 @@ A motivação pode ser **aliunde** (por remissão a pareceres ou informações a
               ],
             },
             {
-              id: 'adm-b1-12-q3',
+              id: 'adm-b4-t5-s2-q3',
               enunciado: 'A falta de defesa técnica por advogado no processo administrativo disciplinar não ofende a Constituição.',
               certa: true,
               explicacao: 'É o teor da Súmula Vinculante 5 do STF. O art. 3º, IV, da Lei nº 9.784/99 assegura a faculdade, não a obrigatoriedade.',
@@ -2519,13 +2846,23 @@ A motivação pode ser **aliunde** (por remissão a pareceres ou informações a
               ],
             },
             {
-              id: 'adm-b1-12-q4',
+              id: 'adm-b4-t5-s2-q4',
               enunciado: 'Admite-se a reformatio in pejus no processo administrativo, desde que o recorrente seja cientificado para formular alegações antes da decisão.',
               certa: true,
               explicacao: 'Art. 64, parágrafo único, da Lei nº 9.784/99 — diferentemente do processo penal, o administrativo admite o agravamento.',
               baseLegal: 'Lei nº 9.784/1999, art. 64, parágrafo único',
               variacoes: [
                 { enunciado: 'O recurso administrativo tramita, no máximo, por três instâncias, salvo disposição legal diversa.', certa: true, explicacao: 'Correto — art. 57 da Lei nº 9.784/99.' },
+              ],
+            },
+            {
+              id: 'adm-b4-t5-s2-q5',
+              enunciado: 'A Lei nº 9.784/1999 aplica-se subsidiariamente aos processos administrativos específicos regidos por lei própria.',
+              certa: true,
+              explicacao: 'É norma geral do processo administrativo federal: preenche lacunas sem afastar os regimes especiais, como o disciplinar da Lei nº 8.112/90.',
+              baseLegal: 'Lei nº 9.784/1999, art. 69',
+              variacoes: [
+                { enunciado: 'A Lei nº 9.784/1999 revogou integralmente as normas processuais específicas da Lei nº 8.112/1990.', certa: false, explicacao: 'Os processos específicos continuam regidos por lei própria; a Lei nº 9.784/99 tem aplicação apenas subsidiária.' },
               ],
             },
           ],

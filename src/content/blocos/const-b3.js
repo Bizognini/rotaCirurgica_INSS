@@ -20,7 +20,6 @@ export default {
         {
           id: 'const-b3-t1-s1',
           nome: 'Direitos e deveres individuais e coletivos',
-          // conteúdo herdado do tópico 'const-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Onde estão
 
@@ -76,7 +75,7 @@ Aprovados em **dois turnos**, nas **duas Casas**, por **três quintos** dos voto
 `,
           questoes: [
             {
-              id: 'const-b1-01-q1',
+              id: 'const-b3-t1-s1-q1',
               enunciado: 'A obtenção de certidões em repartições públicas, para esclarecimento de situação de interesse pessoal, é direito assegurado a todos e independe do pagamento de taxa.',
               certa: true,
               explicacao: 'Literalidade do art. 5º, XXXIV, "b", da CF/88. Item cobrado na prova de 2022.',
@@ -86,7 +85,7 @@ Aprovados em **dois turnos**, nas **duas Casas**, por **três quintos** dos voto
               ],
             },
             {
-              id: 'const-b1-01-q2',
+              id: 'const-b3-t1-s1-q2',
               enunciado: 'Os direitos fundamentais possuem caráter absoluto, não admitindo qualquer relativização.',
               certa: false,
               explicacao: 'A relatividade é característica dos direitos fundamentais: eles podem ser limitados diante de outros direitos. Nem mesmo o direito à vida é absoluto (pena de morte em guerra declarada).',
@@ -96,7 +95,7 @@ Aprovados em **dois turnos**, nas **duas Casas**, por **três quintos** dos voto
               ],
             },
             {
-              id: 'const-b1-01-q3',
+              id: 'const-b3-t1-s1-q3',
               enunciado: 'A casa é asilo inviolável do indivíduo, sendo permitida a entrada sem consentimento do morador, durante o dia, por determinação judicial.',
               certa: true,
               explicacao: 'Art. 5º, XI. Em flagrante delito, desastre ou para prestar socorro, a entrada é possível a qualquer hora, inclusive à noite.',
@@ -106,13 +105,23 @@ Aprovados em **dois turnos**, nas **duas Casas**, por **três quintos** dos voto
               ],
             },
             {
-              id: 'const-b1-01-q4',
+              id: 'const-b3-t1-s1-q4',
               enunciado: 'Os tratados internacionais sobre direitos humanos aprovados em cada Casa do Congresso Nacional, em dois turnos, por três quintos dos votos, equivalem às emendas constitucionais.',
               certa: true,
               explicacao: 'É o rito do art. 5º, §3º. Fora dele, o STF confere status supralegal aos tratados de direitos humanos.',
               baseLegal: 'CF/88, art. 5º, §3º',
               variacoes: [
                 { enunciado: 'Os direitos e garantias fundamentais são assegurados exclusivamente a brasileiros e a estrangeiros residentes no país, sendo inaplicáveis a pessoas jurídicas.', certa: false, explicacao: 'O STF interpreta o caput de forma ampliativa: alcança estrangeiros não residentes, apátridas e pessoas jurídicas, no que for compatível.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s1-q5',
+              enunciado: 'Os direitos e garantias expressos na Constituição não excluem outros decorrentes do regime e dos princípios por ela adotados ou dos tratados internacionais em que a República Federativa do Brasil seja parte.',
+              certa: true,
+              explicacao: 'É a cláusula de abertura do art. 5º, §2º: o rol de direitos fundamentais é exemplificativo, não taxativo.',
+              baseLegal: 'CF/88, art. 5º, §2º',
+              variacoes: [
+                { enunciado: 'O rol de direitos e garantias fundamentais previsto no art. 5º da Constituição é taxativo.', certa: false, explicacao: 'O §2º do art. 5º torna o rol exemplificativo, admitindo direitos decorrentes do regime, dos princípios e de tratados.' },
               ],
             },
           ],
@@ -127,7 +136,6 @@ Aprovados em **dois turnos**, nas **duas Casas**, por **três quintos** dos voto
         {
           id: 'const-b3-t1-s2',
           nome: 'Direito à vida',
-          // conteúdo herdado do tópico 'const-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Os cinco direitos do caput
 
@@ -184,7 +192,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
 `,
           questoes: [
             {
-              id: 'const-b1-02-q1',
+              id: 'const-b3-t1-s2-q1',
               enunciado: 'O Poder Judiciário pode determinar a implantação de políticas públicas relacionadas a direitos e garantias fundamentais, sem que isso ofenda o princípio da separação dos poderes.',
               certa: true,
               explicacao: 'Entendimento consolidado do STF diante de omissão do Poder Público na efetivação de direitos fundamentais. Item cobrado na prova de 2022.',
@@ -194,7 +202,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q2',
+              id: 'const-b3-t1-s2-q2',
               enunciado: 'A reunião pacífica em locais abertos ao público depende de prévia autorização da autoridade competente.',
               certa: false,
               explicacao: 'Exige-se apenas PRÉVIO AVISO à autoridade, e não autorização — desde que não frustre outra reunião no mesmo local.',
@@ -204,13 +212,33 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q3',
+              id: 'const-b3-t1-s2-q3',
               enunciado: 'A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.',
               certa: true,
               explicacao: 'Art. 5º, XXIV. As exceções são a desapropriação-sanção por descumprimento da função social (títulos da dívida) e a confiscatória.',
               baseLegal: 'CF/88, art. 5º, XXIV',
               variacoes: [
                 { enunciado: 'Em caso de iminente perigo público, a autoridade competente pode usar propriedade particular, assegurada indenização prévia ao proprietário.', certa: false, explicacao: 'Na requisição, a indenização é ULTERIOR e apenas se houver dano (art. 5º, XXV).' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s2-q4',
+              enunciado: 'A Constituição admite a pena de morte exclusivamente em caso de guerra declarada, nos termos do art. 84, XIX.',
+              certa: true,
+              explicacao: 'É a única exceção ao direito à vida. A vedação alcança também penas de caráter perpétuo, trabalhos forçados, banimento e penas cruéis.',
+              baseLegal: 'CF/88, art. 5º, XLVII, "a"',
+              variacoes: [
+                { enunciado: 'A Constituição admite a pena de morte nos crimes hediondos praticados com extrema violência.', certa: false, explicacao: 'A única hipótese admitida é a de guerra declarada nos termos do art. 84, XIX.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s2-q5',
+              enunciado: 'A proteção constitucional à vida abrange a dimensão de existência digna, o que fundamenta prestações estatais positivas em saúde e assistência.',
+              certa: true,
+              explicacao: 'O direito à vida não é apenas de defesa (não ser morto), mas também prestacional — daí decorrem as políticas de saúde e de assistência social.',
+              baseLegal: 'CF/88, arts. 1º, III, 5º, caput, e 196',
+              variacoes: [
+                { enunciado: 'O direito à vida possui exclusivamente dimensão negativa, impondo ao Estado apenas o dever de abstenção.', certa: false, explicacao: 'Além da dimensão negativa, há a prestacional: o Estado deve garantir condições materiais para uma existência digna.' },
               ],
             },
           ],
@@ -225,7 +253,6 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
         {
           id: 'const-b3-t1-s3',
           nome: 'Direito à liberdade',
-          // conteúdo herdado do tópico 'const-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Os cinco direitos do caput
 
@@ -282,7 +309,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
 `,
           questoes: [
             {
-              id: 'const-b1-02-q1',
+              id: 'const-b3-t1-s3-q1',
               enunciado: 'O Poder Judiciário pode determinar a implantação de políticas públicas relacionadas a direitos e garantias fundamentais, sem que isso ofenda o princípio da separação dos poderes.',
               certa: true,
               explicacao: 'Entendimento consolidado do STF diante de omissão do Poder Público na efetivação de direitos fundamentais. Item cobrado na prova de 2022.',
@@ -292,7 +319,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q2',
+              id: 'const-b3-t1-s3-q2',
               enunciado: 'A reunião pacífica em locais abertos ao público depende de prévia autorização da autoridade competente.',
               certa: false,
               explicacao: 'Exige-se apenas PRÉVIO AVISO à autoridade, e não autorização — desde que não frustre outra reunião no mesmo local.',
@@ -302,13 +329,33 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q3',
+              id: 'const-b3-t1-s3-q3',
               enunciado: 'A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.',
               certa: true,
               explicacao: 'Art. 5º, XXIV. As exceções são a desapropriação-sanção por descumprimento da função social (títulos da dívida) e a confiscatória.',
               baseLegal: 'CF/88, art. 5º, XXIV',
               variacoes: [
                 { enunciado: 'Em caso de iminente perigo público, a autoridade competente pode usar propriedade particular, assegurada indenização prévia ao proprietário.', certa: false, explicacao: 'Na requisição, a indenização é ULTERIOR e apenas se houver dano (art. 5º, XXV).' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s3-q4',
+              enunciado: 'É livre a manifestação do pensamento, sendo vedado o anonimato.',
+              certa: true,
+              explicacao: 'A vedação ao anonimato viabiliza a responsabilização por eventuais abusos — é o contrapeso da liberdade de expressão.',
+              baseLegal: 'CF/88, art. 5º, IV',
+              variacoes: [
+                { enunciado: 'A liberdade de manifestação do pensamento assegura o direito ao anonimato como forma de proteção do emissor.', certa: false, explicacao: 'O anonimato é expressamente VEDADO pelo art. 5º, IV.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s3-q5',
+              enunciado: 'A criação de associações independe de autorização, sendo vedada a interferência estatal em seu funcionamento, e sua dissolução compulsória exige decisão judicial transitada em julgado.',
+              certa: true,
+              explicacao: 'Note a assimetria: a SUSPENSÃO das atividades exige apenas decisão judicial; a DISSOLUÇÃO exige trânsito em julgado.',
+              baseLegal: 'CF/88, art. 5º, XVIII e XIX',
+              variacoes: [
+                { enunciado: 'A suspensão das atividades de uma associação exige decisão judicial transitada em julgado.', certa: false, explicacao: 'Para a SUSPENSÃO basta decisão judicial. O trânsito em julgado é exigido para a dissolução compulsória.' },
               ],
             },
           ],
@@ -323,7 +370,6 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
         {
           id: 'const-b3-t1-s4',
           nome: 'Direito à igualdade',
-          // conteúdo herdado do tópico 'const-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Os cinco direitos do caput
 
@@ -380,7 +426,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
 `,
           questoes: [
             {
-              id: 'const-b1-02-q1',
+              id: 'const-b3-t1-s4-q1',
               enunciado: 'O Poder Judiciário pode determinar a implantação de políticas públicas relacionadas a direitos e garantias fundamentais, sem que isso ofenda o princípio da separação dos poderes.',
               certa: true,
               explicacao: 'Entendimento consolidado do STF diante de omissão do Poder Público na efetivação de direitos fundamentais. Item cobrado na prova de 2022.',
@@ -390,7 +436,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q2',
+              id: 'const-b3-t1-s4-q2',
               enunciado: 'A reunião pacífica em locais abertos ao público depende de prévia autorização da autoridade competente.',
               certa: false,
               explicacao: 'Exige-se apenas PRÉVIO AVISO à autoridade, e não autorização — desde que não frustre outra reunião no mesmo local.',
@@ -400,13 +446,33 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q3',
+              id: 'const-b3-t1-s4-q3',
               enunciado: 'A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.',
               certa: true,
               explicacao: 'Art. 5º, XXIV. As exceções são a desapropriação-sanção por descumprimento da função social (títulos da dívida) e a confiscatória.',
               baseLegal: 'CF/88, art. 5º, XXIV',
               variacoes: [
                 { enunciado: 'Em caso de iminente perigo público, a autoridade competente pode usar propriedade particular, assegurada indenização prévia ao proprietário.', certa: false, explicacao: 'Na requisição, a indenização é ULTERIOR e apenas se houver dano (art. 5º, XXV).' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s4-q4',
+              enunciado: 'A adoção de políticas de ação afirmativa, como a reserva de vagas em concursos públicos, é compatível com o princípio da igualdade em sua dimensão material.',
+              certa: true,
+              explicacao: 'A igualdade material autoriza tratar desigualmente os desiguais na medida de suas desigualdades — fundamento reconhecido pelo STF nas cotas.',
+              baseLegal: 'CF/88, art. 5º, caput; STF, ADC 41',
+              variacoes: [
+                { enunciado: 'As políticas de ação afirmativa violam o princípio da igualdade, por conferirem tratamento diferenciado a determinados grupos.', certa: false, explicacao: 'O STF reconheceu a constitucionalidade das ações afirmativas como concretização da igualdade material.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s4-q5',
+              enunciado: 'Homens e mulheres são iguais em direitos e obrigações, nos termos da Constituição.',
+              certa: true,
+              explicacao: 'Art. 5º, I. A ressalva "nos termos desta Constituição" permite as diferenciações que a própria CF estabelece, como as regras previdenciárias.',
+              baseLegal: 'CF/88, art. 5º, I',
+              variacoes: [
+                { enunciado: 'A diferença de idade e de tempo de contribuição entre homens e mulheres para fins de aposentadoria viola o princípio da igualdade.', certa: false, explicacao: 'A diferenciação tem previsão na própria Constituição (art. 201, §7º) e é compatível com a igualdade material.' },
               ],
             },
           ],
@@ -421,7 +487,6 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
         {
           id: 'const-b3-t1-s5',
           nome: 'Direito à segurança',
-          // conteúdo herdado do tópico 'const-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Os cinco direitos do caput
 
@@ -478,7 +543,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
 `,
           questoes: [
             {
-              id: 'const-b1-02-q1',
+              id: 'const-b3-t1-s5-q1',
               enunciado: 'O Poder Judiciário pode determinar a implantação de políticas públicas relacionadas a direitos e garantias fundamentais, sem que isso ofenda o princípio da separação dos poderes.',
               certa: true,
               explicacao: 'Entendimento consolidado do STF diante de omissão do Poder Público na efetivação de direitos fundamentais. Item cobrado na prova de 2022.',
@@ -488,7 +553,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q2',
+              id: 'const-b3-t1-s5-q2',
               enunciado: 'A reunião pacífica em locais abertos ao público depende de prévia autorização da autoridade competente.',
               certa: false,
               explicacao: 'Exige-se apenas PRÉVIO AVISO à autoridade, e não autorização — desde que não frustre outra reunião no mesmo local.',
@@ -498,13 +563,33 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q3',
+              id: 'const-b3-t1-s5-q3',
               enunciado: 'A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.',
               certa: true,
               explicacao: 'Art. 5º, XXIV. As exceções são a desapropriação-sanção por descumprimento da função social (títulos da dívida) e a confiscatória.',
               baseLegal: 'CF/88, art. 5º, XXIV',
               variacoes: [
                 { enunciado: 'Em caso de iminente perigo público, a autoridade competente pode usar propriedade particular, assegurada indenização prévia ao proprietário.', certa: false, explicacao: 'Na requisição, a indenização é ULTERIOR e apenas se houver dano (art. 5º, XXV).' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s5-q4',
+              enunciado: 'A lei não prejudicará o direito adquirido, o ato jurídico perfeito e a coisa julgada.',
+              certa: true,
+              explicacao: 'É o núcleo da segurança jurídica, e o fundamento constitucional da preservação de direitos previdenciários já consolidados.',
+              baseLegal: 'CF/88, art. 5º, XXXVI',
+              variacoes: [
+                { enunciado: 'A garantia do direito adquirido impede que emenda constitucional altere regras de aposentadoria para quem ainda não preencheu os requisitos.', certa: false, explicacao: 'Não há direito adquirido a regime jurídico. Antes de preenchidos os requisitos há mera expectativa de direito.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s5-q5',
+              enunciado: 'Não haverá juízo ou tribunal de exceção, assegurando-se a todos o julgamento por autoridade competente previamente definida.',
+              certa: true,
+              explicacao: 'É o princípio do juiz natural, expressão da segurança jurídica no plano processual.',
+              baseLegal: 'CF/88, art. 5º, XXXVII e LIII',
+              variacoes: [
+                { enunciado: 'Admite-se a criação de tribunais de exceção para o julgamento de crimes de especial gravidade.', certa: false, explicacao: 'A vedação do art. 5º, XXXVII, é absoluta: não haverá juízo ou tribunal de exceção.' },
               ],
             },
           ],
@@ -519,7 +604,6 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
         {
           id: 'const-b3-t1-s6',
           nome: 'Direito à propriedade',
-          // conteúdo herdado do tópico 'const-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Os cinco direitos do caput
 
@@ -576,7 +660,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
 `,
           questoes: [
             {
-              id: 'const-b1-02-q1',
+              id: 'const-b3-t1-s6-q1',
               enunciado: 'O Poder Judiciário pode determinar a implantação de políticas públicas relacionadas a direitos e garantias fundamentais, sem que isso ofenda o princípio da separação dos poderes.',
               certa: true,
               explicacao: 'Entendimento consolidado do STF diante de omissão do Poder Público na efetivação de direitos fundamentais. Item cobrado na prova de 2022.',
@@ -586,7 +670,7 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q2',
+              id: 'const-b3-t1-s6-q2',
               enunciado: 'A reunião pacífica em locais abertos ao público depende de prévia autorização da autoridade competente.',
               certa: false,
               explicacao: 'Exige-se apenas PRÉVIO AVISO à autoridade, e não autorização — desde que não frustre outra reunião no mesmo local.',
@@ -596,13 +680,33 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
               ],
             },
             {
-              id: 'const-b1-02-q3',
+              id: 'const-b3-t1-s6-q3',
               enunciado: 'A desapropriação por necessidade ou utilidade pública exige justa e prévia indenização em dinheiro, ressalvados os casos previstos na Constituição.',
               certa: true,
               explicacao: 'Art. 5º, XXIV. As exceções são a desapropriação-sanção por descumprimento da função social (títulos da dívida) e a confiscatória.',
               baseLegal: 'CF/88, art. 5º, XXIV',
               variacoes: [
                 { enunciado: 'Em caso de iminente perigo público, a autoridade competente pode usar propriedade particular, assegurada indenização prévia ao proprietário.', certa: false, explicacao: 'Na requisição, a indenização é ULTERIOR e apenas se houver dano (art. 5º, XXV).' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s6-q4',
+              enunciado: 'A pequena propriedade rural, assim definida em lei e trabalhada pela família, não será objeto de penhora para pagamento de débitos decorrentes de sua atividade produtiva.',
+              certa: true,
+              explicacao: 'Art. 5º, XXVI. É proteção constitucional autônoma, distinta da impenhorabilidade do bem de família da Lei nº 8.009/90.',
+              baseLegal: 'CF/88, art. 5º, XXVI',
+              variacoes: [
+                { enunciado: 'A pequena propriedade rural trabalhada pela família é impenhorável para o pagamento de quaisquer débitos do proprietário.', certa: false, explicacao: 'A impenhorabilidade alcança apenas os débitos decorrentes da atividade produtiva.' },
+              ],
+            },
+            {
+              id: 'const-b3-t1-s6-q5',
+              enunciado: 'A propriedade urbana que não cumpre sua função social sujeita-se a desapropriação mediante pagamento em títulos da dívida pública, com prazo de resgate de até dez anos.',
+              certa: true,
+              explicacao: 'É a desapropriação-sanção do art. 182, §4º, III — exceção à regra da indenização prévia em dinheiro.',
+              baseLegal: 'CF/88, art. 182, §4º, III',
+              variacoes: [
+                { enunciado: 'Toda desapropriação exige indenização justa, prévia e em dinheiro, sem exceções constitucionais.', certa: false, explicacao: 'Há exceções: a desapropriação-sanção urbana e a rural para reforma agrária são pagas em títulos.' },
               ],
             },
           ],
@@ -624,7 +728,6 @@ O STF admite que o Judiciário determine a **implementação de políticas públ
         {
           id: 'const-b3-t2-s1',
           nome: 'Direitos sociais — rol constitucional',
-          // conteúdo herdado do tópico 'const-b1-03' da estrutura de 3 níveis
           teoria: `
 ## O rol do art. 6º
 
@@ -676,7 +779,7 @@ Os direitos sociais têm dimensão **prestacional**: exigem atuação positiva d
 `,
           questoes: [
             {
-              id: 'const-b1-03-q1',
+              id: 'const-b3-t2-s1-q1',
               enunciado: 'O Fundo de Garantia do Tempo de Serviço é direito tanto dos trabalhadores urbanos quanto dos rurais.',
               certa: true,
               explicacao: 'O caput do art. 7º equipara urbanos e rurais, e o inciso III arrola o FGTS. Item cobrado na prova de 2022.',
@@ -686,7 +789,7 @@ Os direitos sociais têm dimensão **prestacional**: exigem atuação positiva d
               ],
             },
             {
-              id: 'const-b1-03-q2',
+              id: 'const-b3-t2-s1-q2',
               enunciado: 'A participação dos sindicatos nas negociações coletivas de trabalho pode ser dispensada mediante manifestação da maioria dos filiados.',
               certa: false,
               explicacao: 'O art. 8º, VI, torna OBRIGATÓRIA a participação dos sindicatos nas negociações coletivas, sem previsão de dispensa. Item cobrado na prova de 2022.',
@@ -696,13 +799,33 @@ Os direitos sociais têm dimensão **prestacional**: exigem atuação positiva d
               ],
             },
             {
-              id: 'const-b1-03-q3',
+              id: 'const-b3-t2-s1-q3',
               enunciado: 'É assegurada igualdade de direitos entre o trabalhador com vínculo empregatício permanente e o trabalhador avulso.',
               certa: true,
               explicacao: 'Art. 7º, XXXIV — equiparação constitucional expressa, relevante também para o Direito Previdenciário.',
               baseLegal: 'CF/88, art. 7º, XXXIV',
               variacoes: [
                 { enunciado: 'A proibição de trabalho noturno, perigoso ou insalubre alcança os menores de dezoito anos, e o trabalho em geral, os menores de dezesseis, salvo na condição de aprendiz a partir dos quatorze.', certa: true, explicacao: 'Correto — art. 7º, XXXIII, da CF/88.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s1-q4',
+              enunciado: 'A remuneração do trabalho noturno deve ser superior à do diurno, e o adicional de hora extra tem percentual mínimo de cinquenta por cento sobre a hora normal.',
+              certa: true,
+              explicacao: 'Incisos IX e XVI do art. 7º. O percentual de 50% é piso constitucional: normas coletivas podem ampliá-lo, nunca reduzi-lo.',
+              baseLegal: 'CF/88, art. 7º, IX e XVI',
+              variacoes: [
+                { enunciado: 'O adicional constitucional de hora extra corresponde a, no mínimo, vinte por cento sobre o valor da hora normal.', certa: false, explicacao: 'O piso constitucional é de 50%.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s1-q5',
+              enunciado: 'A licença à gestante, sem prejuízo do emprego e do salário, tem duração de cento e vinte dias.',
+              certa: true,
+              explicacao: 'Art. 7º, XVIII. A ampliação para 180 dias existe em programas específicos, como o Empresa Cidadã, mas o piso constitucional são 120 dias.',
+              baseLegal: 'CF/88, art. 7º, XVIII',
+              variacoes: [
+                { enunciado: 'A licença-paternidade tem duração constitucionalmente fixada em trinta dias.', certa: false, explicacao: 'A Constituição remete a fixação à lei; o ADCT estabeleceu cinco dias enquanto não editada a lei específica.' },
               ],
             },
           ],
@@ -717,7 +840,6 @@ Os direitos sociais têm dimensão **prestacional**: exigem atuação positiva d
         {
           id: 'const-b3-t2-s2',
           nome: 'Nacionalidade',
-          // conteúdo herdado do tópico 'const-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Brasileiros natos (art. 12, I)
 
@@ -788,7 +910,7 @@ Será declarada a perda quando o brasileiro:
 `,
           questoes: [
             {
-              id: 'const-b1-04-q1',
+              id: 'const-b3-t2-s2-q1',
               enunciado: 'A nacionalidade brasileira será concedida de ofício aos estrangeiros de qualquer nacionalidade que residam no Brasil há mais de quinze anos e que não possuam condenação penal.',
               certa: false,
               explicacao: 'A naturalização extraordinária exige REQUERIMENTO do interessado, além dos 15 anos ininterruptos e da ausência de condenação penal. Item cobrado na prova de 2022.',
@@ -798,7 +920,7 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q2',
+              id: 'const-b3-t2-s2-q2',
               enunciado: 'No caso de senador que pretenda concorrer a outro cargo eletivo, não se exige a renúncia ao mandato atual.',
               certa: true,
               explicacao: 'A desincompatibilização por renúncia (6 meses antes) alcança apenas os chefes do Executivo. Item cobrado na prova de 2022.',
@@ -808,7 +930,7 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q3',
+              id: 'const-b3-t2-s2-q3',
               enunciado: 'São privativos de brasileiro nato os cargos de Ministro do Supremo Tribunal Federal, de Presidente da Câmara dos Deputados e de oficial das Forças Armadas.',
               certa: true,
               explicacao: 'Integram o rol taxativo do art. 12, §3º (mnemônico MP3.COM).',
@@ -818,13 +940,23 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q4',
+              id: 'const-b3-t2-s2-q4',
               enunciado: 'O alistamento eleitoral e o voto são facultativos para os maiores de setenta anos e para os analfabetos.',
               certa: true,
               explicacao: 'Art. 14, §1º, II. Também é facultativo para maiores de 16 e menores de 18 anos.',
               baseLegal: 'CF/88, art. 14, §1º, II',
               variacoes: [
                 { enunciado: 'É admitida a cassação de direitos políticos nos casos expressamente previstos em lei.', certa: false, explicacao: 'A CASSAÇÃO é vedada. Só há perda ou suspensão, nas hipóteses do art. 15.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s2-q5',
+              enunciado: 'São brasileiros natos os nascidos no estrangeiro de pai ou mãe brasileiros, desde que qualquer deles esteja a serviço da República Federativa do Brasil.',
+              certa: true,
+              explicacao: 'É a hipótese que combina ius sanguinis com o serviço ao Brasil — dispensa registro e opção, diferentemente das demais.',
+              baseLegal: 'CF/88, art. 12, I, "b"',
+              variacoes: [
+                { enunciado: 'O nascido no estrangeiro de pai brasileiro que esteja a serviço de empresa privada brasileira é considerado brasileiro nato, independentemente de registro.', certa: false, explicacao: 'Exige-se estar a serviço da República — não de empresa privada. Fora disso, é preciso registro em repartição competente ou residência e opção.' },
               ],
             },
           ],
@@ -839,7 +971,6 @@ Será declarada a perda quando o brasileiro:
         {
           id: 'const-b3-t2-s3',
           nome: 'Cidadania',
-          // conteúdo herdado do tópico 'const-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Brasileiros natos (art. 12, I)
 
@@ -910,7 +1041,7 @@ Será declarada a perda quando o brasileiro:
 `,
           questoes: [
             {
-              id: 'const-b1-04-q1',
+              id: 'const-b3-t2-s3-q1',
               enunciado: 'A nacionalidade brasileira será concedida de ofício aos estrangeiros de qualquer nacionalidade que residam no Brasil há mais de quinze anos e que não possuam condenação penal.',
               certa: false,
               explicacao: 'A naturalização extraordinária exige REQUERIMENTO do interessado, além dos 15 anos ininterruptos e da ausência de condenação penal. Item cobrado na prova de 2022.',
@@ -920,7 +1051,7 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q2',
+              id: 'const-b3-t2-s3-q2',
               enunciado: 'No caso de senador que pretenda concorrer a outro cargo eletivo, não se exige a renúncia ao mandato atual.',
               certa: true,
               explicacao: 'A desincompatibilização por renúncia (6 meses antes) alcança apenas os chefes do Executivo. Item cobrado na prova de 2022.',
@@ -930,7 +1061,7 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q3',
+              id: 'const-b3-t2-s3-q3',
               enunciado: 'São privativos de brasileiro nato os cargos de Ministro do Supremo Tribunal Federal, de Presidente da Câmara dos Deputados e de oficial das Forças Armadas.',
               certa: true,
               explicacao: 'Integram o rol taxativo do art. 12, §3º (mnemônico MP3.COM).',
@@ -940,13 +1071,23 @@ Será declarada a perda quando o brasileiro:
               ],
             },
             {
-              id: 'const-b1-04-q4',
+              id: 'const-b3-t2-s3-q4',
               enunciado: 'O alistamento eleitoral e o voto são facultativos para os maiores de setenta anos e para os analfabetos.',
               certa: true,
               explicacao: 'Art. 14, §1º, II. Também é facultativo para maiores de 16 e menores de 18 anos.',
               baseLegal: 'CF/88, art. 14, §1º, II',
               variacoes: [
                 { enunciado: 'É admitida a cassação de direitos políticos nos casos expressamente previstos em lei.', certa: false, explicacao: 'A CASSAÇÃO é vedada. Só há perda ou suspensão, nas hipóteses do art. 15.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s3-q5',
+              enunciado: 'O alistamento eleitoral e o voto são obrigatórios para os maiores de dezoito e menores de setenta anos, e facultativos para os maiores de dezesseis e menores de dezoito.',
+              certa: true,
+              explicacao: 'Também são facultativos para analfabetos e maiores de 70 anos. Estrangeiros e conscritos não podem se alistar.',
+              baseLegal: 'CF/88, art. 14, §1º',
+              variacoes: [
+                { enunciado: 'Os conscritos, durante o período do serviço militar obrigatório, podem alistar-se facultativamente como eleitores.', certa: false, explicacao: 'Os conscritos NÃO podem alistar-se durante o serviço militar obrigatório (art. 14, §2º).' },
               ],
             },
           ],
@@ -961,7 +1102,6 @@ Será declarada a perda quando o brasileiro:
         {
           id: 'const-b3-t2-s4',
           nome: 'Garantias constitucionais individuais e coletivas',
-          // conteúdo herdado do tópico 'const-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Direito × garantia
 
@@ -1018,7 +1158,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
 `,
           questoes: [
             {
-              id: 'const-b1-05-q1',
+              id: 'const-b3-t2-s4-q1',
               enunciado: 'O habeas corpus pode ser impetrado por qualquer pessoa, em favor próprio ou de terceiro, independentemente de representação por advogado.',
               certa: true,
               explicacao: 'A legitimidade no HC é universal, e o remédio é gratuito. Admite as modalidades preventiva e repressiva.',
@@ -1028,7 +1168,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q2',
+              id: 'const-b3-t2-s4-q2',
               enunciado: 'O mandado de segurança coletivo pode ser impetrado por associação legalmente constituída e em funcionamento há pelo menos um ano, em defesa dos interesses de seus membros.',
               certa: true,
               explicacao: 'É o requisito do art. 5º, LXX, "b". Partidos políticos com representação no Congresso não se sujeitam ao prazo de um ano.',
@@ -1038,7 +1178,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q3',
+              id: 'const-b3-t2-s4-q3',
               enunciado: 'A ação popular pode ser proposta por qualquer cidadão para anular ato lesivo ao patrimônio público, à moralidade administrativa e ao meio ambiente.',
               certa: true,
               explicacao: 'Art. 5º, LXXIII. O autor fica isento de custas e do ônus da sucumbência, salvo comprovada má-fé.',
@@ -1048,13 +1188,23 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q4',
+              id: 'const-b3-t2-s4-q4',
               enunciado: 'O mandado de injunção é cabível quando a falta de norma regulamentadora torne inviável o exercício de direitos e liberdades constitucionais.',
               certa: true,
               explicacao: 'Art. 5º, LXXI. O STF adota hoje a corrente concretista, podendo viabilizar o exercício do direito enquanto durar a omissão.',
               baseLegal: 'CF/88, art. 5º, LXXI; Lei nº 13.300/2016',
               variacoes: [
                 { enunciado: 'O mandado de segurança é o remédio adequado para suprir a ausência de norma regulamentadora de direito constitucional.', certa: false, explicacao: 'Nesse caso o remédio é o mandado de INJUNÇÃO. O MS protege direito líquido e certo contra ato de autoridade.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s4-q5',
+              enunciado: 'Conceder-se-á mandado de segurança para proteger direito líquido e certo não amparado por habeas corpus ou habeas data.',
+              certa: true,
+              explicacao: 'O MS é residual: só cabe onde HC e HD não alcançam. Direito líquido e certo é o comprovável de plano, por prova pré-constituída.',
+              baseLegal: 'CF/88, art. 5º, LXIX',
+              variacoes: [
+                { enunciado: 'O mandado de segurança admite dilação probatória para a demonstração do direito alegado.', certa: false, explicacao: 'Não há dilação probatória: exige-se prova pré-constituída, o que caracteriza o direito líquido e certo.' },
               ],
             },
           ],
@@ -1069,7 +1219,6 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
         {
           id: 'const-b3-t2-s5',
           nome: 'Garantias constitucionais sociais e políticas',
-          // conteúdo herdado do tópico 'const-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Direito × garantia
 
@@ -1126,7 +1275,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
 `,
           questoes: [
             {
-              id: 'const-b1-05-q1',
+              id: 'const-b3-t2-s5-q1',
               enunciado: 'O habeas corpus pode ser impetrado por qualquer pessoa, em favor próprio ou de terceiro, independentemente de representação por advogado.',
               certa: true,
               explicacao: 'A legitimidade no HC é universal, e o remédio é gratuito. Admite as modalidades preventiva e repressiva.',
@@ -1136,7 +1285,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q2',
+              id: 'const-b3-t2-s5-q2',
               enunciado: 'O mandado de segurança coletivo pode ser impetrado por associação legalmente constituída e em funcionamento há pelo menos um ano, em defesa dos interesses de seus membros.',
               certa: true,
               explicacao: 'É o requisito do art. 5º, LXX, "b". Partidos políticos com representação no Congresso não se sujeitam ao prazo de um ano.',
@@ -1146,7 +1295,7 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q3',
+              id: 'const-b3-t2-s5-q3',
               enunciado: 'A ação popular pode ser proposta por qualquer cidadão para anular ato lesivo ao patrimônio público, à moralidade administrativa e ao meio ambiente.',
               certa: true,
               explicacao: 'Art. 5º, LXXIII. O autor fica isento de custas e do ônus da sucumbência, salvo comprovada má-fé.',
@@ -1156,13 +1305,23 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
               ],
             },
             {
-              id: 'const-b1-05-q4',
+              id: 'const-b3-t2-s5-q4',
               enunciado: 'O mandado de injunção é cabível quando a falta de norma regulamentadora torne inviável o exercício de direitos e liberdades constitucionais.',
               certa: true,
               explicacao: 'Art. 5º, LXXI. O STF adota hoje a corrente concretista, podendo viabilizar o exercício do direito enquanto durar a omissão.',
               baseLegal: 'CF/88, art. 5º, LXXI; Lei nº 13.300/2016',
               variacoes: [
                 { enunciado: 'O mandado de segurança é o remédio adequado para suprir a ausência de norma regulamentadora de direito constitucional.', certa: false, explicacao: 'Nesse caso o remédio é o mandado de INJUNÇÃO. O MS protege direito líquido e certo contra ato de autoridade.' },
+              ],
+            },
+            {
+              id: 'const-b3-t2-s5-q5',
+              enunciado: 'O mandado de injunção coletivo pode ser impetrado por organização sindical, entidade de classe ou associação, na defesa dos interesses de seus membros.',
+              certa: true,
+              explicacao: 'A Lei nº 13.300/2016 disciplinou a modalidade coletiva, antes admitida apenas por construção jurisprudencial.',
+              baseLegal: 'Lei nº 13.300/2016, art. 12',
+              variacoes: [
+                { enunciado: 'O mandado de injunção somente pode ser impetrado individualmente pelo titular do direito obstado.', certa: false, explicacao: 'A Lei nº 13.300/2016 prevê expressamente o mandado de injunção coletivo.' },
               ],
             },
           ],
@@ -1184,7 +1343,6 @@ Ambos no art. 5º, XXXIV, e **independem do pagamento de taxas**. O **direito de
         {
           id: 'const-b3-t3-s1',
           nome: 'Princípios constitucionais da Administração Pública (art. 37)',
-          // conteúdo herdado do tópico 'const-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Princípios expressos (art. 37, caput)
 
@@ -1248,7 +1406,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
 `,
           questoes: [
             {
-              id: 'const-b1-06-q1',
+              id: 'const-b3-t3-s1-q1',
               enunciado: 'É vedado a estrangeiros o acesso a cargos públicos.',
               certa: false,
               explicacao: 'O art. 37, I, assegura o acesso aos brasileiros que preencham os requisitos legais E aos estrangeiros, na forma da lei. Item cobrado na prova de 2022.',
@@ -1258,7 +1416,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q2',
+              id: 'const-b3-t3-s1-q2',
               enunciado: 'Servidor público da administração indireta investido no mandato de vereador poderá acumular as vantagens do emprego com a remuneração do cargo eletivo, se houver compatibilidade de horários.',
               certa: true,
               explicacao: 'Art. 38, III. É a única hipótese em que o servidor acumula as duas remunerações. Item cobrado na prova de 2022.',
@@ -1268,7 +1426,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q3',
+              id: 'const-b3-t3-s1-q3',
               enunciado: 'Os vencimentos dos cargos integrantes dos Poderes Legislativo e Judiciário não poderão exceder os pagos aos cargos do Poder Executivo.',
               certa: true,
               explicacao: 'Art. 37, XII, da CF/88. Item cobrado na prova de 2022.',
@@ -1278,13 +1436,23 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q4',
+              id: 'const-b3-t3-s1-q4',
               enunciado: 'A estabilidade do servidor nomeado para cargo de provimento efetivo em virtude de concurso público é adquirida após três anos de efetivo exercício, condicionada à avaliação especial de desempenho.',
               certa: true,
               explicacao: 'Art. 41, caput e §4º. O servidor estável só perde o cargo por sentença transitada em julgado, PAD ou avaliação periódica de desempenho.',
               baseLegal: 'CF/88, art. 41',
               variacoes: [
                 { enunciado: 'A acumulação remunerada de dois cargos privativos de profissionais de saúde é vedada em qualquer hipótese.', certa: false, explicacao: 'É permitida quando houver compatibilidade de horários e as profissões forem regulamentadas (art. 37, XVI, "c").' },
+              ],
+            },
+            {
+              id: 'const-b3-t3-s1-q5',
+              enunciado: 'A publicidade dos atos, programas e obras dos órgãos públicos deve ter caráter educativo, informativo ou de orientação social, sendo vedada a promoção pessoal de autoridades ou servidores.',
+              certa: true,
+              explicacao: 'Art. 37, §1º — desdobramento direto da impessoalidade, que impede a apropriação política da máquina pública.',
+              baseLegal: 'CF/88, art. 37, §1º',
+              variacoes: [
+                { enunciado: 'É permitida a inclusão de nomes e imagens de autoridades na publicidade oficial, desde que acompanhada de conteúdo informativo.', certa: false, explicacao: 'A vedação do art. 37, §1º, é expressa: não pode haver promoção pessoal de autoridades ou servidores.' },
               ],
             },
           ],
@@ -1300,7 +1468,6 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
         {
           id: 'const-b3-t3-s2',
           nome: 'Servidores públicos (arts. 38-41)',
-          // conteúdo herdado do tópico 'const-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Princípios expressos (art. 37, caput)
 
@@ -1364,7 +1531,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
 `,
           questoes: [
             {
-              id: 'const-b1-06-q1',
+              id: 'const-b3-t3-s2-q1',
               enunciado: 'É vedado a estrangeiros o acesso a cargos públicos.',
               certa: false,
               explicacao: 'O art. 37, I, assegura o acesso aos brasileiros que preencham os requisitos legais E aos estrangeiros, na forma da lei. Item cobrado na prova de 2022.',
@@ -1374,7 +1541,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q2',
+              id: 'const-b3-t3-s2-q2',
               enunciado: 'Servidor público da administração indireta investido no mandato de vereador poderá acumular as vantagens do emprego com a remuneração do cargo eletivo, se houver compatibilidade de horários.',
               certa: true,
               explicacao: 'Art. 38, III. É a única hipótese em que o servidor acumula as duas remunerações. Item cobrado na prova de 2022.',
@@ -1384,7 +1551,7 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q3',
+              id: 'const-b3-t3-s2-q3',
               enunciado: 'Os vencimentos dos cargos integrantes dos Poderes Legislativo e Judiciário não poderão exceder os pagos aos cargos do Poder Executivo.',
               certa: true,
               explicacao: 'Art. 37, XII, da CF/88. Item cobrado na prova de 2022.',
@@ -1394,13 +1561,23 @@ Aplicam-se à administração **direta e indireta** de **todos** os Poderes de *
               ],
             },
             {
-              id: 'const-b1-06-q4',
+              id: 'const-b3-t3-s2-q4',
               enunciado: 'A estabilidade do servidor nomeado para cargo de provimento efetivo em virtude de concurso público é adquirida após três anos de efetivo exercício, condicionada à avaliação especial de desempenho.',
               certa: true,
               explicacao: 'Art. 41, caput e §4º. O servidor estável só perde o cargo por sentença transitada em julgado, PAD ou avaliação periódica de desempenho.',
               baseLegal: 'CF/88, art. 41',
               variacoes: [
                 { enunciado: 'A acumulação remunerada de dois cargos privativos de profissionais de saúde é vedada em qualquer hipótese.', certa: false, explicacao: 'É permitida quando houver compatibilidade de horários e as profissões forem regulamentadas (art. 37, XVI, "c").' },
+              ],
+            },
+            {
+              id: 'const-b3-t3-s2-q5',
+              enunciado: 'O servidor público estável só perderá o cargo em virtude de sentença judicial transitada em julgado, de processo administrativo com ampla defesa ou de procedimento de avaliação periódica de desempenho na forma de lei complementar.',
+              certa: true,
+              explicacao: 'São as três hipóteses do art. 41, §1º. Invalidada a demissão por sentença, o servidor é reintegrado com ressarcimento.',
+              baseLegal: 'CF/88, art. 41, §1º',
+              variacoes: [
+                { enunciado: 'O servidor estável pode perder o cargo por decisão administrativa discricionária do dirigente máximo do órgão, mediante motivação.', certa: false, explicacao: 'As hipóteses do art. 41, §1º, são taxativas e nenhuma delas é decisão discricionária.' },
               ],
             },
           ],

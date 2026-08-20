@@ -43,12 +43,16 @@ progresso próprios. O **tópico** é só um agrupador — o progresso dele é s
 | Blocos | 12 |
 | Tópicos (agrupadores) | **38** |
 | **Subtópicos** (unidades de estudo) | **173** |
-| Enunciados de questões (base + variações) | **1.246** |
+| Enunciados de questões (base + variações) | **1.684** |
 | Flashcards | **888** |
 | Questões de **prova real** (INSS 2022, Cebraspe) | **116** |
 
 Distribuição dos subtópicos: Previdenciário 99 · Administrativo 23 · Português 20 ·
 Constitucional 13 · RLM 8 · Informática 8 · Ética 2.
+
+**Todos os 167 subtópicos de conteúdo servem 10 questões por rodada.** Os 6 subtópicos
+restantes são itens de consolidação da reta final — tarefas a executar, não aulas, e por isso
+têm teoria e flashcards, mas não questões.
 
 > O bloco "Reta final (revisão)" está sob Direito Previdenciário, por ser majoritariamente
 > revisão dessa matéria — aparece no fim da lista dela.
@@ -371,8 +375,8 @@ Uso estritamente pessoal e individual de estudo.
 
 ### Corrigir um texto pela interface
 
-Na página do tópico, o botão **✏️ corrigir** edita a teoria (aceita Markdown simples) e o ✏️ ao lado
-de cada questão edita enunciado, gabarito e explicação. As correções são salvas no seu banco
+Na página do **subtópico**, o botão **✏️ corrigir** edita a teoria (aceita Markdown simples) e o ✏️
+ao lado de cada questão edita enunciado, gabarito e explicação. As correções são salvas no seu banco
 (tabela `conteudo_edits`) e sobrepõem o conteúdo original — **sem alterar o código**, e sincronizando
 entre os dispositivos como qualquer outro dado.
 
@@ -409,6 +413,10 @@ export default {
 
 > **Atenção:** a teoria fica dentro de crases (template literal). Se o texto precisar de uma crase
 > literal, escape-a com `\``.
+
+> **IDs de questão** seguem o padrão `<subtopicoId>-qN` e precisam ser **únicos em todo o projeto** —
+> a chave de edição em `conteudo_edits` é `questao:<id>:campo`, de modo que IDs repetidos fariam uma
+> correção vazar para outros subtópicos.
 
 As `variacoes` são o que alimenta o botão "gerar mais questões" e o refazimento sem repetir enunciado —
 vale mantê-las ao acrescentar questões novas.

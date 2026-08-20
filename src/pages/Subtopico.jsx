@@ -309,8 +309,10 @@ export default function Subtopico() {
           {questoes.length === 0 && (
             <div className="card">
               <div className="vazio">
-                <span className="vazio-icone">📝</span>
-                Este subtópico ainda não tem questões escritas.
+                <span className="vazio-icone">{subtopico.consolidacao ? '🎯' : '📝'}</span>
+                {subtopico.consolidacao
+                  ? 'Este é um item de consolidação da reta final — uma tarefa a executar, não uma aula. As questões estão nos subtópicos de conteúdo; aqui você marca o que já cumpriu.'
+                  : 'Este subtópico ainda não tem questões escritas.'}
               </div>
             </div>
           )}

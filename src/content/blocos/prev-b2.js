@@ -20,7 +20,6 @@ export default {
         {
           id: 'prev-b2-t1-s1',
           nome: 'Receitas da União',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -72,7 +71,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b2-t1-s1-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -82,7 +81,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b2-t1-s1-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -92,7 +91,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b2-t1-s1-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -102,7 +101,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b2-t1-s1-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -112,7 +111,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b2-t1-s1-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -134,7 +133,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b2-t1-s2',
           nome: 'Contribuições dos segurados',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -186,7 +184,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s2-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -196,7 +194,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s2-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -206,7 +204,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s2-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -216,7 +214,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s2-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -226,7 +224,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s2-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -248,7 +246,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t1-s3',
           nome: 'Contribuições das empresas',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -300,7 +297,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s3-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -310,7 +307,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s3-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -320,7 +317,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s3-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -330,7 +327,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s3-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -340,7 +337,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s3-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -362,7 +359,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t1-s4',
           nome: 'Contribuição do empregador doméstico',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -414,7 +410,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s4-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -424,7 +420,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s4-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -434,7 +430,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s4-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -444,7 +440,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s4-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -454,7 +450,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s4-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -476,7 +472,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t1-s5',
           nome: 'Contribuição do produtor rural',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -528,7 +523,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s5-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -538,7 +533,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s5-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -548,7 +543,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s5-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -558,7 +553,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s5-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -568,7 +563,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s5-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -590,7 +585,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t1-s6',
           nome: 'Contribuição de clubes de futebol',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -642,7 +636,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s6-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -652,7 +646,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s6-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -662,7 +656,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s6-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -672,7 +666,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s6-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -682,7 +676,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s6-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -704,7 +698,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t1-s7',
           nome: 'Contribuição sobre concursos de prognósticos',
-          // conteúdo herdado do tópico 'prev-b2-02' da estrutura de 3 níveis
           teoria: `
 ## Contribuição dos segurados
 
@@ -756,7 +749,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
 `,
           questoes: [
             {
-              id: 'prev-b2-02-q1',
+              id: 'prev-b2-t1-s7-q1',
               enunciado: 'A contribuição do segurado empregado é calculada mediante aplicação de alíquotas progressivas e incidentes de forma cumulativa sobre o salário de contribuição, por faixas.',
               certa: true,
               explicacao: 'Após a EC 103/2019 a alíquota do empregado é progressiva por faixas (7,5% a 14%), aplicando-se cada percentual apenas sobre a parcela correspondente — mesma lógica do imposto de renda.',
@@ -766,7 +759,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q2',
+              id: 'prev-b2-t1-s7-q2',
               enunciado: 'A alíquota de contribuição do empregador doméstico corresponde a 8% sobre o salário de contribuição do empregado, acrescida de 0,8% destinado ao financiamento do seguro contra acidentes do trabalho.',
               certa: true,
               explicacao: 'É a regra da LC nº 150/2015, recolhida por meio do DAE unificado do eSocial Doméstico.',
@@ -776,7 +769,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q3',
+              id: 'prev-b2-t1-s7-q3',
               enunciado: 'A alíquota da contribuição da empresa destinada ao financiamento dos benefícios decorrentes dos riscos ambientais do trabalho é ajustada pelo Fator Acidentário de Prevenção, que pode reduzi-la à metade ou dobrá-la.',
               certa: true,
               explicacao: 'O FAP multiplica a alíquota RAT (1%, 2% ou 3%) por um índice que varia de 0,5 a 2,0, conforme o desempenho da empresa em acidentalidade.',
@@ -786,7 +779,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q4',
+              id: 'prev-b2-t1-s7-q4',
               enunciado: 'As igrejas e os templos de qualquer culto são imunes às contribuições destinadas à seguridade social.',
               certa: false,
               explicacao: 'A imunidade do art. 150, VI, "b", alcança apenas IMPOSTOS. Templos recolhem normalmente as contribuições previdenciárias sobre a remuneração de seus empregados.',
@@ -796,7 +789,7 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
               ],
             },
             {
-              id: 'prev-b2-02-q5',
+              id: 'prev-b2-t1-s7-q5',
               enunciado: 'A contribuição incidente sobre concursos de prognósticos tem por base de cálculo a receita bruta obtida com a venda dos bilhetes.',
               certa: false,
               explicacao: 'A base de cálculo é a RENDA LÍQUIDA dos concursos de prognósticos, e não a receita bruta.',
@@ -825,7 +818,6 @@ A contribuição do importador de bens e serviços (PIS/COFINS-Importação) foi
         {
           id: 'prev-b2-t2-s1',
           nome: 'Conceito',
-          // conteúdo herdado do tópico 'prev-b2-03' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -878,7 +870,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
 `,
           questoes: [
             {
-              id: 'prev-b2-03-q1',
+              id: 'prev-b2-t2-s1-q1',
               enunciado: 'O salário-maternidade é a única prestação previdenciária que integra o salário de contribuição.',
               certa: true,
               explicacao: 'É a exceção clássica: apesar de ser benefício, o salário-maternidade compõe o salário de contribuição, sofrendo incidência de contribuição previdenciária.',
@@ -888,7 +880,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q2',
+              id: 'prev-b2-t2-s1-q2',
               enunciado: 'As férias indenizadas e o respectivo adicional constitucional integram o salário de contribuição.',
               certa: false,
               explicacao: 'Verbas indenizatórias não integram o salário de contribuição. As férias INDENIZADAS e seu terço estão expressamente excluídas — diferente das férias gozadas, que integram.',
@@ -898,7 +890,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q3',
+              id: 'prev-b2-t2-s1-q3',
               enunciado: 'O salário de contribuição do segurado facultativo corresponde ao valor por ele declarado, observados os limites mínimo e máximo.',
               certa: true,
               explicacao: 'Diferentemente do empregado, cuja base é a remuneração auferida, o facultativo declara o valor sobre o qual deseja contribuir, entre o piso e o teto.',
@@ -908,7 +900,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q4',
+              id: 'prev-b2-t2-s1-q4',
               enunciado: 'As diárias para viagem integram o salário de contribuição quando excederem cinquenta por cento da remuneração mensal do empregado.',
               certa: true,
               explicacao: 'Diárias até 50% da remuneração mensal não integram; a partir daí, integram em sua totalidade.',
@@ -918,7 +910,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q5',
+              id: 'prev-b2-t2-s1-q5',
               enunciado: 'O décimo terceiro salário integra o salário de contribuição e é somado à remuneração do mês de dezembro para efeito de aplicação do limite máximo.',
               certa: false,
               explicacao: 'O 13º integra o salário de contribuição, mas em base de cálculo APARTADA: o teto é aplicado separadamente sobre o 13º e sobre a remuneração mensal.',
@@ -940,7 +932,6 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
         {
           id: 'prev-b2-t2-s2',
           nome: 'Parcelas integrantes do salário de contribuição',
-          // conteúdo herdado do tópico 'prev-b2-03' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -993,7 +984,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
 `,
           questoes: [
             {
-              id: 'prev-b2-03-q1',
+              id: 'prev-b2-t2-s2-q1',
               enunciado: 'O salário-maternidade é a única prestação previdenciária que integra o salário de contribuição.',
               certa: true,
               explicacao: 'É a exceção clássica: apesar de ser benefício, o salário-maternidade compõe o salário de contribuição, sofrendo incidência de contribuição previdenciária.',
@@ -1003,7 +994,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q2',
+              id: 'prev-b2-t2-s2-q2',
               enunciado: 'As férias indenizadas e o respectivo adicional constitucional integram o salário de contribuição.',
               certa: false,
               explicacao: 'Verbas indenizatórias não integram o salário de contribuição. As férias INDENIZADAS e seu terço estão expressamente excluídas — diferente das férias gozadas, que integram.',
@@ -1013,7 +1004,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q3',
+              id: 'prev-b2-t2-s2-q3',
               enunciado: 'O salário de contribuição do segurado facultativo corresponde ao valor por ele declarado, observados os limites mínimo e máximo.',
               certa: true,
               explicacao: 'Diferentemente do empregado, cuja base é a remuneração auferida, o facultativo declara o valor sobre o qual deseja contribuir, entre o piso e o teto.',
@@ -1023,7 +1014,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q4',
+              id: 'prev-b2-t2-s2-q4',
               enunciado: 'As diárias para viagem integram o salário de contribuição quando excederem cinquenta por cento da remuneração mensal do empregado.',
               certa: true,
               explicacao: 'Diárias até 50% da remuneração mensal não integram; a partir daí, integram em sua totalidade.',
@@ -1033,7 +1024,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q5',
+              id: 'prev-b2-t2-s2-q5',
               enunciado: 'O décimo terceiro salário integra o salário de contribuição e é somado à remuneração do mês de dezembro para efeito de aplicação do limite máximo.',
               certa: false,
               explicacao: 'O 13º integra o salário de contribuição, mas em base de cálculo APARTADA: o teto é aplicado separadamente sobre o 13º e sobre a remuneração mensal.',
@@ -1055,7 +1046,6 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
         {
           id: 'prev-b2-t2-s3',
           nome: 'Parcelas não integrantes do salário de contribuição',
-          // conteúdo herdado do tópico 'prev-b2-03' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -1108,7 +1098,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
 `,
           questoes: [
             {
-              id: 'prev-b2-03-q1',
+              id: 'prev-b2-t2-s3-q1',
               enunciado: 'O salário-maternidade é a única prestação previdenciária que integra o salário de contribuição.',
               certa: true,
               explicacao: 'É a exceção clássica: apesar de ser benefício, o salário-maternidade compõe o salário de contribuição, sofrendo incidência de contribuição previdenciária.',
@@ -1118,7 +1108,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q2',
+              id: 'prev-b2-t2-s3-q2',
               enunciado: 'As férias indenizadas e o respectivo adicional constitucional integram o salário de contribuição.',
               certa: false,
               explicacao: 'Verbas indenizatórias não integram o salário de contribuição. As férias INDENIZADAS e seu terço estão expressamente excluídas — diferente das férias gozadas, que integram.',
@@ -1128,7 +1118,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q3',
+              id: 'prev-b2-t2-s3-q3',
               enunciado: 'O salário de contribuição do segurado facultativo corresponde ao valor por ele declarado, observados os limites mínimo e máximo.',
               certa: true,
               explicacao: 'Diferentemente do empregado, cuja base é a remuneração auferida, o facultativo declara o valor sobre o qual deseja contribuir, entre o piso e o teto.',
@@ -1138,7 +1128,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q4',
+              id: 'prev-b2-t2-s3-q4',
               enunciado: 'As diárias para viagem integram o salário de contribuição quando excederem cinquenta por cento da remuneração mensal do empregado.',
               certa: true,
               explicacao: 'Diárias até 50% da remuneração mensal não integram; a partir daí, integram em sua totalidade.',
@@ -1148,7 +1138,7 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
               ],
             },
             {
-              id: 'prev-b2-03-q5',
+              id: 'prev-b2-t2-s3-q5',
               enunciado: 'O décimo terceiro salário integra o salário de contribuição e é somado à remuneração do mês de dezembro para efeito de aplicação do limite máximo.',
               certa: false,
               explicacao: 'O 13º integra o salário de contribuição, mas em base de cálculo APARTADA: o teto é aplicado separadamente sobre o 13º e sobre a remuneração mensal.',
@@ -1170,7 +1160,6 @@ O 13º integra o salário de contribuição, mas em **base de cálculo apartada*
         {
           id: 'prev-b2-t2-s4',
           nome: 'Limite mínimo do salário de contribuição',
-          // conteúdo herdado do tópico 'prev-b2-04' da estrutura de 3 níveis
           teoria: `
 ## Limite mínimo
 
@@ -1204,7 +1193,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
 `,
           questoes: [
             {
-              id: 'prev-b2-04-q1',
+              id: 'prev-b2-t2-s4-q1',
               enunciado: 'Os valores do salário de contribuição são reajustados na mesma época e com os mesmos índices dos benefícios de prestação continuada da previdência social.',
               certa: true,
               explicacao: 'Literalidade do art. 20, §1º, da Lei nº 8.212/91 — item cobrado na prova de 2022.',
@@ -1214,7 +1203,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q2',
+              id: 'prev-b2-t2-s4-q2',
               enunciado: 'Para o segurado empregado, o limite mínimo do salário de contribuição corresponde ao piso salarial legal ou normativo da categoria ou, na falta deste, ao salário mínimo.',
               certa: true,
               explicacao: 'É a regra do art. 28, §3º, da Lei nº 8.212/91, observadas as proporções para jornadas reduzidas.',
@@ -1224,7 +1213,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q3',
+              id: 'prev-b2-t2-s4-q3',
               enunciado: 'O segurado que exerce atividades concomitantes tem os salários de contribuição de cada uma somados, observado o limite máximo único.',
               certa: true,
               explicacao: 'Há um único teto por segurado, e não um teto por vínculo. Cabe ao segurado informar às empresas os valores já recebidos.',
@@ -1234,13 +1223,23 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q4',
+              id: 'prev-b2-t2-s4-q4',
               enunciado: 'É possível a concessão de benefício previdenciário do RGPS em valor superior ao limite máximo do salário de contribuição, desde que o segurado tenha contribuído por período superior a trinta e cinco anos.',
               certa: false,
               explicacao: 'Nenhum benefício do RGPS pode superar o teto do salário de contribuição, independentemente do tempo contribuído. Renda maior depende de previdência complementar.',
               baseLegal: 'Lei nº 8.213/91, art. 29, §2º; CF/88, art. 201, §2º',
               variacoes: [
                 { enunciado: 'O salário de benefício não pode ser inferior a um salário mínimo nem superior ao limite máximo do salário de contribuição na data de início do benefício.', certa: true, explicacao: 'Correto — art. 29, §2º, da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t2-s4-q5',
+              enunciado: 'Para o segurado contribuinte individual e para o segurado facultativo, o limite mínimo do salário de contribuição corresponde ao salário mínimo mensal.',
+              certa: true,
+              explicacao: 'O piso normativo da categoria vale para empregado, doméstico e avulso. Para contribuinte individual e facultativo, que não têm piso de categoria, o mínimo é o salário mínimo mensal.',
+              baseLegal: 'Lei nº 8.212/91, art. 28, §3º',
+              variacoes: [
+                { enunciado: 'O limite mínimo do salário de contribuição do segurado empregado corresponde sempre ao salário mínimo, sendo irrelevante a existência de piso normativo da categoria.', certa: false, explicacao: 'Havendo piso salarial legal ou normativo da categoria, é ele o limite mínimo. O salário mínimo só se aplica na falta de piso.' },
               ],
             },
           ],
@@ -1255,7 +1254,6 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
         {
           id: 'prev-b2-t2-s5',
           nome: 'Limite máximo (teto) do salário de contribuição',
-          // conteúdo herdado do tópico 'prev-b2-04' da estrutura de 3 níveis
           teoria: `
 ## Limite mínimo
 
@@ -1289,7 +1287,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
 `,
           questoes: [
             {
-              id: 'prev-b2-04-q1',
+              id: 'prev-b2-t2-s5-q1',
               enunciado: 'Os valores do salário de contribuição são reajustados na mesma época e com os mesmos índices dos benefícios de prestação continuada da previdência social.',
               certa: true,
               explicacao: 'Literalidade do art. 20, §1º, da Lei nº 8.212/91 — item cobrado na prova de 2022.',
@@ -1299,7 +1297,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q2',
+              id: 'prev-b2-t2-s5-q2',
               enunciado: 'Para o segurado empregado, o limite mínimo do salário de contribuição corresponde ao piso salarial legal ou normativo da categoria ou, na falta deste, ao salário mínimo.',
               certa: true,
               explicacao: 'É a regra do art. 28, §3º, da Lei nº 8.212/91, observadas as proporções para jornadas reduzidas.',
@@ -1309,7 +1307,7 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q3',
+              id: 'prev-b2-t2-s5-q3',
               enunciado: 'O segurado que exerce atividades concomitantes tem os salários de contribuição de cada uma somados, observado o limite máximo único.',
               certa: true,
               explicacao: 'Há um único teto por segurado, e não um teto por vínculo. Cabe ao segurado informar às empresas os valores já recebidos.',
@@ -1319,13 +1317,23 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
               ],
             },
             {
-              id: 'prev-b2-04-q4',
+              id: 'prev-b2-t2-s5-q4',
               enunciado: 'É possível a concessão de benefício previdenciário do RGPS em valor superior ao limite máximo do salário de contribuição, desde que o segurado tenha contribuído por período superior a trinta e cinco anos.',
               certa: false,
               explicacao: 'Nenhum benefício do RGPS pode superar o teto do salário de contribuição, independentemente do tempo contribuído. Renda maior depende de previdência complementar.',
               baseLegal: 'Lei nº 8.213/91, art. 29, §2º; CF/88, art. 201, §2º',
               variacoes: [
                 { enunciado: 'O salário de benefício não pode ser inferior a um salário mínimo nem superior ao limite máximo do salário de contribuição na data de início do benefício.', certa: true, explicacao: 'Correto — art. 29, §2º, da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t2-s5-q5',
+              enunciado: 'O segurado que exerce duas atividades simultâneas submete-se a um único limite máximo do salário de contribuição, cabendo-lhe informar às empresas os valores já recebidos para que os descontos não ultrapassem o teto.',
+              certa: true,
+              explicacao: 'O teto é por segurado, e não por vínculo. Como cada empresa desconhece o que a outra pagou, a lei atribui ao próprio segurado o dever de comunicar, sob pena de desconto a maior — restituível.',
+              baseLegal: 'Lei nº 8.212/91, art. 28, §5º',
+              variacoes: [
+                { enunciado: 'O segurado que sofrer desconto de contribuição acima do limite máximo do salário de contribuição não tem direito à restituição do excedente.', certa: false, explicacao: 'O valor descontado acima do teto é indevido e comporta restituição, pois nenhuma contribuição pode incidir sobre parcela superior ao limite máximo.' },
               ],
             },
           ],
@@ -1340,7 +1348,6 @@ O art. 20, §1º, da Lei nº 8.212/91 determina que os valores do salário de co
         {
           id: 'prev-b2-t2-s6',
           nome: 'Contribuições inferiores ao salário mínimo e complementação',
-          // conteúdo herdado do tópico 'prev-b2-05' da estrutura de 3 níveis
           teoria: `
 ## O problema
 
@@ -1376,7 +1383,7 @@ Situação diferente, mas cobrada junto: o segurado que recolheu pelo **plano si
 `,
           questoes: [
             {
-              id: 'prev-b2-05-q1',
+              id: 'prev-b2-t2-s6-q1',
               enunciado: 'O segurado que, no somatório de remunerações do mês, receber valor inferior ao salário mínimo poderá agrupar contribuições inferiores ao limite mínimo de diferentes competências, ainda que de anos civis distintos.',
               certa: false,
               explicacao: 'O agrupamento e o aproveitamento de excedentes só podem ocorrer dentro do MESMO ANO CIVIL.',
@@ -1386,7 +1393,7 @@ Situação diferente, mas cobrada junto: o segurado que recolheu pelo **plano si
               ],
             },
             {
-              id: 'prev-b2-05-q2',
+              id: 'prev-b2-t2-s6-q2',
               enunciado: 'A competência cuja contribuição seja inferior ao limite mínimo e que não seja regularizada não será considerada para fins de carência, tempo de contribuição e manutenção da qualidade de segurado.',
               certa: true,
               explicacao: 'É a consequência expressa do art. 29, §2º, da EC 103/2019: a competência simplesmente não conta.',
@@ -1396,13 +1403,33 @@ Situação diferente, mas cobrada junto: o segurado que recolheu pelo **plano si
               ],
             },
             {
-              id: 'prev-b2-05-q3',
+              id: 'prev-b2-t2-s6-q3',
               enunciado: 'O segurado que optou pelo recolhimento com alíquota de 11% sobre o salário mínimo e pretenda contar esse tempo para efeito de contagem recíproca deverá complementar a contribuição, acrescida de juros moratórios.',
               certa: true,
               explicacao: 'O plano simplificado exclui a aposentadoria por tempo de contribuição e a contagem recíproca, salvo complementação da diferença de alíquota com juros.',
               baseLegal: 'Lei nº 8.212/91, art. 21, §§2º e 3º',
               variacoes: [
                 { enunciado: 'O recolhimento pelo plano simplificado assegura ao segurado todos os benefícios do RGPS, inclusive a aposentadoria por tempo de contribuição.', certa: false, explicacao: 'O plano simplificado exclui expressamente a aposentadoria por tempo de contribuição e a contagem recíproca.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t2-s6-q4',
+              enunciado: 'O segurado que, em determinada competência, tiver remuneração inferior ao limite mínimo poderá complementar a contribuição, utilizar o excedente de outra competência ou agrupar competências, desde que dentro do mesmo ano civil.',
+              certa: true,
+              explicacao: 'São as três alternativas do art. 29 da EC 103/2019. A restrição ao mesmo ano civil é o detalhe que a banca costuma suprimir para tornar o item errado.',
+              baseLegal: 'EC nº 103/2019, art. 29, §1º',
+              variacoes: [
+                { enunciado: 'É admitido o aproveitamento do valor que excede o limite mínimo em uma competência para completar competência de ano civil anterior.', certa: false, explicacao: 'O ajuste é restrito ao MESMO ano civil; não se aproveita excedente entre anos distintos.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t2-s6-q5',
+              enunciado: 'A competência cuja contribuição seja inferior ao limite mínimo e que não seja objeto de complementação, agrupamento ou utilização de excedente será computada apenas para efeito de tempo de contribuição.',
+              certa: false,
+              explicacao: 'Sem a regularização, a competência não é computada para nenhum fim: nem carência, nem tempo de contribuição, nem manutenção da qualidade de segurado.',
+              baseLegal: 'EC nº 103/2019, art. 29, §2º',
+              variacoes: [
+                { enunciado: 'A competência não regularizada não é considerada para carência, tempo de contribuição nem para a manutenção da qualidade de segurado.', certa: true, explicacao: 'Correto — é a consequência expressa do art. 29, §2º, da EC 103/2019.' },
               ],
             },
           ],
@@ -1423,7 +1450,6 @@ Situação diferente, mas cobrada junto: o segurado que recolheu pelo **plano si
         {
           id: 'prev-b2-t3-s1',
           nome: 'Competência: INSS x Receita Federal',
-          // conteúdo herdado do tópico 'prev-b2-06' da estrutura de 3 níveis
           teoria: `
 ## A divisão de competências
 
@@ -1474,7 +1500,7 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
 `,
           questoes: [
             {
-              id: 'prev-b2-06-q1',
+              id: 'prev-b2-t3-s1-q1',
               enunciado: 'Compete ao INSS planejar, executar e avaliar as atividades relativas à tributação, à fiscalização e à arrecadação das contribuições previdenciárias.',
               certa: false,
               explicacao: 'Desde a Lei nº 11.457/2007, essas atribuições são da Receita Federal do Brasil. Ao INSS cabe conceder e manter benefícios e prestar serviços previdenciários. Item cobrado na prova de 2022.',
@@ -1484,7 +1510,7 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
               ],
             },
             {
-              id: 'prev-b2-06-q2',
+              id: 'prev-b2-t3-s1-q2',
               enunciado: 'O trabalhador avulso deve recolher pessoalmente sua contribuição previdenciária, tal como o contribuinte individual que trabalha por conta própria.',
               certa: false,
               explicacao: 'A contribuição do avulso é descontada e recolhida pela empresa, pelo OGMO ou pelo sindicato. Item cobrado na prova de 2022 (item 71).',
@@ -1494,7 +1520,7 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
               ],
             },
             {
-              id: 'prev-b2-06-q3',
+              id: 'prev-b2-t3-s1-q3',
               enunciado: 'A empresa que não efetuou o desconto da contribuição do segurado empregado pode alegar essa omissão para eximir-se do recolhimento.',
               certa: false,
               explicacao: 'Presume-se feito o desconto, não sendo lícito à empresa alegar omissão: ela responde diretamente pela importância que deixou de descontar.',
@@ -1504,7 +1530,7 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
               ],
             },
             {
-              id: 'prev-b2-06-q4',
+              id: 'prev-b2-t3-s1-q4',
               enunciado: 'A empresa deve recolher as contribuições previdenciárias até o dia vinte do mês seguinte ao da competência, antecipando-se o prazo se não houver expediente bancário nesse dia.',
               certa: true,
               explicacao: 'É a regra do art. 30, I, "b", da Lei nº 8.212/91. Para empresa e doméstico o prazo se antecipa; para contribuinte individual e facultativo, prorroga-se.',
@@ -1514,7 +1540,7 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
               ],
             },
             {
-              id: 'prev-b2-06-q5',
+              id: 'prev-b2-t3-s1-q5',
               enunciado: 'A contribuição incidente sobre a receita bruta de espetáculo desportivo deve ser recolhida até dois dias úteis após a realização do evento.',
               certa: true,
               explicacao: 'Prazo especialíssimo do art. 22, §7º, da Lei nº 8.212/91, cobrado com frequência justamente por destoar dos demais.',
@@ -1536,7 +1562,6 @@ A empresa deve preparar folha de pagamento, lançar em títulos próprios da con
         {
           id: 'prev-b2-t3-s2',
           nome: 'Obrigações da empresa',
-          // conteúdo herdado do tópico 'prev-b2-07' da estrutura de 3 níveis
           teoria: `
 ## Obrigação principal e obrigações acessórias
 
@@ -1578,7 +1603,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
 `,
           questoes: [
             {
-              id: 'prev-b2-07-q1',
+              id: 'prev-b2-t3-s2-q1',
               enunciado: 'A empresa contratante de serviços executados mediante cessão de mão de obra deve reter onze por cento do valor bruto da nota fiscal e recolher a importância em nome da empresa cedente.',
               certa: true,
               explicacao: 'É a retenção do art. 31 da Lei nº 8.212/91, cuja responsabilidade é da CONTRATANTE, e o recolhimento se dá em nome da contratada.',
@@ -1588,7 +1613,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q2',
+              id: 'prev-b2-t3-s2-q2',
               enunciado: 'A empresa deve comunicar o acidente do trabalho à previdência social até o primeiro dia útil seguinte ao da ocorrência e, em caso de morte, de imediato.',
               certa: true,
               explicacao: 'É a regra de emissão da CAT prevista no art. 22 da Lei nº 8.213/91.',
@@ -1598,7 +1623,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q3',
+              id: 'prev-b2-t3-s2-q3',
               enunciado: 'O proprietário e o incorporador de obra de construção civil respondem solidariamente com o construtor pelas contribuições previdenciárias incidentes sobre a obra.',
               certa: true,
               explicacao: 'A solidariedade do art. 30, VI, da Lei nº 8.212/91 não comporta benefício de ordem: o fisco pode exigir de qualquer um dos coobrigados.',
@@ -1608,13 +1633,23 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q4',
+              id: 'prev-b2-t3-s2-q4',
               enunciado: 'A empresa está obrigada a lançar mensalmente em títulos próprios de sua contabilidade, de forma discriminada, os fatos geradores das contribuições e os valores recolhidos.',
               certa: true,
               explicacao: 'Obrigação acessória do art. 32, II, da Lei nº 8.212/91, essencial para a conferência pela fiscalização.',
               baseLegal: 'Lei nº 8.212/91, art. 32, II',
               variacoes: [
                 { enunciado: 'A empresa deve fornecer ao segurado comprovante do pagamento de remuneração, com identificação da empresa e discriminação do valor descontado a título de contribuição previdenciária.', certa: true, explicacao: 'Correto — art. 32, IV, e art. 33, §1º, da Lei nº 8.212/91.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t3-s2-q5',
+              enunciado: 'A empresa deve manter à disposição da fiscalização, pelo prazo de dez anos, os documentos e livros relacionados às contribuições previdenciárias.',
+              certa: true,
+              explicacao: 'O prazo decenal de guarda é obrigação acessória autônoma e não se confunde com o prazo decadencial de cinco anos para a constituição do crédito.',
+              baseLegal: 'Lei nº 8.212/91, art. 32, §11',
+              variacoes: [
+                { enunciado: 'Como a decadência do crédito previdenciário ocorre em cinco anos, a empresa está desobrigada de guardar os documentos após esse prazo.', certa: false, explicacao: 'São coisas distintas: a decadência atinge o direito de lançar; a obrigação de guarda dos documentos é de dez anos.' },
               ],
             },
           ],
@@ -1629,7 +1664,6 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
         {
           id: 'prev-b2-t3-s3',
           nome: 'Prazos de recolhimento',
-          // conteúdo herdado do tópico 'prev-b2-07' da estrutura de 3 níveis
           teoria: `
 ## Obrigação principal e obrigações acessórias
 
@@ -1671,7 +1705,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
 `,
           questoes: [
             {
-              id: 'prev-b2-07-q1',
+              id: 'prev-b2-t3-s3-q1',
               enunciado: 'A empresa contratante de serviços executados mediante cessão de mão de obra deve reter onze por cento do valor bruto da nota fiscal e recolher a importância em nome da empresa cedente.',
               certa: true,
               explicacao: 'É a retenção do art. 31 da Lei nº 8.212/91, cuja responsabilidade é da CONTRATANTE, e o recolhimento se dá em nome da contratada.',
@@ -1681,7 +1715,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q2',
+              id: 'prev-b2-t3-s3-q2',
               enunciado: 'A empresa deve comunicar o acidente do trabalho à previdência social até o primeiro dia útil seguinte ao da ocorrência e, em caso de morte, de imediato.',
               certa: true,
               explicacao: 'É a regra de emissão da CAT prevista no art. 22 da Lei nº 8.213/91.',
@@ -1691,7 +1725,7 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q3',
+              id: 'prev-b2-t3-s3-q3',
               enunciado: 'O proprietário e o incorporador de obra de construção civil respondem solidariamente com o construtor pelas contribuições previdenciárias incidentes sobre a obra.',
               certa: true,
               explicacao: 'A solidariedade do art. 30, VI, da Lei nº 8.212/91 não comporta benefício de ordem: o fisco pode exigir de qualquer um dos coobrigados.',
@@ -1701,13 +1735,23 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
               ],
             },
             {
-              id: 'prev-b2-07-q4',
+              id: 'prev-b2-t3-s3-q4',
               enunciado: 'A empresa está obrigada a lançar mensalmente em títulos próprios de sua contabilidade, de forma discriminada, os fatos geradores das contribuições e os valores recolhidos.',
               certa: true,
               explicacao: 'Obrigação acessória do art. 32, II, da Lei nº 8.212/91, essencial para a conferência pela fiscalização.',
               baseLegal: 'Lei nº 8.212/91, art. 32, II',
               variacoes: [
                 { enunciado: 'A empresa deve fornecer ao segurado comprovante do pagamento de remuneração, com identificação da empresa e discriminação do valor descontado a título de contribuição previdenciária.', certa: true, explicacao: 'Correto — art. 32, IV, e art. 33, §1º, da Lei nº 8.212/91.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t3-s3-q5',
+              enunciado: 'Não havendo expediente bancário na data de vencimento, o recolhimento da empresa deve ser antecipado para o dia útil imediatamente anterior, enquanto o do contribuinte individual é prorrogado para o dia útil seguinte.',
+              certa: true,
+              explicacao: 'A diferença é justamente o que a banca explora: empresa e empregador doméstico ANTECIPAM; contribuinte individual e facultativo PRORROGAM.',
+              baseLegal: 'Lei nº 8.212/91, art. 30, I, "b", e II',
+              variacoes: [
+                { enunciado: 'Na ausência de expediente bancário, todos os contribuintes têm o prazo de recolhimento prorrogado para o primeiro dia útil subsequente.', certa: false, explicacao: 'Para a empresa e o empregador doméstico o prazo é ANTECIPADO, não prorrogado.' },
               ],
             },
           ],
@@ -1722,7 +1766,6 @@ Nas obras de construção civil, o **dono da obra** ou o **incorporador** respon
         {
           id: 'prev-b2-t3-s4',
           nome: 'Recolhimento fora do prazo — juros',
-          // conteúdo herdado do tópico 'prev-b2-08' da estrutura de 3 níveis
           teoria: `
 ## O que incide sobre o atraso
 
@@ -1761,7 +1804,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
 `,
           questoes: [
             {
-              id: 'prev-b2-08-q1',
+              id: 'prev-b2-t3-s4-q1',
               enunciado: 'A multa de mora incidente sobre contribuições previdenciárias recolhidas espontaneamente em atraso corresponde a 0,33% por dia de atraso, limitada a 20%.',
               certa: true,
               explicacao: 'É a multa moratória padrão dos tributos federais, aplicável quando o pagamento ocorre antes de procedimento fiscal.',
@@ -1771,7 +1814,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q2',
+              id: 'prev-b2-t3-s4-q2',
               enunciado: 'Os juros de mora incidentes sobre contribuições previdenciárias em atraso são calculados com base na taxa SELIC acumulada mensalmente, acrescida de um por cento no mês do pagamento.',
               certa: true,
               explicacao: 'É a sistemática dos tributos federais desde a Lei nº 9.430/96.',
@@ -1781,7 +1824,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q3',
+              id: 'prev-b2-t3-s4-q3',
               enunciado: 'O parcelamento do débito previdenciário suspende a exigibilidade do crédito tributário, permitindo a expedição de certidão positiva com efeitos de negativa.',
               certa: true,
               explicacao: 'O parcelamento é causa de suspensão da exigibilidade prevista no art. 151, VI, do CTN, o que autoriza a CPEN do art. 206.',
@@ -1791,13 +1834,23 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q4',
+              id: 'prev-b2-t3-s4-q4',
               enunciado: 'O segurado empregado cuja empresa deixou de recolher as contribuições em dia terá o período correspondente desconsiderado para efeito de carência.',
               certa: false,
               explicacao: 'A responsabilidade pelo recolhimento é da empresa, e sua inadimplência não prejudica o empregado. O período conta normalmente.',
               baseLegal: 'Lei nº 8.213/91, art. 34, I',
               variacoes: [
                 { enunciado: 'O segurado facultativo pode recolher contribuições relativas a período anterior à sua inscrição, desde que comprove que não exercia atividade remunerada.', certa: false, explicacao: 'O facultativo não pode: antes do primeiro recolhimento não havia filiação. Essa possibilidade existe apenas para o contribuinte individual, que já era filiado pelo exercício da atividade.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t3-s4-q5',
+              enunciado: 'Os juros de mora incidentes sobre contribuição previdenciária recolhida em atraso são equivalentes à taxa SELIC acumulada mensalmente, acrescida de um por cento no mês do pagamento.',
+              certa: true,
+              explicacao: 'É a sistemática dos tributos federais. No mês do próprio pagamento não há SELIC acumulada fechada, e por isso a lei fixa o acréscimo de 1%.',
+              baseLegal: 'Lei nº 9.430/96, art. 61, §3º',
+              variacoes: [
+                { enunciado: 'Os juros de mora das contribuições previdenciárias são fixos em um por cento ao mês, independentemente da variação da taxa SELIC.', certa: false, explicacao: 'A regra é SELIC acumulada + 1% apenas no mês do pagamento. Juros fixos de 1% ao mês não se aplicam às contribuições previdenciárias.' },
               ],
             },
           ],
@@ -1812,7 +1865,6 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
         {
           id: 'prev-b2-t3-s5',
           nome: 'Recolhimento fora do prazo — multa',
-          // conteúdo herdado do tópico 'prev-b2-08' da estrutura de 3 níveis
           teoria: `
 ## O que incide sobre o atraso
 
@@ -1851,7 +1903,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
 `,
           questoes: [
             {
-              id: 'prev-b2-08-q1',
+              id: 'prev-b2-t3-s5-q1',
               enunciado: 'A multa de mora incidente sobre contribuições previdenciárias recolhidas espontaneamente em atraso corresponde a 0,33% por dia de atraso, limitada a 20%.',
               certa: true,
               explicacao: 'É a multa moratória padrão dos tributos federais, aplicável quando o pagamento ocorre antes de procedimento fiscal.',
@@ -1861,7 +1913,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q2',
+              id: 'prev-b2-t3-s5-q2',
               enunciado: 'Os juros de mora incidentes sobre contribuições previdenciárias em atraso são calculados com base na taxa SELIC acumulada mensalmente, acrescida de um por cento no mês do pagamento.',
               certa: true,
               explicacao: 'É a sistemática dos tributos federais desde a Lei nº 9.430/96.',
@@ -1871,7 +1923,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q3',
+              id: 'prev-b2-t3-s5-q3',
               enunciado: 'O parcelamento do débito previdenciário suspende a exigibilidade do crédito tributário, permitindo a expedição de certidão positiva com efeitos de negativa.',
               certa: true,
               explicacao: 'O parcelamento é causa de suspensão da exigibilidade prevista no art. 151, VI, do CTN, o que autoriza a CPEN do art. 206.',
@@ -1881,13 +1933,23 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q4',
+              id: 'prev-b2-t3-s5-q4',
               enunciado: 'O segurado empregado cuja empresa deixou de recolher as contribuições em dia terá o período correspondente desconsiderado para efeito de carência.',
               certa: false,
               explicacao: 'A responsabilidade pelo recolhimento é da empresa, e sua inadimplência não prejudica o empregado. O período conta normalmente.',
               baseLegal: 'Lei nº 8.213/91, art. 34, I',
               variacoes: [
                 { enunciado: 'O segurado facultativo pode recolher contribuições relativas a período anterior à sua inscrição, desde que comprove que não exercia atividade remunerada.', certa: false, explicacao: 'O facultativo não pode: antes do primeiro recolhimento não havia filiação. Essa possibilidade existe apenas para o contribuinte individual, que já era filiado pelo exercício da atividade.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t3-s5-q5',
+              enunciado: 'A multa de mora incide sobre o valor da contribuição recolhida espontaneamente em atraso e é calculada à razão de trinta e três centésimos por cento por dia de atraso, limitada a vinte por cento.',
+              certa: true,
+              explicacao: 'Com 0,33% ao dia, o teto de 20% é alcançado em aproximadamente 61 dias de atraso; a partir daí a multa não cresce mais.',
+              baseLegal: 'Lei nº 9.430/96, art. 61, caput e §2º',
+              variacoes: [
+                { enunciado: 'A multa de mora por recolhimento espontâneo em atraso não possui limite máximo, crescendo indefinidamente enquanto perdurar a inadimplência.', certa: false, explicacao: 'A multa de mora é limitada a 20%. O que continua correndo indefinidamente são os juros.' },
               ],
             },
           ],
@@ -1902,7 +1964,6 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
         {
           id: 'prev-b2-t3-s6',
           nome: 'Atualização monetária',
-          // conteúdo herdado do tópico 'prev-b2-08' da estrutura de 3 níveis
           teoria: `
 ## O que incide sobre o atraso
 
@@ -1941,7 +2002,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
 `,
           questoes: [
             {
-              id: 'prev-b2-08-q1',
+              id: 'prev-b2-t3-s6-q1',
               enunciado: 'A multa de mora incidente sobre contribuições previdenciárias recolhidas espontaneamente em atraso corresponde a 0,33% por dia de atraso, limitada a 20%.',
               certa: true,
               explicacao: 'É a multa moratória padrão dos tributos federais, aplicável quando o pagamento ocorre antes de procedimento fiscal.',
@@ -1951,7 +2012,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q2',
+              id: 'prev-b2-t3-s6-q2',
               enunciado: 'Os juros de mora incidentes sobre contribuições previdenciárias em atraso são calculados com base na taxa SELIC acumulada mensalmente, acrescida de um por cento no mês do pagamento.',
               certa: true,
               explicacao: 'É a sistemática dos tributos federais desde a Lei nº 9.430/96.',
@@ -1961,7 +2022,7 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q3',
+              id: 'prev-b2-t3-s6-q3',
               enunciado: 'O parcelamento do débito previdenciário suspende a exigibilidade do crédito tributário, permitindo a expedição de certidão positiva com efeitos de negativa.',
               certa: true,
               explicacao: 'O parcelamento é causa de suspensão da exigibilidade prevista no art. 151, VI, do CTN, o que autoriza a CPEN do art. 206.',
@@ -1971,13 +2032,23 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
               ],
             },
             {
-              id: 'prev-b2-08-q4',
+              id: 'prev-b2-t3-s6-q4',
               enunciado: 'O segurado empregado cuja empresa deixou de recolher as contribuições em dia terá o período correspondente desconsiderado para efeito de carência.',
               certa: false,
               explicacao: 'A responsabilidade pelo recolhimento é da empresa, e sua inadimplência não prejudica o empregado. O período conta normalmente.',
               baseLegal: 'Lei nº 8.213/91, art. 34, I',
               variacoes: [
                 { enunciado: 'O segurado facultativo pode recolher contribuições relativas a período anterior à sua inscrição, desde que comprove que não exercia atividade remunerada.', certa: false, explicacao: 'O facultativo não pode: antes do primeiro recolhimento não havia filiação. Essa possibilidade existe apenas para o contribuinte individual, que já era filiado pelo exercício da atividade.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t3-s6-q5',
+              enunciado: 'Na sistemática atual das contribuições previdenciárias federais, a atualização monetária do débito em atraso está absorvida pela própria taxa SELIC, que reúne correção e juros.',
+              certa: true,
+              explicacao: 'A SELIC é taxa mista: embute correção monetária e juros reais. Cobrar correção em separado configuraria bis in idem, o que a jurisprudência rejeita.',
+              baseLegal: 'Lei nº 9.430/96, art. 61, §3º',
+              variacoes: [
+                { enunciado: 'Sobre a contribuição previdenciária em atraso incidem, cumulativamente, a taxa SELIC e um índice autônomo de atualização monetária.', certa: false, explicacao: 'A cumulação seria dupla incidência: a SELIC já compreende a correção monetária.' },
               ],
             },
           ],
@@ -1999,7 +2070,6 @@ O contribuinte individual **pode** recolher competências em atraso, porque a fi
         {
           id: 'prev-b2-t4-s1',
           nome: 'Decadência no direito previdenciário',
-          // conteúdo herdado do tópico 'prev-b2-09' da estrutura de 3 níveis
           teoria: `
 ## Os quatro prazos que você precisa separar
 
@@ -2042,7 +2112,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
 `,
           questoes: [
             {
-              id: 'prev-b2-09-q1',
+              id: 'prev-b2-t4-s1-q1',
               enunciado: 'O direito do segurado de requerer benefício previdenciário prescreve em cinco anos, contados da data em que preenchidos os requisitos.',
               certa: false,
               explicacao: 'O direito ao benefício é IMPRESCRITÍVEL. Prescrevem em 5 anos apenas as prestações vencidas e não pagas. Item cobrado duas vezes na prova de 2022.',
@@ -2052,7 +2122,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q2',
+              id: 'prev-b2-t4-s1-q2',
               enunciado: 'O prazo de decadência para revisão do ato de concessão de benefício é de dez anos, contados do dia primeiro do mês seguinte ao do recebimento da primeira prestação.',
               certa: true,
               explicacao: 'Literalidade do art. 103 da Lei nº 8.213/91. Benefício concedido em 05/12/2015 tem termo inicial em 01/01/2016 e prazo final em 01/01/2026.',
@@ -2062,7 +2132,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q3',
+              id: 'prev-b2-t4-s1-q3',
               enunciado: 'Comprovada a má-fé do beneficiário, o direito da previdência social de anular o ato de concessão do benefício não se submete ao prazo decadencial de dez anos.',
               certa: true,
               explicacao: 'O art. 103-A ressalva expressamente a má-fé: nesse caso, a revisão pode ocorrer a qualquer tempo. Item cobrado na prova de 2022.',
@@ -2072,13 +2142,23 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q4',
+              id: 'prev-b2-t4-s1-q4',
               enunciado: 'O prazo de decadência para a constituição dos créditos da seguridade social é de dez anos, nos termos da Lei nº 8.212/1991.',
               certa: false,
               explicacao: 'A Súmula Vinculante 8 do STF declarou inconstitucionais os arts. 45 e 46 da Lei nº 8.212/91. Prevalece o prazo de 5 anos do CTN, por exigir lei complementar.',
               baseLegal: 'STF, Súmula Vinculante 8; CTN, arts. 173 e 174',
               variacoes: [
                 { enunciado: 'São inconstitucionais os dispositivos legais que fixaram em dez anos os prazos de decadência e prescrição de crédito tributário previdenciário.', certa: true, explicacao: 'Correto — teor da Súmula Vinculante 8 do STF.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t4-s1-q5',
+              enunciado: 'O prazo decadencial para que a Fazenda Pública constitua o crédito previdenciário é de cinco anos, contados, na regra geral, do primeiro dia do exercício seguinte àquele em que o lançamento poderia ter sido efetuado.',
+              certa: true,
+              explicacao: 'Aplica-se o art. 173, I, do CTN, depois que a Súmula Vinculante 8 derrubou o prazo de dez anos previsto na Lei nº 8.212/91.',
+              baseLegal: 'CTN, art. 173, I; STF, Súmula Vinculante 8',
+              variacoes: [
+                { enunciado: 'O prazo decadencial para constituição do crédito previdenciário é de dez anos, por força de disposição específica da legislação previdenciária.', certa: false, explicacao: 'Os arts. 45 e 46 da Lei nº 8.212/91 foram declarados inconstitucionais pela Súmula Vinculante 8. Prevalecem os cinco anos do CTN.' },
               ],
             },
           ],
@@ -2093,7 +2173,6 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
         {
           id: 'prev-b2-t4-s2',
           nome: 'Prescrição no direito previdenciário',
-          // conteúdo herdado do tópico 'prev-b2-09' da estrutura de 3 níveis
           teoria: `
 ## Os quatro prazos que você precisa separar
 
@@ -2136,7 +2215,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
 `,
           questoes: [
             {
-              id: 'prev-b2-09-q1',
+              id: 'prev-b2-t4-s2-q1',
               enunciado: 'O direito do segurado de requerer benefício previdenciário prescreve em cinco anos, contados da data em que preenchidos os requisitos.',
               certa: false,
               explicacao: 'O direito ao benefício é IMPRESCRITÍVEL. Prescrevem em 5 anos apenas as prestações vencidas e não pagas. Item cobrado duas vezes na prova de 2022.',
@@ -2146,7 +2225,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q2',
+              id: 'prev-b2-t4-s2-q2',
               enunciado: 'O prazo de decadência para revisão do ato de concessão de benefício é de dez anos, contados do dia primeiro do mês seguinte ao do recebimento da primeira prestação.',
               certa: true,
               explicacao: 'Literalidade do art. 103 da Lei nº 8.213/91. Benefício concedido em 05/12/2015 tem termo inicial em 01/01/2016 e prazo final em 01/01/2026.',
@@ -2156,7 +2235,7 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q3',
+              id: 'prev-b2-t4-s2-q3',
               enunciado: 'Comprovada a má-fé do beneficiário, o direito da previdência social de anular o ato de concessão do benefício não se submete ao prazo decadencial de dez anos.',
               certa: true,
               explicacao: 'O art. 103-A ressalva expressamente a má-fé: nesse caso, a revisão pode ocorrer a qualquer tempo. Item cobrado na prova de 2022.',
@@ -2166,13 +2245,23 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
               ],
             },
             {
-              id: 'prev-b2-09-q4',
+              id: 'prev-b2-t4-s2-q4',
               enunciado: 'O prazo de decadência para a constituição dos créditos da seguridade social é de dez anos, nos termos da Lei nº 8.212/1991.',
               certa: false,
               explicacao: 'A Súmula Vinculante 8 do STF declarou inconstitucionais os arts. 45 e 46 da Lei nº 8.212/91. Prevalece o prazo de 5 anos do CTN, por exigir lei complementar.',
               baseLegal: 'STF, Súmula Vinculante 8; CTN, arts. 173 e 174',
               variacoes: [
                 { enunciado: 'São inconstitucionais os dispositivos legais que fixaram em dez anos os prazos de decadência e prescrição de crédito tributário previdenciário.', certa: true, explicacao: 'Correto — teor da Súmula Vinculante 8 do STF.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t4-s2-q5',
+              enunciado: 'Não corre prescrição das prestações previdenciárias em favor dos absolutamente incapazes.',
+              certa: true,
+              explicacao: 'A ressalva do art. 103, parágrafo único, protege menores, incapazes e ausentes: as parcelas vencidas não se perdem enquanto durar a incapacidade.',
+              baseLegal: 'Lei nº 8.213/91, art. 103, parágrafo único',
+              variacoes: [
+                { enunciado: 'A prescrição quinquenal das prestações previdenciárias alcança indistintamente todos os beneficiários, inclusive os absolutamente incapazes.', certa: false, explicacao: 'A lei ressalva expressamente os menores, incapazes e ausentes, contra quem não corre a prescrição.' },
               ],
             },
           ],
@@ -2187,7 +2276,6 @@ Súmula Vinculante 8 do STF declarou **inconstitucionais** os arts. 45 e 46 da L
         {
           id: 'prev-b2-t4-s3',
           nome: 'Crimes contra a seguridade social',
-          // conteúdo herdado do tópico 'prev-b2-10' da estrutura de 3 níveis
           teoria: `
 ## Os dois crimes centrais
 
@@ -2234,7 +2322,7 @@ Na sonegação (art. 337-A, §2º), o perdão judicial ou a multa cabem se o val
 `,
           questoes: [
             {
-              id: 'prev-b2-10-q1',
+              id: 'prev-b2-t4-s3-q1',
               enunciado: 'A empresa que desconta a contribuição previdenciária devida pelos trabalhadores e não a repassa à previdência social comete o crime de apropriação indébita previdenciária.',
               certa: true,
               explicacao: 'É exatamente a conduta do art. 168-A do Código Penal: o valor descontado já não pertencia à empresa. Item cobrado na prova de 2022.',
@@ -2244,7 +2332,7 @@ Na sonegação (art. 337-A, §2º), o perdão judicial ou a multa cabem se o val
               ],
             },
             {
-              id: 'prev-b2-10-q2',
+              id: 'prev-b2-t4-s3-q2',
               enunciado: 'Extingue-se a punibilidade dos crimes de apropriação indébita e sonegação previdenciária quando o agente promove o pagamento das contribuições devidas antes da prolação da sentença de primeiro grau.',
               certa: false,
               explicacao: 'O marco legal é o INÍCIO DA AÇÃO FISCAL, e não a sentença. Pagamento posterior pode, no máximo, gerar perdão judicial ou aplicação isolada de multa. Item cobrado na prova de 2022.',
@@ -2254,7 +2342,7 @@ Na sonegação (art. 337-A, §2º), o perdão judicial ou a multa cabem se o val
               ],
             },
             {
-              id: 'prev-b2-10-q3',
+              id: 'prev-b2-t4-s3-q3',
               enunciado: 'O juiz pode deixar de aplicar a pena ou aplicar somente a multa ao agente primário e de bons antecedentes que efetua o pagamento após o início da ação fiscal, mas antes do oferecimento da denúncia.',
               certa: true,
               explicacao: 'É a hipótese de perdão judicial facultativo do art. 168-A, §3º, I, do Código Penal.',
@@ -2264,13 +2352,23 @@ Na sonegação (art. 337-A, §2º), o perdão judicial ou a multa cabem se o val
               ],
             },
             {
-              id: 'prev-b2-10-q4',
+              id: 'prev-b2-t4-s3-q4',
               enunciado: 'Segundo entendimento do STF, o estelionato previdenciário praticado pelo próprio beneficiário que recebe prestações de forma continuada é crime instantâneo de efeitos permanentes.',
               certa: false,
               explicacao: 'Para o beneficiário que recebe continuadamente, o STF considera crime PERMANENTE, de modo que a prescrição só começa a correr do último recebimento. Instantâneo de efeitos permanentes é o do terceiro falsário.',
               baseLegal: 'Código Penal, art. 171, §3º; STF, HC 99.112',
               variacoes: [
                 { enunciado: 'Inserir declaração falsa em documento contábil destinado a fazer prova perante a previdência social configura crime de falsificação de documento público.', certa: true, explicacao: 'Correto — art. 297, §§3º e 4º, do Código Penal.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t4-s3-q5',
+              enunciado: 'A pena cominada aos crimes de apropriação indébita previdenciária e de sonegação de contribuição previdenciária é de reclusão, de dois a cinco anos, e multa.',
+              certa: true,
+              explicacao: 'Os arts. 168-A e 337-A do Código Penal têm idêntica cominação, o que reforça a gravidade equivalente atribuída às duas condutas.',
+              baseLegal: 'Código Penal, arts. 168-A e 337-A',
+              variacoes: [
+                { enunciado: 'O crime de apropriação indébita previdenciária é punido com detenção, de um a quatro anos, e multa.', certa: false, explicacao: 'A pena é de RECLUSÃO, de dois a cinco anos, e multa — não detenção.' },
               ],
             },
           ],
@@ -2285,7 +2383,6 @@ Na sonegação (art. 337-A, §2º), o perdão judicial ou a multa cabem se o val
         {
           id: 'prev-b2-t4-s4',
           nome: 'Recurso das decisões administrativas',
-          // conteúdo herdado do tópico 'prev-b2-11' da estrutura de 3 níveis
           teoria: `
 ## O Conselho de Recursos da Previdência Social
 
@@ -2333,7 +2430,7 @@ O **recurso tem efeito suspensivo e devolutivo**. A **desistência** pode ocorre
 `,
           questoes: [
             {
-              id: 'prev-b2-11-q1',
+              id: 'prev-b2-t4-s4-q1',
               enunciado: 'Compete ao Conselho de Recursos da Previdência Social julgar os recursos das decisões do INSS nos processos de interesse dos beneficiários do RGPS.',
               certa: true,
               explicacao: 'É a competência central do CRPS: o contencioso administrativo previdenciário relativo a benefícios do RGPS.',
@@ -2343,7 +2440,7 @@ O **recurso tem efeito suspensivo e devolutivo**. A **desistência** pode ocorre
               ],
             },
             {
-              id: 'prev-b2-11-q2',
+              id: 'prev-b2-t4-s4-q2',
               enunciado: 'A propositura, pelo recorrente, de ação judicial com objeto idêntico ao do recurso administrativo importa renúncia ao direito de recorrer e desistência do recurso interposto.',
               certa: true,
               explicacao: 'Aplica-se o art. 63, §2º, da Lei nº 9.784/99: a escolha da via judicial encerra a discussão administrativa. Item cobrado na prova de 2022.',
@@ -2353,7 +2450,7 @@ O **recurso tem efeito suspensivo e devolutivo**. A **desistência** pode ocorre
               ],
             },
             {
-              id: 'prev-b2-11-q3',
+              id: 'prev-b2-t4-s4-q3',
               enunciado: 'As Juntas de Recursos constituem a primeira instância recursal do Conselho de Recursos da Previdência Social, e suas decisões podem ser impugnadas por recurso especial dirigido às Câmaras de Julgamento.',
               certa: true,
               explicacao: 'É a estrutura em dois graus do CRPS, com o Conselho Pleno atuando na uniformização de jurisprudência.',
@@ -2363,13 +2460,23 @@ O **recurso tem efeito suspensivo e devolutivo**. A **desistência** pode ocorre
               ],
             },
             {
-              id: 'prev-b2-11-q4',
+              id: 'prev-b2-t4-s4-q4',
               enunciado: 'Segundo o STF, o ajuizamento de ação previdenciária exige o prévio requerimento administrativo, salvo nas hipóteses excepcionadas pela própria Corte.',
               certa: true,
               explicacao: 'É a tese do RE 631.240 (Tema 350): exige-se o requerimento administrativo prévio para caracterizar o interesse de agir — sem que isso signifique esgotar as instâncias recursais.',
               baseLegal: 'STF, RE 631.240, Tema 350',
               variacoes: [
                 { enunciado: 'É admitida a reformatio in pejus no processo administrativo previdenciário, desde que o recorrente seja previamente cientificado para se manifestar.', certa: true, explicacao: 'Correto — art. 64, parágrafo único, da Lei nº 9.784/99.' },
+              ],
+            },
+            {
+              id: 'prev-b2-t4-s4-q5',
+              enunciado: 'O prazo para interposição de recurso contra decisão do INSS perante o Conselho de Recursos da Previdência Social é de trinta dias, contados da ciência da decisão.',
+              certa: true,
+              explicacao: 'São 30 dias tanto para recorrer quanto para apresentar contrarrazões e para o recurso especial dirigido às Câmaras de Julgamento.',
+              baseLegal: 'Decreto nº 3.048/99, art. 305',
+              variacoes: [
+                { enunciado: 'O recurso interposto perante o Conselho de Recursos da Previdência Social possui apenas efeito devolutivo, prosseguindo a execução da decisão recorrida.', certa: false, explicacao: 'O recurso no contencioso previdenciário tem efeito suspensivo e devolutivo, o que impede a produção de efeitos da decisão enquanto pendente o julgamento.' },
               ],
             },
           ],

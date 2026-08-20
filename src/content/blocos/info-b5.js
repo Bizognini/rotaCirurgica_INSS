@@ -20,7 +20,6 @@ export default {
         {
           id: 'info-b5-t1-s1',
           nome: 'Conceitos de Internet e intranet',
-          // conteúdo herdado do tópico 'info-b1-01' da estrutura de 3 níveis
           teoria: `
 ## Internet, intranet e extranet
 
@@ -79,7 +78,7 @@ export default {
 `,
           questoes: [
             {
-              id: 'info-b1-01-q1',
+              id: 'info-b5-t1-s1-q1',
               enunciado: 'A intranet utiliza os mesmos protocolos e tecnologias da internet, diferenciando-se pelo acesso restrito aos membros da organização.',
               certa: true,
               explicacao: 'Ambas usam TCP/IP, HTTP e navegadores. A diferença está no alcance e no controle de acesso.',
@@ -88,7 +87,7 @@ export default {
               ],
             },
             {
-              id: 'info-b1-01-q2',
+              id: 'info-b5-t1-s1-q2',
               enunciado: 'O protocolo IMAP mantém as mensagens armazenadas no servidor, permitindo sincronização entre múltiplos dispositivos, ao contrário do POP3.',
               certa: true,
               explicacao: 'O POP3 baixa e, por padrão, remove do servidor; o IMAP sincroniza pastas e status de leitura entre aparelhos.',
@@ -97,12 +96,30 @@ export default {
               ],
             },
             {
-              id: 'info-b1-01-q3',
+              id: 'info-b5-t1-s1-q3',
               enunciado: 'O protocolo HTTPS acrescenta ao HTTP uma camada de criptografia, protegendo os dados trafegados entre o navegador e o servidor.',
               certa: true,
               explicacao: 'Usa TLS/SSL na porta 443, garantindo confidencialidade e integridade dos dados em trânsito.',
               variacoes: [
                 { enunciado: 'Uma rede virtual privada (VPN) dispensa a criptografia, pois utiliza canais físicos exclusivos.', certa: false, explicacao: 'A VPN cria um túnel CRIPTOGRAFADO sobre a internet pública — não há canal físico exclusivo.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s1-q4',
+              enunciado: 'O protocolo DNS é responsável por traduzir nomes de domínio em endereços IP.',
+              certa: true,
+              explicacao: 'Sem o DNS seria preciso decorar o IP de cada site. Ele opera na porta 53 e é alvo do ataque de pharming.',
+              variacoes: [
+                { enunciado: 'O protocolo DHCP é responsável por traduzir nomes de domínio em endereços IP.', certa: false, explicacao: 'O DHCP distribui endereços IP automaticamente na rede. A tradução de nomes é função do DNS.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s1-q5',
+              enunciado: 'O protocolo TCP é orientado à conexão e garante a entrega ordenada dos pacotes, enquanto o UDP prioriza a velocidade sem garantir a entrega.',
+              certa: true,
+              explicacao: 'Por isso o UDP é usado em streaming, jogos e VoIP, onde atraso incomoda mais que perda pontual de pacotes.',
+              variacoes: [
+                { enunciado: 'O protocolo UDP garante a entrega e a ordenação dos pacotes transmitidos.', certa: false, explicacao: 'Essas garantias são do TCP. O UDP é não confiável, porém mais rápido.' },
               ],
             },
           ],
@@ -117,7 +134,6 @@ export default {
         {
           id: 'info-b5-t1-s2',
           nome: 'Navegação e correio eletrônico',
-          // conteúdo herdado do tópico 'info-b1-05' da estrutura de 3 níveis
           teoria: `
 ## Navegadores
 
@@ -186,7 +202,7 @@ Principais: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**.
 `,
           questoes: [
             {
-              id: 'info-b1-05-q1',
+              id: 'info-b5-t1-s2-q1',
               enunciado: 'A navegação privativa impede que o histórico e os cookies sejam salvos no dispositivo, mas não torna o usuário anônimo na internet.',
               certa: true,
               explicacao: 'Provedor, empregador e sites visitados continuam podendo identificar o acesso.',
@@ -195,7 +211,7 @@ Principais: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**.
               ],
             },
             {
-              id: 'info-b1-05-q2',
+              id: 'info-b5-t1-s2-q2',
               enunciado: 'O campo Cco permite enviar cópia da mensagem sem que os demais destinatários tenham conhecimento desse envio.',
               certa: true,
               explicacao: 'É o recurso adequado para envios em massa preservando a privacidade dos endereços. Quem está em Cco não aparece no "responder a todos".',
@@ -204,12 +220,30 @@ Principais: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**.
               ],
             },
             {
-              id: 'info-b1-05-q3',
+              id: 'info-b5-t1-s2-q3',
               enunciado: 'No Microsoft Outlook, o recurso Sinalizador marca a mensagem para acompanhamento, sem movê-la para a pasta Lixo Eletrônico nem bloquear o remetente.',
               certa: true,
               explicacao: 'Sinalizar cria lembrete de acompanhamento. Bloquear remetente é ação distinta, na pasta Lixo Eletrônico. Item cobrado na prova de 2022.',
               variacoes: [
                 { enunciado: 'O protocolo HTTPS garante que o site acessado é idôneo e confiável.', certa: false, explicacao: 'O HTTPS garante apenas a criptografia do tráfego. Sites fraudulentos também podem usar HTTPS.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s2-q4',
+              enunciado: 'O atalho Ctrl+Shift+T reabre, na maioria dos navegadores, a última guia fechada.',
+              certa: true,
+              explicacao: 'Complementa Ctrl+T (nova guia) e Ctrl+W (fechar guia) — trio recorrente em provas de informática.',
+              variacoes: [
+                { enunciado: 'O atalho Ctrl+Shift+T abre uma janela de navegação anônima no Google Chrome.', certa: false, explicacao: 'A navegação anônima no Chrome é Ctrl+Shift+N. O Ctrl+Shift+T reabre a última guia fechada.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s2-q5',
+              enunciado: 'Os cookies são arquivos de texto armazenados pelo navegador e não possuem capacidade de executar código no computador do usuário.',
+              certa: true,
+              explicacao: 'Guardam preferências e sessão. Não sendo programas, não infectam a máquina — embora possam ser usados para rastreamento.',
+              variacoes: [
+                { enunciado: 'Os cookies são programas executáveis capazes de instalar software malicioso no computador do usuário.', certa: false, explicacao: 'Cookies são apenas arquivos de dados, sem capacidade de execução.' },
               ],
             },
           ],
@@ -224,7 +258,6 @@ Principais: **Google Chrome**, **Mozilla Firefox**, **Microsoft Edge**.
         {
           id: 'info-b5-t1-s3',
           nome: 'Ferramentas e aplicativos básicos de informática',
-          // conteúdo herdado do tópico 'info-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Hardware e software
 
@@ -292,7 +325,7 @@ A restauração do **incremental** exige o completo **e todos** os incrementais;
 `,
           questoes: [
             {
-              id: 'info-b1-02-q1',
+              id: 'info-b5-t1-s3-q1',
               enunciado: 'A memória RAM é volátil, perdendo seu conteúdo quando o computador é desligado.',
               certa: true,
               explicacao: 'A RAM é a área de trabalho ativa. A ROM é não volátil e armazena o firmware (BIOS/UEFI).',
@@ -301,7 +334,7 @@ A restauração do **incremental** exige o completo **e todos** os incrementais;
               ],
             },
             {
-              id: 'info-b1-02-q2',
+              id: 'info-b5-t1-s3-q2',
               enunciado: 'Backup diferencial copia todos os arquivos alterados desde o último backup completo, ao passo que o incremental copia apenas o que mudou desde o último backup de qualquer tipo.',
               certa: true,
               explicacao: 'Por isso a restauração do diferencial é mais simples: basta o completo mais o último diferencial.',
@@ -310,12 +343,30 @@ A restauração do **incremental** exige o completo **e todos** os incrementais;
               ],
             },
             {
-              id: 'info-b1-02-q3',
+              id: 'info-b5-t1-s3-q3',
               enunciado: 'Software livre é aquele que assegura ao usuário as liberdades de executar, estudar, modificar e redistribuir o programa.',
               certa: true,
               explicacao: 'Software livre não é sinônimo de gratuito: freeware é gratuito, mas pode ter código fechado.',
               variacoes: [
                 { enunciado: 'Todo software gratuito é considerado software livre.', certa: false, explicacao: 'Freeware é gratuito, mas pode ser proprietário. Livre exige as quatro liberdades, inclusive acesso ao código-fonte.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s3-q4',
+              enunciado: 'A memória ROM é não volátil e armazena o firmware responsável pela inicialização do computador.',
+              certa: true,
+              explicacao: 'É onde reside a BIOS/UEFI. A RAM, ao contrário, é volátil e perde todo o conteúdo ao desligar.',
+              variacoes: [
+                { enunciado: 'A memória ROM é volátil, perdendo seu conteúdo quando o equipamento é desligado.', certa: false, explicacao: 'A ROM é NÃO volátil. Quem perde o conteúdo ao desligar é a RAM.' },
+              ],
+            },
+            {
+              id: 'info-b5-t1-s3-q5',
+              enunciado: 'Formatos como ZIP e PNG utilizam compactação sem perdas, permitindo a reconstituição integral do arquivo original.',
+              certa: true,
+              explicacao: 'JPEG e MP3, ao contrário, descartam informação para reduzir tamanho — a compactação com perdas é irreversível.',
+              variacoes: [
+                { enunciado: 'O formato JPEG utiliza compactação sem perdas, preservando integralmente a informação da imagem original.', certa: false, explicacao: 'JPEG usa compactação COM perdas: parte da informação é descartada e não pode ser recuperada.' },
               ],
             },
           ],
@@ -336,7 +387,6 @@ A restauração do **incremental** exige o completo **e todos** os incrementais;
         {
           id: 'info-b5-t2-s1',
           nome: 'Editor de texto (Writer)',
-          // conteúdo herdado do tópico 'info-b1-03' da estrutura de 3 níveis
           teoria: `
 ## O pacote e suas extensões
 
@@ -401,7 +451,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
 `,
           questoes: [
             {
-              id: 'info-b1-03-q1',
+              id: 'info-b5-t2-s1-q1',
               enunciado: 'No LibreOffice Calc, a fórmula =SOMASE(A1:A7;"auxílio*";B1:B7) soma os valores de B1:B7 cujas células correspondentes em A1:A7 comecem com o texto "auxílio".',
               certa: true,
               explicacao: 'O asterisco é curinga para qualquer sequência de caracteres. O ponto de interrogação substitui um único caractere. Função cobrada na prova de 2022.',
@@ -410,7 +460,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q2',
+              id: 'info-b5-t2-s1-q2',
               enunciado: 'A referência $A$1, ao ser copiada para outras células, mantém-se inalterada, por tratar-se de referência absoluta.',
               certa: true,
               explicacao: 'O cifrão fixa a parte que o antecede. Em referências mistas ($A1 ou A$1), fixa-se apenas coluna ou linha.',
@@ -419,12 +469,30 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q3',
+              id: 'info-b5-t2-s1-q3',
               enunciado: 'A função CONT.NÚM conta apenas as células que contêm valores numéricos, enquanto CONT.VALORES conta todas as células não vazias.',
               certa: true,
               explicacao: 'Distinção clássica: CONT.NÚM ignora texto; CONT.VALORES considera qualquer conteúdo.',
               variacoes: [
                 { enunciado: 'A extensão nativa de arquivos de planilha do LibreOffice Calc é .xlsx.', certa: false, explicacao: 'A extensão nativa é .ods (ODF). O .xlsx é do Microsoft Excel, embora o Calc consiga abri-lo e salvá-lo.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s1-q4',
+              enunciado: 'A extensão nativa dos documentos de texto criados no LibreOffice Writer é .odt.',
+              certa: true,
+              explicacao: 'O ODF é padrão aberto ISO. O Writer também abre e salva .docx, mas o formato nativo é o .odt.',
+              variacoes: [
+                { enunciado: 'A extensão nativa dos documentos do LibreOffice Writer é .docx.', certa: false, explicacao: '.docx é o formato do Microsoft Word. O nativo do Writer é .odt.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s1-q5',
+              enunciado: 'No LibreOffice Writer, o atalho Ctrl+Enter insere uma quebra de página no documento.',
+              certa: true,
+              explicacao: 'Diferente de pressionar Enter várias vezes: a quebra de página é estrutural e não se desfaz ao editar o texto anterior.',
+              variacoes: [
+                { enunciado: 'No LibreOffice Writer, a quebra de página é inserida por meio do atalho Ctrl+Shift+Enter.', certa: false, explicacao: 'A quebra de página é Ctrl+Enter.' },
               ],
             },
           ],
@@ -439,7 +507,6 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
         {
           id: 'info-b5-t2-s2',
           nome: 'Planilha (Calc)',
-          // conteúdo herdado do tópico 'info-b1-03' da estrutura de 3 níveis
           teoria: `
 ## O pacote e suas extensões
 
@@ -504,7 +571,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
 `,
           questoes: [
             {
-              id: 'info-b1-03-q1',
+              id: 'info-b5-t2-s2-q1',
               enunciado: 'No LibreOffice Calc, a fórmula =SOMASE(A1:A7;"auxílio*";B1:B7) soma os valores de B1:B7 cujas células correspondentes em A1:A7 comecem com o texto "auxílio".',
               certa: true,
               explicacao: 'O asterisco é curinga para qualquer sequência de caracteres. O ponto de interrogação substitui um único caractere. Função cobrada na prova de 2022.',
@@ -513,7 +580,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q2',
+              id: 'info-b5-t2-s2-q2',
               enunciado: 'A referência $A$1, ao ser copiada para outras células, mantém-se inalterada, por tratar-se de referência absoluta.',
               certa: true,
               explicacao: 'O cifrão fixa a parte que o antecede. Em referências mistas ($A1 ou A$1), fixa-se apenas coluna ou linha.',
@@ -522,12 +589,30 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q3',
+              id: 'info-b5-t2-s2-q3',
               enunciado: 'A função CONT.NÚM conta apenas as células que contêm valores numéricos, enquanto CONT.VALORES conta todas as células não vazias.',
               certa: true,
               explicacao: 'Distinção clássica: CONT.NÚM ignora texto; CONT.VALORES considera qualquer conteúdo.',
               variacoes: [
                 { enunciado: 'A extensão nativa de arquivos de planilha do LibreOffice Calc é .xlsx.', certa: false, explicacao: 'A extensão nativa é .ods (ODF). O .xlsx é do Microsoft Excel, embora o Calc consiga abri-lo e salvá-lo.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s2-q4',
+              enunciado: 'No LibreOffice Calc, a função CONT.SE conta as células de um intervalo que atendem a um critério especificado.',
+              certa: true,
+              explicacao: 'CONT.SE conta conforme critério; SOMASE soma os valores correspondentes. Ambas aceitam curingas no critério.',
+              variacoes: [
+                { enunciado: 'No LibreOffice Calc, a função CONT.SE soma os valores das células que atendem ao critério especificado.', certa: false, explicacao: 'CONT.SE CONTA células. Quem soma conforme critério é a função SOMASE.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s2-q5',
+              enunciado: 'A exibição de "###" em uma célula do Calc indica que a largura da coluna é insuficiente para mostrar o conteúdo.',
+              certa: true,
+              explicacao: 'Não é erro de fórmula: basta alargar a coluna. Erros reais aparecem como #DIV/0!, #NOME?, #VALOR! e #REF!.',
+              variacoes: [
+                { enunciado: 'A exibição de "###" em uma célula indica erro na fórmula nela inserida.', certa: false, explicacao: 'Indica apenas coluna estreita demais. Erros de fórmula têm mensagens próprias.' },
               ],
             },
           ],
@@ -542,7 +627,6 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
         {
           id: 'info-b5-t2-s3',
           nome: 'Apresentação (Impress)',
-          // conteúdo herdado do tópico 'info-b1-03' da estrutura de 3 níveis
           teoria: `
 ## O pacote e suas extensões
 
@@ -607,7 +691,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
 `,
           questoes: [
             {
-              id: 'info-b1-03-q1',
+              id: 'info-b5-t2-s3-q1',
               enunciado: 'No LibreOffice Calc, a fórmula =SOMASE(A1:A7;"auxílio*";B1:B7) soma os valores de B1:B7 cujas células correspondentes em A1:A7 comecem com o texto "auxílio".',
               certa: true,
               explicacao: 'O asterisco é curinga para qualquer sequência de caracteres. O ponto de interrogação substitui um único caractere. Função cobrada na prova de 2022.',
@@ -616,7 +700,7 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q2',
+              id: 'info-b5-t2-s3-q2',
               enunciado: 'A referência $A$1, ao ser copiada para outras células, mantém-se inalterada, por tratar-se de referência absoluta.',
               certa: true,
               explicacao: 'O cifrão fixa a parte que o antecede. Em referências mistas ($A1 ou A$1), fixa-se apenas coluna ou linha.',
@@ -625,12 +709,30 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
               ],
             },
             {
-              id: 'info-b1-03-q3',
+              id: 'info-b5-t2-s3-q3',
               enunciado: 'A função CONT.NÚM conta apenas as células que contêm valores numéricos, enquanto CONT.VALORES conta todas as células não vazias.',
               certa: true,
               explicacao: 'Distinção clássica: CONT.NÚM ignora texto; CONT.VALORES considera qualquer conteúdo.',
               variacoes: [
                 { enunciado: 'A extensão nativa de arquivos de planilha do LibreOffice Calc é .xlsx.', certa: false, explicacao: 'A extensão nativa é .ods (ODF). O .xlsx é do Microsoft Excel, embora o Calc consiga abri-lo e salvá-lo.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s3-q4',
+              enunciado: 'No LibreOffice Impress, o slide mestre permite aplicar formatação padronizada a todos os slides da apresentação.',
+              certa: true,
+              explicacao: 'Alterar o mestre propaga a mudança para todos os slides que o utilizam, sem edição individual.',
+              variacoes: [
+                { enunciado: 'No LibreOffice Impress, alterações feitas no slide mestre precisam ser replicadas manualmente em cada slide.', certa: false, explicacao: 'A propagação é automática — essa é justamente a função do slide mestre.' },
+              ],
+            },
+            {
+              id: 'info-b5-t2-s3-q5',
+              enunciado: 'A extensão nativa das apresentações do LibreOffice Impress é .odp.',
+              certa: true,
+              explicacao: 'Segue o padrão ODF: .odt (texto), .ods (planilha), .odp (apresentação), .odg (desenho), .odb (banco de dados).',
+              variacoes: [
+                { enunciado: 'A tecla F5 no LibreOffice Impress inicia a apresentação de slides.', certa: true, explicacao: 'Correto — F5 inicia a apresentação, mesmo atalho usado no PowerPoint.' },
               ],
             },
           ],
@@ -652,7 +754,6 @@ Toda fórmula começa com **=**. A ordem de precedência é: parênteses → pot
         {
           id: 'info-b5-t3-s1',
           nome: 'Windows 7 e 10 — noções básicas',
-          // conteúdo herdado do tópico 'info-b1-04' da estrutura de 3 níveis
           teoria: `
 ## Estrutura de arquivos
 
@@ -720,7 +821,7 @@ Arquivos excluídos vão para a **Lixeira**. **Shift+Delete** exclui **sem** pas
 `,
           questoes: [
             {
-              id: 'info-b1-04-q1',
+              id: 'info-b5-t3-s1-q1',
               enunciado: 'No Windows 10, a Segurança do Windows verifica continuamente a existência de malwares e vírus e inclui o Microsoft Defender Antivírus.',
               certa: true,
               explicacao: 'A Segurança do Windows é a central nativa de proteção e traz o Defender Antivírus embutido, com proteção em tempo real. Item cobrado na prova de 2022.',
@@ -729,7 +830,7 @@ Arquivos excluídos vão para a **Lixeira**. **Shift+Delete** exclui **sem** pas
               ],
             },
             {
-              id: 'info-b1-04-q2',
+              id: 'info-b5-t3-s1-q2',
               enunciado: 'Com a finalidade de proteger seus arquivos no Windows 10, o usuário pode criptografá-los pelo aplicativo Windows Defender Firewall, no painel Segurança do Windows.',
               certa: false,
               explicacao: 'O firewall filtra tráfego de rede e não criptografa. A criptografia é feita pelo BitLocker (discos) ou pelo EFS (arquivos e pastas). Item cobrado na prova de 2022.',
@@ -738,12 +839,30 @@ Arquivos excluídos vão para a **Lixeira**. **Shift+Delete** exclui **sem** pas
               ],
             },
             {
-              id: 'info-b1-04-q3',
+              id: 'info-b5-t3-s1-q3',
               enunciado: 'O Desfragmentador de Disco reorganiza dados fragmentados no disco rígido, permitindo que ele funcione de maneira mais eficiente.',
               certa: true,
               explicacao: 'A desfragmentação vale para HDs mecânicos. Em SSD, o Windows executa o TRIM, e desfragmentar reduziria a vida útil. Item cobrado na prova de 2022.',
               variacoes: [
                 { enunciado: 'A desfragmentação periódica é recomendada para unidades SSD, a fim de melhorar seu desempenho.', certa: false, explicacao: 'SSD não deve ser desfragmentado: o Windows usa TRIM, e a desfragmentação reduz a vida útil da unidade.' },
+              ],
+            },
+            {
+              id: 'info-b5-t3-s1-q4',
+              enunciado: 'No Windows, a combinação Shift+Delete exclui o arquivo sem enviá-lo para a Lixeira.',
+              certa: true,
+              explicacao: 'A exclusão é permanente e não comporta restauração pela interface — daí o cuidado que o atalho exige.',
+              variacoes: [
+                { enunciado: 'No Windows, arquivos excluídos de unidades de rede são enviados para a Lixeira local do computador.', certa: false, explicacao: 'Arquivos em unidades de rede e removíveis, em regra, não passam pela Lixeira: são excluídos diretamente.' },
+              ],
+            },
+            {
+              id: 'info-b5-t3-s1-q5',
+              enunciado: 'O Controle de Conta de Usuário (UAC) solicita confirmação antes da execução de ações que exijam privilégios administrativos.',
+              certa: true,
+              explicacao: 'Reduz o impacto de malware executado por usuário comum, ao impedir alterações silenciosas no sistema.',
+              variacoes: [
+                { enunciado: 'O Controle de Conta de Usuário (UAC) é um antivírus nativo do Windows responsável pela remoção de malwares.', certa: false, explicacao: 'O UAC controla elevação de privilégios. O antivírus nativo é o Microsoft Defender Antivírus.' },
               ],
             },
           ],
@@ -758,7 +877,6 @@ Arquivos excluídos vão para a **Lixeira**. **Shift+Delete** exclui **sem** pas
         {
           id: 'info-b5-t3-s2',
           nome: 'Segurança — vírus, worms e derivados',
-          // conteúdo herdado do tópico 'info-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Princípios da segurança da informação — DICA
 
@@ -825,7 +943,7 @@ Pagar o resgate **não garante** a recuperação. A proteção efetiva é o **ba
 `,
           questoes: [
             {
-              id: 'info-b1-06-q1',
+              id: 'info-b5-t3-s2-q1',
               enunciado: 'O worm distingue-se do vírus por ser autorreplicante e propagar-se automaticamente pela rede, sem necessidade de hospedeiro.',
               certa: true,
               explicacao: 'O vírus precisa de arquivo hospedeiro e de execução pelo usuário; o worm se propaga sozinho, explorando vulnerabilidades da rede.',
@@ -834,7 +952,7 @@ Pagar o resgate **não garante** a recuperação. A proteção efetiva é o **ba
               ],
             },
             {
-              id: 'info-b1-06-q2',
+              id: 'info-b5-t3-s2-q2',
               enunciado: 'O ransomware criptografa os dados da vítima e exige pagamento de resgate para restaurar o acesso, sendo o backup isolado a principal medida de proteção.',
               certa: true,
               explicacao: 'Pagar não garante recuperação. Backup acessível pela mesma rede também é criptografado — por isso deve ser offline ou isolado.',
@@ -843,7 +961,7 @@ Pagar o resgate **não garante** a recuperação. A proteção efetiva é o **ba
               ],
             },
             {
-              id: 'info-b1-06-q3',
+              id: 'info-b5-t3-s2-q3',
               enunciado: 'A assinatura digital garante autenticidade, integridade e não repúdio, mas não assegura a confidencialidade do documento.',
               certa: true,
               explicacao: 'A assinatura cifra o hash com a chave privada do autor. Para confidencialidade é preciso cifrar o conteúdo com a chave pública do destinatário.',
@@ -852,12 +970,21 @@ Pagar o resgate **não garante** a recuperação. A proteção efetiva é o **ba
               ],
             },
             {
-              id: 'info-b1-06-q4',
+              id: 'info-b5-t3-s2-q4',
               enunciado: 'O ataque de negação de serviço (DoS) compromete principalmente o princípio da disponibilidade da informação.',
               certa: true,
               explicacao: 'O DoS/DDoS sobrecarrega o serviço para torná-lo inacessível aos usuários legítimos.',
               variacoes: [
                 { enunciado: 'O pharming consiste no envio de mensagens fraudulentas por e-mail que se passam por instituições legítimas.', certa: false, explicacao: 'Isso é PHISHING. O pharming manipula o DNS para redirecionar a um site falso mesmo com o endereço correto.' },
+              ],
+            },
+            {
+              id: 'info-b5-t3-s2-q5',
+              enunciado: 'O keylogger captura as teclas digitadas pelo usuário, ao passo que o screenlogger registra a tela ou a região do clique do mouse.',
+              certa: true,
+              explicacao: 'Ambos são espécies de spyware. O screenlogger surgiu para driblar os teclados virtuais dos bancos.',
+              variacoes: [
+                { enunciado: 'O keylogger e o screenlogger são espécies de ransomware, pois criptografam os dados capturados.', certa: false, explicacao: 'São espécies de SPYWARE: monitoram e coletam informações, sem criptografar dados para exigir resgate.' },
               ],
             },
           ],

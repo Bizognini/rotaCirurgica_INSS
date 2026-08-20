@@ -140,7 +140,6 @@ Na Cebraspe, **cada erro anula um acerto**. Isso muda a forma de estudar: não b
         {
           id: 'prev-b1-t1-s2',
           nome: 'Seguridade Social — introdução',
-          // conteúdo herdado do tópico 'prev-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que é Seguridade Social
 
@@ -187,7 +186,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
 `,
           questoes: [
             {
-              id: 'prev-b1-01-q1',
+              id: 'prev-b1-t1-s2-q1',
               enunciado: 'A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.',
               certa: true,
               explicacao: 'Reprodução literal do art. 194, caput, da CF/88. Note que a iniciativa não é exclusiva do Poder Público — a sociedade também integra o conceito.',
@@ -198,7 +197,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q2',
+              id: 'prev-b1-t1-s2-q2',
               enunciado: 'A Lei Eloy Chaves, de 1923, é considerada o marco inicial da previdência social no Brasil e criou as Caixas de Aposentadoria e Pensões dos ferroviários.',
               certa: true,
               explicacao: 'O Decreto Legislativo nº 4.682/1923 (Lei Eloy Chaves) criou as CAPs no âmbito das empresas ferroviárias, sendo o marco inicial da previdência brasileira.',
@@ -208,7 +207,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q3',
+              id: 'prev-b1-t1-s2-q3',
               enunciado: 'Diferentemente da previdência social, a assistência social é prestada a quem dela necessitar, independentemente de contribuição à seguridade social.',
               certa: true,
               explicacao: 'O art. 203 da CF/88 é expresso ao dispor que a assistência social será prestada a quem dela necessitar, independentemente de contribuição. Já a previdência tem caráter contributivo (art. 201).',
@@ -218,7 +217,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q4',
+              id: 'prev-b1-t1-s2-q4',
               enunciado: 'A Lei Orgânica da Previdência Social (LOPS), de 1960, promoveu a unificação dos institutos de aposentadoria e pensões em um órgão único.',
               certa: false,
               explicacao: 'A LOPS (Lei nº 3.807/1960) unificou a LEGISLAÇÃO previdenciária. A unificação dos institutos só ocorreu em 1966, com a criação do INPS pelo Decreto-Lei nº 72.',
@@ -228,7 +227,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q5',
+              id: 'prev-b1-t1-s2-q5',
               enunciado: 'O Instituto Nacional do Seguro Social (INSS) foi criado em 1990 a partir da fusão do INPS com o IAPAS e possui natureza jurídica de autarquia federal.',
               certa: true,
               explicacao: 'O INSS resultou da fusão entre INPS e IAPAS (Lei nº 8.029/1990, regulamentada pelo Decreto nº 99.350/1990) e é autarquia federal vinculada ao ministério responsável pela previdência.',
@@ -250,7 +249,6 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
         {
           id: 'prev-b1-t1-s3',
           nome: 'Origem e evolução legislativa no Brasil (partes 1 e 2)',
-          // conteúdo herdado do tópico 'prev-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que é Seguridade Social
 
@@ -297,7 +295,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
 `,
           questoes: [
             {
-              id: 'prev-b1-01-q1',
+              id: 'prev-b1-t1-s3-q1',
               enunciado: 'A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.',
               certa: true,
               explicacao: 'Reprodução literal do art. 194, caput, da CF/88. Note que a iniciativa não é exclusiva do Poder Público — a sociedade também integra o conceito.',
@@ -308,7 +306,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q2',
+              id: 'prev-b1-t1-s3-q2',
               enunciado: 'A Lei Eloy Chaves, de 1923, é considerada o marco inicial da previdência social no Brasil e criou as Caixas de Aposentadoria e Pensões dos ferroviários.',
               certa: true,
               explicacao: 'O Decreto Legislativo nº 4.682/1923 (Lei Eloy Chaves) criou as CAPs no âmbito das empresas ferroviárias, sendo o marco inicial da previdência brasileira.',
@@ -318,7 +316,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q3',
+              id: 'prev-b1-t1-s3-q3',
               enunciado: 'Diferentemente da previdência social, a assistência social é prestada a quem dela necessitar, independentemente de contribuição à seguridade social.',
               certa: true,
               explicacao: 'O art. 203 da CF/88 é expresso ao dispor que a assistência social será prestada a quem dela necessitar, independentemente de contribuição. Já a previdência tem caráter contributivo (art. 201).',
@@ -328,7 +326,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q4',
+              id: 'prev-b1-t1-s3-q4',
               enunciado: 'A Lei Orgânica da Previdência Social (LOPS), de 1960, promoveu a unificação dos institutos de aposentadoria e pensões em um órgão único.',
               certa: false,
               explicacao: 'A LOPS (Lei nº 3.807/1960) unificou a LEGISLAÇÃO previdenciária. A unificação dos institutos só ocorreu em 1966, com a criação do INPS pelo Decreto-Lei nº 72.',
@@ -338,7 +336,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q5',
+              id: 'prev-b1-t1-s3-q5',
               enunciado: 'O Instituto Nacional do Seguro Social (INSS) foi criado em 1990 a partir da fusão do INPS com o IAPAS e possui natureza jurídica de autarquia federal.',
               certa: true,
               explicacao: 'O INSS resultou da fusão entre INPS e IAPAS (Lei nº 8.029/1990, regulamentada pelo Decreto nº 99.350/1990) e é autarquia federal vinculada ao ministério responsável pela previdência.',
@@ -360,7 +358,6 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
         {
           id: 'prev-b1-t1-s4',
           nome: 'Conceito de Seguridade Social',
-          // conteúdo herdado do tópico 'prev-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que é Seguridade Social
 
@@ -407,7 +404,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
 `,
           questoes: [
             {
-              id: 'prev-b1-01-q1',
+              id: 'prev-b1-t1-s4-q1',
               enunciado: 'A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.',
               certa: true,
               explicacao: 'Reprodução literal do art. 194, caput, da CF/88. Note que a iniciativa não é exclusiva do Poder Público — a sociedade também integra o conceito.',
@@ -418,7 +415,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q2',
+              id: 'prev-b1-t1-s4-q2',
               enunciado: 'A Lei Eloy Chaves, de 1923, é considerada o marco inicial da previdência social no Brasil e criou as Caixas de Aposentadoria e Pensões dos ferroviários.',
               certa: true,
               explicacao: 'O Decreto Legislativo nº 4.682/1923 (Lei Eloy Chaves) criou as CAPs no âmbito das empresas ferroviárias, sendo o marco inicial da previdência brasileira.',
@@ -428,7 +425,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q3',
+              id: 'prev-b1-t1-s4-q3',
               enunciado: 'Diferentemente da previdência social, a assistência social é prestada a quem dela necessitar, independentemente de contribuição à seguridade social.',
               certa: true,
               explicacao: 'O art. 203 da CF/88 é expresso ao dispor que a assistência social será prestada a quem dela necessitar, independentemente de contribuição. Já a previdência tem caráter contributivo (art. 201).',
@@ -438,7 +435,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q4',
+              id: 'prev-b1-t1-s4-q4',
               enunciado: 'A Lei Orgânica da Previdência Social (LOPS), de 1960, promoveu a unificação dos institutos de aposentadoria e pensões em um órgão único.',
               certa: false,
               explicacao: 'A LOPS (Lei nº 3.807/1960) unificou a LEGISLAÇÃO previdenciária. A unificação dos institutos só ocorreu em 1966, com a criação do INPS pelo Decreto-Lei nº 72.',
@@ -448,7 +445,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q5',
+              id: 'prev-b1-t1-s4-q5',
               enunciado: 'O Instituto Nacional do Seguro Social (INSS) foi criado em 1990 a partir da fusão do INPS com o IAPAS e possui natureza jurídica de autarquia federal.',
               certa: true,
               explicacao: 'O INSS resultou da fusão entre INPS e IAPAS (Lei nº 8.029/1990, regulamentada pelo Decreto nº 99.350/1990) e é autarquia federal vinculada ao ministério responsável pela previdência.',
@@ -470,7 +467,6 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
         {
           id: 'prev-b1-t1-s5',
           nome: 'Organização da Seguridade Social',
-          // conteúdo herdado do tópico 'prev-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Onde estão os princípios
 
@@ -517,7 +513,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
 `,
           questoes: [
             {
-              id: 'prev-b1-02-q1',
+              id: 'prev-b1-t1-s5-q1',
               enunciado: 'O caráter democrático e descentralizado da administração da seguridade social se realiza mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.',
               certa: true,
               explicacao: 'Literalidade do art. 194, parágrafo único, VII, da CF/88. São quatro os participantes — o erro comum da banca é falar em gestão tripartite ou omitir os aposentados.',
@@ -527,7 +523,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q2',
+              id: 'prev-b1-t1-s5-q2',
               enunciado: 'Nenhum benefício ou serviço da seguridade social poderá ser criado, majorado ou estendido sem a correspondente fonte de custeio total.',
               certa: true,
               explicacao: 'Trata-se da regra da contrapartida, prevista no art. 195, §5º, da CF/88. Alcança as três hipóteses: criação, majoração e extensão.',
@@ -537,7 +533,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q3',
+              id: 'prev-b1-t1-s5-q3',
               enunciado: 'As contribuições sociais destinadas à seguridade social só podem ser exigidas no exercício financeiro seguinte ao da publicação da lei que as instituiu, em observância ao princípio da anterioridade anual.',
               certa: false,
               explicacao: 'As contribuições sociais submetem-se apenas à anterioridade nonagesimal (90 dias), sendo expressamente excepcionadas da anterioridade anual do art. 150, III, "b", conforme o art. 195, §6º, da CF/88.',
@@ -547,7 +543,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q4',
+              id: 'prev-b1-t1-s5-q4',
               enunciado: 'O princípio da equidade na forma de participação no custeio impõe que todos os contribuintes recolham contribuições em idêntico percentual, vedada a diferenciação por atividade econômica.',
               certa: false,
               explicacao: 'A equidade significa justamente o oposto: quem tem maior capacidade contributiva ou gera maior risco contribui mais. Daí alíquotas de RAT diferenciadas por risco e adicionais para instituições financeiras.',
@@ -557,7 +553,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q5',
+              id: 'prev-b1-t1-s5-q5',
               enunciado: 'A universalidade da cobertura refere-se às pessoas protegidas pelo sistema, enquanto a universalidade do atendimento diz respeito às contingências sociais cobertas.',
               certa: false,
               explicacao: 'Os conceitos estão invertidos. A cobertura é objetiva (riscos/contingências protegidos); o atendimento é subjetivo (pessoas protegidas).',
@@ -586,7 +582,6 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
         {
           id: 'prev-b1-t2-s1',
           nome: 'Princípios constitucionais — visão geral',
-          // conteúdo herdado do tópico 'prev-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Onde estão os princípios
 
@@ -633,7 +628,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
 `,
           questoes: [
             {
-              id: 'prev-b1-02-q1',
+              id: 'prev-b1-t2-s1-q1',
               enunciado: 'O caráter democrático e descentralizado da administração da seguridade social se realiza mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.',
               certa: true,
               explicacao: 'Literalidade do art. 194, parágrafo único, VII, da CF/88. São quatro os participantes — o erro comum da banca é falar em gestão tripartite ou omitir os aposentados.',
@@ -643,7 +638,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q2',
+              id: 'prev-b1-t2-s1-q2',
               enunciado: 'Nenhum benefício ou serviço da seguridade social poderá ser criado, majorado ou estendido sem a correspondente fonte de custeio total.',
               certa: true,
               explicacao: 'Trata-se da regra da contrapartida, prevista no art. 195, §5º, da CF/88. Alcança as três hipóteses: criação, majoração e extensão.',
@@ -653,7 +648,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q3',
+              id: 'prev-b1-t2-s1-q3',
               enunciado: 'As contribuições sociais destinadas à seguridade social só podem ser exigidas no exercício financeiro seguinte ao da publicação da lei que as instituiu, em observância ao princípio da anterioridade anual.',
               certa: false,
               explicacao: 'As contribuições sociais submetem-se apenas à anterioridade nonagesimal (90 dias), sendo expressamente excepcionadas da anterioridade anual do art. 150, III, "b", conforme o art. 195, §6º, da CF/88.',
@@ -663,7 +658,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q4',
+              id: 'prev-b1-t2-s1-q4',
               enunciado: 'O princípio da equidade na forma de participação no custeio impõe que todos os contribuintes recolham contribuições em idêntico percentual, vedada a diferenciação por atividade econômica.',
               certa: false,
               explicacao: 'A equidade significa justamente o oposto: quem tem maior capacidade contributiva ou gera maior risco contribui mais. Daí alíquotas de RAT diferenciadas por risco e adicionais para instituições financeiras.',
@@ -673,7 +668,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q5',
+              id: 'prev-b1-t2-s1-q5',
               enunciado: 'A universalidade da cobertura refere-se às pessoas protegidas pelo sistema, enquanto a universalidade do atendimento diz respeito às contingências sociais cobertas.',
               certa: false,
               explicacao: 'Os conceitos estão invertidos. A cobertura é objetiva (riscos/contingências protegidos); o atendimento é subjetivo (pessoas protegidas).',
@@ -695,7 +690,6 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
         {
           id: 'prev-b1-t2-s2',
           nome: 'CF art. 194, incisos I a IV',
-          // conteúdo herdado do tópico 'prev-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Onde estão os princípios
 
@@ -742,7 +736,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
 `,
           questoes: [
             {
-              id: 'prev-b1-02-q1',
+              id: 'prev-b1-t2-s2-q1',
               enunciado: 'O caráter democrático e descentralizado da administração da seguridade social se realiza mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.',
               certa: true,
               explicacao: 'Literalidade do art. 194, parágrafo único, VII, da CF/88. São quatro os participantes — o erro comum da banca é falar em gestão tripartite ou omitir os aposentados.',
@@ -752,7 +746,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q2',
+              id: 'prev-b1-t2-s2-q2',
               enunciado: 'Nenhum benefício ou serviço da seguridade social poderá ser criado, majorado ou estendido sem a correspondente fonte de custeio total.',
               certa: true,
               explicacao: 'Trata-se da regra da contrapartida, prevista no art. 195, §5º, da CF/88. Alcança as três hipóteses: criação, majoração e extensão.',
@@ -762,7 +756,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q3',
+              id: 'prev-b1-t2-s2-q3',
               enunciado: 'As contribuições sociais destinadas à seguridade social só podem ser exigidas no exercício financeiro seguinte ao da publicação da lei que as instituiu, em observância ao princípio da anterioridade anual.',
               certa: false,
               explicacao: 'As contribuições sociais submetem-se apenas à anterioridade nonagesimal (90 dias), sendo expressamente excepcionadas da anterioridade anual do art. 150, III, "b", conforme o art. 195, §6º, da CF/88.',
@@ -772,7 +766,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q4',
+              id: 'prev-b1-t2-s2-q4',
               enunciado: 'O princípio da equidade na forma de participação no custeio impõe que todos os contribuintes recolham contribuições em idêntico percentual, vedada a diferenciação por atividade econômica.',
               certa: false,
               explicacao: 'A equidade significa justamente o oposto: quem tem maior capacidade contributiva ou gera maior risco contribui mais. Daí alíquotas de RAT diferenciadas por risco e adicionais para instituições financeiras.',
@@ -782,7 +776,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q5',
+              id: 'prev-b1-t2-s2-q5',
               enunciado: 'A universalidade da cobertura refere-se às pessoas protegidas pelo sistema, enquanto a universalidade do atendimento diz respeito às contingências sociais cobertas.',
               certa: false,
               explicacao: 'Os conceitos estão invertidos. A cobertura é objetiva (riscos/contingências protegidos); o atendimento é subjetivo (pessoas protegidas).',
@@ -804,7 +798,6 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
         {
           id: 'prev-b1-t2-s3',
           nome: 'CF art. 194, incisos V a VII',
-          // conteúdo herdado do tópico 'prev-b1-02' da estrutura de 3 níveis
           teoria: `
 ## Onde estão os princípios
 
@@ -851,7 +844,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
 `,
           questoes: [
             {
-              id: 'prev-b1-02-q1',
+              id: 'prev-b1-t2-s3-q1',
               enunciado: 'O caráter democrático e descentralizado da administração da seguridade social se realiza mediante gestão quadripartite, com participação dos trabalhadores, dos empregadores, dos aposentados e do Governo nos órgãos colegiados.',
               certa: true,
               explicacao: 'Literalidade do art. 194, parágrafo único, VII, da CF/88. São quatro os participantes — o erro comum da banca é falar em gestão tripartite ou omitir os aposentados.',
@@ -861,7 +854,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q2',
+              id: 'prev-b1-t2-s3-q2',
               enunciado: 'Nenhum benefício ou serviço da seguridade social poderá ser criado, majorado ou estendido sem a correspondente fonte de custeio total.',
               certa: true,
               explicacao: 'Trata-se da regra da contrapartida, prevista no art. 195, §5º, da CF/88. Alcança as três hipóteses: criação, majoração e extensão.',
@@ -871,7 +864,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q3',
+              id: 'prev-b1-t2-s3-q3',
               enunciado: 'As contribuições sociais destinadas à seguridade social só podem ser exigidas no exercício financeiro seguinte ao da publicação da lei que as instituiu, em observância ao princípio da anterioridade anual.',
               certa: false,
               explicacao: 'As contribuições sociais submetem-se apenas à anterioridade nonagesimal (90 dias), sendo expressamente excepcionadas da anterioridade anual do art. 150, III, "b", conforme o art. 195, §6º, da CF/88.',
@@ -881,7 +874,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q4',
+              id: 'prev-b1-t2-s3-q4',
               enunciado: 'O princípio da equidade na forma de participação no custeio impõe que todos os contribuintes recolham contribuições em idêntico percentual, vedada a diferenciação por atividade econômica.',
               certa: false,
               explicacao: 'A equidade significa justamente o oposto: quem tem maior capacidade contributiva ou gera maior risco contribui mais. Daí alíquotas de RAT diferenciadas por risco e adicionais para instituições financeiras.',
@@ -891,7 +884,7 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
               ],
             },
             {
-              id: 'prev-b1-02-q5',
+              id: 'prev-b1-t2-s3-q5',
               enunciado: 'A universalidade da cobertura refere-se às pessoas protegidas pelo sistema, enquanto a universalidade do atendimento diz respeito às contingências sociais cobertas.',
               certa: false,
               explicacao: 'Os conceitos estão invertidos. A cobertura é objetiva (riscos/contingências protegidos); o atendimento é subjetivo (pessoas protegidas).',
@@ -913,7 +906,6 @@ O art. 195, §7º prevê a **isenção** de contribuição para entidades benefi
         {
           id: 'prev-b1-t2-s4',
           nome: 'CF art. 195, caput',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -965,7 +957,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s4-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -975,7 +967,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s4-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -985,7 +977,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s4-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -995,7 +987,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s4-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1005,7 +997,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s4-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1027,7 +1019,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s5',
           nome: 'CF art. 195, incisos I a V',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1079,7 +1070,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s5-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1089,7 +1080,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s5-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1099,7 +1090,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s5-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1109,7 +1100,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s5-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1119,7 +1110,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s5-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1141,7 +1132,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s6',
           nome: 'CF art. 195, §1º ao §3º',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1193,7 +1183,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s6-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1203,7 +1193,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s6-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1213,7 +1203,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s6-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1223,7 +1213,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s6-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1233,7 +1223,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s6-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1255,7 +1245,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s7',
           nome: 'CF art. 195, §4º ao §6º',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1307,7 +1296,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s7-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1317,7 +1306,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s7-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1327,7 +1316,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s7-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1337,7 +1326,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s7-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1347,7 +1336,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s7-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1369,7 +1358,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s8',
           nome: 'CF art. 195, §7º ao §10',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1421,7 +1409,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s8-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1431,7 +1419,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s8-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1441,7 +1429,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s8-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1451,7 +1439,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s8-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1461,7 +1449,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s8-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1483,7 +1471,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s9',
           nome: 'CF art. 195, §11 ao §14',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1535,7 +1522,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s9-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1545,7 +1532,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s9-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1555,7 +1542,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s9-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1565,7 +1552,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s9-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1575,7 +1562,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s9-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1597,7 +1584,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s10',
           nome: 'CF art. 195, §15 ao §19',
-          // conteúdo herdado do tópico 'prev-b2-01' da estrutura de 3 níveis
           teoria: `
 ## A regra-mãe do custeio
 
@@ -1649,7 +1635,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
 `,
           questoes: [
             {
-              id: 'prev-b2-01-q1',
+              id: 'prev-b1-t2-s10-q1',
               enunciado: 'A seguridade social será financiada por toda a sociedade, de forma direta e indireta, mediante recursos provenientes dos orçamentos da União, dos estados, do Distrito Federal e dos municípios, além das contribuições sociais.',
               certa: true,
               explicacao: 'Reprodução do art. 195, caput, da CF/88. Todos os entes federados participam do financiamento.',
@@ -1659,7 +1645,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q2',
+              id: 'prev-b1-t2-s10-q2',
               enunciado: 'Incide contribuição previdenciária sobre a aposentadoria e a pensão concedidas pelo Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'O art. 195, II, da CF/88 é expresso ao excluir da incidência a aposentadoria e a pensão concedidas pelo RGPS. A cobrança sobre proventos existe apenas nos regimes próprios, na parcela que excede o teto do RGPS.',
@@ -1669,7 +1655,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q3',
+              id: 'prev-b1-t2-s10-q3',
               enunciado: 'A instituição de nova fonte de custeio da seguridade social, não prevista expressamente na Constituição, pode ser feita por lei ordinária, desde que respeitada a anterioridade nonagesimal.',
               certa: false,
               explicacao: 'A competência residual do art. 195, §4º, remete ao art. 154, I, exigindo LEI COMPLEMENTAR, não cumulatividade e fato gerador diverso dos impostos já discriminados.',
@@ -1679,7 +1665,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q4',
+              id: 'prev-b1-t2-s10-q4',
               enunciado: 'Constitui receita da seguridade social percentual do valor total do resultado dos leilões de bens apreendidos pela Receita Federal do Brasil.',
               certa: true,
               explicacao: 'A Lei nº 8.212/91 arrola entre as receitas da seguridade 50% do resultado dos leilões de bens apreendidos pela Receita Federal.',
@@ -1689,7 +1675,7 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
               ],
             },
             {
-              id: 'prev-b2-01-q5',
+              id: 'prev-b1-t2-s10-q5',
               enunciado: 'A pessoa jurídica em débito com o sistema da seguridade social poderá contratar com o Poder Público, desde que ofereça garantia idônea do débito existente.',
               certa: false,
               explicacao: 'O art. 195, §3º, da CF/88 veda de forma direta a contratação com o Poder Público e o recebimento de benefícios ou incentivos fiscais ou creditícios, sem ressalva de garantia.',
@@ -1711,7 +1697,6 @@ Além das contribuições, a Lei nº 8.212/91 arrola receitas próprias, e a Ceb
         {
           id: 'prev-b1-t2-s11',
           nome: 'Princípio da Saúde — CF art. 196 e 197; Lei 8.212/91 art. 2º',
-          // conteúdo herdado do tópico 'prev-b1-01' da estrutura de 3 níveis
           teoria: `
 ## O que é Seguridade Social
 
@@ -1758,7 +1743,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
 `,
           questoes: [
             {
-              id: 'prev-b1-01-q1',
+              id: 'prev-b1-t2-s11-q1',
               enunciado: 'A seguridade social compreende um conjunto integrado de ações de iniciativa dos Poderes Públicos e da sociedade, destinadas a assegurar os direitos relativos à saúde, à previdência e à assistência social.',
               certa: true,
               explicacao: 'Reprodução literal do art. 194, caput, da CF/88. Note que a iniciativa não é exclusiva do Poder Público — a sociedade também integra o conceito.',
@@ -1769,7 +1754,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q2',
+              id: 'prev-b1-t2-s11-q2',
               enunciado: 'A Lei Eloy Chaves, de 1923, é considerada o marco inicial da previdência social no Brasil e criou as Caixas de Aposentadoria e Pensões dos ferroviários.',
               certa: true,
               explicacao: 'O Decreto Legislativo nº 4.682/1923 (Lei Eloy Chaves) criou as CAPs no âmbito das empresas ferroviárias, sendo o marco inicial da previdência brasileira.',
@@ -1779,7 +1764,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q3',
+              id: 'prev-b1-t2-s11-q3',
               enunciado: 'Diferentemente da previdência social, a assistência social é prestada a quem dela necessitar, independentemente de contribuição à seguridade social.',
               certa: true,
               explicacao: 'O art. 203 da CF/88 é expresso ao dispor que a assistência social será prestada a quem dela necessitar, independentemente de contribuição. Já a previdência tem caráter contributivo (art. 201).',
@@ -1789,7 +1774,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q4',
+              id: 'prev-b1-t2-s11-q4',
               enunciado: 'A Lei Orgânica da Previdência Social (LOPS), de 1960, promoveu a unificação dos institutos de aposentadoria e pensões em um órgão único.',
               certa: false,
               explicacao: 'A LOPS (Lei nº 3.807/1960) unificou a LEGISLAÇÃO previdenciária. A unificação dos institutos só ocorreu em 1966, com a criação do INPS pelo Decreto-Lei nº 72.',
@@ -1799,7 +1784,7 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
               ],
             },
             {
-              id: 'prev-b1-01-q5',
+              id: 'prev-b1-t2-s11-q5',
               enunciado: 'O Instituto Nacional do Seguro Social (INSS) foi criado em 1990 a partir da fusão do INPS com o IAPAS e possui natureza jurídica de autarquia federal.',
               certa: true,
               explicacao: 'O INSS resultou da fusão entre INPS e IAPAS (Lei nº 8.029/1990, regulamentada pelo Decreto nº 99.350/1990) e é autarquia federal vinculada ao ministério responsável pela previdência.',
@@ -1828,7 +1813,6 @@ O erro clássico é embaralhar datas e siglas: dizer que a Lei Eloy Chaves criou
         {
           id: 'prev-b1-t3-s1',
           nome: 'Conteúdo, fontes e autonomia',
-          // conteúdo herdado do tópico 'prev-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Autonomia do Direito Previdenciário
 
@@ -1890,7 +1874,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
 `,
           questoes: [
             {
-              id: 'prev-b1-03-q1',
+              id: 'prev-b1-t3-s1-q1',
               enunciado: 'Instrução normativa editada pelo INSS pode estabelecer requisito para concessão de benefício não previsto em lei, desde que devidamente publicada.',
               certa: false,
               explicacao: 'Instrução normativa é fonte formal secundária e não pode inovar na ordem jurídica. Requisitos de concessão de benefício exigem lei em sentido formal.',
@@ -1900,7 +1884,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q2',
+              id: 'prev-b1-t3-s1-q2',
               enunciado: 'Salvo disposição em contrário, a lei previdenciária começa a vigorar em todo o país quarenta e cinco dias depois de oficialmente publicada.',
               certa: true,
               explicacao: 'Aplica-se a regra geral do art. 1º da LINDB (Decreto-Lei nº 4.657/1942). No exterior, quando admitida, o prazo é de três meses.',
@@ -1910,7 +1894,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q3',
+              id: 'prev-b1-t3-s1-q3',
               enunciado: 'O direito ao benefício previdenciário rege-se pela lei vigente ao tempo em que preenchidos todos os requisitos para a sua concessão.',
               certa: true,
               explicacao: 'É a aplicação do princípio tempus regit actum, que fundamenta o direito adquirido em matéria previdenciária, expressamente resguardado pelo art. 3º da EC 103/2019.',
@@ -1921,7 +1905,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q4',
+              id: 'prev-b1-t3-s1-q4',
               enunciado: 'A lei complementar é hierarquicamente superior à lei ordinária, razão pela qual esta não pode dispor sobre matéria previdenciária tratada por aquela.',
               certa: false,
               explicacao: 'Não há hierarquia entre lei complementar e lei ordinária. A diferença está no campo material reservado pela Constituição e no quórum de aprovação (maioria absoluta para a LC).',
@@ -1931,7 +1915,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q5',
+              id: 'prev-b1-t3-s1-q5',
               enunciado: 'Havendo lacuna na legislação previdenciária, o aplicador do direito deve decidir de acordo com a analogia, os costumes e os princípios gerais de direito.',
               certa: true,
               explicacao: 'É a regra de integração do art. 4º da LINDB, plenamente aplicável ao Direito Previdenciário.',
@@ -1953,7 +1937,6 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
         {
           id: 'prev-b1-t3-s2',
           nome: 'Vigência e hierarquia das normas previdenciárias',
-          // conteúdo herdado do tópico 'prev-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Autonomia do Direito Previdenciário
 
@@ -2015,7 +1998,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
 `,
           questoes: [
             {
-              id: 'prev-b1-03-q1',
+              id: 'prev-b1-t3-s2-q1',
               enunciado: 'Instrução normativa editada pelo INSS pode estabelecer requisito para concessão de benefício não previsto em lei, desde que devidamente publicada.',
               certa: false,
               explicacao: 'Instrução normativa é fonte formal secundária e não pode inovar na ordem jurídica. Requisitos de concessão de benefício exigem lei em sentido formal.',
@@ -2025,7 +2008,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q2',
+              id: 'prev-b1-t3-s2-q2',
               enunciado: 'Salvo disposição em contrário, a lei previdenciária começa a vigorar em todo o país quarenta e cinco dias depois de oficialmente publicada.',
               certa: true,
               explicacao: 'Aplica-se a regra geral do art. 1º da LINDB (Decreto-Lei nº 4.657/1942). No exterior, quando admitida, o prazo é de três meses.',
@@ -2035,7 +2018,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q3',
+              id: 'prev-b1-t3-s2-q3',
               enunciado: 'O direito ao benefício previdenciário rege-se pela lei vigente ao tempo em que preenchidos todos os requisitos para a sua concessão.',
               certa: true,
               explicacao: 'É a aplicação do princípio tempus regit actum, que fundamenta o direito adquirido em matéria previdenciária, expressamente resguardado pelo art. 3º da EC 103/2019.',
@@ -2046,7 +2029,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q4',
+              id: 'prev-b1-t3-s2-q4',
               enunciado: 'A lei complementar é hierarquicamente superior à lei ordinária, razão pela qual esta não pode dispor sobre matéria previdenciária tratada por aquela.',
               certa: false,
               explicacao: 'Não há hierarquia entre lei complementar e lei ordinária. A diferença está no campo material reservado pela Constituição e no quórum de aprovação (maioria absoluta para a LC).',
@@ -2056,7 +2039,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q5',
+              id: 'prev-b1-t3-s2-q5',
               enunciado: 'Havendo lacuna na legislação previdenciária, o aplicador do direito deve decidir de acordo com a analogia, os costumes e os princípios gerais de direito.',
               certa: true,
               explicacao: 'É a regra de integração do art. 4º da LINDB, plenamente aplicável ao Direito Previdenciário.',
@@ -2078,7 +2061,6 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
         {
           id: 'prev-b1-t3-s3',
           nome: 'Interpretação e integração das normas previdenciárias',
-          // conteúdo herdado do tópico 'prev-b1-03' da estrutura de 3 níveis
           teoria: `
 ## Autonomia do Direito Previdenciário
 
@@ -2140,7 +2122,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
 `,
           questoes: [
             {
-              id: 'prev-b1-03-q1',
+              id: 'prev-b1-t3-s3-q1',
               enunciado: 'Instrução normativa editada pelo INSS pode estabelecer requisito para concessão de benefício não previsto em lei, desde que devidamente publicada.',
               certa: false,
               explicacao: 'Instrução normativa é fonte formal secundária e não pode inovar na ordem jurídica. Requisitos de concessão de benefício exigem lei em sentido formal.',
@@ -2150,7 +2132,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q2',
+              id: 'prev-b1-t3-s3-q2',
               enunciado: 'Salvo disposição em contrário, a lei previdenciária começa a vigorar em todo o país quarenta e cinco dias depois de oficialmente publicada.',
               certa: true,
               explicacao: 'Aplica-se a regra geral do art. 1º da LINDB (Decreto-Lei nº 4.657/1942). No exterior, quando admitida, o prazo é de três meses.',
@@ -2160,7 +2142,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q3',
+              id: 'prev-b1-t3-s3-q3',
               enunciado: 'O direito ao benefício previdenciário rege-se pela lei vigente ao tempo em que preenchidos todos os requisitos para a sua concessão.',
               certa: true,
               explicacao: 'É a aplicação do princípio tempus regit actum, que fundamenta o direito adquirido em matéria previdenciária, expressamente resguardado pelo art. 3º da EC 103/2019.',
@@ -2171,7 +2153,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q4',
+              id: 'prev-b1-t3-s3-q4',
               enunciado: 'A lei complementar é hierarquicamente superior à lei ordinária, razão pela qual esta não pode dispor sobre matéria previdenciária tratada por aquela.',
               certa: false,
               explicacao: 'Não há hierarquia entre lei complementar e lei ordinária. A diferença está no campo material reservado pela Constituição e no quórum de aprovação (maioria absoluta para a LC).',
@@ -2181,7 +2163,7 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
               ],
             },
             {
-              id: 'prev-b1-03-q5',
+              id: 'prev-b1-t3-s3-q5',
               enunciado: 'Havendo lacuna na legislação previdenciária, o aplicador do direito deve decidir de acordo com a analogia, os costumes e os princípios gerais de direito.',
               certa: true,
               explicacao: 'É a regra de integração do art. 4º da LINDB, plenamente aplicável ao Direito Previdenciário.',
@@ -2210,7 +2192,6 @@ Quanto ao resultado, a interpretação pode ser **declarativa**, **extensiva** o
         {
           id: 'prev-b1-t4-s1',
           nome: 'RGPS: conceito geral',
-          // conteúdo herdado do tópico 'prev-b1-04' da estrutura de 3 níveis
           teoria: `
 ## O desenho dos regimes no Brasil
 
@@ -2264,7 +2245,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
 `,
           questoes: [
             {
-              id: 'prev-b1-04-q1',
+              id: 'prev-b1-t4-s1-q1',
               enunciado: 'O Regime Geral de Previdência Social tem caráter contributivo e filiação obrigatória, observados critérios que preservem o equilíbrio financeiro e atuarial.',
               certa: true,
               explicacao: 'Literalidade do art. 201, caput, da CF/88, com a redação dada pela EC 103/2019.',
@@ -2274,7 +2255,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q2',
+              id: 'prev-b1-t4-s1-q2',
               enunciado: 'Nenhum benefício previdenciário do RGPS poderá ter valor mensal inferior ao salário mínimo.',
               certa: false,
               explicacao: 'A garantia do art. 201, §2º, alcança apenas os benefícios que substituem o salário de contribuição ou o rendimento do trabalho. Salário-família e auxílio-acidente, que não substituem renda, podem ser inferiores ao salário mínimo.',
@@ -2284,7 +2265,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q3',
+              id: 'prev-b1-t4-s1-q3',
               enunciado: 'É vedada a filiação ao RGPS, na qualidade de segurado facultativo, de pessoa participante de regime próprio de previdência social.',
               certa: true,
               explicacao: 'Vedação expressa do art. 201, §5º, da CF/88. Nada impede, porém, que o servidor com RPPS seja segurado obrigatório do RGPS caso exerça outra atividade remunerada da iniciativa privada.',
@@ -2294,7 +2275,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q4',
+              id: 'prev-b1-t4-s1-q4',
               enunciado: 'O salário-família e o auxílio-reclusão são devidos aos dependentes de todos os segurados do RGPS, independentemente da renda auferida.',
               certa: false,
               explicacao: 'O art. 201, IV, da CF/88 restringe ambos os benefícios aos dependentes dos segurados de BAIXA RENDA, nos termos da lei.',
@@ -2304,7 +2285,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q5',
+              id: 'prev-b1-t4-s1-q5',
               enunciado: 'Compete ao INSS arrecadar e fiscalizar as contribuições previdenciárias incidentes sobre a folha de salários das empresas.',
               certa: false,
               explicacao: 'Desde a Lei nº 11.457/2007, a arrecadação e a fiscalização das contribuições previdenciárias competem à Secretaria da Receita Federal do Brasil. Ao INSS cabe conceder e manter benefícios e prestar os serviços previdenciários.',
@@ -2326,7 +2307,6 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
         {
           id: 'prev-b1-t4-s2',
           nome: 'Previdência Social e a Constituição Federal — art. 201 (partes 1, 2 e 3)',
-          // conteúdo herdado do tópico 'prev-b1-04' da estrutura de 3 níveis
           teoria: `
 ## O desenho dos regimes no Brasil
 
@@ -2380,7 +2360,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
 `,
           questoes: [
             {
-              id: 'prev-b1-04-q1',
+              id: 'prev-b1-t4-s2-q1',
               enunciado: 'O Regime Geral de Previdência Social tem caráter contributivo e filiação obrigatória, observados critérios que preservem o equilíbrio financeiro e atuarial.',
               certa: true,
               explicacao: 'Literalidade do art. 201, caput, da CF/88, com a redação dada pela EC 103/2019.',
@@ -2390,7 +2370,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q2',
+              id: 'prev-b1-t4-s2-q2',
               enunciado: 'Nenhum benefício previdenciário do RGPS poderá ter valor mensal inferior ao salário mínimo.',
               certa: false,
               explicacao: 'A garantia do art. 201, §2º, alcança apenas os benefícios que substituem o salário de contribuição ou o rendimento do trabalho. Salário-família e auxílio-acidente, que não substituem renda, podem ser inferiores ao salário mínimo.',
@@ -2400,7 +2380,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q3',
+              id: 'prev-b1-t4-s2-q3',
               enunciado: 'É vedada a filiação ao RGPS, na qualidade de segurado facultativo, de pessoa participante de regime próprio de previdência social.',
               certa: true,
               explicacao: 'Vedação expressa do art. 201, §5º, da CF/88. Nada impede, porém, que o servidor com RPPS seja segurado obrigatório do RGPS caso exerça outra atividade remunerada da iniciativa privada.',
@@ -2410,7 +2390,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q4',
+              id: 'prev-b1-t4-s2-q4',
               enunciado: 'O salário-família e o auxílio-reclusão são devidos aos dependentes de todos os segurados do RGPS, independentemente da renda auferida.',
               certa: false,
               explicacao: 'O art. 201, IV, da CF/88 restringe ambos os benefícios aos dependentes dos segurados de BAIXA RENDA, nos termos da lei.',
@@ -2420,7 +2400,7 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
               ],
             },
             {
-              id: 'prev-b1-04-q5',
+              id: 'prev-b1-t4-s2-q5',
               enunciado: 'Compete ao INSS arrecadar e fiscalizar as contribuições previdenciárias incidentes sobre a folha de salários das empresas.',
               certa: false,
               explicacao: 'Desde a Lei nº 11.457/2007, a arrecadação e a fiscalização das contribuições previdenciárias competem à Secretaria da Receita Federal do Brasil. Ao INSS cabe conceder e manter benefícios e prestar os serviços previdenciários.',
@@ -2449,7 +2429,6 @@ O **INSS** é **autarquia federal** responsável pela **operacionalização** do
         {
           id: 'prev-b1-t5-s1',
           nome: 'Segurado obrigatório — empregado',
-          // conteúdo herdado do tópico 'prev-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As cinco espécies
 
@@ -2511,7 +2490,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
 `,
           questoes: [
             {
-              id: 'prev-b1-05-q1',
+              id: 'prev-b1-t5-s1-q1',
               enunciado: 'A pessoa que presta serviços de limpeza na residência de uma família, sem finalidade lucrativa, durante dois dias por semana, é segurada obrigatória na qualidade de empregada doméstica.',
               certa: false,
               explicacao: 'A LC nº 150/2015 exige continuidade superior a 2 dias por semana para caracterizar o empregado doméstico. Trabalhando 2 dias ou menos, trata-se de diarista, enquadrada como contribuinte individual.',
@@ -2521,7 +2500,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q2',
+              id: 'prev-b1-t5-s1-q2',
               enunciado: 'O servidor público ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do Regime Geral de Previdência Social, equiparado a empregado.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 e o art. 11, I, "g", da Lei nº 8.213/91 determinam que o comissionado puro seja vinculado ao RGPS, e não ao regime próprio.',
@@ -2531,7 +2510,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q3',
+              id: 'prev-b1-t5-s1-q3',
               enunciado: 'O trabalhador avulso presta serviços a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do sindicato da categoria ou do órgão gestor de mão de obra.',
               certa: true,
               explicacao: 'É exatamente a definição legal do trabalhador avulso, cuja marca distintiva é a intermediação obrigatória por sindicato ou OGMO.',
@@ -2541,7 +2520,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q4',
+              id: 'prev-b1-t5-s1-q4',
               enunciado: 'Considera-se segurado especial o produtor rural que explore atividade agropecuária em área de até quatro módulos fiscais, em regime de economia familiar.',
               certa: true,
               explicacao: 'O art. 11, VII, da Lei nº 8.213/91 fixa o limite de 4 módulos fiscais e exige o regime de economia familiar, sem empregados permanentes.',
@@ -2552,7 +2531,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q5',
+              id: 'prev-b1-t5-s1-q5',
               enunciado: 'O síndico de condomínio remunerado ou dispensado do pagamento da taxa condominial é segurado obrigatório na qualidade de contribuinte individual.',
               certa: true,
               explicacao: 'A isenção da taxa condominial é considerada remuneração indireta, o que gera a filiação obrigatória como contribuinte individual.',
@@ -2574,7 +2553,6 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
         {
           id: 'prev-b1-t5-s2',
           nome: 'Segurado obrigatório — empregado doméstico',
-          // conteúdo herdado do tópico 'prev-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As cinco espécies
 
@@ -2636,7 +2614,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
 `,
           questoes: [
             {
-              id: 'prev-b1-05-q1',
+              id: 'prev-b1-t5-s2-q1',
               enunciado: 'A pessoa que presta serviços de limpeza na residência de uma família, sem finalidade lucrativa, durante dois dias por semana, é segurada obrigatória na qualidade de empregada doméstica.',
               certa: false,
               explicacao: 'A LC nº 150/2015 exige continuidade superior a 2 dias por semana para caracterizar o empregado doméstico. Trabalhando 2 dias ou menos, trata-se de diarista, enquadrada como contribuinte individual.',
@@ -2646,7 +2624,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q2',
+              id: 'prev-b1-t5-s2-q2',
               enunciado: 'O servidor público ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do Regime Geral de Previdência Social, equiparado a empregado.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 e o art. 11, I, "g", da Lei nº 8.213/91 determinam que o comissionado puro seja vinculado ao RGPS, e não ao regime próprio.',
@@ -2656,7 +2634,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q3',
+              id: 'prev-b1-t5-s2-q3',
               enunciado: 'O trabalhador avulso presta serviços a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do sindicato da categoria ou do órgão gestor de mão de obra.',
               certa: true,
               explicacao: 'É exatamente a definição legal do trabalhador avulso, cuja marca distintiva é a intermediação obrigatória por sindicato ou OGMO.',
@@ -2666,7 +2644,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q4',
+              id: 'prev-b1-t5-s2-q4',
               enunciado: 'Considera-se segurado especial o produtor rural que explore atividade agropecuária em área de até quatro módulos fiscais, em regime de economia familiar.',
               certa: true,
               explicacao: 'O art. 11, VII, da Lei nº 8.213/91 fixa o limite de 4 módulos fiscais e exige o regime de economia familiar, sem empregados permanentes.',
@@ -2677,7 +2655,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q5',
+              id: 'prev-b1-t5-s2-q5',
               enunciado: 'O síndico de condomínio remunerado ou dispensado do pagamento da taxa condominial é segurado obrigatório na qualidade de contribuinte individual.',
               certa: true,
               explicacao: 'A isenção da taxa condominial é considerada remuneração indireta, o que gera a filiação obrigatória como contribuinte individual.',
@@ -2699,7 +2677,6 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
         {
           id: 'prev-b1-t5-s3',
           nome: 'Segurado obrigatório — contribuinte individual',
-          // conteúdo herdado do tópico 'prev-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As cinco espécies
 
@@ -2761,7 +2738,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
 `,
           questoes: [
             {
-              id: 'prev-b1-05-q1',
+              id: 'prev-b1-t5-s3-q1',
               enunciado: 'A pessoa que presta serviços de limpeza na residência de uma família, sem finalidade lucrativa, durante dois dias por semana, é segurada obrigatória na qualidade de empregada doméstica.',
               certa: false,
               explicacao: 'A LC nº 150/2015 exige continuidade superior a 2 dias por semana para caracterizar o empregado doméstico. Trabalhando 2 dias ou menos, trata-se de diarista, enquadrada como contribuinte individual.',
@@ -2771,7 +2748,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q2',
+              id: 'prev-b1-t5-s3-q2',
               enunciado: 'O servidor público ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do Regime Geral de Previdência Social, equiparado a empregado.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 e o art. 11, I, "g", da Lei nº 8.213/91 determinam que o comissionado puro seja vinculado ao RGPS, e não ao regime próprio.',
@@ -2781,7 +2758,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q3',
+              id: 'prev-b1-t5-s3-q3',
               enunciado: 'O trabalhador avulso presta serviços a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do sindicato da categoria ou do órgão gestor de mão de obra.',
               certa: true,
               explicacao: 'É exatamente a definição legal do trabalhador avulso, cuja marca distintiva é a intermediação obrigatória por sindicato ou OGMO.',
@@ -2791,7 +2768,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q4',
+              id: 'prev-b1-t5-s3-q4',
               enunciado: 'Considera-se segurado especial o produtor rural que explore atividade agropecuária em área de até quatro módulos fiscais, em regime de economia familiar.',
               certa: true,
               explicacao: 'O art. 11, VII, da Lei nº 8.213/91 fixa o limite de 4 módulos fiscais e exige o regime de economia familiar, sem empregados permanentes.',
@@ -2802,7 +2779,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q5',
+              id: 'prev-b1-t5-s3-q5',
               enunciado: 'O síndico de condomínio remunerado ou dispensado do pagamento da taxa condominial é segurado obrigatório na qualidade de contribuinte individual.',
               certa: true,
               explicacao: 'A isenção da taxa condominial é considerada remuneração indireta, o que gera a filiação obrigatória como contribuinte individual.',
@@ -2824,7 +2801,6 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
         {
           id: 'prev-b1-t5-s4',
           nome: 'Segurado obrigatório — trabalhador avulso',
-          // conteúdo herdado do tópico 'prev-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As cinco espécies
 
@@ -2886,7 +2862,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
 `,
           questoes: [
             {
-              id: 'prev-b1-05-q1',
+              id: 'prev-b1-t5-s4-q1',
               enunciado: 'A pessoa que presta serviços de limpeza na residência de uma família, sem finalidade lucrativa, durante dois dias por semana, é segurada obrigatória na qualidade de empregada doméstica.',
               certa: false,
               explicacao: 'A LC nº 150/2015 exige continuidade superior a 2 dias por semana para caracterizar o empregado doméstico. Trabalhando 2 dias ou menos, trata-se de diarista, enquadrada como contribuinte individual.',
@@ -2896,7 +2872,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q2',
+              id: 'prev-b1-t5-s4-q2',
               enunciado: 'O servidor público ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do Regime Geral de Previdência Social, equiparado a empregado.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 e o art. 11, I, "g", da Lei nº 8.213/91 determinam que o comissionado puro seja vinculado ao RGPS, e não ao regime próprio.',
@@ -2906,7 +2882,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q3',
+              id: 'prev-b1-t5-s4-q3',
               enunciado: 'O trabalhador avulso presta serviços a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do sindicato da categoria ou do órgão gestor de mão de obra.',
               certa: true,
               explicacao: 'É exatamente a definição legal do trabalhador avulso, cuja marca distintiva é a intermediação obrigatória por sindicato ou OGMO.',
@@ -2916,7 +2892,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q4',
+              id: 'prev-b1-t5-s4-q4',
               enunciado: 'Considera-se segurado especial o produtor rural que explore atividade agropecuária em área de até quatro módulos fiscais, em regime de economia familiar.',
               certa: true,
               explicacao: 'O art. 11, VII, da Lei nº 8.213/91 fixa o limite de 4 módulos fiscais e exige o regime de economia familiar, sem empregados permanentes.',
@@ -2927,7 +2903,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q5',
+              id: 'prev-b1-t5-s4-q5',
               enunciado: 'O síndico de condomínio remunerado ou dispensado do pagamento da taxa condominial é segurado obrigatório na qualidade de contribuinte individual.',
               certa: true,
               explicacao: 'A isenção da taxa condominial é considerada remuneração indireta, o que gera a filiação obrigatória como contribuinte individual.',
@@ -2949,7 +2925,6 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
         {
           id: 'prev-b1-t5-s5',
           nome: 'Segurado obrigatório — segurado especial',
-          // conteúdo herdado do tópico 'prev-b1-05' da estrutura de 3 níveis
           teoria: `
 ## As cinco espécies
 
@@ -3011,7 +2986,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
 `,
           questoes: [
             {
-              id: 'prev-b1-05-q1',
+              id: 'prev-b1-t5-s5-q1',
               enunciado: 'A pessoa que presta serviços de limpeza na residência de uma família, sem finalidade lucrativa, durante dois dias por semana, é segurada obrigatória na qualidade de empregada doméstica.',
               certa: false,
               explicacao: 'A LC nº 150/2015 exige continuidade superior a 2 dias por semana para caracterizar o empregado doméstico. Trabalhando 2 dias ou menos, trata-se de diarista, enquadrada como contribuinte individual.',
@@ -3021,7 +2996,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q2',
+              id: 'prev-b1-t5-s5-q2',
               enunciado: 'O servidor público ocupante exclusivamente de cargo em comissão, sem vínculo efetivo, é segurado obrigatório do Regime Geral de Previdência Social, equiparado a empregado.',
               certa: true,
               explicacao: 'O art. 40, §13, da CF/88 e o art. 11, I, "g", da Lei nº 8.213/91 determinam que o comissionado puro seja vinculado ao RGPS, e não ao regime próprio.',
@@ -3031,7 +3006,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q3',
+              id: 'prev-b1-t5-s5-q3',
               enunciado: 'O trabalhador avulso presta serviços a diversas empresas, sem vínculo empregatício, com intermediação obrigatória do sindicato da categoria ou do órgão gestor de mão de obra.',
               certa: true,
               explicacao: 'É exatamente a definição legal do trabalhador avulso, cuja marca distintiva é a intermediação obrigatória por sindicato ou OGMO.',
@@ -3041,7 +3016,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q4',
+              id: 'prev-b1-t5-s5-q4',
               enunciado: 'Considera-se segurado especial o produtor rural que explore atividade agropecuária em área de até quatro módulos fiscais, em regime de economia familiar.',
               certa: true,
               explicacao: 'O art. 11, VII, da Lei nº 8.213/91 fixa o limite de 4 módulos fiscais e exige o regime de economia familiar, sem empregados permanentes.',
@@ -3052,7 +3027,7 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
               ],
             },
             {
-              id: 'prev-b1-05-q5',
+              id: 'prev-b1-t5-s5-q5',
               enunciado: 'O síndico de condomínio remunerado ou dispensado do pagamento da taxa condominial é segurado obrigatório na qualidade de contribuinte individual.',
               certa: true,
               explicacao: 'A isenção da taxa condominial é considerada remuneração indireta, o que gera a filiação obrigatória como contribuinte individual.',
@@ -3074,7 +3049,6 @@ Presta serviço a **diversas empresas, sem vínculo empregatício**, com interme
         {
           id: 'prev-b1-t5-s6',
           nome: 'Segurado facultativo — conceito',
-          // conteúdo herdado do tópico 'prev-b1-06' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -3143,7 +3117,7 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
 `,
           questoes: [
             {
-              id: 'prev-b1-06-q1',
+              id: 'prev-b1-t5-s6-q1',
               enunciado: 'É segurado facultativo o maior de dezesseis anos de idade que se filiar ao RGPS mediante contribuição, desde que não esteja exercendo atividade remunerada que o enquadre como segurado obrigatório.',
               certa: true,
               explicacao: 'Reprodução do art. 13 da Lei nº 8.213/91. São três requisitos cumulativos: idade mínima de 16 anos, ausência de atividade que gere filiação obrigatória e contribuição voluntária.',
@@ -3153,7 +3127,7 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
               ],
             },
             {
-              id: 'prev-b1-06-q2',
+              id: 'prev-b1-t5-s6-q2',
               enunciado: 'O servidor público efetivo vinculado a regime próprio de previdência social pode filiar-se ao RGPS na qualidade de segurado facultativo, desde que contribua voluntariamente.',
               certa: false,
               explicacao: 'O art. 201, §5º, da CF/88 veda expressamente a filiação ao RGPS como facultativo de quem participa de regime próprio.',
@@ -3163,7 +3137,7 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
               ],
             },
             {
-              id: 'prev-b1-06-q3',
+              id: 'prev-b1-t5-s6-q3',
               enunciado: 'A filiação do segurado facultativo decorre automaticamente do implemento da idade mínima de dezesseis anos, independentemente de qualquer recolhimento.',
               certa: false,
               explicacao: 'Para o facultativo, a filiação decorre da inscrição formalizada acompanhada do primeiro recolhimento efetuado sem atraso. A filiação automática pelo exercício da atividade é característica do segurado obrigatório.',
@@ -3173,7 +3147,7 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
               ],
             },
             {
-              id: 'prev-b1-06-q4',
+              id: 'prev-b1-t5-s6-q4',
               enunciado: 'O segurado facultativo que se dedica exclusivamente ao trabalho doméstico no âmbito de sua residência, pertencente a família de baixa renda inscrita no CadÚnico, pode recolher contribuição mensal com alíquota de cinco por cento do salário mínimo.',
               certa: true,
               explicacao: 'É o plano do facultativo de baixa renda. Os requisitos são cumulativos: dedicação exclusiva ao trabalho doméstico na própria residência, família de baixa renda inscrita no CadÚnico e ausência de renda própria.',
@@ -3183,7 +3157,7 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
               ],
             },
             {
-              id: 'prev-b1-06-q5',
+              id: 'prev-b1-t5-s6-q5',
               enunciado: 'O segurado facultativo mantém essa qualidade até doze meses após a cessação das contribuições.',
               certa: false,
               explicacao: 'O prazo do facultativo é de 6 meses (art. 15, VI, da Lei nº 8.213/91). O período de 12 meses, prorrogável, aplica-se ao segurado obrigatório que deixa de exercer atividade remunerada.',
@@ -3205,7 +3179,6 @@ O facultativo mantém a qualidade de segurado por **6 meses** após a cessação
         {
           id: 'prev-b1-t5-s7',
           nome: 'Filiação (conceito e efeitos)',
-          // conteúdo herdado do tópico 'prev-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Por que esse tópico cai tanto
 
@@ -3257,7 +3230,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
 `,
           questoes: [
             {
-              id: 'prev-b1-07-q1',
+              id: 'prev-b1-t5-s7-q1',
               enunciado: 'A filiação do segurado obrigatório ao RGPS decorre automaticamente do exercício de atividade remunerada, independentemente de inscrição ou de recolhimento de contribuições.',
               certa: true,
               explicacao: 'A filiação do obrigatório é automática e decorre do exercício da atividade. A inscrição é ato formal posterior e o recolhimento é obrigação dela decorrente, não condição.',
@@ -3267,7 +3240,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q2',
+              id: 'prev-b1-t5-s7-q2',
               enunciado: 'Inscrição é o vínculo jurídico que se estabelece entre o segurado e a previdência social, do qual decorrem direitos e obrigações.',
               certa: false,
               explicacao: 'O conceito apresentado é o de FILIAÇÃO. A inscrição é o ato formal de cadastramento do segurado perante a previdência, de natureza declaratória.',
@@ -3277,7 +3250,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q3',
+              id: 'prev-b1-t5-s7-q3',
               enunciado: 'O empregado cujo empregador deixou de recolher as contribuições previdenciárias devidas perde a qualidade de segurado e não faz jus aos benefícios do RGPS.',
               certa: false,
               explicacao: 'A responsabilidade pelo desconto e recolhimento é da empresa. A inadimplência do empregador não prejudica o segurado empregado, que mantém a qualidade de segurado e o direito ao benefício.',
@@ -3287,7 +3260,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q4',
+              id: 'prev-b1-t5-s7-q4',
               enunciado: 'Admite-se a inscrição post mortem do segurado especial, para fins de concessão de benefício a seus dependentes.',
               certa: true,
               explicacao: 'A legislação admite excepcionalmente a inscrição post mortem do segurado especial. Para as demais categorias, a regra é a não admissão.',
@@ -3297,7 +3270,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q5',
+              id: 'prev-b1-t5-s7-q5',
               enunciado: 'É permitida a filiação ao RGPS, na condição de aprendiz, a partir dos quatorze anos de idade.',
               certa: true,
               explicacao: 'O art. 7º, XXXIII, da CF/88 proíbe o trabalho a menores de 16 anos, salvo na condição de aprendiz a partir dos 14. O aprendiz é segurado obrigatório equiparado a empregado.',
@@ -3319,7 +3292,6 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
         {
           id: 'prev-b1-t5-s8',
           nome: 'Inscrição (conceito e efeitos)',
-          // conteúdo herdado do tópico 'prev-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Por que esse tópico cai tanto
 
@@ -3371,7 +3343,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
 `,
           questoes: [
             {
-              id: 'prev-b1-07-q1',
+              id: 'prev-b1-t5-s8-q1',
               enunciado: 'A filiação do segurado obrigatório ao RGPS decorre automaticamente do exercício de atividade remunerada, independentemente de inscrição ou de recolhimento de contribuições.',
               certa: true,
               explicacao: 'A filiação do obrigatório é automática e decorre do exercício da atividade. A inscrição é ato formal posterior e o recolhimento é obrigação dela decorrente, não condição.',
@@ -3381,7 +3353,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q2',
+              id: 'prev-b1-t5-s8-q2',
               enunciado: 'Inscrição é o vínculo jurídico que se estabelece entre o segurado e a previdência social, do qual decorrem direitos e obrigações.',
               certa: false,
               explicacao: 'O conceito apresentado é o de FILIAÇÃO. A inscrição é o ato formal de cadastramento do segurado perante a previdência, de natureza declaratória.',
@@ -3391,7 +3363,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q3',
+              id: 'prev-b1-t5-s8-q3',
               enunciado: 'O empregado cujo empregador deixou de recolher as contribuições previdenciárias devidas perde a qualidade de segurado e não faz jus aos benefícios do RGPS.',
               certa: false,
               explicacao: 'A responsabilidade pelo desconto e recolhimento é da empresa. A inadimplência do empregador não prejudica o segurado empregado, que mantém a qualidade de segurado e o direito ao benefício.',
@@ -3401,7 +3373,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q4',
+              id: 'prev-b1-t5-s8-q4',
               enunciado: 'Admite-se a inscrição post mortem do segurado especial, para fins de concessão de benefício a seus dependentes.',
               certa: true,
               explicacao: 'A legislação admite excepcionalmente a inscrição post mortem do segurado especial. Para as demais categorias, a regra é a não admissão.',
@@ -3411,7 +3383,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q5',
+              id: 'prev-b1-t5-s8-q5',
               enunciado: 'É permitida a filiação ao RGPS, na condição de aprendiz, a partir dos quatorze anos de idade.',
               certa: true,
               explicacao: 'O art. 7º, XXXIII, da CF/88 proíbe o trabalho a menores de 16 anos, salvo na condição de aprendiz a partir dos 14. O aprendiz é segurado obrigatório equiparado a empregado.',
@@ -3433,7 +3405,6 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
         {
           id: 'prev-b1-t5-s9',
           nome: 'Diferença entre filiação e inscrição',
-          // conteúdo herdado do tópico 'prev-b1-07' da estrutura de 3 níveis
           teoria: `
 ## Por que esse tópico cai tanto
 
@@ -3485,7 +3456,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
 `,
           questoes: [
             {
-              id: 'prev-b1-07-q1',
+              id: 'prev-b1-t5-s9-q1',
               enunciado: 'A filiação do segurado obrigatório ao RGPS decorre automaticamente do exercício de atividade remunerada, independentemente de inscrição ou de recolhimento de contribuições.',
               certa: true,
               explicacao: 'A filiação do obrigatório é automática e decorre do exercício da atividade. A inscrição é ato formal posterior e o recolhimento é obrigação dela decorrente, não condição.',
@@ -3495,7 +3466,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q2',
+              id: 'prev-b1-t5-s9-q2',
               enunciado: 'Inscrição é o vínculo jurídico que se estabelece entre o segurado e a previdência social, do qual decorrem direitos e obrigações.',
               certa: false,
               explicacao: 'O conceito apresentado é o de FILIAÇÃO. A inscrição é o ato formal de cadastramento do segurado perante a previdência, de natureza declaratória.',
@@ -3505,7 +3476,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q3',
+              id: 'prev-b1-t5-s9-q3',
               enunciado: 'O empregado cujo empregador deixou de recolher as contribuições previdenciárias devidas perde a qualidade de segurado e não faz jus aos benefícios do RGPS.',
               certa: false,
               explicacao: 'A responsabilidade pelo desconto e recolhimento é da empresa. A inadimplência do empregador não prejudica o segurado empregado, que mantém a qualidade de segurado e o direito ao benefício.',
@@ -3515,7 +3486,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q4',
+              id: 'prev-b1-t5-s9-q4',
               enunciado: 'Admite-se a inscrição post mortem do segurado especial, para fins de concessão de benefício a seus dependentes.',
               certa: true,
               explicacao: 'A legislação admite excepcionalmente a inscrição post mortem do segurado especial. Para as demais categorias, a regra é a não admissão.',
@@ -3525,7 +3496,7 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
               ],
             },
             {
-              id: 'prev-b1-07-q5',
+              id: 'prev-b1-t5-s9-q5',
               enunciado: 'É permitida a filiação ao RGPS, na condição de aprendiz, a partir dos quatorze anos de idade.',
               certa: true,
               explicacao: 'O art. 7º, XXXIII, da CF/88 proíbe o trabalho a menores de 16 anos, salvo na condição de aprendiz a partir dos 14. O aprendiz é segurado obrigatório equiparado a empregado.',
@@ -3547,7 +3518,6 @@ Vale registrar que o STJ e o INSS admitem o cômputo de tempo de trabalho rural 
         {
           id: 'prev-b1-t5-s10',
           nome: 'Trabalhadores excluídos do RGPS',
-          // conteúdo herdado do tópico 'prev-b1-08' da estrutura de 3 níveis
           teoria: `
 ## A lógica da exclusão
 
@@ -3591,7 +3561,7 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
 `,
           questoes: [
             {
-              id: 'prev-b1-08-q1',
+              id: 'prev-b1-t5-s10-q1',
               enunciado: 'O servidor público titular de cargo efetivo de município que não instituiu regime próprio de previdência social é segurado obrigatório do Regime Geral de Previdência Social.',
               certa: true,
               explicacao: 'A exclusão do RGPS pressupõe amparo por regime próprio. Sem RPPS instituído pelo ente, o servidor efetivo vincula-se obrigatoriamente ao RGPS.',
@@ -3601,7 +3571,7 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
               ],
             },
             {
-              id: 'prev-b1-08-q2',
+              id: 'prev-b1-t5-s10-q2',
               enunciado: 'O aposentado pelo RGPS que retorna à atividade abrangida por esse regime é segurado obrigatório e está sujeito ao recolhimento das contribuições correspondentes.',
               certa: true,
               explicacao: 'O art. 12, §4º, da Lei nº 8.212/91 é expresso nesse sentido. Ele contribui, mas, conforme o art. 18, §2º, da Lei nº 8.213/91, não faz jus a outra prestação, salvo salário-família e reabilitação profissional.',
@@ -3611,7 +3581,7 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
               ],
             },
             {
-              id: 'prev-b1-08-q3',
+              id: 'prev-b1-t5-s10-q3',
               enunciado: 'O trabalhador estrangeiro que exerce atividade remunerada no Brasil está excluído do Regime Geral de Previdência Social por não possuir nacionalidade brasileira.',
               certa: false,
               explicacao: 'A nacionalidade é irrelevante para a filiação. O estrangeiro que trabalha no Brasil é segurado obrigatório, ressalvadas as hipóteses de acordo internacional que mantenha o vínculo com o país de origem.',
@@ -3621,7 +3591,7 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
               ],
             },
             {
-              id: 'prev-b1-08-q4',
+              id: 'prev-b1-t5-s10-q4',
               enunciado: 'Os militares das Forças Armadas são segurados obrigatórios do Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'Os militares possuem sistema de proteção social próprio, sendo excluídos do RGPS. Após a EC 103/2019, o regime dos militares foi apartado inclusive do conceito de RPPS.',
@@ -3631,7 +3601,7 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
               ],
             },
             {
-              id: 'prev-b1-08-q5',
+              id: 'prev-b1-t5-s10-q5',
               enunciado: 'A perda da qualidade de segurado implica a exclusão definitiva do trabalhador do âmbito de abrangência do Regime Geral de Previdência Social.',
               certa: false,
               explicacao: 'A perda da qualidade de segurado é situação temporária de descobertura. O trabalhador continua abrangido pelo RGPS e volta a ser segurado ao retomar atividade remunerada.',
@@ -3653,7 +3623,6 @@ Perder a qualidade de segurado **não** é o mesmo que estar excluído do RGPS. 
         {
           id: 'prev-b1-t5-s11',
           nome: 'Empresa — conceito previdenciário',
-          // conteúdo herdado do tópico 'prev-b1-09' da estrutura de 3 níveis
           teoria: `
 ## Por que existe um conceito "previdenciário" de empresa
 
@@ -3731,7 +3700,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
 `,
           questoes: [
             {
-              id: 'prev-b1-09-q1',
+              id: 'prev-b1-t5-s11-q1',
               enunciado: 'Para fins previdenciários, considera-se empresa a firma individual ou sociedade que assume o risco de atividade econômica urbana ou rural, com fins lucrativos ou não, bem como os órgãos e entidades da administração pública direta, indireta e fundacional.',
               certa: true,
               explicacao: 'Reprodução do art. 15, I, da Lei nº 8.212/91. O conceito previdenciário de empresa é mais amplo que o empresarial, alcançando entidades sem fins lucrativos e a administração pública.',
@@ -3741,7 +3710,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q2',
+              id: 'prev-b1-t5-s11-q2',
               enunciado: 'O contribuinte individual equipara-se a empresa em relação ao segurado que lhe presta serviço.',
               certa: true,
               explicacao: 'Equiparação prevista no parágrafo único do art. 15 da Lei nº 8.212/91. Assim, o autônomo que contrata alguém assume as obrigações de descontar e recolher a contribuição.',
@@ -3752,7 +3721,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q3',
+              id: 'prev-b1-t5-s11-q3',
               enunciado: 'Considera-se empregador doméstico a pessoa ou família que admite a seu serviço, sem finalidade lucrativa, empregado doméstico.',
               certa: true,
               explicacao: 'Literalidade do art. 15, II, da Lei nº 8.212/91. A ausência de finalidade lucrativa é elemento essencial da definição.',
@@ -3762,7 +3731,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q4',
+              id: 'prev-b1-t5-s11-q4',
               enunciado: 'A empresa que deixar de efetuar o desconto da contribuição do segurado empregado pode alegar essa omissão para eximir-se do dever de recolhimento.',
               certa: false,
               explicacao: 'O art. 33, §5º, da Lei nº 8.212/91 presume feito o desconto e é expresso ao vedar que a empresa alegue omissão para se eximir do recolhimento, respondendo ela diretamente pela importância.',
@@ -3772,7 +3741,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q5',
+              id: 'prev-b1-t5-s11-q5',
               enunciado: 'O empregador doméstico deve recolher as contribuições devidas até o dia vinte do mês seguinte ao da competência.',
               certa: false,
               explicacao: 'O prazo do empregador doméstico é até o dia 7 do mês seguinte, mediante Documento de Arrecadação do eSocial (DAE). O dia 20 é o prazo da empresa.',
@@ -3794,7 +3763,6 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
         {
           id: 'prev-b1-t5-s12',
           nome: 'Empregador doméstico — conceito previdenciário',
-          // conteúdo herdado do tópico 'prev-b1-09' da estrutura de 3 níveis
           teoria: `
 ## Por que existe um conceito "previdenciário" de empresa
 
@@ -3872,7 +3840,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
 `,
           questoes: [
             {
-              id: 'prev-b1-09-q1',
+              id: 'prev-b1-t5-s12-q1',
               enunciado: 'Para fins previdenciários, considera-se empresa a firma individual ou sociedade que assume o risco de atividade econômica urbana ou rural, com fins lucrativos ou não, bem como os órgãos e entidades da administração pública direta, indireta e fundacional.',
               certa: true,
               explicacao: 'Reprodução do art. 15, I, da Lei nº 8.212/91. O conceito previdenciário de empresa é mais amplo que o empresarial, alcançando entidades sem fins lucrativos e a administração pública.',
@@ -3882,7 +3850,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q2',
+              id: 'prev-b1-t5-s12-q2',
               enunciado: 'O contribuinte individual equipara-se a empresa em relação ao segurado que lhe presta serviço.',
               certa: true,
               explicacao: 'Equiparação prevista no parágrafo único do art. 15 da Lei nº 8.212/91. Assim, o autônomo que contrata alguém assume as obrigações de descontar e recolher a contribuição.',
@@ -3893,7 +3861,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q3',
+              id: 'prev-b1-t5-s12-q3',
               enunciado: 'Considera-se empregador doméstico a pessoa ou família que admite a seu serviço, sem finalidade lucrativa, empregado doméstico.',
               certa: true,
               explicacao: 'Literalidade do art. 15, II, da Lei nº 8.212/91. A ausência de finalidade lucrativa é elemento essencial da definição.',
@@ -3903,7 +3871,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q4',
+              id: 'prev-b1-t5-s12-q4',
               enunciado: 'A empresa que deixar de efetuar o desconto da contribuição do segurado empregado pode alegar essa omissão para eximir-se do dever de recolhimento.',
               certa: false,
               explicacao: 'O art. 33, §5º, da Lei nº 8.212/91 presume feito o desconto e é expresso ao vedar que a empresa alegue omissão para se eximir do recolhimento, respondendo ela diretamente pela importância.',
@@ -3913,7 +3881,7 @@ Esses prazos voltam com detalhes no bloco de financiamento — vale já ir fixan
               ],
             },
             {
-              id: 'prev-b1-09-q5',
+              id: 'prev-b1-t5-s12-q5',
               enunciado: 'O empregador doméstico deve recolher as contribuições devidas até o dia vinte do mês seguinte ao da competência.',
               certa: false,
               explicacao: 'O prazo do empregador doméstico é até o dia 7 do mês seguinte, mediante Documento de Arrecadação do eSocial (DAE). O dia 20 é o prazo da empresa.',

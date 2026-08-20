@@ -20,7 +20,6 @@ export default {
         {
           id: 'prev-b3-t1-s1',
           nome: 'Beneficiários e espécies de prestações',
-          // conteúdo herdado do tópico 'prev-b3-01' da estrutura de 3 níveis
           teoria: `
 ## Beneficiários = segurados + dependentes
 
@@ -68,7 +67,7 @@ O aposentado do RGPS que retorna à atividade é **segurado obrigatório e contr
 `,
           questoes: [
             {
-              id: 'prev-b3-01-q1',
+              id: 'prev-b3-t1-s1-q1',
               enunciado: 'É beneficiário do RGPS, na condição de dependente, o filho não emancipado menor de vinte e quatro anos de idade, desde que matriculado em curso superior.',
               certa: false,
               explicacao: 'O limite previdenciário é 21 anos, salvo invalidez ou deficiência. Os 24 anos para universitários são regra do imposto de renda. Item cobrado na prova de 2022.',
@@ -78,7 +77,7 @@ O aposentado do RGPS que retorna à atividade é **segurado obrigatório e contr
               ],
             },
             {
-              id: 'prev-b3-01-q2',
+              id: 'prev-b3-t1-s1-q2',
               enunciado: 'O enteado, o menor sob guarda e o menor tutelado equiparam-se a filho do segurado, mediante declaração deste e comprovação de dependência econômica.',
               certa: false,
               explicacao: 'Somente o enteado e o menor TUTELADO se equiparam a filho. O menor sob guarda foi excluído pela Lei nº 9.528/97. Item cobrado na prova de 2022.',
@@ -88,7 +87,7 @@ O aposentado do RGPS que retorna à atividade é **segurado obrigatório e contr
               ],
             },
             {
-              id: 'prev-b3-01-q3',
+              id: 'prev-b3-t1-s1-q3',
               enunciado: 'A existência de dependente de qualquer das classes exclui do direito às prestações os dependentes das classes seguintes.',
               certa: true,
               explicacao: 'É o princípio da exclusão por classes do art. 16, §1º. Havendo cônjuge ou filho menor, os pais e irmãos nada recebem.',
@@ -98,13 +97,23 @@ O aposentado do RGPS que retorna à atividade é **segurado obrigatório e contr
               ],
             },
             {
-              id: 'prev-b3-01-q4',
+              id: 'prev-b3-t1-s1-q4',
               enunciado: 'Não faz jus à pensão por morte o dependente condenado criminalmente, por sentença transitada em julgado, pela prática de crime doloso que tenha resultado na morte do segurado.',
               certa: true,
               explicacao: 'É a indignidade previdenciária do art. 74, §1º, ressalvados os absolutamente incapazes e inimputáveis. Item cobrado na prova de 2022.',
               baseLegal: 'Lei nº 8.213/91, art. 74, §1º',
               variacoes: [
                 { enunciado: 'O aposentado pelo RGPS que retorna à atividade faz jus, além do salário-família e da reabilitação profissional, ao auxílio por incapacidade temporária.', certa: false, explicacao: 'O art. 18, §2º, ressalva apenas salário-família e reabilitação profissional.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t1-s1-q5',
+              enunciado: 'O salário-família e o auxílio-reclusão são prestações devidas aos dependentes do segurado, ao passo que o auxílio-acidente é devido ao próprio segurado.',
+              certa: false,
+              explicacao: 'O salário-família é devido ao SEGURADO (empregado, avulso e aposentado de baixa renda), embora calculado em razão dos filhos. Devidos aos dependentes são apenas a pensão por morte e o auxílio-reclusão.',
+              baseLegal: 'Lei nº 8.213/91, art. 18, I e II',
+              variacoes: [
+                { enunciado: 'As únicas prestações devidas exclusivamente aos dependentes são a pensão por morte e o auxílio-reclusão.', certa: true, explicacao: 'Correto. Todas as demais prestações do art. 18 são devidas ao segurado; os serviços cabem a ambos.' },
               ],
             },
           ],
@@ -120,7 +129,6 @@ O aposentado do RGPS que retorna à atividade é **segurado obrigatório e contr
         {
           id: 'prev-b3-t1-s2',
           nome: 'Períodos de carência',
-          // conteúdo herdado do tópico 'prev-b3-02' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -168,7 +176,7 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
 `,
           questoes: [
             {
-              id: 'prev-b3-02-q1',
+              id: 'prev-b3-t1-s2-q1',
               enunciado: 'O período de carência visa resguardar o equilíbrio financeiro e atuarial do sistema previdenciário.',
               certa: true,
               explicacao: 'A carência evita a filiação oportunista, exigindo contribuição mínima antes do acesso ao benefício. Item cobrado na prova de 2022.',
@@ -178,7 +186,7 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
               ],
             },
             {
-              id: 'prev-b3-02-q2',
+              id: 'prev-b3-t1-s2-q2',
               enunciado: 'A pensão por morte e o auxílio-acidente independem de carência.',
               certa: true,
               explicacao: 'Ambos constam do rol do art. 26 da Lei nº 8.213/91, que dispensa carência. O auxílio-reclusão, ao contrário, exige 24 contribuições.',
@@ -188,7 +196,7 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
               ],
             },
             {
-              id: 'prev-b3-02-q3',
+              id: 'prev-b3-t1-s2-q3',
               enunciado: 'A carência para a aposentadoria por idade no RGPS é de cento e oitenta contribuições mensais.',
               certa: true,
               explicacao: 'É a carência das aposentadorias programadas, conforme o art. 25, II, da Lei nº 8.213/91.',
@@ -198,7 +206,7 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
               ],
             },
             {
-              id: 'prev-b3-02-q4',
+              id: 'prev-b3-t1-s2-q4',
               enunciado: 'A segurada empregada precisa cumprir carência de dez contribuições mensais para ter direito ao salário-maternidade.',
               certa: false,
               explicacao: 'Empregada, doméstica e avulsa não têm carência para o salário-maternidade. As 10 contribuições são exigidas da contribuinte individual, da facultativa e da segurada especial.',
@@ -208,7 +216,7 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
               ],
             },
             {
-              id: 'prev-b3-02-q5',
+              id: 'prev-b3-t1-s2-q5',
               enunciado: 'Havendo perda da qualidade de segurado, as contribuições anteriores só serão computadas para nova carência após o cumprimento de metade dos períodos exigidos a partir da nova filiação.',
               certa: true,
               explicacao: 'É a regra do art. 27-A da Lei nº 8.213/91. Para aposentadorias, porém, a perda da qualidade não impede a concessão se cumpridos carência e requisitos.',
@@ -229,7 +237,6 @@ O segurado especial comprova a carência por **tempo de efetivo exercício** da 
         {
           id: 'prev-b3-t1-s3',
           nome: 'Salário de benefício — cálculo e regras',
-          // conteúdo herdado do tópico 'prev-b3-03' da estrutura de 3 níveis
           teoria: `
 ## Conceito
 
@@ -280,7 +287,7 @@ Para as aposentadorias por idade e por tempo de contribuição, quando o segurad
 `,
           questoes: [
             {
-              id: 'prev-b3-03-q1',
+              id: 'prev-b3-t1-s3-q1',
               enunciado: 'O valor do salário de benefício não pode ser inferior ao de um salário mínimo nem superior ao limite máximo do salário de contribuição na data de início do benefício.',
               certa: true,
               explicacao: 'Literalidade do art. 29, §2º, da Lei nº 8.213/91. Item cobrado na prova de 2022.',
@@ -290,7 +297,7 @@ Para as aposentadorias por idade e por tempo de contribuição, quando o segurad
               ],
             },
             {
-              id: 'prev-b3-03-q2',
+              id: 'prev-b3-t1-s3-q2',
               enunciado: 'Após a Emenda Constitucional nº 103/2019, o salário de benefício corresponde à média aritmética simples dos oitenta por cento maiores salários de contribuição do período contributivo.',
               certa: false,
               explicacao: 'A EC 103/2019 eliminou o descarte dos 20% menores: hoje a média considera 100% de todos os salários de contribuição desde julho de 1994.',
@@ -300,7 +307,7 @@ Para as aposentadorias por idade e por tempo de contribuição, quando o segurad
               ],
             },
             {
-              id: 'prev-b3-03-q3',
+              id: 'prev-b3-t1-s3-q3',
               enunciado: 'O salário de benefício do segurado que exerce atividades concomitantes é calculado com base na soma dos salários de contribuição das atividades no período básico de cálculo.',
               certa: true,
               explicacao: 'A EC 103/2019 unificou a sistemática: os salários simplesmente se somam, respeitado o teto. Item cobrado na prova de 2022.',
@@ -310,13 +317,23 @@ Para as aposentadorias por idade e por tempo de contribuição, quando o segurad
               ],
             },
             {
-              id: 'prev-b3-03-q4',
+              id: 'prev-b3-t1-s3-q4',
               enunciado: 'O décimo terceiro salário integra o cálculo do salário de benefício.',
               certa: false,
               explicacao: 'O 13º integra o salário de CONTRIBUIÇÃO (com base apartada), mas é expressamente excluído do cálculo do salário de BENEFÍCIO.',
               baseLegal: 'Lei nº 8.213/91, art. 29, §3º',
               variacoes: [
                 { enunciado: 'O auxílio-acidente corresponde a cinquenta por cento do salário de benefício do segurado.', certa: true, explicacao: 'Correto — art. 86, §1º, da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t1-s3-q5',
+              enunciado: 'No cálculo do salário de benefício, os salários de contribuição integrantes do período básico de cálculo são corrigidos monetariamente até a data de início do benefício.',
+              certa: true,
+              explicacao: 'Sem a atualização, contribuições antigas seriam somadas em valores nominais e a média resultaria artificialmente baixa. A correção preserva o poder aquisitivo de cada competência.',
+              baseLegal: 'Lei nº 8.213/91, art. 29, §1º',
+              variacoes: [
+                { enunciado: 'Os salários de contribuição do período básico de cálculo são considerados pelo seu valor nominal, sem atualização monetária.', certa: false, explicacao: 'A lei exige a correção monetária de todos os salários de contribuição que compõem o período básico de cálculo.' },
               ],
             },
           ],
@@ -331,7 +348,6 @@ Para as aposentadorias por idade e por tempo de contribuição, quando o segurad
         {
           id: 'prev-b3-t1-s4',
           nome: 'Renda mensal do benefício',
-          // conteúdo herdado do tópico 'prev-b3-04' da estrutura de 3 níveis
           teoria: `
 ## Da média ao valor pago
 
@@ -376,7 +392,7 @@ Para ter direito a esses prazos maiores, exige-se **2 anos** de casamento/união
 `,
           questoes: [
             {
-              id: 'prev-b3-04-q1',
+              id: 'prev-b3-t1-s4-q1',
               enunciado: 'A renda mensal da aposentadoria por incapacidade permanente decorrente de acidente do trabalho corresponde a cem por cento do salário de benefício.',
               certa: true,
               explicacao: 'A EC 103/2019 manteve o coeficiente de 100% quando a incapacidade decorre de acidente do trabalho, doença profissional ou do trabalho. Nos demais casos aplica-se 60% + 2% por ano excedente.',
@@ -386,7 +402,7 @@ Para ter direito a esses prazos maiores, exige-se **2 anos** de casamento/união
               ],
             },
             {
-              id: 'prev-b3-04-q2',
+              id: 'prev-b3-t1-s4-q2',
               enunciado: 'A pensão por morte corresponde a uma cota familiar de cinquenta por cento do valor da aposentadoria, acrescida de dez por cento por dependente, até o máximo de cem por cento.',
               certa: true,
               explicacao: 'É a fórmula da EC 103/2019. As cotas por dependente cessam com a perda da qualidade e não revertem aos demais.',
@@ -396,7 +412,7 @@ Para ter direito a esses prazos maiores, exige-se **2 anos** de casamento/união
               ],
             },
             {
-              id: 'prev-b3-04-q3',
+              id: 'prev-b3-t1-s4-q3',
               enunciado: 'A renda mensal do auxílio por incapacidade temporária corresponde a noventa e um por cento do salário de benefício, não podendo exceder a média dos doze últimos salários de contribuição.',
               certa: true,
               explicacao: 'O coeficiente é 91%, com o teto especial criado pela Lei nº 13.135/2015 para evitar contribuições artificiais antes do afastamento.',
@@ -406,13 +422,23 @@ Para ter direito a esses prazos maiores, exige-se **2 anos** de casamento/união
               ],
             },
             {
-              id: 'prev-b3-04-q4',
+              id: 'prev-b3-t1-s4-q4',
               enunciado: 'A pensão por morte devida ao cônjuge com quarenta e cinco anos de idade na data do óbito, presentes os demais requisitos legais, é vitalícia.',
               certa: true,
               explicacao: 'A partir de 45 anos a pensão é vitalícia, desde que comprovados 2 anos de união e 18 contribuições do falecido — requisitos dispensados em caso de acidente.',
               baseLegal: 'Lei nº 8.213/91, art. 77, §2º, V',
               variacoes: [
                 { enunciado: 'A pensão por morte é sempre vitalícia para o cônjuge sobrevivente, independentemente de sua idade na data do óbito.', certa: false, explicacao: 'A duração é escalonada por faixa etária, de 3 anos (menos de 22) até vitalícia (45 anos ou mais).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t1-s4-q5',
+              enunciado: 'O auxílio-acidente, por ter natureza indenizatória e não substituir a remuneração do segurado, pode ser pago em valor inferior ao salário mínimo e é acumulável com a remuneração da atividade exercida.',
+              certa: true,
+              explicacao: 'Ele indeniza a redução da capacidade laborativa, e não a perda da renda — por isso escapa do piso do art. 201, §2º, e convive com o salário. O que ele não pode é acumular com aposentadoria.',
+              baseLegal: 'Lei nº 8.213/91, art. 86, §§ 1º a 3º; CF/88, art. 201, §2º',
+              variacoes: [
+                { enunciado: 'O auxílio-acidente pode ser acumulado com qualquer espécie de aposentadoria concedida pelo RGPS.', certa: false, explicacao: 'A acumulação com aposentadoria é vedada: o auxílio-acidente cessa com a concessão de qualquer aposentadoria (art. 86, §§2º e 3º).' },
               ],
             },
           ],
@@ -428,7 +454,6 @@ Para ter direito a esses prazos maiores, exige-se **2 anos** de casamento/união
         {
           id: 'prev-b3-t1-s5',
           nome: 'Reajustamento do valor dos benefícios',
-          // conteúdo herdado do tópico 'prev-b3-05' da estrutura de 3 níveis
           teoria: `
 ## A garantia constitucional
 
@@ -464,7 +489,7 @@ O pagamento é feito conforme calendário elaborado pelo INSS, considerando o **
 `,
           questoes: [
             {
-              id: 'prev-b3-05-q1',
+              id: 'prev-b3-t1-s5-q1',
               enunciado: 'É assegurado o reajustamento dos benefícios para preservar-lhes, em caráter permanente, o valor real, conforme critérios definidos em lei.',
               certa: true,
               explicacao: 'Literalidade do art. 201, §4º, da CF/88. Note que a preservação do valor REAL é garantia da previdência; a seguridade em geral garante apenas a irredutibilidade nominal.',
@@ -474,7 +499,7 @@ O pagamento é feito conforme calendário elaborado pelo INSS, considerando o **
               ],
             },
             {
-              id: 'prev-b3-05-q2',
+              id: 'prev-b3-t1-s5-q2',
               enunciado: 'Os valores do salário de contribuição e dos benefícios de prestação continuada são reajustados na mesma época e com os mesmos índices.',
               certa: true,
               explicacao: 'Regra do art. 20, §1º, da Lei nº 8.212/91, cobrada na prova de 2022.',
@@ -484,13 +509,33 @@ O pagamento é feito conforme calendário elaborado pelo INSS, considerando o **
               ],
             },
             {
-              id: 'prev-b3-05-q3',
+              id: 'prev-b3-t1-s5-q3',
               enunciado: 'O benefício concedido no decorrer do ano recebe, no primeiro reajuste, índice proporcional ao número de meses transcorridos entre a data de início do benefício e a data do reajustamento.',
               certa: true,
               explicacao: 'É o reajuste pro rata do art. 41-A, §1º, da Lei nº 8.213/91.',
               baseLegal: 'Lei nº 8.213/91, art. 41-A, §1º',
               variacoes: [
                 { enunciado: 'Os benefícios de prestação continuada do RGPS são reajustados anualmente com base na variação do Índice Nacional de Preços ao Consumidor (INPC).', certa: true, explicacao: 'Correto — art. 41-A da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t1-s5-q4',
+              enunciado: 'O benefício previdenciário concedido em outubro terá, no reajuste geral seguinte, índice proporcional ao número de meses decorridos entre a data de início do benefício e a data do reajustamento.',
+              certa: true,
+              explicacao: 'É o reajuste pro rata do primeiro ano. Sem ele, quem entrou em outubro receberia a correção de doze meses de inflação que não sofreu.',
+              baseLegal: 'Lei nº 8.213/91, art. 41-A, §1º',
+              variacoes: [
+                { enunciado: 'Todo benefício recebe, no primeiro reajuste, o índice integral apurado no período, independentemente do mês da concessão.', certa: false, explicacao: 'No primeiro reajuste o índice é proporcional aos meses transcorridos desde a data de início do benefício.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t1-s5-q5',
+              enunciado: 'O reajustamento dos benefícios de valor superior a um salário mínimo é vinculado ao mesmo percentual de aumento concedido ao salário mínimo.',
+              certa: false,
+              explicacao: 'Não há vinculação. Benefícios acima do piso são reajustados pelo INPC; apenas os de valor mínimo acompanham o salário mínimo, por força do piso constitucional.',
+              baseLegal: 'Lei nº 8.213/91, art. 41-A; CF/88, art. 201, §2º',
+              variacoes: [
+                { enunciado: 'Os benefícios de prestação continuada do RGPS são reajustados anualmente pela variação do Índice Nacional de Preços ao Consumidor.', certa: true, explicacao: 'Correto — o INPC é o índice legal de reajuste, aplicado na mesma data para todos os benefícios.' },
               ],
             },
           ],
@@ -511,7 +556,6 @@ O pagamento é feito conforme calendário elaborado pelo INSS, considerando o **
         {
           id: 'prev-b3-t2-s1',
           nome: 'Manutenção da qualidade de segurado',
-          // conteúdo herdado do tópico 'prev-b3-06' da estrutura de 3 níveis
           teoria: `
 ## O que é o período de graça
 
@@ -555,7 +599,7 @@ Durante o período de graça o segurado pode:
 `,
           questoes: [
             {
-              id: 'prev-b3-06-q1',
+              id: 'prev-b3-t2-s1-q1',
               enunciado: 'Durante o período de graça, o segurado conserva todos os seus direitos perante a previdência social.',
               certa: true,
               explicacao: 'Literalidade do art. 15, §3º, da Lei nº 8.213/91. Item cobrado na prova de 2022.',
@@ -565,7 +609,7 @@ Durante o período de graça o segurado pode:
               ],
             },
             {
-              id: 'prev-b3-06-q2',
+              id: 'prev-b3-t2-s1-q2',
               enunciado: 'Aquele que está em gozo de benefício, exceto do auxílio-acidente, mantém a qualidade de segurado independentemente de contribuições e sem limite de prazo.',
               certa: true,
               explicacao: 'É o art. 15, I, da Lei nº 8.213/91. A prova de 2022 apresentou o enunciado invertido (dizendo que PERDE), e o item estava errado.',
@@ -575,7 +619,7 @@ Durante o período de graça o segurado pode:
               ],
             },
             {
-              id: 'prev-b3-06-q3',
+              id: 'prev-b3-t2-s1-q3',
               enunciado: 'O prazo de manutenção da qualidade de segurado pode alcançar trinta e seis meses quando o segurado já houver vertido mais de cento e vinte contribuições mensais e comprovar situação de desemprego.',
               certa: true,
               explicacao: '12 meses (base) + 12 (mais de 120 contribuições) + 12 (desemprego comprovado) = 36 meses.',
@@ -585,13 +629,23 @@ Durante o período de graça o segurado pode:
               ],
             },
             {
-              id: 'prev-b3-06-q4',
+              id: 'prev-b3-t2-s1-q4',
               enunciado: 'O segurado facultativo mantém essa qualidade por, no máximo, três meses após a cessação das contribuições.',
               certa: false,
               explicacao: 'O prazo do facultativo é de 6 meses. Os 3 meses aplicam-se ao segurado incorporado ao serviço militar, após o licenciamento. Item cobrado na prova de 2022.',
               baseLegal: 'Lei nº 8.213/91, art. 15, VI',
               variacoes: [
                 { enunciado: 'O segurado recolhido à prisão mantém a qualidade de segurado até doze meses após o livramento.', certa: true, explicacao: 'Correto — art. 15, IV, da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t2-s1-q5',
+              enunciado: 'O segurado que deixa de exercer atividade remunerada mantém essa qualidade por doze meses, prazo que se estende a vinte e quatro meses se já houver vertido mais de cento e vinte contribuições mensais sem interrupção que acarrete perda da qualidade de segurado.',
+              certa: true,
+              explicacao: 'A prorrogação premia o histórico contributivo longo. Somando ainda a comprovação de desemprego, o período de graça pode alcançar 36 meses.',
+              baseLegal: 'Lei nº 8.213/91, art. 15, II e §1º',
+              variacoes: [
+                { enunciado: 'A prorrogação do período de graça por mais doze meses em razão do desemprego dispensa qualquer comprovação da situação.', certa: false, explicacao: 'A prorrogação exige comprovação da situação de desemprego. O STJ admite outros meios de prova além do registro no órgão do Ministério do Trabalho, mas prova é indispensável.' },
               ],
             },
           ],
@@ -606,7 +660,6 @@ Durante o período de graça o segurado pode:
         {
           id: 'prev-b3-t2-s2',
           nome: 'Perda da qualidade de segurado',
-          // conteúdo herdado do tópico 'prev-b3-07' da estrutura de 3 níveis
           teoria: `
 ## Quando ocorre
 
@@ -657,7 +710,7 @@ Para a **pensão por morte**, há ainda uma regra específica: se o segurado fal
 `,
           questoes: [
             {
-              id: 'prev-b3-07-q1',
+              id: 'prev-b3-t2-s2-q1',
               enunciado: 'A perda da qualidade de segurado implica a perda do tempo de contribuição já cumprido pelo segurado.',
               certa: false,
               explicacao: 'O tempo de contribuição é preservado. O que se perde é a cobertura; para nova carência aplica-se a regra da metade do art. 27-A.',
@@ -667,7 +720,7 @@ Para a **pensão por morte**, há ainda uma regra específica: se o segurado fal
               ],
             },
             {
-              id: 'prev-b3-07-q2',
+              id: 'prev-b3-t2-s2-q2',
               enunciado: 'A perda da qualidade de segurado não é considerada para a concessão das aposentadorias por idade, por tempo de contribuição e especial, desde que cumpridos a carência e os demais requisitos.',
               certa: true,
               explicacao: 'É a regra do art. 3º da Lei nº 10.666/2003, exceção importantíssima à lógica da manutenção.',
@@ -677,7 +730,7 @@ Para a **pensão por morte**, há ainda uma regra específica: se o segurado fal
               ],
             },
             {
-              id: 'prev-b3-07-q3',
+              id: 'prev-b3-t2-s2-q3',
               enunciado: 'A perda da qualidade de segurado ocorre no dia dezesseis do segundo mês seguinte ao término dos prazos de manutenção previstos em lei.',
               certa: true,
               explicacao: 'É o marco do art. 14 do Decreto nº 3.048/99, que confere folga adicional ao segurado.',
@@ -687,13 +740,23 @@ Para a **pensão por morte**, há ainda uma regra específica: se o segurado fal
               ],
             },
             {
-              id: 'prev-b3-07-q4',
+              id: 'prev-b3-t2-s2-q4',
               enunciado: 'É devida pensão por morte aos dependentes de segurado que, embora tenha perdido essa qualidade, já havia preenchido os requisitos para obtenção de aposentadoria na data do óbito.',
               certa: true,
               explicacao: 'É a regra do art. 102, §2º, da Lei nº 8.213/91: o direito adquirido à aposentadoria projeta-se em favor dos dependentes.',
               baseLegal: 'Lei nº 8.213/91, art. 102, §2º',
               variacoes: [
                 { enunciado: 'Perdida a qualidade de segurado, o dependente do falecido jamais fará jus à pensão por morte.', certa: false, explicacao: 'Se o falecido já havia preenchido requisitos para alguma aposentadoria, a pensão é devida (art. 102, §2º).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t2-s2-q5',
+              enunciado: 'A perda da qualidade de segurado prejudica o direito à aposentadoria por idade de quem já cumpriu a carência exigida.',
+              certa: false,
+              explicacao: 'O art. 3º da Lei nº 10.666/2003 afasta a exigência de qualidade de segurado para as aposentadorias por idade, por tempo de contribuição e especial, bastando o cumprimento da carência e dos demais requisitos.',
+              baseLegal: 'Lei nº 10.666/2003, art. 3º',
+              variacoes: [
+                { enunciado: 'A perda da qualidade de segurado não é considerada para a concessão da aposentadoria especial, desde que cumpridos a carência e os demais requisitos.', certa: true, explicacao: 'Correto — a aposentadoria especial está entre as três hipóteses excepcionadas pela Lei nº 10.666/2003.' },
               ],
             },
           ],
@@ -708,7 +771,6 @@ Para a **pensão por morte**, há ainda uma regra específica: se o segurado fal
         {
           id: 'prev-b3-t2-s3',
           nome: 'Restabelecimento da qualidade de segurado',
-          // conteúdo herdado do tópico 'prev-b3-08' da estrutura de 3 níveis
           teoria: `
 ## Como se readquire
 
@@ -749,7 +811,7 @@ Como visto, para aposentadoria por idade, por tempo de contribuição e especial
 `,
           questoes: [
             {
-              id: 'prev-b3-08-q1',
+              id: 'prev-b3-t2-s3-q1',
               enunciado: 'O segurado que perdeu essa qualidade readquire-a automaticamente ao voltar a exercer atividade remunerada abrangida pelo RGPS.',
               certa: true,
               explicacao: 'A filiação do segurado obrigatório decorre do exercício da atividade; não há requerimento nem ato administrativo constitutivo.',
@@ -759,7 +821,7 @@ Como visto, para aposentadoria por idade, por tempo de contribuição e especial
               ],
             },
             {
-              id: 'prev-b3-08-q2',
+              id: 'prev-b3-t2-s3-q2',
               enunciado: 'Segurado que verteu cem contribuições, perdeu a qualidade de segurado e retornou à atividade fará jus ao auxílio por incapacidade temporária após seis novas contribuições mensais.',
               certa: true,
               explicacao: 'Aplica-se a regra da metade do art. 27-A: metade de 12 é 6. Cumpridas as 6, somam-se as 100 anteriores.',
@@ -769,13 +831,33 @@ Como visto, para aposentadoria por idade, por tempo de contribuição e especial
               ],
             },
             {
-              id: 'prev-b3-08-q3',
+              id: 'prev-b3-t2-s3-q3',
               enunciado: 'O contribuinte individual pode recolher contribuições relativas a período anterior à sua inscrição mediante indenização ao INSS, desde que comprove o exercício da atividade no período.',
               certa: true,
               explicacao: 'Como a filiação decorria do exercício da atividade, admite-se a indenização com juros, comprovado o efetivo trabalho.',
               baseLegal: 'Lei nº 8.212/91, art. 45-A',
               variacoes: [
                 { enunciado: 'O segurado facultativo pode indenizar período anterior ao seu primeiro recolhimento, desde que comprove não exercer atividade remunerada.', certa: false, explicacao: 'O facultativo não pode: antes do primeiro recolhimento não havia filiação alguma a ser recomposta.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t2-s3-q4',
+              enunciado: 'Readquirida a qualidade de segurado, as contribuições anteriores à perda voltam a ser computadas para carência somente depois que o segurado contar, a partir da nova filiação, com metade dos períodos exigidos.',
+              certa: true,
+              explicacao: 'É a regra da metade do art. 27-A. Cumprida a metade, todo o histórico anterior volta a somar — ele não se perde, apenas fica suspenso.',
+              baseLegal: 'Lei nº 8.213/91, art. 27-A',
+              variacoes: [
+                { enunciado: 'Após a perda da qualidade de segurado, as contribuições anteriores são definitivamente desconsideradas para efeito de carência.', certa: false, explicacao: 'Elas não se perdem: voltam a ser computadas depois de cumprida metade da carência exigida a partir da nova filiação.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t2-s3-q5',
+              enunciado: 'Segurado que havia perdido essa qualidade e retornou à atividade, sofrendo acidente de trabalho na primeira semana, não faz jus ao auxílio por incapacidade temporária por não ter cumprido metade da carência.',
+              certa: false,
+              explicacao: 'A incapacidade decorrente de acidente de qualquer natureza independe de carência (art. 26, II). Sem carência a cumprir, não há regra da metade a aplicar: a cobertura é imediata.',
+              baseLegal: 'Lei nº 8.213/91, arts. 26, II, e 27-A',
+              variacoes: [
+                { enunciado: 'A reaquisição da qualidade de segurado ocorre automaticamente com o retorno ao exercício de atividade remunerada abrangida pelo RGPS.', certa: true, explicacao: 'Correto. Para o segurado obrigatório a filiação decorre do exercício da atividade, sem necessidade de requerimento.' },
               ],
             },
           ],
@@ -796,7 +878,6 @@ Como visto, para aposentadoria por idade, por tempo de contribuição e especial
         {
           id: 'prev-b3-t3-s1',
           nome: 'Serviço social',
-          // conteúdo herdado do tópico 'prev-b3-09' da estrutura de 3 níveis
           teoria: `
 ## Serviço, não benefício
 
@@ -831,7 +912,7 @@ O serviço social é executado por **assistentes sociais** do quadro do INSS, pr
 `,
           questoes: [
             {
-              id: 'prev-b3-09-q1',
+              id: 'prev-b3-t3-s1-q1',
               enunciado: 'Compete ao serviço social esclarecer aos beneficiários seus direitos sociais e os meios de exercê-los, bem como estabelecer, juntamente com eles, o processo de solução dos problemas que emergirem da sua relação com a previdência social.',
               certa: true,
               explicacao: 'Literalidade do art. 88 da Lei nº 8.213/91, cobrada na prova de 2022.',
@@ -841,7 +922,7 @@ O serviço social é executado por **assistentes sociais** do quadro do INSS, pr
               ],
             },
             {
-              id: 'prev-b3-09-q2',
+              id: 'prev-b3-t3-s1-q2',
               enunciado: 'Na prestação do serviço social, será dada prioridade aos segurados em benefício por incapacidade temporária e atenção especial aos aposentados e pensionistas.',
               certa: true,
               explicacao: 'É a diretriz do art. 88, §1º, da Lei nº 8.213/91.',
@@ -851,13 +932,33 @@ O serviço social é executado por **assistentes sociais** do quadro do INSS, pr
               ],
             },
             {
-              id: 'prev-b3-09-q3',
+              id: 'prev-b3-t3-s1-q3',
               enunciado: 'São serviços previstos no plano de benefícios da previdência social o serviço social e a habilitação e reabilitação profissional.',
               certa: true,
               explicacao: 'O art. 18, III, da Lei nº 8.213/91 arrola exatamente esses dois serviços, devidos a segurados e dependentes.',
               baseLegal: 'Lei nº 8.213/91, art. 18, III',
               variacoes: [
                 { enunciado: 'O plano de benefícios da previdência social prevê três serviços: serviço social, reabilitação profissional e assistência médica domiciliar.', certa: false, explicacao: 'São apenas dois serviços. Assistência à saúde é atribuição do SUS, não da previdência.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t3-s1-q4',
+              enunciado: 'O serviço social constitui benefício previdenciário de prestação continuada, pago em pecúnia aos segurados de baixa renda.',
+              certa: false,
+              explicacao: 'O serviço social é SERVIÇO, não benefício, e não consiste em pagamento mensal. O art. 18 separa expressamente benefícios de serviços.',
+              baseLegal: 'Lei nº 8.213/91, arts. 18, III, e 88',
+              variacoes: [
+                { enunciado: 'O serviço social e a habilitação e reabilitação profissional são os dois únicos serviços previstos no plano de benefícios da previdência social.', certa: true, explicacao: 'Correto — são apenas esses dois, devidos a segurados e dependentes e independentes de carência.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t3-s1-q5',
+              enunciado: 'Na prestação do serviço social, o INSS poderá pagar passagem e ajuda de custo ao beneficiário, em situação comprovada de necessidade.',
+              certa: true,
+              explicacao: 'O art. 88, §3º, autoriza o custeio de passagem e ajuda de custo. Isso não desnatura o serviço em benefício: é meio para viabilizar o atendimento.',
+              baseLegal: 'Lei nº 8.213/91, art. 88, §3º',
+              variacoes: [
+                { enunciado: 'A prestação do serviço social depende do cumprimento de carência de doze contribuições mensais.', certa: false, explicacao: 'Os serviços previdenciários independem de carência, conforme o art. 26, IV, da Lei nº 8.213/91.' },
               ],
             },
           ],
@@ -871,7 +972,6 @@ O serviço social é executado por **assistentes sociais** do quadro do INSS, pr
         {
           id: 'prev-b3-t3-s2',
           nome: 'Reabilitação profissional',
-          // conteúdo herdado do tópico 'prev-b3-10' da estrutura de 3 níveis
           teoria: `
 ## Finalidade (art. 89)
 
@@ -911,7 +1011,7 @@ Observação: estão **dispensados** das perícias periódicas os aposentados po
 `,
           questoes: [
             {
-              id: 'prev-b3-10-q1',
+              id: 'prev-b3-t3-s2-q1',
               enunciado: 'Na hipótese de habilitação e reabilitação profissional, é vedada a concessão de auxílio para tratamento ou exame fora do domicílio do beneficiário.',
               certa: false,
               explicacao: 'A lei prevê expressamente o auxílio para tratamento ou exame fora do domicílio. Item cobrado na prova de 2022.',
@@ -921,7 +1021,7 @@ Observação: estão **dispensados** das perícias periódicas os aposentados po
               ],
             },
             {
-              id: 'prev-b3-10-q2',
+              id: 'prev-b3-t3-s2-q2',
               enunciado: 'A empresa com mais de mil empregados está obrigada a preencher cinco por cento de seus cargos com beneficiários reabilitados ou pessoas com deficiência.',
               certa: true,
               explicacao: 'É a faixa máxima da reserva de vagas do art. 93 da Lei nº 8.213/91.',
@@ -931,13 +1031,33 @@ Observação: estão **dispensados** das perícias periódicas os aposentados po
               ],
             },
             {
-              id: 'prev-b3-10-q3',
+              id: 'prev-b3-t3-s2-q3',
               enunciado: 'Concluído o processo de reabilitação profissional, o INSS emitirá certificado indicando as atividades que poderão ser exercidas pelo beneficiário, o qual não impede o exercício de outra atividade para a qual ele se julgue capacitado.',
               certa: true,
               explicacao: 'É a regra do art. 92 da Lei nº 8.213/91: o certificado orienta, mas não restringe.',
               baseLegal: 'Lei nº 8.213/91, art. 92',
               variacoes: [
                 { enunciado: 'A habilitação e a reabilitação profissional dependem de carência de doze contribuições mensais.', certa: false, explicacao: 'Ambos os serviços independem de carência (art. 26, IV).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t3-s2-q4',
+              enunciado: 'A habilitação e a reabilitação profissional são devidas ao segurado, ainda que aposentado por incapacidade permanente, e também aos seus dependentes.',
+              certa: true,
+              explicacao: 'O art. 89 alcança beneficiários incapacitados e pessoas com deficiência. O aposentado por incapacidade permanente pode ser convocado justamente para tentar o retorno ao trabalho.',
+              baseLegal: 'Lei nº 8.213/91, art. 89',
+              variacoes: [
+                { enunciado: 'A reabilitação profissional é devida exclusivamente ao segurado em gozo de auxílio por incapacidade temporária.', certa: false, explicacao: 'Alcança segurados e dependentes, inclusive o aposentado por incapacidade permanente e a pessoa com deficiência.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t3-s2-q5',
+              enunciado: 'A empresa com duzentos empregados deve preencher três por cento de seus cargos com beneficiários reabilitados ou pessoas com deficiência.',
+              certa: false,
+              explicacao: 'Com até 200 empregados o percentual é de 2%. Os 3% valem para a faixa de 201 a 500 empregados.',
+              baseLegal: 'Lei nº 8.213/91, art. 93, I e II',
+              variacoes: [
+                { enunciado: 'A dispensa de trabalhador reabilitado ao final de contrato por prazo superior a noventa dias só pode ocorrer após a contratação de substituto em condição semelhante.', certa: true, explicacao: 'Correto — é a garantia do art. 93, §1º, que preserva o percentual mínimo de reserva de vagas.' },
               ],
             },
           ],
@@ -958,7 +1078,6 @@ Observação: estão **dispensados** das perícias periódicas os aposentados po
         {
           id: 'prev-b3-t4-s1',
           nome: 'EC nº 103/2019 — regras de transição',
-          // conteúdo herdado do tópico 'prev-b3-11' da estrutura de 3 níveis
           teoria: `
 ## O que a reforma mudou
 
@@ -1005,7 +1124,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
 `,
           questoes: [
             {
-              id: 'prev-b3-11-q1',
+              id: 'prev-b3-t4-s1-q1',
               enunciado: 'Na regra permanente instituída pela EC nº 103/2019, a aposentadoria programada no RGPS exige idade mínima de sessenta e cinco anos para o homem e sessenta e dois anos para a mulher.',
               certa: true,
               explicacao: 'São as idades mínimas da regra permanente, com 20 anos (H) e 15 anos (M) de contribuição.',
@@ -1015,7 +1134,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q2',
+              id: 'prev-b3-t4-s1-q2',
               enunciado: 'O segurado que houver cumprido todos os requisitos para a aposentadoria antes da entrada em vigor da EC nº 103/2019 poderá requerer o benefício pelas regras anteriores a qualquer tempo.',
               certa: true,
               explicacao: 'É o direito adquirido expressamente resguardado pelo art. 3º da EC 103/2019.',
@@ -1025,7 +1144,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q3',
+              id: 'prev-b3-t4-s1-q3',
               enunciado: 'Após a EC nº 103/2019, o valor da aposentadoria programada corresponde a sessenta por cento do salário de benefício, acrescido de dois por cento por ano de contribuição que exceder vinte anos para o homem e quinze anos para a mulher.',
               certa: true,
               explicacao: 'É a fórmula do art. 26 da EC 103/2019, aplicada sobre a média de 100% dos salários de contribuição.',
@@ -1035,13 +1154,23 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q4',
+              id: 'prev-b3-t4-s1-q4',
               enunciado: 'A EC nº 103/2019 vedou a conversão de tempo de atividade sob condições especiais em tempo comum para períodos posteriores à sua entrada em vigor.',
               certa: true,
               explicacao: 'A vedação alcança os períodos posteriores a 13/11/2019; o tempo especial anterior continua conversível.',
               baseLegal: 'EC nº 103/2019, art. 25, §2º',
               variacoes: [
                 { enunciado: 'Após a EC nº 103/2019, é permitida a acumulação irrestrita de pensão por morte com aposentadoria do RGPS.', certa: false, explicacao: 'A acumulação é restrita: recebe-se o benefício de maior valor integral e um percentual decrescente do outro (80% a 10%).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s1-q5',
+              enunciado: 'Na regra de transição por pontos, exige-se a soma da idade com o tempo de contribuição, observado ainda um tempo mínimo de contribuição de trinta e cinco anos para o homem e trinta anos para a mulher.',
+              certa: true,
+              explicacao: 'A pontuação não dispensa o tempo mínimo de contribuição: são requisitos cumulativos. A soma começou em 96/86 e sobe um ponto por ano.',
+              baseLegal: 'EC nº 103/2019, art. 15',
+              variacoes: [
+                { enunciado: 'Na regra de transição do pedágio de cem por cento exige-se idade mínima de sessenta anos para o homem e cinquenta e sete anos para a mulher.', certa: true, explicacao: 'Correto — além da idade mínima, exige-se cumprir o dobro do tempo que faltava na data da reforma.' },
               ],
             },
           ],
@@ -1057,7 +1186,6 @@ O salário de benefício é a média de **100%** dos salários de contribuição
         {
           id: 'prev-b3-t4-s2',
           nome: 'EC nº 103/2019 — novas regras de aposentadoria',
-          // conteúdo herdado do tópico 'prev-b3-11' da estrutura de 3 níveis
           teoria: `
 ## O que a reforma mudou
 
@@ -1104,7 +1232,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
 `,
           questoes: [
             {
-              id: 'prev-b3-11-q1',
+              id: 'prev-b3-t4-s2-q1',
               enunciado: 'Na regra permanente instituída pela EC nº 103/2019, a aposentadoria programada no RGPS exige idade mínima de sessenta e cinco anos para o homem e sessenta e dois anos para a mulher.',
               certa: true,
               explicacao: 'São as idades mínimas da regra permanente, com 20 anos (H) e 15 anos (M) de contribuição.',
@@ -1114,7 +1242,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q2',
+              id: 'prev-b3-t4-s2-q2',
               enunciado: 'O segurado que houver cumprido todos os requisitos para a aposentadoria antes da entrada em vigor da EC nº 103/2019 poderá requerer o benefício pelas regras anteriores a qualquer tempo.',
               certa: true,
               explicacao: 'É o direito adquirido expressamente resguardado pelo art. 3º da EC 103/2019.',
@@ -1124,7 +1252,7 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q3',
+              id: 'prev-b3-t4-s2-q3',
               enunciado: 'Após a EC nº 103/2019, o valor da aposentadoria programada corresponde a sessenta por cento do salário de benefício, acrescido de dois por cento por ano de contribuição que exceder vinte anos para o homem e quinze anos para a mulher.',
               certa: true,
               explicacao: 'É a fórmula do art. 26 da EC 103/2019, aplicada sobre a média de 100% dos salários de contribuição.',
@@ -1134,13 +1262,23 @@ O salário de benefício é a média de **100%** dos salários de contribuição
               ],
             },
             {
-              id: 'prev-b3-11-q4',
+              id: 'prev-b3-t4-s2-q4',
               enunciado: 'A EC nº 103/2019 vedou a conversão de tempo de atividade sob condições especiais em tempo comum para períodos posteriores à sua entrada em vigor.',
               certa: true,
               explicacao: 'A vedação alcança os períodos posteriores a 13/11/2019; o tempo especial anterior continua conversível.',
               baseLegal: 'EC nº 103/2019, art. 25, §2º',
               variacoes: [
                 { enunciado: 'Após a EC nº 103/2019, é permitida a acumulação irrestrita de pensão por morte com aposentadoria do RGPS.', certa: false, explicacao: 'A acumulação é restrita: recebe-se o benefício de maior valor integral e um percentual decrescente do outro (80% a 10%).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s2-q5',
+              enunciado: 'Na regra permanente, o segurado do RGPS que contribuir por exatamente vinte anos, se homem, terá renda mensal correspondente a sessenta por cento do salário de benefício.',
+              certa: true,
+              explicacao: 'O acréscimo de 2% só incide sobre o tempo que EXCEDE 20 anos (homem) ou 15 anos (mulher). Sem excedente, fica-se no coeficiente inicial de 60%.',
+              baseLegal: 'EC nº 103/2019, art. 26, §2º',
+              variacoes: [
+                { enunciado: 'Na regra permanente, para atingir cem por cento do salário de benefício, o homem precisa completar quarenta anos de contribuição.', certa: true, explicacao: 'Correto: 60% + 2% por ano acima de 20 anos. Vinte anos de excedente rendem 40 pontos percentuais, fechando 100%.' },
               ],
             },
           ],
@@ -1156,7 +1294,6 @@ O salário de benefício é a média de **100%** dos salários de contribuição
         {
           id: 'prev-b3-t4-s3',
           nome: 'Lei Complementar nº 142/2013 (aposentadoria da pessoa com deficiência)',
-          // conteúdo herdado do tópico 'prev-b3-12' da estrutura de 3 níveis
           teoria: `
 ## Fundamento
 
@@ -1202,7 +1339,7 @@ Requisito adicional: **carência de 180 contribuições** e comprovação da def
 `,
           questoes: [
             {
-              id: 'prev-b3-12-q1',
+              id: 'prev-b3-t4-s3-q1',
               enunciado: 'A aposentadoria por tempo de contribuição da pessoa com deficiência grave exige vinte e cinco anos de contribuição para o homem e vinte anos para a mulher.',
               certa: true,
               explicacao: 'São os prazos da LC nº 142/2013 para o grau grave, com carência de 180 contribuições e renda de 100% do salário de benefício.',
@@ -1212,7 +1349,7 @@ Requisito adicional: **carência de 180 contribuições** e comprovação da def
               ],
             },
             {
-              id: 'prev-b3-12-q2',
+              id: 'prev-b3-t4-s3-q2',
               enunciado: 'Na aposentadoria por idade da pessoa com deficiência, exige-se sessenta anos para o homem e cinquenta e cinco anos para a mulher, independentemente do grau de deficiência.',
               certa: true,
               explicacao: 'A idade não varia com o grau; exige-se ainda 15 anos de contribuição na condição de pessoa com deficiência.',
@@ -1222,13 +1359,33 @@ Requisito adicional: **carência de 180 contribuições** e comprovação da def
               ],
             },
             {
-              id: 'prev-b3-12-q3',
+              id: 'prev-b3-t4-s3-q3',
               enunciado: 'É permitida a conversão de tempo de contribuição cumprido sob exposição a agentes nocivos em tempo de contribuição na condição de pessoa com deficiência.',
               certa: false,
               explicacao: 'A LC nº 142/2013 veda expressamente essa conversão em qualquer sentido: são regimes de contagem distintos.',
               baseLegal: 'LC nº 142/2013, art. 5º, §1º',
               variacoes: [
                 { enunciado: 'A avaliação da deficiência é médica e funcional, considerando fatores socioambientais, psicológicos e pessoais.', certa: true, explicacao: 'Correto — o modelo adotado é biopsicossocial, não apenas médico.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s3-q4',
+              enunciado: 'A avaliação da deficiência para fins da Lei Complementar nº 142/2013 deve considerar o grau de deficiência existente ao longo do período contributivo que se pretende computar, e não apenas na data do requerimento.',
+              certa: true,
+              explicacao: 'A lei exige a comprovação da deficiência pelo tempo mínimo correspondente ao grau. Ser deficiente apenas na data do pedido não gera direito à aposentadoria diferenciada.',
+              baseLegal: 'LC nº 142/2013, arts. 3º e 6º',
+              variacoes: [
+                { enunciado: 'Basta que o segurado seja pessoa com deficiência na data do requerimento para fazer jus à aposentadoria da LC nº 142/2013.', certa: false, explicacao: 'É preciso comprovar a deficiência durante o período de contribuição exigido, no grau correspondente.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s3-q5',
+              enunciado: 'Ao segurado com deficiência aplica-se o fator previdenciário apenas quando resultar em renda mensal mais vantajosa.',
+              certa: true,
+              explicacao: 'A LC nº 142/2013 afastou o fator como regra, preservando-o somente quando favorecer o segurado — leitura protetiva típica da matéria.',
+              baseLegal: 'LC nº 142/2013, art. 9º, parágrafo único',
+              variacoes: [
+                { enunciado: 'A aposentadoria por tempo de contribuição da pessoa com deficiência foi revogada pela EC nº 103/2019.', certa: false, explicacao: 'A LC nº 142/2013 permanece vigente: é a única aposentadoria por tempo de contribuição que sobreviveu à reforma.' },
               ],
             },
           ],
@@ -1243,7 +1400,6 @@ Requisito adicional: **carência de 180 contribuições** e comprovação da def
         {
           id: 'prev-b3-t4-s4',
           nome: 'Lei nº 8.212/1991 (custeio) — revisão integrada',
-          // conteúdo herdado do tópico 'prev-b3-13' da estrutura de 3 níveis
           teoria: `
 ## Estrutura da lei
 
@@ -1289,7 +1445,7 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
 `,
           questoes: [
             {
-              id: 'prev-b3-13-q1',
+              id: 'prev-b3-t4-s4-q1',
               enunciado: 'De acordo com a Lei nº 8.212/1991, considera-se empresa a firma individual ou sociedade que assume o risco de atividade econômica urbana ou rural, com fins lucrativos ou não, bem como os órgãos e entidades da administração pública direta, indireta e fundacional.',
               certa: true,
               explicacao: 'Art. 15, I. O conceito previdenciário de empresa é mais amplo que o empresarial.',
@@ -1299,7 +1455,7 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
               ],
             },
             {
-              id: 'prev-b3-13-q2',
+              id: 'prev-b3-t4-s4-q2',
               enunciado: 'Segundo entendimento sumulado com efeito vinculante do STF, são constitucionais os dispositivos da Lei nº 8.212/1991 que fixaram em dez anos os prazos de decadência e prescrição do crédito tributário previdenciário.',
               certa: false,
               explicacao: 'A Súmula Vinculante 8 declarou INCONSTITUCIONAIS os arts. 45 e 46 da Lei nº 8.212/91. Prevalece o prazo de 5 anos do CTN.',
@@ -1309,13 +1465,33 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
               ],
             },
             {
-              id: 'prev-b3-13-q3',
+              id: 'prev-b3-t4-s4-q3',
               enunciado: 'A Lei nº 8.212/1991 presume feito, oportuna e regularmente, o desconto da contribuição do segurado a serviço da empresa, respondendo esta diretamente pela importância não descontada.',
               certa: true,
               explicacao: 'Art. 33, §5º — dispositivo campeão de citações em prova.',
               baseLegal: 'Lei nº 8.212/91, art. 33, §5º',
               variacoes: [
                 { enunciado: 'A empresa que comprovar não ter efetuado o desconto da contribuição do segurado fica exonerada da obrigação de recolhê-la.', certa: false, explicacao: 'Não lhe é lícito alegar omissão: responde diretamente pela importância (art. 33, §5º).' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s4-q4',
+              enunciado: 'Segundo a Lei nº 8.212/1991, o produtor rural pessoa física e o segurado especial contribuem com alíquota incidente sobre a receita bruta proveniente da comercialização da sua produção.',
+              certa: true,
+              explicacao: 'A base é a comercialização, e não o salário de contribuição. É por isso que, em regra, os benefícios do segurado especial correspondem a um salário mínimo.',
+              baseLegal: 'Lei nº 8.212/91, art. 25',
+              variacoes: [
+                { enunciado: 'A contribuição do segurado especial incide sobre o salário de contribuição por ele declarado mensalmente.', certa: false, explicacao: 'O segurado especial não possui salário de contribuição: contribui sobre a receita bruta da comercialização da produção.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s4-q5',
+              enunciado: 'A Lei nº 8.212/1991 atribui à empresa a responsabilidade por arrecadar a contribuição do segurado a seu serviço, descontando-a da respectiva remuneração.',
+              certa: true,
+              explicacao: 'Art. 30, I, "a". Combinado com o art. 33, §5º, que presume feito o desconto, o resultado é que a inadimplência da empresa nunca prejudica o trabalhador.',
+              baseLegal: 'Lei nº 8.212/91, art. 30, I, "a"',
+              variacoes: [
+                { enunciado: 'A Lei nº 8.212/1991 disciplina o plano de benefícios da previdência social, incluindo carências e cálculo da renda mensal.', certa: false, explicacao: 'A 8.212 é o plano de CUSTEIO. Carências e cálculo da renda mensal estão na Lei nº 8.213/91.' },
               ],
             },
           ],
@@ -1330,7 +1506,6 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
         {
           id: 'prev-b3-t4-s5',
           nome: 'Lei nº 8.213/1991 (benefícios) — revisão integrada',
-          // conteúdo herdado do tópico 'prev-b3-14' da estrutura de 3 níveis
           teoria: `
 ## Mapa da lei
 
@@ -1392,7 +1567,7 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
 `,
           questoes: [
             {
-              id: 'prev-b3-14-q1',
+              id: 'prev-b3-t4-s5-q1',
               enunciado: 'Para fins de concessão de benefícios previdenciários e de contagem recíproca, é vedada a contagem de tempo de contribuição fictício.',
               certa: true,
               explicacao: 'Vedação do art. 96, IV, da Lei nº 8.213/91, hoje também constitucional (art. 201, §14). Item cobrado na prova de 2022.',
@@ -1402,7 +1577,7 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
               ],
             },
             {
-              id: 'prev-b3-14-q2',
+              id: 'prev-b3-t4-s5-q2',
               enunciado: 'O aposentado pelo RGPS que permanecer em atividade ou a ela retornar não fará jus a prestação alguma da previdência social em decorrência do exercício dessa atividade, exceto ao salário-família e à reabilitação profissional.',
               certa: true,
               explicacao: 'Literalidade do art. 18, §2º, da Lei nº 8.213/91.',
@@ -1412,13 +1587,33 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
               ],
             },
             {
-              id: 'prev-b3-14-q3',
+              id: 'prev-b3-t4-s5-q3',
               enunciado: 'A Lei nº 8.213/1991 assegura ao segurado o direito de requerer a revisão do ato de concessão do benefício no prazo de dez anos, contado do dia primeiro do mês seguinte ao do recebimento da primeira prestação.',
               certa: true,
               explicacao: 'É o art. 103, caput. O prazo de 5 anos do parágrafo único alcança apenas as prestações vencidas.',
               baseLegal: 'Lei nº 8.213/91, art. 103',
               variacoes: [
                 { enunciado: 'O direito da previdência social de anular atos administrativos de que decorram efeitos favoráveis aos beneficiários decai em dez anos, salvo comprovada má-fé.', certa: true, explicacao: 'Correto — art. 103-A da Lei nº 8.213/91.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s5-q4',
+              enunciado: 'Conforme a Lei nº 8.213/1991, é vedada a filiação ao RGPS de quem já tenha completado sessenta e cinco anos de idade sem nunca ter contribuído.',
+              certa: false,
+              explicacao: 'Não existe idade máxima para filiação. Quem passa a exercer atividade remunerada torna-se segurado obrigatório em qualquer idade, e o facultativo só tem exigência de idade mínima.',
+              baseLegal: 'Lei nº 8.213/91, arts. 11 e 13',
+              variacoes: [
+                { enunciado: 'A Lei nº 8.213/1991 estabelece que a perda da qualidade de segurado ocorre independentemente de comunicação ao INSS.', certa: true, explicacao: 'Correto. A perda decorre do simples decurso dos prazos do art. 15, sem necessidade de qualquer ato administrativo.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s5-q5',
+              enunciado: 'A Lei nº 8.213/1991 assegura ao segurado que retorna à atividade após aposentar-se o direito ao salário-família e à reabilitação profissional.',
+              certa: true,
+              explicacao: 'É a ressalva do art. 18, §2º. Ele contribui como segurado obrigatório, mas essas são as duas únicas prestações que a nova atividade lhe garante.',
+              baseLegal: 'Lei nº 8.213/91, art. 18, §2º',
+              variacoes: [
+                { enunciado: 'O aposentado que retorna à atividade abrangida pelo RGPS fica dispensado de contribuir para a previdência social.', certa: false, explicacao: 'Ele é segurado obrigatório e contribui normalmente (Lei nº 8.212/91, art. 12, §4º), ainda que isso não gere novas prestações.' },
               ],
             },
           ],
@@ -1433,7 +1628,6 @@ Declarou **inconstitucionais** os arts. **45 e 46** da Lei nº 8.212/91, que fix
         {
           id: 'prev-b3-t4-s6',
           nome: 'Decreto nº 3.048/1999 (Regulamento da Previdência Social)',
-          // conteúdo herdado do tópico 'prev-b3-15' da estrutura de 3 níveis
           teoria: `
 ## Função
 
@@ -1473,7 +1667,7 @@ Uma norma de nível inferior que contrarie a superior é **ilegal**. Por isso qu
 `,
           questoes: [
             {
-              id: 'prev-b3-15-q1',
+              id: 'prev-b3-t4-s6-q1',
               enunciado: 'O Decreto nº 3.048/1999, por ser o Regulamento da Previdência Social, pode estabelecer requisitos para concessão de benefícios ainda que não previstos nas Leis nº 8.212/1991 e nº 8.213/1991.',
               certa: false,
               explicacao: 'O RPS é norma secundária: regulamenta a lei sem inovar. Criar requisito novo exige lei em sentido formal.',
@@ -1483,7 +1677,7 @@ Uma norma de nível inferior que contrarie a superior é **ilegal**. Por isso qu
               ],
             },
             {
-              id: 'prev-b3-15-q2',
+              id: 'prev-b3-t4-s6-q2',
               enunciado: 'Conforme o Regulamento da Previdência Social, a perda da qualidade de segurado ocorre no dia dezesseis do segundo mês seguinte ao término dos prazos de manutenção.',
               certa: true,
               explicacao: 'É o art. 14 do Decreto nº 3.048/99, que confere folga adicional ao segurado.',
@@ -1493,13 +1687,33 @@ Uma norma de nível inferior que contrarie a superior é **ilegal**. Por isso qu
               ],
             },
             {
-              id: 'prev-b3-15-q3',
+              id: 'prev-b3-t4-s6-q3',
               enunciado: 'O Regulamento da Previdência Social foi alterado para adequar-se à Emenda Constitucional nº 103/2019, especialmente pelos Decretos nº 10.410/2020 e nº 10.491/2020.',
               certa: true,
               explicacao: 'Essas alterações incorporaram ao RPS a nova nomenclatura dos benefícios, as regras de transição e o novo cálculo.',
               baseLegal: 'Decretos nº 10.410/2020 e nº 10.491/2020',
               variacoes: [
                 { enunciado: 'A Instrução Normativa PRES/INSS nº 128/2022 possui hierarquia superior ao Decreto nº 3.048/1999.', certa: false, explicacao: 'A IN é norma de nível inferior ao decreto; deve observá-lo, sob pena de ilegalidade.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s6-q4',
+              enunciado: 'O Decreto nº 3.048/1999 fixa que a perda da qualidade de segurado ocorre no dia dezesseis do mês seguinte ao término dos prazos de manutenção.',
+              certa: false,
+              explicacao: 'O marco é o dia 16 do SEGUNDO mês seguinte, e não do mês imediatamente seguinte — folga adicional que a banca costuma suprimir.',
+              baseLegal: 'Decreto nº 3.048/99, art. 14',
+              variacoes: [
+                { enunciado: 'A perda da qualidade de segurado ocorre no dia dezesseis do segundo mês seguinte ao término dos prazos de manutenção previstos em lei.', certa: true, explicacao: 'Correto — é a redação do art. 14 do Regulamento da Previdência Social.' },
+              ],
+            },
+            {
+              id: 'prev-b3-t4-s6-q5',
+              enunciado: 'Os Decretos nº 10.410/2020 e nº 10.491/2020 alteraram o Regulamento da Previdência Social para adequá-lo à Emenda Constitucional nº 103/2019.',
+              certa: true,
+              explicacao: 'Essas alterações incorporaram ao RPS a nova nomenclatura dos benefícios, as regras de transição, o novo cálculo e as regras de acumulação.',
+              baseLegal: 'Decretos nº 10.410/2020 e nº 10.491/2020',
+              variacoes: [
+                { enunciado: 'Por regulamentar diretamente a Constituição, o Decreto nº 3.048/1999 pode dispor sobre matéria reservada à lei complementar.', certa: false, explicacao: 'O RPS é regulamento de execução das Leis nº 8.212/91 e nº 8.213/91. Não alcança matéria reservada à lei, muito menos à lei complementar.' },
               ],
             },
           ],
