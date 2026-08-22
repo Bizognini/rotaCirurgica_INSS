@@ -12,7 +12,7 @@ export const TABELAS = [
   'simulados_historico',
   'sessoes_timer',
   'metas',
-  'ciclo_semanal',
+  'ciclo_progresso',
   'conteudo_edits',
   'links_video',
 ]
@@ -63,12 +63,13 @@ export async function carregarTudo() {
     supabase.from('simulados_historico').select('*').order('data', { ascending: false }).limit(200),
     supabase.from('sessoes_timer').select('*').order('data', { ascending: false }).limit(1500),
     supabase.from('metas').select('*').maybeSingle(),
-    supabase.from('ciclo_semanal').select('*'),
+    supabase.from('ciclo_progresso').select('*').maybeSingle(),
     supabase.from('conteudo_edits').select('*'),
     supabase.from('links_video').select('*'),
   ])
 
-  const erro = [status, erradas, anotacoes, simulados, sessoes, ciclo, edits, links]
+  // `metas` e `ciclo` usam maybeSingle: a ausência de linha não é erro.
+  const erro = [status, erradas, anotacoes, simulados, sessoes, edits, links]
     .find((r) => r.error)
   if (erro) throw erro.error
 
@@ -79,7 +80,7 @@ export async function carregarTudo() {
     simulados: simulados.data || [],
     sessoes: sessoes.data || [],
     meta: metas.data || null,
-    ciclo: ciclo.data || [],
+    cicloProgresso: ciclo.data || null,
     edits: Object.fromEntries((edits.data || []).map((r) => [r.chave, r.valor])),
     links: Object.fromEntries((links.data || []).map((r) => [r.subtopico_id, r])),
   }

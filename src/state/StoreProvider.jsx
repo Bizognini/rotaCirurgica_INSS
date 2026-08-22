@@ -3,7 +3,7 @@ import * as api from '../lib/api'
 import { supabaseConfigured } from '../lib/supabase'
 import { ler, gravar, CHAVES } from '../lib/localStore'
 import { enfileirar, drenar, inscreverNaFila, tamanhoFila } from '../lib/syncQueue'
-import { CICLO_PADRAO } from '../content/ciclo'
+import { normalizarPosicao, proximaPosicao } from '../content/ciclo'
 
 /**
  * Estado único do app.
@@ -21,7 +21,7 @@ const ESTADO_INICIAL = {
   simulados: [],
   sessoes: [],
   meta: { horas_semanais_meta: 14 },
-  ciclo: CICLO_PADRAO,
+  cicloProgresso: { posicao_atual: 0, dias_concluidos: 0 },
   edits: {},
   links: {},
 }
@@ -128,7 +128,7 @@ export function StoreProvider({ children }) {
         ...anterior,
         ...remoto,
         meta: remoto.meta || anterior.meta || ESTADO_INICIAL.meta,
-        ciclo: remoto.ciclo?.length ? remoto.ciclo : anterior.ciclo,
+        cicloProgresso: remoto.cicloProgresso || anterior.cicloProgresso,
       }))
     } catch (e) {
       // Sem rede ou projeto pausado: seguimos com o que está no localStorage.
@@ -178,8 +178,8 @@ export function StoreProvider({ children }) {
             p.edits = { ...p.edits, [novo.chave]: novo.valor }; break
           case 'metas':
             p.meta = novo; break
-          case 'ciclo_semanal':
-            p.ciclo = [...p.ciclo.filter((c) => c.dia_semana !== novo.dia_semana), novo]; break
+          case 'ciclo_progresso':
+            p.cicloProgresso = novo; break
           case 'questoes_erradas':
             p.questoesErradas = [novo, ...p.questoesErradas.filter((q) => q.id !== novo.id)]; break
           case 'sessoes_timer':
@@ -226,6 +226,32 @@ export function StoreProvider({ children }) {
       return novo
     },
     [statusDe, aplicar, escrever]
+  )
+
+  /**
+   * Grava a posição do ciclo. O ciclo NÃO acompanha o calendário: ele só anda
+   * por aqui, quando o dia é marcado como concluído. Um dia sem estudar,
+   * portanto, não pula nada — ao voltar, a posição é a mesma.
+   */
+  const irParaPosicaoCiclo = useCallback(
+    (posicao, { contarDia = false } = {}) => {
+      const atual = estadoRef.current.cicloProgresso || { posicao_atual: 0, dias_concluidos: 0 }
+      const registro = {
+        posicao_atual: normalizarPosicao(posicao),
+        dias_concluidos: (atual.dias_concluidos || 0) + (contarDia ? 1 : 0),
+        atualizado_em: new Date().toISOString(),
+      }
+      aplicar((p) => ({ ...p, cicloProgresso: registro }))
+      escrever({
+        tipo: 'upsert',
+        tabela: 'ciclo_progresso',
+        chaveConflito: 'user_id',
+        dedupeKey: 'ciclo_progresso',
+        payload: registro,
+      })
+      return registro
+    },
+    [aplicar, escrever]
   )
 
   const acoes = useMemo(
@@ -448,20 +474,12 @@ export function StoreProvider({ children }) {
       },
 
       /* ----------------------------------------------------------- ciclo */
-      salvarDiaCiclo: (dia_semana, dados) => {
-        const registro = { dia_semana, ...dados, atualizado_em: new Date().toISOString() }
-        aplicar((p) => ({
-          ...p,
-          ciclo: [...p.ciclo.filter((c) => c.dia_semana !== dia_semana), registro]
-            .sort((a, b) => a.dia_semana - b.dia_semana),
-        }))
-        escrever({
-          tipo: 'upsert',
-          tabela: 'ciclo_semanal',
-          chaveConflito: 'user_id,dia_semana',
-          dedupeKey: `ciclo_semanal:${dia_semana}`,
-          payload: registro,
-        })
+      irParaPosicaoCiclo,
+
+      /** Conclui o dia atual e avança uma posição, dando a volta de 9 para 0. */
+      concluirDiaCiclo: () => {
+        const atual = estadoRef.current.cicloProgresso || { posicao_atual: 0, dias_concluidos: 0 }
+        return irParaPosicaoCiclo(proximaPosicao(atual.posicao_atual), { contarDia: true })
       },
 
       /* ------------------------------------------------------- sessão app */
@@ -484,7 +502,7 @@ export function StoreProvider({ children }) {
       recarregar,
       statusDe,
     }),
-    [gravarStatus, statusDe, aplicar, escrever, sincronizar, recarregar]
+    [gravarStatus, statusDe, aplicar, escrever, sincronizar, recarregar, irParaPosicaoCiclo]
   )
 
   const valor = useMemo(

@@ -1,6 +1,7 @@
 import {
   MATERIAS, MATERIAS_POR_ID, SUBTOPICOS, TOPICOS,
   subtopicosDaMateria, subtopicosDoTopico, BLOCOS,
+  diasPorMateria, TAMANHO_CICLO,
 } from '../content'
 
 /**
@@ -252,19 +253,16 @@ export function pontosFracosAtivos(subtopicoStatus) {
 
 /**
  * Planejado × real por matéria, na semana corrente.
- * O planejado vem do ciclo semanal (cada bloco vale 1h).
+ *
+ * O ciclo tem 10 posições e não acompanha o calendário, então não existe um
+ * "planejado da semana" literal. O que fazemos é projetar a proporção do ciclo
+ * sobre a meta semanal: se Previdenciário ocupa 2 dos 10 dias, ele responde por
+ * 20% das horas planejadas. Os 2 dias de revisão não pertencem a matéria
+ * nenhuma, de modo que a soma das barras fica abaixo da meta cheia — e é isso
+ * mesmo que deve aparecer.
  */
-export function aderenciaAoCiclo(ciclo, sessoes) {
-  const planejado = Object.fromEntries(MATERIAS.map((m) => [m.id, 0]))
-
-  ciclo.forEach((dia) => {
-    if (dia.bloco_1_materia_id && planejado[dia.bloco_1_materia_id] !== undefined) {
-      planejado[dia.bloco_1_materia_id] += 1
-    }
-    if (dia.bloco_2_materia_id && planejado[dia.bloco_2_materia_id] !== undefined) {
-      planejado[dia.bloco_2_materia_id] += 1
-    }
-  })
+export function aderenciaAoCiclo(sessoes, metaHorasSemana = 14) {
+  const dias = diasPorMateria()
 
   const ini = inicioDaSemana()
   const fim = somarDias(ini, 7)
@@ -280,7 +278,8 @@ export function aderenciaAoCiclo(ciclo, sessoes) {
     materiaId: m.id,
     nome: m.nomeCurto,
     cor: m.cor,
-    planejado: planejado[m.id],
+    diasNoCiclo: dias[m.id] || 0,
+    planejado: Number((((dias[m.id] || 0) / TAMANHO_CICLO) * metaHorasSemana).toFixed(1)),
     real: Number(realPorMateria[m.id].toFixed(1)),
   }))
 }

@@ -10,7 +10,7 @@ import { useStore } from '../state/StoreProvider'
 
 const ITENS = [
   { para: '/',           icone: '🏠', rotulo: 'Início',     completo: 'Dashboard',     tabbar: true },
-  { para: '/ciclo',      icone: '🗓️', rotulo: 'Ciclo',      completo: 'Ciclo Semanal', tabbar: true },
+  { para: '/ciclo',      icone: '🗓️', rotulo: 'Ciclo',      completo: 'Ciclo de Estudos', tabbar: true },
   { para: '/materias',   icone: '📚', rotulo: 'Matérias',   completo: 'Matérias',      tabbar: true },
   { para: '/simulados',  icone: '📝', rotulo: 'Simulado',   completo: 'Simulados',     tabbar: true },
   { para: '/revisao',    icone: '🎯', rotulo: 'Revisão',    completo: 'Revisão',       tabbar: true },

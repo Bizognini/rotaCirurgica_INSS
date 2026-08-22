@@ -15,6 +15,7 @@ e um dashboard de acompanhamento, com progresso sincronizado entre computador e 
 5. [Como funciona o deploy automático](#5-como-funciona-o-deploy-automático)
 6. [Segurança: por que a senha vai ao Supabase Auth](#6-segurança-por-que-a-senha-vai-ao-supabase-auth)
 7. [Funcionamento sem internet](#7-funcionamento-sem-internet)
+   · [Como o ciclo de estudos funciona](#71-como-o-ciclo-de-estudos-funciona)
 8. [Organização do código](#8-organização-do-código)
 9. [Fontes das provas reais](#9-fontes-das-provas-reais)
 10. [Como atualizar o conteúdo](#10-como-atualizar-o-conteúdo)
@@ -62,7 +63,10 @@ têm teoria e flashcards, mas não questões.
 - **Dashboard** com "o que estudar hoje", meta semanal editável, pontos fracos, horas por semana,
   comparação entre semanas, taxa de acerto, progresso por matéria, radar de desempenho, aderência
   ao ciclo (planejado × real), piores tópicos e projeção de conclusão da trilha.
-- **Ciclo semanal** editável, com destaque do dia atual e link para o próximo tópico não concluído.
+- **Ciclo de Estudos**: padrão contínuo de 10 posições (Semana A + Semana B, 5 dias cada) que se
+  repete em loop. Cada dia é de **uma matéria só**, ocupando as 2h. O ciclo **não avança pelo
+  calendário** — só anda quando você aperta "concluir dia", de modo que faltar um dia não pula nada.
+  A página mostra a posição atual, o preview dos próximos dias e o padrão completo.
 - **Página do tópico**: barra de progresso derivada e a lista de subtópicos, cada um com seu status
   (não iniciado / teoria vista / questões feitas / ponto fraco).
 - **Página do subtópico** (a unidade de estudo): teoria com tabelas, botão de vídeo-aula (busca
@@ -99,11 +103,14 @@ têm teoria e flashcards, mas não questões.
 O script cria as tabelas, ativa o *Row Level Security* em todas elas, concede os privilégios
 ao papel `authenticated` e habilita o Realtime. É idempotente: pode rodar de novo sem quebrar nada.
 
-> **Já tinha a versão de 3 níveis instalada?** Rode
-> [`supabase/migracao-01-subtopicos.sql`](supabase/migracao-01-subtopicos.sql) em vez do
-> `schema.sql`. Ele troca `topico_status` por `subtopico_status`, cria a tabela `subtopicos`,
-> recria `questoes_erradas`, `anotacoes` e `links_video` referenciando o subtópico, e
-> **preserva a tabela `metas`** (sua meta semanal).
+> **Atualizando uma instalação existente?** Rode as migrações na ordem, em vez do `schema.sql`:
+>
+> | Migração | O que faz |
+> |---|---|
+> | [`migracao-01-subtopicos.sql`](supabase/migracao-01-subtopicos.sql) | 3 níveis → 4 níveis: `topico_status` vira `subtopico_status`, nasce a tabela `subtopicos`, e `questoes_erradas`/`anotacoes`/`links_video` passam a referenciar o subtópico |
+> | [`migracao-02-ciclo-continuo.sql`](supabase/migracao-02-ciclo-continuo.sql) | ciclo por dia da semana → ciclo contínuo de 10 posições: `ciclo_semanal` sai, entram `ciclo_posicoes` (padrão) e `ciclo_progresso` (sua posição) |
+>
+> As duas **preservam a tabela `metas`** e todo o progresso de estudo.
 
 ### 2.3 Criar a sua conta de estudo
 
@@ -301,6 +308,31 @@ de início, e não de um contador em memória.
 
 Com o Supabase Realtime ativado (o `schema.sql` já faz isso), concluir um tópico no celular faz o
 dashboard aberto no computador se atualizar sozinho, em segundos, sem recarregar a página.
+
+---
+
+## 7.1 Como o ciclo de estudos funciona
+
+O ciclo é um padrão fixo de **10 posições** que se repete indefinidamente:
+
+| | Dia 1 | Dia 2 | Dia 3 | Dia 4 | Dia 5 |
+|---|---|---|---|---|---|
+| **Semana A** | Português | Constitucional | Informática | Previdenciário | Revisão da Semana A |
+| **Semana B** | Português | Administrativo | RLM | Previdenciário | Revisão da Semana B |
+
+Cada dia é de **uma matéria só**, ocupando as 2h — a sugestão é 1h de teoria e 1h de prática no
+próximo subtópico não concluído, sem obrigação de preencher o tempo se a prática render menos.
+Ética ainda não entra no ciclo.
+
+O ponto central: **o ciclo não acompanha o calendário**. Ele fica parado na mesma posição até você
+apertar "concluir dia e avançar". Um dia sem estudar não queima nenhuma matéria — ao voltar, você
+retoma exatamente de onde parou. Ao concluir a posição 9, o ciclo volta para a 0 e recomeça.
+
+Se a posição sair do lugar (uma conclusão por engano, por exemplo), a página do ciclo tem um
+botão **ajustar** que permite saltar direto para qualquer posição, sem contar como dia concluído.
+
+O padrão vive em dois lugares que precisam ficar iguais: `src/content/ciclo.js` (usado pela
+interface) e a tabela `ciclo_posicoes` (referência no banco).
 
 ---
 

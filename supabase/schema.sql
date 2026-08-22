@@ -52,15 +52,41 @@ create table if not exists public.metas (
   atualizado_em        timestamptz not null default now()
 );
 
-create table if not exists public.ciclo_semanal (
-  user_id            uuid    not null default auth.uid() references auth.users (id) on delete cascade,
-  dia_semana         integer not null check (dia_semana between 0 and 6),
-  bloco_1_materia_id text,
-  bloco_1_label      text,
-  bloco_2_materia_id text,
-  bloco_2_label      text,
-  atualizado_em      timestamptz not null default now(),
-  primary key (user_id, dia_semana)
+-- Ciclo de estudos: padrão contínuo de 10 posições (Semana A + Semana B).
+-- O padrão é conteúdo estático, igual para todos; o progresso é por usuário e
+-- só avança quando o dia é marcado como concluído — nunca pelo calendário.
+create table if not exists public.ciclo_posicoes (
+  posicao        smallint primary key check (posicao between 0 and 9),
+  semana_label   text     not null check (semana_label in ('A', 'B')),
+  dia_no_padrao  smallint not null check (dia_no_padrao between 1 and 5),
+  materia_id     text,                      -- nulo nos dias de revisão
+  label          text     not null,
+  atualizado_em  timestamptz not null default now()
+);
+
+insert into public.ciclo_posicoes (posicao, semana_label, dia_no_padrao, materia_id, label) values
+  (0, 'A', 1, 'port',  'Língua Portuguesa'),
+  (1, 'A', 2, 'const', 'Direito Constitucional'),
+  (2, 'A', 3, 'info',  'Informática'),
+  (3, 'A', 4, 'prev',  'Direito Previdenciário'),
+  (4, 'A', 5, null,    'Revisão + exercícios da Semana A'),
+  (5, 'B', 1, 'port',  'Língua Portuguesa'),
+  (6, 'B', 2, 'adm',   'Direito Administrativo'),
+  (7, 'B', 3, 'rlm',   'Raciocínio Lógico-Matemático'),
+  (8, 'B', 4, 'prev',  'Direito Previdenciário'),
+  (9, 'B', 5, null,    'Revisão + exercícios da Semana B')
+on conflict (posicao) do update
+  set semana_label  = excluded.semana_label,
+      dia_no_padrao = excluded.dia_no_padrao,
+      materia_id    = excluded.materia_id,
+      label         = excluded.label,
+      atualizado_em = now();
+
+create table if not exists public.ciclo_progresso (
+  user_id         uuid     primary key default auth.uid() references auth.users (id) on delete cascade,
+  posicao_atual   smallint not null default 0 check (posicao_atual between 0 and 9),
+  dias_concluidos integer  not null default 0,
+  atualizado_em   timestamptz not null default now()
 );
 
 create table if not exists public.conteudo_edits (
@@ -159,7 +185,7 @@ declare
   t text;
   progresso text[] := array[
     'subtopico_status', 'questoes_erradas', 'anotacoes', 'simulados_historico',
-    'sessoes_timer', 'metas', 'ciclo_semanal', 'conteudo_edits', 'links_video'
+    'sessoes_timer', 'metas', 'ciclo_progresso', 'conteudo_edits', 'links_video'
   ];
 begin
   grant usage on schema public to authenticated;
@@ -189,6 +215,13 @@ begin
   drop policy if exists subtopicos_leitura on public.subtopicos;
   create policy subtopicos_leitura on public.subtopicos
     for select to authenticated using (true);
+
+  grant select on public.ciclo_posicoes to authenticated;
+  revoke all on public.ciclo_posicoes from anon;
+  alter table public.ciclo_posicoes enable row level security;
+  drop policy if exists ciclo_posicoes_leitura on public.ciclo_posicoes;
+  create policy ciclo_posicoes_leitura on public.ciclo_posicoes
+    for select to authenticated using (true);
 end $$;
 
 -- ---- Realtime: sincronização entre celular e computador ---------------------
@@ -197,7 +230,7 @@ declare
   t text;
   tabelas text[] := array[
     'subtopico_status', 'questoes_erradas', 'anotacoes', 'simulados_historico',
-    'sessoes_timer', 'metas', 'ciclo_semanal', 'conteudo_edits', 'links_video'
+    'sessoes_timer', 'metas', 'ciclo_progresso', 'conteudo_edits', 'links_video'
   ];
 begin
   if not exists (select 1 from pg_publication where pubname = 'supabase_realtime') then

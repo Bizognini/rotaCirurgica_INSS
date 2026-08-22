@@ -1,73 +1,87 @@
 /**
- * Ciclo de estudos semanal — 2h/dia, 14h/semana.
- * Extraído da trilha; editável pela interface (salvo em `ciclo_semanal`).
+ * Ciclo de estudos — padrão contínuo de 10 posições.
  *
- * dia_semana segue Date.getDay(): 0 = Domingo ... 6 = Sábado.
+ * Duas "semanas" de 5 dias que se alternam indefinidamente (A, B, A, B…).
+ * O ciclo é **independente do calendário**: ele não avança sozinho quando o dia
+ * vira. Só anda quando você marca o dia como concluído. Assim, um dia sem
+ * estudar não pula nada — ao voltar, o ciclo está exatamente onde parou.
+ *
+ * Cada dia é de UMA matéria só, ocupando as 2h inteiras. A sugestão é 1h de
+ * teoria e 1h de prática, mas sem rigidez: se a prática de um subtópico render
+ * menos, tudo bem — não há tempo a preencher por obrigação.
+ *
+ * Ética ainda não entra no ciclo.
  */
-export const DIAS_SEMANA = [
-  'Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado',
+
+export const TAMANHO_CICLO = 10   // 5 dias da Semana A + 5 da Semana B
+
+export const CICLO_POSICOES = [
+  /* ------------------------------ Semana A ------------------------------- */
+  { posicao: 0, semana: 'A', dia: 1, materiaId: 'port',  label: 'Língua Portuguesa' },
+  { posicao: 1, semana: 'A', dia: 2, materiaId: 'const', label: 'Direito Constitucional' },
+  { posicao: 2, semana: 'A', dia: 3, materiaId: 'info',  label: 'Informática' },
+  { posicao: 3, semana: 'A', dia: 4, materiaId: 'prev',  label: 'Direito Previdenciário' },
+  { posicao: 4, semana: 'A', dia: 5, materiaId: null,    label: 'Revisão + exercícios da Semana A', revisao: true },
+
+  /* ------------------------------ Semana B ------------------------------- */
+  { posicao: 5, semana: 'B', dia: 1, materiaId: 'port',  label: 'Língua Portuguesa' },
+  { posicao: 6, semana: 'B', dia: 2, materiaId: 'adm',   label: 'Direito Administrativo' },
+  { posicao: 7, semana: 'B', dia: 3, materiaId: 'rlm',   label: 'Raciocínio Lógico-Matemático' },
+  { posicao: 8, semana: 'B', dia: 4, materiaId: 'prev',  label: 'Direito Previdenciário' },
+  { posicao: 9, semana: 'B', dia: 5, materiaId: null,    label: 'Revisão + exercícios da Semana B', revisao: true },
 ]
 
-export const CICLO_PADRAO = [
-  {
-    dia_semana: 1,
-    bloco_1_materia_id: 'prev',
-    bloco_1_label: 'Previdenciário — teoria (próximo tópico da lista)',
-    bloco_2_materia_id: 'prev',
-    bloco_2_label: 'Previdenciário — questões do tópico',
-  },
-  {
-    dia_semana: 2,
-    bloco_1_materia_id: 'prev',
-    bloco_1_label: 'Previdenciário — teoria (próximo tópico da lista)',
-    bloco_2_materia_id: 'prev',
-    bloco_2_label: 'Previdenciário — questões do tópico',
-  },
-  {
-    dia_semana: 3,
-    bloco_1_materia_id: 'port',
-    bloco_1_label: 'Português — teoria',
-    bloco_2_materia_id: 'port',
-    bloco_2_label: 'Português — questões',
-  },
-  {
-    dia_semana: 4,
-    bloco_1_materia_id: 'prev',
-    bloco_1_label: 'Previdenciário — teoria (próximo tópico da lista)',
-    bloco_2_materia_id: 'prev',
-    bloco_2_label: 'Previdenciário — questões do tópico',
-  },
-  {
-    dia_semana: 5,
-    bloco_1_materia_id: 'const',
-    bloco_1_label: 'Direito Constitucional',
-    bloco_2_materia_id: 'adm',
-    bloco_2_label: 'Direito Administrativo',
-  },
-  {
-    dia_semana: 6,
-    bloco_1_materia_id: 'rlm',
-    bloco_1_label: 'RLM (30min) + Informática (30min)*',
-    bloco_2_materia_id: null,
-    bloco_2_label: 'Revisão da semana (o que errou mais)',
-  },
-  {
-    dia_semana: 0,
-    bloco_1_materia_id: null,
-    bloco_1_label: 'Simulado / questões misturando tudo que já viu',
-    bloco_2_materia_id: null,
-    bloco_2_label: '—',
-  },
-]
+export const HORAS_POR_DIA = 2
 
 export const NOTA_CICLO =
-  'No sábado, alterne semana sim / semana não: uma semana RLM + Informática, ' +
-  'outra semana Ética + revisão de legislações especiais.'
+  'Cada dia do ciclo é de uma matéria só, ocupando as 2h. A sugestão é 1h de teoria e ' +
+  '1h de prática no próximo subtópico não concluído — mas sem forçar: se a prática render ' +
+  'menos, siga em frente.'
 
-/** Ordena o ciclo começando na Segunda, que é como a trilha apresenta. */
-export function cicloOrdenado(ciclo) {
-  const ordem = [1, 2, 3, 4, 5, 6, 0]
-  return ordem
-    .map((d) => ciclo.find((c) => c.dia_semana === d))
-    .filter(Boolean)
+/* ------------------------------- utilidades ------------------------------- */
+
+/** Normaliza qualquer inteiro para uma posição válida do ciclo (0 a 9). */
+export function normalizarPosicao(posicao) {
+  const n = Number(posicao)
+  if (!Number.isFinite(n)) return 0
+  return ((Math.trunc(n) % TAMANHO_CICLO) + TAMANHO_CICLO) % TAMANHO_CICLO
+}
+
+export function posicaoDoCiclo(posicao) {
+  return CICLO_POSICOES[normalizarPosicao(posicao)]
+}
+
+/** Próxima posição, dando a volta de 9 para 0. */
+export function proximaPosicao(posicao) {
+  return normalizarPosicao(posicao + 1)
+}
+
+/**
+ * As `quantidade` posições seguintes à atual, em ordem — o preview do que vem.
+ * Cada item traz `daquiA` (1 = próximo dia) para exibição.
+ */
+export function proximasPosicoes(posicaoAtual, quantidade = 5) {
+  const base = normalizarPosicao(posicaoAtual)
+  return Array.from({ length: quantidade }, (_, i) => ({
+    ...CICLO_POSICOES[normalizarPosicao(base + i + 1)],
+    daquiA: i + 1,
+  }))
+}
+
+/** O padrão agrupado por semana, para a referência visual das 10 posições. */
+export function cicloPorSemana() {
+  return {
+    A: CICLO_POSICOES.filter((p) => p.semana === 'A'),
+    B: CICLO_POSICOES.filter((p) => p.semana === 'B'),
+  }
+}
+
+/** Quantos dias do ciclo completo cabem a cada matéria. */
+export function diasPorMateria() {
+  const contagem = {}
+  for (const p of CICLO_POSICOES) {
+    if (!p.materiaId) continue
+    contagem[p.materiaId] = (contagem[p.materiaId] || 0) + 1
+  }
+  return contagem
 }

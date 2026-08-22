@@ -81,7 +81,7 @@ export function GraficoRadarDesempenho({ dados, altura = 260 }) {
 
 export function GraficoAderencia({ dados, altura = 230 }) {
   if (!dados?.some((d) => d.planejado > 0 || d.real > 0)) {
-    return <SemDados altura={altura} texto="Configure o ciclo e registre sessões no timer" />
+    return <SemDados altura={altura} texto="Registre sessões no timer para comparar com o ciclo" />
   }
   return (
     <ResponsiveContainer width="100%" height={altura}>

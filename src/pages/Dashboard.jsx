@@ -1,7 +1,10 @@
 import { useMemo, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useStore } from '../state/StoreProvider'
-import { MATERIAS_POR_ID, DIAS_SEMANA } from '../content'
+import {
+  MATERIAS_POR_ID, HORAS_POR_DIA, TAMANHO_CICLO,
+  posicaoDoCiclo, proximasPosicoes, normalizarPosicao,
+} from '../content'
 import {
   resumoTempo, evolucaoSemanal, progressoPorMateria, totaisTrilha,
   desempenhoPorMateria, taxaAcertoGeral, pioresSubtopicos, pontosFracosAtivos,
@@ -15,50 +18,57 @@ import {
 /* ------------------------------------------------------------------ topo */
 
 function OQueEstudarHoje() {
-  const { ciclo, subtopicoStatus } = useStore()
-  const hoje = new Date().getDay()
-  const doDia = ciclo.find((c) => c.dia_semana === hoje)
+  const { cicloProgresso, subtopicoStatus, acoes } = useStore()
 
-  const blocos = [
-    { label: doDia?.bloco_1_label, materiaId: doDia?.bloco_1_materia_id, n: 1 },
-    { label: doDia?.bloco_2_label, materiaId: doDia?.bloco_2_materia_id, n: 2 },
-  ].filter((b) => b.label && b.label !== '—')
+  const posicaoAtual = normalizarPosicao(cicloProgresso?.posicao_atual ?? 0)
+  const atual = posicaoDoCiclo(posicaoAtual)
+  const proxima = proximasPosicoes(posicaoAtual, 1)[0]
+
+  const materia = atual.materiaId ? MATERIAS_POR_ID[atual.materiaId] : null
+  const proximoSub = atual.materiaId ? proximoSubtopico(atual.materiaId, subtopicoStatus) : null
 
   return (
     <div className="card" style={{ borderLeft: '5px solid var(--amarelo-400)' }}>
       <div className="card-titulo">
-        <span>O que estudar hoje · {DIAS_SEMANA[hoje]}</span>
-        <Link to="/ciclo" className="texto-pequeno">editar ciclo</Link>
+        <span>O que estudar agora</span>
+        <Link to="/ciclo" className="texto-pequeno">ver ciclo</Link>
       </div>
 
-      {blocos.length === 0 ? (
-        <p className="texto-suave mb-0">Nenhum bloco definido para hoje. <Link to="/ciclo">Configure o ciclo</Link>.</p>
+      <div className="linha linha-quebra" style={{ gap: '.4rem', marginBottom: '.5rem' }}>
+        <span className="etiqueta etiqueta-amarela">
+          Semana {atual.semana} · dia {atual.dia}
+        </span>
+        <span className="etiqueta etiqueta-cinza">
+          posição {posicaoAtual + 1}/{TAMANHO_CICLO}
+        </span>
+        <span className="etiqueta etiqueta-cinza">{HORAS_POR_DIA}h</span>
+      </div>
+
+      <div style={{ fontWeight: 700, fontSize: '1.12rem', marginBottom: '.7rem' }}>
+        {materia ? `${materia.icone} ` : '🎯 '}{atual.label}
+      </div>
+
+      {atual.revisao ? (
+        <Link to="/revisao" className="btn btn-bloco">Abrir a revisão</Link>
+      ) : proximoSub ? (
+        <Link to={`/subtopico/${proximoSub.id}`} className="btn btn-bloco">
+          Ir para: {proximoSub.nome.length > 46 ? proximoSub.nome.slice(0, 46) + '…' : proximoSub.nome}
+        </Link>
       ) : (
-        <div className="col">
-          {blocos.map((b) => {
-            const materia = b.materiaId ? MATERIAS_POR_ID[b.materiaId] : null
-            const proximo = b.materiaId ? proximoSubtopico(b.materiaId, subtopicoStatus) : null
-            return (
-              <div key={b.n} style={{ padding: '.6rem .75rem', background: 'var(--azul-50)', borderRadius: 'var(--raio-sm)' }}>
-                <div className="linha linha-quebra" style={{ marginBottom: '.35rem' }}>
-                  <span className="etiqueta">Bloco {b.n} · 1h</span>
-                  {materia && <span className="etiqueta etiqueta-cinza">{materia.icone} {materia.nomeCurto}</span>}
-                </div>
-                <div style={{ fontWeight: 600, fontSize: '.93rem' }}>{b.label}</div>
-                {proximo ? (
-                  <Link to={`/subtopico/${proximo.id}`} className="btn btn-sm mt-1">
-                    Ir para: {proximo.nome.length > 52 ? proximo.nome.slice(0, 52) + '…' : proximo.nome}
-                  </Link>
-                ) : materia ? (
-                  <div className="texto-fraco mt-1">✅ Todos os tópicos desta matéria estão concluídos.</div>
-                ) : (
-                  <Link to="/simulados" className="btn btn-sm mt-1">Abrir simulados</Link>
-                )}
-              </div>
-            )
-          })}
+        <div className="aviso aviso-verde">
+          <span>✅</span>
+          <span>Todos os subtópicos de {materia?.nomeCurto} estão concluídos.</span>
         </div>
       )}
+
+      <button className="btn btn-neutro btn-bloco mt-1" onClick={() => acoes.concluirDiaCiclo()}>
+        ✓ Concluir dia e avançar
+      </button>
+
+      <div className="texto-fraco mt-1" style={{ fontSize: '.76rem' }}>
+        Depois vem: {proxima.materiaId ? MATERIAS_POR_ID[proxima.materiaId]?.nomeCurto : proxima.label}
+        {' '}(Semana {proxima.semana} · dia {proxima.dia})
+      </div>
     </div>
   )
 }
@@ -323,13 +333,16 @@ function Projecao() {
 /* ------------------------------------------------------------------ página */
 
 export default function Dashboard() {
-  const { sessoes, meta, subtopicoStatus, simulados, ciclo } = useStore()
+  const { sessoes, meta, subtopicoStatus, simulados } = useStore()
 
   const tempo = useMemo(() => resumoTempo(sessoes, meta?.horas_semanais_meta ?? 14), [sessoes, meta])
   const evolucao = useMemo(() => evolucaoSemanal(sessoes, 8), [sessoes])
   const desempenho = useMemo(() => desempenhoPorMateria(subtopicoStatus, simulados), [subtopicoStatus, simulados])
   const geral = useMemo(() => taxaAcertoGeral(subtopicoStatus, simulados), [subtopicoStatus, simulados])
-  const aderencia = useMemo(() => aderenciaAoCiclo(ciclo, sessoes), [ciclo, sessoes])
+  const aderencia = useMemo(
+    () => aderenciaAoCiclo(sessoes, meta?.horas_semanais_meta ?? 14),
+    [sessoes, meta]
+  )
   const totais = useMemo(() => totaisTrilha(subtopicoStatus), [subtopicoStatus])
 
   const dif = tempo.diferencaSemanas
@@ -393,6 +406,11 @@ export default function Dashboard() {
           <Link to="/ciclo" className="texto-pequeno">ver ciclo</Link>
         </div>
         <GraficoAderencia dados={aderencia} />
+        <p className="texto-fraco mt-1 mb-0" style={{ fontSize: '.76rem' }}>
+          O planejado projeta a proporção do ciclo sobre a meta semanal: uma matéria que ocupa
+          2 dos {TAMANHO_CICLO} dias responde por 20% das horas. Os dias de revisão não pertencem
+          a matéria nenhuma, então a soma das barras fica abaixo da meta cheia.
+        </p>
       </div>
 
       {/* --------------------------- MAIS ABAIXO --------------------------- */}

@@ -3,7 +3,7 @@ import { useStore } from './state/StoreProvider'
 import Layout from './components/Layout'
 import Entrada from './pages/Entrada'
 import Dashboard from './pages/Dashboard'
-import CicloSemanal from './pages/CicloSemanal'
+import CicloEstudos from './pages/CicloEstudos'
 import Materias from './pages/Materias'
 import Materia from './pages/Materia'
 import Topico from './pages/Topico'
@@ -35,7 +35,7 @@ export default function App() {
     <Layout>
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/ciclo" element={<CicloSemanal />} />
+        <Route path="/ciclo" element={<CicloEstudos />} />
         <Route path="/materias" element={<Materias />} />
         <Route path="/materias/:materiaId" element={<Materia />} />
         <Route path="/topico/:topicoId" element={<Topico />} />
