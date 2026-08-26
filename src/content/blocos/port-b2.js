@@ -1,5 +1,5 @@
 /**
- * Gramática e redação oficial — Bloco 2
+ * Concordância, regência e texto — Bloco 2
  *
  * Hierarquia: Matéria > Bloco > Tópico > Subtópico.
  * O SUBTÓPICO é a unidade de estudo: tem teoria, vídeo, questões e flashcards.
@@ -8,586 +8,79 @@
 export default {
   id: 'port-b2',
   materiaId: 'port',
-  nome: 'Bloco 2 — Gramática e redação oficial',
+  nome: 'Bloco 2 — Concordância, regência e texto',
   ordem: 2,
-  objetivo: 'Crase, sintaxe, pontuação, concordância, regência e redação oficial.',
+  objetivo: 'Concordância, regência, compreensão e interpretação, ortografia e acentuação.',
   topicos: [
     {
       id: 'port-b2-t1',
-      nome: 'Sintaxe',
+      nome: 'Concordância',
       videoConfirmado: false,
       subtopicos: [
         {
           id: 'port-b2-t1-s1',
-          nome: 'Emprego do sinal indicativo de crase',
+          nome: 'Concordância nominal',
           teoria: `
-## O que é crase
+## Concordância nominal
 
-Crase é a **fusão de duas vogais idênticas**, sinalizada pelo acento grave. No caso mais comum, é a fusão da **preposição "a"** com o **artigo definido feminino "a"**.
+Artigo, adjetivo, pronome adjetivo e numeral concordam em **gênero e número** com o substantivo a que se referem. A regra é simples; o que a banca cobra são os casos que fogem dela.
 
-Logo, para haver crase precisam existir **duas condições simultâneas**:
-1. um termo que **exija** a preposição *a*;
-2. um termo feminino que **admita** o artigo *a*.
+## Adjetivo com mais de um substantivo
 
-## O teste infalível
+**Adjetivo posposto** — duas opções, ambas corretas:
 
-Troque a palavra feminina por uma masculina equivalente:
+> Comprou livro e revista **novos**. (plural, forma preferida)
+> Comprou livro e revista **nova**. (concorda com o mais próximo)
 
-- Se aparecer **"ao"** → há crase. *Refiro-me **à** segurada* → refiro-me **ao** segurado ✔
-- Se aparecer só **"a"** ou **"o"** → não há crase. *Vi **a** segurada* → vi **o** segurado ✘
+**Adjetivo anteposto** — concorda com o mais próximo:
 
-## Casos em que NUNCA há crase
+> **Novo** livro e revista. (não *novos livro e revista*)
 
-| Situação | Exemplo |
+Se os substantivos forem de gêneros diferentes e o adjetivo for posposto no plural, usa-se o **masculino**: *servidora e servidor **dedicados***.
+
+## Palavras que exigem atenção
+
+| Palavra | Regra |
 |---|---|
-| Antes de palavra **masculina** | andar a pé, a cavalo |
-| Antes de **verbo** | começou a estudar |
-| Antes de **pronome pessoal** | entreguei a ela |
-| Antes da maioria dos **pronomes indefinidos** | a ninguém, a alguém, a qualquer |
-| Antes de **artigo indefinido** | a uma segurada |
-| Entre palavras **repetidas** | dia a dia, gota a gota, cara a cara |
-| Antes de **nomes de cidade** que não admitem artigo | Cheguei a Brasília |
-| Com **a** no singular + palavra no **plural** | Refiro-me a pessoas |
+| **anexo** | Adjetivo: concorda. *Seguem **anexos** os documentos.* |
+| **em anexo** | Locução: invariável |
+| **obrigado** | Concorda com quem fala. *(mulher)* **Obrigada** |
+| **mesmo / próprio** | Concordam. *Elas **mesmas** resolveram.* |
+| **bastante** | Adjetivo (= suficientes): concorda. Advérbio (= muito): invariável |
+| **meio** | Numeral: ***meia** hora*. Advérbio: *ela está **meio** cansada* |
+| **caro / barato** | Adjetivo concorda; advérbio não. *Custaram **caro*** (advérbio) |
+| **só** | = sozinho, concorda: *Ficaram **sós***. = somente, invariável |
+| **menos** | **Sempre invariável**. *Menos pessoas* — nunca *menas* |
+| **alerta** | Advérbio, invariável: *Os guardas ficaram **alerta*** |
 
-## Casos em que SEMPRE há crase
+## Expressões fixas
 
-- Locuções **adverbiais** femininas: *à noite, à vontade, às pressas, à toa, às vezes*;
-- Locuções **prepositivas** femininas: *à frente de, à beira de, à custa de*;
-- Locuções **conjuntivas** femininas: *à medida que, à proporção que*;
-- Indicação de **horas** determinadas: *às 14 horas*;
-- Expressões **à moda de / à maneira de**, ainda que subentendidas: *bife à milanesa, poesia à Camões*.
+**É proibido / é necessário / é bom / é permitido** — invariáveis **sem** determinante; concordam **com** ele:
 
-## Casos facultativos
+> É **proibido** entrada. → sem artigo, invariável
+> É **proibida** a entrada. → com artigo, concorda
 
-1. Antes de **nome próprio feminino**: *Refiro-me a Maria* / *à Maria*.
-2. Antes de **pronome possessivo feminino**: *Entreguei a minha chefe* / *à minha chefe*.
-3. Depois da preposição **até**: *Fui até a porta* / *até à porta*.
+**Um e outro / nem um nem outro** pedem substantivo no singular e adjetivo no plural: *um e outro **caso** **complexos***.
 
-## Cidades: a regra do "voltei de / voltei da"
+**Possível** em expressões superlativas concorda com o artigo de "o mais / os mais":
 
-- *Voltei **de** Brasília* → Brasília não tem artigo → **Vou a Brasília** (sem crase).
-- *Voltei **da** Bahia* → Bahia tem artigo → **Vou à Bahia** (com crase).
+> Casos o mais complexo **possível** × Casos os mais complexos **possíveis**
 
-Mas se o nome da cidade vier **determinado**, passa a haver crase: *Vou **à** Brasília dos anos 60*.
+## Numerais e datas
 
-## Pronomes demonstrativos
+*Um milhão de pessoas **foi** ouvido* (concorda com *milhão*) — mas admite-se o plural quando há especificador.
 
-Há crase antes de **aquele, aquela, aquilo** quando o termo anterior exige preposição *a*: *Refiro-me **àquele** processo*.
+Em **datas**, concorda com o substantivo implícito: *É **um** de maio* ou *São **dois** de maio*.
 
-Antes de **a que** (= à qual): *Esta é a norma **à que** me refiro* — quando o verbo exige preposição.
+## O que a banca planta
 
-## Por que a prova de 2022 cobrou
-
-O item 9 da prova tratava de "à porta" e afirmava que a crase se justificava pela **regência do verbo "ver"**. Errado: *ver* é **transitivo direto** e não pede preposição. A crase ali decorre do **valor adverbial de lugar** da locução.
+- *Menas* (não existe) e *em anexos* (locução não varia).
+- Fazer *é proibido* concordar quando não há artigo, ou não concordar quando há.
+- Adjetivo anteposto no plural com substantivos de gêneros diferentes.
 `,
           questoes: [
             {
               id: 'port-b2-t1-s1-q1',
-              enunciado: 'Não ocorre crase antes de palavras masculinas, de verbos e de pronomes pessoais.',
-              certa: true,
-              explicacao: 'Nesses casos falta o artigo feminino "a", que é uma das duas condições necessárias para a crase.',
-              variacoes: [
-                { enunciado: 'Ocorre crase na expressão "andar à cavalo", por tratar-se de locução adverbial.', certa: false, explicacao: '"Cavalo" é masculino: não há artigo feminino a se fundir. Escreve-se "a cavalo".' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s1-q2',
-              enunciado: 'Nas locuções adverbiais femininas, como "às pressas" e "à noite", o emprego do sinal indicativo de crase é obrigatório.',
-              certa: true,
-              explicacao: 'Locuções adverbiais, prepositivas e conjuntivas femininas levam crase obrigatória, inclusive para evitar ambiguidade.',
-              variacoes: [
-                { enunciado: 'O emprego do sinal indicativo de crase é facultativo antes de nomes próprios femininos e de pronomes possessivos femininos.', certa: true, explicacao: 'Correto — são dois dos três casos facultativos, ao lado da preposição "até".' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s1-q3',
-              enunciado: 'Em "Ele foi à Bahia e depois a Brasília", o emprego do sinal indicativo de crase está correto nas duas ocorrências.',
-              certa: true,
-              explicacao: 'Aplica-se o teste "voltei de/da": volta-se DA Bahia (com artigo, logo há crase) e DE Brasília (sem artigo, logo sem crase).',
-              variacoes: [
-                { enunciado: 'Ocorre crase em "Refiro-me a aquele processo", devendo a expressão ser grafada "àquele".', certa: true, explicacao: 'Correto. O verbo referir-se exige a preposição "a", que se funde ao "a" inicial de "aquele".' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s1-q4',
-              enunciado: 'Ocorre crase na expressão "à medida que", por tratar-se de locução conjuntiva feminina.',
-              certa: true,
-              explicacao: 'Locuções adverbiais, prepositivas e conjuntivas femininas levam crase obrigatória. Cuidado para não confundir com "na medida em que", que tem valor causal.',
-              variacoes: [
-                { enunciado: 'Ocorre crase em "Ele se dirigiu a ela para pedir informações".', certa: false, explicacao: 'Antes de pronome pessoal não há crase, pois esses pronomes não admitem artigo.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s1-q5',
-              enunciado: 'Em "Entreguei o documento à secretária", a crase justifica-se pela regência do verbo "entregar" somada à presença do artigo feminino.',
-              certa: true,
-              explicacao: 'Entregar algo A alguém: o verbo exige preposição, e "secretária" admite artigo. Substituindo por masculino aparece "ao secretário" — o teste confirma.',
-              variacoes: [
-                { enunciado: 'Em "Vi à secretária na recepção", o emprego do sinal indicativo de crase está correto.', certa: false, explicacao: '"Ver" é transitivo direto e não exige preposição: escreve-se "Vi a secretária".' },
-              ],
-            },
-          ],
-          flashcards: [
-            { p: 'Quais as duas condições para haver crase?', r: 'Um termo que exija a preposição "a" e um termo feminino que admita o artigo "a".' },
-            { p: 'Qual o teste prático da crase?', r: 'Trocar a palavra feminina por masculina: se aparecer "ao", há crase; se aparecer só "a"/"o", não há.' },
-            { p: 'Onde NUNCA há crase?', r: 'Antes de masculino, verbo, pronome pessoal, artigo indefinido, entre palavras repetidas e antes de plural com "a" no singular.' },
-            { p: 'Quais os três casos facultativos?', r: 'Nome próprio feminino, pronome possessivo feminino e depois da preposição "até".' },
-            { p: 'Como decidir crase antes de cidade?', r: 'Teste "voltei de/da": volto DA Bahia → vou À Bahia. Volto DE Brasília → vou A Brasília.' },
-          ],
-        },
-        {
-          id: 'port-b2-t1-s2',
-          nome: 'Sintaxe da oração',
-          teoria: `
-## Termos da oração
-
-**Essenciais:** sujeito e predicado.
-**Integrantes:** complemento verbal (objeto direto e indireto), complemento nominal, agente da passiva.
-**Acessórios:** adjunto adnominal, adjunto adverbial, aposto. (O **vocativo** não é termo da oração.)
-
-## Tipos de sujeito
-
-| Tipo | Característica | Exemplo |
-|---|---|---|
-| **Simples** | Um núcleo | *O segurado* requereu o benefício |
-| **Composto** | Dois ou mais núcleos | *O segurado e o dependente* compareceram |
-| **Oculto/elíptico** | Identificável pela desinência | *Requereu* o benefício (ele) |
-| **Indeterminado** | Não se identifica | *Precisa-se* de servidores / *Falaram* mal dele |
-| **Inexistente** | Oração sem sujeito | *Havia* muitos processos / *Faz* dois anos |
-
-> Sujeito indeterminado com "se": verbo **intransitivo ou transitivo indireto** + se (*Precisa-se de*). Partícula apassivadora: verbo **transitivo direto** + se (*Vendem-se casas* = casas são vendidas).
-
-Essa distinção caiu na prova de 2022 (item 11): em "*que se paga a toda hora*", o *se* é **apassivador** (a prestação é paga), e não índice de indeterminação.
-
-## Predicado
-
-| Tipo | Núcleo | Exemplo |
-|---|---|---|
-| **Verbal** | Verbo nocional | O servidor *analisou* o processo |
-| **Nominal** | Predicativo do sujeito (verbo de ligação) | O servidor *está cansado* |
-| **Verbo-nominal** | Verbo + predicativo | O servidor *chegou cansado* |
-
-## Adjunto adnominal × complemento nominal
-
-Distinção clássica e difícil:
-
-| | **Adjunto adnominal** | **Complemento nominal** |
-|---|---|---|
-| Liga-se a | Só a **substantivo** | Substantivo abstrato, adjetivo ou advérbio |
-| Sentido | **Ativo** (quem pratica) | **Passivo** (quem sofre) |
-| Exemplo | a decisão *do juiz* (o juiz decidiu) | a análise *do processo* (o processo é analisado) |
-
-## Período composto por coordenação
-
-Orações **sintaticamente independentes**:
-
-| Tipo | Conjunções |
-|---|---|
-| Aditiva | e, nem, não só… mas também |
-| Adversativa | mas, porém, contudo, todavia, entretanto |
-| Alternativa | ou, ora… ora, quer… quer |
-| Conclusiva | logo, portanto, pois (posposto), assim |
-| Explicativa | pois (anteposto), porque, que |
-
-## Período composto por subordinação
-
-**Substantivas** (funcionam como substantivo): subjetiva, objetiva direta, objetiva indireta, completiva nominal, predicativa, apositiva. Introduzidas por *que* e *se* (conjunções integrantes).
-
-**Adjetivas** (funcionam como adjetivo): introduzidas por **pronome relativo**.
-- **Restritiva:** restringe o antecedente, **sem vírgula**. *Os servidores **que se aposentaram** receberam o abono* (só alguns).
-- **Explicativa:** acrescenta informação, **entre vírgulas**. *Os servidores, **que se aposentaram**, receberam o abono* (todos).
-
-**Adverbiais:** causal, consecutiva, condicional, concessiva, comparativa, conformativa, final, proporcional, temporal.
-
-## Dica de identificação
-
-Para saber se o *que* é **conjunção integrante** ou **pronome relativo**: substitua por **"o qual"**. Se couber, é **relativo** (oração adjetiva). Se não couber, é **integrante** (oração substantiva).
-`,
-          questoes: [
-            {
-              id: 'port-b2-t1-s2-q1',
-              enunciado: 'Na oração "Vendem-se casas na região", a partícula "se" funciona como pronome apassivador, e "casas" é o sujeito paciente.',
-              certa: true,
-              explicacao: 'Verbo transitivo direto + se = voz passiva sintética. Equivale a "casas são vendidas", com concordância obrigatória no plural.',
-              variacoes: [
-                { enunciado: 'Na oração "Precisa-se de servidores", a partícula "se" é pronome apassivador e "servidores" é o sujeito.', certa: false, explicacao: '"Precisar de" é transitivo indireto: o "se" é índice de indeterminação do sujeito, e o verbo fica no singular.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s2-q2',
-              enunciado: 'A oração adjetiva restritiva não é isolada por vírgulas, ao contrário da explicativa.',
-              certa: true,
-              explicacao: 'A restritiva delimita o antecedente e integra o sentido; a explicativa acrescenta informação acessória e vem entre vírgulas.',
-              variacoes: [
-                { enunciado: 'A presença de vírgulas em uma oração adjetiva não altera o sentido do período.', certa: false, explicacao: 'Altera decisivamente: sem vírgulas restringe (só alguns); com vírgulas generaliza (todos).' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s2-q3',
-              enunciado: 'Em "a análise do processo", a expressão "do processo" é complemento nominal, pois o processo sofre a ação expressa pelo substantivo abstrato.',
-              certa: true,
-              explicacao: 'Sentido passivo → complemento nominal. Se fosse sentido ativo ("a decisão do juiz"), seria adjunto adnominal.',
-              variacoes: [
-                { enunciado: 'Para distinguir o "que" conjunção integrante do "que" pronome relativo, pode-se testar a substituição por "o qual".', certa: true, explicacao: 'Correto. Se "o qual" couber, é pronome relativo (oração adjetiva); se não couber, é conjunção integrante (oração substantiva).' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s2-q4',
-              enunciado: 'O predicativo do sujeito pode aparecer em predicado verbo-nominal, no qual há um verbo nocional acompanhado de um termo que qualifica o sujeito.',
-              certa: true,
-              explicacao: 'Em "O servidor chegou cansado", há ação (chegou) e qualificação (cansado): dois núcleos, logo predicado verbo-nominal.',
-              variacoes: [
-                { enunciado: 'O predicado que apresenta verbo de ligação e predicativo do sujeito é classificado como verbal.', certa: false, explicacao: 'Verbo de ligação mais predicativo formam predicado NOMINAL. O verbal tem por núcleo um verbo nocional.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s2-q5',
-              enunciado: 'Na oração "Necessita-se de servidores capacitados", o sujeito é indeterminado.',
-              certa: true,
-              explicacao: '"Necessitar de" é transitivo indireto; com o "se", o sujeito fica indeterminado e o verbo permanece no singular.',
-              variacoes: [
-                { enunciado: 'Na oração "Necessitam-se de servidores capacitados", a concordância verbal está correta.', certa: false, explicacao: 'Com verbo transitivo indireto o "se" indetermina o sujeito e o verbo fica no singular: "Necessita-se de servidores".' },
-              ],
-            },
-          ],
-          flashcards: [
-            { p: 'Como diferenciar "se" apassivador de índice de indeterminação?', r: 'Apassivador: verbo transitivo DIRETO (vendem-se casas). Indeterminação: verbo intransitivo ou transitivo indireto (precisa-se de).' },
-            { p: 'Adjunto adnominal x complemento nominal?', r: 'Adjunto: sentido ativo, só com substantivo (a decisão do juiz). Complemento: sentido passivo (a análise do processo).' },
-            { p: 'Oração adjetiva restritiva x explicativa?', r: 'Restritiva: sem vírgula, delimita (só alguns). Explicativa: entre vírgulas, generaliza (todos).' },
-            { p: 'Como saber se "que" é relativo ou integrante?', r: 'Substituir por "o qual". Se couber, é pronome relativo (adjetiva); se não, conjunção integrante (substantiva).' },
-            { p: 'Quais orações têm sujeito inexistente?', r: 'Com haver = existir, fazer/haver de tempo, e verbos que indicam fenômeno da natureza.' },
-          ],
-        },
-        {
-          id: 'port-b2-t1-s3',
-          nome: 'Sintaxe do período',
-          teoria: `
-## Termos da oração
-
-**Essenciais:** sujeito e predicado.
-**Integrantes:** complemento verbal (objeto direto e indireto), complemento nominal, agente da passiva.
-**Acessórios:** adjunto adnominal, adjunto adverbial, aposto. (O **vocativo** não é termo da oração.)
-
-## Tipos de sujeito
-
-| Tipo | Característica | Exemplo |
-|---|---|---|
-| **Simples** | Um núcleo | *O segurado* requereu o benefício |
-| **Composto** | Dois ou mais núcleos | *O segurado e o dependente* compareceram |
-| **Oculto/elíptico** | Identificável pela desinência | *Requereu* o benefício (ele) |
-| **Indeterminado** | Não se identifica | *Precisa-se* de servidores / *Falaram* mal dele |
-| **Inexistente** | Oração sem sujeito | *Havia* muitos processos / *Faz* dois anos |
-
-> Sujeito indeterminado com "se": verbo **intransitivo ou transitivo indireto** + se (*Precisa-se de*). Partícula apassivadora: verbo **transitivo direto** + se (*Vendem-se casas* = casas são vendidas).
-
-Essa distinção caiu na prova de 2022 (item 11): em "*que se paga a toda hora*", o *se* é **apassivador** (a prestação é paga), e não índice de indeterminação.
-
-## Predicado
-
-| Tipo | Núcleo | Exemplo |
-|---|---|---|
-| **Verbal** | Verbo nocional | O servidor *analisou* o processo |
-| **Nominal** | Predicativo do sujeito (verbo de ligação) | O servidor *está cansado* |
-| **Verbo-nominal** | Verbo + predicativo | O servidor *chegou cansado* |
-
-## Adjunto adnominal × complemento nominal
-
-Distinção clássica e difícil:
-
-| | **Adjunto adnominal** | **Complemento nominal** |
-|---|---|---|
-| Liga-se a | Só a **substantivo** | Substantivo abstrato, adjetivo ou advérbio |
-| Sentido | **Ativo** (quem pratica) | **Passivo** (quem sofre) |
-| Exemplo | a decisão *do juiz* (o juiz decidiu) | a análise *do processo* (o processo é analisado) |
-
-## Período composto por coordenação
-
-Orações **sintaticamente independentes**:
-
-| Tipo | Conjunções |
-|---|---|
-| Aditiva | e, nem, não só… mas também |
-| Adversativa | mas, porém, contudo, todavia, entretanto |
-| Alternativa | ou, ora… ora, quer… quer |
-| Conclusiva | logo, portanto, pois (posposto), assim |
-| Explicativa | pois (anteposto), porque, que |
-
-## Período composto por subordinação
-
-**Substantivas** (funcionam como substantivo): subjetiva, objetiva direta, objetiva indireta, completiva nominal, predicativa, apositiva. Introduzidas por *que* e *se* (conjunções integrantes).
-
-**Adjetivas** (funcionam como adjetivo): introduzidas por **pronome relativo**.
-- **Restritiva:** restringe o antecedente, **sem vírgula**. *Os servidores **que se aposentaram** receberam o abono* (só alguns).
-- **Explicativa:** acrescenta informação, **entre vírgulas**. *Os servidores, **que se aposentaram**, receberam o abono* (todos).
-
-**Adverbiais:** causal, consecutiva, condicional, concessiva, comparativa, conformativa, final, proporcional, temporal.
-
-## Dica de identificação
-
-Para saber se o *que* é **conjunção integrante** ou **pronome relativo**: substitua por **"o qual"**. Se couber, é **relativo** (oração adjetiva). Se não couber, é **integrante** (oração substantiva).
-`,
-          questoes: [
-            {
-              id: 'port-b2-t1-s3-q1',
-              enunciado: 'Na oração "Vendem-se casas na região", a partícula "se" funciona como pronome apassivador, e "casas" é o sujeito paciente.',
-              certa: true,
-              explicacao: 'Verbo transitivo direto + se = voz passiva sintética. Equivale a "casas são vendidas", com concordância obrigatória no plural.',
-              variacoes: [
-                { enunciado: 'Na oração "Precisa-se de servidores", a partícula "se" é pronome apassivador e "servidores" é o sujeito.', certa: false, explicacao: '"Precisar de" é transitivo indireto: o "se" é índice de indeterminação do sujeito, e o verbo fica no singular.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s3-q2',
-              enunciado: 'A oração adjetiva restritiva não é isolada por vírgulas, ao contrário da explicativa.',
-              certa: true,
-              explicacao: 'A restritiva delimita o antecedente e integra o sentido; a explicativa acrescenta informação acessória e vem entre vírgulas.',
-              variacoes: [
-                { enunciado: 'A presença de vírgulas em uma oração adjetiva não altera o sentido do período.', certa: false, explicacao: 'Altera decisivamente: sem vírgulas restringe (só alguns); com vírgulas generaliza (todos).' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s3-q3',
-              enunciado: 'Em "a análise do processo", a expressão "do processo" é complemento nominal, pois o processo sofre a ação expressa pelo substantivo abstrato.',
-              certa: true,
-              explicacao: 'Sentido passivo → complemento nominal. Se fosse sentido ativo ("a decisão do juiz"), seria adjunto adnominal.',
-              variacoes: [
-                { enunciado: 'Para distinguir o "que" conjunção integrante do "que" pronome relativo, pode-se testar a substituição por "o qual".', certa: true, explicacao: 'Correto. Se "o qual" couber, é pronome relativo (oração adjetiva); se não couber, é conjunção integrante (oração substantiva).' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s3-q4',
-              enunciado: 'A oração subordinada substantiva subjetiva exerce a função de sujeito da oração principal, como em "É necessário que o segurado compareça".',
-              certa: true,
-              explicacao: 'Quem é necessário? Que o segurado compareça. A oração inteira funciona como sujeito da principal.',
-              variacoes: [
-                { enunciado: 'Em "É necessário que o segurado compareça", a oração iniciada por "que" é objetiva direta.', certa: false, explicacao: 'É subjetiva: funciona como sujeito de "é necessário", e não como complemento verbal.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s3-q5',
-              enunciado: 'A substituição do pronome "que" por "o qual" é um teste válido para identificar a oração subordinada adjetiva.',
-              certa: true,
-              explicacao: 'Se "o qual" couber, o "que" é pronome relativo e a oração é adjetiva; se não couber, é conjunção integrante e a oração é substantiva.',
-              variacoes: [
-                { enunciado: 'Em "Sabemos que o prazo terminou", o vocábulo "que" é pronome relativo e introduz oração adjetiva.', certa: false, explicacao: '"O qual" não cabe ali. O "que" é conjunção integrante e a oração é substantiva objetiva direta.' },
-              ],
-            },
-          ],
-          flashcards: [
-            { p: 'Como diferenciar "se" apassivador de índice de indeterminação?', r: 'Apassivador: verbo transitivo DIRETO (vendem-se casas). Indeterminação: verbo intransitivo ou transitivo indireto (precisa-se de).' },
-            { p: 'Adjunto adnominal x complemento nominal?', r: 'Adjunto: sentido ativo, só com substantivo (a decisão do juiz). Complemento: sentido passivo (a análise do processo).' },
-            { p: 'Oração adjetiva restritiva x explicativa?', r: 'Restritiva: sem vírgula, delimita (só alguns). Explicativa: entre vírgulas, generaliza (todos).' },
-            { p: 'Como saber se "que" é relativo ou integrante?', r: 'Substituir por "o qual". Se couber, é pronome relativo (adjetiva); se não, conjunção integrante (substantiva).' },
-            { p: 'Quais orações têm sujeito inexistente?', r: 'Com haver = existir, fazer/haver de tempo, e verbos que indicam fenômeno da natureza.' },
-          ],
-        },
-        {
-          id: 'port-b2-t1-s4',
-          nome: 'Pontuação',
-          teoria: `
-## A regra de ouro
-
-**Não se separa** com vírgula:
-- **sujeito** do **predicado**;
-- **verbo** do seu **complemento**;
-- **nome** do seu **complemento** ou **adjunto**.
-
-> *O servidor do setor de benefícios, analisou o processo* → **errado**: separou sujeito do verbo.
-
-Exceção: quando um termo intercalado está **entre duas vírgulas**, aí o isolamento é legítimo.
-
-## Usos obrigatórios da vírgula
-
-| Situação | Exemplo |
-|---|---|
-| Separar **elementos de enumeração** | Analisou processos, pareceres e recursos. |
-| Isolar **vocativo** | *Senhor segurado*, compareça ao guichê. |
-| Isolar **aposto explicativo** | O INSS, *autarquia federal*, concede benefícios. |
-| Isolar **adjunto adverbial deslocado** longo | *Após a análise do requerimento*, o benefício foi concedido. |
-| Isolar **oração adjetiva explicativa** | Os segurados, *que já contribuíram*, têm direito. |
-| Separar orações **coordenadas** (exceto aditivas com mesmo sujeito) | Requereu o benefício, *mas* não obteve resposta. |
-| Marcar **elipse do verbo** | Uns preferem a via administrativa; outros, a judicial. |
-| Isolar **conjunção deslocada** | O prazo terminou; o pedido, *portanto*, foi indeferido. |
-| Separar **data e local** | Brasília, 15 de agosto de 2026. |
-
-## Ponto e vírgula
-
-- Separa itens de **enumeração** que já contêm vírgulas internas (típico de incisos legais);
-- Separa orações coordenadas **longas** ou já pontuadas internamente;
-- Marca **contraste** mais forte que a vírgula.
-
-## Dois-pontos
-
-Introduzem **enumeração**, **explicação/esclarecimento** ou **citação/fala**.
-
-> *São requisitos: idade, carência e qualidade de segurado.*
-
-## Travessão
-
-- Marca **fala** em diálogo;
-- Isola termo com **ênfase maior** que a vírgula;
-- Substitui parênteses dando **destaque**.
-
-## Aspas e parênteses
-
-**Aspas:** citações literais, gírias, estrangeirismos, ironia, títulos de obras.
-**Parênteses:** informação acessória, referências, datas.
-
-## Erros que a banca explora
-
-1. Vírgula **antes de "que"** restritivo — altera o sentido.
-2. Vírgula separando **sujeito longo** do verbo — o comprimento do sujeito não autoriza a vírgula.
-3. Vírgula **antes de "e"** quando os sujeitos são **diferentes** — aí é permitida.
-4. Ausência de vírgula em **adjunto adverbial deslocado** longo.
-5. Uso de vírgula onde caberia **ponto e vírgula**, em enumerações complexas.
-`,
-          questoes: [
-            {
-              id: 'port-b2-t1-s4-q1',
-              enunciado: 'É incorreto o emprego de vírgula para separar o sujeito do predicado, ainda que o sujeito seja constituído por expressão longa.',
-              certa: true,
-              explicacao: 'A extensão do sujeito não autoriza a vírgula. A separação só é legítima quando há termo intercalado entre duas vírgulas.',
-              variacoes: [
-                { enunciado: 'Quando o sujeito é longo, admite-se o emprego de vírgula para separá-lo do verbo, facilitando a leitura.', certa: false, explicacao: 'Não se separa sujeito de predicado por vírgula, independentemente da extensão.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s4-q2',
-              enunciado: 'O ponto e vírgula é adequado para separar itens de uma enumeração que já contenham vírgulas internas.',
-              certa: true,
-              explicacao: 'É o uso típico em incisos de textos legais, evitando ambiguidade entre os níveis de separação.',
-              variacoes: [
-                { enunciado: 'Os dois-pontos podem introduzir enumeração, esclarecimento ou citação.', certa: true, explicacao: 'Correto — são as três funções básicas dos dois-pontos.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s4-q3',
-              enunciado: 'O adjunto adverbial deslocado para o início do período, quando extenso, deve ser isolado por vírgula.',
-              certa: true,
-              explicacao: 'O deslocamento de adjunto adverbial extenso exige vírgula; se for curto, a vírgula é facultativa.',
-              variacoes: [
-                { enunciado: 'É obrigatório o emprego de vírgula antes da conjunção "e" em todas as orações coordenadas.', certa: false, explicacao: 'Em regra não se usa vírgula antes de "e" aditivo com mesmo sujeito. Ela é admitida quando os sujeitos são diferentes ou há valor adversativo.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s4-q4',
-              enunciado: 'A vírgula é obrigatória para isolar o aposto explicativo, como em "O INSS, autarquia federal, concede benefícios".',
-              certa: true,
-              explicacao: 'O aposto explicativo é informação acessória que amplia o termo anterior, e por isso vem entre vírgulas.',
-              variacoes: [
-                { enunciado: 'O aposto especificativo, como em "o servidor João", deve ser isolado por vírgulas.', certa: false, explicacao: 'O aposto especificativo identifica e restringe, integrando o termo — não se separa por vírgula.' },
-              ],
-            },
-            {
-              id: 'port-b2-t1-s4-q5',
-              enunciado: 'Admite-se vírgula antes da conjunção "e" quando as orações coordenadas possuem sujeitos diferentes.',
-              certa: true,
-              explicacao: 'Também se admite quando o "e" tem valor adversativo ou em enumerações com repetição enfática. A regra geral, porém, é não usar vírgula antes de "e" aditivo.',
-              variacoes: [
-                { enunciado: 'A vírgula antes da conjunção "e" é sempre vedada na norma padrão.', certa: false, explicacao: 'Não é sempre: cabe com sujeitos diferentes, com valor adversativo e em repetição enfática.' },
-              ],
-            },
-          ],
-          flashcards: [
-            { p: 'Qual a regra de ouro da vírgula?', r: 'Não separar sujeito do predicado, verbo do complemento, nem nome do complemento/adjunto.' },
-            { p: 'Quando o ponto e vírgula é adequado?', r: 'Em enumerações cujos itens já contêm vírgulas, e entre orações coordenadas longas ou já pontuadas.' },
-            { p: 'Vírgula antes de "e": quando cabe?', r: 'Quando os sujeitos são diferentes, quando o "e" tem valor adversativo, ou em enumeração com repetição enfática.' },
-            { p: 'Qual o efeito da vírgula em oração adjetiva?', r: 'Sem vírgula restringe (só alguns); com vírgulas explica e generaliza (todos).' },
-            { p: 'Três funções dos dois-pontos?', r: 'Introduzir enumeração, esclarecimento/explicação e citação ou fala.' },
-          ],
-        },
-      ],
-    },
-    {
-      id: 'port-b2-t2',
-      nome: 'Concordância e regência',
-      videoConfirmado: false,
-      subtopicos: [
-        {
-          id: 'port-b2-t2-s1',
-          nome: 'Concordância nominal',
-          teoria: `
-## Concordância verbal — regra geral
-
-O verbo concorda com o **sujeito** em número e pessoa.
-
-## Casos especiais decisivos
-
-**Sujeito composto**
-- **Anteposto** ao verbo → plural: *O segurado e o dependente **compareceram***.
-- **Posposto** → plural ou concordância com o mais próximo: *Compareceu / Compareceram o segurado e o dependente*.
-- Núcleos ligados por **ou**: singular se houver exclusão; plural se houver adição.
-- Ligados por **nem… nem**: preferencialmente plural.
-
-**Expressões partitivas** (*a maioria de, grande parte de, metade de*) + plural → verbo no singular **ou** plural: *A maioria dos servidores **compareceu/compareceram***.
-
-**Porcentagem**
-- O verbo concorda com o **número percentual** ou com o **especificador**: *20% dos servidores **faltaram*** / *20% do quadro **faltou***.
-- Percentual **sozinho** → concorda com o número: *1% **votou***; *30% **votaram***.
-
-> Na prova de 2022 (item 6), a estrutura era "*o percentual era de 58,3%*". Aqui o sujeito é **"o percentual"** (singular), e não a porcentagem em si — por isso o plural estaria **errado**.
-
-**Verbos impessoais** → sempre 3ª pessoa do singular:
-- **haver** = existir: *Havia muitos processos*;
-- **fazer** = tempo decorrido: *Faz cinco anos*;
-- fenômenos da natureza: *Choveu ontem*.
-
-> Atenção: se o impessoal estiver em **locução**, o auxiliar também fica no singular: *Deve haver processos* (nunca "devem haver").
-
-**Verbo ser** — concorda com o **predicativo** quando o sujeito é *tudo, isso, o que*: *Tudo **são** flores*. Em horas, datas e distâncias, concorda com a expressão numérica: *São 14 horas*.
-
-**Pronome relativo "que"** → verbo concorda com o antecedente: *Fui eu **que** **paguei***.
-**"Um dos que"** → geralmente plural: *Ele é um dos que **chegaram** cedo*.
-
-## Concordância nominal — regra geral
-
-Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gênero e número.
-
-**Adjetivo posposto a vários substantivos** → concorda com o mais próximo ou vai ao plural (masculino se houver gêneros diferentes).
-**Adjetivo anteposto** → concorda com o mais próximo.
-
-## Palavras que exigem cuidado
-
-| Palavra | Regra |
-|---|---|
-| **anexo, incluso, obrigado, mesmo, próprio** | **Variam** — concordam com o substantivo: *Seguem anexas as certidões*; *Obrigada*, disse ela |
-| **em anexo** | **Invariável** |
-| **menos, alerta, pseudo** | **Sempre invariáveis**: *menos pessoas*, *elas estão alerta* |
-| **bastante** | Adjetivo (= muitos) **varia**; advérbio (= muito) **não varia** |
-| **meio** | Numeral (= metade) **varia**; advérbio (= um pouco) **não varia**: *meia laranja* × *meio cansada* |
-| **é proibido, é necessário, é bom** | Invariável **sem** determinante; variável **com** determinante: *É proibido entrada* × *É proibida a entrada* |
-| **só** | = sozinho (adjetivo) **varia**; = somente (advérbio) **não varia** |
-`,
-          questoes: [
-            {
-              id: 'port-b2-t2-s1-q1',
-              enunciado: 'Na oração "Deve haver muitos processos pendentes", o verbo auxiliar permanece no singular porque o verbo principal é impessoal.',
-              certa: true,
-              explicacao: 'A impessoalidade de "haver" se transmite ao auxiliar da locução. "Devem haver" é erro clássico.',
-              variacoes: [
-                { enunciado: 'Na oração "Haviam muitos segurados na fila", a concordância verbal está correta.', certa: false, explicacao: '"Haver" no sentido de existir é impessoal e permanece no singular: "Havia muitos segurados".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s1-q2',
-              enunciado: 'Na frase "É proibida a entrada de pessoas não autorizadas", a flexão do adjetivo justifica-se pela presença do artigo antes do substantivo.',
-              certa: true,
-              explicacao: 'Com determinante, expressões como "é proibido", "é necessário" e "é bom" concordam. Sem determinante, ficam invariáveis: "É proibido entrada".',
-              variacoes: [
-                { enunciado: 'Na frase "Seguem anexo as certidões solicitadas", a concordância nominal está correta.', certa: false, explicacao: '"Anexo" varia: "Seguem anexas as certidões". Invariável é apenas a locução "em anexo".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s1-q3',
-              enunciado: 'Em "A maioria dos servidores compareceu à reunião", a concordância verbal está correta, admitindo-se também o plural.',
-              certa: true,
-              explicacao: 'Com expressões partitivas seguidas de plural, a concordância é facultativa: singular (com o núcleo) ou plural (com o especificador).',
-              variacoes: [
-                { enunciado: 'Na frase "Ela estava meia cansada", a concordância nominal está correta.', certa: false, explicacao: '"Meio" com sentido de "um pouco" é advérbio e não varia: "meio cansada".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s1-q4',
               enunciado: 'A expressão "em anexo" é invariável, ao contrário do adjetivo "anexo", que concorda com o substantivo a que se refere.',
               certa: true,
               explicacao: 'Seguem anexas as certidões / Seguem em anexo as certidões: as duas formas são corretas, mas só a primeira flexiona.',
@@ -596,7 +89,7 @@ Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gêne
               ],
             },
             {
-              id: 'port-b2-t2-s1-q5',
+              id: 'port-b2-t1-s1-q2',
               enunciado: 'O vocábulo "bastante" varia quando funciona como adjetivo, com sentido de "muitos", e permanece invariável quando é advérbio.',
               certa: true,
               explicacao: '"Bastantes servidores compareceram" (adjetivo, = muitos) x "Os servidores estavam bastante cansados" (advérbio, = muito).',
@@ -604,82 +97,8 @@ Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gêne
                 { enunciado: 'Na frase "Havia bastantes motivos para o indeferimento", o vocábulo está incorretamente flexionado.', certa: false, explicacao: 'Está correto: aí "bastantes" equivale a "muitos" e funciona como adjetivo, concordando com "motivos".' },
               ],
             },
-          ],
-          flashcards: [
-            { p: 'Haver e fazer impessoais: como concordam?', r: 'Sempre na 3ª pessoa do singular, inclusive o auxiliar da locução ("deve haver", nunca "devem haver").' },
-            { p: 'Expressões partitivas ("a maioria de") — que concordância?', r: 'Facultativa: singular (com o núcleo) ou plural (com o especificador).' },
-            { p: 'Anexo, obrigado, mesmo, próprio: variam?', r: 'Sim, concordam com o substantivo. Invariável é a locução "em anexo".' },
-            { p: 'Bastante e meio: quando variam?', r: 'Variam como adjetivo/numeral (bastantes pessoas, meia laranja); não variam como advérbio (bastante cansada, meio cansada).' },
-            { p: 'É proibido / é necessário: quando concordam?', r: 'Concordam quando há determinante ("É proibida a entrada"); ficam invariáveis sem determinante ("É proibido entrada").' },
-          ],
-        },
-        {
-          id: 'port-b2-t2-s2',
-          nome: 'Concordância verbal',
-          teoria: `
-## Concordância verbal — regra geral
-
-O verbo concorda com o **sujeito** em número e pessoa.
-
-## Casos especiais decisivos
-
-**Sujeito composto**
-- **Anteposto** ao verbo → plural: *O segurado e o dependente **compareceram***.
-- **Posposto** → plural ou concordância com o mais próximo: *Compareceu / Compareceram o segurado e o dependente*.
-- Núcleos ligados por **ou**: singular se houver exclusão; plural se houver adição.
-- Ligados por **nem… nem**: preferencialmente plural.
-
-**Expressões partitivas** (*a maioria de, grande parte de, metade de*) + plural → verbo no singular **ou** plural: *A maioria dos servidores **compareceu/compareceram***.
-
-**Porcentagem**
-- O verbo concorda com o **número percentual** ou com o **especificador**: *20% dos servidores **faltaram*** / *20% do quadro **faltou***.
-- Percentual **sozinho** → concorda com o número: *1% **votou***; *30% **votaram***.
-
-> Na prova de 2022 (item 6), a estrutura era "*o percentual era de 58,3%*". Aqui o sujeito é **"o percentual"** (singular), e não a porcentagem em si — por isso o plural estaria **errado**.
-
-**Verbos impessoais** → sempre 3ª pessoa do singular:
-- **haver** = existir: *Havia muitos processos*;
-- **fazer** = tempo decorrido: *Faz cinco anos*;
-- fenômenos da natureza: *Choveu ontem*.
-
-> Atenção: se o impessoal estiver em **locução**, o auxiliar também fica no singular: *Deve haver processos* (nunca "devem haver").
-
-**Verbo ser** — concorda com o **predicativo** quando o sujeito é *tudo, isso, o que*: *Tudo **são** flores*. Em horas, datas e distâncias, concorda com a expressão numérica: *São 14 horas*.
-
-**Pronome relativo "que"** → verbo concorda com o antecedente: *Fui eu **que** **paguei***.
-**"Um dos que"** → geralmente plural: *Ele é um dos que **chegaram** cedo*.
-
-## Concordância nominal — regra geral
-
-Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gênero e número.
-
-**Adjetivo posposto a vários substantivos** → concorda com o mais próximo ou vai ao plural (masculino se houver gêneros diferentes).
-**Adjetivo anteposto** → concorda com o mais próximo.
-
-## Palavras que exigem cuidado
-
-| Palavra | Regra |
-|---|---|
-| **anexo, incluso, obrigado, mesmo, próprio** | **Variam** — concordam com o substantivo: *Seguem anexas as certidões*; *Obrigada*, disse ela |
-| **em anexo** | **Invariável** |
-| **menos, alerta, pseudo** | **Sempre invariáveis**: *menos pessoas*, *elas estão alerta* |
-| **bastante** | Adjetivo (= muitos) **varia**; advérbio (= muito) **não varia** |
-| **meio** | Numeral (= metade) **varia**; advérbio (= um pouco) **não varia**: *meia laranja* × *meio cansada* |
-| **é proibido, é necessário, é bom** | Invariável **sem** determinante; variável **com** determinante: *É proibido entrada* × *É proibida a entrada* |
-| **só** | = sozinho (adjetivo) **varia**; = somente (advérbio) **não varia** |
-`,
-          questoes: [
             {
-              id: 'port-b2-t2-s2-q1',
-              enunciado: 'Na oração "Deve haver muitos processos pendentes", o verbo auxiliar permanece no singular porque o verbo principal é impessoal.',
-              certa: true,
-              explicacao: 'A impessoalidade de "haver" se transmite ao auxiliar da locução. "Devem haver" é erro clássico.',
-              variacoes: [
-                { enunciado: 'Na oração "Haviam muitos segurados na fila", a concordância verbal está correta.', certa: false, explicacao: '"Haver" no sentido de existir é impessoal e permanece no singular: "Havia muitos segurados".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s2-q2',
+              id: 'port-b2-t1-s1-q3',
               enunciado: 'Na frase "É proibida a entrada de pessoas não autorizadas", a flexão do adjetivo justifica-se pela presença do artigo antes do substantivo.',
               certa: true,
               explicacao: 'Com determinante, expressões como "é proibido", "é necessário" e "é bom" concordam. Sem determinante, ficam invariáveis: "É proibido entrada".',
@@ -688,16 +107,102 @@ Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gêne
               ],
             },
             {
-              id: 'port-b2-t2-s2-q3',
-              enunciado: 'Em "A maioria dos servidores compareceu à reunião", a concordância verbal está correta, admitindo-se também o plural.',
+              id: 'port-b2-t1-s1-q4',
+              enunciado: 'Na frase "É proibido entrada de pessoas não autorizadas", a ausência de flexão do adjetivo está de acordo com a norma padrão.',
               certa: true,
-              explicacao: 'Com expressões partitivas seguidas de plural, a concordância é facultativa: singular (com o núcleo) ou plural (com o especificador).',
+              explicacao: 'Nas expressões "é proibido", "é necessário" e "é bom", a locução permanece invariável quando o substantivo vem sem determinante. Com artigo, ocorre a flexão: "É proibida a entrada".',
               variacoes: [
-                { enunciado: 'Na frase "Ela estava meia cansada", a concordância nominal está correta.', certa: false, explicacao: '"Meio" com sentido de "um pouco" é advérbio e não varia: "meio cansada".' },
+                { enunciado: 'O vocábulo "menos" admite flexão de gênero, como em "menas pessoas compareceram".', certa: false, explicacao: '"Menos" é invariável em qualquer contexto. A forma "menas" não existe na norma padrão.' },
               ],
             },
             {
-              id: 'port-b2-t2-s2-q4',
+              id: 'port-b2-t1-s1-q5',
+              enunciado: 'O adjetivo anteposto a dois ou mais substantivos concorda com o mais próximo.',
+              certa: true,
+              explicacao: 'Anteposto, o adjetivo concorda com o núcleo imediatamente seguinte: "Novo livro e revista". A ida ao plural é opção apenas do adjetivo posposto.',
+              variacoes: [
+                { enunciado: 'Na frase "Ela estava meia cansada", a concordância nominal está correta.', certa: false, explicacao: '"Meio" modifica o adjetivo "cansada" e funciona como advérbio, permanecendo invariável: "meio cansada". A flexão cabe ao numeral, como em "meia hora".' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Anexo, obrigado, mesmo, próprio: variam?', r: 'Sim, concordam com o substantivo. Invariável é a locução "em anexo".' },
+            { p: 'Bastante e meio: quando variam?', r: 'Variam como adjetivo/numeral (bastantes pessoas, meia laranja); não variam como advérbio (bastante cansada, meio cansada).' },
+            { p: 'É proibido / é necessário: quando concordam?', r: 'Concordam quando há determinante ("É proibida a entrada"); ficam invariáveis sem determinante ("É proibido entrada").' },
+            { p: 'Adjetivo com vários substantivos: como concorda?', r: 'Posposto, vai ao plural ou concorda com o mais próximo (livro e revista novos / nova). Anteposto, concorda sempre com o mais próximo (novo livro e revista).' },
+            { p: 'Quais palavras são sempre invariáveis na concordância nominal?', r: '"Menos" (nunca "menas"), "alerta" e a locução "em anexo". Já "anexo" sozinho é adjetivo e concorda.' },
+          ],
+        },
+        {
+          id: 'port-b2-t1-s2',
+          nome: 'Concordância verbal',
+          teoria: `
+## Concordância verbal
+
+O verbo concorda com o **sujeito** em número e pessoa. Todo item começa por identificar corretamente o sujeito — por isso a sintaxe da oração vem antes na trilha.
+
+## Sujeito composto
+
+**Posposto ao verbo** — plural ou concordância com o mais próximo:
+
+> **Chegaram** o chefe e o servidor. / **Chegou** o chefe e o servidor.
+
+**Anteposto** — sempre plural: *O chefe e o servidor **chegaram**.*
+
+**Pessoas diferentes** — prevalece a de menor número: 1ª > 2ª > 3ª.
+*Eu e ele **fomos**.* (1ª pl.) · *Tu e ele **fostes/foram**.*
+
+**Ligado por "ou" ou "nem"**: plural quando o fato se aplica a todos (*Nem o chefe nem o servidor **compareceram***); singular quando há exclusão (*Pedro ou Paulo **será** o escolhido*).
+
+**Ligado por "com"**: plural se há equivalência (*O chefe **com** o servidor **decidiram***); singular com vírgulas, destacando o primeiro (*O chefe, com o servidor, **decidiu***).
+
+## Verbos impessoais — o campo mais cobrado
+
+Não têm sujeito, logo ficam **sempre na 3ª pessoa do singular**:
+
+| Verbo | Uso impessoal | Exemplo |
+|---|---|---|
+| **haver** | existir, ocorrer, tempo decorrido | **Havia** dez pessoas |
+| **fazer** | tempo decorrido, clima | **Faz** dois anos |
+| fenômenos | chover, nevar, anoitecer | **Choveu** ontem |
+
+*Haviam pessoas* é erro. Mas atenção: em **locução**, o auxiliar herda a impessoalidade — ***Deve haver** dez pessoas*, nunca *devem haver*.
+
+**"Existir" NÃO é impessoal**: tem sujeito e concorda. *Existiam dez pessoas.* A banca troca *haver* por *existir* justamente para testar isso.
+
+## A partícula "se"
+
+Distinção decisiva:
+
+**Partícula apassivadora** — verbo transitivo direto; o termo é sujeito e o verbo **concorda**:
+> **Analisaram-se** os pedidos. (= os pedidos foram analisados)
+
+**Índice de indeterminação do sujeito** — verbo transitivo indireto ou intransitivo; verbo **sempre no singular**:
+> **Precisa-se** de servidores. · **Trata-se** de casos graves.
+
+**O teste:** tente a passiva analítica. Se couber, é apassivadora e concorda; se não couber, é índice e fica no singular.
+
+## Expressões que caem sempre
+
+| Estrutura | Concordância |
+|---|---|
+| **Um dos que** | Plural: *Foi um dos que **chegaram*** |
+| **Mais de um** | Singular: *Mais de um servidor **faltou*** |
+| **Cerca de / a maioria de** | Singular ou plural: *A maioria **votou/votaram*** |
+| **Que** (relativo) | Concorda com o antecedente: *Fui eu que **paguei*** |
+| **Quem** (relativo) | 3ª sing. ou com antecedente: *Fui eu quem **pagou/paguei*** |
+| **Porcentagem** | Com o número ou o especificador: *20% **votaram*** |
+| **Verbo "ser"** com tempo/preço | Concorda com o predicativo: ***São** três horas* |
+
+## Sujeito posposto e oracional
+
+Sujeito posposto continua comandando: *Foram apresentados os documentos* — nunca *Foi apresentado os documentos*.
+
+Sujeito **oracional** leva o verbo ao singular: *É necessário que todos participem.*
+`,
+          questoes: [
+            {
+              id: 'port-b2-t1-s2-q1',
               enunciado: 'Com o sujeito composto posposto ao verbo, admite-se a concordância no plural ou com o núcleo mais próximo.',
               certa: true,
               explicacao: '"Compareceu o segurado e o dependente" e "Compareceram o segurado e o dependente" são ambas aceitas. Anteposto, porém, o verbo vai ao plural.',
@@ -706,7 +211,7 @@ Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gêne
               ],
             },
             {
-              id: 'port-b2-t2-s2-q5',
+              id: 'port-b2-t1-s2-q2',
               enunciado: 'Na oração "Fui eu que analisei o processo", o verbo da oração adjetiva concorda com o antecedente do pronome relativo.',
               certa: true,
               explicacao: 'Com "que", o verbo concorda com o antecedente ("eu"). Com "quem", a concordância se faz na 3ª pessoa: "Fui eu quem analisou".',
@@ -714,110 +219,112 @@ Adjetivos, artigos, numerais e pronomes concordam com o **substantivo** em gêne
                 { enunciado: 'Na frase "Fui eu quem analisei o processo", a concordância com o pronome "quem" está de acordo com a norma padrão.', certa: false, explicacao: 'Com "quem" a concordância padrão é na 3ª pessoa do singular: "Fui eu quem analisou".' },
               ],
             },
+            {
+              id: 'port-b2-t1-s2-q3',
+              enunciado: 'Na oração "Deve haver muitos processos pendentes", o verbo auxiliar permanece no singular porque o verbo principal é impessoal.',
+              certa: true,
+              explicacao: 'A impessoalidade de "haver" se transmite ao auxiliar da locução. "Devem haver" é erro clássico.',
+              variacoes: [
+                { enunciado: 'Na oração "Haviam muitos segurados na fila", a concordância verbal está correta.', certa: false, explicacao: '"Haver" no sentido de existir é impessoal e permanece no singular: "Havia muitos segurados".' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q4',
+              enunciado: 'Em "A maioria dos servidores compareceu à reunião", a concordância verbal está correta, admitindo-se também o plural.',
+              certa: true,
+              explicacao: 'Com expressões partitivas seguidas de plural, a concordância é facultativa: singular (com o núcleo) ou plural (com o especificador).',
+              variacoes: [
+                { enunciado: 'Na frase "Mais de um servidor faltaram à reunião", a concordância verbal está correta.', certa: false, explicacao: 'A expressão "mais de um" exige o verbo no singular, ainda que a ideia seja de pluralidade: "Mais de um servidor faltou". O plural só ocorre quando a expressão se repete ou há reciprocidade.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q5',
+              enunciado: 'Na frase "Foram apresentados os documentos exigidos", o verbo concorda com o sujeito posposto.',
+              certa: true,
+              explicacao: 'A posposição não altera a função: "os documentos exigidos" continua sendo o sujeito e comanda a concordância no plural. A concordância com o termo mais próximo não se aplica ao sujeito posposto simples.',
+              variacoes: [
+                { enunciado: 'Na frase "Foi um dos servidores que resolveu o caso", a flexão do verbo da oração adjetiva está de acordo com a norma padrão.', certa: false, explicacao: 'Na estrutura "um dos que", o antecedente do relativo é o plural "os servidores", de modo que o verbo vai ao plural: "um dos servidores que resolveram o caso".' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Haver e fazer impessoais: como concordam?', r: 'Sempre na 3ª pessoa do singular, inclusive o auxiliar da locução ("deve haver", nunca "devem haver").' },
             { p: 'Expressões partitivas ("a maioria de") — que concordância?', r: 'Facultativa: singular (com o núcleo) ou plural (com o especificador).' },
-            { p: 'Anexo, obrigado, mesmo, próprio: variam?', r: 'Sim, concordam com o substantivo. Invariável é a locução "em anexo".' },
-            { p: 'Bastante e meio: quando variam?', r: 'Variam como adjetivo/numeral (bastantes pessoas, meia laranja); não variam como advérbio (bastante cansada, meio cansada).' },
-            { p: 'É proibido / é necessário: quando concordam?', r: 'Concordam quando há determinante ("É proibida a entrada"); ficam invariáveis sem determinante ("É proibido entrada").' },
+            { p: 'Sujeito composto: como concorda?', r: 'Anteposto, sempre plural. Posposto, admite plural ou concordância com o núcleo mais próximo. Com pessoas diferentes, prevalece a de menor número: eu e ele = nós.' },
+            { p: '"Um dos que" x "mais de um": qual a concordância?', r: '"Um dos que" leva o verbo ao plural ("um dos servidores que resolveram"). "Mais de um" leva ao singular ("mais de um servidor faltou").' },
+            { p: 'Sujeito posposto altera a concordância?', r: 'Não. Ele continua sendo sujeito e comanda a flexão: "Foram apresentados os documentos", nunca "Foi apresentado os documentos".' },
           ],
         },
+      ],
+    },
+    {
+      id: 'port-b2-t2',
+      nome: 'Regência',
+      videoConfirmado: false,
+      subtopicos: [
         {
-          id: 'port-b2-t2-s3',
+          id: 'port-b2-t2-s1',
           nome: 'Regência nominal',
           teoria: `
-## Conceito
-
-**Regência** é a relação de dependência entre um termo regente (verbo ou nome) e seu complemento, indicando se e qual **preposição** é exigida.
-
-## Verbos que mudam de sentido com a regência
-
-| Verbo | Regência | Sentido |
-|---|---|---|
-| **Aspirar** | TD (sem prep.) | inalar — *aspirar o ar* |
-| | TI (a) | almejar — *aspirar ao cargo* |
-| **Assistir** | TD | auxiliar — *assistir o doente* |
-| | TI (a) | ver / caber — *assistir ao filme*; *assiste ao segurado o direito* |
-| **Visar** | TD | mirar, dar visto — *visar o alvo*, *visar o cheque* |
-| | TI (a) | ter por objetivo — *visar ao lucro* |
-| **Proceder** | Intransitivo | ter fundamento — *o argumento procede* |
-| | TI (a) | realizar — *proceder à análise* |
-| | TI (de) | originar-se — *proceder de família humilde* |
-| **Implicar** | TD | acarretar — *implicar mudanças* |
-| | TI (com) | antipatizar — *implicar com alguém* |
-| **Querer** | TD | desejar — *querer um cargo* |
-| | TI (a) | estimar — *querer bem a alguém* |
-| **Custar** | TI | ser difícil — *custou-me aceitar* |
-
-> Erro típico: "*visar o cargo*" quando se quer dizer "almejar" — o correto é *visar **ao** cargo*.
-
-## Verbos que exigem preposição
-
-- **Obedecer / desobedecer a**: *obedecer **às** normas*;
-- **Preferir**: TD + TI, sem intensificadores: *prefiro estudar **a** trabalhar* (nunca "prefiro mais... do que");
-- **Simpatizar / antipatizar com** (nunca pronominal: "simpatizei com", não "me simpatizei");
-- **Pagar / perdoar**: coisa → TD; pessoa → TI (*paguei a conta*; *paguei ao credor*);
-- **Informar / avisar / certificar**: aceitam as duas construções (*informar algo a alguém* / *informar alguém de algo*);
-- **Chegar / ir**: preposição **a**, não "em" (*cheguei **ao** trabalho*);
-- **Namorar**: TD (*namorar alguém*, não "namorar com").
-
-## Verbos transitivos diretos (não pedem preposição)
-
-*Ver, namorar, abraçar, convidar, auxiliar, ajudar, eleger, prezar, esquecer* (mas *esquecer-se **de***).
-
-> Prova de 2022 (item 9): o verbo **ver** é transitivo direto — por isso a crase em "à porta" **não** decorre da regência verbal.
-
 ## Regência nominal
 
-| Nome | Preposição |
+Regência nominal é a preposição que um **substantivo, adjetivo ou advérbio** exige para se ligar ao seu complemento. Diferente da verbal, aqui não há muito raciocínio: é repertório. A boa notícia é que a banca repete os mesmos nomes.
+
+## Por que importa
+
+Regência nominal é pré-requisito de **crase**: só há crase se houver preposição "a" exigida — e, diante de nome, quem a exige é a regência nominal.
+
+> Tenho aversão **a** drogas → *aversão* exige *a*
+> Tenho aversão **à** bebida → *a* (preposição) + *a* (artigo) = crase
+
+## Os nomes que mais caem
+
+| Preposição | Nomes |
 |---|---|
-| acessível, favorável, inerente, útil, prejudicial, referente | **a** |
-| capaz, certo, digno, necessário, passível, natural | **de** |
-| ansioso, apto, atento, hábil, propenso, disposto | **a** ou **para** |
-| compatível, paralelo, semelhante | **a** ou **com** |
-| respeito, dúvida, receio, medo | **a** ou **de** |
+| **a** | acessível, análogo, anterior, posterior, avesso, contrário, equivalente, favorável, fiel, grato, inerente, nocivo, preferível, prejudicial, referente, sensível, semelhante, útil |
+| **de** | apto (tb. *para*), ávido, capaz, certo, consciente, digno, dotado, isento, natural, oriundo, passível, suspeito |
+| **com** | compatível, generoso, implacável, parecido, rígido |
+| **em** | hábil, incansável, perito, versado |
+| **para** | apto, bom, pronto, próprio, útil (tb. *a*) |
+| **por** | ansioso, responsável, apaixonado, entusiasmo |
 
-## Pronomes relativos e regência
+## Pares que a banca embaralha
 
-A preposição exigida pelo verbo da oração adjetiva vai **antes** do relativo:
+**Preferível a** — nunca *preferível do que*: *É preferível estudar **a** trabalhar.*
+**Anterior/posterior a** — nunca *de*: *anterior **ao** prazo*.
+**Acessível a** — *acessível **a** todos*.
+**Inerente a** — *inerente **ao** cargo*.
+**Compatível com** — *compatível **com** o horário*.
+**Passível de** — *passível **de** punição*.
+**Aversão a** ou **por** — ambas aceitas.
 
-- *O processo **a que** me refiro* (referir-se **a**);
-- *A norma **de que** discordo* (discordar **de**);
-- *O prazo **em que** o recurso foi interposto* (interpor **em**).
+## Nomes que mudam de sentido com a preposição
 
-Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", sem a preposição.
+**Capaz de** (aptidão) × **capaz para** (raro, uso jurídico).
+**Bom para** (adequado) × **bom com** (generoso).
+**Ansioso por** (desejoso) × **ansioso com** (preocupado).
+
+## O detalhe do nome derivado
+
+Nomes derivados de verbo tendem a **herdar a regência do verbo**:
+
+| Verbo | Nome | Preposição |
+|---|---|---|
+| obedecer **a** | obediência **a** | a |
+| assistir **a** | assistência **a** | a |
+| aspirar **a** | aspiração **a** | a |
+| confiar **em** | confiança **em** | em |
+| depender **de** | dependência **de** | de |
+
+Essa ponte resolve boa parte dos itens sem precisar decorar a lista inteira.
+
+## Como o item costuma vir
+
+O enunciado apresenta uma frase e afirma que a preposição está corretamente empregada — ou propõe trocá-la "sem prejuízo do sentido". Confira contra o repertório: se o nome exige *a* e o item usa *de*, está errado, mesmo que soe natural na fala.
 `,
           questoes: [
             {
-              id: 'port-b2-t2-s3-q1',
-              enunciado: 'Na frase "O servidor aspira ao cargo de chefia", a regência do verbo está correta, uma vez que "aspirar", no sentido de almejar, é transitivo indireto.',
-              certa: true,
-              explicacao: '"Aspirar" no sentido de desejar rege a preposição "a". Sem preposição, significa inalar.',
-              variacoes: [
-                { enunciado: 'Na frase "O projeto visa o aumento da arrecadação", a regência está correta, pois "visar" no sentido de ter por objetivo é transitivo direto.', certa: false, explicacao: '"Visar" com sentido de ter por objetivo é transitivo indireto: "visa ao aumento".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s3-q2',
-              enunciado: 'Em "Assiste ao segurado o direito de recorrer", o verbo "assistir" está empregado no sentido de caber, exigindo a preposição "a".',
-              certa: true,
-              explicacao: 'No sentido de caber/pertencer, "assistir" é transitivo indireto. No sentido de auxiliar, é transitivo direto.',
-              variacoes: [
-                { enunciado: 'Na frase "Prefiro estudar do que trabalhar", a regência do verbo preferir está correta.', certa: false, explicacao: 'O correto é "prefiro estudar A trabalhar", sem intensificadores como "mais" ou "do que".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s3-q3',
-              enunciado: 'Na frase "Este é o processo a que me refiro", o emprego da preposição antes do pronome relativo é exigido pela regência do verbo "referir-se".',
-              certa: true,
-              explicacao: 'A preposição exigida pelo verbo da oração adjetiva antecede o pronome relativo. Omiti-la é erro frequente.',
-              variacoes: [
-                { enunciado: 'A frase "Este é o assunto que discordo" está de acordo com a norma padrão.', certa: false, explicacao: '"Discordar" exige a preposição "de": "o assunto DE QUE discordo".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s3-q4',
+              id: 'port-b2-t2-s1-q1',
               enunciado: 'O adjetivo "inerente" rege a preposição "a", como em "as atribuições inerentes ao cargo".',
               certa: true,
               explicacao: 'Integra o grupo dos nomes regidos por "a": acessível, favorável, inerente, útil, prejudicial, referente.',
@@ -826,7 +333,7 @@ Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", 
               ],
             },
             {
-              id: 'port-b2-t2-s3-q5',
+              id: 'port-b2-t2-s1-q2',
               enunciado: 'O substantivo "receio" admite tanto a preposição "de" quanto a preposição "a".',
               certa: true,
               explicacao: 'Receio de algo / receio a algo — mesma dupla regência de "medo" e "dúvida".',
@@ -834,110 +341,110 @@ Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", 
                 { enunciado: 'O adjetivo "passível" rege a preposição "a", como em "passível a sanção".', certa: false, explicacao: '"Passível" rege "de": passível DE sanção.' },
               ],
             },
+            {
+              id: 'port-b2-t2-s1-q3',
+              enunciado: 'O adjetivo "preferível" rege a preposição "a", sendo incorreta a construção "preferível do que".',
+              certa: true,
+              explicacao: 'A regência é "preferível a": "É preferível estudar a trabalhar". Construções com "do que" ou reforços como "muito mais preferível" contrariam a norma padrão.',
+              variacoes: [
+                { enunciado: 'Os adjetivos "anterior" e "posterior" regem a preposição "de", como em "anterior do prazo".', certa: false, explicacao: 'Ambos regem a preposição "a": "anterior ao prazo", "posterior ao prazo".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q4',
+              enunciado: 'Nomes derivados de verbos tendem a conservar a regência do verbo de que provêm, como em "obediência às normas".',
+              certa: true,
+              explicacao: 'Como "obedecer" rege a preposição "a", o substantivo derivado mantém a exigência. O mesmo ocorre em "assistência a", "aspiração a", "confiança em" e "dependência de".',
+              variacoes: [
+                { enunciado: 'O adjetivo "compatível" rege a preposição "a", como em "compatível ao horário".', certa: false, explicacao: '"Compatível" rege a preposição "com": "compatível com o horário".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q5',
+              enunciado: 'A regência nominal é pressuposto do estudo da crase, pois só há acento grave quando um nome exige a preposição "a" diante de palavra feminina determinada por artigo.',
+              certa: true,
+              explicacao: 'A crase resulta da fusão da preposição exigida com o artigo feminino. Sem exigência de preposição pela regência, não há o que fundir: "Tenho aversão à bebida" (aversão rege "a") × "Conheço a bebida" (sem preposição).',
+              variacoes: [
+                { enunciado: 'O adjetivo "passível" rege a preposição "a", como em "conduta passível a punição".', certa: false, explicacao: '"Passível" rege a preposição "de": "conduta passível de punição".' },
+              ],
+            },
           ],
           flashcards: [
-            { p: 'Aspirar, assistir e visar: como muda o sentido?', r: 'Sem preposição: inalar / auxiliar / mirar-dar visto. Com "a": almejar / ver-caber / ter por objetivo.' },
-            { p: 'Qual a regência de preferir?', r: 'Preferir algo A algo. Nunca "preferir mais... do que".' },
-            { p: 'Pagar e perdoar: qual a regência?', r: 'Coisa é objeto direto (paguei a conta); pessoa é objeto indireto (paguei ao credor).' },
-            { p: 'Onde fica a preposição com pronome relativo?', r: 'Antes do relativo: "o processo A QUE me refiro", "a norma DE QUE discordo".' },
-            { p: 'Ver é transitivo direto ou indireto?', r: 'Transitivo direto — não exige preposição. Por isso "eu o vi" e não "eu lhe vi".' },
+            { p: 'Como a regência nominal se liga à crase?', r: 'Só há crase se um nome exigir a preposição "a" e a palavra seguinte for feminina com artigo: "aversão à bebida". Sem preposição exigida, não há o que fundir.' },
+            { p: 'Quais nomes regem a preposição "a"?', r: 'Acessível, análogo, anterior, posterior, contrário, equivalente, favorável, fiel, grato, inerente, nocivo, preferível, prejudicial, referente, semelhante, sensível, útil.' },
+            { p: 'Quais nomes regem "de" e quais regem "com"?', r: 'De: capaz, certo, consciente, digno, isento, natural, oriundo, passível, suspeito. Com: compatível, generoso, implacável, parecido, rígido.' },
+            { p: 'Qual o atalho para acertar regência nominal?', r: 'Nomes derivados de verbo herdam a regência do verbo: obedecer a → obediência a; confiar em → confiança em; depender de → dependência de.' },
+            { p: 'Erros de regência nominal mais cobrados?', r: '"Preferível do que" (o certo é "preferível a"), "anterior de" (é "anterior a"), "passível a" (é "passível de") e "compatível a" (é "compatível com").' },
           ],
         },
         {
-          id: 'port-b2-t2-s4',
+          id: 'port-b2-t2-s2',
           nome: 'Regência verbal',
           teoria: `
-## Conceito
+## Regência verbal
 
-**Regência** é a relação de dependência entre um termo regente (verbo ou nome) e seu complemento, indicando se e qual **preposição** é exigida.
+Regência verbal é a relação entre o verbo e seus complementos: se o verbo pede preposição (transitivo indireto), não pede (transitivo direto), pede os dois, ou não pede nenhum (intransitivo).
+
+É um dos assuntos mais rentáveis da prova, porque sustenta itens de **crase**, de **uso do pronome** (o/a × lhe) e de **reescrita**.
 
 ## Verbos que mudam de sentido com a regência
 
-| Verbo | Regência | Sentido |
+Esta é a lista que a banca mais explora:
+
+| Verbo | Transitivo **direto** | Transitivo **indireto** |
 |---|---|---|
-| **Aspirar** | TD (sem prep.) | inalar — *aspirar o ar* |
-| | TI (a) | almejar — *aspirar ao cargo* |
-| **Assistir** | TD | auxiliar — *assistir o doente* |
-| | TI (a) | ver / caber — *assistir ao filme*; *assiste ao segurado o direito* |
-| **Visar** | TD | mirar, dar visto — *visar o alvo*, *visar o cheque* |
-| | TI (a) | ter por objetivo — *visar ao lucro* |
-| **Proceder** | Intransitivo | ter fundamento — *o argumento procede* |
-| | TI (a) | realizar — *proceder à análise* |
-| | TI (de) | originar-se — *proceder de família humilde* |
-| **Implicar** | TD | acarretar — *implicar mudanças* |
-| | TI (com) | antipatizar — *implicar com alguém* |
-| **Querer** | TD | desejar — *querer um cargo* |
-| | TI (a) | estimar — *querer bem a alguém* |
-| **Custar** | TI | ser difícil — *custou-me aceitar* |
+| **assistir** | prestar assistência: *assistiu o doente* | presenciar: *assistiu **ao** filme*; caber: *o direito assiste **ao** réu* |
+| **aspirar** | inspirar, sorver: *aspirou o ar* | almejar: *aspira **ao** cargo* |
+| **visar** | mirar; dar visto: *visou o cheque* | ter por objetivo: *visa **ao** lucro* |
+| **proceder** | — | ter fundamento: *o argumento procede*; originar-se: *procede **de** Minas*; realizar: *procedeu **a** uma análise* |
+| **implicar** | acarretar: *implicou demissão* | ter implicância: *implica **com** o colega* |
+| **querer** | desejar: *quero um café* | estimar: *quero bem **aos** filhos* |
+| **precisar** | fixar com exatidão: *precisou a hora* | necessitar: *precisa **de** ajuda* |
 
-> Erro típico: "*visar o cargo*" quando se quer dizer "almejar" — o correto é *visar **ao** cargo*.
+**"Visar" e "aspirar"**, quando indiretos, **não admitem "lhe"**: usa-se *a ele / a ela*. *Aspira **a ele***, não *aspira-lhe*.
 
-## Verbos que exigem preposição
+## Verbos que sempre pedem preposição
 
-- **Obedecer / desobedecer a**: *obedecer **às** normas*;
-- **Preferir**: TD + TI, sem intensificadores: *prefiro estudar **a** trabalhar* (nunca "prefiro mais... do que");
-- **Simpatizar / antipatizar com** (nunca pronominal: "simpatizei com", não "me simpatizei");
-- **Pagar / perdoar**: coisa → TD; pessoa → TI (*paguei a conta*; *paguei ao credor*);
-- **Informar / avisar / certificar**: aceitam as duas construções (*informar algo a alguém* / *informar alguém de algo*);
-- **Chegar / ir**: preposição **a**, não "em" (*cheguei **ao** trabalho*);
-- **Namorar**: TD (*namorar alguém*, não "namorar com").
+**Obedecer / desobedecer a** — *obedecer **às** normas*.
+**Responder a** — *respondeu **ao** ofício*.
+**Agradar a** (= satisfazer) — *agradou **a** todos*; sem preposição significa acariciar.
+**Simpatizar / antipatizar com** — nunca são pronominais: *simpatizo **com** ele*, jamais *simpatizo-me*.
+**Referir-se a**, **dirigir-se a**, **chegar a**, **ir a**.
 
-## Verbos transitivos diretos (não pedem preposição)
+**"Chegar" e "ir" pedem "a", não "em"**: *Chegou **ao** trabalho* — *chegou no trabalho* é coloquial.
 
-*Ver, namorar, abraçar, convidar, auxiliar, ajudar, eleger, prezar, esquecer* (mas *esquecer-se **de***).
+## Verbos com dois complementos
 
-> Prova de 2022 (item 9): o verbo **ver** é transitivo direto — por isso a crase em "à porta" **não** decorre da regência verbal.
+*Informar*, *avisar*, *comunicar*, *lembrar*, *notificar* admitem duas construções, ambas corretas:
 
-## Regência nominal
+> Informou **o servidor** **do resultado**. (OD pessoa + OI coisa)
+> Informou **ao servidor** **o resultado**. (OI pessoa + OD coisa)
 
-| Nome | Preposição |
-|---|---|
-| acessível, favorável, inerente, útil, prejudicial, referente | **a** |
-| capaz, certo, digno, necessário, passível, natural | **de** |
-| ansioso, apto, atento, hábil, propenso, disposto | **a** ou **para** |
-| compatível, paralelo, semelhante | **a** ou **com** |
-| respeito, dúvida, receio, medo | **a** ou **de** |
+O que não se admite é misturar: *informou ao servidor do resultado* é erro.
 
-## Pronomes relativos e regência
+## Regência e crase
 
-A preposição exigida pelo verbo da oração adjetiva vai **antes** do relativo:
+Se o verbo é transitivo indireto com preposição **a** e o complemento é feminino com artigo, há crase:
 
-- *O processo **a que** me refiro* (referir-se **a**);
-- *A norma **de que** discordo* (discordar **de**);
-- *O prazo **em que** o recurso foi interposto* (interpor **em**).
+> Assistiu **à** sessão. · Obedeceu **às** regras. · Referiu-se **à** norma.
 
-Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", sem a preposição.
+Se o verbo é transitivo direto, não há preposição, logo **não há crase**:
+
+> Viu a sessão. · Conheceu a norma.
+
+Esse é o encadeamento que a banca cobra: identificar a regência **para depois** decidir a crase.
+
+## Pronome certo para cada regência
+
+Transitivo direto pede **o/a/os/as**; indireto com "a" pede **lhe/lhes**:
+
+> *Eu **o** vi.* (ver = TD) · *Eu **lhe** obedeço.* (obedecer = TI)
+
+*Eu lhe vi* é o erro mais plantado de toda a matéria.
 `,
           questoes: [
             {
-              id: 'port-b2-t2-s4-q1',
-              enunciado: 'Na frase "O servidor aspira ao cargo de chefia", a regência do verbo está correta, uma vez que "aspirar", no sentido de almejar, é transitivo indireto.',
-              certa: true,
-              explicacao: '"Aspirar" no sentido de desejar rege a preposição "a". Sem preposição, significa inalar.',
-              variacoes: [
-                { enunciado: 'Na frase "O projeto visa o aumento da arrecadação", a regência está correta, pois "visar" no sentido de ter por objetivo é transitivo direto.', certa: false, explicacao: '"Visar" com sentido de ter por objetivo é transitivo indireto: "visa ao aumento".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s4-q2',
-              enunciado: 'Em "Assiste ao segurado o direito de recorrer", o verbo "assistir" está empregado no sentido de caber, exigindo a preposição "a".',
-              certa: true,
-              explicacao: 'No sentido de caber/pertencer, "assistir" é transitivo indireto. No sentido de auxiliar, é transitivo direto.',
-              variacoes: [
-                { enunciado: 'Na frase "Prefiro estudar do que trabalhar", a regência do verbo preferir está correta.', certa: false, explicacao: 'O correto é "prefiro estudar A trabalhar", sem intensificadores como "mais" ou "do que".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s4-q3',
-              enunciado: 'Na frase "Este é o processo a que me refiro", o emprego da preposição antes do pronome relativo é exigido pela regência do verbo "referir-se".',
-              certa: true,
-              explicacao: 'A preposição exigida pelo verbo da oração adjetiva antecede o pronome relativo. Omiti-la é erro frequente.',
-              variacoes: [
-                { enunciado: 'A frase "Este é o assunto que discordo" está de acordo com a norma padrão.', certa: false, explicacao: '"Discordar" exige a preposição "de": "o assunto DE QUE discordo".' },
-              ],
-            },
-            {
-              id: 'port-b2-t2-s4-q4',
+              id: 'port-b2-t2-s2-q1',
               enunciado: 'O verbo "obedecer" é transitivo indireto e exige a preposição "a", como em "obedecer às normas".',
               certa: true,
               explicacao: 'Vale também para "desobedecer". Como o complemento é preposicionado e feminino, surge a crase: obedecer ÀS normas.',
@@ -946,12 +453,39 @@ Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", 
               ],
             },
             {
-              id: 'port-b2-t2-s4-q5',
+              id: 'port-b2-t2-s2-q2',
               enunciado: 'O verbo "implicar", no sentido de acarretar, é transitivo direto e dispensa preposição.',
               certa: true,
               explicacao: '"A decisão implicou mudanças" — sem "em". Com a preposição "com", o verbo muda de sentido para antipatizar.',
               variacoes: [
                 { enunciado: 'Na frase "A decisão implicou em mudanças no atendimento", a regência do verbo está correta.', certa: false, explicacao: 'No sentido de acarretar, "implicar" é transitivo direto: "implicou mudanças".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q3',
+              enunciado: 'Na frase "O servidor aspira ao cargo de chefia", a regência do verbo está correta, uma vez que "aspirar", no sentido de almejar, é transitivo indireto.',
+              certa: true,
+              explicacao: '"Aspirar" no sentido de desejar rege a preposição "a". Sem preposição, significa inalar.',
+              variacoes: [
+                { enunciado: 'Na frase "O projeto visa o aumento da arrecadação", a regência está correta, pois "visar" no sentido de ter por objetivo é transitivo direto.', certa: false, explicacao: '"Visar" com sentido de ter por objetivo é transitivo indireto: "visa ao aumento".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q4',
+              enunciado: 'Em "Assiste ao segurado o direito de recorrer", o verbo "assistir" está empregado no sentido de caber, exigindo a preposição "a".',
+              certa: true,
+              explicacao: 'No sentido de caber/pertencer, "assistir" é transitivo indireto. No sentido de auxiliar, é transitivo direto.',
+              variacoes: [
+                { enunciado: 'Na frase "Prefiro estudar do que trabalhar", a regência do verbo preferir está correta.', certa: false, explicacao: 'O correto é "prefiro estudar A trabalhar", sem intensificadores como "mais" ou "do que".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q5',
+              enunciado: 'Na frase "Este é o processo a que me refiro", o emprego da preposição antes do pronome relativo é exigido pela regência do verbo "referir-se".',
+              certa: true,
+              explicacao: 'A preposição exigida pelo verbo da oração adjetiva antecede o pronome relativo. Omiti-la é erro frequente.',
+              variacoes: [
+                { enunciado: 'A frase "Este é o assunto que discordo" está de acordo com a norma padrão.', certa: false, explicacao: '"Discordar" exige a preposição "de": "o assunto DE QUE discordo".' },
               ],
             },
           ],
@@ -967,68 +501,537 @@ Esse é um dos erros mais recorrentes: escrever "o processo **que** me refiro", 
     },
     {
       id: 'port-b2-t3',
-      nome: 'Semântica e redação oficial',
+      nome: 'Compreensão e interpretação de textos',
       videoConfirmado: false,
       subtopicos: [
         {
           id: 'port-b2-t3-s1',
-          nome: 'Significação das palavras — sinônimos, antônimos, polissemia',
+          nome: 'Compreensão de textos',
           teoria: `
-## Relações de sentido
+## Compreensão de textos
 
-| Relação | Definição | Exemplo |
+Compreender é identificar o que o texto **diz explicitamente**. É o nível mais literal — e é onde a banca ganha a maioria dos pontos, porque o candidato responde pelo que acha que leu.
+
+## Compreensão × interpretação
+
+| | **Compreensão** | **Interpretação** |
 |---|---|---|
-| **Sinonímia** | Sentidos próximos | benefício / prestação |
-| **Antonímia** | Sentidos opostos | deferir / indeferir |
-| **Homonímia** | Mesma forma, sentidos diversos | manga (fruta / da camisa) |
-| **Paronímia** | Formas parecidas, sentidos diferentes | ratificar / retificar |
-| **Polissemia** | Uma palavra, vários sentidos relacionados | linha (do telefone, de costura, de pensamento) |
-| **Hiperonímia** | Termo mais **geral** | benefício (para aposentadoria) |
-| **Hiponímia** | Termo mais **específico** | aposentadoria (para benefício) |
+| Pergunta | O que o texto **diz**? | O que se **conclui** dele? |
+| Base | Informação **explícita** | Inferência autorizada |
+| Risco | Ler rápido demais | Extrapolar |
 
-## Parônimos que a banca adora
+## O protocolo de leitura
 
-| Par | Sentidos |
+1. Leia o item **antes** de reler o texto: você passa a procurar algo específico.
+2. Localize no texto o trecho correspondente.
+3. Compare **palavra por palavra** — sobretudo os quantificadores.
+4. Se precisou de conhecimento externo para concordar, o item provavelmente extrapola.
+
+## As armadilhas mais frequentes
+
+**1. Extrapolação.** O item acrescenta informação plausível que o texto não traz.
+
+**2. Generalização indevida.** O texto diz *a maioria*; o item diz *todos*. Marcadores como *sempre, nunca, todos, nenhum, apenas, exclusivamente* pedem conferência literal.
+
+**3. Inversão de relações.** O texto apresenta A como causa de B; o item inverte.
+
+**4. Troca de posicionamento.** O item atribui ao autor uma opinião que, no texto, é de um terceiro citado.
+
+**5. Substituição que altera o sentido.** Propõe trocar uma expressão "mantendo os sentidos", e a troca muda a relação lógica.
+
+## Relações lógico-discursivas
+
+Boa parte dos itens depende de identificar corretamente o conectivo:
+
+| Relação | Conectivos |
 |---|---|
-| **ratificar** / **retificar** | confirmar / corrigir |
-| **deferir** / **diferir** | conceder / adiar, ser diferente |
-| **eminente** / **iminente** | notável / prestes a ocorrer |
-| **tráfego** / **tráfico** | circulação / comércio ilegal |
-| **descriminar** / **discriminar** | tirar o caráter de crime / distinguir, segregar |
-| **infligir** / **infringir** | aplicar (pena) / violar (norma) |
-| **mandado** / **mandato** | ordem judicial / período de exercício |
-| **flagrante** / **fragrante** | evidente / perfumado |
-| **cavaleiro** / **cavalheiro** | quem monta / homem cortês |
-| **comprimento** / **cumprimento** | extensão / saudação, execução |
-| **emergir** / **imergir** | vir à tona / mergulhar |
-| **absolver** / **absorver** | inocentar / sorver |
+| **Causa** | porque, já que, uma vez que, visto que |
+| **Consequência** | de modo que, tanto que, por isso |
+| **Concessão** | embora, ainda que, apesar de, conquanto |
+| **Condição** | se, caso, desde que, salvo se |
+| **Conclusão** | portanto, logo, assim, por conseguinte |
+| **Oposição** | mas, porém, contudo, todavia, entretanto |
+| **Finalidade** | para que, a fim de que |
 
-## Denotação e conotação
+## Tipologia textual — o essencial
 
-- **Denotativo:** sentido literal, objetivo, de dicionário. Predomina em textos técnicos, oficiais e jornalísticos.
-- **Conotativo:** sentido figurado, subjetivo. Predomina em textos literários e publicitários.
+Os tipos textuais aparecem como **premissa** de itens de compreensão ("o texto é predominantemente descritivo"), raramente como assunto próprio. O que basta saber:
 
-## Figuras de linguagem mais cobradas
-
-| Figura | Definição | Exemplo |
+| Tipo | Marca dominante | Verbos típicos |
 |---|---|---|
-| **Metáfora** | Comparação implícita | *Ele é uma fera no trabalho* |
-| **Metonímia** | Troca por relação de proximidade | *Li Machado de Assis* (a obra) |
-| **Ironia** | Diz o contrário do que quer significar | *Que atendimento rápido!* (após 4 horas) |
-| **Eufemismo** | Suaviza | *Ele nos deixou* |
-| **Hipérbole** | Exagero | *Esperei uma eternidade* |
-| **Antítese** | Ideias opostas | *Era o melhor e o pior dos tempos* |
-| **Paradoxo** | Ideias contraditórias na mesma noção | *Silêncio ensurdecedor* |
-| **Prosopopeia** | Atribui ação humana a seres inanimados | *O tempo devora tudo* |
-| **Pleonasmo** | Redundância (viciosa ou expressiva) | *subir para cima* (viciosa) |
+| **Narração** | fatos em sequência temporal, personagens | pretérito perfeito |
+| **Descrição** | características simultâneas, sem progressão | presente, pretérito imperfeito, adjetivos |
+| **Dissertação** | tese + argumentos, impessoalidade | presente com valor atemporal |
+| **Injunção** | instrução, orientação | imperativo, infinitivo |
 
-## Campo semântico e coesão lexical
+**Tipo × gênero:** o *tipo* é a estrutura interna (narrar, descrever, dissertar); o *gênero* é a forma social do texto (ofício, notícia, edital). Um mesmo gênero combina vários tipos — e a banca cobra o **predominante**, não o exclusivo.
 
-A repetição de palavras de um mesmo **campo semântico** garante coesão. Substituições por **sinônimos**, **hiperônimos** ou **expressões nominais** evitam repetição sem quebrar a referência — recurso muito explorado em itens de reescrita.
+Texto **argumentativo** é dissertação com defesa explícita de ponto de vista. Se o item afirma que o texto é narrativo quando ele apresenta tese e argumentos, está errado.
 `,
           questoes: [
             {
               id: 'port-b2-t3-s1-q1',
+              enunciado: 'A compreensão de um texto limita-se ao reconhecimento das informações nele explicitadas, ao passo que a interpretação envolve inferências autorizadas pelo próprio texto.',
+              certa: true,
+              explicacao: 'Compreender é recuperar o que está dito; interpretar é concluir a partir do que está dito. Em ambos os casos, o texto é o limite — o que o extrapola não se sustenta.',
+              variacoes: [
+                { enunciado: 'A compreensão de textos abrange as conclusões que o leitor extrai a partir de seu conhecimento prévio, ainda que não amparadas pelo texto.', certa: false, explicacao: 'Conclusões não amparadas pelo texto são extrapolação, e não compreensão. O conhecimento prévio auxilia a leitura, mas não substitui o que o texto afirma.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q2',
+              enunciado: 'A substituição de "a maioria dos servidores" por "todos os servidores" preserva o sentido original do enunciado, por tratar-se de expressões equivalentes de quantificação.',
+              certa: false,
+              explicacao: 'Generalização indevida: "a maioria" admite exceções; "todos" as elimina. A troca de quantificadores é uma das alterações de sentido mais cobradas pela banca.',
+              variacoes: [
+                { enunciado: 'Expressões como "sempre", "nunca" e "exclusivamente" exigem conferência literal no texto, por restringirem o alcance da afirmação.', certa: true, explicacao: 'Correto. Quantificadores absolutos tornam o item verificável ponto a ponto — e é aí que a banca costuma inserir o erro.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q3',
+              enunciado: 'Em textos argumentativos, a presença de dados estatísticos costuma funcionar como estratégia de sustentação da tese defendida pelo autor.',
+              certa: true,
+              explicacao: 'Dados numéricos são recurso argumentativo de autoridade/evidência, usados para comprovar a tese. É exatamente a função que a prova de 2022 cobrou em relação aos dados do DIEESE.',
+              variacoes: [
+                { enunciado: 'A presença de dados estatísticos em um texto o caracteriza necessariamente como texto descritivo.', certa: false, explicacao: 'Dados podem aparecer em qualquer tipologia; em texto argumentativo funcionam como sustentação da tese.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q4',
+              enunciado: 'Considere o trecho: "Embora tenha contribuído por vinte anos, o segurado não obteve o benefício." A oração iniciada por "Embora" expressa uma relação de concessão.',
+              certa: true,
+              explicacao: '"Embora" é conjunção concessiva: admite um fato que seria contrário ao esperado e ainda assim mantém a oração principal.',
+              variacoes: [
+                { enunciado: 'No trecho "Embora tenha contribuído por vinte anos, o segurado não obteve o benefício", a oração iniciada por "Embora" expressa causa.', certa: false, explicacao: 'Expressa concessão, não causa. Causa seria "Porque tenha contribuído...", o que inclusive alteraria o sentido do período.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q5',
+              enunciado: 'Um mesmo gênero textual pode combinar diferentes tipos textuais, razão pela qual se identifica o tipo predominante, e não o exclusivo.',
+              certa: true,
+              explicacao: 'O tipo é a estrutura interna do texto (narrar, descrever, dissertar, injungir); o gênero é sua forma social (ofício, notícia, edital). Um ofício pode conter trechos descritivos e injuntivos, o que exige identificar a predominância, não a exclusividade.',
+              variacoes: [
+                { enunciado: 'Um texto que apresenta tese acompanhada de argumentos deve ser classificado como narrativo, uma vez que expõe fatos em sequência.', certa: false, explicacao: 'A presença de tese e argumentos caracteriza a dissertação argumentativa. A narração organiza fatos em progressão temporal, com personagens e predomínio do pretérito perfeito.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Compreensão x interpretação?', r: 'Compreensão: o que o texto diz (explícito). Interpretação: o que se conclui, com respaldo textual.' },
+            { p: 'Palavras que exigem conferência literal?', r: 'Sempre, nunca, todos, nenhum, apenas, exclusivamente, necessariamente.' },
+            { p: 'Diferença entre concessão e oposição?', r: 'Concessão (embora, ainda que) admite o fato contrário e o supera. Oposição (mas, porém) apenas contrasta.' },
+            { p: 'Quais são os tipos textuais e suas marcas?', r: 'Narração (fatos em sequência, pretérito perfeito), descrição (características simultâneas, adjetivos), dissertação (tese e argumentos, presente atemporal) e injunção (instrução, imperativo).' },
+            { p: 'Tipo textual x gênero textual?', r: 'O tipo é a estrutura interna (narrar, descrever, dissertar); o gênero é a forma social do texto (ofício, notícia, edital). Um gênero combina vários tipos — cobra-se o predominante.' },
+          ],
+        },
+        {
+          id: 'port-b2-t3-s2',
+          nome: 'Interpretação de textos',
+          teoria: `
+## Interpretação de textos
+
+Interpretar é extrair o que o texto **autoriza concluir**, mesmo sem dizer com todas as letras. A fronteira entre inferência legítima e extrapolação é exatamente onde os itens se decidem.
+
+## Inferência × extrapolação
+
+**Inferência autorizada** — a conclusão decorre necessariamente do que está escrito:
+
+> Texto: *O prazo venceu e o recurso não foi protocolado.*
+> Inferência: *O recurso é intempestivo.* ✔
+
+**Extrapolação** — a conclusão é plausível, mas depende de informação externa:
+
+> Extrapolação: *O servidor foi negligente.* ✘ (o texto não diz por que não foi protocolado)
+
+**O teste decisivo:** para aceitar o item, você precisou de alguma informação que não está no texto? Se sim, é extrapolação.
+
+## Pressuposto × subentendido
+
+**Pressuposto** está marcado na própria estrutura da frase e é objetivo:
+
+> *O servidor **deixou de** atender ao público.* → pressupõe que antes atendia.
+> *O prazo **ainda** não venceu.* → pressupõe que vencerá.
+
+Marcadores de pressuposição: *já, ainda, deixar de, voltar a, continuar, outra vez*.
+
+**Subentendido** depende do contexto e é responsabilidade do leitor — a banca raramente o cobra como certo, justamente por não ser objetivo.
+
+## Ironia, ponto de vista e modalização
+
+**Ironia** é dizer o oposto do que se pensa; identifica-se pelo contraste com o restante do texto.
+
+**Ponto de vista** exige separar a voz do autor da voz citada. Se o texto diz *segundo o autor X, o benefício é insuficiente*, essa é a posição de X — atribuí-la ao autor do texto é erro.
+
+**Modalização** revela o grau de comprometimento do autor com o que afirma:
+
+| Modalizador | Efeito |
+|---|---|
+| *certamente, sem dúvida* | adesão total |
+| *talvez, possivelmente, parece* | adesão parcial |
+| *deve, precisa* | obrigação |
+
+Trocar um modalizador por outro **altera o sentido**: se o texto diz *possivelmente* e o item diz *certamente*, o item está errado.
+
+## Coesão: o que os referentes retomam
+
+Boa parte dos itens de interpretação é, na verdade, item de **referenciação**: o enunciado afirma que determinado pronome ou expressão retoma certo termo.
+
+**Coesão referencial** — pronomes, sinônimos, hiperônimos e elipses retomando algo já dito.
+**Coesão sequencial** — conectivos encadeando as partes.
+
+Para conferir, **substitua o pronome pelo suposto antecedente** e leia a frase inteira: se ela continuar coerente e gramatical, a retomada procede.
+
+Atenção aos demonstrativos: *este* aponta para o que vem **depois** ou para o mais próximo; *aquele*, para o que veio **antes** ou o mais distante.
+
+## Como julgar um item
+
+1. Isole o que o item afirma.
+2. Localize a base textual.
+3. Pergunte: isso está dito, decorre necessariamente, ou eu completei?
+4. Confira quantificadores e modalizadores.
+5. Só marque certo se a afirmação estiver **inteiramente sustentada** pelo texto.
+`,
+          questoes: [
+            {
+              id: 'port-b2-t3-s2-q1',
+              enunciado: 'A inferência é uma operação legítima de leitura desde que decorra de elementos presentes no texto, ainda que não expressos literalmente.',
+              certa: true,
+              explicacao: 'Inferir é diferente de supor: a inferência tem ancoragem textual; a suposição vem de fora. É essa fronteira que separa o item certo do errado.',
+              variacoes: [
+                { enunciado: 'Toda inferência é considerada extrapolação e, portanto, invalida o item em uma questão de interpretação.', certa: false, explicacao: 'A inferência autorizada pelo texto é legítima. Extrapolação é a conclusão sem respaldo textual.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q2',
+              enunciado: 'Atribuir ao autor de um texto a opinião de uma fonte por ele citada configura erro de interpretação.',
+              certa: true,
+              explicacao: 'É a troca de posicionamento: o autor pode citar uma tese para refutá-la. Confundir a voz citada com a voz do autor inverte o sentido do texto.',
+              variacoes: [
+                { enunciado: 'Em textos jornalísticos, as opiniões atribuídas a especialistas citados devem ser lidas como posicionamento do próprio autor do texto.', certa: false, explicacao: 'A voz citada não se confunde com a do autor, que pode citá-la para concordar, ressalvar ou refutar.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q3',
+              enunciado: 'Em uma questão de interpretação, é correto julgar como verdadeira a afirmação que, embora coerente com o conhecimento de mundo do leitor, não encontra respaldo nas informações do texto.',
+              certa: false,
+              explicacao: 'É a armadilha da extrapolação: a Cebraspe exige respaldo textual. Plausibilidade externa não valida o item.',
+              variacoes: [
+                { enunciado: 'A substituição de um termo do texto só mantém a correção e os sentidos originais se preservar tanto a estrutura sintática quanto a relação semântica estabelecida.', certa: true, explicacao: 'Correto — é o critério duplo que a banca aplica nos itens de reescrita.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q4',
+              enunciado: 'Em "O servidor deixou de atender ao público", pressupõe-se que o servidor antes atendia ao público.',
+              certa: true,
+              explicacao: 'A locução "deixar de" é marcador de pressuposição: ancora na própria estrutura da frase a informação de que a ação ocorria antes. Pressupostos são objetivos, ao contrário dos subentendidos, que dependem do contexto.',
+              variacoes: [
+                { enunciado: 'O advérbio "ainda", em "O prazo ainda não venceu", não veicula pressuposto algum.', certa: false, explicacao: '"Ainda" pressupõe que o vencimento ocorrerá: a frase afirma que o prazo não venceu até o momento, mas admite que venceria em seguida.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q5',
+              enunciado: 'A substituição do modalizador "possivelmente" por "certamente" altera o grau de comprometimento do autor com o que afirma.',
+              certa: true,
+              explicacao: 'Modalizadores graduam a adesão do autor ao enunciado. "Possivelmente" indica adesão parcial; "certamente", adesão total. A troca altera o sentido do texto e torna errado o item que a considere neutra.',
+              variacoes: [
+                { enunciado: 'O pronome demonstrativo "aquele" é empregado para retomar o termo mais próximo mencionado no texto.', certa: false, explicacao: '"Aquele" retoma o termo mais distante ou o primeiro mencionado; o mais próximo, ou o que será dito a seguir, é retomado por "este".' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Qual a armadilha nº 1 da Cebraspe em interpretação?', r: 'A extrapolação: afirmar algo plausível que o texto não disse.' },
+            { p: 'Este x esse x aquele?', r: 'Este: próximo ou que vem a seguir. Esse: já mencionado. Aquele: mais distante. Em "este...aquele", aquele retoma o primeiro.' },
+            { p: 'Inferência x extrapolação: qual o teste?', r: 'Pergunte se você precisou de informação que não está no texto. Se precisou, é extrapolação e o item é errado. A inferência decorre necessariamente do que está escrito.' },
+            { p: 'O que é pressuposto e como reconhecê-lo?', r: 'É informação ancorada na estrutura da frase, objetiva e não questionada. Marcadores: já, ainda, deixar de, voltar a, continuar, outra vez. "Deixou de atender" pressupõe que antes atendia.' },
+            { p: 'O que são modalizadores e por que importam?', r: 'Graduam o comprometimento do autor: certamente (adesão total), talvez/possivelmente (parcial), deve/precisa (obrigação). Trocar um por outro altera o sentido do texto.' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'port-b2-t4',
+      nome: 'Ortografia e acentuação',
+      videoConfirmado: false,
+      subtopicos: [
+        {
+          id: 'port-b2-t4-s1',
+          nome: 'Ortografia oficial',
+          teoria: `
+## Emprego de letras que mais caem
+
+**S ou Z**
+- Sufixos **-oso, -osa**: gostoso, formosa.
+- Sufixo **-ês, -esa** em gentílicos e títulos: português, marquesa, burguesa.
+- Sufixo **-isa** (feminino de profissão): poetisa, sacerdotisa.
+- Após ditongo: coisa, lousa, maisena.
+- Sufixo **-ez, -eza** (formadores de substantivos abstratos a partir de adjetivos): rigidez, beleza, nobreza.
+- Verbos em **-isar** derivam de palavra com S: análise → analisar, pesquisa → pesquisar. Os demais em **-izar**: civilizar, realizar.
+
+**Ç ou SS**
+- Substantivos derivados de verbos em *-ter*: reter → retenção; deter → detenção.
+- Após ditongo: eleição, traição.
+- **SS** quando há junção de radical terminado em -ced, -ged, -prim: ceder → cessão; imprimir → impressão.
+
+**X ou CH**
+- Após ditongo: caixa, peixe, ameixa.
+- Após **en-**: enxada, enxame, enxergar (exceções: encher e derivados, enchova).
+- Após **me-**: mexer, mexerica (exceção: mecha).
+
+**G ou J**
+- **-agem, -igem, -ugem**: viagem, origem, ferrugem (exceção: pajem).
+- Palavras de origem indígena/africana com J: pajé, jiboia, canjica.
+- **Viagem** (substantivo) × **viajem** (verbo viajar).
+
+## Porquê — as quatro formas
+
+| Forma | Uso | Exemplo |
+|---|---|---|
+| **por que** | Pergunta direta/indireta; "pelo qual" | *Por que* o benefício foi negado? |
+| **por quê** | Final de frase ou antes de pontuação | Foi negado, mas não sei *por quê*. |
+| **porque** | Conjunção causal/explicativa (resposta) | Foi negado *porque* faltou carência. |
+| **porquê** | Substantivo (com artigo/determinante) | Não entendi o *porquê* da negativa. |
+
+## Outros pares que caem
+
+| Forma | Sentido |
+|---|---|
+| **mas** × **mais** | conjunção adversativa × advérbio/pronome de quantidade |
+| **mal** × **mau** | advérbio (× bem) × adjetivo (× bom) |
+| **a par** × **ao par** | ciente × equivalência cambial |
+| **acerca de** × **há cerca de** | sobre × faz aproximadamente |
+| **afim** × **a fim de** | semelhante × finalidade |
+| **senão** × **se não** | caso contrário/exceto × condição negativa |
+| **onde** × **aonde** | lugar fixo × movimento (verbos de destino) |
+| **este/esse** | proximidade × referência anterior |
+
+## Hífen — regras práticas
+
+- **Usa-se** quando o segundo elemento começa com a **mesma letra** que termina o prefixo: micro-ondas, anti-inflamatório, super-resistente.
+- **Usa-se** sempre antes de **h**: super-homem, anti-higiênico, sub-humano.
+- **Não se usa** quando as letras são diferentes: autoescola, coautor, extraoficial, semicírculo.
+- **Sempre com hífen:** prefixos *ex-, vice-, pós-, pré-, pró-, além-, aquém-, recém-, sem-*.
+- Antes de **r** e **s**, sem hífen: dobra-se a consoante — antirrugas, ultrassom, minissaia.
+`,
+          questoes: [
+            {
+              id: 'port-b2-t4-s1-q1',
+              enunciado: 'Estão corretamente grafadas as palavras "análise" e "analisar", uma vez que os verbos derivados de palavras que já contêm S são escritos com S.',
+              certa: true,
+              explicacao: 'Regra do sufixo -isar: quando o radical já tem S, mantém-se o S (pesquisa → pesquisar). Sem S no radical, usa-se -izar (civil → civilizar).',
+              variacoes: [
+                { enunciado: 'A forma verbal correta em "Espero que eles viagem amanhã" está grafada de acordo com a norma padrão.', certa: false, explicacao: 'O verbo é "viajem" (com J). "Viagem" com G é o substantivo.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q2',
+              enunciado: 'Na frase "Não compreendi o porquê da negativa", a forma "porquê" está corretamente empregada como substantivo.',
+              certa: true,
+              explicacao: 'Precedido de artigo, "porquê" é substantivo e equivale a "motivo". Recebe acento por ser oxítona terminada em -ê.',
+              variacoes: [
+                { enunciado: 'Na frase "Ele não explicou por que o benefício foi indeferido", a grafia "por que" está incorreta, devendo ser substituída por "porquê".', certa: false, explicacao: 'Trata-se de pergunta indireta, situação em que se emprega "por que" separado e sem acento.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q3',
+              enunciado: 'Escreve-se com hífen a palavra "microondas", pois o prefixo termina em vogal.',
+              certa: false,
+              explicacao: 'O hífen é exigido, mas a grafia correta é "micro-ondas". O erro está na forma apresentada, sem hífen.',
+              variacoes: [
+                { enunciado: 'Grafam-se sem hífen as palavras "autoescola", "coautor" e "extraoficial".', certa: true, explicacao: 'Correto: quando as letras de contato são diferentes e o segundo elemento não começa por h, não há hífen.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q4',
+              enunciado: 'Grafam-se com "ss" os substantivos derivados de verbos cujo radical termina em "-ced", como em "conceder" e "concessão".',
+              certa: true,
+              explicacao: 'A regra vale para radicais em -ced, -ged e -prim: ceder → cessão, imprimir → impressão, agredir → agressão.',
+              variacoes: [
+                { enunciado: 'Substantivos derivados de verbos terminados em "-ter", como "reter" e "deter", grafam-se com "ss".', certa: false, explicacao: 'Derivados de verbos em -ter usam Ç: reter → retenção; deter → detenção.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q5',
+              enunciado: 'Emprega-se hífen quando o prefixo termina com a mesma vogal que inicia o segundo elemento, como em "micro-ondas" e "anti-inflamatório".',
+              certa: true,
+              explicacao: 'Letras iguais em contato pedem hífen. Se forem diferentes, não há hífen: autoescola, coautor, extraoficial.',
+              variacoes: [
+                { enunciado: 'Grafam-se com hífen as palavras "auto-escola" e "co-autor", por serem formadas por prefixação.', certa: false, explicacao: 'Como as letras de contato são diferentes, não há hífen: autoescola e coautor.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Quando usar -isar e -izar?', r: '-isar quando o radical já tem S (pesquisa → pesquisar). -izar nos demais (civil → civilizar).' },
+            { p: 'As quatro formas de porquê?', r: 'por que (pergunta), por quê (fim de frase), porque (resposta/causa), porquê (substantivo, com artigo).' },
+            { p: 'Viagem ou viajem?', r: 'Viagem = substantivo. Viajem = verbo viajar (que eles viajem).' },
+            { p: 'Regra do hífen com prefixos?', r: 'Com hífen se as letras de contato forem iguais ou se o 2º elemento começar com h. Sem hífen se diferentes (dobrando r/s: antirrugas, ultrassom).' },
+            { p: 'Mal x mau?', r: 'Mal é advérbio (oposto de bem). Mau é adjetivo (oposto de bom).' },
+          ],
+        },
+        {
+          id: 'port-b2-t4-s2',
+          nome: 'Acentuação gráfica',
+          teoria: `
+## Acentuação gráfica
+
+Depois do Acordo Ortográfico, o que sobrou é enxuto — e a banca cobra sempre os mesmos pontos. Vale focar nas regras que geram item, não no sistema inteiro.
+
+## As regras de base
+
+**Oxítonas** — acentuam-se as terminadas em **-a, -e, -o** (seguidas ou não de *s*), **-em/-ens**, e ditongos abertos *-éi, -éu, -ói*:
+*sofá, café, cipó, também, parabéns, herói, troféu*
+
+**Paroxítonas** — acentuam-se as que **não** terminam em *-a, -e, -o, -em, -ens* (ou seja, a minoria):
+*fácil, tórax, hífen, órfã, ímã, bíceps, álbum, jóquei*
+
+**Proparoxítonas** — **todas** acentuadas, sem exceção:
+*médico, técnico, público, jurídico, benefício*
+
+## O que o Acordo mudou (e vira item)
+
+| Deixou de ter acento | Exemplos |
+|---|---|
+| Ditongos abertos **éi** e **ói** em **paroxítonas** | ideia, assembleia, jiboia, heroico, apoio |
+| **i** e **u** tônicos após ditongo em paroxítona | feiura, baiuca |
+| Hiato **oo** e **ee** | voo, enjoo, creem, leem, veem |
+| Trema | linguiça, frequente, tranquilo |
+| Acento diferencial (quase todos) | para (verbo), pelo, pera |
+
+**Atenção:** *ideia* perdeu o acento, mas *herói* (oxítona) mantém. A banca explora exatamente esse par.
+
+## Acentos diferenciais que sobreviveram
+
+| Forma | Uso |
+|---|---|
+| **pôde** | pretérito perfeito, × *pode* (presente) |
+| **pôr** | verbo, × *por* (preposição) |
+| **têm / vêm** | 3ª pessoa **plural**, × *tem / vem* (singular) |
+| **fôrma** | facultativo, para desfazer ambiguidade |
+
+**"Têm" e "vêm"** são dos itens mais recorrentes: *Ele **tem** direito* × *Eles **têm** direito*. Nos derivados, o singular leva agudo e o plural, circunflexo: *ele **contém*** × *eles **contêm***; *ele **intervém*** × *eles **intervêm***.
+
+## Hiato
+
+Acentuam-se **i** e **u** tônicos que formam hiato e estão sozinhos na sílaba (ou com *s*):
+*saída, país, baú, egoísta, juízo*
+
+**Não** se acentuam quando seguidos de **-nh** (*rainha*, *moinho*) nem quando há consoante na mesma sílaba além de *s* (*ruim*, *cair*).
+
+## Pegadinhas de prosódia
+
+Palavras cuja sílaba tônica o candidato erra na fala e, por isso, acentua indevidamente:
+
+**Sem acento (paroxítonas):** *gratuito, fortuito, circuito, recorde, avaro, pudico, ibero, rubrica*
+**Proparoxítonas (com acento):** *aerólito, ínterim, protótipo*
+**Oxítonas:** *mister, novel, Nobel*
+
+## Como o item costuma vir
+
+O enunciado apresenta um conjunto de palavras e afirma que todas se acentuam pela mesma regra — ou propõe que a retirada do acento de uma delas mantém a correção. Identifique a **posição da sílaba tônica** de cada uma antes de julgar: quase sempre há uma que pertence a outra classe.
+`,
+          questoes: [
+            {
+              id: 'port-b2-t4-s2-q1',
+              enunciado: 'Todas as palavras proparoxítonas são acentuadas graficamente.',
+              certa: true,
+              explicacao: 'É a única regra de acentuação sem exceção: toda proparoxítona recebe acento (técnico, benefício, público).',
+              variacoes: [
+                { enunciado: 'As palavras paroxítonas terminadas em "a", "e" e "o" são acentuadas graficamente.', certa: false, explicacao: 'Essas terminações acentuam OXÍTONAS. As paroxítonas em a, e, o não recebem acento (casa, pente, carro).' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q2',
+              enunciado: 'Após o Acordo Ortográfico, as palavras "ideia" e "jiboia" perderam o acento por serem paroxítonas com ditongo aberto.',
+              certa: true,
+              explicacao: 'O acordo eliminou o acento dos ditongos abertos éi e ói em paroxítonas. Em oxítonas e monossílabos eles permanecem: herói, papéis, céu.',
+              variacoes: [
+                { enunciado: 'Após o Acordo Ortográfico, a palavra "herói" perdeu o acento gráfico.', certa: false, explicacao: '"Herói" é oxítona, e nas oxítonas o ditongo aberto ói continua acentuado.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q3',
+              enunciado: 'O acento diferencial foi mantido para distinguir "pôde", forma do pretérito perfeito, de "pode", forma do presente do indicativo.',
+              certa: true,
+              explicacao: 'É um dos dois acentos diferenciais preservados, ao lado de "pôr" (verbo) × "por" (preposição).',
+              variacoes: [
+                { enunciado: 'A forma verbal "têm", com acento circunflexo, indica a terceira pessoa do plural do presente do indicativo do verbo ter.', certa: true, explicacao: 'Correto — o circunflexo marca o plural (ele tem / eles têm).' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q4',
+              enunciado: 'Acentuam-se as palavras oxítonas terminadas em "em" e "ens", como em "também" e "parabéns".',
+              certa: true,
+              explicacao: 'A regra das oxítonas alcança a(s), e(s), o(s), em e ens. Nas paroxítonas em "em", o acento não ocorre: "jovem", "imagem".',
+              variacoes: [
+                { enunciado: 'Acentuam-se as paroxítonas terminadas em "em", como "jovem" e "imagem".', certa: false, explicacao: 'Paroxítonas terminadas em "em" não são acentuadas. A terminação "em" acentua as OXÍTONAS.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q5',
+              enunciado: 'O "i" e o "u" tônicos que formam hiato deixam de ser acentuados quando seguidos de "nh", como em "rainha" e "moinho".',
+              certa: true,
+              explicacao: 'É uma das exceções da regra do hiato, ao lado do hiato precedido de ditongo em paroxítona (feiura, baiuca).',
+              variacoes: [
+                { enunciado: 'A palavra "rainha" deve ser acentuada, pois o "i" tônico forma hiato com a vogal anterior.', certa: false, explicacao: 'O "nh" seguinte afasta o acento. Escreve-se "rainha", sem acento.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Regra das oxítonas?', r: 'Acentuam-se as terminadas em a(s), e(s), o(s), em, ens.' },
+            { p: 'Regra das paroxítonas?', r: 'Acentuam-se as terminadas em l, n, r, x, i(s), u(s), um, uns, ã(s), ão(s) e ditongo.' },
+            { p: 'O que o Acordo Ortográfico eliminou?', r: 'Acento de éi/ói em paroxítonas (ideia, jiboia), de duplo o (voo), o trema e os acentos diferenciais de para/pelo/polo.' },
+            { p: 'Quais acentos diferenciais permanecem?', r: 'pôde (pretérito) × pode (presente) e pôr (verbo) × por (preposição). Fôrma × forma é facultativo.' },
+            { p: 'Quando o i/u do hiato não é acentuado?', r: 'Quando seguido de nh (rainha) e quando forma hiato após ditongo em paroxítona (feiura).' },
+          ],
+        },
+      ],
+    },
+    {
+      id: 'port-b2-t5',
+      nome: 'Revisão rápida',
+      videoConfirmado: false,
+      subtopicos: [
+        {
+          id: 'port-b2-t5-s1',
+          nome: 'Significação das palavras — card de revisão',
+          teoria: `
+## Significação das palavras — card de revisão
+
+Assunto de baixa incidência isolada no Cebraspe: aparece quase sempre **dentro** de itens de interpretação, na forma "a substituição de X por Y preserva os sentidos". Vale a revisão rápida, não o estudo aprofundado.
+
+## O essencial
+
+| Relação | O que é | Exemplo |
+|---|---|---|
+| **Sinonímia** | sentidos próximos | prazo / termo |
+| **Antonímia** | sentidos opostos | deferir / indeferir |
+| **Homonímia** | mesma forma, sentidos distintos | cessão / sessão / seção |
+| **Paronímia** | formas parecidas, sentidos distintos | ratificar / retificar |
+| **Polissemia** | uma palavra, vários sentidos ligados | *cabeça* (parte do corpo / líder) |
+| **Hiperonímia** | termo geral × específico | benefício / aposentadoria |
+
+## Parônimos que caem em prova
+
+**ratificar** (confirmar) × **retificar** (corrigir)
+**deferir** (conceder) × **diferir** (adiar; divergir)
+**eminente** (notável) × **iminente** (prestes a ocorrer)
+**tráfego** (trânsito) × **tráfico** (comércio ilícito)
+**descriminar** (tirar do crime) × **discriminar** (distinguir; segregar)
+**infligir** (aplicar pena) × **infringir** (violar)
+**emergir** (vir à tona) × **imergir** (afundar)
+**flagrante** (evidente) × **fragrante** (perfumado)
+
+## Homônimos do vocabulário oficial
+
+**cessão** (ato de ceder) · **sessão** (reunião) · **seção/secção** (divisão)
+**censo** (recenseamento) · **senso** (juízo)
+**acender** (pôr fogo) · **ascender** (subir)
+
+## A regra que resolve o item
+
+Sinônimo perfeito é raro. Na prova, a substituição só preserva o sentido se o termo proposto couber **naquele contexto específico** — inclusive quanto ao registro (formal × informal) e à carga valorativa. Duas palavras podem ser sinônimas no dicionário e não intercambiáveis na frase.
+`,
+          questoes: [
+            {
+              id: 'port-b2-t5-s1-q1',
               enunciado: 'Os vocábulos "ratificar" e "retificar" são parônimos, significando, respectivamente, confirmar e corrigir.',
               certa: true,
               explicacao: 'Parônimos têm formas parecidas e sentidos distintos — par recorrente em provas de redação oficial.',
@@ -1037,7 +1040,7 @@ A repetição de palavras de um mesmo **campo semântico** garante coesão. Subs
               ],
             },
             {
-              id: 'port-b2-t3-s1-q2',
+              id: 'port-b2-t5-s1-q2',
               enunciado: 'Na expressão "Li Machado de Assis", ocorre metonímia, pois o nome do autor substitui sua obra.',
               certa: true,
               explicacao: 'A metonímia opera por relação de contiguidade (autor pela obra, continente pelo conteúdo, marca pelo produto).',
@@ -1046,30 +1049,12 @@ A repetição de palavras de um mesmo **campo semântico** garante coesão. Subs
               ],
             },
             {
-              id: 'port-b2-t3-s1-q3',
+              id: 'port-b2-t5-s1-q3',
               enunciado: 'Em textos oficiais deve predominar o sentido denotativo das palavras, dada a exigência de clareza e objetividade.',
               certa: true,
               explicacao: 'A linguagem oficial exige denotação, impessoalidade e precisão, evitando ambiguidade e sentido figurado.',
               variacoes: [
                 { enunciado: '"Benefício" é hipônimo de "aposentadoria", por ser termo mais específico.', certa: false, explicacao: 'É o inverso: "benefício" é o hiperônimo (mais geral) e "aposentadoria", o hipônimo (mais específico).' },
-              ],
-            },
-            {
-              id: 'port-b2-t3-s1-q4',
-              enunciado: 'Os vocábulos "eminente" e "iminente" são parônimos, significando, respectivamente, notável e prestes a acontecer.',
-              certa: true,
-              explicacao: 'Par recorrente em textos oficiais: "eminente autoridade" x "risco iminente".',
-              variacoes: [
-                { enunciado: 'Os vocábulos "tráfego" e "tráfico" são sinônimos, ambos designando circulação de veículos.', certa: false, explicacao: 'São parônimos: "tráfego" é circulação; "tráfico" é comércio ilegal.' },
-              ],
-            },
-            {
-              id: 'port-b2-t3-s1-q5',
-              enunciado: 'A polissemia consiste na propriedade de uma mesma palavra apresentar vários sentidos relacionados entre si, definidos pelo contexto.',
-              certa: true,
-              explicacao: 'Diferente da homonímia, em que as palavras têm origens distintas e apenas coincidem na forma.',
-              variacoes: [
-                { enunciado: 'Na relação de hiperonímia, o termo é mais específico do que aquele a que se refere.', certa: false, explicacao: 'O hiperônimo é o termo mais GERAL; o mais específico é o hipônimo.' },
               ],
             },
           ],
@@ -1082,81 +1067,67 @@ A repetição de palavras de um mesmo **campo semântico** garante coesão. Subs
           ],
         },
         {
-          id: 'port-b2-t3-s2',
-          nome: 'Redação de correspondências oficiais (Manual de Redação da Presidência)',
+          id: 'port-b2-t5-s2',
+          nome: 'Redação oficial — card de revisão',
           teoria: `
-## Atributos da redação oficial
+## Redação oficial — card de revisão
 
-Conforme o **Manual de Redação da Presidência da República (MRPR, 3ª edição)**, a comunicação oficial deve observar:
+O edital cita o Manual de Redação da Presidência, mas a incidência real em prova é baixa e concentrada: **atributos da redação oficial** e **estrutura do padrão ofício**. É revisão de véspera, não conteúdo de estudo longo.
 
-| Atributo | O que significa |
+## Os atributos (o que mais cai)
+
+| Atributo | Significa |
 |---|---|
-| **Clareza e precisão** | Compreensão imediata; cada termo com sentido inequívoco |
-| **Objetividade** | Ir direto ao ponto, sem rodeios |
-| **Concisão** | Transmitir o máximo de informação com o mínimo de palavras |
-| **Coesão e coerência** | Encadeamento lógico das ideias |
-| **Impessoalidade** | Ausência de marcas pessoais; quem comunica é o **Serviço Público** |
-| **Formalidade e padronização** | Respeito às normas e uniformidade |
-| **Uso da norma padrão** | Correção gramatical |
+| **Impessoalidade** | ausência de impressões pessoais; quem comunica é o Serviço Público |
+| **Clareza e precisão** | compreensão imediata, sem ambiguidade |
+| **Objetividade** | ir direto ao assunto |
+| **Concisão** | transmitir o máximo com o mínimo de palavras |
+| **Coesão e coerência** | encadeamento lógico |
+| **Formalidade e padronização** | tratamento respeitoso e forma uniforme |
+| **Uso da norma padrão** | gramática culta |
 
-> A **impessoalidade** é o atributo mais cobrado: o texto oficial não expressa opinião pessoal do signatário, mas a posição do órgão.
+**Ponto crítico:** formalidade **não** é rebuscamento. O Manual recomenda linguagem simples; itens que defendem estilo empolado ou jargão obscuro estão errados.
 
 ## O padrão ofício
 
-A 3ª edição do MRPR **unificou** ofício, aviso e memorando em um único expediente: o **OFÍCIO**. Não existem mais "aviso" e "memorando" como espécies distintas.
+Desde a 3ª edição do Manual (2018), **ofício, aviso e memorando foram unificados em um só tipo: o ofício**. Item que trate memorando e aviso como espécies autônomas vigentes está desatualizado.
 
-### Estrutura do ofício
+Partes na ordem:
 
-1. **Cabeçalho** — brasão, nome do órgão, endereçamento;
-2. **Identificação do expediente** — tipo, número, ano e siglas: *OFÍCIO Nº 123/2026/SEÇÃO/ÓRGÃO*;
-3. **Local e data** — alinhados à direita, com ponto final: *Brasília, 15 de agosto de 2026.*;
-4. **Endereçamento** — vocativo e dados do destinatário;
-5. **Assunto** — resumo em poucas palavras, em negrito;
-6. **Texto** — desenvolvimento em parágrafos numerados (exceto o primeiro e os que iniciam com marcador);
-7. **Fecho** — *Atenciosamente* ou *Respeitosamente*;
-8. **Identificação do signatário** — nome em letras maiúsculas e cargo (**sem** a linha de assinatura).
-
-## Vocativos e pronomes de tratamento
-
-| Autoridade | Vocativo | Tratamento |
-|---|---|---|
-| Presidente da República | **Excelentíssimo Senhor Presidente da República** | Vossa Excelência |
-| Demais autoridades (ministros, senadores, juízes, governadores) | **Senhor + cargo** | Vossa Excelência |
-| Particulares e demais servidores | **Senhor / Senhora + cargo** | **Senhor / Senhora** |
-
-> Mudança da 3ª edição: o vocativo **"Excelentíssimo"** ficou restrito ao **Presidente da República**. Para as demais autoridades, usa-se apenas **"Senhor"** + cargo. E o tratamento **"Vossa Senhoria"** foi **abandonado** — usa-se *Senhor/Senhora*.
-
-## Concordância com pronomes de tratamento
-
-- Verbos e pronomes ficam na **3ª pessoa**: *Vossa Excelência **designou***, e não "designastes";
-- **Possessivos** também na 3ª pessoa: *Vossa Excelência e **seus** assessores*;
-- **Adjetivos** concordam com o **sexo da pessoa**: *Vossa Excelência está **atarefado*** (homem) / ***atarefada*** (mulher);
-- **Vossa** = falando **com** a autoridade; **Sua** = falando **sobre** ela.
-
-## Os dois fechos
-
-| Fecho | Quando usar |
-|---|---|
-| **Respeitosamente** | Para autoridades **superiores**, inclusive o Presidente da República |
-| **Atenciosamente** | Para autoridades de **mesma hierarquia ou inferiores** |
-
-São apenas **dois** fechos no padrão ofício. Comunicações a particulares seguem a mesma lógica.
-
-## Outros expedientes
-
-**Exposição de Motivos (EM):** dirigida ao Presidente ou Vice-Presidente por Ministro de Estado, para informar, propor medida ou submeter projeto.
-
-**Mensagem:** comunicação entre chefes de Poderes.
-
-**Correio eletrônico:** admitido como comunicação oficial, com campo "assunto" objetivo e texto claro; o valor documental depende de certificação digital.
+1. **Cabeçalho** — brasão, nome do órgão
+2. **Identificação do expediente** — tipo, número, siglas, ano
+3. **Local e data** — à direita, com ponto final
+4. **Endereçamento** — destinatário, cargo e endereço
+5. **Assunto** — resumo em negrito, começando por substantivo
+6. **Texto** — introdução, desenvolvimento, conclusão
+7. **Fecho** — *Respeitosamente* (superior) ou *Atenciosamente* (igual/inferior)
+8. **Assinatura** — nome e cargo, sem linha acima
+9. **Identificação do signatário**
 
 ## Formatação
 
-Fonte **Calibri ou Carlito 12**; citações recuadas em 11; notas de rodapé em 10; espaçamento entre linhas **simples**; margens laterais de **3 cm** (esquerda) e **1,5 cm** (direita); alinhamento **justificado**; papel A4.
+Fonte **Calibri ou Carlito 12**, papel A4, margem esquerda 3 cm e direita 1,5 cm, espaçamento entre parágrafos, numeração de parágrafos a partir do segundo quando o texto tem três ou mais.
+
+## Pronomes de tratamento
+
+**Vossa Excelência** — autoridades dos três Poderes, abreviatura *V. Ex.ª*
+**Vossa Senhoria** — demais autoridades e particulares, *V. S.ª*
+**Vossa Magnificência** — reitores (uso facultativo no Manual atual)
+
+Concordância: **sempre em 3ª pessoa**, com adjetivo no gênero da pessoa referida.
+
+> **Vossa Excelência** apresent**ou** seu parecer. (não *apresentastes*)
+> Vossa Excelência está **atarefado** / **atarefada**, conforme o sexo do destinatário.
+
+*Vossa* dirige-se **à** pessoa com quem se fala; *Sua*, à pessoa de quem se fala.
+
+## Fechos — o erro clássico
+
+Só existem **dois** fechos no padrão ofício: *Respeitosamente* e *Atenciosamente*. Formas como "Cordialmente" ou "Sem mais para o momento" não pertencem ao padrão.
 `,
           questoes: [
             {
-              id: 'port-b2-t3-s2-q1',
+              id: 'port-b2-t5-s2-q1',
               enunciado: 'A terceira edição do Manual de Redação da Presidência da República unificou o ofício, o aviso e o memorando em um único tipo de expediente, denominado ofício.',
               certa: true,
               explicacao: 'Essa unificação é uma das principais mudanças da 3ª edição: não há mais "aviso" nem "memorando" como espécies autônomas.',
@@ -1165,7 +1136,7 @@ Fonte **Calibri ou Carlito 12**; citações recuadas em 11; notas de rodapé em 
               ],
             },
             {
-              id: 'port-b2-t3-s2-q2',
+              id: 'port-b2-t5-s2-q2',
               enunciado: 'O vocativo "Excelentíssimo Senhor" é reservado, na atual redação do Manual, ao Presidente da República.',
               certa: true,
               explicacao: 'Para as demais autoridades usa-se apenas "Senhor" seguido do cargo, ainda que o pronome de tratamento continue sendo Vossa Excelência.',
@@ -1174,30 +1145,12 @@ Fonte **Calibri ou Carlito 12**; citações recuadas em 11; notas de rodapé em 
               ],
             },
             {
-              id: 'port-b2-t3-s2-q3',
+              id: 'port-b2-t5-s2-q3',
               enunciado: 'Os pronomes de tratamento exigem concordância verbal na terceira pessoa, ainda que se dirijam à segunda pessoa do discurso.',
               certa: true,
               explicacao: 'Verbos e possessivos vão para a 3ª pessoa; apenas os adjetivos concordam com o sexo da pessoa a quem se dirige.',
               variacoes: [
                 { enunciado: 'No padrão ofício, o fecho "Respeitosamente" é empregado nas comunicações dirigidas a autoridades de mesma hierarquia ou inferiores.', certa: false, explicacao: 'É o contrário: "Respeitosamente" para autoridades superiores; "Atenciosamente" para as de mesma hierarquia ou inferiores.' },
-              ],
-            },
-            {
-              id: 'port-b2-t3-s2-q4',
-              enunciado: 'A impessoalidade na redação oficial decorre do fato de que quem comunica é o Serviço Público, e não a pessoa do signatário.',
-              certa: true,
-              explicacao: 'Por isso não cabem opiniões pessoais nem marcas de subjetividade nos expedientes oficiais.',
-              variacoes: [
-                { enunciado: 'A identificação do signatário no padrão ofício deve incluir linha de assinatura acima do nome.', certa: false, explicacao: 'O MRPR dispensa a linha de assinatura: constam apenas o nome em maiúsculas e o cargo.' },
-              ],
-            },
-            {
-              id: 'port-b2-t3-s2-q5',
-              enunciado: 'Na identificação do signatário do padrão ofício, devem constar apenas o nome, em letras maiúsculas, e o cargo, dispensada a linha de assinatura.',
-              certa: true,
-              explicacao: 'A supressão da linha é uma das simplificações da 3ª edição do Manual, que padronizou também fonte, margens e espaçamento.',
-              variacoes: [
-                { enunciado: 'O padrão ofício exige que a identificação do signatário seja precedida de linha horizontal para a assinatura.', certa: false, explicacao: 'O Manual dispensa a linha de assinatura: constam apenas o nome em maiúsculas e o cargo.' },
               ],
             },
           ],
