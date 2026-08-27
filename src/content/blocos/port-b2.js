@@ -124,6 +124,51 @@ Em **datas**, concorda com o substantivo implícito: *É **um** de maio* ou *Sã
                 { enunciado: 'Na frase "Ela estava meia cansada", a concordância nominal está correta.', certa: false, explicacao: '"Meio" modifica o adjetivo "cansada" e funciona como advérbio, permanecendo invariável: "meio cansada". A flexão cabe ao numeral, como em "meia hora".' },
               ],
             },
+            {
+              id: 'port-b2-t1-s1-q6',
+              enunciado: 'O vocábulo "obrigado" concorda em gênero com a pessoa que o pronuncia, de modo que uma mulher deve dizer "obrigada".',
+              certa: true,
+              explicacao: '"Obrigado" funciona como adjetivo referido a quem agradece, e não ao interlocutor. O mesmo raciocínio vale para "agradecido" e "grato".',
+              variacoes: [
+                { enunciado: 'Os pronomes "mesmo" e "próprio", quando empregados com valor de reforço, permanecem invariáveis.', certa: false, explicacao: 'Ambos concordam com o termo a que se referem: "Elas mesmas resolveram", "As próprias servidoras assinaram". A invariabilidade ocorreria apenas se fossem advérbios.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s1-q7',
+              enunciado: 'O vocábulo "só" concorda com o substantivo quando equivale a "sozinho" e permanece invariável quando equivale a "somente".',
+              certa: true,
+              explicacao: 'Compare: "Os servidores ficaram sós na sala" (sozinhos, adjetivo) e "Só os servidores compareceram" (somente, advérbio). O teste é a substituição.',
+              variacoes: [
+                { enunciado: 'Na frase "Os seguranças permaneceram alertas durante a sessão", a concordância está de acordo com a norma padrão.', certa: false, explicacao: '"Alerta" funciona como advérbio e é invariável: "permaneceram alerta". A flexão só ocorreria se a palavra fosse empregada como substantivo, caso em que teria outro sentido.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s1-q8',
+              enunciado: 'Em expressões superlativas, o vocábulo "possível" concorda com o artigo que acompanha "mais", como em "casos os mais complexos possíveis".',
+              certa: true,
+              explicacao: 'Com "os mais", o adjetivo vai ao plural; com "o mais", permanece no singular: "casos o mais complexo possível". O artigo comanda a concordância.',
+              variacoes: [
+                { enunciado: 'Na frase "O servidor está quites com a repartição", a concordância nominal está correta.', certa: false, explicacao: '"Quite" concorda com o termo a que se refere: "O servidor está quite"; "Os servidores estão quites". A forma plural com sujeito singular contraria a norma.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s1-q9',
+              enunciado: 'Na expressão "um e outro", o substantivo permanece no singular e o adjetivo que o acompanha vai ao plural, como em "um e outro caso complexos".',
+              certa: true,
+              explicacao: 'É construção fixa: o substantivo concorda com "um", no singular, mas o adjetivo recolhe a soma dos dois elementos e vai ao plural.',
+              variacoes: [
+                { enunciado: 'Na frase "As certidões custaram caras ao requerente", a concordância está de acordo com a norma padrão.', certa: false, explicacao: 'Junto ao verbo, "caro" é advérbio e permanece invariável: "custaram caro". A flexão só ocorre quando o vocábulo qualifica o substantivo: "certidões caras".' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s1-q10',
+              enunciado: 'O adjetivo posposto a substantivos de gêneros diferentes pode ir ao masculino plural, como em "servidora e servidor dedicados".',
+              certa: true,
+              explicacao: 'Havendo divergência de gênero, o masculino plural funciona como forma neutra. A alternativa é a concordância com o núcleo mais próximo.',
+              variacoes: [
+                { enunciado: 'Na indicação de datas, o verbo concorda obrigatoriamente com o numeral, sendo incorreta a construção "É um de maio".', certa: false, explicacao: 'A concordância se faz com o substantivo implícito "dia" ou com o numeral, ambas as formas sendo aceitas: "É um de maio" e "São dois de maio".' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Anexo, obrigado, mesmo, próprio: variam?', r: 'Sim, concordam com o substantivo. Invariável é a locução "em anexo".' },
@@ -244,6 +289,51 @@ Sujeito **oracional** leva o verbo ao singular: *É necessário que todos partic
               explicacao: 'A posposição não altera a função: "os documentos exigidos" continua sendo o sujeito e comanda a concordância no plural. A concordância com o termo mais próximo não se aplica ao sujeito posposto simples.',
               variacoes: [
                 { enunciado: 'Na frase "Foi um dos servidores que resolveu o caso", a flexão do verbo da oração adjetiva está de acordo com a norma padrão.', certa: false, explicacao: 'Na estrutura "um dos que", o antecedente do relativo é o plural "os servidores", de modo que o verbo vai ao plural: "um dos servidores que resolveram o caso".' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q6',
+              enunciado: 'Com sujeito composto ligado por "ou", o verbo permanece no singular quando a conjunção exprime exclusão.',
+              certa: true,
+              explicacao: 'Em "Pedro ou Paulo será o escolhido", apenas um pode ocupar a posição, e o verbo fica no singular. Havendo inclusão, vai ao plural: "Matemática ou português são exigidos no edital".',
+              variacoes: [
+                { enunciado: 'Com sujeito composto ligado por "nem... nem", o verbo permanece obrigatoriamente no singular.', certa: false, explicacao: 'Quando o fato se aplica a todos os núcleos, o verbo vai ao plural: "Nem o chefe nem o servidor compareceram". O singular é possível, mas não obrigatório.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q7',
+              enunciado: 'No sujeito composto formado por pessoas gramaticais diferentes, o verbo vai para o plural da pessoa de menor número.',
+              certa: true,
+              explicacao: 'A primeira pessoa prevalece sobre a segunda, e esta sobre a terceira: "Eu e ele fomos" (nós), "Tu e ele fostes" ou, na forma usual, "foram".',
+              variacoes: [
+                { enunciado: 'Na frase "O chefe com o servidor decidiram o caso", a concordância no plural contraria a norma padrão.', certa: false, explicacao: 'Quando a preposição "com" indica equivalência entre os núcleos, admite-se o plural. O singular ocorre quando o segundo termo vem entre vírgulas, destacando o primeiro.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q8',
+              enunciado: 'O verbo "existir" possui sujeito e, por isso, concorda com ele, diferentemente de "haver" no sentido de existir.',
+              certa: true,
+              explicacao: '"Existiam dez processos" está correto, pois "dez processos" é sujeito. Já "haver" nesse sentido é impessoal e permanece no singular: "Havia dez processos".',
+              variacoes: [
+                { enunciado: 'Na frase "Existem muitos segurados na fila", o verbo deveria permanecer no singular, por tratar-se de oração sem sujeito.', certa: false, explicacao: '"Existir" não é impessoal: "muitos segurados" é o sujeito e comanda o plural. A impessoalidade é característica de "haver" e "fazer" em sentidos específicos.' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q9',
+              enunciado: 'Na indicação de horas, datas e distâncias, o verbo "ser" concorda com o predicativo, como em "São três horas".',
+              certa: true,
+              explicacao: 'É a concordância do verbo "ser" com a expressão numérica que funciona como predicativo: "É uma hora", "São três horas", "Daqui à sede são dez quilômetros".',
+              variacoes: [
+                { enunciado: 'Na frase "Hoje são dia quinze de março", a concordância verbal está de acordo com a norma padrão.', certa: false, explicacao: 'Expressa a data com o substantivo "dia", o verbo concorda com ele, no singular: "Hoje é dia quinze de março". O plural cabe quando o numeral aparece sozinho: "Hoje são quinze de março".' },
+              ],
+            },
+            {
+              id: 'port-b2-t1-s2-q10',
+              enunciado: 'Com sujeito formado por expressão de porcentagem, o verbo pode concordar com o numeral ou com o substantivo que o especifica.',
+              certa: true,
+              explicacao: 'Admite-se "20% dos servidores faltou" e "20% dos servidores faltaram". A dupla possibilidade decorre de o núcleo poder ser o numeral ou o especificador.',
+              variacoes: [
+                { enunciado: 'Na frase "1% dos servidores faltaram à reunião", a concordância verbal contraria a norma padrão.', certa: false, explicacao: 'Ainda que o numeral esteja no singular, admite-se a concordância com o especificador no plural. As duas formas são aceitas.' },
               ],
             },
           ],
@@ -368,6 +458,51 @@ O enunciado apresenta uma frase e afirma que a preposição está corretamente e
                 { enunciado: 'O adjetivo "passível" rege a preposição "a", como em "conduta passível a punição".', certa: false, explicacao: '"Passível" rege a preposição "de": "conduta passível de punição".' },
               ],
             },
+            {
+              id: 'port-b2-t2-s1-q6',
+              enunciado: 'O adjetivo "apto" admite tanto a preposição "a" quanto "para", como em "apto ao cargo" e "apto para o cargo".',
+              certa: true,
+              explicacao: 'É um dos nomes de dupla regência aceita pela norma. A escolha entre as preposições não altera o sentido nem a correção.',
+              variacoes: [
+                { enunciado: 'O adjetivo "hábil" rege a preposição "para", como em "hábil para negociações".', certa: false, explicacao: '"Hábil" rege a preposição "em": "hábil em negociações". A regência com "para" não é a consagrada pela norma padrão.' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q7',
+              enunciado: 'O adjetivo "ansioso" rege "por" quando indica desejo e "com" quando indica preocupação.',
+              certa: true,
+              explicacao: 'Compare: "ansioso pelo resultado" (desejoso) e "ansioso com o resultado" (apreensivo). A preposição distingue os dois sentidos.',
+              variacoes: [
+                { enunciado: 'O adjetivo "bom" rege sempre a preposição "para", independentemente do sentido em que seja empregado.', certa: false, explicacao: 'A regência varia com o sentido: "bom para" indica adequação ("bom para o cargo"); "bom com" indica generosidade ("bom com os colegas").' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q8',
+              enunciado: 'Os adjetivos "perito" e "versado" regem a preposição "em", como em "perito em cálculos previdenciários".',
+              certa: true,
+              explicacao: 'Integram o grupo de nomes que exigem "em", ao lado de "hábil" e "incansável". A construção com "de" ou "para" contraria a norma.',
+              variacoes: [
+                { enunciado: 'O adjetivo "responsável" rege a preposição "de", como em "responsável do setor de benefícios".', certa: false, explicacao: '"Responsável" rege "por": "responsável pelo setor de benefícios". A regência com "de" não é admitida pela norma padrão.' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q9',
+              enunciado: 'O substantivo "aversão" admite tanto a preposição "a" quanto "por", como em "aversão a drogas" e "aversão por drogas".',
+              certa: true,
+              explicacao: 'É nome de dupla regência. A alternância importa para a crase: com "a" e palavra feminina determinada, ocorre o acento grave em "aversão à bebida".',
+              variacoes: [
+                { enunciado: 'O adjetivo "nocivo" rege a preposição "de", como em "substância nociva da saúde".', certa: false, explicacao: '"Nocivo" rege "a": "substância nociva à saúde". Integra o grupo de nomes regidos por "a", com "prejudicial", "preferível" e "inerente".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s1-q10',
+              enunciado: 'O adjetivo "capaz" rege a preposição "de", ao passo que "suscetível" também a exige, como em "suscetível de revisão".',
+              certa: true,
+              explicacao: 'Ambos integram o grupo regido por "de", ao lado de "passível", "digno", "isento" e "consciente".',
+              variacoes: [
+                { enunciado: 'O adjetivo "ávido" rege exclusivamente a preposição "de", sendo incorreta a construção "ávido por reconhecimento".', certa: false, explicacao: '"Ávido" admite "de" e "por", ambas consagradas pela norma: "ávido de poder" e "ávido por poder".' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Como a regência nominal se liga à crase?', r: 'Só há crase se um nome exigir a preposição "a" e a palavra seguinte for feminina com artigo: "aversão à bebida". Sem preposição exigida, não há o que fundir.' },
@@ -486,6 +621,51 @@ Transitivo direto pede **o/a/os/as**; indireto com "a" pede **lhe/lhes**:
               explicacao: 'A preposição exigida pelo verbo da oração adjetiva antecede o pronome relativo. Omiti-la é erro frequente.',
               variacoes: [
                 { enunciado: 'A frase "Este é o assunto que discordo" está de acordo com a norma padrão.', certa: false, explicacao: '"Discordar" exige a preposição "de": "o assunto DE QUE discordo".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q6',
+              enunciado: 'O verbo "proceder" é intransitivo no sentido de ter fundamento, como em "O argumento não procede".',
+              certa: true,
+              explicacao: 'O verbo tem três empregos distintos: intransitivo (ter fundamento), transitivo indireto com "de" (originar-se) e transitivo indireto com "a" (realizar).',
+              variacoes: [
+                { enunciado: 'Na frase "A comissão procedeu uma análise minuciosa", a regência do verbo está correta.', certa: false, explicacao: 'No sentido de realizar, "proceder" é transitivo indireto e exige a preposição "a": "procedeu a uma análise minuciosa".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q7',
+              enunciado: 'Os verbos "chegar" e "ir" regem a preposição "a", sendo coloquial o emprego de "em" para indicar destino.',
+              certa: true,
+              explicacao: 'A norma padrão pede "Chegou ao trabalho" e "Foi à repartição". As construções com "em" são correntes na fala, mas não se admitem em prova.',
+              variacoes: [
+                { enunciado: 'Na frase "O segurado chegou no posto de atendimento às oito horas", a regência verbal está de acordo com a norma padrão.', certa: false, explicacao: 'O verbo "chegar" rege a preposição "a": "chegou ao posto de atendimento". O emprego de "em" é próprio da linguagem coloquial.' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q8',
+              enunciado: 'Os verbos "simpatizar" e "antipatizar" não são pronominais e regem a preposição "com".',
+              certa: true,
+              explicacao: 'Escreve-se "Simpatizo com o colega" e "Antipatizo com a proposta". As formas "simpatizo-me" e "antipatizei-me" contrariam a norma.',
+              variacoes: [
+                { enunciado: 'Na frase "O servidor simpatizou-se com a nova chefia", o emprego do verbo está de acordo com a norma padrão.', certa: false, explicacao: '"Simpatizar" não admite a forma pronominal. A construção correta é "O servidor simpatizou com a nova chefia".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q9',
+              enunciado: 'O verbo "esquecer" é transitivo direto quando não pronominal e transitivo indireto quando pronominal.',
+              certa: true,
+              explicacao: 'Compare: "Esqueci o documento" e "Esqueci-me do documento". A forma pronominal exige a preposição "de"; a não pronominal a dispensa.',
+              variacoes: [
+                { enunciado: 'Na frase "Lembrei-me o prazo do recurso", o emprego do verbo está de acordo com a norma padrão.', certa: false, explicacao: '"Lembrar" segue a mesma regra de "esquecer": pronominal, exige preposição — "Lembrei-me do prazo"; não pronominal, dispensa — "Lembrei o prazo".' },
+              ],
+            },
+            {
+              id: 'port-b2-t2-s2-q10',
+              enunciado: 'O verbo "informar" admite duas construções, sendo incorreto misturá-las, como em "informou ao servidor do resultado".',
+              certa: true,
+              explicacao: 'As construções válidas são "informou o servidor do resultado" e "informou ao servidor o resultado". A mistura, com dois complementos preposicionados, contraria a norma.',
+              variacoes: [
+                { enunciado: 'O verbo "pagar" é transitivo direto em relação à pessoa e transitivo indireto em relação à coisa.', certa: false, explicacao: 'A relação é a inversa: paga-se algo (objeto direto) a alguém (objeto indireto). Por isso "paguei-lhe a dívida", em que "lhe" retoma a pessoa.' },
               ],
             },
           ],
@@ -614,6 +794,51 @@ Texto **argumentativo** é dissertação com defesa explícita de ponto de vista
                 { enunciado: 'Um texto que apresenta tese acompanhada de argumentos deve ser classificado como narrativo, uma vez que expõe fatos em sequência.', certa: false, explicacao: 'A presença de tese e argumentos caracteriza a dissertação argumentativa. A narração organiza fatos em progressão temporal, com personagens e predomínio do pretérito perfeito.' },
               ],
             },
+            {
+              id: 'port-b2-t3-s1-q6',
+              enunciado: 'O texto injuntivo caracteriza-se por orientar o comportamento do leitor, sendo marcado pelo emprego do imperativo ou do infinitivo.',
+              certa: true,
+              explicacao: 'Manuais, receitas, editais e instruções normativas são injuntivos: não narram nem defendem tese, mas prescrevem procedimento.',
+              variacoes: [
+                { enunciado: 'Um edital de concurso, por apresentar linguagem formal e organização em itens, classifica-se como texto predominantemente dissertativo.', certa: false, explicacao: 'A formalidade não define o tipo. O edital prescreve condutas e requisitos, sendo predominantemente injuntivo, ainda que contenha trechos descritivos.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q7',
+              enunciado: 'A descrição apresenta características simultâneas de um ser ou ambiente, sem progressão temporal entre os elementos enumerados.',
+              certa: true,
+              explicacao: 'É o traço que a separa da narração: enquanto esta encadeia fatos no tempo, a descrição suspende o tempo e justapõe traços, com predomínio de adjetivos e do pretérito imperfeito.',
+              variacoes: [
+                { enunciado: 'A presença de verbos no pretérito perfeito e de marcadores temporais como "então" e "em seguida" é característica da descrição.', certa: false, explicacao: 'Esses elementos marcam progressão de fatos e são típicos da narração. A descrição não avança no tempo.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q8',
+              enunciado: 'No texto dissertativo, o emprego do presente do indicativo com valor atemporal contribui para o efeito de generalidade das afirmações.',
+              certa: true,
+              explicacao: 'O presente atemporal apresenta o conteúdo como verdade que não se limita a um momento, reforçando a pretensão de validade geral própria da dissertação.',
+              variacoes: [
+                { enunciado: 'A predominância do pretérito perfeito é característica do texto dissertativo-argumentativo.', certa: false, explicacao: 'O pretérito perfeito marca fatos concluídos e é próprio da narração. A dissertação privilegia o presente com valor atemporal.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q9',
+              enunciado: 'Em um texto argumentativo, o exemplo cumpre função de sustentação da tese, não podendo ser confundido com a própria tese.',
+              certa: true,
+              explicacao: 'A tese é a posição defendida; o exemplo é recurso que a apoia. Itens que apresentam um caso ilustrativo como se fosse a ideia central do texto estão errados.',
+              variacoes: [
+                { enunciado: 'A ideia principal de um parágrafo corresponde sempre à informação contida em seu último período.', certa: false, explicacao: 'A ideia principal pode ocupar qualquer posição no parágrafo — início, meio ou fim — e às vezes se distribui por ele, não havendo posição fixa.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s1-q10',
+              enunciado: 'A paráfrase reformula o conteúdo de um texto com outras palavras, preservando as informações originais sem acrescentar avaliação.',
+              certa: true,
+              explicacao: 'É reescrita fiel: muda a forma, mantém o conteúdo. Acrescentar juízo de valor descaracteriza a paráfrase e configura comentário.',
+              variacoes: [
+                { enunciado: 'O resumo de um texto deve preservar a ordem e a extensão dos argumentos apresentados pelo autor.', certa: false, explicacao: 'O resumo condensa, reduzindo a extensão e podendo reorganizar a apresentação. O que se preserva é a hierarquia das ideias, não a extensão.' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Compreensão x interpretação?', r: 'Compreensão: o que o texto diz (explícito). Interpretação: o que se conclui, com respaldo textual.' },
@@ -734,6 +959,51 @@ Atenção aos demonstrativos: *este* aponta para o que vem **depois** ou para o 
               explicacao: 'Modalizadores graduam a adesão do autor ao enunciado. "Possivelmente" indica adesão parcial; "certamente", adesão total. A troca altera o sentido do texto e torna errado o item que a considere neutra.',
               variacoes: [
                 { enunciado: 'O pronome demonstrativo "aquele" é empregado para retomar o termo mais próximo mencionado no texto.', certa: false, explicacao: '"Aquele" retoma o termo mais distante ou o primeiro mencionado; o mais próximo, ou o que será dito a seguir, é retomado por "este".' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q6',
+              enunciado: 'A ironia é identificada pelo contraste entre o que se afirma literalmente e o que o conjunto do texto autoriza concluir.',
+              certa: true,
+              explicacao: 'Nenhuma palavra é irônica isoladamente: a ironia depende do cotejo entre o enunciado e o restante do texto, que revela a intenção oposta ao sentido literal.',
+              variacoes: [
+                { enunciado: 'A ironia pode ser identificada pela análise isolada do vocábulo empregado, independentemente do contexto em que aparece.', certa: false, explicacao: 'A ironia é um efeito de sentido construído contextualmente. Fora do contexto, o mesmo vocábulo perde a carga irônica.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q7',
+              enunciado: 'O sentido conotativo decorre do emprego figurado da linguagem, ao passo que o denotativo corresponde ao sentido literal do vocábulo.',
+              certa: true,
+              explicacao: 'Em "o processo dormiu na gaveta", "dormiu" é conotativo. Em "o servidor dormiu cedo", é denotativo. O contexto determina qual está em jogo.',
+              variacoes: [
+                { enunciado: 'Textos técnicos e oficiais são necessariamente denotativos, sendo impossível a ocorrência de linguagem figurada nesse tipo de produção.', certa: false, explicacao: 'A denotação predomina nesses textos, mas não é exclusiva: expressões cristalizadas e metáforas lexicalizadas ocorrem mesmo em produções técnicas.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q8',
+              enunciado: 'O argumento de autoridade consiste em recorrer à palavra de especialista ou instituição reconhecida para sustentar uma tese.',
+              certa: true,
+              explicacao: 'É estratégia argumentativa distinta da exemplificação: o exemplo ilustra por meio de um caso; o argumento de autoridade sustenta por meio da credibilidade da fonte.',
+              variacoes: [
+                { enunciado: 'A apresentação de um caso particular para ilustrar uma afirmação geral configura argumento de autoridade.', certa: false, explicacao: 'Trata-se de exemplificação. O argumento de autoridade invoca a credibilidade de quem afirma, não a força ilustrativa de um caso.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q9',
+              enunciado: 'A ambiguidade decorre da possibilidade de mais de uma leitura para o mesmo enunciado e pode originar-se da estrutura sintática.',
+              certa: true,
+              explicacao: 'Em "O servidor viu o segurado com o binóculo", não se sabe quem portava o binóculo. A ambiguidade estrutural resulta da posição do termo, não do vocabulário.',
+              variacoes: [
+                { enunciado: 'A ambiguidade só pode ser desfeita pela substituição do vocábulo que a origina.', certa: false, explicacao: 'Frequentemente basta reorganizar a ordem dos termos ou ajustar a pontuação. A substituição lexical é apenas um dos recursos disponíveis.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s2-q10',
+              enunciado: 'O subentendido, ao contrário do pressuposto, não está marcado na estrutura da frase e depende da inferência do leitor.',
+              certa: true,
+              explicacao: 'O pressuposto é objetivo e ancorado em marcadores como "ainda" e "deixar de". O subentendido é insinuado e pode ser negado pelo autor, razão pela qual raramente sustenta item considerado correto.',
+              variacoes: [
+                { enunciado: 'Pressuposto e subentendido têm o mesmo grau de objetividade, uma vez que ambos veiculam informação não explicitada.', certa: false, explicacao: 'Não terem sido explicitados é o único traço comum. O pressuposto é marcado linguisticamente e verificável; o subentendido depende do contexto e da intenção atribuída.' },
               ],
             },
           ],
@@ -1049,6 +1319,51 @@ Retoma por vocabulário, não por pronome:
                 { enunciado: 'Grafam-se com hífen as palavras "auto-escola" e "co-autor", por serem formadas por prefixação.', certa: false, explicacao: 'Como as letras de contato são diferentes, não há hífen: autoescola e coautor.' },
               ],
             },
+            {
+              id: 'port-b2-t4-s1-q6',
+              enunciado: 'A locução "acerca de" significa "a respeito de", ao passo que "a cerca de" indica aproximação e "há cerca de" refere-se a tempo decorrido.',
+              certa: true,
+              explicacao: 'Compare: "Falou acerca do processo", "Mora a cerca de dez quilômetros" e "Trabalha aqui há cerca de dois anos". As três grafias existem, com sentidos distintos.',
+              variacoes: [
+                { enunciado: 'O vocábulo "trás" é forma do verbo "trazer", ao passo que "traz" é advérbio empregado em locuções como "por traz de".', certa: false, explicacao: 'Os papéis estão invertidos: "traz" é a forma verbal e "trás" integra as locuções "por trás de" e "para trás".' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q7',
+              enunciado: 'A locução "em vez de" significa "em substituição a", ao passo que "ao invés de" indica, rigorosamente, oposição.',
+              certa: true,
+              explicacao: '"Em vez de" é a forma de emprego amplo. "Ao invés de" pede sentido de contrário: "Ao invés de subir, desceu". A norma rigorosa não as trata como intercambiáveis.',
+              variacoes: [
+                { enunciado: 'A locução "ao invés de" pode substituir "em vez de" em qualquer contexto, sem prejuízo da norma padrão.', certa: false, explicacao: 'A substituição só é adequada quando há oposição efetiva. Empregada como simples equivalente de "em vez de", contraria o rigor da norma.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q8',
+              enunciado: 'O vocábulo "demais", grafado junto, pode funcionar como advérbio de intensidade ou como pronome indefinido, ao passo que "de mais" se opõe a "de menos".',
+              certa: true,
+              explicacao: 'Compare: "Falou demais" (intensidade), "Os demais servidores" (indefinido) e "Não vejo nada de mais nisso" (oposto de "de menos").',
+              variacoes: [
+                { enunciado: 'A expressão "à toa", quando empregada como adjetivo, deve ser grafada com hífen, como em "um sujeito à-toa".', certa: false, explicacao: 'Após o Acordo Ortográfico, a forma hifenizada foi abolida. Grafa-se "à toa" em qualquer emprego, adjetivo ou adverbial.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q9',
+              enunciado: 'Grafam-se com "j" os vocábulos "berinjela", "gorjeta" e "majestade".',
+              certa: true,
+              explicacao: 'São grafias fixadas pelo uso, sem regra derivacional que as explique, e por isso figuram entre as mais cobradas em itens de ortografia.',
+              variacoes: [
+                { enunciado: 'Os substantivos derivados de palavras grafadas com "j" mantêm a letra, como em "laranjeira", derivado de "laranja".', certa: true, explicacao: 'A derivação conserva a consoante do primitivo: de "laranja", "laranjeira"; de "viajar", "viajante". É o critério que resolve boa parte dos itens.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s1-q10',
+              enunciado: 'Emprega-se hífen quando o prefixo termina com a mesma consoante que inicia o segundo elemento, como em "sub-base" e "super-resistente".',
+              certa: true,
+              explicacao: 'A regra espelha a das vogais iguais: consoantes idênticas em contato exigem hífen. Sendo diferentes, escreve-se junto: "subsolo", "superintendente".',
+              variacoes: [
+                { enunciado: 'O prefixo "auto" exige hífen diante de palavra iniciada por consoante, como em "auto-controle".', certa: false, explicacao: 'Diante de consoante diferente, escreve-se junto: "autocontrole", "autogestão". O hífen com "auto" ocorre diante de "o" e de "h": "auto-observação", "auto-hipnose".' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Quando usar -isar e -izar?', r: '-isar quando o radical já tem S (pesquisa → pesquisar). -izar nos demais (civil → civilizar).' },
@@ -1163,6 +1478,51 @@ O enunciado apresenta um conjunto de palavras e afirma que todas se acentuam pel
               explicacao: 'É uma das exceções da regra do hiato, ao lado do hiato precedido de ditongo em paroxítona (feiura, baiuca).',
               variacoes: [
                 { enunciado: 'A palavra "rainha" deve ser acentuada, pois o "i" tônico forma hiato com a vogal anterior.', certa: false, explicacao: 'O "nh" seguinte afasta o acento. Escreve-se "rainha", sem acento.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q6',
+              enunciado: 'Após o Acordo Ortográfico, deixou de ser acentuado o "i" ou o "u" tônico que forma hiato com ditongo anterior em palavras paroxítonas, como "feiura".',
+              certa: true,
+              explicacao: 'Antes escrevia-se "feiúra" e "baiúca"; hoje, "feiura" e "baiuca". A regra vale apenas para paroxítonas: em oxítonas o acento permanece, como em "Piauí".',
+              variacoes: [
+                { enunciado: 'A palavra "Piauí" deixou de ser acentuada após o Acordo Ortográfico, por apresentar "i" tônico precedido de ditongo.', certa: false, explicacao: 'A supressão do acento restringe-se às paroxítonas. "Piauí" é oxítona e mantém o acento no "i" tônico.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q7',
+              enunciado: 'Os hiatos "oo" e "ee" deixaram de ser acentuados, razão pela qual se escreve "voo", "enjoo" e "leem".',
+              certa: true,
+              explicacao: 'Antes do Acordo grafava-se "vôo", "enjôo" e "lêem". A mudança atinge também "creem", "deem" e "veem", todos hoje sem acento.',
+              variacoes: [
+                { enunciado: 'A forma verbal "veem", terceira pessoa do plural do verbo "ver", deve receber acento circunflexo.', certa: false, explicacao: 'O acento no hiato "ee" foi abolido: escreve-se "veem", "creem", "leem" e "deem", todos sem acento.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q8',
+              enunciado: 'Nos derivados de "ter" e "vir", a terceira pessoa do singular recebe acento agudo e a do plural, circunflexo, como em "contém" e "contêm".',
+              certa: true,
+              explicacao: 'O padrão vale para todos os derivados: "intervém/intervêm", "mantém/mantêm", "provém/provêm". O acento distingue singular de plural.',
+              variacoes: [
+                { enunciado: 'As formas "tem" e "vem", na terceira pessoa do plural, dispensam acento gráfico.', certa: false, explicacao: 'No plural, ambas recebem circunflexo: "eles têm", "eles vêm". Sem acento, as formas indicam a terceira pessoa do singular.' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q9',
+              enunciado: 'As palavras "gratuito", "fortuito" e "circuito" são paroxítonas e, por isso, não recebem acento gráfico.',
+              certa: true,
+              explicacao: 'A pronúncia corrente desloca indevidamente a tonicidade para o "u", sugerindo acento. A sílaba tônica, porém, recai sobre "i", e a palavra é paroxítona terminada em "o".',
+              variacoes: [
+                { enunciado: 'O vocábulo "rubrica" é proparoxítono e, portanto, deve ser acentuado graficamente.', certa: false, explicacao: '"Rubrica" é paroxítona, com tonicidade em "bri", e não recebe acento. O mesmo ocorre com "recorde", "avaro" e "ibero".' },
+              ],
+            },
+            {
+              id: 'port-b2-t4-s2-q10',
+              enunciado: 'Acentuam-se os monossílabos tônicos terminados em "a", "e" e "o", seguidos ou não de "s", como em "pá", "pé" e "pós".',
+              certa: true,
+              explicacao: 'A regra espelha a das oxítonas. Não se acentuam os monossílabos terminados em outras vogais ou consoantes, como "ruim", "cair" e "mil".',
+              variacoes: [
+                { enunciado: 'As palavras paroxítonas terminadas em ditongo crescente, como "água" e "história", não recebem acento gráfico.', certa: false, explicacao: 'Paroxítonas terminadas em ditongo são acentuadas: "água", "história", "jóquei", "série". A regra decorre de essas terminações não integrarem o grupo "a", "e", "o", "em", "ens".' },
               ],
             },
           ],
