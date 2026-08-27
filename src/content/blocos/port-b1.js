@@ -722,6 +722,381 @@ Vêm com forma nominal, **sem conjunção**: *Ao chegar, assinou* (reduzida de i
         },
         {
           id: 'port-b1-t2-s3',
+          nome: 'Voz ativa e voz passiva',
+          teoria: `
+## Voz ativa e voz passiva
+
+Voz verbal indica a relação entre o sujeito e a ação. É item quase garantido em prova — sozinho ou embutido em questão de reescrita, porque converter uma voz na outra é a transformação que a banca mais propõe.
+
+## As três vozes
+
+| Voz | O sujeito | Exemplo |
+|---|---|---|
+| **Ativa** | pratica a ação | O servidor analisou o pedido |
+| **Passiva** | sofre a ação | O pedido foi analisado pelo servidor |
+| **Reflexiva** | pratica e sofre | O servidor feriu-se |
+
+## Conversão ativa → passiva
+
+Três movimentos simultâneos:
+
+1. O **objeto direto** da ativa vira **sujeito** da passiva.
+2. O verbo assume a forma **ser + particípio**, **no mesmo tempo** do verbo da ativa.
+3. O **sujeito** da ativa vira **agente da passiva**, introduzido por *por* (ou *de*).
+
+> **Ativa:** O perito avaliou o requerente.
+> **Passiva:** O requerente **foi avaliado** pelo perito.
+
+**O tempo é o ponto crítico.** É onde a banca planta o erro:
+
+| Ativa | Passiva correta | Erro típico |
+|---|---|---|
+| analisou (pret. perfeito) | **foi** analisado | *era analisado* |
+| analisa (presente) | **é** analisado | *foi analisado* |
+| analisará (fut. presente) | **será** analisado | *seria analisado* |
+| analisava (pret. imperfeito) | **era** analisado | *foi analisado* |
+
+**Só verbo transitivo direto (ou bitransitivo) admite passiva.** Verbo intransitivo e transitivo indireto não convertem: *O servidor chegou* e *Precisa de ajuda* não têm voz passiva. Em verbo bitransitivo, apenas o **objeto direto** vira sujeito: *Entregou o processo ao chefe* → *O processo foi entregue ao chefe*, nunca *O chefe foi entregue*.
+
+## Agente da passiva
+
+Vem quase sempre com **por** (e suas contrações: *pelo, pela*). Com alguns verbos, admite **de**: *conhecido **de** todos*, *acompanhado **de** dois assessores*.
+
+O agente pode ser **omitido** quando é irrelevante ou desconhecido: *O pedido foi indeferido.* A omissão é legítima, mas apaga quem praticou a ação — detalhe que aparece em item de interpretação.
+
+## Passiva analítica × passiva sintética
+
+**Analítica:** ser + particípio. *Os pedidos **foram analisados**.*
+**Sintética:** verbo transitivo direto + **se**. ***Analisaram-se** os pedidos.*
+
+Na sintética, o termo que parece objeto é o **sujeito**, e o verbo concorda com ele:
+
+> **Vendem-se** casas. (= casas são vendidas — sujeito plural)
+> **Aluga-se** apartamento. (= apartamento é alugado — sujeito singular)
+
+## A distinção que mais cai: "se" apassivador × índice de indeterminação
+
+| | Partícula **apassivadora** | Índice de **indeterminação** |
+|---|---|---|
+| Verbo | transitivo **direto** | transitivo **indireto** ou intransitivo |
+| Termo seguinte | é **sujeito** | é objeto indireto ou nada |
+| Concordância | verbo **concorda** | verbo no **singular** |
+| Exemplo | Analisaram-se os pedidos | Precisa-se de servidores |
+
+**O teste definitivo:** tente reescrever na passiva analítica. Se couber (*os pedidos foram analisados*), é apassivadora e o verbo concorda. Se não couber (*de servidores é precisado* não existe), é índice e o verbo fica no singular.
+
+## Voz reflexiva
+
+O sujeito pratica e recebe a ação. Não confundir com passiva sintética: na reflexiva, o *se* equivale a *a si mesmo*.
+
+> O servidor **feriu-se**. (feriu a si mesmo — reflexiva)
+> **Feriram-se** os prazos. (os prazos foram feridos — passiva sintética)
+
+**Reflexiva recíproca** indica ação mútua entre sujeitos plurais, equivalendo a *um ao outro*: *Os colegas **cumprimentaram-se***.
+
+## Locuções na passiva
+
+Quando a ativa traz locução verbal, a passiva mantém a estrutura e acrescenta *ser*:
+
+> **Ativa:** O setor **deve analisar** o pedido.
+> **Passiva:** O pedido **deve ser analisado** pelo setor.
+
+Cuidado com *estar* + particípio: exprime **estado**, não voz passiva. *A porta está fechada* descreve situação; *A porta foi fechada pelo servidor* é passiva de ação.
+`,
+          questoes: [
+            {
+              id: 'port-b1-t2-s3-q1',
+              enunciado: 'Na transformação da voz ativa em voz passiva analítica, o tempo verbal do verbo da oração original deve ser preservado no verbo auxiliar "ser".',
+              certa: true,
+              explicacao: 'A conversão altera a estrutura, não a referência temporal. "Analisou" (pretérito perfeito) torna-se "foi analisado"; "analisa" torna-se "é analisado". Alterar o tempo muda o sentido e é o erro mais plantado nesse tipo de item.',
+              variacoes: [
+                { enunciado: 'A reescrita de "O setor analisava os pedidos" como "Os pedidos foram analisados pelo setor" preserva o sentido original.', certa: false, explicacao: 'O pretérito imperfeito "analisava" indica ação habitual e corresponde a "eram analisados". A forma "foram analisados" traduz pretérito perfeito, apresentando o fato como concluído.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q2',
+              enunciado: 'Verbos intransitivos não admitem transposição para a voz passiva, uma vez que não possuem objeto direto para assumir a função de sujeito.',
+              certa: true,
+              explicacao: 'A passiva se constrói promovendo o objeto direto a sujeito. Sem objeto direto — como em "O servidor chegou" —, não há termo a promover, e a conversão é impossível.',
+              variacoes: [
+                { enunciado: 'A oração "O segurado precisa de auxílio" pode ser transposta para a voz passiva, resultando em "De auxílio é precisado pelo segurado".', certa: false, explicacao: '"Precisar de" é transitivo indireto, e seu complemento é objeto indireto, que não pode ser promovido a sujeito. Verbos transitivos indiretos não admitem voz passiva.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q3',
+              enunciado: 'Em "Vendem-se casas na região", a partícula "se" é apassivadora e "casas" exerce a função de sujeito.',
+              certa: true,
+              explicacao: 'O verbo é transitivo direto, o que caracteriza a passiva sintética. "Casas" é o sujeito e comanda a concordância no plural, como se comprova pela passiva analítica: "casas são vendidas".',
+              variacoes: [
+                { enunciado: 'Em "Necessita-se de peritos", o termo "peritos" é sujeito da oração e exige o verbo no plural.', certa: false, explicacao: '"Necessitar de" é transitivo indireto, de modo que o "se" é índice de indeterminação do sujeito e "de peritos" é objeto indireto. O verbo permanece na terceira pessoa do singular.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q4',
+              enunciado: 'O agente da passiva é introduzido obrigatoriamente pela preposição "por", sendo incorreto o emprego de "de" nessa função.',
+              certa: false,
+              explicacao: 'Embora "por" seja a preposição usual, alguns contextos admitem "de": "conhecido de todos", "acompanhado de dois assessores", "cercado de cuidados". A afirmação de obrigatoriedade torna o item errado.',
+              variacoes: [
+                { enunciado: 'A omissão do agente da passiva, como em "O pedido foi indeferido", torna a construção agramatical.', certa: false, explicacao: 'A omissão é plenamente gramatical e frequente quando o agente é irrelevante, desconhecido ou deliberadamente apagado. O efeito é de sentido, não de correção.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q5',
+              enunciado: 'Na transposição de uma oração com verbo bitransitivo para a voz passiva, apenas o objeto direto pode assumir a função de sujeito.',
+              certa: true,
+              explicacao: 'Em "Entregou o processo ao chefe", só "o processo" pode ser promovido: "O processo foi entregue ao chefe". O objeto indireto permanece como tal, sendo agramatical "O chefe foi entregue o processo".',
+              variacoes: [
+                { enunciado: 'A oração "O servidor informou o resultado ao segurado" admite a passiva "O segurado foi informado do resultado pelo servidor".', certa: true, explicacao: '"Informar" admite dupla regência: com a construção "informar alguém de algo", a pessoa é objeto direto e pode, portanto, ser promovida a sujeito da passiva.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q6',
+              enunciado: 'Em "O servidor feriu-se durante o expediente", a partícula "se" indica voz reflexiva, pois o sujeito pratica e sofre a ação.',
+              certa: true,
+              explicacao: 'O "se" reflexivo equivale a "a si mesmo": o servidor feriu a si próprio. Distingue-se da passiva sintética, em que o sujeito apenas sofre a ação praticada por agente indeterminado.',
+              variacoes: [
+                { enunciado: 'Em "Os colegas cumprimentaram-se ao chegar", o pronome "se" tem valor reflexivo, e não recíproco.', certa: false, explicacao: 'Com sujeito plural e ação mútua, o "se" é recíproco: equivale a "um ao outro". O valor reflexivo puro indicaria que cada um cumprimentou a si mesmo.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q7',
+              enunciado: 'Quando a oração na voz ativa apresenta locução verbal, a transposição para a passiva mantém a locução e acrescenta o verbo "ser".',
+              certa: true,
+              explicacao: 'Em "O setor deve analisar o pedido", a passiva é "O pedido deve ser analisado pelo setor": o auxiliar modal permanece e "ser" se intercala antes do particípio.',
+              variacoes: [
+                { enunciado: 'A passiva de "A junta vai avaliar o laudo" é "O laudo vai avaliar-se pela junta".', certa: false, explicacao: 'A construção correta é "O laudo vai ser avaliado pela junta". A forma proposta mistura indevidamente a passiva sintética com a locução e resulta agramatical.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q8',
+              enunciado: 'A construção "A porta está fechada" configura voz passiva, uma vez que apresenta o verbo "estar" seguido de particípio.',
+              certa: false,
+              explicacao: 'A voz passiva de ação se forma com "ser" + particípio. Com "estar", o particípio funciona como predicativo e exprime estado resultante, não a ação e seu agente. Compare com "A porta foi fechada pelo servidor".',
+              variacoes: [
+                { enunciado: 'Em "O relatório permaneceu arquivado por dois anos", o particípio "arquivado" funciona como predicativo do sujeito.', certa: true, explicacao: '"Permanecer" é verbo de ligação nesse contexto, e "arquivado" atribui estado ao sujeito, configurando predicado nominal, não voz passiva.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q9',
+              enunciado: 'Na passiva sintética, o verbo deve concordar com o termo que exerce a função de sujeito, ainda que este venha posposto.',
+              certa: true,
+              explicacao: 'Em "Analisaram-se os pedidos", "os pedidos" é sujeito e comanda o plural, mesmo posposto. A posposição não altera a função sintática nem dispensa a concordância.',
+              variacoes: [
+                { enunciado: 'A construção "Aluga-se apartamentos" está de acordo com a norma padrão, pois o verbo pode permanecer no singular na passiva sintética.', certa: false, explicacao: '"Apartamentos" é sujeito da passiva sintética e exige o verbo no plural: "Alugam-se apartamentos". A comprovação vem da passiva analítica: "apartamentos são alugados".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s3-q10',
+              enunciado: 'A transposição da voz ativa para a passiva preserva o agente da ação, ainda que ele deixe de ocupar a posição de sujeito.',
+              certa: true,
+              explicacao: 'O sujeito da ativa passa a agente da passiva, mudando de função sintática sem deixar de ser quem pratica a ação: "O perito avaliou" → "foi avaliado pelo perito".',
+              variacoes: [
+                { enunciado: 'Em uma questão de reescrita, a substituição da voz ativa pela passiva com omissão do agente preserva integralmente as informações do período.', certa: false, explicacao: 'A estrutura permanece correta, mas a omissão do agente suprime a informação sobre quem praticou a ação. Havendo perda informacional, não se pode afirmar que as informações foram integralmente preservadas.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Quais são os três movimentos da conversão ativa → passiva?', r: 'O objeto direto vira sujeito; o verbo vira "ser + particípio" NO MESMO TEMPO; o sujeito vira agente da passiva com "por" ou "de".' },
+            { p: 'Que verbos NÃO admitem voz passiva?', r: 'Intransitivos e transitivos indiretos — não têm objeto direto para promover a sujeito. "Chegou" e "precisa de ajuda" não convertem.' },
+            { p: 'Passiva sintética x índice de indeterminação: qual o teste?', r: 'Tente a passiva analítica. Se couber ("os pedidos foram analisados"), é apassivadora e o verbo concorda. Se não couber ("precisa-se de servidores"), é índice e fica no singular.' },
+            { p: 'Reflexivo x recíproco?', r: 'Reflexivo: o sujeito age sobre si mesmo ("feriu-se" = a si mesmo). Recíproco: sujeitos plurais agem um sobre o outro ("cumprimentaram-se").' },
+            { p: '"Ser + particípio" x "estar + particípio"?', r: 'Ser + particípio é voz passiva, exprime ação e admite agente ("foi fechada pelo servidor"). Estar + particípio é predicado nominal, exprime estado ("está fechada").' },
+          ],
+        },
+        {
+          id: 'port-b1-t2-s4',
+          nome: 'Discurso direto e indireto',
+          teoria: `
+## Discurso direto e discurso indireto
+
+São as formas de reproduzir a fala de alguém dentro de um texto. A banca cobra a **conversão entre eles** — que exige mexer em pessoa, tempo verbal, pronome, advérbio e pontuação ao mesmo tempo — e a **pontuação característica** de cada um.
+
+## As três formas
+
+**Discurso direto** reproduz a fala literalmente, com marcação gráfica:
+
+> O servidor disse: — Analisarei o processo hoje.
+
+**Discurso indireto** integra a fala à narração, subordinada a um verbo dicendi:
+
+> O servidor disse que analisaria o processo naquele dia.
+
+**Discurso indireto livre** funde os dois: a fala aparece sem verbo dicendi e sem marcação, misturada à narração.
+
+> O servidor olhou a pilha de processos. Analisaria tudo naquele dia?
+
+## Pontuação do discurso direto
+
+Três recursos, combináveis:
+
+| Recurso | Uso |
+|---|---|
+| **Dois-pontos** | anunciam a fala depois do verbo dicendi |
+| **Travessão** | abre a fala, geralmente em linha própria |
+| **Aspas** | delimitam a fala dentro do parágrafo |
+
+> Ele afirmou: — Não recebi o documento.
+> Ele afirmou: "Não recebi o documento."
+
+O **verbo dicendi** (dizer, afirmar, perguntar, responder, replicar) pode vir antes, no meio ou depois da fala. Intercalado ou posposto, isola-se por travessões ou vírgulas:
+
+> — Não recebi o documento — afirmou o servidor.
+
+## Conversão: o que muda
+
+Passar do direto ao indireto exige **cinco ajustes simultâneos**. É aqui que a banca planta o erro: acerta quatro e erra um.
+
+### 1. Pessoa
+
+A 1ª pessoa da fala vira 3ª: *— **Eu** analisei* → *disse que **ele** analisara*.
+
+### 2. Tempo verbal
+
+| Discurso direto | Discurso indireto |
+|---|---|
+| Presente | Pretérito imperfeito |
+| Pretérito perfeito | Pretérito **mais-que-perfeito** |
+| Futuro do presente | Futuro do **pretérito** |
+| Imperativo | Pretérito imperfeito do **subjuntivo** |
+
+> — **Analiso** o caso. → Disse que **analisava** o caso.
+> — **Analisei** o caso. → Disse que **analisara** (ou tinha analisado) o caso.
+> — **Analisarei** o caso. → Disse que **analisaria** o caso.
+> — **Analise** o caso. → Pediu que **analisasse** o caso.
+
+### 3. Pronomes demonstrativos
+
+*Este* e *esse* passam a *aquele*: *— Quero **este** processo* → *disse que queria **aquele** processo*.
+
+### 4. Advérbios
+
+| Direto | Indireto |
+|---|---|
+| aqui | ali |
+| hoje | naquele dia |
+| ontem | no dia anterior |
+| amanhã | no dia seguinte |
+| agora | então |
+
+### 5. Pontuação
+
+Somem os dois-pontos, o travessão e as aspas. Entra a conjunção integrante **que** — ou **se**, quando a fala é uma pergunta.
+
+## Interrogativas
+
+Pergunta direta vira indireta introduzida por **se** (ou pelo pronome interrogativo), e **perde o ponto de interrogação**:
+
+> — **Você recebeu** o documento? → Perguntou **se** ele **havia recebido** o documento.
+> — **Quando** sai o resultado? → Perguntou **quando** sairia o resultado.
+
+Manter o ponto de interrogação no discurso indireto é erro que a banca cobra.
+
+## Discurso indireto livre
+
+Não tem verbo dicendi nem conjunção, mas conserva marcas da fala — interjeições, interrogações, exclamações e a subjetividade do personagem — dentro da voz do narrador. Reconhece-se pela **mistura de vozes**: a 3ª pessoa da narração com a expressividade do discurso direto.
+`,
+          questoes: [
+            {
+              id: 'port-b1-t2-s4-q1',
+              enunciado: 'Na conversão do discurso direto para o indireto, uma forma verbal no presente do indicativo passa ao pretérito imperfeito do indicativo.',
+              certa: true,
+              explicacao: 'A subordinação a um verbo dicendi no passado desloca toda a referência temporal: "— Analiso o caso" torna-se "Disse que analisava o caso".',
+              variacoes: [
+                { enunciado: 'Na passagem ao discurso indireto, o pretérito perfeito do discurso direto é mantido inalterado.', certa: false, explicacao: 'O pretérito perfeito passa ao mais-que-perfeito: "— Analisei o caso" torna-se "Disse que analisara (ou tinha analisado) o caso".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q2',
+              enunciado: 'Uma forma verbal no futuro do presente, ao passar para o discurso indireto, assume o futuro do pretérito.',
+              certa: true,
+              explicacao: '"— Analisarei o processo" converte-se em "Disse que analisaria o processo". O futuro do pretérito expressa o futuro visto de um ponto passado.',
+              variacoes: [
+                { enunciado: 'O imperativo do discurso direto converte-se, no indireto, em presente do subjuntivo.', certa: false, explicacao: 'Com verbo dicendi no passado, o imperativo passa ao pretérito imperfeito do subjuntivo: "— Analise o caso" torna-se "Pediu que analisasse o caso".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q3',
+              enunciado: 'A conversão de uma interrogativa direta ao discurso indireto exige a supressão do ponto de interrogação.',
+              certa: true,
+              explicacao: 'No discurso indireto a pergunta deixa de ser formulada e passa a ser relatada, integrando-se à oração principal. "— Você recebeu?" torna-se "Perguntou se ele havia recebido", com ponto final.',
+              variacoes: [
+                { enunciado: 'Na conversão de "— Quando sai o resultado?" ao discurso indireto, emprega-se a conjunção "se": "Perguntou se sairia o resultado".', certa: false, explicacao: 'Quando a pergunta direta é introduzida por pronome ou advérbio interrogativo, ele é mantido no indireto: "Perguntou quando sairia o resultado". A conjunção "se" cabe apenas nas interrogativas totais, sem palavra interrogativa.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q4',
+              enunciado: 'Os dois-pontos, o travessão e as aspas são recursos característicos do discurso direto e desaparecem na conversão para o indireto.',
+              certa: true,
+              explicacao: 'A marcação gráfica sinaliza a reprodução literal da fala. No indireto, a fala é integrada sintaticamente por conjunção, dispensando qualquer marcação.',
+              variacoes: [
+                { enunciado: 'No discurso direto, o verbo dicendi só pode ocupar posição anterior à fala reproduzida.', certa: false, explicacao: 'O verbo dicendi pode vir antes, intercalado ou posposto à fala. Nas duas últimas posições, isola-se por travessões ou vírgulas: "— Não recebi o documento — afirmou o servidor".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q5',
+              enunciado: 'Na passagem ao discurso indireto, o pronome demonstrativo "este" costuma ser substituído por "aquele".',
+              certa: true,
+              explicacao: 'O demonstrativo de proximidade em relação ao falante perde essa ancoragem ao ser relatado, deslocando-se para o de distância: "— Quero este processo" torna-se "Disse que queria aquele processo".',
+              variacoes: [
+                { enunciado: 'Os advérbios de tempo e lugar permanecem inalterados na conversão do discurso direto para o indireto.', certa: false, explicacao: 'Eles se deslocam junto com o ponto de referência: "aqui" passa a "ali", "hoje" a "naquele dia", "ontem" a "no dia anterior" e "amanhã" a "no dia seguinte".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q6',
+              enunciado: 'A conversão do discurso direto para o indireto exige o ajuste da pessoa verbal, uma vez que a primeira pessoa da fala reproduzida passa à terceira.',
+              certa: true,
+              explicacao: 'No indireto quem fala é o narrador, não o personagem. "— Eu analisei o processo" torna-se "Disse que ele analisara o processo", com reflexo também nos pronomes possessivos.',
+              variacoes: [
+                { enunciado: 'Na conversão ao discurso indireto, o vocativo presente na fala reproduzida é mantido entre vírgulas.', certa: false, explicacao: 'O vocativo pressupõe interlocução direta e desaparece na conversão, podendo no máximo ser recuperado como objeto indireto do verbo dicendi: "Disse ao chefe que...".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q7',
+              enunciado: 'O discurso indireto livre caracteriza-se pela ausência de verbo dicendi e de conjunção integrante, mantendo, ainda assim, marcas da subjetividade do personagem.',
+              certa: true,
+              explicacao: 'É a fusão das duas vozes: a narração em terceira pessoa incorpora interrogações, exclamações e o ponto de vista do personagem, sem introdutor nem marcação gráfica.',
+              variacoes: [
+                { enunciado: 'O discurso indireto livre exige o emprego de aspas para delimitar a fala incorporada à narração.', certa: false, explicacao: 'A ausência de marcação gráfica é justamente a sua característica definidora. O uso de aspas configuraria discurso direto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q8',
+              enunciado: 'No discurso indireto, a fala reproduzida assume a função sintática de oração subordinada substantiva objetiva direta do verbo dicendi.',
+              certa: true,
+              explicacao: 'Em "Disse que analisaria o processo", a oração iniciada por "que" completa o verbo "dizer", que é transitivo direto. Substituindo-a por "isso", confirma-se a função de objeto direto.',
+              variacoes: [
+                { enunciado: 'Em "Perguntou se o laudo havia chegado", o vocábulo "se" é pronome apassivador.', certa: false, explicacao: 'Trata-se de conjunção subordinativa integrante, que introduz a oração subordinada substantiva objetiva direta correspondente à pergunta relatada.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q9',
+              enunciado: 'A reprodução da fala no discurso direto preserva a formulação original do falante, inclusive marcas de oralidade e expressividade.',
+              certa: true,
+              explicacao: 'É a característica que o distingue: o discurso direto cita literalmente, mantendo interjeições, ordem das palavras e registro. O indireto reformula a fala nas palavras do narrador.',
+              variacoes: [
+                { enunciado: 'A conversão ao discurso indireto preserva integralmente a expressividade da fala original.', certa: false, explicacao: 'A conversão subordina a fala à voz do narrador e tende a apagar interjeições, exclamações e marcas de oralidade. Preserva-se o conteúdo, não a expressividade.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s4-q10',
+              enunciado: 'Na conversão de "— Não recebi o documento, disse ele" para o discurso indireto, a forma adequada é "Ele disse que não recebera o documento".',
+              certa: true,
+              explicacao: 'A conversão aplica todos os ajustes: suprime a marcação gráfica, introduz a conjunção "que", desloca o pretérito perfeito ao mais-que-perfeito e mantém a terceira pessoa.',
+              variacoes: [
+                { enunciado: 'A conversão de "— Estarei aqui amanhã" ao discurso indireto resulta em "Disse que estaria aqui amanhã".', certa: false, explicacao: 'Além do ajuste do verbo, os advérbios precisam acompanhar o deslocamento do ponto de referência: "Disse que estaria ali no dia seguinte".' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Quais são os cinco ajustes da conversão direto → indireto?', r: 'Pessoa (1ª → 3ª), tempo verbal, pronomes demonstrativos (este → aquele), advérbios (hoje → naquele dia) e pontuação (some travessão/aspas, entra "que").' },
+            { p: 'Como os tempos se deslocam na conversão?', r: 'Presente → pretérito imperfeito; pretérito perfeito → mais-que-perfeito; futuro do presente → futuro do pretérito; imperativo → imperfeito do subjuntivo.' },
+            { p: 'Como fica uma pergunta no discurso indireto?', r: 'Perde o ponto de interrogação. Interrogativa total entra com "se"; com palavra interrogativa, ela é mantida ("Perguntou quando sairia").' },
+            { p: 'Qual a função sintática da fala no discurso indireto?', r: 'Oração subordinada substantiva objetiva direta do verbo dicendi — o "se" e o "que" que a introduzem são conjunções integrantes, não pronomes.' },
+            { p: 'Como reconhecer o discurso indireto livre?', r: 'Pela mistura de vozes: narração em 3ª pessoa carregando interrogações, exclamações e a subjetividade do personagem, sem verbo dicendi, conjunção ou marcação gráfica.' },
+          ],
+        },
+        {
+          id: 'port-b1-t2-s5',
           nome: 'Reescrita de frases',
           teoria: `
 ## Reescrita de frases
@@ -787,7 +1162,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
 `,
           questoes: [
             {
-              id: 'port-b1-t2-s3-q1',
+              id: 'port-b1-t2-s5-q1',
               enunciado: 'Em um item que propõe substituir "Embora o prazo tenha expirado, o pedido foi analisado" por "Porque o prazo expirou, o pedido foi analisado", a alteração preserva os sentidos originais do período.',
               certa: false,
               explicacao: 'A primeira construção é concessiva (contraste: o prazo expirou, mas ainda assim houve análise); a segunda é causal (a expiração motivou a análise). São relações lógicas opostas, de modo que o sentido não se preserva.',
@@ -796,7 +1171,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q2',
+              id: 'port-b1-t2-s5-q2',
               enunciado: 'A substituição de "Os segurados que apresentaram o laudo receberão o benefício" por "Os segurados, que apresentaram o laudo, receberão o benefício" mantém inalterado o sentido do período.',
               certa: false,
               explicacao: 'Sem vírgulas, a oração adjetiva é restritiva e delimita apenas os segurados que apresentaram o laudo. Com vírgulas, torna-se explicativa e passa a atribuir a apresentação do laudo a todos os segurados. O alcance da afirmação muda.',
@@ -805,7 +1180,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q3',
+              id: 'port-b1-t2-s5-q3',
               enunciado: 'A reescrita de "O perito avaliou o requerente" como "O requerente foi avaliado pelo perito" preserva a correção gramatical e o sentido original.',
               certa: true,
               explicacao: 'É a conversão regular da voz ativa em passiva analítica: o objeto direto passa a sujeito, o verbo assume "ser" no mesmo tempo (pretérito perfeito) e o sujeito original vira agente da passiva. Nada se altera.',
@@ -814,7 +1189,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q4',
+              id: 'port-b1-t2-s5-q4',
               enunciado: 'Em "Entregou-me o processo", a inserção do advérbio de negação, resultando em "Não entregou-me o processo", mantém a correção gramatical.',
               certa: false,
               explicacao: 'A negação é palavra atrativa e exige próclise. A forma correta é "Não me entregou o processo". Ainda que o sentido pretendido se mantenha, a reescrita cria erro de colocação pronominal.',
@@ -823,7 +1198,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q5',
+              id: 'port-b1-t2-s5-q5',
               enunciado: 'A substituição de "A maioria dos segurados apresentou recurso" por "Todos os segurados apresentaram recurso" preserva os sentidos do texto, uma vez que ambas as formas indicam pluralidade.',
               certa: false,
               explicacao: 'Trata-se de generalização indevida. "A maioria" designa parte do conjunto; "todos", a totalidade. A alteração do quantificador amplia o alcance da afirmação, e a pluralidade comum às duas formas não torna os sentidos equivalentes.',
@@ -832,7 +1207,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q6',
+              id: 'port-b1-t2-s5-q6',
               enunciado: 'A reescrita de "Ao receber o laudo, o servidor deferiu o pedido" como "Quando recebeu o laudo, o servidor deferiu o pedido" preserva a correção gramatical e o valor circunstancial original.',
               certa: true,
               explicacao: 'A oração reduzida de infinitivo com valor temporal foi desenvolvida em oração temporal iniciada por "quando", mantendo-se o mesmo valor circunstancial, o mesmo sujeito e a correção gramatical.',
@@ -841,7 +1216,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q7',
+              id: 'port-b1-t2-s5-q7',
               enunciado: 'A substituição de "O relator assistiu à sessão" por "O relator assistiu a sessão" preserva a correção gramatical e o sentido original do período.',
               certa: false,
               explicacao: 'No sentido de presenciar, "assistir" é transitivo indireto e exige a preposição "a", com crase diante do artigo feminino. Sem o acento grave, além do problema de regência, o verbo passaria a admitir a leitura de "prestar assistência à sessão".',
@@ -850,7 +1225,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q8',
+              id: 'port-b1-t2-s5-q8',
               enunciado: 'A reescrita de "Foram apresentados os documentos exigidos" como "Foi apresentado os documentos exigidos" mantém a correção gramatical, dado que o verbo pode concordar com o termo mais próximo.',
               certa: false,
               explicacao: 'O sujeito é "os documentos exigidos", que está posposto ao verbo mas continua sendo o sujeito e, portanto, comanda a concordância no plural. A concordância com o termo mais próximo não se aplica ao sujeito posposto.',
@@ -859,7 +1234,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q9',
+              id: 'port-b1-t2-s5-q9',
               enunciado: 'A substituição de "Quando o gestor decidiu, o processo avançou" por "Com a decisão, o processo avançou" preserva integralmente as informações do período.',
               certa: false,
               explicacao: 'A nominalização condensa a oração, mas apaga o agente: na segunda versão não se recupera quem decidiu. Houve perda de informação, ainda que a relação circunstancial se mantenha.',
@@ -868,7 +1243,7 @@ Leia a proposta e pergunte, nesta ordem: mudou a relação lógica? mudou quem p
               ],
             },
             {
-              id: 'port-b1-t2-s3-q10',
+              id: 'port-b1-t2-s5-q10',
               enunciado: 'A substituição da conjunção "mas" por "porém" em "O prazo era curto, mas o servidor concluiu a análise" preserva a correção gramatical e os sentidos do período.',
               certa: true,
               explicacao: '"Mas" e "porém" são conjunções coordenativas adversativas equivalentes. A troca dentro do mesmo grupo mantém a relação de oposição e a correção, sendo necessário apenas observar a pontuação quando "porém" vier deslocado.',

@@ -745,6 +745,198 @@ Atenção aos demonstrativos: *este* aponta para o que vem **depois** ou para o 
             { p: 'O que são modalizadores e por que importam?', r: 'Graduam o comprometimento do autor: certamente (adesão total), talvez/possivelmente (parcial), deve/precisa (obrigação). Trocar um por outro altera o sentido do texto.' },
           ],
         },
+        {
+          id: 'port-b2-t3-s3',
+          nome: 'Coesão e coerência',
+          teoria: `
+## Coesão e coerência
+
+São dois conceitos distintos que a banca costuma embaralhar de propósito.
+
+**Coesão** é a amarração **de superfície**: os elementos linguísticos que ligam uma parte do texto à outra — conectivos, pronomes, sinônimos, elipses.
+
+**Coerência** é a amarração **de sentido**: a relação lógica entre as ideias, que faz o texto formar um todo compreensível.
+
+Um texto pode ser **coeso e incoerente** (bem amarrado gramaticalmente, dizendo um absurdo) e pode ser **coerente com pouca coesão** (compreensível mesmo sem conectivos explícitos). Item que trate os dois como sinônimos está errado.
+
+## Coesão referencial
+
+Retoma um termo já dito (ou antecipa o que virá) sem repeti-lo.
+
+**Anáfora** aponta para trás — o mais comum:
+> O segurado protocolou o pedido. **Ele** aguarda a análise.
+
+**Catáfora** aponta para frente:
+> Diga-se **isto**: o prazo venceu.
+
+**Demonstrativos** são o campo de armadilha:
+
+| Pronome | Aponta para |
+|---|---|
+| **este / isto** | o que vem **depois**, ou o termo mais **próximo** |
+| **esse / isso** | o que já foi dito, próximo ao interlocutor |
+| **aquele / aquilo** | o termo mais **distante**, ou o primeiro de dois mencionados |
+
+> Recebi o laudo e o parecer: **aquele** é técnico, **este** é conclusivo.
+> (*aquele* = laudo, o primeiro; *este* = parecer, o último)
+
+**Elipse** é a coesão por omissão do termo recuperável:
+> O servidor analisou o pedido e [ ] emitiu o parecer.
+
+**O teste de qualquer item de referenciação:** substitua o pronome pelo suposto antecedente e releia. Se a frase continuar coerente e gramatical, a retomada procede.
+
+Atenção ao uso de **"o mesmo"** como pronome de retomada (*o servidor entrou e o mesmo assinou*): é construção condenada pela norma culta e aparece em item como exemplo de emprego inadequado.
+
+## Coesão lexical
+
+Retoma por vocabulário, não por pronome:
+
+| Recurso | Exemplo |
+|---|---|
+| **Repetição** | o benefício... o benefício |
+| **Sinonímia** | o benefício... o auxílio |
+| **Hiperonímia** | a aposentadoria... o benefício (termo mais geral) |
+| **Hiponímia** | o benefício... a aposentadoria (termo mais específico) |
+| **Nominalização** | decidiu... a decisão |
+
+**Sinonímia é contextual.** Duas palavras sinônimas no dicionário podem não ser intercambiáveis na frase, por diferença de registro, de carga valorativa ou de regência. Todo item de "substituição mantendo os sentidos" se decide aí.
+
+## Coesão sequencial: a classificação dos conectivos
+
+É o conteúdo mais cobrado do assunto. A banca troca um conectivo por outro e pergunta se o sentido se mantém — e só se mantém dentro do **mesmo grupo semântico**.
+
+| Relação | Conectivos | O que marca |
+|---|---|---|
+| **Causal** | porque, já que, uma vez que, visto que, como (inicial) | o motivo |
+| **Consecutiva** | de modo que, tão... que, tanto que | o resultado |
+| **Concessiva** | embora, ainda que, apesar de, conquanto, se bem que | quebra de expectativa |
+| **Condicional** | se, caso, desde que, contanto que, salvo se | a hipótese |
+| **Temporal** | quando, assim que, logo que, enquanto, antes que | o tempo |
+| **Conclusiva** | logo, portanto, assim, por conseguinte, pois (posposto) | a conclusão |
+| **Explicativa** | pois (anteposto), porque, que | a justificativa |
+| **Adversativa** | mas, porém, contudo, todavia, entretanto, no entanto | a oposição |
+| **Final** | para que, a fim de que | o objetivo |
+| **Proporcional** | à medida que, ao passo que, quanto mais | a simultaneidade gradual |
+
+## As trocas que a banca planta
+
+**Causa ↔ concessão.** A campeã. *Porque chovia, saiu* (motivo) ≠ *Embora chovesse, saiu* (contraste).
+
+**Conclusão ↔ explicação.** A conclusiva decorre do que veio antes; a explicativa justifica o que se afirmou. *Está tarde; portanto, volte* ≠ *Volte, pois está tarde.*
+
+**Adversidade ↔ concessão.** Ambas marcam contraste, mas a adversativa liga orações **independentes** (coordenação) e a concessiva **subordina** uma à outra. Trocar *mas* por *embora* exige reorganizar o período inteiro.
+
+**"À medida que" × "na medida em que".** A primeira é proporcional (*à medida que os prazos venciam, os pedidos se acumulavam*); a segunda é causal (*na medida em que faltavam provas, o pedido foi negado*). A grafia "à medida em que" não existe.
+
+**Adversativo deslocado.** *Porém*, *contudo* e *no entanto* podem ser intercalados, e aí exigem vírgulas: *O prazo era curto; o servidor, **contudo**, concluiu a análise.*
+
+## Coerência: o que quebra
+
+- **Contradição** entre partes do texto.
+- **Progressão nula** — o texto repete sem avançar.
+- **Relação lógica inadequada** — o conectivo anuncia uma relação que o conteúdo não sustenta.
+- **Ruptura de referência** — o pronome não encontra antecedente recuperável.
+`,
+          questoes: [
+            {
+              id: 'port-b2-t3-s3-q1',
+              enunciado: 'Coesão e coerência são fenômenos distintos: a primeira diz respeito à articulação linguística de superfície, e a segunda, à relação lógica entre as ideias do texto.',
+              certa: true,
+              explicacao: 'A coesão se realiza por conectivos, pronomes, sinônimos e elipses; a coerência é a compatibilidade de sentido entre as partes. Um texto pode ser coeso e ainda assim incoerente.',
+              variacoes: [
+                { enunciado: 'Um texto coeso é necessariamente coerente, pois a articulação entre as partes garante a unidade de sentido.', certa: false, explicacao: 'São planos independentes. Um texto pode encadear perfeitamente orações e ainda assim veicular contradição ou absurdo, sendo coeso e incoerente.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q2',
+              enunciado: 'A substituição da conjunção "porque" por "embora" em um período preserva a relação lógica original, uma vez que ambas introduzem oração subordinada adverbial.',
+              certa: false,
+              explicacao: 'Pertencer à mesma classe não basta: "porque" é causal e apresenta motivo; "embora" é concessiva e marca quebra de expectativa. A troca inverte a relação lógica.',
+              variacoes: [
+                { enunciado: 'A substituição de "uma vez que" por "visto que" preserva a relação de causa estabelecida no período.', certa: true, explicacao: 'Ambas são conjunções causais e pertencem ao mesmo grupo semântico, de modo que a permuta mantém a relação e a correção.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q3',
+              enunciado: 'A conjunção "pois" estabelece relação conclusiva quando posposta ao verbo e relação explicativa quando anteposta.',
+              certa: true,
+              explicacao: 'Em "Está tarde; volte, pois", a posposição marca conclusão. Em "Volte, pois está tarde", a anteposição justifica o que se afirmou, configurando explicação.',
+              variacoes: [
+                { enunciado: 'As conjunções "portanto" e "porque" são intercambiáveis, pois ambas relacionam causa e consequência.', certa: false, explicacao: '"Portanto" é conclusiva e introduz a consequência; "porque" é causal ou explicativa e introduz o motivo. Elas ocupam pontas opostas da mesma relação e não se permutam.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q4',
+              enunciado: 'A locução "à medida que" estabelece relação proporcional, ao passo que "na medida em que" estabelece relação causal.',
+              certa: true,
+              explicacao: '"À medida que" indica simultaneidade gradual entre dois processos; "na medida em que" equivale a "uma vez que". A forma "à medida em que" não existe na norma padrão.',
+              variacoes: [
+                { enunciado: 'A locução "ao passo que" estabelece relação de finalidade entre as orações que liga.', certa: false, explicacao: '"Ao passo que" marca proporção ou contraste, não finalidade. A relação de objetivo é introduzida por "para que" e "a fim de que".' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q5',
+              enunciado: 'As conjunções adversativas ligam orações sintaticamente independentes, ao contrário das concessivas, que subordinam uma oração à outra.',
+              certa: true,
+              explicacao: '"Mas" e "porém" são coordenativas e articulam orações de mesmo nível; "embora" e "ainda que" são subordinativas. Por isso a troca entre elas exige reorganizar o período, não apenas substituir a palavra.',
+              variacoes: [
+                { enunciado: 'A substituição de "O prazo era curto, mas o servidor concluiu a análise" por "Embora o prazo fosse curto, o servidor concluiu a análise" preserva o sentido de contraste e a correção gramatical.', certa: true, explicacao: 'A reorganização foi feita corretamente: a coordenada adversativa passou a subordinada concessiva, com o ajuste do modo verbal exigido, e o contraste se mantém.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q6',
+              enunciado: 'Em um período, o emprego de "contudo" em posição intercalada exige que o conectivo seja isolado por vírgulas.',
+              certa: true,
+              explicacao: 'Adversativos deslocados do início da oração são intercalados e pedem vírgulas: "O servidor, contudo, concluiu a análise". A ausência das vírgulas contraria a norma padrão.',
+              variacoes: [
+                { enunciado: 'A conjunção "mas", assim como "porém", pode ser deslocada para o interior da oração que introduz.', certa: false, explicacao: '"Mas" é a única adversativa que não admite deslocamento: ocupa obrigatoriamente a posição inicial da oração. "Porém", "contudo" e "todavia" podem ser intercalados.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q7',
+              enunciado: 'Os pronomes demonstrativos "este" e "aquele", empregados na retomada de dois termos anteriormente mencionados, referem-se, respectivamente, ao último e ao primeiro.',
+              certa: true,
+              explicacao: 'É a regra da retomada ordenada: "este" recupera o termo mais próximo, ou seja, o último citado; "aquele", o mais distante, isto é, o primeiro.',
+              variacoes: [
+                { enunciado: 'O pronome demonstrativo "isto" é empregado exclusivamente em referência anafórica, retomando termo já mencionado.', certa: false, explicacao: '"Isto" admite emprego catafórico, anunciando o que ainda será dito: "Diga-se isto: o prazo venceu". A anáfora é típica de "isso".' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q8',
+              enunciado: 'A elipse constitui recurso coesivo, uma vez que a omissão de um termo recuperável pelo contexto mantém a articulação entre as orações.',
+              certa: true,
+              explicacao: 'Em "O servidor analisou o pedido e emitiu o parecer", o sujeito da segunda oração está elíptico e é recuperado pela primeira, o que caracteriza coesão por omissão.',
+              variacoes: [
+                { enunciado: 'A expressão "o mesmo", empregada para retomar um substantivo já mencionado, é recurso coesivo recomendado pela norma culta.', certa: false, explicacao: 'Construções como "o servidor entrou e o mesmo assinou" são condenadas pela norma culta. A retomada adequada se faz por pronome pessoal, demonstrativo ou elipse.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q9',
+              enunciado: 'A retomada de um termo por hiperônimo constitui recurso de coesão lexical, como ocorre no emprego de "benefício" para retomar "aposentadoria".',
+              certa: true,
+              explicacao: 'O hiperônimo é o termo de sentido mais geral que abrange o anterior. Sua utilização evita a repetição e mantém a cadeia referencial, caracterizando coesão lexical.',
+              variacoes: [
+                { enunciado: 'A substituição de um termo por sinônimo preserva sempre o sentido do texto, uma vez que sinônimos são palavras de significado equivalente.', certa: false, explicacao: 'A sinonímia é contextual: termos equivalentes no dicionário podem divergir em registro, carga valorativa ou regência, de modo que a substituição nem sempre preserva o sentido.' },
+              ],
+            },
+            {
+              id: 'port-b2-t3-s3-q10',
+              enunciado: 'A verificação de um item sobre referenciação pode ser feita substituindo-se o pronome pelo suposto antecedente e avaliando-se a coerência e a correção do resultado.',
+              certa: true,
+              explicacao: 'É o procedimento objetivo para julgar retomadas: se a frase permanecer coerente e gramatical após a substituição, a referência proposta procede; caso contrário, o item está errado.',
+              variacoes: [
+                { enunciado: 'A ruptura da cadeia referencial, em que um pronome não encontra antecedente recuperável no texto, configura problema de coesão, sem afetar a coerência.', certa: false, explicacao: 'A ruptura referencial compromete os dois planos: além de quebrar a amarração de superfície, impede a construção do sentido, afetando também a coerência.' },
+              ],
+            },
+          ],
+          flashcards: [
+            { p: 'Coesão x coerência?', r: 'Coesão é a amarração de superfície (conectivos, pronomes, sinônimos, elipse). Coerência é a amarração de sentido. Um texto pode ser coeso e incoerente.' },
+            { p: 'Este, esse e aquele: para onde apontam?', r: 'Este/isto: o que vem depois ou o termo mais próximo (o último citado). Esse/isso: o que já foi dito. Aquele/aquilo: o mais distante (o primeiro citado).' },
+            { p: 'Quais trocas de conectivo mais aparecem em prova?', r: 'Causa por concessão (porque ≠ embora), conclusão por explicação (portanto ≠ pois anteposto) e adversidade por concessão (mas coordena; embora subordina).' },
+            { p: '"À medida que" x "na medida em que"?', r: 'À medida que = proporcional (simultaneidade gradual). Na medida em que = causal (equivale a "uma vez que"). "À medida em que" não existe.' },
+            { p: 'Quais são os recursos de coesão lexical?', r: 'Repetição, sinonímia, hiperonímia (termo geral), hiponímia (termo específico) e nominalização. A sinonímia é sempre contextual, nunca automática.' },
+          ],
+        },
       ],
     },
     {

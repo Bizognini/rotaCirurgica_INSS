@@ -61,7 +61,7 @@ export default [
     explicacao: 'O segundo parágrafo apresenta a ausência de proteção social justamente como confirmação da precarização do trabalho no período mencionado. A função argumentativa dos dados está corretamente identificada.',
   },
   {
-    ...port, ...apoio1, id: 'r2022-004', numeroOriginal: 4, subtopicoId: 'port-b1-t2-s3', topicoId: 'port-b1-t2',
+    ...port, ...apoio1, id: 'r2022-004', numeroOriginal: 4, subtopicoId: 'port-b1-t2-s5', topicoId: 'port-b1-t2',
     enunciado: 'Estariam mantidos os sentidos e a correção gramatical do texto caso se substituísse, no primeiro período do texto, o segmento “em comparação com as” por quando comparadas as.',
     certa: false,
     explicacao: 'A substituição altera a estrutura sintática e prejudica a correção: "quando comparadas as" introduz oração reduzida cuja concordância e regência não se ajustam ao período original.',
