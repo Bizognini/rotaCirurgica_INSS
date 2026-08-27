@@ -115,6 +115,51 @@ Definido (*o, a, os, as*) ou indefinido (*um, uma, uns, umas*). Parece inofensiv
                 { enunciado: 'O substantivo coletivo "junta", por designar um conjunto de pessoas, exige o verbo no plural, como em "A junta médica decidiram".', certa: false, explicacao: 'O coletivo é singular na forma e comanda a concordância no singular: "A junta médica decidiu". O plural só se admite quando o coletivo vem especificado e distante do verbo.' },
               ],
             },
+            {
+              id: 'port-b1-t1-s1-q6',
+              enunciado: 'Os substantivos "cal", "cútis" e "omoplata" são femininos, ao passo que "dó", "clã" e "eclipse" são masculinos.',
+              certa: true,
+              explicacao: 'São casos de gênero que a fala popular inverte: diz-se "a cal", "a cútis", "a omoplata", "o dó", "o clã" e "o eclipse". A banca explora justamente o desvio da linguagem cotidiana.',
+              variacoes: [
+                { enunciado: 'O vocábulo "grama", no sentido de unidade de massa, é feminino, como em "duzentas gramas de farinha".', certa: false, explicacao: 'Como unidade de massa, "grama" é masculino: "duzentos gramas". A forma feminina designa a relva, o gramado.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q7',
+              enunciado: 'A expressão "todo o processo" indica a integralidade do processo, enquanto "todo processo" equivale a "qualquer processo".',
+              certa: true,
+              explicacao: 'A presença do artigo altera o sentido: com artigo, "todo" significa inteiro; sem artigo, tem valor de generalização, equivalendo a "cada" ou "qualquer".',
+              variacoes: [
+                { enunciado: 'O emprego do artigo definido antes de pronome possessivo, como em "o meu processo", é obrigatório na norma padrão.', certa: false, explicacao: 'O emprego é facultativo: tanto "meu processo" quanto "o meu processo" são corretos. A obrigatoriedade não existe.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q8',
+              enunciado: 'Nos adjetivos pátrios compostos, como "luso-brasileiro", apenas o último elemento sofre flexão de gênero e número.',
+              certa: true,
+              explicacao: 'O primeiro elemento assume forma reduzida e invariável: "luso-brasileiros", "afro-descendentes", "hispano-americanas". A flexão recai só sobre o último.',
+              variacoes: [
+                { enunciado: 'A locução adjetiva "de bispo" corresponde ao adjetivo "episcopal", assim como "do fígado" corresponde a "hepático".', certa: true, explicacao: 'São equivalências de locução adjetiva e adjetivo correspondente, cobradas em itens de vocabulário e de substituição.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q9',
+              enunciado: 'As formas "paupérrimo", "facílimo" e "nobilíssimo" são superlativos absolutos sintéticos de "pobre", "fácil" e "nobre".',
+              certa: true,
+              explicacao: 'São superlativos eruditos, formados a partir do radical latino. As formas "pobríssimo" e "facilíssimo", embora ocorram na fala, não são as consagradas pela norma.',
+              variacoes: [
+                { enunciado: 'O comparativo de superioridade do adjetivo "grande" é "mais grande", forma admitida pela norma padrão em qualquer contexto.', certa: false, explicacao: 'A forma é "maior". Admite-se "mais grande" apenas na comparação de duas qualidades de um mesmo ser: "Ele é mais grande que forte".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s1-q10',
+              enunciado: 'Substantivos comuns de dois gêneros, como "personagem" e "estudante", distinguem o gênero pelo artigo, ao passo que os sobrecomuns, como "cônjuge" e "vítima", mantêm um só gênero.',
+              certa: true,
+              explicacao: 'Nos comuns de dois gêneros, o artigo distingue: "o estudante" e "a estudante". Nos sobrecomuns, o gênero é fixo e não acompanha o sexo do referente: "a vítima" e "o cônjuge", para homem ou mulher.',
+              variacoes: [
+                { enunciado: 'O plural de "sem-teto" e "sem-terra" é formado pela flexão do segundo elemento, resultando em "os sem-tetos" e "os sem-terras".', certa: false, explicacao: 'Compostos iniciados pela preposição "sem" permanecem invariáveis: "os sem-teto", "os sem-terra". A pluralização é marcada apenas pelo artigo.' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Quais classes são variáveis?', r: 'Substantivo, artigo, adjetivo, numeral, pronome e verbo. Invariáveis: advérbio, preposição, conjunção e interjeição.' },
@@ -226,6 +271,51 @@ Infinitivo, gerúndio e particípio. O **infinitivo flexionado** aparece em item
               explicacao: 'O futuro do subjuntivo ("tiver") correlaciona-se com o futuro do presente ("receberá"). É a correlação exigida para hipótese de realização possível.',
               variacoes: [
                 { enunciado: 'Na frase "Se eu ver o processo, aviso o chefe", a forma verbal empregada após "se" está correta.', certa: false, explicacao: 'O futuro do subjuntivo de "ver" é "vir": "Se eu vir o processo". A forma "ver" é infinitivo e não cabe nessa posição — erro que a banca planta com frequência, pela confusão com o verbo "vir".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q6',
+              enunciado: 'O verbo "reaver" é defectivo e só admite as formas em que o verbo "haver" apresenta a letra "v", sendo inexistente a forma "reavemos" no presente do indicativo.',
+              certa: false,
+              explicacao: 'A regra é correta, mas o exemplo está trocado: "reavemos" é justamente uma das formas existentes, pois "haver" apresenta "havemos". Inexistentes são "reavejo" e "reaveja".',
+              variacoes: [
+                { enunciado: 'O verbo "falir" é defectivo e não se conjuga na primeira pessoa do singular do presente do indicativo.', certa: true, explicacao: '"Falir" só admite as formas arrizotônicas: falimos, falis. As formas de primeira pessoa do singular no presente e todo o presente do subjuntivo não existem.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q7',
+              enunciado: 'O verbo "requerer" não segue integralmente a conjugação de "querer", razão pela qual a forma correta no pretérito perfeito é "requereu".',
+              certa: true,
+              explicacao: 'Apesar da semelhança gráfica, "requerer" é regular nesse ponto: "ele requereu", "se ele requeresse". As formas "requis" e "requisesse", decalcadas de "querer", não existem.',
+              variacoes: [
+                { enunciado: 'O verbo "intervir" conjuga-se como "ver", de modo que a forma correta no pretérito perfeito é "interviu".', certa: false, explicacao: '"Intervir" é derivado de "vir", não de "ver": "ele interveio", "quando ele intervier". A forma "interviu" não existe.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q8',
+              enunciado: 'A forma "pôs", do verbo "pôr", recebe acento circunflexo por tratar-se da terceira pessoa do singular do pretérito perfeito.',
+              certa: true,
+              explicacao: 'O acento distingue a forma verbal do monossílabo átono e integra a grafia consagrada: "ele pôs", "se eu puser", "quando ele puser".',
+              variacoes: [
+                { enunciado: 'Os verbos derivados de "pôr", como "propor" e "compor", mantêm o acento circunflexo no infinitivo.', certa: false, explicacao: 'Apenas "pôr" é acentuado no infinitivo, para distinguir-se da preposição "por". Os derivados são oxítonos terminados em "-or" e não recebem acento: "propor", "compor", "dispor".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q9',
+              enunciado: 'Com os auxiliares "ter" e "haver" emprega-se o particípio regular, ao passo que com "ser" e "estar" emprega-se o irregular.',
+              certa: true,
+              explicacao: 'É a regra dos particípios duplos: "tinha aceitado" e "havia entregado", mas "foi aceito" e "está entregue". A troca entre eles é erro recorrente em prova.',
+              variacoes: [
+                { enunciado: 'A construção "O requerimento tinha sido aceito pela chefia" contraria a norma padrão, uma vez que "aceito" é particípio irregular.', certa: false, explicacao: 'O auxiliar imediatamente anterior ao particípio é "ser" ("sido"), e não "ter". Diante de "ser", emprega-se corretamente a forma irregular "aceito".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s2-q10',
+              enunciado: 'O infinitivo flexiona-se quando possui sujeito próprio, distinto do sujeito da oração principal.',
+              certa: true,
+              explicacao: 'Em "É bom os servidores saberem disso", o infinitivo tem sujeito próprio e se flexiona. Integrando locução verbal com o mesmo sujeito, permanece invariável: "Eles devem saber".',
+              variacoes: [
+                { enunciado: 'O imperativo negativo deriva do presente do indicativo, ao passo que o afirmativo deriva do presente do subjuntivo.', certa: false, explicacao: 'A relação é a inversa: o imperativo negativo deriva integralmente do presente do subjuntivo, e o afirmativo, do presente do indicativo, salvo nas segundas pessoas, que perdem o "s" final.' },
               ],
             },
           ],
@@ -348,6 +438,51 @@ Nunca se usa ênclise com verbo no futuro sem mesóclise: *entregará-me* é err
                 { enunciado: 'Em "Não me disseram o resultado", a colocação do pronome poderia ser alterada para "Não disseram-me o resultado" sem prejuízo da correção.', certa: false, explicacao: 'O advérbio de negação é palavra atrativa e torna a próclise obrigatória. A ênclise após "não" contraria a norma padrão.' },
               ],
             },
+            {
+              id: 'port-b1-t1-s3-q6',
+              enunciado: 'A mesóclise é empregada com verbos no futuro do presente ou do pretérito, desde que não haja palavra atrativa antes do verbo.',
+              certa: true,
+              explicacao: 'Em "far-se-á" e "dir-lhe-ia", o pronome se intercala ao verbo. Havendo palavra atrativa, a próclise prevalece: "não se fará", "quando se diria".',
+              variacoes: [
+                { enunciado: 'A construção "Entregará-me o documento amanhã" está de acordo com a norma padrão.', certa: false, explicacao: 'Não se admite ênclise com verbo no futuro. A forma correta é a mesóclise: "Entregar-me-á o documento amanhã".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q7',
+              enunciado: 'Após formas verbais terminadas em "-r", "-s" ou "-z", o pronome oblíquo assume as formas "-lo", "-la", "-los", "-las", com a supressão da consoante final do verbo.',
+              certa: true,
+              explicacao: 'Assim, "analisar + o" resulta em "analisá-lo" e "fez + o", em "fê-lo". A consoante cai e o verbo recebe acento quando necessário.',
+              variacoes: [
+                { enunciado: 'Na frase "Os servidores fizeram-o sem demora", a forma pronominal está corretamente empregada.', certa: false, explicacao: 'Após forma verbal terminada em "-m", o pronome assume a forma nasal "-no": "fizeram-no". O mesmo ocorre após "-ão" e "-õe".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q8',
+              enunciado: 'Depois de preposição, emprega-se o pronome oblíquo tônico, como em "entre mim e ti".',
+              certa: true,
+              explicacao: 'A preposição "entre" exige oblíquo tônico. A construção "entre eu e tu" contraria a norma padrão, por empregar pronomes retos em posição de complemento.',
+              variacoes: [
+                { enunciado: 'O pronome "consigo" pode ser empregado em referência ao interlocutor, como em "Preciso falar consigo sobre o processo".', certa: false, explicacao: '"Consigo" é reflexivo e remete ao próprio sujeito da oração. Para o interlocutor, emprega-se "com você" ou "convosco": "Preciso falar com você".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q9',
+              enunciado: 'O pronome possessivo "seu" pode gerar ambiguidade, desfeita pelo emprego de "dele" ou "dela".',
+              certa: true,
+              explicacao: 'Em "O chefe conversou com o servidor sobre seu relatório", não se sabe de quem é o relatório. A substituição por "o relatório dele" ou "o relatório deste" resolve a indeterminação.',
+              variacoes: [
+                { enunciado: 'Os pronomes de tratamento, como "Vossa Senhoria", exigem os verbos e pronomes na segunda pessoa, por se dirigirem ao interlocutor.', certa: false, explicacao: 'Embora se dirijam ao interlocutor, os pronomes de tratamento exigem concordância na terceira pessoa: "Vossa Senhoria apresentou seu parecer".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s3-q10',
+              enunciado: 'O pronome indefinido "algum", quando posposto ao substantivo, assume valor negativo, equivalendo a "nenhum".',
+              certa: true,
+              explicacao: 'Em "Não havia razão alguma para o indeferimento", a posposição confere valor negativo enfático. Anteposto, o sentido é afirmativo: "alguma razão".',
+              variacoes: [
+                { enunciado: 'O pronome relativo "o qual" pode substituir "que" para desfazer ambiguidade quanto ao antecedente.', certa: true, explicacao: 'Por flexionar-se em gênero e número, "o qual" identifica o antecedente com precisão: "a irmã do servidor, a qual chegou" deixa claro que quem chegou foi a irmã.' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Regras do pronome "cujo"?', r: 'Indica posse (= do qual), concorda com o termo posterior e NUNCA vem seguido de artigo.' },
@@ -468,6 +603,51 @@ Circunstâncias: tempo, lugar, modo, intensidade, negação, afirmação, dúvid
                 { enunciado: 'A preposição "com", em "tremia com o frio", exprime circunstância de companhia.', certa: false, explicacao: 'No contexto, "com" exprime causa: o frio é o motivo do tremor. A relação de companhia ocorre em construções como "saiu com o colega".' },
               ],
             },
+            {
+              id: 'port-b1-t1-s4-q6',
+              enunciado: 'A grafia "senão" corresponde a "caso contrário" ou "a não ser", ao passo que "se não" equivale a "caso não".',
+              certa: true,
+              explicacao: 'Compare: "Estude, senão será reprovado" (caso contrário) e "Se não estudar, será reprovado" (caso não estude). A separação depende da possibilidade de intercalar termos entre "se" e "não".',
+              variacoes: [
+                { enunciado: 'O vocábulo "tampouco" equivale a "muito pouco", ao passo que "tão pouco" significa "também não".', certa: false, explicacao: 'Os sentidos estão invertidos: "tampouco" significa "também não"; "tão pouco" indica quantidade reduzida, como em "Dormiu tão pouco que adoeceu".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s4-q7',
+              enunciado: 'A locução "ao encontro de" indica aproximação ou concordância, ao passo que "de encontro a" indica choque ou oposição.',
+              certa: true,
+              explicacao: '"A proposta veio ao encontro dos interesses dos servidores" indica convergência; "A proposta veio de encontro aos interesses" indica conflito. A troca inverte completamente o sentido.',
+              variacoes: [
+                { enunciado: 'A expressão "a par" significa "em pé de igualdade", ao passo que "ao par" significa "informado".', certa: false, explicacao: 'Os sentidos estão invertidos: "a par" significa informado, ciente; "ao par" refere-se à equivalência entre valores cambiais.' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s4-q8',
+              enunciado: 'Em referência a tempo já decorrido, emprega-se "há", forma do verbo haver, e não a preposição "a".',
+              certa: true,
+              explicacao: '"Trabalha no INSS há dois anos" indica tempo transcorrido. A preposição "a" cabe em referência a tempo futuro ou a distância: "Daqui a dois anos", "a dez quilômetros".',
+              variacoes: [
+                { enunciado: 'A construção "Há dois anos atrás o benefício foi concedido" está de acordo com a norma padrão.', certa: false, explicacao: 'Há redundância: "há" já indica tempo decorrido, tornando "atrás" desnecessário. Escreve-se "Há dois anos" ou "Dois anos atrás".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s4-q9',
+              enunciado: 'O vocábulo "que" pode funcionar como conjunção integrante, pronome relativo ou partícula expletiva, conforme o contexto.',
+              certa: true,
+              explicacao: 'Em "Sei que virá" é conjunção integrante; em "O processo que analisei" é pronome relativo; em "Quase que não chegou" é expletivo, podendo ser suprimido sem prejuízo.',
+              variacoes: [
+                { enunciado: 'Na frase "Foi o chefe que assinou o documento", a expressão "que" é conjunção integrante.', certa: false, explicacao: 'Trata-se da construção de realce "é... que", em que "que" é partícula expletiva e pode ser suprimida com o verbo "ser": "O chefe assinou o documento".' },
+              ],
+            },
+            {
+              id: 'port-b1-t1-s4-q10',
+              enunciado: 'O vocábulo "mal" é advérbio e opõe-se a "bem", ao passo que "mau" é adjetivo e opõe-se a "bom".',
+              certa: true,
+              explicacao: 'O teste da oposição resolve: "Ele agiu mal" (bem) e "Ele é um mau servidor" (bom). "Mal" também pode ser conjunção temporal, equivalendo a "assim que".',
+              variacoes: [
+                { enunciado: 'Na frase "Mal chegou ao setor, foi convocado pela chefia", o vocábulo "mal" é advérbio de modo.', certa: false, explicacao: 'Nesse contexto "mal" é conjunção subordinativa temporal, equivalendo a "assim que". Não modifica o verbo quanto ao modo.' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Quais são as conjunções adversativas?', r: 'Mas, porém, contudo, todavia, entretanto, no entanto. Marcam oposição entre orações independentes e são permutáveis entre si.' },
@@ -585,6 +765,51 @@ Raramente pede a nomenclatura pura. Ela usa a análise como **premissa**: afirma
               explicacao: 'São verbos de ligação: não indicam processo praticado pelo sujeito, apenas conectam-no à característica que se lhe atribui, formando predicado nominal.',
               variacoes: [
                 { enunciado: 'Na oração "O servidor permaneceu na sala", o verbo "permanecer" é de ligação e "na sala" é predicativo do sujeito.', certa: false, explicacao: 'Nesse contexto "permanecer" indica permanência em um lugar, funcionando como verbo nocional intransitivo, e "na sala" é adjunto adverbial. Seria de ligação em "O servidor permaneceu atento", em que atribui característica.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q6',
+              enunciado: 'O objeto direto pode vir preposicionado, como em "Amava a Deus sobre todas as coisas", sem que isso o converta em objeto indireto.',
+              certa: true,
+              explicacao: 'A preposição aqui é expletiva, empregada por ênfase, clareza ou tradição, e não por exigência do verbo. Como "amar" é transitivo direto, o termo permanece objeto direto preposicionado.',
+              variacoes: [
+                { enunciado: 'Em "Chamou-me a mim, e não a ele", o emprego da preposição diante dos pronomes é facultativo e pode ser suprimido sem prejuízo da correção.', certa: false, explicacao: 'Diante de pronome oblíquo tônico, a preposição é obrigatória: não existe "chamou mim". Trata-se de objeto direto preposicionado por imposição da forma pronominal.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q7',
+              enunciado: 'Em "Os peritos julgaram o laudo insuficiente", o termo "insuficiente" é predicativo do objeto.',
+              certa: true,
+              explicacao: 'O adjetivo atribui característica ao objeto direto "o laudo" por meio do verbo, o que configura predicado verbo-nominal com predicativo do objeto.',
+              variacoes: [
+                { enunciado: 'Em "Os peritos analisaram o laudo insuficiente", o termo "insuficiente" é predicativo do objeto.', certa: false, explicacao: 'Aqui o adjetivo apenas caracteriza o substantivo dentro do próprio sintagma, sem ser atribuído pelo verbo: trata-se de adjunto adnominal. O predicativo exige que a qualidade seja conferida pela ação verbal.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q8',
+              enunciado: 'O aposto explicativo é isolado por vírgulas, ao passo que o vocativo, por invocar o interlocutor, não integra a estrutura da oração.',
+              certa: true,
+              explicacao: 'Em "João, o chefe da seção, decidiu", há aposto. Em "João, traga o processo", há vocativo. O aposto refere-se a um termo da oração; o vocativo, a quem se fala.',
+              variacoes: [
+                { enunciado: 'O aposto especificativo, como em "o servidor João", deve ser isolado por vírgula, assim como o explicativo.', certa: false, explicacao: 'O aposto especificativo individualiza o termo anterior e liga-se a ele sem pausa, dispensando vírgula. Apenas o explicativo é isolado.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q9',
+              enunciado: 'Quando o sujeito é uma oração, o verbo da oração principal permanece na terceira pessoa do singular.',
+              certa: true,
+              explicacao: 'Em "É necessário que todos compareçam", o sujeito de "é" é a oração subordinada, que equivale a "isso" e comanda o singular, independentemente do número dos termos que contém.',
+              variacoes: [
+                { enunciado: 'Em "Precisaram de mais servidores no setor", o sujeito é indeterminado, uma vez que o verbo está na terceira pessoa do plural sem referente expresso.', certa: true, explicacao: 'A terceira pessoa do plural sem sujeito expresso nem antecedente recuperável é uma das formas de indeterminação do sujeito, ao lado da construção com "se" e verbo transitivo indireto.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s1-q10',
+              enunciado: 'O adjunto adverbial e o complemento nominal podem vir ambos preposicionados, distinguindo-se por aquele ligar-se ao verbo e este, a um nome.',
+              certa: true,
+              explicacao: 'Em "Saiu com pressa", o termo modifica o verbo e é adjunto adverbial de modo. Em "Tem necessidade de apoio", completa o substantivo e é complemento nominal.',
+              variacoes: [
+                { enunciado: 'Em "O processo, eu o analisei ontem", o pronome "o" constitui objeto direto pleonástico.', certa: true, explicacao: 'O objeto foi antecipado e depois retomado pelo pronome, configurando pleonasmo sintático, recurso de ênfase admitido pela norma padrão.' },
               ],
             },
           ],
@@ -709,6 +934,51 @@ Vêm com forma nominal, **sem conjunção**: *Ao chegar, assinou* (reduzida de i
               explicacao: 'Reduzidas trazem infinitivo, gerúndio ou particípio e não vêm introduzidas por conjunção. Para classificá-las, desenvolve-se a oração: "Ao chegar, assinou" equivale a "Quando chegou, assinou" — temporal.',
               variacoes: [
                 { enunciado: 'Em "Ao receber o laudo, deferiu o pedido", a oração reduzida de infinitivo tem valor concessivo.', certa: false, explicacao: 'A reduzida indica o momento em que a ação ocorreu, tendo valor temporal — desenvolve-se como "Quando recebeu o laudo". O valor concessivo exigiria equivalência com "embora recebesse".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q6',
+              enunciado: 'A oração subordinada substantiva completiva nominal completa um nome, ao passo que a objetiva indireta completa um verbo transitivo indireto.',
+              certa: true,
+              explicacao: 'Ambas vêm preposicionadas. Em "Tem certeza de que virá", a oração completa o substantivo "certeza". Em "Precisa de que o ajudem", completa o verbo "precisar".',
+              variacoes: [
+                { enunciado: 'Em "Só quero isto: que me ouçam", a oração iniciada por "que" é subordinada substantiva predicativa.', certa: false, explicacao: 'A oração explica o pronome "isto", termo da oração principal, funcionando como aposto. Trata-se de oração subordinada substantiva apositiva, tipicamente anunciada por dois-pontos.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q7',
+              enunciado: 'Em "A verdade é que ninguém foi comunicado", a oração iniciada por "que" é subordinada substantiva predicativa.',
+              certa: true,
+              explicacao: 'A oração vem depois do verbo de ligação "ser" e atribui característica ao sujeito "a verdade", exercendo a função de predicativo do sujeito.',
+              variacoes: [
+                { enunciado: 'A oração subordinada substantiva subjetiva vem sempre precedida de verbo de ligação.', certa: false, explicacao: 'A subjetiva funciona como sujeito e ocorre com expressões como "é necessário", mas também com verbos na voz passiva sintética ou impessoais: "Consta que houve recurso", "Sabe-se que o prazo venceu".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q8',
+              enunciado: 'A oração subordinada adverbial consecutiva exprime o resultado de uma intensidade anunciada na principal, como em "Falou tanto que ficou rouco".',
+              certa: true,
+              explicacao: 'A consecutiva é anunciada por intensificadores como "tão", "tanto", "tal" e "de tal modo", e indica consequência efetivamente ocorrida.',
+              variacoes: [
+                { enunciado: 'Em "Falou de modo que todos o compreendessem", a oração iniciada por "de modo que" é consecutiva.', certa: false, explicacao: 'Com o verbo no subjuntivo, a locução exprime finalidade, não resultado: ele falou com o objetivo de ser compreendido. A consecutiva traz o verbo no indicativo e indica consequência realizada.' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q9',
+              enunciado: 'A oração subordinada adverbial proporcional indica simultaneidade gradual entre dois processos, como em "À medida que os prazos venciam, os pedidos se acumulavam".',
+              certa: true,
+              explicacao: 'A proporcional articula duas variações que avançam juntas, sendo introduzida por "à medida que", "ao passo que", "quanto mais" e "quanto menos".',
+              variacoes: [
+                { enunciado: 'A locução "por mais que" introduz oração subordinada adverbial condicional.', certa: false, explicacao: '"Por mais que" é locução concessiva: admite um obstáculo que não impede o fato da principal. A condicional é introduzida por "se", "caso" e "desde que".' },
+              ],
+            },
+            {
+              id: 'port-b1-t2-s2-q10',
+              enunciado: 'As orações coordenadas assindéticas dispensam conjunção e são separadas por vírgula ou ponto e vírgula.',
+              certa: true,
+              explicacao: 'Em "Chegou, analisou, decidiu", as orações se justapõem sem conectivo. A ausência de conjunção é o traço que as define, e não a ausência de relação de sentido.',
+              variacoes: [
+                { enunciado: 'A oração intercalada, por interromper a estrutura sintática do período, deve ser isolada por vírgulas ou travessões.', certa: true, explicacao: 'Construções como "disse ele" e "creio eu" não exercem função sintática na oração em que se inserem e, por isso, são obrigatoriamente isoladas.' },
               ],
             },
           ],
@@ -1373,6 +1643,51 @@ Introduzem **enumeração**, **explicação/esclarecimento** ou **citação/fala
                 { enunciado: 'A vírgula antes da conjunção "e" é sempre vedada na norma padrão.', certa: false, explicacao: 'Não é sempre: cabe com sujeitos diferentes, com valor adversativo e em repetição enfática.' },
               ],
             },
+            {
+              id: 'port-b1-t3-s1-q6',
+              enunciado: 'A oração subordinada adverbial anteposta à principal deve ser separada por vírgula, ao passo que, posposta, a vírgula é facultativa.',
+              certa: true,
+              explicacao: 'Em "Quando o laudo chegou, o pedido foi deferido", a vírgula é obrigatória pela inversão. Na ordem direta — "O pedido foi deferido quando o laudo chegou" — ela é dispensável.',
+              variacoes: [
+                { enunciado: 'Na frase "Se chover não haverá atendimento externo", a ausência de vírgula está de acordo com a norma padrão.', certa: false, explicacao: 'A oração condicional está anteposta à principal e exige a vírgula que marca a inversão: "Se chover, não haverá atendimento externo".' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q7',
+              enunciado: 'A vírgula pode marcar a omissão de um verbo já expresso anteriormente, como em "Uns pediram revisão; outros, arquivamento".',
+              certa: true,
+              explicacao: 'É a chamada vírgula elíptica ou de zeugma: sinaliza a supressão do verbo "pediram", recuperável pelo contexto, evitando a repetição.',
+              variacoes: [
+                { enunciado: 'É admissível o emprego de vírgula entre o verbo e seu objeto direto quando o complemento for extenso.', certa: false, explicacao: 'A vírgula nunca separa termos que mantêm relação sintática imediata. Assim como não se separa sujeito de predicado, não se separa verbo de complemento, qualquer que seja a extensão.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q8',
+              enunciado: 'O vocativo é sempre isolado por vírgula, independentemente da posição que ocupe no período.',
+              certa: true,
+              explicacao: 'Por não exercer função sintática na oração, o vocativo é sempre destacado: "Senhores, atenção", "Atenção, senhores", "Peço, senhores, atenção".',
+              variacoes: [
+                { enunciado: 'Em "O INSS, autarquia federal, concede benefícios", a expressão isolada por vírgulas é um vocativo.', certa: false, explicacao: 'Trata-se de aposto explicativo: a expressão esclarece o termo "INSS", que integra a oração como sujeito. O vocativo invoca um interlocutor.' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q9',
+              enunciado: 'As conjunções adversativas e conclusivas, quando deslocadas para o interior da oração, devem ser isoladas por vírgulas.',
+              certa: true,
+              explicacao: 'Em "O servidor, contudo, concluiu a análise" e "O prazo venceu; o pedido, portanto, foi indeferido", o deslocamento impõe as vírgulas.',
+              variacoes: [
+                { enunciado: 'A conjunção "mas" admite deslocamento para o interior da oração, desde que isolada por vírgulas.', certa: false, explicacao: '"Mas" é a única adversativa que ocupa obrigatoriamente a posição inicial da oração. O deslocamento é possível com "porém", "contudo", "todavia" e "entretanto".' },
+              ],
+            },
+            {
+              id: 'port-b1-t3-s1-q10',
+              enunciado: 'O travessão pode substituir as vírgulas no isolamento do aposto explicativo, conferindo maior destaque ao termo.',
+              certa: true,
+              explicacao: 'São recursos equivalentes quanto à correção, distinguindo-se pela ênfase: o travessão realça mais que a vírgula, e os parênteses indicam informação acessória.',
+              variacoes: [
+                { enunciado: 'O ponto e vírgula é empregado para separar os itens de uma enumeração apenas quando estes forem orações completas.', certa: false, explicacao: 'O ponto e vírgula separa itens que já contenham vírgulas internas, sejam eles orações ou não. É também o sinal usado entre incisos de textos legais.' },
+              ],
+            },
           ],
           flashcards: [
             { p: 'Qual a regra de ouro da vírgula?', r: 'Não separar sujeito do predicado, verbo do complemento, nem nome do complemento/adjunto.' },
@@ -1496,6 +1811,51 @@ O item 9 da prova tratava de "à porta" e afirmava que a crase se justificava pe
               explicacao: 'Entregar algo A alguém: o verbo exige preposição, e "secretária" admite artigo. Substituindo por masculino aparece "ao secretário" — o teste confirma.',
               variacoes: [
                 { enunciado: 'Em "Vi à secretária na recepção", o emprego do sinal indicativo de crase está correto.', certa: false, explicacao: '"Ver" é transitivo direto e não exige preposição: escreve-se "Vi a secretária".' },
+              ],
+            },
+            {
+              id: 'port-b1-t4-s1-q6',
+              enunciado: 'Diante das palavras "casa" e "terra", ocorre crase apenas quando vierem especificadas por adjunto adnominal.',
+              certa: true,
+              explicacao: 'Sem especificação, não há artigo: "Voltou a casa", "Os marujos desceram a terra". Com especificação, o artigo aparece: "Voltou à casa dos pais", "Desceram à terra firme".',
+              variacoes: [
+                { enunciado: 'Na frase "Os astronautas retornaram à Terra", o emprego do sinal indicativo de crase está incorreto, por não haver especificação.', certa: false, explicacao: 'No sentido de planeta, "Terra" admite artigo por natureza, e a regência de "retornar" exige a preposição. A crase é correta, independentemente de especificação.' },
+              ],
+            },
+            {
+              id: 'port-b1-t4-s1-q7',
+              enunciado: 'A expressão "à distância" recebe o sinal indicativo de crase quando vier acompanhada da indicação da medida, como em "à distância de dez metros".',
+              certa: true,
+              explicacao: 'Determinada pela medida, a expressão exige o artigo. Sem determinação, a norma tradicional dispensa o acento: "Observou a distância".',
+              variacoes: [
+                { enunciado: 'A locução "a partir de" recebe o sinal indicativo de crase quando seguida de substantivo feminino.', certa: false, explicacao: '"A partir de" é locução prepositiva invariável, em que o "a" nunca se funde com artigo: "a partir da próxima semana". Não há crase em nenhuma hipótese.' },
+              ],
+            },
+            {
+              id: 'port-b1-t4-s1-q8',
+              enunciado: 'Não ocorre crase diante de numeral cardinal, exceto na indicação de horas determinadas.',
+              certa: true,
+              explicacao: 'Escreve-se "Refiro-me a duas hipóteses", sem acento, mas "A sessão começa às duas horas", com crase, porque a indicação de hora determinada admite artigo.',
+              variacoes: [
+                { enunciado: 'Na expressão "de segunda a sexta-feira", o emprego do sinal indicativo de crase é obrigatório antes de "sexta".', certa: false, explicacao: 'Quando a expressão correlata vem sem artigo ("de segunda", e não "da segunda"), o paralelismo impõe a ausência de artigo também no segundo termo. Escreve-se "de segunda a sexta".' },
+              ],
+            },
+            {
+              id: 'port-b1-t4-s1-q9',
+              enunciado: 'Ocorre crase diante do pronome relativo "a qual" quando o verbo da oração subordinada exigir a preposição "a".',
+              certa: true,
+              explicacao: 'Em "Esta é a norma à qual me refiro", a preposição vem da regência de "referir-se" e funde-se com o artigo que integra "a qual".',
+              variacoes: [
+                { enunciado: 'Ocorre crase diante do pronome relativo "quem", como em "Esta é a pessoa à quem me refiro".', certa: false, explicacao: '"Quem" não admite artigo, de modo que não há fusão possível. Escreve-se "a pessoa a quem me refiro".' },
+              ],
+            },
+            {
+              id: 'port-b1-t4-s1-q10',
+              enunciado: 'Admite-se a crase na indicação de estilo ou modo, ainda que diante de palavra masculina, por elipse da expressão "à moda de".',
+              certa: true,
+              explicacao: 'É a chamada crase elíptica: em "bife à milanesa" e "poesia à Camões", subentende-se "à moda de", o que justifica o acento mesmo diante de nome masculino.',
+              variacoes: [
+                { enunciado: 'Na frase "O documento foi entregue a autoridades competentes", o emprego do sinal indicativo de crase seria obrigatório diante do substantivo feminino plural.', certa: false, explicacao: 'O substantivo plural vem sem artigo, o que se comprova pelo "a" no singular. Só haveria crase com artigo definido plural: "às autoridades competentes".' },
               ],
             },
           ],
